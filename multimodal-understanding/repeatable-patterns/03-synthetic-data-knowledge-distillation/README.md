@@ -6,8 +6,7 @@ This Jupyter Notebook demonstrates how to implement knowledge distillation using
 ## **Table of Contents**
 - Introduction
 - Setup and Configuration
-- Data Preparation
-  - Generating Synthetic Training Data with Amazon Nova Pro
+- Synthetic Data Generation using Amazon Nova Pro
 - Distillation by Fine-Tuning Amazon Nova Micro
   - Capturing Teacher Model Representations
   - Training the Student Model
@@ -20,11 +19,11 @@ In this notebook, we explore how to utilize Amazon Nova Pro to create high-quali
 ## **Setup and Configuration**
 We start by setting up the necessary environment, including installing required libraries and configuring the SageMaker session. This section also covers how to load the Amazon Nova Pro model and prepare it for data generation.
 
-## **Data Preparation**
+## **Synthetic Data Generation using Amazon Nova Pro**
 In this section, we generate synthetic data using Amazon Nova Pro. The notebook includes functions to create instructional prompts and corresponding outputs, ensuring the generated data is diverse and suitable for fine-tuning.
 
 ## **Distillation by Fine-Tuning Amazon Nova Micro**
-Here, we demonstrate how to perform distillation by fine-tuning the smaller Amazon Nova Micro model using the prepared dataset. This section includes setting up the training parameters, preparing synthetic data as training dataset, and running the fine-tuning process.
+Here, we demonstrate how to perform distillation by fine-tuning the smaller Amazon Nova Micro model using the synthetic dataset. This section includes preparing synthetic data as training dataset, setting up the training parameters, and running the fine-tuning process.
 
 ## **Evaluation and Validation**
 After fine-tuning, we evaluate the performance of the Amazon Nova Micro model. This section covers methods to assess the model's accuracy and effectiveness, including generating evaluation reports.
