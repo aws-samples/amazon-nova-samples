@@ -6,18 +6,16 @@ import logging
 import pprint
 from io import BytesIO
 
-iam_client = boto3.client('iam',region_name='us-east-1')
-sts_client = boto3.client('sts',region_name='us-east-1')
-session = boto3.session.Session(region_name='us-east-1')
-region = 'us-east-1'
+iam_client = boto3.client('iam')
+sts_client = boto3.client('sts')
+session = boto3.session.Session()
+region = sts_client.meta.region_name
 account_id = sts_client.get_caller_identity()["Account"]
-dynamodb_client = boto3.client('dynamodb',region_name='us-east-1')
-dynamodb_resource = boto3.resource('dynamodb',region_name='us-east-1')
-lambda_client = boto3.client('lambda',region_name='us-east-1')
-bedrock_agent_client = session.client('bedrock-agent', 
-                                            region_name=region)
-bedrock_agent_runtime_client = boto3.client('bedrock-agent-runtime', 
-                                            region_name=region)
+dynamodb_client = boto3.client('dynamodb')
+dynamodb_resource = boto3.resource('dynamodb')
+lambda_client = boto3.client('lambda')
+bedrock_agent_client = session.client('bedrock-agent')
+bedrock_agent_runtime_client = boto3.client('bedrock-agent-runtime')
 
 
 logging.basicConfig(format='[%(asctime)s] p%(process)s {%(filename)s:%(lineno)d} %(levelname)s - %(message)s', level=logging.INFO)
@@ -198,11 +196,30 @@ def create_agent_role(agent_name, agent_foundation_model, kb_id=None):
     # Create IAM policies for agent
     statements = [
         {
-            "Sid": "AmazonBedrockAgentBedrockFoundationModelPolicy",
             "Effect": "Allow",
-            "Action": "bedrock:InvokeModel",
+            "Action": [
+                "bedrock:InvokeModel*",
+                "bedrock:CreateInferenceProfile"
+            ],
             "Resource": [
-                f"arn:aws:bedrock:{region}::foundation-model/{agent_foundation_model}"
+                "arn:aws:bedrock:*::foundation-model/*",
+                "arn:aws:bedrock:*:*:inference-profile/*",
+                "arn:aws:bedrock:*:*:application-inference-profile/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:GetInferenceProfile",
+                "bedrock:ListInferenceProfiles",
+                "bedrock:DeleteInferenceProfile",
+                "bedrock:TagResource",
+                "bedrock:UntagResource",
+                "bedrock:ListTagsForResource"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:*:*:inference-profile/*",
+                "arn:aws:bedrock:*:*:application-inference-profile/*"
             ]
         }
     ]
