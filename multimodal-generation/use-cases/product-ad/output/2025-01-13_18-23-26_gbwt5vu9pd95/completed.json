@@ -1,0 +1,26 @@
+{
+  "ResponseMetadata": {
+    "RequestId": "47488cf8-3525-4862-9fcc-7f5750e97cbe",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "date": "Mon, 13 Jan 2025 18:27:30 GMT",
+      "content-type": "application/json",
+      "content-length": "469",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "47488cf8-3525-4862-9fcc-7f5750e97cbe"
+    },
+    "RetryAttempts": 0
+  },
+  "invocationArn": "arn:aws:bedrock:us-east-1:776299153297:async-invoke/gbwt5vu9pd95",
+  "modelArn": "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-reel-v1:0",
+  "clientRequestToken": "a72d5aea-bf9d-4512-ba1d-f0416488e574",
+  "status": "Completed",
+  "submitTime": "2025-01-13 18:23:26+00:00",
+  "lastModifiedTime": "2025-01-13 18:27:21+00:00",
+  "endTime": "2025-01-13 18:27:21+00:00",
+  "outputDataConfig": {
+    "s3OutputDataConfig": {
+      "s3Uri": "s3://bedrock-video-generation-us-east-1-hqhqna/gbwt5vu9pd95"
+    }
+  }
+}
