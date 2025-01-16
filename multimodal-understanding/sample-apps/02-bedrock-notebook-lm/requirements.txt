@@ -24,7 +24,7 @@ fonttools==4.54.1
 frozenlist==1.4.1
 fsspec==2024.9.0
 funcy==2.0
-gradio==5.5.0
+gradio==5.11.0
 gradio_client==1.4.0
 granian==1.4.0
 h11==0.14.0
