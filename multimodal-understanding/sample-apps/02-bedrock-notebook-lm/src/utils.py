@@ -6,18 +6,15 @@ Functions:
 - call_llm: Call the LLM with the given prompt and dialogue format.
 - parse_url: Parse the given URL and return the text content.
 - generate_podcast_audio: Generate audio for podcast using TTS or advanced audio models.
-- _use_suno_model: Generate advanced audio using Bark.
-- _use_melotts_api: Generate audio using TTS model.
-- _get_melo_tts_params: Get TTS parameters based on speaker and language.
 """
 
+from concurrent.futures import ThreadPoolExecutor
 import io
 
 # Standard library imports
 import json
 import time
 from io import BytesIO
-from pathlib import Path
 from typing import Any, Union
 from urllib.parse import urlparse
 
@@ -25,11 +22,15 @@ import boto3
 from botocore.config import Config
 import requests
 from botocore.exceptions import ClientError
-from langchain_aws import ChatBedrockConverse
 from pydub import AudioSegment
 from pypdf import PdfReader
-from scipy.io.wavfile import write as write_wav
 from loguru import logger
+from prompts import (
+    QUESTION_MODIFIER,
+    SYSTEM_PROMPT,
+    SYSTEM_PROMPT_OUTLINE,
+    TONE_MODIFIER,
+)
 
 # Local imports
 from constants import (
@@ -42,31 +43,176 @@ from constants import (
 )
 from schema import MediumDialogue, ShortDialogue
 from prompts import OUTPUT_FORMAT_MODIFIER
-import base64
 
 
-def generate_script(
+def generate_topics():
+    """Rough topics to be discussed in the podcast"""
+
+
+def generate_topic_dialogues():
+    """Generate dialogues for each topic"""
+
+
+def generate_script_with_outline(
     model_id: str,
-    system_prompt: str,
     input_text: str,
-    video_files: list[str] | None,
+    question: str,
+    tone: str,
+    video_file: str | None,
+    files: list[str] | None,
+    s3_url: str | None,
     output_model: Union[ShortDialogue, MediumDialogue],
 ) -> Union[ShortDialogue, MediumDialogue]:
     """Get the dialogue from the LLM."""
 
     # Call the LLM for the first time
     # We only use video for draft generation
-    first_draft_dialogue = call_llm(
-        model_id, system_prompt, input_text, video_files, output_model
+    user_prompt = f"""Create an outline for a podcast on the following topic
+    
+    <topic>
+    {question}
+    </topic>
+    
+    Provided reference text:
+    <reference>
+    {input_text}
+    </reference>
+    """
+
+    outline = invoke_bedrock_model(
+        model_id, SYSTEM_PROMPT_OUTLINE, user_prompt, None, files, s3_url
     )
-    logger.info(f"First draft dialogue:\n {first_draft_dialogue}")
-    # Call the LLM a second time to improve the dialogue
-    system_prompt_with_dialogue = f"{system_prompt}\n\nHere is the first draft of the dialogue you provided:\n\n{first_draft_dialogue.model_dump_json()}."
-    final_dialogue = call_llm(
+
+    outline_output = (
+        outline["output"]["message"]["content"][0]["text"]
+        .split("<output>")[-1]
+        .split("</output>")[0]
+    )
+
+    logger.info(outline_output)
+
+    outline_output = json.loads(outline_output)
+    old_dialogue = None
+
+    # Modify the system prompt based on the user input
+    modified_system_prompt = SYSTEM_PROMPT
+
+    # if question:
+    #     modified_system_prompt += f"\n\n{QUESTION_MODIFIER} {question}"
+    if tone:
+        modified_system_prompt += f"\n\n{TONE_MODIFIER} {tone}."
+
+    text = (
+        f"Use this context and provided documents to generate the podcast <text>\n{input_text}</text>\n"
+        + "The dialogue should have 20-25 turns per speaker"
+        + OUTPUT_FORMAT_MODIFIER
+    )
+
+    for topic in outline_output["topics"]:
+        logger.info(f"Topic: {topic['topic']}")
+        logger.info(f"Description: {topic['summary']}")
+        if not old_dialogue:
+
+            system_prompt_with_dialogue = f"""{modified_system_prompt}. Continue podcast for the following topic based on provided inputs (text and/or video). The continuation should sound natural. The topic is:
+            {topic["topic"]}: {topic["summary"]}
+            Do not end the podcast, just generate dialogues for the above topic. The podcast will be continued later on different topics. Do not generate ending dialogues. Do not generate concluding dialogues. Do not end the podcast
+            """
+
+            old_dialogue = call_llm(
+                model_id,
+                modified_system_prompt,
+                text
+                + """Do not end the podcast, just generate dialogues for the above topic. The podcast will be continued later on different topics. Do not generate ending dialogues. Do not generate concluding dialogues. Do not end the podcast""",
+                video_file,
+                files,
+                s3_url,
+                output_model,
+            )
+        else:
+
+            system_prompt_with_dialogue = f"""{SYSTEM_PROMPT}\n\nHere is the podcast generated so far:\n\n{old_dialogue.model_dump_json()}.\n\n Continue podcast for the following topic based on provided inputs (text and/or video). The continuation should sound natural. The topic is:
+            {topic["topic"]}: {topic["summary"]}
+            Do not end the podcast, just generate dialogues for the above topic. The podcast will be continued later on different topics. Do not generate ending dialogues. Do not generate concluding dialogues. Do not end the podcast
+            """
+
+            dialogue_current = call_llm(
+                model_id,
+                system_prompt_with_dialogue,
+                text
+                + """Do not end the podcast, just generate dialogues for the above topic. The podcast will be continued later on different topics. Do not generate ending dialogues. Do not generate concluding dialogues. Do not end the podcast""",
+                video_file,
+                files,
+                s3_url,
+                output_model,
+            )
+
+            old_dialogue.dialogue.extend(dialogue_current.dialogue)
+            logger.info(old_dialogue)
+
+    system_prompt_with_dialogue = f"""{SYSTEM_PROMPT}\n\nHere is the podcast generated so far:\n\n{old_dialogue.model_dump_json()}.\n\n Generate dialogues to finish the podcast. The finish should be natural."""
+
+    dialogue_current = call_llm(
         model_id,
         system_prompt_with_dialogue,
-        "Please improve the dialogue. Make it more natural and engaging.\n"
-        + OUTPUT_FORMAT_MODIFIER,
+        text,
+        video_file,
+        files,
+        s3_url,
+        output_model,
+    )
+
+    old_dialogue.dialogue.extend(dialogue_current.dialogue)
+
+    return old_dialogue
+
+
+def generate_script(
+    model_id: str,
+    input_text: str,
+    question: str,
+    tone: str,
+    video_file: str | None,
+    files: list[str] | None,
+    s3_url: str | None,
+    output_model: Union[ShortDialogue, MediumDialogue],
+) -> Union[ShortDialogue, MediumDialogue]:
+    """Get the dialogue from the LLM."""
+
+    # Call the LLM for the first time
+    # We only use video for draft generation
+
+    # Modify the system prompt based on the user input
+    modified_system_prompt = SYSTEM_PROMPT
+
+    if question:
+        modified_system_prompt += f"\n\n{QUESTION_MODIFIER} {question}"
+    if tone:
+        modified_system_prompt += f"\n\n{TONE_MODIFIER} {tone}."
+
+    user_prompt = f"<text>\n{input_text}</text>\n" + OUTPUT_FORMAT_MODIFIER
+
+    first_draft_dialogue = call_llm(
+        model_id,
+        modified_system_prompt,
+        user_prompt,
+        video_file,
+        files,
+        s3_url,
+        output_model,
+    )
+
+    logger.info(f"First draft dialogue:\n {first_draft_dialogue}")
+    # Call the LLM a second time to improve the dialogue
+    user_prompt_update = f"""Here is the first draft of the dialogue you provided:\n\n{first_draft_dialogue.model_dump_json()}.
+    "Please improve the dialogue. Make it more natural and engaging.\n"
+    {OUTPUT_FORMAT_MODIFIER}
+    """
+    final_dialogue = call_llm(
+        model_id,
+        modified_system_prompt,
+        user_prompt_update,
+        None,
+        None,
         None,
         output_model,
     )
@@ -75,7 +221,7 @@ def generate_script(
     return final_dialogue
 
 
-def get_pdf_from_s3(object_url: str) -> BytesIO:
+def get_pdf_from_s3(object_url: str) -> bytes:
     """
     Retrieves a PDF file from S3 and returns it as a BytesIO object
 
@@ -103,13 +249,12 @@ def get_pdf_from_s3(object_url: str) -> BytesIO:
 
         # Read the file content
         pdf_content = response["Body"].read()
-
         # Create a BytesIO object
-        pdf_file = BytesIO(pdf_content)
+        # pdf_file = BytesIO(pdf_content)
 
-        text = read_pdf(pdf_file)
+        # text = read_pdf(pdf_file)
 
-        return text
+        return pdf_content
 
     except ClientError as e:
         raise Exception(
@@ -144,17 +289,16 @@ def call_llm(
     model_id: str,
     system_prompt: str,
     text: str,
-    video_files: list[str] | None,
+    video_file: str | None,
+    files: list[str] | None,
+    s3_url: str | None,
     dialogue_format: Any,
 ) -> Any:
-    logger.info(f"Video files are passed: {video_files}")
-    if not video_files:
-        result = invoke_bedrock_model(model_id, system_prompt, text, dialogue_format)
-    else:
-
-        result = invoke_bedrock_model_video(
-            model_id, system_prompt, text, dialogue_format, video_files
-        )
+    logger.info(f"Video files are passed: {video_file}")
+    # if not video_files:
+    result = invoke_bedrock_model(
+        model_id, system_prompt, text, video_file, files, s3_url
+    )
 
     logger.info(f"Result:\n {result}")
     result_output = (
@@ -227,24 +371,43 @@ def create_dialogue_audio(dialogue, output_file):
     combined_audio = AudioSegment.empty()
 
     # Define voices for each speaker
+    host = dialogue[0].speaker
+    distinct_speakers = set(line.speaker for line in dialogue)
+    guest = list(distinct_speakers.difference({host}))[0]
+
+    logger.warning(f"VOICES: {host}, {guest}")
+
     speaker_voices = {
-        "Guest": "Danielle",  # Male voice
-        "Host": "Stephen",  # Female voice
+        # "Guest": "Danielle",  # Male voice
+        # "Host": "Stephen",  # Female voice
+        guest: "Danielle",
+        host: "Stephen",
     }
     # Process each line of dialogue
-    for line in dialogue:
-        speaker = line.speaker
-        text = line.text
-        # Add a small pause between lines
-        if len(combined_audio) > 0:
-            combined_audio += AudioSegment.silent(duration=500)  # 500ms pause
+    # Create a thread pool for parallel processing
+    with ThreadPoolExecutor() as executor:
+        # Create a list to store futures
+        futures = []
 
-        # Convert text to speech
-        audio_segment = text_to_speech(text, speaker_voices[speaker], polly_client)
+        for line in dialogue:
+            speaker = line.speaker
+            text = line.text
+            # Submit text-to-speech task to thread pool
+            future = executor.submit(
+                text_to_speech, text, speaker_voices[speaker], polly_client
+            )
+            futures.append((future, speaker))
 
-        if audio_segment:
-            combined_audio += audio_segment
+        # Process results in order
+        for i, (future, speaker) in enumerate(futures):
+            # Add a small pause between lines except for first line
+            if i > 0:
+                combined_audio += AudioSegment.silent(duration=500)  # 500ms pause
 
+            # Get the audio segment from the future
+            audio_segment = future.result()
+            if audio_segment:
+                combined_audio += audio_segment
     # Export the combined audio to a file
     combined_audio.export(output_file, format="mp3")
 
@@ -273,12 +436,50 @@ def list_foundation_models(region: str = "us-east-1") -> dict:
 
 
 def invoke_bedrock_model(
-    model_id: str, system_prompt: str, text: str, dialogue_format: Any
+    model_id: str,
+    system_prompt: str,
+    text: str,
+    video_file: str | None,
+    files: list[str],
+    s3_url: str,
 ) -> Any:
 
     logger.info(f"Calling LLM {model_id}")
 
     messages = [{"role": "user", "content": [{"text": text}]}]
+    if video_file:
+        # Only single video is supported
+        video_data = file_to_bytes(video_file)
+        messages[0]["content"].insert(
+            0, {"video": {"format": "mp4", "source": {"bytes": video_data}}}
+        )
+
+    if files:
+        for i, file in enumerate(files):
+            file_data = file_to_bytes(file)
+            fmt = file.split(".")[-1].lower()
+            messages[0]["content"].append(
+                {
+                    "document": {
+                        "format": fmt,
+                        "name": f"document{i}",
+                        "source": {"bytes": file_data},
+                    }
+                }
+            )
+
+    if s3_url:
+        s3_bytes = get_pdf_from_s3(s3_url)
+        messages[0]["content"].append(
+            {
+                "document": {
+                    "format": "pdf",
+                    "name": "Document",
+                    "source": {"bytes": s3_bytes},
+                }
+            }
+        )
+        # messages[0]["content"].append({"text": text})
 
     session = boto3.Session(
         region_name=AWS_REGION,
@@ -288,11 +489,11 @@ def invoke_bedrock_model(
 
     n_tries = 0
     result = ""
+
     while True:
         if n_tries > 2:
             raise Exception("Too many retries")
         try:
-
             result = bedrock_runtime_client.converse(
                 modelId=model_id,
                 messages=messages,
@@ -320,92 +521,7 @@ def invoke_bedrock_model(
     return result
 
 
-def invoke_bedrock_model_video(
-    model_id: str,
-    system_prompt: str,
-    text: str,
-    dialogue_format: Any,
-    video_files: list[str],
-) -> Any:
-
-    logger.info(f"Calling LLM with video {model_id}")
-
-    video_data = video_to_base64_string(video_files)
-    video_messages = [
-        {
-            "role": "user",
-            "content": [
-                {
-                    "video": {
-                        "format": "mp4",
-                        "source": {"bytes": data},
-                    }
-                }
-            ],
-        }
-        for data in video_data
-    ]
-
-    text_message = {"role": "user", "content": [{"text": text}]}
-
-    video_messages.append(text_message)
-    # logger.info(video_messages)
-    session = boto3.Session(
-        region_name=AWS_REGION,
-    )
-
-    bedrock_runtime_client = session.client("bedrock-runtime")
-    native_request = {
-        # "schemaVersion": "messages-v1",
-        "messages": video_messages,
-        "system": [{"type": "system", "content": [{"text": system_prompt}]}],
-        # "inferenceConfig": inf_params,
-    }
-    n_tries = 0
-    result = ""
-    while True:
-        if n_tries > 2:
-            raise Exception("Too many retries")
-        try:
-
-            # result = bedrock_runtime_client.converse(
-            #     modelId=model_id,
-            #     messages=messages,
-            #     system=[{"text": system_prompt}],
-            #     inferenceConfig={"temperature": 0.2},
-            # )
-            response = bedrock_runtime_client.invoke_model(
-                modelId=model_id, body=json.dumps(native_request)
-            )
-            result = json.loads(response["body"].read())
-
-            logger.info(result)
-            # model_response = json.loads(response["body"].read())
-
-            break
-        except ClientError as e:
-            logger.info(f"Exception {e}")
-            if e.response["Error"]["Code"] == "ThrottlingException":
-                logger.info("Throttling!. Will Sleep for 90 seconds")
-                n_tries += 1
-                if n_tries > 2:
-                    raise e
-                time.sleep(90)
-            else:
-                raise e
-        except Exception as ex:
-            logger.info(f"Exception {ex}")
-            raise ex
-
-        n_tries += 1
-
-    return result
-
-
-def video_to_base64_string(files: list[str]):
-    base64_strings = []
-    for file_path in files:
-        with open(file_path, "rb") as file:
-            base64_string = base64.b64encode(file.read()).decode("utf-8")
-            base64_strings.append(base64_string)
-    return base64_strings
+def file_to_bytes(file_loc: str):
+    with open(file_loc, "rb") as file:
+        bytes = file.read()
+    return bytes

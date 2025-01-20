@@ -24,6 +24,5 @@ EXPOSE 7860
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 
-
-# CMD ["tail", "-f", "/dev/null"]
-CMD ["python3", "/app/src/app.py"]
+WORKDIR /app/src
+CMD ["python3", "app.py"]
