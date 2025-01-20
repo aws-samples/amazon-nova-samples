@@ -249,10 +249,6 @@ def get_pdf_from_s3(object_url: str) -> bytes:
 
         # Read the file content
         pdf_content = response["Body"].read()
-        # Create a BytesIO object
-        # pdf_file = BytesIO(pdf_content)
-
-        # text = read_pdf(pdf_file)
 
         return pdf_content
 
