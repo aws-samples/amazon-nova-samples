@@ -5,7 +5,7 @@ constants.py
 from pathlib import Path
 
 # Key constants
-APP_TITLE = "AWS Bedrock NotebookLM"
+APP_TITLE = "Bedrock NotebookLM"
 CHARACTER_LIMIT = 1000_000
 
 # Gradio-related constants
@@ -56,9 +56,9 @@ UI_AVAILABLE_LANGUAGES = list(set(SUNO_LANGUAGE_MAPPING.keys()))
 UI_INPUTS = {
     "region": {"label": "AWS Region"},
     "video_upload": {
-        "label": "📄 Upload your Video(s)",
+        "label": "📄 Upload your Video",
         "file_types": [".mp4"],
-        "file_count": "multiple",
+        "file_count": "single",
     },
     "file_upload": {
         "label": "📄 Upload your file(s)",
@@ -84,19 +84,16 @@ UI_INPUTS = {
     },
     "length": {
         "label": " ⏱️ Choose the length",
-        "choices": ["Short (1-2 min)", "Medium (3-5 min)"],
-        "value": "Medium (3-5 min)",
+        "choices": ["Short", "Long"],
+        "value": "Short",
     },
     "models": {
         "label": " 🤖 Choose the model",
         "choices": [],
-        "value": "Nova Pro v1",
+        "value": "Nova Pro",
     },
 }
 
-MODEL_MAP = {
-    "Nova Pro v1": "us.amazon.nova-pro-v1:0",
-}
 UI_OUTPUTS = {
     "audio": {"label": "🔊 Podcast", "format": "mp3"},
     "transcript": {

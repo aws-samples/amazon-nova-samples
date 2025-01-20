@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-gradio = "^5.11.0"
+gradio = "^5.5.0"
 pypdf = "^5.1.0"
 scipy = "^1.14.1"
 langchain-aws = "^0.2.7"
