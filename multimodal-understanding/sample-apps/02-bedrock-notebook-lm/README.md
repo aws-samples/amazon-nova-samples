@@ -41,3 +41,4 @@ Clone the repo.
 
 Access app at `localhost:7860`
 
+![Screenshot](./screenshot.png)

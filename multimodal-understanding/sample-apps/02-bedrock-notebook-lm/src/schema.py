@@ -2,7 +2,7 @@
 schema.py
 """
 
-from typing import List, Literal
+from typing import List
 
 from pydantic import BaseModel, Field
 
@@ -10,7 +10,8 @@ from pydantic import BaseModel, Field
 class DialogueItem(BaseModel):
     """A single dialogue item."""
 
-    speaker: Literal["Host", "Guest"]
+    # speaker: Literal["Host", "Guest"]
+    speaker: str
     text: str
 
 
