@@ -28,7 +28,7 @@ async function startStreaming() {
         const source = audioContext.createMediaStreamSource(stream);
 
         // Create ScriptProcessor for raw PCM data
-        const processor = audioContext.createScriptProcessor(1024, 1, 1);
+        const processor = audioContext.createScriptProcessor(512, 1, 1);
 
         source.connect(processor);
         processor.connect(audioContext.destination);
@@ -36,22 +36,21 @@ async function startStreaming() {
         processor.onaudioprocess = (e) => {
             const inputData = e.inputBuffer.getChannelData(0);
 
-            // Convert Float32Array to Int16Array
-            const pcmData = new Int16Array(inputData.length);
+            const buffer = new ArrayBuffer(inputData.length * 2);
+            const pcmData = new DataView(buffer);
             for (let i = 0; i < inputData.length; i++) {
-                // Convert float to 16-bit integer
-                const s = Math.max(-1, Math.min(1, inputData[i]));
-                pcmData[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+                const int16 = Math.max(-32768, Math.min(32767, Math.round(inputData[i] * 32767)));
+                pcmData.setInt16(i * 2, int16, true);
             }
-
-            // Convert to base64
-            const base64data = btoa(String.fromCharCode.apply(null,
-                new Uint8Array(pcmData.buffer)
-            ));
+            // Binary data string
+            let data = "";
+            for (let i = 0; i < pcmData.byteLength; i++) {
+                data += String.fromCharCode(pcmData.getUint8(i));
+            }
 
             // Send to WebSocket
             if (wsManager) {
-                wsManager.sendAudioChunk(base64data);
+                wsManager.sendAudioChunk(btoa(data));
             }
         };
 

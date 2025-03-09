@@ -90,7 +90,7 @@ export class WebSocketEventManager {
                 const data = JSON.parse(event.data);
                 this.handleMessage(data);
             } catch (e) {
-                console.error("Error parsing message:", e, "Raw data:", event.data);
+                console.error("Error parsing message:", e, "Raw data:", JSON.stringify(event.data));
             }
         };
 
@@ -101,7 +101,7 @@ export class WebSocketEventManager {
         };
 
         this.socket.onclose = (event) => {
-            console.log("WebSocket Disconnected", event);
+            console.log("WebSocket Disconnected", JSON.stringify(event));
             this.updateStatus("Disconnected", "disconnected");
             this.isProcessing = false;
             audioPlayer.stop();
@@ -129,7 +129,7 @@ export class WebSocketEventManager {
 
     handleMessage(data) {
         if (!data.event) {
-            console.error("Received message without event:", data);
+            console.error("Received message without event:", JSON.stringify(data));
             return;
         }
 
@@ -139,12 +139,12 @@ export class WebSocketEventManager {
         try {
             // Handle completionStart
             if (event.completionStart) {
-                console.log("Completion start received:", event.completionStart);
+                console.log("Completion start received:", JSON.stringify(event.completionStart));
                 this.promptName = event.completionStart.promptName;
             }
             // Handle contentStart
             else if (event.contentStart) {
-                console.log("Content start received:", event.contentStart);
+                console.log("Content start received:", JSON.stringify(event.contentStart));
                 if (event.contentStart.type === "AUDIO") {
                     this.currentAudioConfig = event.contentStart.audioOutputConfiguration;
                     this.audioBuffer = [];
@@ -152,7 +152,7 @@ export class WebSocketEventManager {
             }
             // Handle textOutput
             else if (event.textOutput) {
-                console.log("Text output received:", event.textOutput);
+                console.log("Text output received:", JSON.stringify(event.textOutput));
                 const messageData = {
                     role: event.textOutput.role
                 };
@@ -173,7 +173,7 @@ export class WebSocketEventManager {
             }
             // Handle contentEnd
             else if (event.contentEnd) {
-                console.log("Content end received:", event.contentEnd);
+                console.log("Content end received:", JSON.stringify(event.contentEnd));
                 switch (event.contentEnd.type) {
                     case "TEXT":
                     if (event.contentEnd.stopReason.toUpperCase() === "END_TURN") {
@@ -184,19 +184,19 @@ export class WebSocketEventManager {
                      }
                      break;
                     default:
-                        console.log("Received content end for type:", event.contentEnd.type);
+                        console.log("Received content end for type:", JSON.stringify(event.contentEnd.type));
                 }
             }
             // Handle completionEnd
             else if (event.completionEnd) {
-                console.log("Completion end received:", event.completionEnd);
+                console.log("Completion end received:", JSON.stringify(event.completionEnd));
             }
             else {
-                console.warn("Unknown event type received:", Object.keys(event)[0]);
+                console.warn("Unknown event type received:", JSON.stringify(Object.keys(event)[0]));
             }
         } catch (error) {
             console.error("Error processing message:", error);
-            console.error("Event data:", event);
+            console.error("Event data:", JSON.stringify(event));
         }
     }
 

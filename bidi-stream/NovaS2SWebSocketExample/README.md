@@ -1,0 +1,121 @@
+# Nova S2S WebSocket Example: Real-time Audio Streaming with AWS Bedrock Integration
+
+This project implements a bidirectional WebSocket-based audio streaming application that integrates with AWS Bedrock's Nova Speech to Speech model for real-time speech-to-speech conversion. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful Speech to Speech model for processing and generating responses.
+
+The system consists of a Java-based WebSocket server that handles the core communication and AWS Bedrock integration, paired with a modern web client that manages audio streaming and user interactions. Key features include real-time audio streaming, integration with AWS Bedrock Nova Speech to Speech model, bidirectional communication handling, and a responsive web interface with chat history management. The application implements the Observer pattern for handling events and provides comprehensive error handling and logging capabilities.
+
+## Repository Structure
+```
+NovaS2SWebSocketExample/
+├── app/                          # Core Java application
+│   ├── src/
+│   │   ├── main/java/org/example/
+│   │   │   ├── BedrockInitiateClient.java    # Main entry point
+│   │   │   ├── utility/                      # Core business logic
+│   │   │   └── websocket/                    # WebSocket implementation
+│   │   └── resources/
+│   │       └── log4j2.xml                    # Logging configuration
+├── ui-stream/                    # Web client implementation
+│   ├── src/
+│   │   ├── lib/
+│   │   │   ├── play/                         # Audio playback handling
+│   │   │   └── util/                         # Client utilities
+│   │   └── main.js                           # Client entry point
+└── docs/                         # Infrastructure documentation
+```
+
+## Usage Instructions
+
+### Prerequisites
+- Java 17 or higher
+- Node.js 14+ and npm/yarn for UI development
+- AWS account with Bedrock access
+- AWS credentials configured locally
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd NovaS2SWebSocketExample
+```
+
+2. Build and run the Java application:
+```bash
+gradle build
+gradle run
+```
+
+3. Install UI dependencies:
+```bash
+cd ui-stream
+npm install
+```
+
+### Quick Start
+
+1. Start the UI development server:
+```bash
+cd ui-stream
+npm run dev
+```
+
+2. Open your browser and navigate to `http://localhost:5173`
+
+### Troubleshooting
+
+#### WebSocket Connection Issues
+- Error: "Connection refused"
+  1. Verify the server is running: `ps aux | grep BedrockInitiateClient`
+  2. Check server logs: `tail -f app/build/logs/application.log`
+  3. Ensure port 8081 is available: `netstat -an | grep 8081`
+
+#### AWS Credentials Issues
+- Error: "Unable to load AWS credentials"
+  1. Verify AWS credentials file: `cat ~/.aws/credentials`
+  2. Check environment variables: `echo $AWS_ACCESS_KEY_ID`
+  3. Ensure AWS CLI is configured: `aws configure list`
+
+#### Audio Streaming Issues
+- Enable debug logging by modifying `log4j2.xml`:
+```xml
+<Root level="debug">
+    <AppenderRef ref="Console"/>
+</Root>
+```
+
+## Data Flow
+
+The application implements a bidirectional streaming architecture with the following flow:
+
+```ascii
+User Speech -> Browser → WebSocket → Java Backend 
+     ↑                                     ↓
+     │                         AWS Bedrock Nova S2S Model
+     │                                     ↓
+Audio Output ← Browser ← WebSocket ← Java Backend
+```
+
+
+Key flow components:
+1. User speaks into the microphone through Browser
+2. Audio is streamed through WebSocket to Java backend
+3. Backend sends audio to AWS Bedrock Nova S2S Model
+4. Nova S2S processes audio and generates AI response
+5. Response is sent back through backend to browser
+6. Browser plays audio response to user
+
+## Infrastructure
+
+```ascii
+[Browser Client]
+      ↕
+[WebSocket Server]
+      ↕
+[AWS Bedrock Nova Speech-to-Speech Model]
+```
+
+### WebSocket Components
+- WebSocketServer: Main server component (port 8081)
+- InteractWebSocket: WebSocket endpoint implementation
+- NovaS2SBedrockInteractClient: AWS Bedrock client integration

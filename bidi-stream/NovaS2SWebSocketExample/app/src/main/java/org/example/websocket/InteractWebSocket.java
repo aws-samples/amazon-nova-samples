@@ -16,7 +16,6 @@ public class InteractWebSocket implements WebSocketListener {
 
     private final NovaS2SBedrockInteractClient interactClient;
     private final NovaReasoningModel novaReasoningModel;
-    /*private final JsonFormat.Parser jsonParser;*/
     private AtomicBoolean expectedInitialRequest = new AtomicBoolean(true);
     private Session session;
     private InteractObserver<String> inputObserver;

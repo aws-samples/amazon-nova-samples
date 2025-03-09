@@ -9,8 +9,6 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    id("org.springframework.boot") version "3.2.0"
-    id("io.spring.dependency-management") version "1.1.4"
 }
 
 
@@ -24,11 +22,13 @@ repositories {
 dependencies {
     implementation(files("libs/aws-sdk-java-bundle-2.30.5-SNAPSHOT.jar"))
     implementation("org.slf4j:slf4j-api:2.0.9")
-    implementation("ch.qos.logback:logback-classic:1.4.11")
     implementation("org.json:json:20230227")
     implementation("io.reactivex.rxjava3:rxjava:3.1.8")
     implementation("io.projectreactor:reactor-core:3.6.2")
-
+    implementation("org.apache.logging.log4j:log4j-api:2.20.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.20.0")
+    implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.20.0")
+    implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.20.0")
     implementation("org.eclipse.jetty:jetty-server:11.0.18")
     implementation("org.eclipse.jetty:jetty-servlet:11.0.18")
     implementation("org.eclipse.jetty:jetty-webapp:11.0.18")
@@ -49,8 +49,6 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.2")
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.2")
-    implementation("org.springframework.boot:spring-boot-starter-websocket")
-    implementation("org.springframework.boot:spring-boot-starter-web")
     compileOnly("org.projectlombok:lombok:1.18.30") // Use the latest version
     annotationProcessor("org.projectlombok:lombok:1.18.30")
 
