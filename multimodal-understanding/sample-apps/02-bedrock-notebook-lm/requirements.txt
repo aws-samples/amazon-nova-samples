@@ -43,7 +43,7 @@ jmespath==1.0.1
 jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
 kiwisolver==1.4.7
-litellm==1.48.6
+litellm==1.53.1.dev1
 loguru==0.7.0
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
