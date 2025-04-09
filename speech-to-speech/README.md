@@ -1,4 +1,4 @@
-# Amazon Nova Sonic Spoeech-to-Speech Model Samples 
+# Amazon Nova Sonic Speech-to-Speech Model Samples 
 
 The Amazon Nova Sonic model provides real-time, conversational interactions through bidirectional audio streaming. Amazon Nova Sonic processes and responds to real-time speech as it occurs, enabling natural, human-like conversational experiences.
 
