@@ -36,6 +36,28 @@ export const WeatherToolSchema = JSON.stringify({
   "required": ["latitude", "longitude"]
 });
 
+export const searchToolSchema = JSON.stringify({
+  "type": "object",
+  "properties": {
+      "search": {
+          "type": "string",
+          "description": "The search phrase to perform the search with"
+      }
+  },
+  "required": ["search"]
+});
+
+export const fetchWebPageSchema = JSON.stringify({
+  "type": "object",
+  "properties": {
+      "url": {
+          "type": "string",
+          "description": "Fetches the contents of a web page based on a url"
+      }
+  },
+  "required": ["url"]
+});
+
 export const DefaultTextConfiguration = { mediaType: "text/plain" as TextMediaType };
 
 export const DefaultSystemPrompt = "You are a friend. The user and you will engage in a spoken " +
