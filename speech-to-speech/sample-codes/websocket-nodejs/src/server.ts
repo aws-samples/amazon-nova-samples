@@ -9,6 +9,13 @@ import { Buffer } from 'node:buffer';
 // Configure AWS credentials
 const AWS_PROFILE_NAME = process.env.AWS_PROFILE || 'bedrock-test';
 
+console.log('GOOGLE_API_KEY exists:', !!process.env.GOOGLE_API_KEY);
+console.log('GOOGLE_SEARCH_ENGINE_ID exists:', !!process.env.GOOGLE_SEARCH_ENGINE_ID);
+
+if (!process.env.GOOGLE_API_KEY || !process.env.GOOGLE_SEARCH_ENGINE_ID) {
+  console.error('Missing required search engine id environment variables so search will not be added as a tool');
+}
+
 // Create Express app and HTTP server
 const app = express();
 const server = http.createServer(app);
@@ -79,7 +86,7 @@ io.on('connection', (socket) => {
         });
 
         session.onEvent('audioOutput', (data) => {
-            console.log('Audio output received, sending to client');
+            // console.log('Audio output received, sending to client');
             socket.emit('audioOutput', data);
         });
 

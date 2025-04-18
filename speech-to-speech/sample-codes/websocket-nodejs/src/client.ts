@@ -6,6 +6,7 @@ import {
 } from "@aws-sdk/client-bedrock-runtime";
 import axios from 'axios';
 import https from 'https';
+import * as cheerio from 'cheerio';
 import {
   NodeHttp2Handler,
   NodeHttp2HandlerOptions,
@@ -23,6 +24,8 @@ import {
   DefaultSystemPrompt,
   DefaultTextConfiguration,
   DefaultToolSchema,
+  searchToolSchema,
+  fetchWebPageSchema,
   WeatherToolSchema
 } from "./consts";
 
@@ -265,6 +268,24 @@ export class NovaSonicBidirectionalStreamClient {
           throw new Error('parsedContent is undefined');
         }
         return this.fetchWeatherData(parsedContent?.latitude, parsedContent?.longitude);
+      case "getsearchtool":
+        console.log(`search tool`)
+        console.log('toolUseContent:', toolUseContent)
+        const parsedSearch = await this.parseToolUseContentForSearch(toolUseContent);
+        console.log("parsed content")
+        if (!parsedSearch) {
+          throw new Error('parsedContent is undefined');
+        }
+        return this.fetchSearch(parsedSearch?.search);
+      case "fetchwebpagetool":
+        console.log(`fetch webpage tool`)
+        console.log('toolUseContent:', toolUseContent)
+        const parsedWebPage = await this.parseToolUseContentForFetchWebPage(toolUseContent);
+        console.log("parsed content")
+        if (!parsedWebPage) {
+          throw new Error('parsedWebPage is undefined');
+        }
+        return this.fetchWebPage(parsedWebPage?.url);
       default:
         console.log(`Tool ${tool} not supported`)
         throw new Error(`Tool ${tool} not supported`);
@@ -291,6 +312,43 @@ export class NovaSonicBidirectionalStreamClient {
     }
   }
 
+  private async parseToolUseContentForSearch(toolUseContent: any): Promise<{ search: string } | null> {
+    try {
+      // Check if the content field exists and is a string
+      if (toolUseContent && typeof toolUseContent.content === 'string') {
+        // Parse the JSON string into an object
+        const parsedContent = JSON.parse(toolUseContent.content);
+        console.log('Parsed content:', JSON.stringify(parsedContent, null, 2));
+        // Return the parsed content
+        return {
+          search: parsedContent.search
+        };
+      }
+      return null;
+    } catch (error) {
+      console.error("Failed to parse tool use content:", error);
+      return null;
+    }
+  }
+
+  private async parseToolUseContentForFetchWebPage(toolUseContent: any): Promise<{ url: string } | null> {
+    try {
+      // Check if the content field exists and is a string
+      if (toolUseContent && typeof toolUseContent.content === 'string') {
+        // Parse the JSON string into an object
+        const parsedContent = JSON.parse(toolUseContent.content);
+        console.log('Parsed content:', JSON.stringify(parsedContent, null, 2));
+        // Return the parsed content
+        return {
+          url: parsedContent.url
+        };
+      }
+      return null;
+    } catch (error) {
+      console.error("Failed to parse tool use content:", error);
+      return null;
+    }
+  }
 
   private async fetchWeatherData(
     latitude: number,
@@ -323,6 +381,88 @@ export class NovaSonicBidirectionalStreamClient {
       throw error;
     }
   }
+
+  private async fetchSearch(
+    search: string
+  ): Promise<Record<string, any>> {
+    const ipv4Agent = new https.Agent({ family: 4 });
+    const API_KEY = process.env.GOOGLE_API_KEY || '';
+    const SEARCH_ENGINE_ID = process.env.GOOGLE_SEARCH_ENGINE_ID || '';
+    // Check for missing or empty credentials
+    if (!API_KEY || API_KEY.trim() === '') {
+      throw new Error('Google API Key is missing or empty. Please set GOOGLE_API_KEY environment variable.');
+    }
+
+    if (!SEARCH_ENGINE_ID || SEARCH_ENGINE_ID.trim() === '') {
+        throw new Error('Search Engine ID is missing or empty. Please set GOOGLE_SEARCH_ENGINE_ID environment variable.');
+    }
+    const searchUrl = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_ENGINE_ID}&q=${search}`
+
+    try {
+      const response = await axios.get(searchUrl, {
+        httpsAgent: ipv4Agent,
+        timeout: 5000,
+        headers: {
+          'User-Agent': 'MyApp/1.0',
+          'Accept': 'application/json'
+        }
+      });
+
+      const searchData = response.data;
+      console.log("searchData:", searchData);
+
+      return {
+        search_data: searchData
+      };
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error(`Error fetching search data: ${error.message}`, error);
+      } else {
+        console.error(`Unexpected error: ${error instanceof Error ? error.message : String(error)} `, error);
+      }
+      throw error;
+    }
+  }
+
+  private async fetchWebPage(
+    url: string
+  ): Promise<Record<string, any>> {
+    const ipv4Agent = new https.Agent({ family: 4 });
+
+    try {
+      const response = await axios.get(url, {
+        httpsAgent: ipv4Agent,
+        timeout: 5000,
+        headers: {
+          'User-Agent': 'MyApp/1.0',
+          'Accept': 'application/json'
+        }
+      });
+      const webPageData = response.data;
+      const cheerioInstance = cheerio.load(webPageData);
+      // Remove scripts, styles, and other non-content elements
+      cheerioInstance('script, style, link, meta, iframe').remove();
+
+      // Get text content and normalize whitespace
+      const clearWebPageData = cheerioInstance('body')
+        .text()
+        .replace(/\s+/g, ' ')
+        .trim();
+      console.log("webPageData:", clearWebPageData);
+
+      return {
+        web_page_data: clearWebPageData
+      };
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error(`Error fetching web page data: ${error.message}`, error);
+      } else {
+        console.error(`Unexpected error: ${error instanceof Error ? error.message : String(error)} `, error);
+      }
+      throw error;
+    }
+  }
+
 
   // Stream audio for a specific session
   public async initiateSession(sessionId: string): Promise<void> {
@@ -624,6 +764,51 @@ export class NovaSonicBidirectionalStreamClient {
     console.log(`Setting up prompt start event for session ${sessionId}...`);
     const session = this.activeSessions.get(sessionId);
     if (!session) return;
+
+    const tools = [{
+      toolSpec: {
+        name: "getDateAndTimeTool",
+        description: "Get information about the current date and time.",
+        inputSchema: {
+          json: DefaultToolSchema
+        }
+      }
+    },
+    {
+      toolSpec: {
+        name: "getWeatherTool",
+        description: "Get the current weather for a given location, based on its WGS84 coordinates.",
+        inputSchema: {
+          json: WeatherToolSchema
+        }
+      }
+    },
+    {
+      toolSpec: {
+        name: "fetchWebPageTool",
+        description: "Get the contents of a web page based on a given url",
+        inputSchema: {
+          json: fetchWebPageSchema
+        }
+      }
+    }];
+
+    // Only add search tool if required environment variables are present
+    if (process.env.GOOGLE_API_KEY && process.env.GOOGLE_SEARCH_ENGINE_ID) {
+      console.log("Adding search tool to session.")
+      tools.push({
+        toolSpec: {
+          name: "getSearchTool",
+          description: "The search phrase to perform the search with",
+          inputSchema: {
+            json: searchToolSchema
+          }
+        }
+      });
+    } else {
+      console.log("Search tool not added due to missing environment variables.");
+    }
+
     // Prompt start event
     this.addEventToSessionQueue(sessionId, {
       event: {
@@ -637,25 +822,7 @@ export class NovaSonicBidirectionalStreamClient {
             mediaType: "application/json",
           },
           toolConfiguration: {
-            tools: [{
-              toolSpec: {
-                name: "getDateAndTimeTool",
-                description: "Get information about the current date and time.",
-                inputSchema: {
-                  json: DefaultToolSchema
-                }
-              }
-            },
-            {
-              toolSpec: {
-                name: "getWeatherTool",
-                description: "Get the current weather for a given location, based on its WGS84 coordinates.",
-                inputSchema: {
-                  json: WeatherToolSchema
-                }
-              }
-            }
-            ]
+            tools
           },
         },
       }
