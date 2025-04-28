@@ -2,7 +2,7 @@
   "schemaVersion": "bedrock-conversation-2024",
   "system": [
     {
-      "text": "You are good at tasks requiring mathematical reasoning and natural language understanding. Start your response with a correct answer, and provide the rationale behind your answer"
+      "text": "You are good at tasks requiring mathematical reasoning and natural language understanding. Start your response with a correct answer, and provide the rationale behind your answer. Don't assume this is multi-choice question."
     }
   ],
   "messages": [
