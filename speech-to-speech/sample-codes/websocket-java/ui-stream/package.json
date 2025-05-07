@@ -9,6 +9,6 @@
     "preview": "node_modules/.bin/vite preview"
   },
   "devDependencies": {
-    "vite": "6.1.0"
+    "vite": "6.2.5"
   }
 }
