@@ -13,6 +13,17 @@ This project demonstrates how to build an intelligent conversational health assi
 
 By using this application, you acknowledge that you understand these limitations.
 
+## Application Interface
+
+![Health Guide Assistant UI](images/ui.png)
+
+The application features a modern, intuitive interface with:
+- **Real-time chat interface** with speech-to-text capabilities
+- **Agent Actions panel** showing AI tool usage and analytics
+- **Audio controls** for seamless voice interaction
+- **Live conversation monitoring** with turn-by-turn analysis
+- **Safety metrics** tracking emergency and off-topic redirects
+
 ## Key Features
 
 - **AI Agentic Architecture**: Intelligent tool selection and orchestration using Amazon Nova Sonic's advanced reasoning capabilities
@@ -159,7 +170,7 @@ Before running the application, you must create a Knowledge Base in Amazon Bedro
    - Select "Upload files" as your data source using S3
    - Upload health information documents to your knowledge base
    - Configure chunking settings with semantic chunking
-   - **Important**: Ensure all documents are from reputable health sources
+   - Select all files available on kb/files directory, which include a few markdown and metadata files (JSON)
 
 4. **Complete Setup**:
    - Review your settings and create the knowledge base
@@ -212,20 +223,24 @@ npm start
 ```
 
 ### Access the Application
-1. Open your browser to: `http://localhost:3000`
+1. Open your browser to: `http://localhost:4000`
 
-2. **For EC2 deployment**, create an SSH tunnel:
+2. **For EC2 deployment**, you may want to create an SSH tunnel before opening your browser so you dont need to expose your app to the internet:
 ```bash
-ssh -i /your/key.pem -L 3000:localhost:3000 ec2-user@your-ec2-ip
+ssh -i /your/key.pem -L 4000:localhost:4000 ec2-user@your-ec2-ip
 ```
+
+Note: If you are using EC2, make sure SSH is allowed to your workstation.
 
 3. Grant microphone permissions when prompted
 
 4. Start asking health-related questions to see the Knowledge Base in action:
    - "What are the symptoms of the common cold?"
-   - "Tell me about healthy eating habits"
-   - "What is the recommended amount of daily exercise?"
-   - "How can I improve my sleep quality?"
+
+5. Test other tools:
+   - "I would like to schedule an appointment"
+
+6. Check the "Agent Actions" panel for more details about the AI Agent tools and logs
 
 ## Safety Features
 
