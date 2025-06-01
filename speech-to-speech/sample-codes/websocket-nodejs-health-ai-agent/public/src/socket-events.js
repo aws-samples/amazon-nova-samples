@@ -1,4 +1,4 @@
-// socket-events.js
+// src/socket-events.js
 // Handles all socket.io events
 
 import audioHandler from './audio-handler.js';
@@ -61,9 +61,9 @@ export function initializeSocketEvents(io, config) {
 
   // Handle errors
   socket.on('error', (error) => {
-    console.error("Server error:", error);
-    statusElement.textContent = "Error: " + (error.message || JSON.stringify(error).substring(0, 100));
-    statusElement.className = "error";
+    console.error('Server error:', error);
+    statusElement.textContent = 'Error: ' + (error.message || JSON.stringify(error).substring(0, 100));
+    statusElement.className = 'error';
     hideUserThinkingIndicator();
     hideAssistantThinkingIndicator();
     updateAgentStatusUI('error', 'Error');
@@ -78,8 +78,7 @@ export function initializeSocketEvents(io, config) {
       role = data.role;
       if (data.role === 'USER') {
         hideUserThinkingIndicator();
-      }
-      else if (data.role === 'ASSISTANT') {
+      } else if (data.role === 'ASSISTANT') {
         hideAssistantThinkingIndicator();
         // Start tracking response time
         responseStartTime = Date.now();
@@ -88,21 +87,14 @@ export function initializeSocketEvents(io, config) {
         try {
           if (data.additionalModelFields) {
             const additionalFields = JSON.parse(data.additionalModelFields);
-            isSpeculative = additionalFields.generationStage === "SPECULATIVE";
-            if (isSpeculative) {
-              console.log("Received speculative content");
-              displayAssistantText = true;
-            }
-            else {
-              displayAssistantText = false;
-            }
+            isSpeculative = additionalFields.generationStage === 'SPECULATIVE';
+            displayAssistantText = isSpeculative;
           }
         } catch (e) {
-          console.error("Error parsing additionalModelFields:", e);
+          console.error('Error parsing additionalModelFields:', e);
         }
       }
-    }
-    else if (data.type === 'AUDIO') {
+    } else if (data.type === 'AUDIO') {
       if (audioHandler.isStreaming) {
         showUserThinkingIndicator();
       }
@@ -129,8 +121,7 @@ export function initializeSocketEvents(io, config) {
       // Show assistant thinking indicator after user text appears
       showAssistantThinkingIndicator();
       updateAgentStatusUI('thinking', 'Thinking');
-    }
-    else if (role === 'ASSISTANT') {
+    } else if (role === 'ASSISTANT') {
       if (displayAssistantText) {
         handleTextOutput({
           role: data.role,
@@ -151,7 +142,7 @@ export function initializeSocketEvents(io, config) {
         toolContent = JSON.parse(data.content);
       } catch (e) {
         console.warn('Could not parse tool content as JSON:', data.content);
-        toolContent = { query: "Unknown query" };
+        toolContent = { query: 'Unknown query' };
       }
       
       currentToolUseId = data.toolUseId;
@@ -159,54 +150,55 @@ export function initializeSocketEvents(io, config) {
       // Handle different tool types based on their actual names
       const toolName = data.toolName.toLowerCase();
       
-      switch(toolName) {
-        case "retrieve_health_info":
+      switch (toolName) {
+        case 'retrieve_health_info':
           incrementSearchCount();
           
           // Add to agent actions
-          addAgentAction('search', 'Searching Knowledge Base', 
-            `Query: "${toolContent.query || 'health information'}"`, 
+          addAgentAction(
+            'search',
+            'Searching Knowledge Base',
+            `Query: "${toolContent.query || 'health information'}"`,
             { toolUseId: data.toolUseId }
           );
           
           updateAgentStatusUI('searching', 'Searching Knowledge Base');
           break;
-          
-        case "greeting":
-          // Add greeting action
-          addAgentAction('system', 'Greeting User', 
-            `Type: ${toolContent.greeting_type || "standard"}${toolContent.user_name ? ', User: ' + toolContent.user_name : ''}`, 
+        
+        case 'greeting':
+          addAgentAction(
+            'system',
+            'Greeting User',
+            `Type: ${toolContent.greeting_type || 'standard'}${toolContent.user_name ? ', User: ' + toolContent.user_name : ''}`,
             { toolUseId: data.toolUseId }
           );
           
           updateAgentStatusUI('responding', 'Greeting');
           break;
-          
-        case "safety_response":
-          // Add safety response action
-          addAgentAction('error', 'Safety Response Triggered', 
-            `Topic: "${toolContent.topic || 'Unknown topic'}", Type: ${toolContent.request_type || 'Unknown type'}`, 
+        
+        case 'safety_response':
+          addAgentAction(
+            'error',
+            'Safety Response Triggered',
+            `Topic: "${toolContent.topic || 'Unknown topic'}", Type: ${toolContent.request_type || 'Unknown type'}`,
             { toolUseId: data.toolUseId }
           );
           
           updateAgentStatusUI('responding', 'Safety Response');
           break;
-          
+        
         default:
-          // Log the exact tool name for debugging
           console.warn(`Unknown tool name: "${data.toolName}"`);
-          
-          // Generic handling for unknown tools
-          addAgentAction('system', `Tool: ${data.toolName}`, 
-            `Processing request...`, 
+          addAgentAction(
+            'system',
+            `Tool: ${data.toolName}`,
+            'Processing request...',
             { toolUseId: data.toolUseId }
           );
-          
           updateAgentStatusUI('processing', 'Processing');
       }
       
       updateInsights();
-      
     } catch (error) {
       console.error('Error parsing tool use data:', error);
       addAgentAction('error', 'Tool Use Error', 'Failed to parse tool data');
@@ -218,58 +210,70 @@ export function initializeSocketEvents(io, config) {
     console.log('Tool result received:', data);
     
     try {
-      // Find the action that this result belongs to
       const action = document.querySelector(`.action-item[data-tool-use-id="${data.toolUseId}"]`);
       if (!action) return;
       
       if (action.classList.contains('error-action')) {
         // This is a safety response
         if (data.result && data.result.response) {
-          // Update the title to be more specific about the type of off-topic request
           if (data.result.request_details) {
-            let requestType = data.result.request_details.type || "";
-            let category = data.result.request_details.category || "";
+            const requestType = data.result.request_details.type || '';
+            const category = data.result.request_details.category || '';
             
-            // Create a more descriptive title
-            let titleEl = action.querySelector('.action-title');
+            // Update the title text safely
+            const titleEl = action.querySelector('.action-title');
             if (titleEl) {
-              if (requestType === "off_topic" || requestType === "non_health") {
+              if (requestType === 'off_topic' || requestType === 'non_health') {
                 titleEl.textContent = `Off-Topic Request: ${category}`;
-                // Change the icon for off-topic
-                let iconEl = action.querySelector('.action-icon');
+                const iconEl = action.querySelector('.action-icon');
                 if (iconEl) iconEl.textContent = '🚫';
                 incrementOffTopicCount();
-              } else if (requestType === "emergency") {
-                titleEl.textContent = `Emergency Guidance Required`;
-                // Change icon for emergency
-                let iconEl = action.querySelector('.action-icon');
+              } else if (requestType === 'emergency') {
+                titleEl.textContent = 'Emergency Guidance Required';
+                const iconEl = action.querySelector('.action-icon');
                 if (iconEl) iconEl.textContent = '🚨';
                 incrementEmergencyCount();
-              } else if (requestType === "medical_advice" || requestType === "diagnosis" || requestType === "treatment") {
-                titleEl.textContent = `Medical Advice Boundary`;
-                // Change icon for medical advice
-                let iconEl = action.querySelector('.action-icon');
+              } else if (
+                requestType === 'medical_advice' ||
+                requestType === 'diagnosis' ||
+                requestType === 'treatment'
+              ) {
+                titleEl.textContent = 'Medical Advice Boundary';
+                const iconEl = action.querySelector('.action-icon');
                 if (iconEl) iconEl.textContent = '⚕️';
                 incrementMedicalAdviceCount();
               }
             }
           }
           
+          // Build alternatives element with textContent to avoid innerHTML
           const alternatives = document.createElement('div');
           alternatives.className = 'alternative-suggestions';
-          alternatives.innerHTML = `<div class="alternative-title">Alternative:</div><p>${data.result.alternative_suggestion || ''}</p>`;
+
+          const altTitle = document.createElement('div');
+          altTitle.className = 'alternative-title';
+          altTitle.textContent = 'Alternative:';
+          alternatives.appendChild(altTitle);
+
+          const altPara = document.createElement('p');
+          altPara.textContent = data.result.alternative_suggestion || '';
+          alternatives.appendChild(altPara);
           
           // Append to the action
           action.appendChild(alternatives);
           
           // Add appropriate topics if available
-          if (data.result.appropriate_topics && Array.isArray(data.result.appropriate_topics)) {
+          if (Array.isArray(data.result.appropriate_topics)) {
             const topicsDiv = document.createElement('div');
             topicsDiv.className = 'appropriate-topics';
-            topicsDiv.innerHTML = '<div class="topics-title">I can help with:</div>';
+
+            const topicsTitle = document.createElement('div');
+            topicsTitle.className = 'topics-title';
+            topicsTitle.textContent = 'I can help with:';
+            topicsDiv.appendChild(topicsTitle);
             
             const list = document.createElement('ul');
-            data.result.appropriate_topics.forEach(topic => {
+            data.result.appropriate_topics.forEach((topic) => {
               const item = document.createElement('li');
               item.textContent = topic;
               list.appendChild(item);
@@ -278,21 +282,19 @@ export function initializeSocketEvents(io, config) {
             action.appendChild(topicsDiv);
           }
           
-          // Add special styling for off-topic requests
-          if (data.result.request_details && 
-            (data.result.request_details.type === "off_topic" || 
-              data.result.request_details.type === "non_health")) {
+          // Styling based on request type
+          if (
+            data.result.request_details &&
+            (data.result.request_details.type === 'off_topic' || data.result.request_details.type === 'non_health')
+          ) {
             action.classList.add('off-topic-action');
-          }
-          // Add special styling for emergency requests
-          else if (data.result.request_details && data.result.request_details.type === "emergency") {
+          } else if (data.result.request_details && data.result.request_details.type === 'emergency') {
             action.classList.add('emergency-action');
           }
         }
       }
       
       updateAgentStatusUI('thinking', 'Formulating Response');
-      
     } catch (error) {
       console.error('Error handling tool result:', error);
       addAgentAction('error', 'Result Processing Error', error.message || 'Unknown error');
@@ -314,14 +316,10 @@ export function initializeSocketEvents(io, config) {
       if (role === 'USER') {
         hideUserThinkingIndicator();
         showAssistantThinkingIndicator();
-      }
-      else if (role === 'ASSISTANT') {
-        // When assistant's text content ends, calculate response time
+      } else if (role === 'ASSISTANT') {
         if (responseStartTime > 0) {
           lastResponseTime = (Date.now() - responseStartTime) / 1000;
           responseStartTime = 0;
-          
-          // Increment conversation turn counter
           incrementConversationTurns();
         }
         
@@ -333,11 +331,10 @@ export function initializeSocketEvents(io, config) {
       if (data.stopReason && data.stopReason.toUpperCase() === 'END_TURN') {
         ChatHistoryManager.getInstance().endTurn();
       } else if (data.stopReason && data.stopReason.toUpperCase() === 'INTERRUPTED') {
-        console.log("Interrupted by user");
+        console.log('Interrupted by user');
         audioHandler.audioPlayer.bargeIn();
       }
-    }
-    else if (data.type === 'AUDIO') {
+    } else if (data.type === 'AUDIO') {
       if (audioHandler.isStreaming) {
         showUserThinkingIndicator();
       }
@@ -351,8 +348,8 @@ export function initializeSocketEvents(io, config) {
     if (audioHandler.isStreaming) {
       audioHandler.stopStreaming();
     }
-    statusElement.textContent = "Ready";
-    statusElement.className = "ready";
+    statusElement.textContent = 'Ready';
+    statusElement.className = 'ready';
     updateAgentStatusUI('idle', 'Idle');
     addAgentAction('system', 'Conversation Turn Complete', 'Ready for next input');
   });
