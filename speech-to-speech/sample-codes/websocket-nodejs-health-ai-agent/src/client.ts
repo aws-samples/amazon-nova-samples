@@ -511,7 +511,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       await this.processResponseStream(sessionId, response);
 
     } catch (error) {
-      console.error(`Error in session ${sessionId}: `, error);
+      console.error('Error in session %s:', sessionId, error);
       this.dispatchEventForSession(sessionId, 'error', {
         source: 'bidirectionalStream',
         error
@@ -534,7 +534,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       try {
         handler(data);
       } catch (e) {
-        console.error(`Error in ${eventType} handler for session ${sessionId}: `, e);
+        console.error('Error in %s handler for session %s:', eventType, sessionId, e);
       }
     }
 
@@ -544,7 +544,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       try {
         anyHandler({ type: eventType, data });
       } catch (e) {
-        console.error(`Error in 'any' handler for session ${sessionId}: `, e);
+        console.error("Error in 'any' handler for session %s:", sessionId, e);
       }
     }
   }
@@ -708,7 +708,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
               else {
                 // Handle other events
                 const eventKeys = Object.keys(jsonResponse.event || {});
-                console.log(`Event keys for session ${sessionId}: `, eventKeys)
+                console.log('Event keys for session %s:', sessionId, eventKeys);
                 console.log(`Handling other events`)
                 if (eventKeys.length > 0) {
                   this.dispatchEvent(sessionId, eventKeys[0], jsonResponse.event);
@@ -717,19 +717,19 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
                 }
               }
             } catch (e) {
-              console.log(`Raw text response for session ${sessionId}(parse error): `, textResponse);
+              console.log('Raw text response for session %s (parse error):', sessionId, textResponse);
             }
           } catch (e) {
-            console.error(`Error processing response chunk for session ${sessionId}: `, e);
+            console.error('Error processing response chunk for session %s:', sessionId, e);
           }
         } else if (event.modelStreamErrorException) {
-          console.error(`Model stream error for session ${sessionId}: `, event.modelStreamErrorException);
+          console.error('Model stream error for session %s:', sessionId, event.modelStreamErrorException);
           this.dispatchEvent(sessionId, 'error', {
             type: 'modelStreamErrorException',
             details: event.modelStreamErrorException
           });
         } else if (event.internalServerException) {
-          console.error(`Internal server error for session ${sessionId}: `, event.internalServerException);
+          console.error('Internal server error for session %s:', sessionId, event.internalServerException);
           this.dispatchEvent(sessionId, 'error', {
             type: 'internalServerException',
             details: event.internalServerException
@@ -743,7 +743,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       });
 
     } catch (error) {
-      console.error(`Error processing response stream for session ${sessionId}: `, error);
+      console.error('Error processing response stream for session %s:', sessionId, error);
       this.dispatchEvent(sessionId, 'error', {
         source: 'responseStream',
         message: 'Error processing response stream',
@@ -1099,7 +1099,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       try {
         handler(data);
       } catch (e) {
-        console.error(`Error in ${eventType} handler for session ${sessionId}:`, e);
+        console.error('Error in %s handler for session %s:', eventType, sessionId, e);
       }
     }
 
@@ -1109,7 +1109,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       try {
         anyHandler({ type: eventType, data });
       } catch (e) {
-        console.error(`Error in 'any' handler for session ${sessionId}:`, e);
+        console.error("Error in 'any' handler for session %s:", sessionId, e);
       }
     }
   }
@@ -1127,7 +1127,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
       await this.sendSessionEnd(sessionId);
       console.log(`Session ${sessionId} cleanup complete`);
     } catch (error) {
-      console.error(`Error during closing sequence for session ${sessionId}:`, error);
+      console.error('Error during closing sequence for session %s:', sessionId, error);
 
       // Ensure cleanup happens even if there's an error
       const session = this.activeSessions.get(sessionId);
