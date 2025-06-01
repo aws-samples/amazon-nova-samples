@@ -41,7 +41,7 @@ setInterval(() => {
             try {
                 bedrockClient.forceCloseSession(sessionId);
             } catch (error) {
-                console.error(`Error force closing inactive session ${sessionId}:`, error);
+                console.error('Error force closing inactive session %s:', sessionId, error);
             }
         }
     });
@@ -210,12 +210,12 @@ io.on('connection', (socket) => {
                     await cleanupPromise;
                     console.log(`Successfully cleaned up session after abrupt disconnect: ${socket.id}`);
                 } catch (error) {
-                    console.error(`Error cleaning up session after disconnect: ${socket.id}`, error);
+                   console.error('Error cleaning up session after disconnect: %s', socket.id, error);
                     try {
                         bedrockClient.forceCloseSession(sessionId);
                         console.log(`Force closed session: ${sessionId}`);
                     } catch (e) {
-                        console.error(`Failed even force close for session: ${sessionId}`, e);
+                        console.error('Failed even force close for session: %s', sessionId, e);
                     }
                 } finally {
                     // Make sure socket is fully closed in all cases
@@ -270,7 +270,7 @@ process.on('SIGINT', async () => {
                 await bedrockClient.closeSession(sessionId);
                 console.log(`Closed session ${sessionId} during shutdown`);
             } catch (error) {
-                console.error(`Error closing session ${sessionId} during shutdown:`, error);
+                console.error('Error closing session %s during shutdown:', sessionId, error);
                 bedrockClient.forceCloseSession(sessionId);
             }
         }));
