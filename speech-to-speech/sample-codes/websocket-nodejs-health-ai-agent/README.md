@@ -438,14 +438,14 @@ User Health Question → Browser → Server → AI Agent → Tool Selection & Or
 
 ## Contributing
 
-When contributing to this AI agent-powered health application:
+We welcome community contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-1. **Tool Development**: Follow the tool schema patterns when adding new capabilities
-2. **Agent Behavior**: Test tool selection logic thoroughly with various user intents
-3. **Health Information**: Ensure all health information comes from reputable sources
-4. **Safety Boundaries**: Maintain appropriate safety boundaries and disclaimers
-5. **Tool Orchestration**: Test multi-step workflows and tool chaining scenarios
-6. **Code Structure**: Follow the existing TypeScript backend, JavaScript frontend pattern
-7. **AI Agent Testing**: Verify the agent's reasoning and tool selection with edge cases
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file.
 
 **This project is for educational purposes. Please ensure compliance with healthcare regulations in your jurisdiction before any production use.**
