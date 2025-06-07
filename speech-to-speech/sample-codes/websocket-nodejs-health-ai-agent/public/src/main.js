@@ -1,4 +1,4 @@
-// main.js
+// src/main.js
 // Main application entry point
 
 import audioHandler from './audio-handler.js';

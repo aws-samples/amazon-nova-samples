@@ -1,4 +1,4 @@
-// AppointmentDatabase.js
+// src/AppointmentDatabase.js
 // A simple in-memory database for doctors and appointments
 
 class AppointmentDatabase {

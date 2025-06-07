@@ -1,4 +1,4 @@
-// audio-handler.js
+// src/audio-handler.js
 // Handles all audio-related functionality
 
 import { AudioPlayer } from './lib/play/AudioPlayer.js';

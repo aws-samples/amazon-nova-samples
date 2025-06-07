@@ -1,4 +1,4 @@
-// chat-ui.js
+// src/chat-ui.js
 // Manages the chat interface and UI components
 
 import { ChatHistoryManager } from "./lib/util/ChatHistoryManager.js";

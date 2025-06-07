@@ -1,4 +1,4 @@
-// ui-manager.js
+// src/ui-manager.js
 // Centralized UI management and event handling
 
 export class UIManager {
