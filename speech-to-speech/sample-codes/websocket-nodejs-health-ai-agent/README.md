@@ -1,17 +1,66 @@
-# Health Guide Assistant: Amazon Nova Sonic with Bedrock Knowledge Base
+# Health Guide Assistant: Amazon Nova Sonic with Amazon Bedrock Knowledge Base
 
 This project demonstrates how to build an intelligent conversational health assistant by integrating Amazon Nova Sonic model with Amazon Bedrock Knowledge Base. The application enables natural speech-to-speech interactions while leveraging a health knowledge base to provide informational responses about health topics.
 
-## ⚠️ Important Health Disclaimer
+## Solution Design
+
+![Architecture](images/solution_design.png)
+
+### Architecture Overview
+
+This application implements a real-time speech-to-speech health assistant using a WebSocket-based architecture that enables bidirectional audio streaming between the browser and the Amazon Nova Sonic model.
+
+### Key Architectural Components
+
+1. **Frontend (Browser)**
+   - WebAudio API for audio capture and playback
+   - Socket.IO client for real-time WebSocket communication
+   - Web-based UI for conversation monitoring and agent actions
+
+2. **Backend (Node.js Server)**
+   - Express.js HTTP server with Socket.IO for WebSocket management
+   - TypeScript-based AI agent orchestration engine
+   - Direct integration with AWS Bedrock services
+   - Session management for concurrent users
+
+3. **AWS Services**
+   - Amazon Nova Sonic for speech-to-speech AI capabilities
+   - Amazon Bedrock Knowledge Base for health information retrieval
+   - Vector database for semantic search
+
+### Security Requirements for Remote Deployment
+
+**Important**: This application requires secure contexts (HTTPS) for microphone access when deployed beyond localhost.
+
+#### Why SSL/TLS is Required
+
+Modern browsers enforce strict security policies for accessing sensitive APIs like `getUserMedia()` (microphone access):
+
+- **Localhost Exception**: Browsers allow microphone access over HTTP only on `localhost` and `127.0.0.1`
+- **Remote Access Requirement**: Any other hostname (including EC2 public IPs, custom domains, or local network IPs) requires HTTPS
+- **Browser Security Model**: This is a fundamental browser security feature to protect users from unauthorized audio/video capture
+
+## ⚠️ Important Disclaimers
 
 **This application is for educational and informational purposes only. It is NOT a substitute for professional medical advice, diagnosis, or treatment.**
+
+**This application is a DEMO and should not be used in production environments.**
 
 - Always consult with qualified healthcare professionals for medical concerns
 - Never disregard professional medical advice or delay seeking it because of information from this application
 - This system has built-in safety measures to redirect emergency situations to appropriate resources
 - The AI assistant will not provide medical diagnoses or specific treatment recommendations
+- This demo is intended for testing and evaluation purposes only
+- Production use would require additional security, compliance, and reliability considerations
 
 By using this application, you acknowledge that you understand these limitations.
+
+### Security Limitations
+This is not a production application, therefore keep in mind the following:
+- No Input Validation: The application lacks proper input sanitization and validation
+- No Authentication: There is no user authentication or authorization system
+- No Data Encryption: Data is not encrypted in transit or at rest
+- No Rate Limiting: The application is vulnerable to abuse and DoS attacks
 
 ## Application Interface
 
@@ -147,10 +196,86 @@ This application uses a **full-stack TypeScript/JavaScript architecture**:
 ## Setting Up the Health Knowledge Base
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v16 or higher)
 - AWS Account with Bedrock access
+- **Amazon Nova Sonic model enabled in Bedrock**:
+  1. Go to AWS Bedrock Console
+  2. Navigate to "Model access" in the left sidebar
+  3. Click "Manage model access"
+  4. Find "Amazon Nova Sonic" and enable it
+  5. Wait for the status to show "Access granted"
+- **IAM permissions configured** (see [Required IAM Permissions](#required-iam-permissions) section below)
 - AWS CLI configured with appropriate credentials
 - Modern web browser with WebAudio API support
+
+## Required IAM Permissions
+
+The IAM user or role running this application needs the following permissions:
+
+### Minimum Required Permissions
+
+Create an IAM policy with these permissions:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BedrockModelAccess",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:InvokeModel",
+                "bedrock:InvokeModelWithResponseStream"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:*:*:foundation-model/amazon.nova-sonic-v1:0"
+            ]
+        },
+        {
+            "Sid": "BedrockKnowledgeBaseAccess",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:Retrieve",
+                "bedrock:RetrieveAndGenerate"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:*:*:knowledge-base/*"
+            ]
+        },
+        {
+            "Sid": "BedrockAgentRuntimeAccess",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock-agent-runtime:Retrieve",
+                "bedrock-agent-runtime:RetrieveAndGenerate"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3KnowledgeBaseAccess",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::your-kb-bucket-name",
+                "arn:aws:s3:::your-kb-bucket-name/*"
+            ]
+        },
+        {
+            "Sid": "OpenSearchServerlessAccess",
+            "Effect": "Allow",
+            "Action": [
+                "aoss:APIAccessAll"
+            ],
+            "Resource": [
+                "arn:aws:aoss:*:*:collection/*"
+            ]
+        }
+    ]
+}
+```
 
 ### Creating Your Health Knowledge Base
 
@@ -176,15 +301,6 @@ Before running the application, you must create a Knowledge Base in Amazon Bedro
    - Review your settings and create the knowledge base
    - Once created, note your Knowledge Base ID for the next step
 
-5. **Update Application Configuration**:
-   - Open `src/client.ts`
-   - Replace the placeholder with your actual Knowledge Base ID:
-
-```typescript
-// Replace with your actual Knowledge Base ID
-const KNOWLEDGE_BASE_ID = 'YOUR_KB_ID_HERE';
-```
-
 ## Installation and Setup
 
 1. **Clone the repository**:
@@ -198,39 +314,41 @@ cd <repository-name>
 npm install
 ```
 
-3. **Configure AWS credentials**:
+3. **Update Application Configuration**:
+Create the .env file and replace `YOUR_KB_ID_HERE` with your actual Amazon Bedrock Knowledge Bases ID.
+
 ```bash
-# Configure AWS CLI with your credentials
-aws configure --profile bedrock-test
+# Create .env file from example
+cp .env.example .env
+nano .env
 ```
 
-4. **Build the TypeScript backend**:
+4. **Configure AWS credentials**:
+```bash
+# Configure AWS CLI with your credentials
+aws configure --profile your-profile-name
+```
+
+5. **Build the TypeScript backend**:
 ```bash
 npm run build
 ```
 
 ## Running the Application
 
-### Development Mode
 ```bash
-npm run dev
-```
-
-### Production Mode
-```bash
-npm run build
 npm start
 ```
 
 ### Access the Application
 1. Open your browser to: `http://localhost:4000`
 
-2. **For EC2 deployment**, you may want to create an SSH tunnel before opening your browser so you dont need to expose your app to the internet:
+2. **For Amazon EC2 deployment**, you may want to create an SSH tunnel before opening your browser so you dont need to expose your app to the internet or add a certificate:
 ```bash
 ssh -i /your/key.pem -L 4000:localhost:4000 ec2-user@your-ec2-ip
 ```
 
-Note: If you are using EC2, make sure SSH is allowed to your workstation.
+Note: If you are using Amazon EC2, make sure SSH is allowed to your workstation.
 
 3. Grant microphone permissions when prompted
 
@@ -289,11 +407,142 @@ npm start | grep "Knowledge Base"
 }
 ```
 
+## Deployment Considerations
+
+This application is primarily designed for **local development on your laptop**, which minimizes costs and complexity. However, it can also be deployed on Amazon EC2 or other computing platforms with proper SSL configuration.
+
+### Recommended Deployment
+
+- **Primary**: Local laptop/desktop (localhost:4000)
+  - No SSL certificates needed
+  - No hosting costs
+  - Immediate development and testing
+  - Full microphone access
+
+- **Secondary**: Amazon EC2 or cloud instances
+  - Requires SSL setup
+  - Additional hosting costs
+  - Suitable for demos and sharing
+
+## 💰 Cost Considerations
+
+### AWS Service Costs
+
+When running this application, you will incur costs for:
+
+1. **Amazon Bedrock**
+   - **Nova Sonic model**: Charged per input/output tokens
+   - **AMazon Bedrock Knowledge Bases**: Storage and retrieval costs
+   - **Vector database (e.g. Amazon OpenSearch Serverless)**: Minimum charges apply even when idle
+
+2. **Amazon S3** (for Amazon Bedrock Knowledge Base documents)
+   - Storage costs for uploaded health documents
+   - Generally minimal for demo purposes
+
+3. **Amazon EC2 Instance** (if deployed remotely)
+   - Instance hourly rates based on type
+   - You may want to use eligible instance types for free tier
+   - Costs vary by instance type and region
+
+### Cost Optimization Tips
+
+- **Development**: Use localhost to avoid Amazon EC2 costs
+- **Testing**: Limit conversation length to reduce token usage
+- **Knowledge Base**: Use minimum documents needed for testing
+- **Shut down resources** when not in use
+
+## 🧹 Cleanup Instructions
+
+To avoid ongoing charges, follow these steps to delete all resources:
+
+### 1. Stop the Application
+
+```bash
+# Stop the Node.js server
+# Press Ctrl+C in the terminal running the server
+
+# If running on Amazon EC2, also stop the instance
+aws ec2 stop-instances --instance-ids <your-instance-id>
+```
+
+### 2. Delete Bedrock Knowledge Base
+
+```bash
+# List Amazon Bedrock knowledge bases
+aws bedrock-agent list-knowledge-bases
+
+# Delete the Amazon Bedrock knowledge base (replace with your KB ID)
+aws bedrock-agent delete-knowledge-base --knowledge-base-id YOUR_KB_ID
+
+# Note: This may take several minutes
+```
+
+### 3. Clean Up S3 Bucket
+
+```bash
+# List and delete objects in your KB bucket
+aws s3 rm s3://your-kb-bucket-name --recursive
+
+# Delete the bucket
+aws s3 rb s3://your-kb-bucket-name
+```
+
+### 4. Delete OpenSearch Serverless Collection
+
+If you created an OpenSearch Serverless collection for the Knowledge Base:
+
+1. Go to AWS Console → OpenSearch Service
+2. Select "Serverless collections"
+3. Find your collection and delete it
+4. Also delete any associated security policies
+
+Note: If you are using a different vector store, please check our document pages for more details.
+
+### 5. Terminate Amazon EC2 Instance (if used)
+
+```bash
+# Terminate EC2 instance permanently
+aws ec2 terminate-instances --instance-ids <your-instance-id>
+
+# Delete associated security groups
+aws ec2 delete-security-group --group-id <security-group-id>
+
+# Release Elastic IP (if allocated)
+aws ec2 release-address --allocation-id <allocation-id>
+```
+
+### 6. Clean Up Local Files
+Delete the repository files from your workstation
+
+### 7. Verify Resource Deletion
+
+Check AWS Cost Explorer after 24 hours to ensure no resources are still running:
+
+```bash
+# Check for any remaining Bedrock resources
+aws bedrock-agent list-knowledge-bases
+aws bedrock-agent list-data-sources --knowledge-base-id YOUR_KB_ID
+
+# Check S3 buckets
+aws s3 ls
+
+# Check EC2 instances
+aws ec2 describe-instances --query 'Reservations[].Instances[?State.Name!=`terminated`]'
+```
+
+### Important Cost Notes
+
+⚠️ **OpenSearch Serverless Minimum Charges**: Even when idle, OpenSearch Serverless collections have minimum charges. Delete them when not in use.
+
+⚠️ **Amazon Bedrock Model Costs**: Conversations are charged per token. Long conversations can accumulate costs quickly.
+
+⚠️ **Free Tier Limits**: Be aware of AWS Free Tier limits, especially for Amazon EC2 and Amazon S3.
+
 ## Troubleshooting
 
 ### Knowledge Base Issues
 1. **Knowledge Base Not Responding**:
-   - Verify your Knowledge Base ID in `src/client.ts`
+   - Verify your Knowledge Base ID in `.env`
    - Check AWS credentials and permissions
    - Ensure knowledge base status is "Available"
 
@@ -305,12 +554,15 @@ npm start | grep "Knowledge Base"
 ### Audio Issues
 1. **Microphone Not Working**:
    - Check browser permissions
-   - Ensure HTTPS or localhost
-   - Try different browser
+   - Ensure HTTPS (need to install/add certificate) or localhost
+   - Try different browser (recommended to use Chrome)
 
 2. **No Audio Output**:
    - Check browser audio settings
    - Verify WebSocket connection in browser console
+
+3. Error `Error: {"source":"bidirectionalStream","error":{"name":"CredentialsProviderError","tryNextLink":false}}`
+   - Check your AWS credentials
 
 ### General Connection Issues
 1. Check server logs for errors
@@ -391,12 +643,6 @@ private processNewTool(toolUseContent: any): Object {
 
 ### **Knowledge Base Configuration**
 
-**Updating Knowledge Base ID** (in `src/client.ts`):
-```typescript
-// Replace with your actual Knowledge Base ID
-const KNOWLEDGE_BASE_ID = 'YOUR_KB_ID_HERE';
-```
-
 **Knowledge Base Query Parameters**:
 - Modify `queryHealthKnowledgeBase` method to adjust search parameters
 - Change `numberOfResults` for more or fewer search results
@@ -411,7 +657,7 @@ export const DefaultAudioOutputConfiguration = {
 };
 ```
 
-Available voice options: `tiffany`, `marcus`, `aria`, `davis`, `jenny`, `gregory`
+Available voice options: `tiffany`, `amy` and `matthew`.
 
 ## Data Flow Architecture
 
@@ -432,7 +678,7 @@ User Health Question → Browser → Server → AI Agent → Tool Selection & Or
 - **Backend**: Node.js server with Express.js and Socket.IO
 - **AI Agent Engine**: Amazon Nova Sonic with bidirectional streaming
 - **Frontend**: Modern browser with WebAudio API support
-- **AWS Services**: Bedrock Runtime, Bedrock Knowledge Base, Bedrock Agent Runtime
+- **AWS Services**: Amazon Bedrock and Amazon Bedrock Knowledge Bases
 - **Real-time Communication**: WebSocket-based bidirectional streaming
 - **Tool Management**: JSON schema-based tool definitions with automatic orchestration
 
@@ -448,4 +694,4 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 This library is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file.
 
-**This project is for educational purposes. Please ensure compliance with healthcare regulations in your jurisdiction before any production use.**
+**This project is for educational purposes and not designed for production use.**

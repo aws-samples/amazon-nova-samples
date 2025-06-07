@@ -2,26 +2,26 @@ import express from 'express';
 import http from 'http';
 import path from 'path';
 import { Server } from 'socket.io';
-import { fromIni } from "@aws-sdk/credential-providers";
+import { fromNodeProviderChain } from "@aws-sdk/credential-providers";
 import { NovaSonicBidirectionalStreamClient } from './client';
 import { Buffer } from 'node:buffer';
+import dotenv from 'dotenv';
 
-// Configure AWS credentials
-const AWS_PROFILE_NAME = process.env.AWS_PROFILE || 'bedrock-test';
+dotenv.config();
 
 // Create Express app and HTTP server
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-// Create the AWS Bedrock client
+// Create the Amazon Bedrock client with flexible credential chain
 const bedrockClient = new NovaSonicBidirectionalStreamClient({
     requestHandlerConfig: {
         maxConcurrentStreams: 10,
     },
     clientConfig: {
         region: process.env.AWS_REGION || "us-east-1",
-        credentials: fromIni({ profile: AWS_PROFILE_NAME })
+        credentials: fromNodeProviderChain()
     }
 });
 

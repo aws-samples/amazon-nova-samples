@@ -435,30 +435,36 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
   }  
 
   private async queryHealthKnowledgeBase(query: string, numberOfResults: number = 3): Promise<Object> {
-    // Create a client instance
-    const kbClient = new BedrockKnowledgeBaseClient();
+      // Create a client instance
+      const kbClient = new BedrockKnowledgeBaseClient();
 
-    // Replace with your actual Knowledge Base ID
-    const KNOWLEDGE_BASE_ID = 'JXXSUEEVME';
+      const KNOWLEDGE_BASE_ID = process.env.KNOWLEDGE_BASE_ID;
+      
+      if (!KNOWLEDGE_BASE_ID) {
+          console.error('Amazon Bedrock Knowledge Bases ID not configured');
+          return { 
+              error: 'Amazon Bedrock Knowledge Base not configured',
+              results: [] 
+          };
+      }
 
-    try {
-      console.log(`Searching for: "${query}"`);
+      try {
+          console.log(`Searching for: "${query}"`);
 
-      // Retrieve information from the Knowledge Base
-      const results = await kbClient.retrieveFromKnowledgeBase({
-        knowledgeBaseId: KNOWLEDGE_BASE_ID,
-        query,
-        numberOfResults: numberOfResults
-      });
+          // Retrieve information from the Amazon Bedrock Knowledge Base
+          const results = await kbClient.retrieveFromKnowledgeBase({
+              knowledgeBaseId: KNOWLEDGE_BASE_ID,
+              query,
+              numberOfResults: numberOfResults
+          });
 
-      console.log(`Results: ${JSON.stringify(results)}`);
+          console.log(`Results: ${JSON.stringify(results)}`);
+          return { results: results };
 
-      return { results: results };
-
-    } catch (error) {
-      console.error("Error:", error);
-      return {};
-    }
+      } catch (error) {
+          console.error("Error:", error);
+          return { error: 'Failed to query Amazon Bedrock Knowledge Bases', results: [] };
+      }
   }
 
   private async parseToolUseContent(toolUseContent: any): Promise<{ query: string; maxResults: number; } | null> {
@@ -647,7 +653,7 @@ private async processToolUse(toolName: string, toolUseContent: object): Promise<
     };
   }
 
-  // Process the response stream from AWS Bedrock
+  // Process the response stream from Amazon Bedrock
   private async processResponseStream(sessionId: string, response: any): Promise<void> {
     const session = this.activeSessions.get(sessionId);
     if (!session) return;

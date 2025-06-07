@@ -4,7 +4,7 @@ import {
     RetrieveCommandInput,
     RetrieveCommandOutput,
 } from "@aws-sdk/client-bedrock-agent-runtime";
-import { fromIni } from "@aws-sdk/credential-providers";
+import { fromNodeProviderChain } from "@aws-sdk/credential-providers";
 
 
 // Define interfaces for type safety
@@ -25,20 +25,25 @@ interface RetrievalResult {
     };
     score: number;
 }
-const AWS_PROFILE_NAME = process.env.AWS_PROFILE || 'bedrock-test';
-
 
 class BedrockKnowledgeBaseClient {
     private client: BedrockAgentRuntimeClient;
+    
     constructor(region: string = 'us-east-1') {
+        // Use the default credential provider chain
+        // This will automatically use (in order):
+        // 1. Environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+        // 2. Shared credentials file (~/.aws/credentials) - respects AWS_PROFILE env var
+        // 3. ECS credentials provider
+        // 4. EC2 Instance Metadata Service (for IAM roles)
         this.client = new BedrockAgentRuntimeClient({
             region,
-            credentials: fromIni({ profile: AWS_PROFILE_NAME })
+            credentials: fromNodeProviderChain()
         });
     }
 
 
-    // Retrieves information from the Bedrock Knowledge Base
+    // Retrieves information from the Amazon Bedrock Knowledge Bases
     async retrieveFromKnowledgeBase(options: RetrieveOptions): Promise<Object> {
         const { knowledgeBaseId, query, numberOfResults = 5, retrievalFilter } = options;
 
@@ -120,7 +125,7 @@ class BedrockKnowledgeBaseClient {
             }
             return results;
         } catch (error) {
-            console.error("Error retrieving from Bedrock Knowledge Base:", error);
+            console.error("Error retrieving from Amazon Bedrock Knowledge Bases:", error);
             throw error;
         }
     }
