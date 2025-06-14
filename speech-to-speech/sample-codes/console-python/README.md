@@ -4,13 +4,15 @@ This repository contains Python scripts that implement real-time audio streaming
 
 ## Available Implementations
 
-This repository includes three different implementations of the Nova Sonic model:
+This repository includes four different implementations of the Nova Sonic model:
 
 1. **nova_sonic_simple.py**: A basic implementation that demonstrates how events are structured in the bidirectional streaming API. This version does not support barge-in functionality (interrupting the assistant while it's speaking) and does not implement true bidirectional communication.
 
 2. **nova_sonic.py**: The full-featured implementation with real bidirectional communication and barge-in support. This allows for more natural conversations where users can interrupt the assistant while it's speaking, similar to human conversations.
 
 3. **nova_sonic_tool_use.py**: An advanced implementation that extends the bidirectional communication capabilities with tool use examples. This version demonstrates how Nova Sonic can interact with external tools and APIs to provide enhanced functionality.
+
+4. **nova_sonic_file_chat.py**: A specialized implementation that extends the tool use capabilities with a file reading tool. This version allows Nova Sonic to read and analyze local text files through natural conversation, with enhanced command-line file path specification for improved usability and security.
 
 ## Features
 
@@ -21,6 +23,7 @@ This repository includes three different implementations of the Nova Sonic model
 - Support for debug mode with verbose logging
 - Barge-in capability (in nova_sonic.py and nova_sonic_tool_use.py)
 - Tool use integration examples (in nova_sonic_tool_use.py)
+- Local file reading capabilities (in nova_sonic_file_chat.py)
 
 ## Prerequisites
 
@@ -54,7 +57,7 @@ With the virtual environment activated, install the required packages:
 python -m pip install -r requirements.txt --force-reinstall
 ```
 
-2. Configure AWS credentials:
+3. Configure AWS credentials:
 
 The application uses environment variables for AWS authentication. Set these before running the application:
 
@@ -77,6 +80,9 @@ python nova_sonic.py
 
 # Advanced implementation with tool use examples
 python nova_sonic_tool_use.py
+
+# File chat implementation with local file reading capabilities
+python nova_sonic_file_chat.py --file sample_text.txt
 ```
 
 Or with debug mode for verbose logging:
@@ -129,6 +135,28 @@ This advanced implementation extends the bidirectional capabilities with:
 - Shows integration patterns for enhancing Nova Sonic with additional capabilities
 - Includes examples of practical tool integrations
 
+### nova_sonic_file_chat.py
+This specialized implementation focuses on file reading capabilities and includes:
+- A custom `readFileTool` that can read local text files
+- Command-line file path specification for improved security and usability
+- Enhanced tool description that shows the target file being read
+- Automatic file path handling without requiring speech input of file paths
+- Support for analyzing and discussing file contents through natural conversation
+- Built on top of the bidirectional communication and tool use framework
+
+#### File Chat Features:
+- **Safe File Access**: File paths are specified via command line, avoiding the need to speak file paths during conversation
+- **Automatic File Reading**: When you ask about the file contents, the assistant automatically reads the specified file
+- **Content Analysis**: The assistant can analyze, summarize, and discuss the file contents
+- **Error Handling**: Graceful handling of missing files or read errors
+- **Content Limiting**: File contents are limited to 2000 characters to ensure reasonable response times
+
+#### Example Conversation Flow:
+1. Start the application: `python nova_sonic_file_chat.py --file sample_text.txt`
+2. Ask: "What is this file about?"
+3. The assistant reads the file and provides a summary
+4. Continue the conversation to analyze, discuss, or ask questions about the content
+
 ## Customization
 
 You can modify the following parameters in the scripts:
@@ -180,8 +208,15 @@ You can also customize the system prompt by modifying the `default_system_prompt
    - Verify your AWS credentials are correctly configured as environment variables
    - Ensure you have access to the AWS Bedrock service
    - Check your internet connection
+   - If using temporary credentials, ensure they haven't expired
 
-4. **Debug Mode**
+4. **File Reading Issues (nova_sonic_file_chat.py)**
+   - Ensure the file path is correct and the file exists
+   - Check file permissions (the application needs read access)
+   - Verify the file is a text file (binary files may not display correctly)
+   - File content is limited to 2000 characters for performance
+
+5. **Debug Mode**
    - Run with the `--debug` flag to see detailed logs
    - This can help identify issues with the connection or audio processing
 
@@ -201,6 +236,15 @@ User Speech → PyAudio → Amazon Nova Sonic Model → Tool Execution → Audio
      ↑                                                                      ↓
      └──────────────────────────────────────────────────────────────────────┘
                                   Conversation
+```
+
+For file chat implementation, the flow includes file reading:
+
+```
+User Speech → PyAudio → Amazon Nova Sonic Model → File Reading Tool → Audio Output
+     ↑                                                                        ↓
+     └────────────────────────────────────────────────────────────────────────┘
+                                    File-Enhanced Conversation
 ```
 
 ## Known Limitation
