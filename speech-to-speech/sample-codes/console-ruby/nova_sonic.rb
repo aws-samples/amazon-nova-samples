@@ -14,6 +14,7 @@ module NovaSonic
       @audio_service = AudioService.new(@session_id, @logger)
       @audio_handler = PortAudioHandler.new(@logger)
       @running = false
+      @current_stage = nil
     end
 
     def start
@@ -32,8 +33,22 @@ module NovaSonic
     private
 
     def setup_event_handlers
+      @audio_service.on_event('contentStart') do |data|
+        additionalModelFields = data['additionalModelFields']
+        additionalModelFields = JSON.parse(additionalModelFields) if additionalModelFields.is_a?(String)
+
+        if additionalModelFields != nil
+          stage = additionalModelFields['generationStage']
+          @current_stage = stage if stage
+        end
+      end
+
       @audio_service.on_event('textOutput') do |data|
-        @logger.info "#{data['role']}: #{data['content']}"
+        if @current_stage == 'SPECULATIVE' && data['role'] == 'ASSISTANT'
+          @logger.info "🎤 #{data['role']}: #{data['content']}"
+        elsif data['role'] == 'USER'
+          @logger.info "👤 #{data['role']}: #{data['content']}"
+        end
       end
 
       @audio_service.on_event('audioOutput') do |data|
