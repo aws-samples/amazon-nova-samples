@@ -33,7 +33,7 @@ module NovaSonic
 
     def setup_event_handlers
       @audio_service.on_event('textOutput') do |data|
-        @logger.info data.inspect
+        @logger.info "#{data['role']}: #{data['content']}"
       end
 
       @audio_service.on_event('audioOutput') do |data|
