@@ -26,8 +26,8 @@ module NovaSonic
 
     def stop
       @running = false
-      @audio_handler.stop
       @audio_service.close_session
+      @audio_handler.stop
     end
 
     private
