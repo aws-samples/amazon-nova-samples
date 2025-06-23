@@ -1,0 +1,8 @@
+boto3
+pandas
+nltk
+mistral
+langchain
+langchain-aws
+ragas
+datasets==2.16.1
