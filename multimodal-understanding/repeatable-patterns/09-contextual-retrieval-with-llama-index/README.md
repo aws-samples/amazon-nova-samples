@@ -10,7 +10,7 @@ Before you begin, ensure all prerequisites are in place. You should have:
 
 * An AWS account
 * The AWS CLI installed and configured with your credentials
-* The latest stable version of Node.js and npm installed
+* The latest LTS version of Node.js
 * Requested access to amazon.Nova-pro-v1:0 via Bedrock model access
 
 1) Build CDK project
