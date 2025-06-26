@@ -28,7 +28,7 @@ websocket-java/
 
 ### Prerequisites
 - Java 17 or higher
-- Node.js 14+ and npm/yarn for UI development
+- The latest LTS version of Node.js
 - AWS account with Bedrock access
 - AWS credentials configured locally
 
