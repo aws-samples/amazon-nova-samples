@@ -29,7 +29,6 @@ The primary focus of this example is to showcase how Nova Sonic can maintain con
     "@smithy/types": "^4.1.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.9",
-    "axios": "^1.6.2",
     "dotenv": "^16.3.1",
     "express": "^4.21.2",
     "pnpm": "^10.6.1",
