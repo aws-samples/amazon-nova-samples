@@ -101,6 +101,8 @@ async def websocket_handler(websocket):
     if not aws_region:
         aws_region = "us-east-1"
 
+    event_type = None
+    forward_task = None
     stream_manager = None
     try:
         async for message in websocket:
@@ -158,7 +160,8 @@ async def websocket_handler(websocket):
     finally:
         # Clean up
         await stream_manager.close()
-        forward_task.cancel()
+        if forward_task:
+            forward_task.cancel()
         if websocket:
             websocket.close()
         if MCP_CLIENT:
@@ -248,8 +251,8 @@ if __name__ == "__main__":
 
     if not host or not port:
         print(f"HOST and PORT are required. Received HOST: {host}, PORT: {port}")
-    elif not aws_key_id or not aws_secret:
-        print(f"AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are required.")
+    # elif not aws_key_id or not aws_secret:
+    #     print(f"AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are required.")
     else:
         try:
             asyncio.run(main(host, port, health_port, enable_mcp, enable_strands))
