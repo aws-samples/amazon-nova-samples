@@ -6,4 +6,4 @@ websockets==15.0.1
 aws_sdk_bedrock_runtime
 mcp==1.8.1
 strands-agents
-requests=2.32.3
+requests==2.32.3
