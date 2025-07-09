@@ -1,6 +1,6 @@
 import React from 'react';
+import { Icon, Modal, Link, Toggle, ColumnLayout } from '@cloudscape-design/components';
 import './meter.css'
-import { Icon, Button, Modal, Box, SpaceBetween, Link, ColumnLayout } from '@cloudscape-design/components';
 
 class Meter extends React.Component {
 
@@ -33,12 +33,12 @@ class Meter extends React.Component {
         };
         this.intervalId = null;
     }
-        
+
     componentDidMount() {
         this.intervalId = setInterval(() => {
             if (this.state.startTime) {
                 const elapsed = Date.now() - this.state.startTime;
-                this.setState({ 
+                this.setState({
                     elapsed: elapsed,
                     elapsedDisplay: this.displayElapsed(elapsed)
                 });
@@ -139,10 +139,17 @@ class Meter extends React.Component {
     render() {
         return (
             <div className="meter">
+                <Toggle
+                    onChange={({ detail }) => this.props.onShowUsageChange(detail.checked) }
+                    checked={this.props.showUsage}
+                >
+                    Show usage events
+                </Toggle>
                 <b>Session time</b>: {this.state.elapsedDisplay}<br/>
-                <b>Total tokens</b>: {(this.state.totalInputSpeechToken + this.state.totalInputTextToken + this.state.totalOutputSpeechToken + this.state.totalOutputTextToken).toLocaleString()} 
+                <b>Total tokens</b>: {(this.state.totalInputSpeechToken + this.state.totalInputTextToken + this.state.totalOutputSpeechToken + this.state.totalOutputTextToken).toLocaleString()}
                 &nbsp; ({this.formatCurrency(this.state.totalInputTextCost + this.state.totalInputSpeechCost + this.state.totalOutputTextCost + this.state.totalOutputSpeechCost)})
                 &nbsp;&nbsp;<Link onClick={()=>{this.setState({showMeterDetail: true})}}><Icon name="support" /></Link>
+
                 <Modal
                     onDismiss={() => this.setState({showMeterDetail: false})}
                     visible={this.state.showMeterDetail}
@@ -150,7 +157,7 @@ class Meter extends React.Component {
                     size='large'
                     footer={
                         <div className='footer'>
-                            Price per 1,000 tokens &nbsp;&nbsp;&nbsp; 
+                            Price per 1,000 tokens &nbsp;&nbsp;&nbsp;
                             <Link
                                 external
                                 href="https://aws.amazon.com/bedrock/pricing/"
@@ -159,18 +166,20 @@ class Meter extends React.Component {
                                 Amazon Bedrock Pricing
                             </Link>
                             <div className='price'>
-                                <div>
-                                    Input Speech: ${this.sonicPrice.inputSpeech}
-                                </div>
-                                <div>
-                                    Input Text: ${this.sonicPrice.inputText}
-                                </div>
-                                <div>
-                                    Output Speech: ${this.sonicPrice.outputSpeech}
-                                </div>
-                                <div>
-                                    Output Text: ${this.sonicPrice.outputText}      
-                                </div>
+                                <ColumnLayout columns={4}>
+                                    <div>
+                                        Input Speech: ${this.sonicPrice.inputSpeech}
+                                    </div>
+                                    <div>
+                                        Input Text: ${this.sonicPrice.inputText}
+                                    </div>
+                                    <div>
+                                        Output Speech: ${this.sonicPrice.outputSpeech}
+                                    </div>
+                                    <div>
+                                        Output Text: ${this.sonicPrice.outputText}
+                                    </div>
+                                </ColumnLayout>
                             </div>
                         </div>
                     }
@@ -200,7 +209,7 @@ class Meter extends React.Component {
                         </ColumnLayout>
                     </div>
                 </Modal>
-                
+
             </div>
         );
     }

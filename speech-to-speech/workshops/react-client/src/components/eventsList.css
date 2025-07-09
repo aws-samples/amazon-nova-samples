@@ -1,0 +1,95 @@
+.s2s .events-list {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.events-list .event-in {
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  text-align: right;
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  margin-left: auto;
+}
+
+.events-list .event-usage {
+  display: block;
+  color: white;
+  background-color: #a5caa7;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  margin-left: auto;
+}
+
+.events-list .event-out {
+  display: block;
+  color: white;
+  background-color: #277aee;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  margin-right: auto;
+}
+
+.events-list .event-tool,
+.events-list .event-toolResult {
+  display: block;
+  padding: 10px;
+  background-color: #ee6927;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
+  margin: 5px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.events-list .event-int {
+  display: block;
+  padding: 10px;
+  background-color: #cc7b01;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 70%;
+  margin: 5px 0;
+  margin-right: auto;
+}
+
+.events-list .tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  white-space: pre-wrap;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+.eventdetail {
+  overflow: auto;
+}

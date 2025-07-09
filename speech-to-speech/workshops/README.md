@@ -28,20 +28,31 @@ nova-s2s-workshop/
 │   ├── s2s_events.py                           # Utlility class construct Nova Sonic events
 │   ├── setup-for-ec2-lab.sh                    # Bash script for environment setup – intended for instructor-led labs only. Do not use for local deployments.
 │   └── requirements.txt                        # Python dependencies
-├── react-client/                               # Web client implementation
+├── react-client/                               # Modern Vite-based React web client
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── eventDisplay.js                 # React component display event details
-│   │   │   ├── meter.js                        # React component display metering information (tokens and cost)
+│   │   │   ├── eventsList.jsx                  # React component for displaying event list
+│   │   │   ├── eventsList.css                  # Styles for events list component
+│   │   │   ├── meter.jsx                       # React component display metering information (tokens and cost)
+│   │   │   └── meter.css                       # Styles for meter component
 │   │   ├── helper/
 │   │   │   ├── audioHelper.js                  # Audio utility functions for encoding/decoding
-│   │   │   └── s2sEvents.js                    # Utlility class construct Nova Sonic events
-│   │   ├── static/                             # Images
-│   │   ├── App.js                              # Define website layout and navigation
-│   │   ├── index.js                            # Main entry point
-│   │   └── s2s.js                              # Main entry point
-│   ├── setup-for-ec2-lab.sh                    # Bash script for environment setup – intended for instructor-led labs only. Do not use for local deployments.
-│   └── package.json                            # REACT manifest file
+│   │   │   ├── audioPlayer.js                  # Audio playback management with worklet support
+│   │   │   ├── audioPlayerProcessor.worklet.js # Audio worklet for playback processing
+│   │   │   ├── microphoneProcessor.worklet.js  # Audio worklet for microphone input processing
+│   │   │   └── sonicEvent.js                   # Utility class construct Nova Sonic events
+│   │   ├── index.css                           # Global styles
+│   │   ├── index.jsx                           # Main entry point with AWS Amplify configuration
+│   │   └── s2s.jsx                             # Main speech-to-speech component with settings UI
+│   ├── public/
+│   │   ├── favicon.ico                         # Website favicon
+│   │   ├── manifest.json                       # PWA manifest
+│   │   └── robots.txt                          # Search engine robots file
+│   ├── index.html                              # Main HTML template (Vite entry point)
+│   ├── vite.config.js                          # Vite build configuration
+│   ├── package.json                            # Modern dependency manifest with Vite
+│   ├── package-lock.json                       # Dependency lock file
+│   └── setup-for-ec2-lab.sh                    # Bash script for environment setup – intended for instructor-led labs only. Do not use for local deployments.
 ├── scripts                                     
 │   └── booking-resources.yaml                  # CloudFormation stack for Bedrock Agents sample deployment (optional)
 └── livekit

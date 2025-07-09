@@ -1,14 +1,17 @@
-# This is only required by the instructor-led workshop
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Install REACT dependencies
+# This is only required by the instructor-led workshop
+
+# install react dependencies
 npm install
 
-# Set Websocket URL
+# set correct WebSocket URL
 VSCODE_PROXY_URI=$(printenv VSCODE_PROXY_URI)
 NEW_URL="${VSCODE_PROXY_URI//\{\{port\}\}/8081}"
-export REACT_APP_WEBSOCKET_URL="${NEW_URL/https:/wss:}"
-echo $REACT_APP_WEBSOCKET_URL
+NEW_URL="${NEW_URL/https:/wss:}"
+export REACT_APP_WEBSOCKET_URL="${NEW_URL}ws"
 
-# Start the REACT app
+export REACT_APP_BASE='/proxy/3000/'
+
+# start the react app
 npm start

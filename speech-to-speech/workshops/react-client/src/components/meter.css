@@ -1,5 +1,5 @@
 .meter {
-    
+
 }
 .footer {
     color: gray;
@@ -14,6 +14,5 @@
 
 .footer .price div{
     display: inline-block;
-    width: 22%;
     font-weight: normal;
 }

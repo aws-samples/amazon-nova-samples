@@ -2,14 +2,14 @@ from mcp import stdio_client, StdioServerParameters
 from strands import Agent, tool
 from strands.tools.mcp import MCPClient
 from strands.models import BedrockModel
-import boto3 
+import boto3
 import os
 import json
 import requests
 import re
 
 @tool
-def weather(lat, lon: float) -> str:
+def weather(lat, lon: float) -> dict:
     """Get weather information for a given lat and lon
 
     Args:
@@ -28,7 +28,7 @@ def weather(lat, lon: float) -> str:
         response = requests.get(url, params=params)
         result = response.json()["current_weather"]
     except Exception as ex:
-        print(ex)
+        print("Error with weather tool:", ex)
     return result
 
 
@@ -43,7 +43,7 @@ class StrandsAgent:
 
         self.aws_location_srv_client = MCPClient(lambda: stdio_client(
             StdioServerParameters(
-                command="uvx", 
+                command="uvx",
                 args=["awslabs.aws-location-mcp-server@latest"],
                 env=env)
             ))
@@ -55,22 +55,23 @@ class StrandsAgent:
         )
         # Specify Bedrock LLM for the Agent
         bedrock_model = BedrockModel(
-            model_id="amazon.nova-lite-v1:0",#"us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+            # model_id="us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+            model_id="amazon.nova-lite-v1:0",
             boto_session=session
         )
         # Create a Strands Agent
         tools = self.aws_location_srv_tools
         tools.append(weather)
         self.agent = Agent(
-            tools=tools, 
+            tools=tools,
             model=bedrock_model,
             system_prompt="You are a chat agent tasked with answering location and weather-related questions. Please include your response within the <response></response> tag."
         )
 
 
     '''
-    Send the input to the agent, allowing it to handle tool selection and invocation. 
-    The response will be generated after the selected LLM performs reasoning. 
+    Send the input to the agent, allowing it to handle tool selection and invocation.
+    The response will be generated after the selected LLM performs reasoning.
     This approach is suitable when you want to delegate tool selection logic to the agent, and have a generic toolUse definition in Sonic ToolUse.
     Note that the reasoning process may introduce latency, so it's recommended to use a lightweight model such as Nova Lite.
     Sample parameters: input="largest zoo in Seattle?"
@@ -89,7 +90,7 @@ class StrandsAgent:
 
     '''
     Invoke the tool directly and return the raw response without any reasoning.
-    This approach is suitable when tool selection is managed within Sonic and the exact toolName is already known. 
+    This approach is suitable when tool selection is managed within Sonic and the exact toolName is already known.
     It offers lower query latency, as no additional reasoning is performed by the agent.
     Sample parameters: tool_name="search_places", input="largest zoo in Seattle"
     '''

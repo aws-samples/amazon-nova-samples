@@ -20,13 +20,13 @@ class McpLocationClient:
         env = {"FASTMCP_LOG_LEVEL": "ERROR"}
         if aws_profile:
             env["AWS_PROFILE"] = aws_profile
-            
+
         server_params = StdioServerParameters(
                 command="uvx",
                 args=["awslabs.aws-location-mcp-server@latest"],
                 env=env
             )
-        
+
         # Connect to the server
         stdio_transport = await self.exit_stack.enter_async_context(
             stdio_client(server_params)
@@ -56,7 +56,7 @@ class McpLocationClient:
     async def call_tool(self, input):
         if isinstance(input, str):
             input = json.loads(input)
-        
+
         tool_name = input.get("tool", "search_places")
         query = input.get("query", input)
 

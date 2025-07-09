@@ -1,8 +1,7 @@
-output
 .DS_Store
 .ipynb_checkpoints
-.venv
 __pycache__
 .local_data
-node_modules
-package-lock.json
+.venv/
+node_modules/
+output/
