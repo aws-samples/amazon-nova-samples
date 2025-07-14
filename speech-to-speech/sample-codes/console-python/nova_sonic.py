@@ -435,7 +435,6 @@ class BedrockStreamManager:
         self.input_subject.on_completed()
         self.audio_subject.on_completed()
 
-        self.is_active = False
         if self.response_task and not self.response_task.done():
             self.response_task.cancel()
         

@@ -744,7 +744,6 @@ class BedrockStreamManager:
         for task in self.pending_tool_tasks.values():
             task.cancel()
 
-        self.is_active = False
         if self.response_task and not self.response_task.done():
             self.response_task.cancel()
 

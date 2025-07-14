@@ -4,8 +4,6 @@ import {
   InvokeModelWithBidirectionalStreamCommand,
   InvokeModelWithBidirectionalStreamInput,
 } from "@aws-sdk/client-bedrock-runtime";
-import axios from 'axios';
-import https from 'https';
 import {
   NodeHttp2Handler,
   NodeHttp2HandlerOptions,
@@ -296,30 +294,23 @@ export class NovaSonicBidirectionalStreamClient {
     latitude: number,
     longitude: number
   ): Promise<Record<string, any>> {
-    const ipv4Agent = new https.Agent({ family: 4 });
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
 
     try {
-      const response = await axios.get(url, {
-        httpsAgent: ipv4Agent,
-        timeout: 5000,
+      const response = await fetch(url, {
         headers: {
           'User-Agent': 'MyApp/1.0',
           'Accept': 'application/json'
         }
       });
-      const weatherData = response.data;
+      const weatherData = await response.json();
       console.log("weatherData:", weatherData);
 
       return {
         weather_data: weatherData
       };
     } catch (error) {
-      if (axios.isAxiosError(error)) {
-        console.error(`Error fetching weather data: ${error.message}`, error);
-      } else {
-        console.error(`Unexpected error: ${error instanceof Error ? error.message : String(error)} `, error);
-      }
+      console.error(`Error fetching weather data: ${error instanceof Error ? error.message : String(error)} `, error);
       throw error;
     }
   }
