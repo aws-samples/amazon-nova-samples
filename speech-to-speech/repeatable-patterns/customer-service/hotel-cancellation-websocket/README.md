@@ -55,7 +55,7 @@ The system demonstrates how to handle real-world customer service scenarios incl
 ## Usage Instructions
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- The latest LTS version of Node.js
 - AWS Account with Bedrock access
 - AWS CLI configured with appropriate credentials
 - Modern web browser with WebAudio API support
