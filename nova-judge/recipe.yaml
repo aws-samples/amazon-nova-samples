@@ -1,0 +1,17 @@
+run:
+  name: nova-micro-llm-judge-eval-job
+  model_type: amazon.nova-micro-v1:0:128k
+  model_name_or_path: nova-micro/prod # Provide base model path or s3 path for post trained checkpoint path
+  replicas: 1
+  data_s3_path: ""
+
+evaluation:
+  task: llm_judge
+  strategy: judge
+  metric: all
+    
+inference:
+  max_new_tokens: 200
+  top_k: 50
+  top_p: 1.0
+  temperature: 0
