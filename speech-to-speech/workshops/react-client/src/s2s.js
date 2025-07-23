@@ -54,6 +54,11 @@ class S2sChatBot extends React.Component {
         this.audioPlayer.start().catch(err => {
             console.error("Failed to initialize audio player:", err);
         });
+        
+        // Scroll to bottom on initial load
+        setTimeout(() => {
+            this.scrollToBottom();
+        }, 100);
     }
 
     componentWillUnmount() {
@@ -61,11 +66,27 @@ class S2sChatBot extends React.Component {
     }
 
 
+    scrollToBottom = () => {
+        if (this.chatMessagesEndRef.current) {
+            this.chatMessagesEndRef.current.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'end'
+            });
+        }
+    }
+
     componentDidUpdate(prevProps, prevState) {
         this.stateRef.current = this.state; 
 
-        if (prevState.chatMessages.length !== this.state.chatMessages.length) {
-            this.chatMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+        // Check if chat messages have changed by comparing the number of keys
+        const prevMessageCount = Object.keys(prevState.chatMessages || {}).length;
+        const currentMessageCount = Object.keys(this.state.chatMessages || {}).length;
+        
+        if (prevMessageCount !== currentMessageCount) {
+            // Use setTimeout to ensure DOM is updated before scrolling
+            setTimeout(() => {
+                this.scrollToBottom();
+            }, 100);
         }
     }
     
@@ -109,7 +130,10 @@ class S2sChatBot extends React.Component {
                         chatMessages[contentId].raw = [];
                     chatMessages[contentId].raw.push(message);
                 }
-                this.setState({chatMessages: chatMessages});
+                this.setState({chatMessages: chatMessages}, () => {
+                    // Scroll to bottom immediately after state update
+                    this.scrollToBottom();
+                });
                 break;
             case "audioOutput":
                 try {
@@ -134,7 +158,10 @@ class S2sChatBot extends React.Component {
                         "raw": [],
                     };
                     chatMessages[contentId].raw.push(message);
-                    this.setState({chatMessages: chatMessages});
+                    this.setState({chatMessages: chatMessages}, () => {
+                        // Scroll to bottom immediately after state update
+                        this.scrollToBottom();
+                    });
                 }
                 break;
             case "contentEnd":
@@ -145,7 +172,10 @@ class S2sChatBot extends React.Component {
                         chatMessages[contentId].raw.push(message);
                         chatMessages[contentId].stopReason = stopReason;
                     }
-                    this.setState({chatMessages: chatMessages});
+                    this.setState({chatMessages: chatMessages}, () => {
+                        // Scroll to bottom immediately after state update
+                        this.scrollToBottom();
+                    });
                 }
                 break;
             case "usageEvent":
@@ -177,6 +207,9 @@ class S2sChatBot extends React.Component {
             this.setState({
                 chatMessages:{}, 
                 events: [], 
+            }, () => {
+                // Scroll to bottom when starting new session
+                this.scrollToBottom();
             });
             if (this.eventDisplayRef.current) this.eventDisplayRef.current.cleanup();
             if (this.meterRef.current) this.meterRef.current.start();

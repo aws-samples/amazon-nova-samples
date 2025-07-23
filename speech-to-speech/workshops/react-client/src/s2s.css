@@ -37,6 +37,7 @@
     height: 600px;
     background-color: #f5f4f4;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 .s2s .events {
     display: inline-block;
