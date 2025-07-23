@@ -2,6 +2,7 @@ import os
 import json
 from datetime import datetime
 import boto3
+import pandas as pd
 from botocore.exceptions import ClientError
 
 def create_s3_bucket(bucket_name, region=None):
@@ -128,7 +129,7 @@ def delete_distillation_buckets(bucket):
         print("\nThere were some issues deleting the buckets.")
         return False
     
-def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, account_id=None, prefix=None):
+def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, account_id=None, prefix=None, region=None):
     # Initialize IAM client
     iam = boto3.client('iam')
     
@@ -140,6 +141,9 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
     if not unique_id:
         unique_id = str(datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))
         role_name = f'custom_model_distilation_role_{unique_id}'
+
+    if region is None:
+        region = boto3.session.Session().region_name or 'us-east-1'
         
     # Define the trust policy (assume role policy)
     trust_policy = {
@@ -150,7 +154,15 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
                 "Principal": {
                     "Service": "bedrock.amazonaws.com"
                 },
-                "Action": "sts:AssumeRole"
+                "Action": "sts:AssumeRole",
+                "Condition": {
+                    "StringEquals": {
+                        "aws:SourceAccount": f"{account_id}"
+                    },
+                    "ArnEquals": {
+                        "aws:SourceArn": f"arn:aws:bedrock:{region}:{account_id}:model-customization-job/*"
+                    }
+                }
             }
         ]
     }
@@ -170,12 +182,30 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
                         f"arn:aws:s3:::{bucket_name}/*",
                         f"arn:aws:s3:::{bucket_name}"
                     ],
-                "Condition": {
-                    "StringEquals": {
-                        "aws:PrincipalAccount": account_id
-                    }
-                }
-            }
+
+            },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:CreateModelCustomizationJob",
+                "bedrock:GetModelCustomizationJob",
+                "bedrock:ListModelCustomizationJobs",
+                "bedrock:StopModelCustomizationJob"
+            ],
+            "Resource": f"arn:aws:bedrock:{region}:{account_id}:model-customization-job/*" 
+        },
+{
+            "Sid": "CrossRegionInference",
+            "Effect": "Allow",
+            "Action": [  
+                "bedrock:InvokeModel"
+            ],
+            "Resource": [
+                f"arn:aws:bedrock:{region}:{account_id}:inference-profile/*", 
+                f"arn:aws:bedrock:{region}::foundation-model/*", 
+                f"arn:aws:bedrock:{region}::foundation-model/*", 
+            ]
+        }
         ]
     }
     
@@ -187,6 +217,15 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
             AssumeRolePolicyDocument=json.dumps(trust_policy),
             Description='Role for Amazon Bedrock model distillation'
         )
+
+        # Create service linked role
+        # role_response = iam.create_service_linked_role(
+        #     CustomSuffix=role_name,
+        #     AWSServiceName='bedrock.amazonaws.com',
+        #     Description='Service linked role for Amazon Bedrock service for Amazon Bedrock model distillation'
+        # )
+        # role_name = role_response['Role']['RoleName']
+        
         
         # Create IAM policy
         print("Creating IAM policy...")
@@ -260,3 +299,28 @@ def delete_role_and_attached_policies(role_name):
     except Exception as e:
         print(f"Unexpected error: {str(e)}")
         return False
+def read_jsonl_to_dataframe(file_path):
+    """
+    Read a JSONL file and convert it to a pandas DataFrame.
+    
+    Args:
+        file_path (str): Path to the JSONL file to read
+        
+    Returns:
+        pandas.DataFrame: DataFrame containing the JSONL data
+        
+    Raises:
+        FileNotFoundError: If the specified file does not exist
+        ValueError: If the file is empty or not in valid JSONL format
+    """
+    try:
+        df = pd.read_json(file_path, lines=True)
+        if df.empty:
+            raise ValueError("The JSONL file is empty")
+        return df
+    except FileNotFoundError:
+        raise FileNotFoundError(f"The file {file_path} was not found")
+    except ValueError as e:
+        raise ValueError(f"Error reading JSONL file: {str(e)}")
+    except Exception as e:
+        raise Exception(f"Unexpected error reading JSONL file: {str(e)}")
