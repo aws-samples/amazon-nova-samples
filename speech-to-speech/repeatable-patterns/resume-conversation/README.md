@@ -12,7 +12,7 @@ The primary focus of this example is to showcase how Nova Sonic can maintain con
 
 ## Usage Instructions
 ### Prerequisites
-- Node.js (v14 or higher)
+- The latest LTS version of Node.js
 - AWS Account with Bedrock access
 - AWS CLI configured with appropriate credentials
 - Modern web browser with WebAudio API support
@@ -169,7 +169,7 @@ For proper conversation resumption:
 ## Usage Instructions
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- The latest LTS version of Node.js
 - AWS Account with Bedrock access
 - AWS CLI configured with appropriate credentials
 - Modern web browser with WebAudio API support

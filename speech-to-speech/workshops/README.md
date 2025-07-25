@@ -49,7 +49,7 @@ nova-s2s-workshop/
 
 ### Prerequisites
 - Python 3.12+
-- Node.js 14+ and npm/yarn for UI development
+- The latest LTS version of Node.js
 - AWS account with Bedrock access
 - AWS credentials configured locally
 - In your AWS account, you can self-serve to gain access to the required model. Please refer to [this process](https://catalog.workshops.aws/amazon-nova-sonic-s2s/en-US/100-introduction/03-model-access) for guidance.
