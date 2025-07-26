@@ -131,7 +131,7 @@ fi
 show_containers() {
     print_section "Available Containers"
     for i in "${!CONTAINER_NAMES[@]}"; do
-        echo "  ${CYAN}$i)${NC} ${CONTAINER_NAMES[$i]}"
+        echo -e "  ${CYAN}$i)${NC} ${CONTAINER_NAMES[$i]}"
         echo "     ${CONTAINER_URIS[$i]}"
         echo ""
     done
