@@ -8,8 +8,13 @@ Install the last version of python [here](https://www.python.org/downloads/) if 
 Download the `dataset_validation` folder, `cd` into the root directory, and run the dataset validation script:
 
 ```
-python3 nova_ft_dataset_validator.py -i <file path> -m <model name>
+python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task type>
 ```
+
+- Task type options:
+    - sft: Supervised Fine-Tuning
+    - dpo: Direct Preference Optimization
+
 
 - Model name options
     - micro: Nova Micro Model
