@@ -356,16 +356,177 @@ else
     print_warning "Stack creation skipped."
 fi
 
+# Function to display infrastructure status
+display_infrastructure_status() {
+    local stack_name="$1"
+    local region="$2"
+    
+    echo
+    print_step "Infrastructure Status Report"
+    echo "Retrieving current infrastructure information from AWS..."
+    echo
+    
+    # Check if stack exists
+    if ! aws cloudformation describe-stacks --stack-name "$stack_name" --region "$region" >/dev/null 2>&1; then
+        print_warning "Stack '$stack_name' not found or not accessible"
+        return 1
+    fi
+    
+    # Get stack outputs
+    print_status "📋 CloudFormation Stack Information:"
+    aws cloudformation describe-stacks \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'Stacks[0].{StackName:StackName,Status:StackStatus,CreationTime:CreationTime}' \
+        --output table
+    
+    # Get EKS cluster info
+    eks_cluster_name=$(aws cloudformation describe-stacks \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'Stacks[0].Outputs[?OutputKey==`EKSClusterName`].OutputValue' \
+        --output text 2>/dev/null || echo "N/A")
+    
+    if [ "$eks_cluster_name" != "N/A" ] && [ -n "$eks_cluster_name" ]; then
+        echo
+        print_status "🏗️ EKS Cluster Information:"
+        aws eks describe-cluster \
+            --name "$eks_cluster_name" \
+            --region "$region" \
+            --query 'cluster.{Name:name,Status:status,Version:version,Endpoint:endpoint,CreatedAt:createdAt}' \
+            --output table 2>/dev/null || print_warning "EKS cluster details not accessible"
+        
+        echo
+        print_status "👥 EKS Node Groups:"
+        aws eks list-nodegroups \
+            --cluster-name "$eks_cluster_name" \
+            --region "$region" \
+            --query 'nodegroups' \
+            --output table 2>/dev/null || print_warning "Node groups not accessible"
+    fi
+    
+    # Get VPC info
+    vpc_id=$(aws cloudformation describe-stacks \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'Stacks[0].Outputs[?OutputKey==`VpcId`].OutputValue' \
+        --output text 2>/dev/null || echo "N/A")
+    
+    if [ "$vpc_id" != "N/A" ] && [ -n "$vpc_id" ]; then
+        echo
+        print_status "🌐 VPC Information:"
+        aws ec2 describe-vpcs \
+            --vpc-ids "$vpc_id" \
+            --region "$region" \
+            --query 'Vpcs[0].{VpcId:VpcId,CidrBlock:CidrBlock,State:State}' \
+            --output table 2>/dev/null || print_warning "VPC details not accessible"
+        
+        echo
+        print_status "🔗 Subnets:"
+        aws ec2 describe-subnets \
+            --filters "Name=vpc-id,Values=$vpc_id" \
+            --region "$region" \
+            --query 'Subnets[].{SubnetId:SubnetId,CidrBlock:CidrBlock,AvailabilityZone:AvailabilityZone,Type:Tags[?Key==`Name`].Value|[0]}' \
+            --output table 2>/dev/null || print_warning "Subnet details not accessible"
+    fi
+    
+    # Get EC2 instances
+    echo
+    print_status "💻 EC2 Instances (HyperPod nodes):"
+    aws ec2 describe-instances \
+        --region "$region" \
+        --filters "Name=tag:aws:cloudformation:stack-name,Values=$stack_name" "Name=instance-state-name,Values=running,pending,stopping,stopped" \
+        --query 'Reservations[].Instances[].{InstanceId:InstanceId,InstanceType:InstanceType,State:State.Name,LaunchTime:LaunchTime,PrivateIpAddress:PrivateIpAddress}' \
+        --output table 2>/dev/null || print_warning "EC2 instances not accessible"
+    
+    # Get SageMaker HyperPod cluster info
+    hyperpod_cluster_name=$(aws cloudformation describe-stacks \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'Stacks[0].Outputs[?OutputKey==`HyperPodClusterName`].OutputValue' \
+        --output text 2>/dev/null || echo "N/A")
+    
+    if [ "$hyperpod_cluster_name" != "N/A" ] && [ -n "$hyperpod_cluster_name" ]; then
+        echo
+        print_status "🚀 SageMaker HyperPod Cluster:"
+        aws sagemaker describe-cluster \
+            --cluster-name "$hyperpod_cluster_name" \
+            --region "$region" \
+            --query '{ClusterName:ClusterName,ClusterStatus:ClusterStatus,CreationTime:CreationTime,InstanceGroups:InstanceGroups[].{GroupName:InstanceGroupName,InstanceType:InstanceType,InstanceCount:CurrentCount}}' \
+            --output table 2>/dev/null || print_warning "HyperPod cluster details not accessible"
+    fi
+    
+    # Get IAM roles created by the stack
+    echo
+    print_status "🔐 IAM Roles:"
+    aws cloudformation list-stack-resources \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'StackResourceSummaries[?ResourceType==`AWS::IAM::Role`].{LogicalId:LogicalResourceId,PhysicalId:PhysicalResourceId,Status:ResourceStatus}' \
+        --output table 2>/dev/null || print_warning "IAM roles not accessible"
+    
+    # Get security groups
+    echo
+    print_status "🛡️ Security Groups:"
+    aws cloudformation list-stack-resources \
+        --stack-name "$stack_name" \
+        --region "$region" \
+        --query 'StackResourceSummaries[?ResourceType==`AWS::EC2::SecurityGroup`].{LogicalId:LogicalResourceId,PhysicalId:PhysicalResourceId,Status:ResourceStatus}' \
+        --output table 2>/dev/null || print_warning "Security groups not accessible"
+    
+    # Summary of installed tools
+    echo
+    print_status "🛠️ Installed Tools Summary:"
+    printf "%-20s %-30s %-10s\n" "Tool" "Version" "Status"
+    printf "%-20s %-30s %-10s\n" "----" "-------" "------"
+    
+    # Check jq
+    if command_exists jq; then
+        jq_version=$(jq --version 2>/dev/null || echo "Unknown")
+        printf "%-20s %-30s %-10s\n" "jq" "$jq_version" "✅ Installed"
+    else
+        printf "%-20s %-30s %-10s\n" "jq" "N/A" "❌ Missing"
+    fi
+    
+    # Check AWS CLI
+    if command_exists aws; then
+        aws_version=$(aws --version 2>/dev/null | cut -d' ' -f1 || echo "Unknown")
+        printf "%-20s %-30s %-10s\n" "AWS CLI" "$aws_version" "✅ Installed"
+    else
+        printf "%-20s %-30s %-10s\n" "AWS CLI" "N/A" "❌ Missing"
+    fi
+    
+    # Check kubectl (if available)
+    if command_exists kubectl; then
+        kubectl_version=$(kubectl version --client --short 2>/dev/null | cut -d' ' -f3 || echo "Unknown")
+        printf "%-20s %-30s %-10s\n" "kubectl" "$kubectl_version" "✅ Installed"
+    else
+        printf "%-20s %-30s %-10s\n" "kubectl" "N/A" "⚠️ Not installed"
+    fi
+    
+    echo
+    print_status "📊 Resource Cost Estimation:"
+    echo "Note: Use AWS Pricing Calculator for detailed cost estimates"
+    echo "https://calculator.aws"
+}
+
 echo
-print_status "=========================================="
+print_status "==========================================="
 print_status "✅ Infrastructure deployment completed successfully!"
-print_status "=========================================="
+print_status "==========================================="
 echo
 print_status "What was created:"
 echo "  • EKS cluster for Kubernetes orchestration"
 echo "  • VPC with secure networking configuration"
 echo "  • IAM roles with appropriate permissions"
 echo "  • Initial compute instances for ML workloads"
+echo
+
+# Display comprehensive infrastructure status
+if [ -n "$stack_name" ] && [ -n "$region" ]; then
+    display_infrastructure_status "$stack_name" "$region"
+fi
+
 echo
 print_status "Next Steps:"
 echo "  1. Run './create_hp_cluster.sh' to configure the HyperPod cluster"
