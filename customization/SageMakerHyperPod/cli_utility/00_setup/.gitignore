@@ -1,0 +1,6 @@
+# Generated configuration files
+.stack_arn
+params.json
+env_vars
+og_cluster_config.json
+updated_cluster_config.json
