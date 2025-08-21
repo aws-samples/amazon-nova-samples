@@ -160,7 +160,7 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
                         "aws:SourceAccount": f"{account_id}"
                     },
                     "ArnEquals": {
-                        "aws:SourceArn": f"arn:aws:bedrock:{region}:{account_id}:model-customization-job/*"
+                        "aws:SourceArn": f"arn:aws:bedrock:*:{account_id}:model-customization-job/*"
                     }
                 }
             }
@@ -192,7 +192,7 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
                 "bedrock:ListModelCustomizationJobs",
                 "bedrock:StopModelCustomizationJob"
             ],
-            "Resource": f"arn:aws:bedrock:{region}:{account_id}:model-customization-job/*" 
+            "Resource": f"arn:aws:bedrock:*:{account_id}:model-customization-job/*" 
         },
 {
             "Sid": "CrossRegionInference",
@@ -201,9 +201,9 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
                 "bedrock:InvokeModel"
             ],
             "Resource": [
-                f"arn:aws:bedrock:{region}:{account_id}:inference-profile/*", 
-                f"arn:aws:bedrock:{region}::foundation-model/*", 
-                f"arn:aws:bedrock:{region}::foundation-model/*", 
+                f"arn:aws:bedrock:*:{account_id}:inference-profile/*", 
+                "arn:aws:bedrock:*::foundation-model/*",
+                "arn:aws:bedrock:*::foundation-model/*"
             ]
         }
         ]
@@ -217,6 +217,7 @@ def create_model_distillation_role_and_permissions(bucket_name, unique_id=None, 
             AssumeRolePolicyDocument=json.dumps(trust_policy),
             Description='Role for Amazon Bedrock model distillation'
         )
+
 
         # Create service linked role
         # role_response = iam.create_service_linked_role(
