@@ -79,6 +79,7 @@ class BatchInferenceSimulator:
         initial_backoff: float = 1.0,
         backoff_factor: float = 2.0,
         jitter: float = 0.1,
+        rpm: int = 30,
         logger: Optional[logging.Logger] = None,
         error_logger: Optional[logging.Logger] = None
     ):
@@ -94,6 +95,7 @@ class BatchInferenceSimulator:
             initial_backoff: Initial backoff time in seconds
             backoff_factor: Multiplicative factor for backoff
             jitter: Random jitter factor to add to backoff
+            rpm: Requests per minute limit (default: 30)
             logger: Logger for general logs
             error_logger: Logger for error logs
         """
@@ -105,6 +107,11 @@ class BatchInferenceSimulator:
         self.initial_backoff = initial_backoff
         self.backoff_factor = backoff_factor
         self.jitter = jitter
+        self.rpm = rpm
+        
+        # Calculate minimum time between requests (in seconds)
+        self.min_request_interval = 60.0 / rpm if rpm > 0 else 0
+        self.last_request_time = 0
         
         # Set up loggers if not provided
         if logger is None or error_logger is None:
@@ -150,6 +157,7 @@ class BatchInferenceSimulator:
             
             self.logger.info(f"Read {len(records)} records from {self.input_file}")
             self.stats["total_records"] = len(records)
+
             return records
         
         except FileNotFoundError:
@@ -239,6 +247,11 @@ class BatchInferenceSimulator:
                 "topK": config.get("topK", 50),
                 "stopSequences": config.get("stopSequences", [])
             }
+        else:
+            formatted_input["inferenceConfig"] = {
+                "maxTokens": 4096,
+                "temperature": .2,
+            }
         
         # Add tool configuration if present
         if "toolConfig" in model_input:
@@ -246,9 +259,126 @@ class BatchInferenceSimulator:
         
         return formatted_input
     
+    def _sanitize_tool_name(self, name: str) -> str:
+        """
+        Sanitize tool names to comply with Bedrock converse API naming rules
+        Pattern: [a-zA-Z0-9_-]+
+        
+        Args:
+            name: Original tool name
+            
+        Returns:
+            Sanitized tool name compliant with Bedrock naming rules
+        """
+        import re
+        
+        # Replace invalid characters with underscores
+        sanitized = re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+        
+        # Ensure it doesn't start with a number or special character
+        if sanitized and not sanitized[0].isalpha():
+            sanitized = 'tool_' + sanitized
+        
+        # Ensure it's not empty
+        if not sanitized:
+            sanitized = 'unnamed_tool'
+        
+        return sanitized
+    
+    def _validate_and_fix_tool_config(self, tool_config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Validate and fix tool configuration for converse API compatibility
+        
+        Args:
+            tool_config: Original tool configuration
+            
+        Returns:
+            Fixed tool configuration with sanitized names and valid structure
+        """
+        if not isinstance(tool_config, dict) or "tools" not in tool_config:
+            return tool_config
+        
+        fixed_config = tool_config.copy()
+        fixed_tools = []
+        
+        for tool in tool_config.get("tools", []):
+            if isinstance(tool, dict) and "toolSpec" in tool:
+                fixed_tool = tool.copy()
+                tool_spec = fixed_tool["toolSpec"]
+                
+                # Sanitize tool name
+                if "name" in tool_spec:
+                    original_name = tool_spec["name"]
+                    sanitized_name = self._sanitize_tool_name(original_name)
+                    
+                    if original_name != sanitized_name:
+                        self.logger.info(f"Tool name sanitized: '{original_name}' -> '{sanitized_name}'")
+                        tool_spec["name"] = sanitized_name
+                
+                fixed_tools.append(fixed_tool)
+            else:
+                # Keep tool as-is if it doesn't have expected structure
+                fixed_tools.append(tool)
+        
+        fixed_config["tools"] = fixed_tools
+        return fixed_config
+    
+    def _converse(self, formatted_input: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Helper method to invoke the converse API for tool calling
+        
+        Args:
+            formatted_input: Formatted model input with toolConfig
+            
+        Returns:
+            Converse API response
+        """
+        # Prepare converse API parameters
+        converse_params = {
+            "modelId": self.model_id
+        }
+        
+        # Add system prompt if present
+        if "system" in formatted_input:
+            converse_params["system"] = formatted_input["system"]
+        
+        # Add messages if present
+        if "messages" in formatted_input:
+            converse_params["messages"] = formatted_input["messages"]
+        
+        # Add inference config if present, but filter for converse API compatibility
+        if "inferenceConfig" in formatted_input:
+            # Converse API only supports: maxTokens, temperature, topP, stopSequences
+            # It does NOT support: topK
+            original_config = formatted_input["inferenceConfig"]
+            converse_config = {}
+            
+            # Copy supported parameters only
+            if "maxTokens" in original_config:
+                converse_config["maxTokens"] = original_config["maxTokens"]
+            if "temperature" in original_config:
+                converse_config["temperature"] = original_config["temperature"]
+            if "topP" in original_config:
+                converse_config["topP"] = original_config["topP"]
+            if "stopSequences" in original_config:
+                converse_config["stopSequences"] = original_config["stopSequences"]
+            
+            if converse_config:  # Only add if we have valid parameters
+                converse_params["inferenceConfig"] = converse_config
+        
+        # Add tool config if present, with validation and fixing
+        if "toolConfig" in formatted_input:
+            # Validate and fix tool configuration for converse API compatibility
+            fixed_tool_config = self._validate_and_fix_tool_config(formatted_input["toolConfig"])
+            converse_params["toolConfig"] = fixed_tool_config
+        
+        # Call converse API
+        return self.bedrock_client.converse(**converse_params)
+    
     def invoke_model(self, model_input: Dict[str, Any], record_id: str) -> Dict[str, Any]:
         """
         Invoke Bedrock model with retry logic
+        Automatically detects toolConfig and routes to converse API when present
         
         Args:
             model_input: Model input parameters
@@ -261,27 +391,50 @@ class BatchInferenceSimulator:
         backoff_time = self.initial_backoff
         
         # Format the input for nova lite
-        self.logger.debug("model input", model_input)
+        # self.logger.info("model input", model_input)
         formatted_input = self.format_model_input(model_input)
         # print("formatted_input", formatted_input)
+        
+        # Detect if toolConfig is present - if so, use converse API
+        use_converse_api = "toolConfig" in formatted_input
+        
+        if use_converse_api:
+            self.logger.info(f"Detected toolConfig in record {record_id} - routing to converse API")
+        else:
+            self.logger.debug(f"No toolConfig detected in record {record_id} - using invoke_model API")
         
         while True:
             try:
                 self.logger.debug(f"Invoking model for record {record_id}")
                 
-                # Invoke the model
-                response = self.bedrock_client.invoke_model(
-                    modelId=self.model_id,
-                    body=json.dumps(formatted_input)
-                )
-                
-                
-                # Parse the response
-                response_body = json.loads(response.get('body').read().decode('utf-8'))
-                
-                # Extract metrics
-                input_tokens = response.get('inputTokenCount', 0)
-                output_tokens = response.get('outputTokenCount', 0)
+                if use_converse_api:
+                    # Use converse API for tool calling
+                    response = self._converse(formatted_input)
+                    
+                    # Extract token usage from converse response
+                    input_tokens = response.get('usage', {}).get('inputTokens', 0)
+                    output_tokens = response.get('usage', {}).get('outputTokens', 0)
+                    
+                    # Format response body to match invoke_model format
+                    response_body = {
+                        "output": response.get("output", {}),
+                        "stopReason": response.get("stopReason", ""),
+                        "usage": response.get("usage", {}),
+                        "metrics": response.get("metrics", {})
+                    }
+                else:
+                    # Use traditional invoke_model API
+                    response = self.bedrock_client.invoke_model(
+                        modelId=self.model_id,
+                        body=json.dumps(formatted_input)
+                    )
+                    
+                    # Parse the response
+                    response_body = json.loads(response.get('body').read().decode('utf-8'))
+                    
+                    # Extract metrics
+                    input_tokens = response.get('inputTokenCount', 0)
+                    output_tokens = response.get('outputTokenCount', 0)
                 
                 # Update token statistics
                 self.stats["total_tokens"]["input"] += input_tokens
@@ -298,6 +451,7 @@ class BatchInferenceSimulator:
                 return formatted_response
                 
             except ClientError as e:
+                self.logger.error(e)
                 error_code = getattr(e, "response", {}).get("Error", {}).get("Code", "")
                 
                 # Don't retry ModelErrorException
@@ -382,15 +536,29 @@ class BatchInferenceSimulator:
         self.logger.info(f"Starting batch inference with {len(records)} records")
         
         # Create output directory if it doesn't exist
-        os.makedirs(os.path.dirname(self.output_file), exist_ok=True)
+        output_dir = os.path.dirname(self.output_file)
+        if output_dir:  # Only create directory if there is a directory path
+            os.makedirs(output_dir, exist_ok=True)
         
         with open(self.output_file, 'w') as f:
             for record in tqdm(records, desc="Processing records"):
+                # Rate limiting: ensure we don't exceed RPM
+                if self.min_request_interval > 0:
+                    current_time = time.time()
+                    time_since_last_request = current_time - self.last_request_time
+                    
+                    if time_since_last_request < self.min_request_interval:
+                        sleep_time = self.min_request_interval - time_since_last_request
+                        self.logger.debug(f"Rate limiting: sleeping for {sleep_time:.2f}s to maintain {self.rpm} RPM")
+                        time.sleep(sleep_time)
+                    
+                    self.last_request_time = time.time()
+                
                 # Extract record ID and model input
+                # self.logger.info("preview record:", record)
                 record_id = record.get("recordId", f"record_{hash(json.dumps(record))}")
                 model_input = record.get("modelInput", {})
-                
-                
+
                 # Invoke model
                 result = self.invoke_model(model_input, record_id)
                 
@@ -450,10 +618,11 @@ def parse_args():
     
     parser.add_argument("--input", "-i", required=True, help="Input JSONL file path")
     parser.add_argument("--output", "-o", required=True, help="Output JSONL file path")
-    parser.add_argument("--model", "-m", default="anthropic.claude-3-haiku-20240307-v1:0", 
+    parser.add_argument("--model", "-m", default="anthropic.claude-3-haiku-20240307-v1:0",
                         help="Bedrock model ID (default: anthropic.claude-3-haiku-20240307-v1:0)")
     parser.add_argument("--region", "-r", default="us-east-1", help="AWS region (default: us-east-1)")
     parser.add_argument("--max-retries", type=int, default=5, help="Maximum retries for failed requests (default: 5)")
+    parser.add_argument("--rpm", type=int, default=30, help="Requests per minute limit (default: 30)")
     parser.add_argument("--log-level", default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
                         help="Logging level (default: INFO)")
     
@@ -474,6 +643,7 @@ def main():
         model_id=args.model,
         region=args.region,
         max_retries=args.max_retries,
+        rpm=args.rpm,
         logger=main_logger,
         error_logger=error_logger
     )

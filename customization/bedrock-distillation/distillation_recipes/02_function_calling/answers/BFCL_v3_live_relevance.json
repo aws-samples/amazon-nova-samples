@@ -1,0 +1,18 @@
+{"id": "live_relevance_0-0-0", "ground_truth": [{"search_engine.query": {"prompt": ["test parameter value"], "since_year": [2023], "source": ["all"], "include_facts": [true]}}]}
+{"id": "live_relevance_1-1-0", "ground_truth": [{"english_llm": {"q": ["test parameter value"], "max_tokens": [50], "temperature": [0.7], "return_probabilities": [false]}}]}
+{"id": "live_relevance_2-2-0", "ground_truth": [{"search_web": {"query": ["test parameter value"], "results_limit": [10], "language": ["en"], "safe_search": [true]}}]}
+{"id": "live_relevance_3-3-0", "ground_truth": [{"open_meteo_api.fetch_weather_data": {"units": ["Celsius"]}}]}
+{"id": "live_relevance_4-4-0", "ground_truth": [{"tavily_search_results_json": {"query": ["test parameter value"], "results_limit": [10], "include_snippets": [true], "date_range": [null]}}]}
+{"id": "live_relevance_5-5-0", "ground_truth": [{"get_copyright_info": {"copyright_content": ["test parameter value"], "copyright_holder": ["test parameter value"]}}]}
+{"id": "live_relevance_6-6-0", "ground_truth": [{"handover_to_agent": {"agent_id": ["test parameter value"], "session_id": ["test parameter value"], "priority": ["medium"], "message": [""]}}]}
+{"id": "live_relevance_7-7-0", "ground_truth": [{"Hotels_2_SearchHouse": {"where_to": ["test parameter value"], "has_laundry_service": ["dontcare"], "number_of_adults": [0], "rating": [0.0]}}]}
+{"id": "live_relevance_8-8-0", "ground_truth": [{"Events_3_FindEvents": {"event_type": ["Theater"], "city": ["test parameter value"], "date": [null]}}]}
+{"id": "live_relevance_9-9-0", "ground_truth": [{"Movies_1_GetTimesForMovie": {"movie_name": ["test parameter value"], "location": ["test parameter value"], "show_date": ["test parameter value"], "theater_name": ["Any Theater"], "show_type": ["regular"]}}]}
+{"id": "live_relevance_10-10-0", "ground_truth": [{"Movies_1_GetTimesForMovie": {"movie_name": ["test parameter value"], "location": ["test parameter value"], "show_date": ["test parameter value"], "theater_name": ["Any Theater"], "show_type": ["regular"]}}]}
+{"id": "live_relevance_11-11-0", "ground_truth": [{"Services_4_FindProvider": {"city": ["test parameter value"], "type": ["Psychiatrist"]}}]}
+{"id": "live_relevance_12-12-0", "ground_truth": [{"RentalCars_3_ReserveCar": {"pickup_location": ["test parameter value"], "start_date": ["test parameter value"], "pickup_time": ["test parameter value"], "end_date": ["test parameter value"], "car_type": ["dontcare"]}}]}
+{"id": "live_relevance_13-13-0", "ground_truth": [{"Trains_1_GetTrainTickets": {"_from": ["test parameter value"], "to": ["test parameter value"], "date_of_journey": ["test parameter value"], "journey_start_time": ["test parameter value"], "number_of_adults": [1], "trip_protection": [false], "_class": ["Value"]}}]}
+{"id": "live_relevance_14-14-0", "ground_truth": [{"Restaurants_2_FindRestaurants": {"category": ["Thai"], "location": ["test parameter value"], "price_range": ["dontcare"], "has_vegetarian_options": [false], "has_seating_outdoors": [false]}}]}
+{"id": "live_relevance_15-15-0", "ground_truth": [{"Hotels_2_BookHouse": {"where_to": ["test parameter value"], "number_of_adults": ["dontcare"], "check_in_date": ["test parameter value"], "check_out_date": ["test parameter value"]}}]}
+{"id": "live_relevance_16-16-0", "ground_truth": [{"ControlAppliance.execute": {"command": [", \uc5d0\uc5b4\ucee8, \ub0c9\ubc29 \uc2e4\ud589"]}}]}
+{"id": "live_relevance_17-17-0", "ground_truth": [{"interior_design_analysis.generate_report": {"user_preferences": ["test parameter value"], "data_source": ["test parameter value"], "output_format": ["PDF"], "include_visuals": [true], "environmental_impact_focus": [false]}}]}
