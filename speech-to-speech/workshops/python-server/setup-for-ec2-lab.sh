@@ -9,6 +9,7 @@ pip install --upgrade pip
 
 # install dependencies
 pip install -r requirements.txt
+pip install boto3 --upgrade
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 

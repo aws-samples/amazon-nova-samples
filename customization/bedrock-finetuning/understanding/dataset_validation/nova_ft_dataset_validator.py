@@ -1,9 +1,18 @@
 import argparse
 import json
 import re
-from typing import List, Optional
+from enum import Enum
+from typing import Annotated, List, Optional, Union, cast
 
-from pydantic import BaseModel, ValidationError, ValidationInfo, field_validator, model_validator
+from pydantic import (
+    BaseModel,
+    Discriminator,
+    Tag,
+    ValidationError,
+    ValidationInfo,
+    field_validator,
+    model_validator,
+)
 
 IMAGE_FORMATS = ["jpeg", "png", "gif", "webp"]
 VIDEO_FORMATS = ["mov", "mkv", "mp4", "webm"]
@@ -23,7 +32,22 @@ INVALID_TOKENS_TEXT = [
     "[EOS]",
     "<image>",
     "<video>",
+    "<unk>",
 ]
+
+
+class PreferenceLabels:
+    PREFERRED = "preferred"
+    NON_PREFERRED = "non-preferred"
+
+
+# Converse message with a preferred and non-preferred model output for DPO
+PREFERENCE_LABELS = [PreferenceLabels.PREFERRED, PreferenceLabels.NON_PREFERRED]
+
+
+class TaskType(Enum):
+    SFT = "SFT"
+    DPO = "DPO"
 
 
 class ConverseRoles:
@@ -148,6 +172,56 @@ class ContentItem(BaseModel):
         return text
 
 
+class CandidateItem(BaseModel):
+    content: List[ContentItem]
+    preferenceLabel: str
+
+    @field_validator("content")
+    def validate_content(cls, content):
+        has_video = any(item.video is not None for item in content)
+        has_image = any(item.image is not None for item in content)
+
+        if has_video or has_image:
+            raise ValueError("Invalid content, candidate contents cannot include image/video")
+
+        if sum(len(item.text) for item in content if item.text is not None) == 0:
+            raise ValueError("Invalid content, empty text content")
+
+        return content
+
+    @field_validator("preferenceLabel")
+    def validate_preference_label(cls, preference_label):
+        if preference_label.lower() not in PREFERENCE_LABELS:
+            raise ValueError(
+                f"Invalid value for preferenceLabel, valid values are {PREFERENCE_LABELS}"
+            )
+        return preference_label
+
+
+class CandidatesMessage(BaseModel):
+    role: str
+    candidates: List[CandidateItem]
+
+    @field_validator("role")
+    def validate_role(cls, role):
+        """Validates that the role is either user or assistant."""
+        validate_role_name(role)
+        return role
+
+    @field_validator("candidates")
+    def validate_candidates(cls, candidates):
+        if len(candidates) < 2:
+            raise ValueError("Invalid candidates, candidates list must have at least two items")
+
+        preference_labels = set(candidate.preferenceLabel for candidate in candidates)
+        if len(preference_labels) < 2:
+            raise ValueError(
+                "Invalid candidates, all candidates cannot have the same preferenceLabel"
+            )
+
+        return candidates
+
+
 class Message(BaseModel):
     """Represents a conversation message with role and content."""
 
@@ -157,10 +231,7 @@ class Message(BaseModel):
     @field_validator("role")
     def validate_role(cls, role):
         """Validates that the role is either user or assistant."""
-        if role.lower() not in CONVERSE_ROLES_WITHOUT_SYSTEM:
-            raise ValueError(
-                f"Invalid value for role, valid values are {CONVERSE_ROLES_WITHOUT_SYSTEM}"
-            )
+        validate_role_name(role)
         return role
 
     @model_validator(mode="after")
@@ -255,6 +326,38 @@ class ConverseDatasetSample(BaseModel):
         return messages
 
 
+MessageOrCandidate = Annotated[
+    Union[
+        Annotated[Message, Tag("Message")],
+        Annotated[CandidatesMessage, Tag("CandidatesMessage")],
+    ],
+    Discriminator(lambda message: "CandidatesMessage" if "candidates" in message else "Message"),
+]
+
+
+class ConverseDatasetSampleWithCandidates(BaseModel):
+    schemaVersion: Optional[str] = None
+    system: Optional[List[SystemMessage]] = None
+    messages: List[MessageOrCandidate]
+
+    @field_validator("messages")
+    def validate_data_sample_rules(cls, messages: List[MessageOrCandidate]):
+        if any(isinstance(message, CandidatesMessage) for message in messages[:-1]):
+            raise ValueError("Invalid messages, only the last message can be a candidates message")
+
+        if not isinstance(messages[-1], CandidatesMessage):
+            raise ValueError("Invalid messages, last message must be a candidates message")
+
+        if any(
+            item.video for message in cast(List[Message], messages[:-1]) for item in message.content
+        ):
+            raise ValueError("Invalid sample, video content is not supported for DPO")
+
+        check_roles_order(messages)
+
+        return messages
+
+
 def validate_converse_dataset(args):
     """Validates the entire conversation dataset against Nova format requirements."""
     try:
@@ -270,9 +373,18 @@ def validate_converse_dataset(args):
     failed_samples_id_list = []
 
     print(f"Validating samples for model: {args.model_name}")
+    task_type = TaskType(str(args.task_type).upper())
+    print(f"Using task: {task_type}")
     for i, sample in enumerate(samples):
         try:
-            ConverseDatasetSample.model_validate(sample, context={"model_name": args.model_name})
+            if task_type is TaskType.DPO:
+                ConverseDatasetSampleWithCandidates.model_validate(
+                    sample, context={"model_name": args.model_name}
+                )
+            else:
+                ConverseDatasetSample.model_validate(
+                    sample, context={"model_name": args.model_name}
+                )
         except ValidationError as e:
             failed_samples_id_list.append(i)
             error_message += f"\nSample {i}:\n"
@@ -370,6 +482,14 @@ def validate_data_record_bounds(num_samples: int, model_name: str):
         )
 
 
+def validate_role_name(role: str):
+    if role.lower() not in CONVERSE_ROLES_WITHOUT_SYSTEM:
+        raise ValueError(
+            f"Invalid value for role, valid values are {CONVERSE_ROLES_WITHOUT_SYSTEM}"
+        )
+    return role
+
+
 if __name__ == "__main__":
     description = """
     This script is for validating Nova converse format.
@@ -393,6 +513,14 @@ if __name__ == "__main__":
         choices=["micro", "lite", "pro"],
         required=True,
         help="Choose a model from: micro, lite, pro",
+    )
+    parser.add_argument(
+        "-t",
+        "--task_type",
+        type=str,
+        choices=["sft", "dpo", "SFT", "DPO"],
+        required=True,
+        help="Choose a task type: sft, dpo",
     )
     args = parser.parse_args()
     validate_converse_dataset(args)

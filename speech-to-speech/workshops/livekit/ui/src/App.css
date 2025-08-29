@@ -1,0 +1,20 @@
+body {
+  width: 100%;
+  background-color: black;
+}
+.livekit {
+  top:0px;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+}
+.livekit .title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+.livekit .url {
+  font-size: large;
+  color: silver;
+  padding: 10px;
+}

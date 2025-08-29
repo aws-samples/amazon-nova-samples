@@ -61,6 +61,7 @@ class McpLocationClient:
         query = input.get("query", input)
 
         response = await self.session.call_tool(tool_name, {"query":query})
+        print("!!!!",tool_name, query, response)
         result = []
         for c in response.content:
             result.append(c.text)

@@ -17,6 +17,13 @@ class ExpandableBuffer {
 
         if (this.writeIndex + samples.length <= this.buffer.length) {
             // Enough space to append the new samples
+            this.buffer.set(samples, this.writeIndex);
+            this.writeIndex += samples.length;
+            if (this.writeIndex - this.readIndex >= this.initialBufferLength) {
+                // Filled the initial buffer length, so we can start playback with some cushion
+                this.isInitialBuffering = false;
+            }
+            return;
         }
         else {
             // Not enough space ...
@@ -35,6 +42,7 @@ class ExpandableBuffer {
             this.writeIndex -= this.readIndex;
             this.readIndex = 0;
         }
+        // This code is now only reached if we had to resize the buffer
         this.buffer.set(samples, this.writeIndex);
         this.writeIndex += samples.length;
         if (this.writeIndex - this.readIndex >= this.initialBufferLength) {

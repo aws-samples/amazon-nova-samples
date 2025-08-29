@@ -1,2 +1,3 @@
 livekit-agents==1.2.1
 livekit-plugins-aws==1.2.1
+aws_sdk_bedrock_runtime

@@ -31,7 +31,6 @@ def weather(lat, lon: float) -> str:
         print(ex)
     return result
 
-
 class StrandsAgent:
 
     def __init__(self):

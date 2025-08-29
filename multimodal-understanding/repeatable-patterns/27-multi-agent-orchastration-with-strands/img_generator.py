@@ -7,16 +7,15 @@ import json
 import boto3
 import sagemaker
 from datetime import datetime
-from typing import Any, Dict
+from typing import Any, Union, Dict, Set, List, TypedDict, Annotated
 from strands import Agent, tool
 from strands.models import BedrockModel
-from strands_tools import retrieve, think, editor, http_request
+from strands_tools import retrieve, editor, http_request
 
 # Create directory for saved images if it doesn't exist
 SAVE_DIR = "generated_images"
 if not os.path.exists(SAVE_DIR):
     os.makedirs(SAVE_DIR)
-
 
 sts_client = boto3.client('sts')
 account_id = sts_client.get_caller_identity()["Account"]
@@ -24,22 +23,16 @@ session = sagemaker.Session()
 
 aws_region = boto3.session.Session().region_name
 
-
-
-def img_creator(tool: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
-    """
-    Generate an image using Nova Canvas model and save it to a file
+@tool
+def img_creator(prompt: str, img_model: str = "amazon.nova-canvas-v1:0", number_of_images: int = 1) -> str:
+    """Generates an image using Amazon Bedrock Nova Canvas model based on a given prompt and saves it to a file
+    
+    Args:
+        prompt: The text prompt for image generation
+        model_id: Model id for image model, default is amazon.nova-canvas-v1:0
+        number_of_images: Number of images to generate (default: 1)
     """
     try:
-        tool_use_id = tool["toolUseId"]
-        tool_input = tool["input"]
-        filename = None
-
-        # Extract input parameters
-        prompt = tool_input.get("prompt", "A high resolution, photo realistic picture")
-        model_id = tool_input.get("model_id", "amazon.nova-canvas-v1:0")
-        number_of_images = tool_input.get("number_of_images", 1)
-
         # Create a Bedrock Runtime client
         client = boto3.client("bedrock-runtime", region_name=aws_region)
 
@@ -60,7 +53,7 @@ def img_creator(tool: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         # Invoke the model
         response = client.invoke_model(
             body=json.dumps(request_payload),
-            modelId=model_id,
+            modelId=img_model,
             accept="application/json",
             contentType="application/json"
         )
@@ -79,63 +72,9 @@ def img_creator(tool: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         filename = f"{SAVE_DIR}/nova_{safe_prompt}_{timestamp}.png"
         
         # Save the image
-        try:
-            with open(filename, "wb") as f:
-                f.write(image_bytes)
-            save_message = f"✨ Generated image for prompt: '{prompt}'\nImage saved to: {filename}"
+        with open(filename, "wb") as f:
+            f.write(image_bytes)
+        return f"✨ Generated image for prompt: '{prompt}'\nImage saved to: {filename}"
        
-        except Exception as save_error:
-            save_message = f"✨ Generated image for prompt: '{prompt}'\nFailed to save image: {str(save_error)}"
-                
-        
-
-        # Return the result in the correct format
-        return {
-            "toolUseId": tool_use_id,
-            "status": "success",
-            "content": [
-                {
-                    "text": save_message
-                }
-            ]
-        }
-
-
     except Exception as e:
-        return {
-            "toolUseId": tool_use_id,
-            "status": "error",
-            "content": [
-                {
-                    "text": f"❌ Error generating image: {str(e)}"
-                }
-            ]
-        }
-
-
-
-
-img_creator.TOOL_SPEC = {
-    "name": "img_creator",
-    "description": "Generates an image using Amazon Bedrock Nova Canvas model based on a given prompt and saves it to a file",
-    "inputSchema": {
-        "json": {
-            "type": "object",
-            "properties": {
-                "prompt": {
-                    "type": "string",
-                    "description": "The text prompt for image generation",
-                },
-                "model_id": {
-                    "type": "string",
-                    "description": "Model id for image model, amazon.nova-canvas-v1:0",
-                },
-                "number_of_images": {
-                    "type": "integer",
-                    "description": "Optional: Number of images to generate (default: 1)",
-                }
-            },
-            "required": ["prompt"],
-        }
-    },
-}
+        return f"❌ Error generating image: {str(e)}"

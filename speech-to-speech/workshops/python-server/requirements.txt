@@ -1,9 +1,9 @@
-boto3==1.38.2
+boto3==1.40.17
 numpy==2.2.4
 scipy==1.15.2
 rx==3.2.0
 websockets==15.0.1
-aws_sdk_bedrock_runtime
-mcp==1.8.1
-strands-agents
 requests==2.32.3
+aws_sdk_bedrock_runtime
+mcp==1.13.1
+strands-agents==0.1.6

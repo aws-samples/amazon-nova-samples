@@ -33,7 +33,7 @@ async def entrypoint(ctx: agents.JobContext):
         chat_ctx=chat_ctx, 
         tools=[lookup_weather]
     )
-    session = AgentSession(llm=RealtimeModel())
+    session = AgentSession(llm=RealtimeModel(voice="matthew"))
     
     # Start the session in the specified room
     await session.start(

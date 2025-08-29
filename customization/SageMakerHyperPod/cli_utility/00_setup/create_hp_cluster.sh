@@ -336,12 +336,10 @@ cat > updated_cluster_config.json << EOF
         }
       ],
       "OverrideVpcConfig": ${vpc_config},
-      "TrustedEnvironment": {
-        "Config": {
-          "FSxLustreConfig": {
+      "EnvironmentConfig": {
+        "FSxLustreConfig": {
             "SizeInGiB": ${restricted_fsx_size},
             "PerUnitStorageThroughput": ${restricted_fsx_throughput}
-          }
         }
       }
     }

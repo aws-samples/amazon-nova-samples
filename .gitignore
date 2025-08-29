@@ -4,3 +4,5 @@ output
 .venv
 __pycache__
 .local_data
+node_modules
+package-lock.json

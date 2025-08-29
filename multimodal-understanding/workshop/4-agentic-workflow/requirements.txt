@@ -1,0 +1,4 @@
+bedrock-agentcore
+strands-agents
+strands-agents-tools
+structlog

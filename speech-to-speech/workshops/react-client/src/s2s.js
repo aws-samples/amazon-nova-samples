@@ -6,6 +6,7 @@ import Meter from './components/meter';
 import S2sEventDisplay from './components/eventDisplay';
 import { base64ToFloat32Array } from './helper/audioHelper';
 import AudioPlayer from './helper/audioPlayer';
+import { DemoProfiles, Voices } from './helper/config';
 
 class S2sChatBot extends React.Component {
 
@@ -24,6 +25,12 @@ class S2sChatBot extends React.Component {
             audioChunks: [],
             audioPlayPromise: null,
             includeChatHistory: false,
+
+            selectedDemoProfileOption: DemoProfiles?{
+                                label: DemoProfiles[0].name,
+                                value: DemoProfiles[0].name,
+                                description: DemoProfiles[0].description
+                            }:{},
 
             promptName: null,
             textContentName: null,
@@ -54,18 +61,40 @@ class S2sChatBot extends React.Component {
         this.audioPlayer.start().catch(err => {
             console.error("Failed to initialize audio player:", err);
         });
+
+        // Scroll to bottom on initial load
+        setTimeout(() => {
+            this.scrollToBottom();
+        }, 100);
     }
 
     componentWillUnmount() {
         this.audioPlayer.stop();
     }
 
+    scrollToBottom = () => {
+        if (this.chatMessagesEndRef.current) {
+            this.chatMessagesEndRef.current.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'end'
+            });
+        }
+    }
 
     componentDidUpdate(prevProps, prevState) {
         this.stateRef.current = this.state; 
 
         if (prevState.chatMessages.length !== this.state.chatMessages.length) {
-            this.chatMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+            // Check if chat messages have changed by comparing the number of keys
+            const prevMessageCount = Object.keys(prevState.chatMessages || {}).length;
+            const currentMessageCount = Object.keys(this.state.chatMessages || {}).length;
+
+            if (prevMessageCount !== currentMessageCount) {
+                // Use setTimeout to ensure DOM is updated before scrolling
+                setTimeout(() => {
+                    this.scrollToBottom();
+                }, 100);
+            }
         }
     }
     
@@ -109,7 +138,12 @@ class S2sChatBot extends React.Component {
                         chatMessages[contentId].raw = [];
                     chatMessages[contentId].raw.push(message);
                 }
-                this.setState({chatMessages: chatMessages});
+                
+                this.setState({chatMessages: chatMessages}, () => {
+                    // Scroll to bottom immediately after state update
+                    this.scrollToBottom();
+                });
+                
                 break;
             case "audioOutput":
                 try {
@@ -134,7 +168,11 @@ class S2sChatBot extends React.Component {
                         "raw": [],
                     };
                     chatMessages[contentId].raw.push(message);
-                    this.setState({chatMessages: chatMessages});
+                    
+                    this.setState({chatMessages: chatMessages}, () => {
+                        // Scroll to bottom immediately after state update
+                        this.scrollToBottom();
+                    });
                 }
                 break;
             case "contentEnd":
@@ -145,7 +183,11 @@ class S2sChatBot extends React.Component {
                         chatMessages[contentId].raw.push(message);
                         chatMessages[contentId].stopReason = stopReason;
                     }
-                    this.setState({chatMessages: chatMessages});
+
+                    this.setState({chatMessages: chatMessages}, () => {
+                        // Scroll to bottom immediately after state update
+                        this.scrollToBottom();
+                    });
                 }
                 break;
             case "usageEvent":
@@ -177,7 +219,11 @@ class S2sChatBot extends React.Component {
             this.setState({
                 chatMessages:{}, 
                 events: [], 
+            }, () => {
+                // Scroll to bottom when starting new session
+                this.scrollToBottom();
             });
+
             if (this.eventDisplayRef.current) this.eventDisplayRef.current.cleanup();
             if (this.meterRef.current) this.meterRef.current.start();
             
@@ -381,6 +427,20 @@ class S2sChatBot extends React.Component {
         }
   
     }
+
+    handleDemoProfileChange = e => {
+        this.setState({selectedDemoProfileOption: e.detail.selectedOption});
+        var demoProfile = DemoProfiles.find(obj => obj.name === e.detail.selectedOption.value);
+        if (demoProfile) {
+            this.setState({
+                configVoiceIdOption: Voices.find(i=>i.value === demoProfile.voiceId),
+                configSystemPrompt: demoProfile.systemPrompt,
+                configToolUse: JSON.stringify(demoProfile.toolConfig, null, 4),
+                sessionStarted: true,
+            },() => this.handleSessionChange(null));
+        }
+    }
+
     render() {
         return (
             <div className="s2s">
@@ -400,6 +460,18 @@ class S2sChatBot extends React.Component {
                         </div>
                     </div>
                     {this.state.showUsage && <Meter ref={this.meterRef}/>}
+                    <div className='profile'>
+                        <div className='label'>Switch test profile</div>
+                        <Select
+                            selectedOption={this.state.selectedDemoProfileOption}
+                            onChange={this.handleDemoProfileChange}
+                            options={DemoProfiles?DemoProfiles.map(item => ({
+                                label: item.name,
+                                value: item.name,
+                                description: item.description
+                            })):[]}
+                            />
+                    </div>
                     <div className='setting'>
                         <Button onClick={()=> 
                             this.setState({
@@ -501,13 +573,7 @@ class S2sChatBot extends React.Component {
                                 onChange={({ detail }) =>
                                     this.setState({configVoiceIdOption: detail.selectedOption})
                                 }
-                                options={[
-                                    { label: "Matthew (en-US)", value: "matthew" },
-                                    { label: "Tiffany (en-US)", value: "tiffany" },
-                                    { label: "Amy (en-GB)", value: "amy" },
-                                    { label: "Lupe (Spanish)", value: "lupe"},
-                                    { label: "Carlos (Spanish)", value: "carlos"},
-                                ]}
+                                options={Voices}
                                 />
                         </FormField>
                         <br/>

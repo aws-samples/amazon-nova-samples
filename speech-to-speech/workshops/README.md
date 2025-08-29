@@ -1,5 +1,7 @@
 # Nova S2S workshop sample code
 
+> August 26, 2025 🆕🚀 A new Nova Sonic Multi-Agent Architecture lab using Amazon Bedrock AgentCore has been added. For more information and sample code refer to [./agent-core](./agent-core/README.md) folder.
+
 This project is for the [Amazon Nova Sonic speech-to-speech (S2S) workshop](https://catalog.workshops.aws/amazon-nova-sonic-s2s/en-US) and is intended for training purposes. It showcases a sample architecture for building applications that integrate with Nova Sonic, with features specifically designed to expose technical details for educational use.
 
 (The Nova Sonic LiveKit Lab uses a different architecture. For details, refer to this [README](./livekit/README.md))
@@ -11,41 +13,6 @@ For architectures that require an internet-exposed connection to serve mobile or
 The project includes two core components:
 - A Python-based WebSocket server that manages the bidirectional streaming connection with Nova Sonic.
 - A React front-end application that communicates with the S2S system through the WebSocket server.
-
-
-## Repository Structure
-```
-nova-s2s-workshop/
-├── python-server/                              # Python application serves web socket service and health check HTTP endpoint(optional)
-│   ├── integration/
-│   │   ├── bedrock_knowledge_bases.py          # Sample Bedrock Knowledge Bases implementation
-│   │   ├── booking_openapi.json                # Bedrock Agents API definition
-│   │   ├── inline_agent.py                     # Sample Bedrock Agents integration
-│   │   ├── mcp_client.py                       # Sample MCP implementation
-│   │   └── strands_agent.py                    # Sample Strands Agent implementation
-│   ├── server.py                               # Main entry point: starts websocket and health check (optional) servers
-│   ├── s2s_session_manager.py                  # Nova Sonic bidirectional streaming logic incapsulated
-│   ├── s2s_events.py                           # Utlility class construct Nova Sonic events
-│   ├── setup-for-ec2-lab.sh                    # Bash script for environment setup – intended for instructor-led labs only. Do not use for local deployments.
-│   └── requirements.txt                        # Python dependencies
-├── react-client/                               # Web client implementation
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── eventDisplay.js                 # React component display event details
-│   │   │   ├── meter.js                        # React component display metering information (tokens and cost)
-│   │   ├── helper/
-│   │   │   ├── audioHelper.js                  # Audio utility functions for encoding/decoding
-│   │   │   └── s2sEvents.js                    # Utlility class construct Nova Sonic events
-│   │   ├── static/                             # Images
-│   │   ├── App.js                              # Define website layout and navigation
-│   │   ├── index.js                            # Main entry point
-│   │   └── s2s.js                              # Main entry point
-│   ├── setup-for-ec2-lab.sh                    # Bash script for environment setup – intended for instructor-led labs only. Do not use for local deployments.
-│   └── package.json                            # REACT manifest file
-└── scripts                                     
-    └── booking-resources.yaml                  # CloudFormation stack for Bedrock Agents sample deployment (optional)
-
-```
 
 ### Prerequisites
 - Python 3.12+

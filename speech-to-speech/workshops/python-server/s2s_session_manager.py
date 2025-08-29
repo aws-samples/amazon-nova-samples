@@ -9,7 +9,7 @@ from aws_sdk_bedrock_runtime.client import BedrockRuntimeClient, InvokeModelWith
 from aws_sdk_bedrock_runtime.models import InvokeModelWithBidirectionalStreamInputChunk, BidirectionalInputPayloadPart
 from aws_sdk_bedrock_runtime.config import Config, HTTPAuthSchemeResolver, SigV4AuthScheme
 from smithy_aws_core.credentials_resolvers.environment import EnvironmentCredentialsResolver
-from integration import inline_agent, bedrock_knowledge_bases as kb
+from integration import inline_agent, bedrock_knowledge_bases as kb, agent_core
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
@@ -240,6 +240,10 @@ class S2sSessionManager:
                 content = toolUseContent.get("content")  # Pass the JSON string directly to the agent
                 print(f"Extracted query: {content}")
             
+            # AgentCore integration
+            if toolName.startswith("ac_"):
+                result = agent_core.invoke_agent_core(toolName, content)
+
             # Simple toolUse to get system time in UTC
             if toolName == "getdatetool":
                 from datetime import datetime, timezone

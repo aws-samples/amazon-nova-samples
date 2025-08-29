@@ -33,3 +33,16 @@ The following projects were developed by AWS teams and showcase examples of how 
 - [Nova Sonic CDK Package: Supports Java and Python WebSocket with Load Testing Capability](https://github.com/aws-samples/generative-ai-cdk-constructs-samples/tree/main/samples/speech-to-speech)
 
     The CDK-deployable Nova Sonic package includes a generic WebSocket server and UI, serving as both a PoC starting point and a reference architecture for production deployments. It offers two server implementations—one using the Java SDK and the other using the Python SDK—allowing users to choose their preferred programming language. The package also includes a load testing tool to evaluate concurrency limits, helping with production capacity planning and cost estimation.
+
+- [Nova Sonic VoIP Gateway](https://github.com/aws-samples/sample-s2s-voip-gateway/tree/main)
+
+    This project implements a SIP endpoint that acts as a gateway between traditional phone systems and Nova Sonic speech-to-speech. It allows users to call a phone number and have a conversation with Nova Sonic over VoIP. The solution includes deployment options for ECS with CDK or a single EC2 instance, making it versatile for different use cases. It bridges RTP audio streams with Nova Sonic, enabling voice AI capabilities through standard telephony infrastructure.
+
+- [Serverless Nova Sonic Chat](https://github.com/aws-samples/sample-serverless-nova-sonic-chat)
+
+    This serverless implementation provides a lightweight, easily deployable, and scalable Nova Sonic infrastructure using AWS Lambda and AppSync Events, offering a streamlined approach to real-time speech-to-speech communication. It features serverless real-time communication between server and client using AppSync Events, reference to past conversation history, tool use implementation, automatic resume for conversations exceeding 8 minutes, and an extensible web UI built with Next.js.
+
+  
+- [Sonic Playground for Experimenting](https://github.com/aws-samples/sample-sonic-java-playground)
+
+    This solution serves as an experimental playground for developers to test and optimize Nova Sonic capabilities by configuring various model parameters and finding the optimal settings for their specific use cases. The application supports creating new conversation sessions with voice IDs for language selection, TopP, Temperature, MaxTokens for response length control, and system prompts. Built with Java Spring Boot and React, it provides a reference implementation for speech-to-speech applications.

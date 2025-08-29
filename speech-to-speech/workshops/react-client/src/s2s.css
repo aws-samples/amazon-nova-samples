@@ -22,10 +22,20 @@
     left: 700px;
     margin-top: -15px;
 }
+.s2s .top .profile {
+    position: absolute;
+    width: 270px;
+    top: 5px;
+    right: 15%;
+}
+.s2s .top .profile .label{
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+}
 .s2s .top .setting {
     position: absolute;
     top: 20px;
-    right: 70px;
 }
 
 .s2s .chatarea {
@@ -37,6 +47,7 @@
     height: 600px;
     background-color: #f5f4f4;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 .s2s .events {
     display: inline-block;
