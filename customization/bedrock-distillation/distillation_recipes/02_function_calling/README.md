@@ -9,11 +9,11 @@ This implementation provides a systematic approach to create smaller, efficient 
 2. Model distillation
 3. Evaluation
 
-## Pipeline Components
+## Notebooks
 
 ### 1. Data Preparation (`01_prepare_data.ipynb`)
 
-Prepares training data for function calling model distillation using the Berkeley Function Calling Leaderboard (BFCL) V2 Live dataset:
+Prepares training data for function calling model distillation using the Berkeley Function Calling Leaderboard (BFCL) V3 Live dataset:
 
 - **Dataset Features**: 2,251 question-function-answer pairs with diverse scenarios:
   - 258 simple calls
