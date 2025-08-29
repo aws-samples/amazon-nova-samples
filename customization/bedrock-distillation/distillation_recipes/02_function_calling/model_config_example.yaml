@@ -1,0 +1,95 @@
+# BFCL Model Configuration - Comprehensive Example
+# This shows all possible configuration properties for the add_model.py script
+
+# =============================================================================
+# CONFIGURATION PROPERTIES REFERENCE
+# =============================================================================
+# 
+# REQUIRED:
+#   model_id: Model identifier (regular ID or ARN)
+#
+# CONDITIONAL:
+#   handler: Required for regular model IDs (auto-set to "NovaHandler" for ARNs)  
+#   base_model: Required for ARN inputs (specifies the foundation model)
+#
+# OPTIONAL:
+#   display_name: Name shown on leaderboard (auto-generated if not provided)
+#   org: Organization that created/maintains the model
+#   url: Reference URL for model documentation
+#   license: Model license identifier
+#   input_price: USD per million input tokens (null for open source)
+#   output_price: USD per million output tokens (null for open source)
+#   inference_type: Force specific inference map ("api", "local", "third_party")
+#   is_fc_model: Function-calling model flag (auto-detected from suffix)
+#   underscore_to_dot: Replace dots with underscores in function names
+#
+# =============================================================================
+
+models:
+  # Complete example showing ALL possible properties for a custom model deployment
+  - model_id: "arn:aws:bedrock:us-east-1:123456789012:custom-model-deployment/my-custom-nova-model"
+    # handler: "NovaHandler"  # Not needed for ARNs - automatically set
+    base_model: "nova-lite-v1.0"  # REQUIRED for ARN inputs - specifies the foundation model
+    display_name: "My Custom Nova Lite Model (FC)"  # How it appears on the leaderboard
+    org: "My Organization"  # Organization that created/maintains this model
+    url: "https://my-organization.com/models/custom-nova"  # Reference documentation URL
+    license: "Custom License"  # License under which the model is released
+    input_price: 1.5  # USD per million input tokens (use null for free models)
+    output_price: 6.0  # USD per million output tokens (use null for free models)
+    inference_type: "api"  # Force specific inference map (optional, auto-detected from handler)
+    is_fc_model: true  # Function-calling model (auto-detected from suffix, but can override)
+    underscore_to_dot: true  # Replace dots with underscores in function names 
+
+  # # Alternative: Provisioned throughput ARN example
+  # - model_id: "arn:aws:bedrock:us-west-2:987654321098:provisioned-model-throughput/my-endpoint"
+  #   base_model: "nova-lite-v1.0"
+  #   display_name: "My High-Throughput Nova Lite (FC)"
+  #   org: "My Organization"
+  #   url: "https://my-organization.com/models/provisioned-nova"
+  #   license: "Proprietary"
+  #   input_price: null  # Free for internal use
+  #   output_price: null
+  #   is_fc_model: true
+  #   underscore_to_dot: true
+
+  # # Alternative: Regular model ID example with all properties
+  # - model_id: "my-custom-model-v1.0"
+  #   handler: "OpenAIResponsesHandler"  # REQUIRED for regular model IDs
+  #   display_name: "My Custom Model v1.0 (FC)"
+  #   org: "My Organization"
+  #   url: "https://my-organization.com/models/v1"
+  #   license: "MIT"
+  #   input_price: 2.0
+  #   output_price: 8.0
+  #   inference_type: "api"
+  #   is_fc_model: true
+  #   underscore_to_dot: true
+
+# =============================================================================
+# AVAILABLE HANDLERS
+# =============================================================================
+# API Inference Handlers:
+#   - OpenAIResponsesHandler, ClaudeHandler, NovaHandler, MistralHandler
+#   - GeminiHandler, QwenAPIHandler, DeepSeekAPIHandler, CohereHandler
+#   - GrokHandler, FireworksHandler, DatabricksHandler, etc.
+#
+# Local Inference Handlers:
+#   - LlamaHandler, LlamaHandler_3_1, QwenHandler, QwenFCHandler
+#   - PhiHandler, PhiFCHandler, GemmaHandler, etc.
+#
+# Third-party Handlers:
+#   - NovitaHandler, etc.
+#
+# Use: python add_model.py --list-handlers to see all available handlers
+# =============================================================================
+
+# =============================================================================
+# COMMON LICENSE VALUES
+# =============================================================================
+# - "Proprietary" (commercial models)
+# - "MIT", "Apache-2.0", "BSD-3-Clause" (permissive open source)
+# - "GPL-3.0", "LGPL-2.1" (copyleft open source)  
+# - "cc-by-nc-4.0" (Creative Commons non-commercial)
+# - "Meta Llama 3 Community", "gemma-terms-of-use" (model-specific)
+# - "Custom", "Unknown", "Varies"
+# =============================================================================
