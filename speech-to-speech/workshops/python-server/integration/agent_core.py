@@ -2,16 +2,17 @@ import boto3
 import json
 import os
 
+region = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
+
 ARNS = {}
 if len(ARNS.keys()) == 0:
     # Get AgentCore Runtime ARNS
-    agentcore_control = boto3.client('bedrock-agentcore-control')
+    agentcore_control = boto3.client('bedrock-agentcore-control', region_name=region)
     rt_response= agentcore_control.list_agent_runtimes()
     for rt in rt_response["agentRuntimes"]:
         agent_rt_name = rt["agentRuntimeName"]
         ARNS[agent_rt_name] = rt["agentRuntimeArn"]
 
-region = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
 agentcore_client = boto3.client('bedrock-agentcore',region_name=region)
 
 def invoke_agent_core(tool_name, payload):
