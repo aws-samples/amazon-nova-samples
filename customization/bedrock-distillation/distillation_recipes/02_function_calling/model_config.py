@@ -120,7 +120,7 @@ class ModelConfig:
 # Inference through API calls
 api_inference_model_map = {
     "custom-nova-lite": ModelConfig(
-        model_name="<CMD or PT ARN here",  # arn:aws:bedrock:us-east-1:905418197933:custom-model-deployment/kx2v5z6c7wjw
+        model_name="<CMD or PT ARN here",  # arn:aws:bedrock:us-east-1:account-id:custom-model-deployment/deployment-id
         display_name="My Custom Nova Lite Model (FC)",
         url="https://my-organization.com/models/custom-nova",
         org="My Organization",
