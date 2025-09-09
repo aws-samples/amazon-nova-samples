@@ -2,3 +2,4 @@ bedrock-agentcore
 strands-agents
 strands-agents-tools
 structlog
+bedrock-agentcore-starter-toolkit
