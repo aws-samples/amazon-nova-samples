@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  pipecat-phone-service:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.phone
+    container_name: pipecat-phone-test
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    environment:
+      - HOST=0.0.0.0
+      - FAST_API_PORT=7860
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
+    restart: unless-stopped
+    volumes:
+      # Optional: Mount logs directory for debugging
+      - ./logs:/app/logs
+    networks:
+      - pipecat-network
+
+networks:
+  pipecat-network:
+    driver: bridge

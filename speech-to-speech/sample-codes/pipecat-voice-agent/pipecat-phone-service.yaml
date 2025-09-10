@@ -1,0 +1,94 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pipecat-phone-service
+  namespace: nova-sonic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pipecat-phone-service
+  template:
+    metadata:
+      labels:
+        app: pipecat-phone-service
+    spec:
+      serviceAccountName: nova-sonic-sa
+      containers:
+        - name: server
+          image: 805372491860.dkr.ecr.us-east-1.amazonaws.com/pipecat-phone-service:5
+          imagePullPolicy: Always
+          ports:
+            - name: ws
+              containerPort: 7860
+              protocol: TCP
+          env:
+            - name: AWS_ACCESS_KEY_ID
+              value: ""
+            - name: AWS_SECRET_ACCESS_KEY
+              value: ""
+            - name: AWS_REGION
+              value: "eu-north-1"
+            - name: HOST
+              value: "0.0.0.0"
+            - name: FAST_API_PORT
+              value: "7860"
+            - name: TWILIO_RECOVERY_CODE
+              value: ""
+            - name: TWILIO_ACCOUNT_SID
+              value: ""
+            - name: TWILIO_AUTH_TOKEN
+              value: ""
+            - name: TWILIO_SID
+              value: ""
+            - name: TWILIO_SECRET
+              value: ""
+            - name: TWILIO_AUTH_LIVE
+              value: ""
+            - name: TWILIO_PHONE_NUMBER
+              value: "+"
+            - name: DAILY_API_KEY
+              value: ""
+          resources:
+            requests:
+              cpu: 1
+              memory: 128Mi
+            limits:
+              cpu: 1
+              memory: 512Mi
+          readinessProbe:
+            tcpSocket:
+              port: 7860
+            periodSeconds: 5
+          livenessProbe:
+            tcpSocket:
+              port: 7860
+            periodSeconds: 10
+      terminationGracePeriodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pipecat-phone-service
+  namespace: nova-sonic
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+    service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "ip"
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: "600"
+    service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
+    # TLS listener + cert (ACM)
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:us-east-1:account number:certificate/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
+    # (optional) pick a stricter policy; defaults are fine if you omit
+    # service.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy: "ELBSecurityPolicy-TLS13-1-2-2021-06"
+spec:
+  type: LoadBalancer
+  selector:
+    app: pipecat-phone-service
+  ports:
+    - name: https
+      port: 443          # NLB listener (TLS)
+      targetPort: 7860   # Pod port (plaintext HTTP/WS)
+      protocol: TCP
+  externalTrafficPolicy: Cluster
