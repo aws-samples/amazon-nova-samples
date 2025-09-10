@@ -43,6 +43,10 @@ The following projects were developed by AWS teams and showcase examples of how 
     This serverless implementation provides a lightweight, easily deployable, and scalable Nova Sonic infrastructure using AWS Lambda and AppSync Events, offering a streamlined approach to real-time speech-to-speech communication. It features serverless real-time communication between server and client using AppSync Events, reference to past conversation history, tool use implementation, automatic resume for conversations exceeding 8 minutes, and an extensible web UI built with Next.js.
 
   
+- [Pipecat Voice AI Agent - Production AWS Deployment](sample-codes/pipecat-voice-agent/)
+
+    A comprehensive production-ready deployment of the Pipecat Voice AI Agent featuring dual-channel voice interactions through both Twilio phone calls and WebRTC browser chat. This sample demonstrates AWS Nova Sonic integration with complete infrastructure as code using AWS CDK, supporting both ECS and EKS deployment options. It includes SSL certificate management for Twilio webhooks, auto-scaling, monitoring, security best practices, and comprehensive documentation for production deployments.
+
 - [Sonic Playground for Experimenting](https://github.com/aws-samples/sample-sonic-java-playground)
 
     This solution serves as an experimental playground for developers to test and optimize Nova Sonic capabilities by configuring various model parameters and finding the optimal settings for their specific use cases. The application supports creating new conversation sessions with voice IDs for language selection, TopP, Temperature, MaxTokens for response length control, and system prompts. Built with Java Spring Boot and React, it provides a reference implementation for speech-to-speech applications.
