@@ -1,0 +1,15 @@
+{
+  "name": "infrastructure-eks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "diff": "cdk diff",
+    "synth": "cdk synth"
+  },"diff": "cdk diff",
+    "synth": "cdk synth"
+  },
