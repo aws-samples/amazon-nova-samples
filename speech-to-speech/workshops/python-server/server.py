@@ -22,6 +22,11 @@ warnings.filterwarnings("ignore")
 
 DEBUG = False
 
+# load environment variables from .env file
+from dotenv import load_dotenv
+import os
+load_dotenv() 
+
 def debug_print(message):
     """Print only if debug mode is enabled"""
     if DEBUG:
@@ -188,7 +193,7 @@ async def forward_responses(websocket, stream_manager):
         stream_manager.close()
 
 
-async def main(host, port, health_port, enable_mcp=False, enable_strands_agent=False):
+async def main(host, port, health_port, enable_mcp=False, enable_strands=False):
 
     if health_port:
         try:
@@ -207,7 +212,7 @@ async def main(host, port, health_port, enable_mcp=False, enable_strands_agent=F
             print("Failed to start MCP client",ex)
     
     # Init Strands Agent
-    if enable_strands_agent:
+    if enable_strands:
         print("Strands agent enabled")
         try:
             global STRANDS_AGENT
