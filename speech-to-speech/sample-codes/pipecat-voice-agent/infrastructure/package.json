@@ -1,0 +1,42 @@
+{
+  "name": "infrastructure",
+  "version": "0.1.0",
+  "bin": {
+    "infrastructure": "bin/infrastructure.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "./deploy.sh",
+    "deploy:test": "./deploy.sh --environment test",
+    "deploy:prod": "./deploy.sh --environment prod --custom-vpc",
+    "ecr:login": "./ecr-helper.sh --login",
+    "ecr:get-uri": "./ecr-helper.sh --get-uri",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "destroy": "cdk destroy"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.7.9",
+    "aws-cdk": "2.1023.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.3"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.203.0",
+    "@aws-cdk/aws-ecr": "^1.203.0",
+    "@aws-cdk/aws-ecs": "^1.203.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.203.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.203.0",
+    "@aws-cdk/aws-iam": "^1.203.0",
+    "@aws-cdk/aws-logs": "^1.203.0",
+    "@aws-cdk/aws-secretsmanager": "^1.203.0",
+    "aws-cdk-lib": "^2.206.0",
+    "constructs": "^10.4.2"
+  }
+}

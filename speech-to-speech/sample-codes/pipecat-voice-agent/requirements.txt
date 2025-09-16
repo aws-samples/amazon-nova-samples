@@ -1,0 +1,12 @@
+python-dotenv
+fastapi[all]
+uvicorn
+websockets==13.1
+pipecat-ai[daily,aws-nova-sonic,silero]==0.0.79
+loguru
+boto3
+botocore
+aioboto3
+psutil
+twilio
+certifi

@@ -1,0 +1,72 @@
+{
+  "environment": "test",
+  "useDefaultVpc": true,
+  "aws-region": "eu-north-1",
+  "vpc-provider:account=094271239310:filter.isDefault=true:region=eu-north-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-075df9749df7039ed",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "ownerAccountId": "094271239310",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0b55a75a8d32514b2",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "eu-north-1a",
+            "routeTableId": "rtb-03a1438a192f4e504"
+          },
+          {
+            "subnetId": "subnet-03027ea513322f090",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "eu-north-1b",
+            "routeTableId": "rtb-03a1438a192f4e504"
+          },
+          {
+            "subnetId": "subnet-0fc0f7963a3aefac6",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "eu-north-1c",
+            "routeTableId": "rtb-03a1438a192f4e504"
+          }
+        ]
+      }
+    ]
+  },
+  "acknowledged-issue-numbers": [
+    34892
+  ],
+  "vpc-provider:account=039612864592:filter.isDefault=true:region=eu-north-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-00ab3400742a15e62",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "ownerAccountId": "039612864592",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-03509200c30440bce",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "eu-north-1a",
+            "routeTableId": "rtb-04d8b78791834c0a4"
+          },
+          {
+            "subnetId": "subnet-0c7ad231518104602",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "eu-north-1b",
+            "routeTableId": "rtb-04d8b78791834c0a4"
+          },
+          {
+            "subnetId": "subnet-0e4572c8bcaf68309",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "eu-north-1c",
+            "routeTableId": "rtb-04d8b78791834c0a4"
+          }
+        ]
+      }
+    ]
+  }
+}
