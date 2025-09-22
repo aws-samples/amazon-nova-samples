@@ -3,6 +3,21 @@ import json
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from strands.models import BedrockModel
 import re, argparse
+import datetime
+import os
+
+# Import the tracer to create spans
+from strands.telemetry.tracer import get_tracer
+tracer = get_tracer()
+
+# # OpenTelemetry setup
+from opentelemetry import baggage, context
+
+def set_session_context(session_id):
+    """Set the session ID in OpenTelemetry baggage for trace correlation"""
+    ctx = baggage.set_baggage("session.id", session_id)
+    token = context.attach(ctx)
+    return token
 
 app = BedrockAgentCoreApp()
 
@@ -16,6 +31,7 @@ def get_account_balance(account_id) -> str:
 
     # In this sample, we use a mock response. 
     # The actual implementation will retrieve information from a database API or another backend service.
+    
     result = {
       "account_id": "1234567890",
       "account_type": "Checking",
@@ -38,6 +54,9 @@ def get_statement(account_id: str, year_and_month: str) -> str:
     """
     # In this sample, we use a mock response. 
     # The actual implementation will retrieve information from a database API or another backend service.
+    
+        
+    # A sample bank statement for August 2025
     result = {
           "account_id": "1234567890",
           "account_type": "Checking",
@@ -125,13 +144,27 @@ agent = Agent(
 
 @app.entrypoint
 def banking_agent(payload):
-    response = agent(json.dumps(payload))
-    output = response.message['content'][0]['text']
-    if "<response>" in output and "</response>" in output:
-        match = re.search(r"<response>(.*?)</response>", output, re.DOTALL)
-        if match:
-            output = match.group(1)
-    return output
+    try:
+      #generate a random session id to associate with this agent run
+      import uuid
+      session_id = str(uuid.uuid4())
+      
+      context_token = set_session_context(session_id)
+
+      # Execute the agent
+      response = agent(json.dumps(payload))
+                
+      # Process the response
+      output = response.message['content'][0]['text']
+      if "<response>" in output and "</response>" in output:
+          match = re.search(r"<response>(.*?)</response>", output, re.DOTALL)
+          if match:
+              output = match.group(1)
+      return output
+    
+    finally:
+      context.detach(context_token)
+      pass
     
 if __name__ == "__main__":
     app.run()

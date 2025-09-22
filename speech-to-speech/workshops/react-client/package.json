@@ -1,5 +1,5 @@
 {
-  "homepage": "/proxy/3000/",
+  "homepage": ".",
   "name": "nova-s2s-voice-chat-client",
   "version": "0.1.0",
   "private": true,
