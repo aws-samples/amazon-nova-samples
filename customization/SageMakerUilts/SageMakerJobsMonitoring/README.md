@@ -1,20 +1,27 @@
 # SageMaker Job Monitoring
-This folder features a collection of observability scripts surrounding Sagemaker HyperPod and Training Jobs. Please
-visit any of the below links to see instructions for using each of the scripts
+This folder features a collection of observability scripts surrounding Nova customization via SageMaker HyperPod and SageMaker Training Jobs.
+Please visit any of the below links to see instructions for using each of the scripts.
+
+### Prerequisites:
+#### General:
+- boto3: Run ```pip install boto3```
+### Usage:
+Make sure you've refreshed your AWS credentials before running any of the below scripts.
+
+__Please note that these scripts are specifically designed for Nova Customization jobs.__
 
 - [SageMaker Training Job & HyperPod Job Status Email Notifications](#sagemaker-training-job--hyperpod-job-status-email-notifications)
-- [SageMaker Training Job & HyperPod Nova Customization job training estimates](#sagemaker-training-job--hyperpod-nova-customization-training-job-estimates)
+- [SageMaker Training Job & HyperPod Training Estimates](#sagemaker-training-job--hyperpod-training-estimates)
+- [SageMaker Training Job Progress](#sagemaker-training-job-progress)
 
 ## SageMaker Training Job & HyperPod Job Status Email Notifications
 This tool helps a user enable job status email notifications for their SageMaker Training Jobs (TJ) and HyperPod (HP) jobs. 
 When a job's status gets changed from running to succeeded/failed, an email notification will be sent to the user's chosen email address(es). 
 ### Prerequisites:
-#### General: 
-- boto3: Run ```pip install boto3```
 #### HyperPod-Specific: 
 - **Amazon CloudWatch Observability** must be installed on the EKS cluster running your HP jobs: This enables Container Insights logs to be generated. Information on how to install the add-on can be found [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Observability-EKS-addon.html). 
 ### Usage:
-Make sure you've refreshed your AWS credentials before running the below command. If you want to check the parameters to use, run the following command:
+If you want to check the parameters to use, run the following command:
 ```
 python enable_sagemaker_job_notifs.py --help
 ```
@@ -42,10 +49,11 @@ python enable_sagemaker_job_notifs.py --email test@amazon.com test2@gmail.com --
   * As such, if these logs stop being created for any reason (e.g. add-on isn't updated), the HyperPod job notifications won't work.  
 * The job status updates are only reported in UTC. 
 
-## SageMaker Training Job & HyperPod Nova customization training job estimates
+------------------------------------------
 
-This script can be used to estimate training times for CPT/PPO/SFT/DPO Nova Customization training
-jobs on both SageMaker HyperPod and SageMaker Training Jobs.
+## SageMaker Training Job & HyperPod Training Estimates
+
+This script can be used to estimate training times for CPT/PPO/SFT/DPO training jobs on both SageMaker HyperPod and SageMaker Training Jobs.
 
 ### Prerequisites:
 Ensure that you have access to the recipe that you plan on using for your training job. This recipe should be similar to 
@@ -121,3 +129,41 @@ Simply walk through the prompts to receive your training time estimate. Please n
 are approximate projections and should not be interpreted as definitive training durations. Actual training
 times may vary significantly based on multiple factors. For more accurate estimates, please check CloudWatch
 logs while your training job is running.
+
+------------------------------------------
+
+## SageMaker Training Job Progress
+This tool enables users to learn more about the training details for SageMaker Training Jobs.
+Specifically, users can the following (depending on training job status):
+* Approximations for how long training is expected to take for in-progress jobs
+* Job failure reason
+* Total training time of completed jobs
+### Usage:
+If you want to check the parameters to use, run the following command:
+```
+python get-training-job-progress.py --help
+```
+#### Basic Usage
+```
+python get-training-job-progress.py [-h] --job-name JOB_NAME --region REGION --num-dataset-samples NUM_DATASET_SAMPLES
+```
+#### Parameters:
+- **job-name:** The name of the SageMaker Training Job to check job progress of.
+- **region:** The region of your SageMaker Training Job (e.g. us-east-2).
+- **num-dataset-samples:** An _approximate_ count of the number of input samples you have stored in S3. For more information, please see [AWS documentation](https://docs.aws.amazon.com/nova/latest/userguide/custom-distill-prepare.html).
+#### Example Usage:
+```
+python get-training-job-progress.py --region us-east-1 --job-name my-training-job --num-dataset-samples 1000
+Job my-training-job succeeded at 19:34 UTC 09/26/2025. Training time was 11 minutes.
+
+
+python get-training-job-progress.py --region us-east-1 --job-name my-other-training-job --num-dataset-samples 1000
+Job my-other-training-job failed at 02:48 UTC 09/26/2025 due to "AlgorithmError: Algorithm container exited with error."
+
+
+python get-training-job-progress.py --region us-east-1 --job-name in-progress-job --num-dataset-samples 1000
+Please note that these estimates are approximate projections and should not be interpreted as definitive training durations.
+Training for job in-progress-job is approximately 37.8% complete. Estimated training time remaining: 324 minutes [5.4 hours]
+```
+### Disclaimers
+* Please note that these estimates are approximate projections and should not be interpreted as definitive training durations. Please monitor CloudWatch logs for full details.
