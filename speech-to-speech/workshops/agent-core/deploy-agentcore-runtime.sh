@@ -13,12 +13,14 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # Deploy Strands agents to AgentCore Runtime
-# Banking agent
+# # Banking agent
 cd ./banking_agent
 python ./deploy.py
 
+cd ..
+
 # Mortgage agent
-cd ../mortgage_agent
+cd ./mortgage_agent
 python ./deploy.py
 cd ..
 
