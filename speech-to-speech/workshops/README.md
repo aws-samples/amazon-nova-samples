@@ -1,6 +1,6 @@
 # Nova S2S workshop sample code
 
-> August 26, 2025 🆕🚀 A new Nova Sonic Multi-Agent Architecture lab using Amazon Bedrock AgentCore has been added. For more information and sample code refer to [./agent-core](./agent-core/) folder.
+> August 26, 2025 🆕🚀 A new Nova Sonic Multi-Agent Architecture lab using Amazon Bedrock AgentCore has been added. For more information and sample code refer to [./agent-core](./agent-core/README.md) folder.
 
 This project is for the [Amazon Nova Sonic speech-to-speech (S2S) workshop](https://catalog.workshops.aws/amazon-nova-sonic-s2s/en-US) and is intended for training purposes. It showcases a sample architecture for building applications that integrate with Nova Sonic, with features specifically designed to expose technical details for educational use.
 
@@ -106,7 +106,7 @@ cd nova-s2s-workshop
     npm start
     ```
 
-When using Chrome, if there’s no sound, please ensure the sound setting is set to Allow, as shown below.
+When using Chrome, if there's no sound, please ensure the sound setting is set to Allow, as shown below.
 ![chrome-sound](./static/chrome-sound-setting.png)
 
 ⚠️ **Warning:** Known issue: This UI is intended for demonstration purposes and may encounter state management issues after frequent conversation start/stop actions. Refreshing the page can help resolve the issue.
@@ -229,7 +229,79 @@ python server.py --agent strands
 ```
 - You can then try asking questions using the sample UI such as:
 ```
-What’s the weather like in Seattle today?
+What's the weather like in Seattle today?
 ```
 
 Refer to [the Strands Agent lab](https://catalog.workshops.aws/amazon-nova-sonic-s2s/en-US/200-labs/02-repeatable-pattern/03-strands) for more detailed instructions.
+
+## Enable Observability
+
+
+
+### Prerequisites
+
+1. Enable transaction search on Amazon CloudWatch. First-time users must enable CloudWatch Transaction Search to view Bedrock AgentCore spans and traces. To enable transaction search, please refer to the our documentation.
+
+<img src="agent-core/images/transactional_search.png" width="75%"/>
+
+
+2.  Create log group and log stream  in Amazon CloudWatch
+```bash
+import boto3
+cloudwatch_client = boto3.client("logs", region_name=region)
+response = cloudwatch_client.create_log_group(
+    logGroupName='bedrock-agentcore-observability'
+)
+```
+
+### Start backend with observability instrumentation
+
+Start the python server with the below shell command.
+
+```bash
+run_server_with_telemetry.sh
+```
+
+The shells script reads the environment variables from the local .env file with the following variables
+
+```bash
+# AWS OpenTelemetry Configuration 
+OTEL_PYTHON_DISTRO=aws_distro
+OTEL_PYTHON_CONFIGURATOR=aws_configurator
+
+# Service Identification
+OTEL_RESOURCE_ATTRIBUTES=service.name="s2s_agent"
+AGENT_OBSERVABILITY_ENABLED=true
+OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf 
+OTEL_EXPORTER_OTLP_TRACES_ENDPOINT="https://xray.us-east-1.amazonaws.com/v1/traces"
+
+# CloudWatch Integration
+OTEL_EXPORTER_OTLP_LOGS_HEADERS=x-aws-log-group=bedrock-agentcore-observability,x-aws-log-stream=default,x-aws-metric-namespace=bedrock-agentcore
+
+# Instrumentation Exclusions - Extended to include all patterns
+OTEL_PYTHON_FASTAPI_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_REQUESTS_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_URLLIB3_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_HTTPX_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_AIOHTTP_CLIENT_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_BOTO3SQS_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+OTEL_PYTHON_BOTOCORE_EXCLUDED_URLS="/ws/.*|/health|/metrics|.*websocket.*|/api/.*|.*\.amazonaws\.com.*|.*bedrock-runtime\..*|.*dynamodb\..*|.*cognito-identity\..*|.*s3\..*"
+
+# Disable unwanted instrumentations
+OTEL_PYTHON_DISABLED_INSTRUMENTATIONS="boto3sqs,botocore,requests,urllib3,httpx,aiohttp-client,asyncio,threading,logging,system_metrics,psutil,sqlite3,redis,pymongo,sqlalchemy,django,flask,tornado,pyramid,falcon,starlette,fastapi,websockets"
+
+# Propagation and Sampling
+OTEL_PROPAGATORS=tracecontext,baggage,xray
+OTEL_TRACES_SAMPLER=always_on
+OTEL_BSP_SCHEDULE_DELAY=1000
+OTEL_BSP_MAX_EXPORT_BATCH_SIZE=512
+OTEL_BSP_EXPORT_TIMEOUT=30000
+
+# AWS X-Ray specific
+AWS_XRAY_TRACING_NAME=s2s_agent
+AWS_XRAY_CONTEXT_MISSING=LOG_ERROR
+```
+
+This will create the following trace spans
+
+<img src="agent-core/images/s2s_observability.png" width="75%"/>

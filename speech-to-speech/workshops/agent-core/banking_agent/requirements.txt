@@ -1,6 +1,11 @@
-strands-agents
-strands-agents-tools
+strands-agents==1.8.0
+strands-agents-tools==0.2.7
 uv
 boto3
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
+# Telemetry and observability
+aws-opentelemetry-distro==0.12.0
+strands-agents[otel]
+# Environment and configuration
+python-dotenv>=0.19.0
