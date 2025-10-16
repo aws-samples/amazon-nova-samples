@@ -1,0 +1,27 @@
+{
+  "testId": "QA-013",
+  "testName": "Image Loading and Display Test",
+  "description": "Verify that product images load correctly and are displayed properly across different sections",
+  "testSteps": [
+    {
+      "action": "Navigate to the Products page",
+      "expectedResult": "Products page loads successfully"
+    },
+    {
+      "action": "Wait for page to fully load including images",
+      "expectedResult": "Page content is fully loaded"
+    },
+    {
+      "action": "Verify that product images are visible and properly loaded",
+      "expectedResult": "Product images are displayed without broken image icons"
+    },
+    {
+      "action": "Check that at least 3 product images are present on the page",
+      "expectedResult": "Multiple product images are visible and properly rendered"
+    },
+    {
+      "action": "Scroll through the products to check image loading",
+      "expectedResult": "All visible product images load correctly as user scrolls"
+    }
+  ]
+}

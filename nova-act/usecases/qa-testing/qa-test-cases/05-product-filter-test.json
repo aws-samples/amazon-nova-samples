@@ -1,0 +1,34 @@
+{
+  "testId": "QA-05",
+  "testName": "Product Filter Functionality Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Click on the 'Products' navigation menu item",
+      "expectedResult": "Products page loads with filtering options visible"
+    },
+    {
+      "action": "Verify that the Category dropdown is visible and contains 'All Categories'",
+      "expectedResult": "Category dropdown is displayed with default 'All Categories' option"
+    },
+    {
+      "action": "Verify that the Subcategory dropdown is visible",
+      "expectedResult": "Subcategory dropdown is displayed"
+    },
+    {
+      "action": "Verify that the Price Range slider is visible",
+      "expectedResult": "Price range slider is displayed with $500 maximum value"
+    },
+    {
+      "action": "Verify that the Sort By dropdown is visible and set to 'Relevance'",
+      "expectedResult": "Sort By dropdown is displayed with 'Relevance' as default option"
+    },
+    {
+      "action": "Verify that products are displayed with names, prices, and ratings",
+      "expectedResult": "Product grid shows items with complete information including names, prices, star ratings, and stock status"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "testId": "QA-015",
+  "testName": "UI Layout and Elements Test",
+  "description": "Verify that UI elements are properly positioned and visible on key pages",
+  "testSteps": [
+    {
+      "action": "Navigate to the home page",
+      "expectedResult": "Home page loads with proper layout and all elements visible"
+    },
+    {
+      "action": "Verify that the header contains navigation menu, search bar, and login button",
+      "expectedResult": "Header elements are present and visible"
+    },
+    {
+      "action": "Navigate to the Products page",
+      "expectedResult": "Products page loads with grid layout"
+    },
+    {
+      "action": "Verify that product cards display images and text in grid format",
+      "expectedResult": "Product cards are arranged in grid with images and text visible"
+    },
+    {
+      "action": "Check that Category and Sort By filters are visible",
+      "expectedResult": "Filter dropdowns are visible on Products page"
+    }
+  ]
+}

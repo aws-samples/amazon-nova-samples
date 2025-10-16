@@ -1,0 +1,22 @@
+[project]
+name = "nova-act-qa-tests"
+version = "0.0.0"
+description = "A pytest project that uses Nova Act and pytest to test the web application in this repository."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bedrock-agentcore>=0.1.5",
+    "boto3>=1.40.39",
+    "json-compare-deep>=2.0",
+    "nova-act>=2.1.36.0",
+    "pydantic-settings>=2.11.0",
+    "pytest>=8.4.2",
+    "pytest-html>=4.1.1",
+    "pytest-html-nova-act>=1.0.1",
+    "pytest-xdist>=3.8.0",
+    "python-dotenv>=1.1.1",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::pytest.PytestUnhandledThreadExceptionWarning"]
+addopts = "-n auto --dist loadgroup --html=reports/report.html --self-contained-html --add-nova-act-report --log-level=INFO"

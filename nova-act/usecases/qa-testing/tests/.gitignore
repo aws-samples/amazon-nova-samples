@@ -1,0 +1,12 @@
+uv.lock
+__pycache__/
+.pytest_cache
+.venv
+.DS_Store
+.env
+env/
+.venv
+venv/
+.vscode/
+reports/
+.nova_act/

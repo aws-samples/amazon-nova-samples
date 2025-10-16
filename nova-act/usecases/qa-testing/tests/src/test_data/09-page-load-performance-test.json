@@ -1,0 +1,34 @@
+{
+  "testId": "QA-09",
+  "testName": "Page Load Performance Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully within reasonable time"
+    },
+    {
+      "action": "Verify that the main content is visible immediately after page load",
+      "expectedResult": "Homepage content including title, navigation, and featured products section are visible"
+    },
+    {
+      "action": "Navigate to Products page and verify quick loading",
+      "expectedResult": "Products page loads and displays product grid without significant delay"
+    },
+    {
+      "action": "Navigate back to Home page",
+      "expectedResult": "Home page loads quickly when navigating back"
+    },
+    {
+      "action": "Navigate to About page and verify content loads",
+      "expectedResult": "About page loads and displays content without errors"
+    },
+    {
+      "action": "Navigate to Contact page and verify content loads",
+      "expectedResult": "Contact page loads and displays content without errors"
+    },
+    {
+      "action": "Verify that all pages maintain consistent navigation menu",
+      "expectedResult": "Navigation menu is consistently available and functional across all pages"
+    }
+  ]
+}

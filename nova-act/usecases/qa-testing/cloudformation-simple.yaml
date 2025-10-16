@@ -1,0 +1,157 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for deploying the ACBT QA Testing Web Application to S3 with CloudFront'
+
+Parameters:
+  BucketName:
+    Type: String
+    Default: acbt-qa-testing-webapp
+    Description: Name of the S3 bucket to store the web application files (must be globally unique)
+
+  CreateCloudFront:
+    Type: String
+    Default: 'true'
+    AllowedValues:
+      - 'true'
+      - 'false'
+    Description: Whether to create a CloudFront distribution for the web application
+
+  CloudFrontPriceClass:
+    Type: String
+    Default: 'PriceClass_100'
+    AllowedValues:
+      - 'PriceClass_100'
+      - 'PriceClass_200'
+      - 'PriceClass_All'
+    Description: Price class for CloudFront distribution (100 for US/Europe, 200 adds Asia/Africa, All is global)
+
+Conditions:
+  CreateCloudfrontResources: !Equals [!Ref CreateCloudFront, 'true']
+
+Resources:
+  # S3 bucket for hosting the web application
+  WebAppBucket:
+    Type: AWS::S3::Bucket
+    # checkov:skip=CKV_AWS_18: S3 access logging not required for this static website hosting use case
+    # checkov:skip=CKV_AWS_21: S3 versioning not required for this static website hosting use case
+    Properties:
+      BucketName: !Ref BucketName
+      AccessControl: !If [CreateCloudfrontResources, Private, PublicRead]
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+            BucketKeyEnabled: true
+      WebsiteConfiguration: !If
+        - CreateCloudfrontResources
+        - !Ref 'AWS::NoValue'
+        - IndexDocument: index.html
+          ErrorDocument: index.html
+
+  # CloudFront Origin Access Control
+  CloudFrontOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Condition: CreateCloudfrontResources
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${BucketName}-OAC'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  # CloudFront Distribution
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Condition: CreateCloudfrontResources
+    # checkov:skip=CKV_AWS_86: CloudFront access logging not required for this static website hosting use case
+    # checkov:skip=CKV_AWS_174: CloudFront distribution does not require WAF for this static website hosting use case
+    # checkov:skip=CKV_AWS_68: CloudFront Distribution should have WAF enabled - not required for static website hosting use case
+    Properties:
+      DistributionConfig:
+        Origins:
+          - DomainName: !GetAtt WebAppBucket.RegionalDomainName
+            Id: S3Origin
+            S3OriginConfig: {}
+            OriginAccessControlId: !Ref CloudFrontOAC
+
+        Enabled: true
+        DefaultRootObject: index.html
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          TargetOriginId: S3Origin
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+          ViewerProtocolPolicy: redirect-to-https
+          Compress: true
+          TrustedSigners: []
+        PriceClass: !Ref CloudFrontPriceClass
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: true
+          MinimumProtocolVersion: TLSv1.2_2021
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+          - ErrorCode: 403
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+
+  # Bucket policy - will be updated depending on whether we use CloudFront
+  WebAppBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebAppBucket
+      PolicyDocument:
+        Statement:
+          - !If
+            - CreateCloudfrontResources
+            - Effect: Allow
+              Principal:
+                Service: cloudfront.amazonaws.com
+              Action: 's3:GetObject'
+              Resource: !Sub 'arn:aws:s3:::${WebAppBucket}/*'
+              Condition:
+                StringEquals:
+                  AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}'
+            - Effect: Allow
+              Principal: '*'
+              Action: 's3:GetObject'
+              Resource: !Sub 'arn:aws:s3:::${WebAppBucket}/*'
+          - Effect: Deny
+            Principal: '*'
+            Action: 's3:*'
+            Resource: 
+              - !Sub 'arn:aws:s3:::${WebAppBucket}/*'
+              - !Sub 'arn:aws:s3:::${WebAppBucket}'
+            Condition:
+              Bool:
+                'aws:SecureTransport': 'false'
+
+Outputs:
+  WebsiteURL:
+    Description: URL for the website
+    Value: !If
+      - CreateCloudfrontResources
+      - !Sub 'https://${CloudFrontDistribution.DomainName}'
+      - !Sub 'http://${WebAppBucket.WebsiteURL}'
+
+  S3BucketName:
+    Description: Name of the S3 bucket storing the website content
+    Value: !Ref WebAppBucket
+
+  CloudFrontDistributionID:
+    Description: ID of the CloudFront distribution
+    Value: !If
+      - CreateCloudfrontResources
+      - !Ref CloudFrontDistribution
+      - 'N/A'
+    Condition: CreateCloudfrontResources

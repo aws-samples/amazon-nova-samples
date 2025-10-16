@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Test App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">QA Test App</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-testid="nav-home">Home</a></li>
+                <li><a href="#products" data-testid="nav-products">Products</a></li>
+                <li><a href="#about" data-testid="nav-about">About</a></li>
+                <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+            </ul>
+            <button id="login-btn" data-testid="login-button">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active-section">
+            <h1>Welcome to our QA Test Application</h1>
+            <p>This application is designed to showcase various UI elements for testing purposes.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search products..." data-testid="search-input">
+                <button id="search-btn" data-testid="search-button">Search</button>
+            </div>
+            <div class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-grid" id="featured-products-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h1>All Products</h1>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" data-testid="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="sports">Sports & Outdoors</option>
+                        <option value="beauty">Beauty & Personal Care</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="subcategory-filter">Subcategory:</label>
+                    <select id="subcategory-filter" data-testid="subcategory-filter" disabled>
+                        <option value="">Select Category First</option>
+                    </select>
+                </div>
+                <div class="price-filter filter-group">
+                    <label for="price-range">Price Range:</label>
+                    <input type="range" id="price-range" min="0" max="1000" value="500" data-testid="price-range">
+                    <span id="price-value">$500</span>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-by">Sort By:</label>
+                    <select id="sort-by" data-testid="sort-by">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Customer Rating</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            <div class="pagination">
+                <button id="prev-page" data-testid="prev-page">Previous</button>
+                <span id="page-indicator">Page 1 of 3</span>
+                <button id="next-page" data-testid="next-page">Next</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About Us</h1>
+            <p>This is a mock application designed for QA testing purposes.</p>
+            <p>The application features various UI elements and interactions that are common in web applications, making it an ideal candidate for demonstrating AI-based QA testing.</p>
+            <div class="team">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="avatar"></div>
+                        <h3>Jane Doe</h3>
+                        <p>CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="avatar"></div>
+                        <h3>John Smith</h3>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form" data-testid="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required data-testid="name-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required data-testid="email-input">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required data-testid="message-input"></textarea>
+                </div>
+                <button type="submit" data-testid="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form" data-testid="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required data-testid="username-input">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required data-testid="password-input">
+                </div>
+                <button type="submit" data-testid="login-submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="register-link" data-testid="register-link">Register</a></p>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QA Test App</h3>
+                <p>A mock application for AI-based QA testing demonstration.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 QA Test App. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

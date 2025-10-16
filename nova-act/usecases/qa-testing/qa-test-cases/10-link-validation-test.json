@@ -1,0 +1,30 @@
+{
+  "testId": "QA-010",
+  "testName": "Link Validation Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Verify that all navigation links are clickable and functional",
+      "expectedResult": "Navigation menu contains clickable Home, Products, About, Contact, and Login links"
+    },
+    {
+      "action": "Click on 'About' link and verify it navigates correctly",
+      "expectedResult": "About page loads without errors"
+    },
+    {
+      "action": "Click on 'Contact' link and verify it navigates correctly", 
+      "expectedResult": "Contact page loads without errors"
+    },
+    {
+      "action": "Click on 'Products' link and verify it navigates correctly",
+      "expectedResult": "Products page loads with product listings visible"
+    },
+    {
+      "action": "Click on 'Home' link to return to homepage",
+      "expectedResult": "Homepage loads with welcome message and featured products visible"
+    }
+  ]
+}

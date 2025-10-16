@@ -1,0 +1,27 @@
+{
+  "testId": "QA-014",
+  "testName": "Search Variations Test",
+  "description": "Test search functionality with different search terms",
+  "testSteps": [
+    {
+      "action": "Navigate to the home page",
+      "expectedResult": "Home page loads with search bar visible"
+    },
+    {
+      "action": "Enter 'laptop' in the search field and press Enter",
+      "expectedResult": "Search results show at least one laptop product"
+    },
+    {
+      "action": "Navigate back to home page",
+      "expectedResult": "Home page loads again"
+    },
+    {
+      "action": "Enter 'book' in the search field and press Enter",
+      "expectedResult": "Search results show book-related products"
+    },
+    {
+      "action": "Verify search results contain relevant products",
+      "expectedResult": "Search results display products matching the search term"
+    }
+  ]
+}

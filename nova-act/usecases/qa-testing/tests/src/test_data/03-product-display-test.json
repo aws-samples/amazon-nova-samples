@@ -1,0 +1,23 @@
+{
+  "testId": "QA-03",
+  "testName": "Product Display and Images Test",
+  "description": "Verify that all products display correctly with proper images and information",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "expectedResult": "Featured Products section is visible"
+    },
+    {
+      "expectedResult": "Product images are displayed"
+    },
+    {
+      "expectedResult": "Products show name information"
+    },
+    {
+      "expectedResult": "Product categories are displayed"
+    }
+  ]
+}

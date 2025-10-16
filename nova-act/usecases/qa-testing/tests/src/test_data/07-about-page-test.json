@@ -1,0 +1,26 @@
+{
+  "testId": "QA-07",
+  "testName": "About Page Navigation Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Click on the 'About' navigation menu item",
+      "expectedResult": "About page loads successfully"
+    },
+    {
+      "action": "Verify that the About page contains content about the application",
+      "expectedResult": "About page displays information about the QA Test Application"
+    },
+    {
+      "action": "Verify that the navigation menu is still visible on the About page",
+      "expectedResult": "Navigation menu with Home, Products, About, Contact, and Login is visible"
+    },
+    {
+      "action": "Click on 'Home' to navigate back to the homepage",
+      "expectedResult": "Successfully navigates back to the homepage with 'Welcome to our QA Test Application' heading visible"
+    }
+  ]
+}

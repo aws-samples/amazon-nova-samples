@@ -1,0 +1,30 @@
+{
+  "testId": "QA-08",
+  "testName": "Contact Page Navigation Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Click on the 'Contact' navigation menu item",
+      "expectedResult": "Contact page loads successfully"
+    },
+    {
+      "action": "Verify that the Contact page contains contact information or a contact form",
+      "expectedResult": "Contact page displays relevant contact information or form elements"
+    },
+    {
+      "action": "Verify that the page title or heading indicates this is the Contact page",
+      "expectedResult": "Page contains 'Contact' in the title or main heading"
+    },
+    {
+      "action": "Verify that the navigation menu is still functional on the Contact page",
+      "expectedResult": "All navigation menu items (Home, Products, About, Contact, Login) are visible and clickable"
+    },
+    {
+      "action": "Click on 'Products' to navigate to the Products page",
+      "expectedResult": "Successfully navigates to Products page with product filtering options visible"
+    }
+  ]
+}

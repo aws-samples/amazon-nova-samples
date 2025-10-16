@@ -1,0 +1,22 @@
+{
+  "testId": "QA-04",
+  "testName": "Search Functionality Test",
+  "description": "Verify that the search functionality works correctly",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Click on the search bar",
+      "expectedResult": "Search bar is focused and ready for input"
+    },
+    {
+      "action": "Type 'laptop' in the search bar",
+      "expectedResult": "Text appears in the search field"
+    },
+    {
+      "expectedResult": "Search results are displayed"
+    }
+  ]
+}

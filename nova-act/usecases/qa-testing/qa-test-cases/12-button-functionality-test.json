@@ -1,0 +1,31 @@
+{
+  "testId": "QA-012",
+  "testName": "Button Functionality Test",
+  "description": "Test various button interactions and functionality across the application",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Enter 'laptop' in the search field",
+      "expectedResult": "Search field accepts text input"
+    },
+    {
+      "action": "Click the Search button to execute search",
+      "expectedResult": "Search executes and displays results page"
+    },
+    {
+      "action": "Navigate to Products page",
+      "expectedResult": "Products page loads with filtering options"
+    },
+    {
+      "action": "Click on the Category dropdown to verify it opens",
+      "expectedResult": "Category dropdown is clickable and opens filter options"
+    },
+    {
+      "action": "Click on the Login button in navigation",
+      "expectedResult": "Login button is clickable and responds to user interaction"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "testId": "QA-01",
+  "testName": "Homepage Load Test",
+  "description": "Verify that the home page loads correctly with all essential elements",
+  "testSteps": [
+    {
+      "expectedResult": "Home page loads successfully"
+    },
+    {
+      "expectedResult": "Page title contains 'QA Test App'"
+    },
+    {
+      "expectedResult": "Main heading 'Welcome to our QA Test Application' is visible"
+    },
+    {
+      "expectedResult": "Navigation menu contains Home, Products, About, Contact links"
+    },
+    {
+      "expectedResult": "Search bar with placeholder 'Search products...' is visible"
+    },
+    {
+      "expectedResult": "Login button is visible in top right corner"
+    }
+  ]
+}

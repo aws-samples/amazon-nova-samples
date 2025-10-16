@@ -1,0 +1,23 @@
+{
+  "testId": "QA-06",
+  "testName": "Login Button Functionality Test",
+  "description": "Verify that the Login button is functional and accessible",
+  "testSteps": [
+    {
+      "expectedResult": "Login button is visible in top right corner"
+    },
+    {
+      "expectedResult": "Login button has blue background with white text"
+    },
+    {
+      "expectedResult": "Button displays 'Login' text clearly"
+    },
+    {
+      "action": "Click Login button",
+      "expectedResult": "Button click is registered successfully"
+    },
+    {
+      "expectedResult": "Login button is properly positioned in navigation area"
+    }
+  ]
+}

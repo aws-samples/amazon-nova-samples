@@ -1,0 +1,30 @@
+{
+  "testId": "QA-011",
+  "testName": "Page Title Validation Test",
+  "testSteps": [
+    {
+      "action": "Navigate to the application URL",
+      "expectedResult": "Page loads successfully"
+    },
+    {
+      "action": "Verify that the homepage has an appropriate page title",
+      "expectedResult": "Page title contains 'QA Test App' or similar application name"
+    },
+    {
+      "action": "Navigate to Products page",
+      "expectedResult": "Products page loads successfully"
+    },
+    {
+      "action": "Verify that the Products page has an appropriate title",
+      "expectedResult": "Page shows 'All Products' heading or similar products page indicator"
+    },
+    {
+      "action": "Navigate to About page",
+      "expectedResult": "About page loads successfully"
+    },
+    {
+      "action": "Verify that the About page has appropriate content and title",
+      "expectedResult": "Page shows 'About' or 'About Us' heading with application information"
+    }
+  ]
+}

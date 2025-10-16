@@ -1,0 +1,23 @@
+{
+  "testId": "QA-02",
+  "testName": "Navigation Menu Functionality Test",
+  "description": "Verify that all navigation menu items are clickable and functional",
+  "testSteps": [
+    {
+      "action": "Click on 'Home' navigation link",
+      "expectedResult": "Home page loads successfully"
+    },
+    {
+      "action": "Click on 'Products' navigation link",
+      "expectedResult": "Page scrolls to or navigates to products section"
+    },
+    {
+      "action": "Click on 'About' navigation link",
+      "expectedResult": "Page scrolls to or navigates to about section"
+    },
+    {
+      "action": "Click on 'Contact' navigation link",
+      "expectedResult": "Page scrolls to or navigates to contact section"
+    }
+  ]
+}
