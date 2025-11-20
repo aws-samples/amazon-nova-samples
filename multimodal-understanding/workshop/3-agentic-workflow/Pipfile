@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
+
+[packages]
+botocore = "*"
+pandas = "*"
+numpy = "*"
+retrying = "*"
+pillow = "*"
+ipywidgets = "*"
+pickleshare = "*"
+strands-agents-tools = "*"
+typing-extensions = "*"
+boto3 = "*"
+bedrock-agentcore-starter-toolkit = "*"
+pexpect = "*"
+strands-agents = {extras = ["otel"], version = "*"}
+bedrock-agentcore = {extras = ["strands-agents"], version = "*"}
+sqlalchemy = "*"
+mysql-connector-python = "*"
+structlog = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"

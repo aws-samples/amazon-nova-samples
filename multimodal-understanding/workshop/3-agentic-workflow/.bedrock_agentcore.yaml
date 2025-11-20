@@ -1,0 +1,49 @@
+default_agent: telecom_mcp_agentcore_rt
+agents:
+  telecom_mcp_agentcore_rt:
+    name: telecom_mcp_agentcore_rt
+    entrypoint: /Users/patreil/code/nova-mm-understanding-workshop-refresh/3-agentic-workflow/telecom_mcp_agentcore_rt.py
+    platform: linux/arm64
+    container_runtime: none
+    source_path: /Users/patreil/code/nova-mm-understanding-workshop-refresh/3-agentic-workflow
+    aws:
+      execution_role: arn:aws:iam::228707323172:role/AgentCoreExecutionRole_telecom_cust_support
+      execution_role_auto_create: true
+      account: '228707323172'
+      region: us-east-1
+      ecr_repository: 228707323172.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-telecom_mcp_agentcore_rt
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: VPC
+        network_mode_config:
+          security_groups:
+          - sg-01b6352e0d7660852
+          subnets:
+          - subnet-04b8923c8735efdc4
+          - subnet-018dcdeb6c7f2899d
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: telecom_mcp_agentcore_rt-um4vNi5K6m
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:228707323172:runtime/telecom_mcp_agentcore_rt-um4vNi5K6m
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-telecom_mcp_agentcore_rt-builder
+      execution_role: arn:aws:iam::228707323172:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-2d5d77013e
+      source_bucket: bedrock-agentcore-codebuild-sources-228707323172-us-east-1
+    memory:
+      mode: STM_ONLY
+      memory_id: telecom_mcp_agentcore_rt_mem-BWA10f6JxD
+      memory_arn: arn:aws:bedrock-agentcore:us-east-1:228707323172:memory/telecom_mcp_agentcore_rt_mem-BWA10f6JxD
+      memory_name: telecom_mcp_agentcore_rt_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: true
+      was_created_by_toolkit: true
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null

@@ -6,6 +6,8 @@ botocore
 pandas
 numpy
 retrying
+mysql-connector-python
+sqlalchemy
 
 # Image and Media Processing
 Pillow
@@ -13,6 +15,10 @@ Pillow
 # Jupyter and Interactive Computing
 ipywidgets
 pickleshare
+
+# Bedrock AgentCore
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit
 
 # Strands Framework for Agents
 strands-agents

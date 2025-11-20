@@ -1,0 +1,30 @@
+# AWS SDK and Core Dependencies
+boto3
+botocore
+
+# Data Processing
+pandas
+numpy
+retrying
+mysql-connector-python
+PyMySQL
+sqlalchemy
+structlog
+
+# Image and Media Processing
+Pillow
+
+# Jupyter and Interactive Computing
+ipywidgets
+pickleshare
+
+# Bedrock AgentCore
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit>=0.1.32
+
+# Strands Framework for Agents
+strands-agents
+strands-agents-tools
+
+# Additional Utilities
+typing_extensions
