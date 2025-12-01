@@ -10,7 +10,8 @@ class Settings extends React.Component {
             configTurnSensitivity: props.configTurnSensitivity,
             configSystemPrompt: props.configSystemPrompt,
             configToolUse: props.configToolUse,
-            configChatHistory: props.configChatHistory
+            configChatHistory: props.configChatHistory,
+            enableParalinguisticDetection: props.enableParalinguisticDetection
         };
     }
 
@@ -20,13 +21,15 @@ class Settings extends React.Component {
             prevProps.configTurnSensitivity !== this.props.configTurnSensitivity ||
             prevProps.configSystemPrompt !== this.props.configSystemPrompt ||
             prevProps.configToolUse !== this.props.configToolUse ||
-            prevProps.configChatHistory !== this.props.configChatHistory) {
+            prevProps.configChatHistory !== this.props.configChatHistory ||
+            prevProps.enableParalinguisticDetection !== this.props.enableParalinguisticDetection) {
             this.setState({
                 configVoiceIdOption: this.props.configVoiceIdOption,
                 configTurnSensitivity: this.props.configTurnSensitivity,
                 configSystemPrompt: this.props.configSystemPrompt,
                 configToolUse: this.props.configToolUse,
-                configChatHistory: this.props.configChatHistory
+                configChatHistory: this.props.configChatHistory,
+                enableParalinguisticDetection: this.props.enableParalinguisticDetection
             });
         }
     }
@@ -80,6 +83,14 @@ class Settings extends React.Component {
         }
     }
 
+    handleParalinguisticDetectionChange = (e) => {
+        const enabled = e.target.checked;
+        this.setState({ enableParalinguisticDetection: enabled });
+        if (this.props.onSettingsChange) {
+            this.props.onSettingsChange({ enableParalinguisticDetection: enabled });
+        }
+    }
+
     getGroupedVoiceOptions = () => {
         return Object.entries(VoicesByLanguage).map(([language, langData]) => ({
             label: `${langData.flag} ${language}`,
@@ -124,77 +135,80 @@ class Settings extends React.Component {
                             </Header>
                         }
                     >
-                        <ColumnLayout columns={2} variant="text-grid">
-                            <FormField
-                                label={
-                                    <SpaceBetween direction="horizontal" size="xs">
-                                        <span>Voice Selection</span>
-                                        <Badge color="blue">Audio</Badge>
-                                    </SpaceBetween>
-                                }
-                                description="Choose the voice for AI responses, organized by language"
-                                stretch={true}
-                            >
-                                <Select
-                                    selectedOption={this.state.configVoiceIdOption}
-                                    onChange={this.handleVoiceIdChange}
-                                    options={this.getGroupedVoiceOptions()}
-                                    placeholder="Select a voice"
-                                    filteringType="auto"
-                                    expandToViewport={true}
-                                />
-                            </FormField>
+                        <SpaceBetween size="m">
+                            <ColumnLayout columns={2} variant="text-grid">
+                                <FormField
+                                    label={
+                                        <SpaceBetween direction="horizontal" size="xs">
+                                            <span>Voice Selection</span>
+                                            <Badge color="blue">Audio</Badge>
+                                        </SpaceBetween>
+                                    }
+                                    description="Choose the voice for AI responses, organized by language"
+                                    stretch={true}
+                                >
+                                    <Select
+                                        selectedOption={this.state.configVoiceIdOption}
+                                        onChange={this.handleVoiceIdChange}
+                                        options={this.getGroupedVoiceOptions()}
+                                        placeholder="Select a voice"
+                                        filteringType="auto"
+                                        expandToViewport={true}
+                                    />
+                                </FormField>
 
-                            {false && <FormField
-                                label={
-                                    <SpaceBetween direction="horizontal" size="xs">
-                                        <span>Turn Sensitivity</span>
-                                        <Badge color="green">Timing</Badge>
-                                    </SpaceBetween>
-                                }
-                                description="How quickly the AI responds to pauses"
-                                stretch={true}
-                            >
-                                <div className="turn-sensitivity-options-enhanced">
-                                    <label className="radio-option-enhanced">
-                                        <input
-                                            type="radio"
-                                            name="turnSensitivity"
-                                            value="HIGH"
-                                            checked={this.state.configTurnSensitivity === "HIGH"}
-                                            onChange={this.handleTurnSensitivityChange}
-                                        />
-                                        <span className="radio-label">
-                                            <strong>High</strong>
-                                        </span>
-                                    </label>
-                                    <label className="radio-option-enhanced">
-                                        <input
-                                            type="radio"
-                                            name="turnSensitivity"
-                                            value="MEDIUM"
-                                            checked={this.state.configTurnSensitivity === "MEDIUM"}
-                                            onChange={this.handleTurnSensitivityChange}
-                                        />
-                                        <span className="radio-label">
-                                            <strong>Medium</strong>
-                                        </span>
-                                    </label>
-                                    <label className="radio-option-enhanced">
-                                        <input
-                                            type="radio"
-                                            name="turnSensitivity"
-                                            value="LOW"
-                                            checked={this.state.configTurnSensitivity === "LOW"}
-                                            onChange={this.handleTurnSensitivityChange}
-                                        />
-                                        <span className="radio-label">
-                                            <strong>Low</strong>
-                                        </span>
-                                    </label>
-                                </div>
-                            </FormField>}
-                        </ColumnLayout>
+                                <FormField
+                                    label={
+                                        <SpaceBetween direction="horizontal" size="xs">
+                                            <span>Turn Sensitivity</span>
+                                            <Badge color="green">Timing</Badge>
+                                        </SpaceBetween>
+                                    }
+                                    description="How quickly the AI responds to pauses"
+                                    stretch={true}
+                                >
+                                    <div className="turn-sensitivity-options-enhanced">
+                                        <label className="radio-option-enhanced">
+                                            <input
+                                                type="radio"
+                                                name="turnSensitivity"
+                                                value="HIGH"
+                                                checked={this.state.configTurnSensitivity === "HIGH"}
+                                                onChange={this.handleTurnSensitivityChange}
+                                            />
+                                            <span className="radio-label">
+                                                <strong>High</strong>
+                                            </span>
+                                        </label>
+                                        <label className="radio-option-enhanced">
+                                            <input
+                                                type="radio"
+                                                name="turnSensitivity"
+                                                value="MEDIUM"
+                                                checked={this.state.configTurnSensitivity === "MEDIUM"}
+                                                onChange={this.handleTurnSensitivityChange}
+                                            />
+                                            <span className="radio-label">
+                                                <strong>Medium</strong>
+                                            </span>
+                                        </label>
+                                        <label className="radio-option-enhanced">
+                                            <input
+                                                type="radio"
+                                                name="turnSensitivity"
+                                                value="LOW"
+                                                checked={this.state.configTurnSensitivity === "LOW"}
+                                                onChange={this.handleTurnSensitivityChange}
+                                            />
+                                            <span className="radio-label">
+                                                <strong>Low</strong>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </FormField>
+                            </ColumnLayout>
+
+                        </SpaceBetween>
                     </Container>
 
                     {/* AI Behavior Settings */}

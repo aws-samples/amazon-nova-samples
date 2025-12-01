@@ -1,6 +1,7 @@
 import json
 import boto3
 import os
+import time
 
 KB_ID = os.environ.get('KB_ID')
 KB_REGION = os.environ.get('KB_REGION', 'us-east-1')
@@ -24,6 +25,7 @@ def retrieve_kb(query):
     if "retrievalResults" in response:
         for r in response["retrievalResults"]:
             results.append(r["content"]["text"])
+    
     return results
 
 def retrieve_and_generation(query):

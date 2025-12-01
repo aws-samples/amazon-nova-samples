@@ -177,7 +177,7 @@ class S2sEventDisplay extends React.Component {
                                 variant="h1"
                                 description={`Detailed view of ${this.state.selectedEvent?.name || 'event'} with ${this.state.selectedEvent?.events?.length || 0} occurrence(s)`}
                             >
-                                📋 Event Details
+                                Event Details
                             </Header>
                         }
                         size='large'

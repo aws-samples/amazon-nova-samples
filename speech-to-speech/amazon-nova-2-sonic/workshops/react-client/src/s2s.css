@@ -37,10 +37,10 @@
 }
 
 .s2s .app-title {
-    display: block;
+    display: flex;
     width: 100%;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     flex-shrink: 0;
 }
 
@@ -79,17 +79,16 @@
 .s2s .meter-container {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .s2s .meter-container .meter {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 12px;
-    padding: 8px;
+    padding: 8px 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(102, 126, 234, 0.2);
-    right: 35%;
-    top: 70px;
 }
 
 .s2s .header-right {
@@ -408,119 +407,7 @@
     }
 }
 
-.s2s .events .event-in {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    color: white;
-    cursor: pointer;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-    border-radius: 15px 15px 5px 15px;
-    width: 65%;
-    margin: 8px 5px;
-    font-weight: 500;
-    float: right;
-    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.3);
-    transition: all 0.3s ease;
-    font-size: 14px;
-    line-height: 1.4;
-}
 
-.s2s .events .event-in:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.4);
-}
-
-.s2s .events .event-out {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 15px 15px 15px 5px;
-    width: 65%;
-    margin: 8px 5px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    transition: all 0.3s ease;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.s2s .events .event-out:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.s2s .events .event-tool {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 15px 15px 15px 5px;
-    width: 65%;
-    margin: 8px 5px;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-    transition: all 0.3s ease;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.s2s .events .event-tool:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-}
-
-.s2s .events .event-int {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 20px;
-    width: 70%;
-    margin: 8px 5px 8px 15%;
-    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
-    transition: all 0.3s ease;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.s2s .events .event-int:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
-}
-
-.s2s .events .tooltip {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border: none;
-    border-radius: 12px;
-    padding: 15px 20px;
-    white-space: pre-wrap;
-    width: 320px;
-    max-height: 400px;
-    overflow-y: auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    z-index: 10000;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.eventdetail {
-    overflow: auto;
-}
 
 /* CloudScape component overrides for full height layout */
 .s2s .awsui-column-layout {
@@ -1045,6 +932,7 @@ tal radio group styling */
     gap: 16px;
     max-height: 60vh;
     overflow-y: auto;
+    border: solid 1px;
 }
 
 .s2s .event-item {
@@ -1062,38 +950,6 @@ tal radio group styling */
 
 .s2s .event-json {
     padding: 0;
-}
-
-.s2s .json-display {
-    margin: 0;
-    padding: 16px;
-    background: #ffffff;
-    border: none;
-    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #2c3e50;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-.s2s .json-display::-webkit-scrollbar {
-    height: 8px;
-}
-
-.s2s .json-display::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.s2s .json-display::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 4px;
-}
-
-.s2s .json-display::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
 }
 
 /* Enhanced modal styling */
@@ -1155,11 +1011,6 @@ tal radio group styling */
 
     .s2s .event-detail-container {
         max-height: 50vh;
-    }
-
-    .s2s .json-display {
-        font-size: 12px;
-        padding: 12px;
     }
 }
 

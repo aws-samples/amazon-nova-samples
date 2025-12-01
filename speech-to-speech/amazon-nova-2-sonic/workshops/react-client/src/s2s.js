@@ -49,6 +49,7 @@ class S2sChatBot extends React.Component {
             configTurnSensitivity: "MEDIUM",
             configToolUse: JSON.stringify(S2sEvent.DEFAULT_TOOL_CONFIG, null, 2),
             configChatHistory: JSON.stringify(S2sEvent.DEFAULT_CHAT_HISTORY, null, 2),
+            enableParalinguisticDetection: false,
         };
         this.socket = null;
         this.mediaRecorder = null;
@@ -110,7 +111,8 @@ class S2sChatBot extends React.Component {
             configSystemPrompt: this.state.configSystemPrompt,
             configToolUse: this.state.configToolUse,
             configChatHistory: this.state.configChatHistory,
-            configAudioOutput: this.state.configAudioOutput
+            configAudioOutput: this.state.configAudioOutput,
+            enableParalinguisticDetection: this.state.enableParalinguisticDetection
         };
 
         try {
@@ -133,7 +135,8 @@ class S2sChatBot extends React.Component {
                     configSystemPrompt: parsedState.configSystemPrompt || this.state.configSystemPrompt,
                     configToolUse: parsedState.configToolUse || this.state.configToolUse,
                     configChatHistory: parsedState.configChatHistory || this.state.configChatHistory,
-                    configAudioOutput: parsedState.configAudioOutput || this.state.configAudioOutput
+                    configAudioOutput: parsedState.configAudioOutput || this.state.configAudioOutput,
+                    enableParalinguisticDetection: parsedState.enableParalinguisticDetection || false
                 });
 
                 // Clear the saved state after restoring to prevent stale data
@@ -349,6 +352,7 @@ class S2sChatBot extends React.Component {
         if (this.socket === null || this.socket.readyState !== WebSocket.OPEN) {
             const promptName = crypto.randomUUID();
             const textContentName = crypto.randomUUID();
+            const textSentimentContentName = crypto.randomUUID();
             const audioContentName = crypto.randomUUID();
             this.setState({
                 promptName: promptName,
@@ -361,19 +365,27 @@ class S2sChatBot extends React.Component {
             this.socket.onopen = () => {
                 console.log("WebSocket connected!");
 
-                // Start session events
+                // sessionStart
                 this.sendEvent(S2sEvent.sessionStart(S2sEvent.DEFAULT_INFER_CONFIG, this.state.configTurnSensitivity));
 
+                // promptStart
                 var audioConfig = S2sEvent.DEFAULT_AUDIO_OUTPUT_CONFIG;
                 audioConfig.voiceId = this.state.configVoiceIdOption.value;
                 var toolConfig = this.state.configToolUse ? JSON.parse(this.state.configToolUse) : S2sEvent.DEFAULT_TOOL_CONFIG;
 
                 this.sendEvent(S2sEvent.promptStart(promptName, audioConfig, toolConfig));
 
+                // contentStart: system prompt
                 this.sendEvent(S2sEvent.contentStartText(promptName, textContentName));
-
                 this.sendEvent(S2sEvent.textInput(promptName, textContentName, this.state.configSystemPrompt));
                 this.sendEvent(S2sEvent.contentEnd(promptName, textContentName));
+
+                // contentStart: paralinguistic (sentiment detection)
+                if (this.state.enableParalinguisticDetection) {
+                    this.sendEvent(S2sEvent.contentStartText(promptName, textSentimentContentName, "SYSTEM_SPEECH", false));
+                    this.sendEvent(S2sEvent.textInput(promptName, textSentimentContentName, S2sEvent.DEFAULT_SENTIMENT_PROMPT));
+                    this.sendEvent(S2sEvent.contentEnd(promptName, textSentimentContentName));
+                }
 
                 // Chat history
                 if (this.state.includeChatHistory) {
@@ -590,7 +602,12 @@ class S2sChatBot extends React.Component {
                 <div className='header'>
                     <div className='header-content'>
                         <div className='app-title'>
-                            <h1>Amazon Nova Sonic Workshop</h1>
+                            <h1>Amazon Nova Sonic 2.0 Workshop</h1>
+                            {this.state.showUsage && (
+                                <div className='meter-container'>
+                                    <Meter ref={this.meterRef} />
+                                </div>
+                            )}
                         </div>
                         <div className='header-left'>
                             <div className='main-action'>
@@ -613,11 +630,6 @@ class S2sChatBot extends React.Component {
                                     Include chat history
                                 </Checkbox>
                             </div>
-                            {this.state.showUsage && (
-                                <div className='meter-container'>
-                                    <Meter ref={this.meterRef} />
-                                </div>
-                            )}
                         </div>
                         <div className='header-right'>
                             <div className='controls-group'>
@@ -678,7 +690,7 @@ class S2sChatBot extends React.Component {
                                     })}
                                     <div className='endbar' ref={this.chatMessagesEndRef}></div>
                                 </div>
-                                <div className="input-container" style={{display:"none"}}>
+                                <div className="input-container">
                                     <div className="input-wrapper">
                                         <input
                                             type="text"
@@ -804,6 +816,7 @@ class S2sChatBot extends React.Component {
                     configSystemPrompt={this.state.configSystemPrompt}
                     configToolUse={this.state.configToolUse}
                     configChatHistory={this.state.configChatHistory}
+                    enableParalinguisticDetection={this.state.enableParalinguisticDetection}
                     onSettingsChange={(updatedSettings) => {
                         this.setState(updatedSettings, () => {
                             this.saveStateToStorage();

@@ -23,6 +23,15 @@ const DemoProfiles = [
                             "json": "{\"type\":\"object\",\"properties\":{\"query\":{\"type\":\"string\",\"description\":\"The question about Amazon Nova\"}},\"required\":[]}"
                         }
                     }
+                },
+                {
+                    "toolSpec": {
+                        "name": "getSlowTool",
+                        "description": "get information about the weather information of certain location",
+                        "inputSchema": {
+                            "json": "{\"type\":\"object\",\"properties\":{\"query\":{\"type\":\"string\",\"description\":\"The question\"}},\"required\":[]}"
+                        }
+                    }
                 }
             ]
         }
@@ -167,25 +176,40 @@ const DemoProfiles = [
 
 const VoicesByLanguage = {
     "English": {
-        flag: "🇺🇸🇬🇧",
+        flag: "🇺🇸🇬🇧🇦🇺",
         voices: [
-            {
-                label: "Matthew",
-                value: "matthew",
-                accent: "US",
-                gender: "Male"
-            },
             {
                 label: "Tiffany",
                 value: "tiffany",
+                locale: "en-US",
                 accent: "US",
-                gender: "Female"
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "English, French, Italian, German, and Spanish"
+            },
+            {
+                label: "Matthew",
+                value: "matthew",
+                locale: "en-US",
+                accent: "US",
+                gender: "Male",
+                polyglot: false
             },
             {
                 label: "Amy",
                 value: "amy",
-                accent: "GB",
-                gender: "Female"
+                locale: "en-UK",
+                accent: "UK",
+                gender: "Female",
+                polyglot: false
+            },
+            {
+                label: "Olivia",
+                value: "olivia",
+                locale: "en-AU",
+                accent: "AU",
+                gender: "Female",
+                polyglot: false
             }
         ]
     },
@@ -193,16 +217,22 @@ const VoicesByLanguage = {
         flag: "🇫🇷",
         voices: [
             {
-                label: "Ambre",
-                value: "ambre",
-                accent: "FR",
-                gender: "Female"
-            },
-            {
                 label: "Florian",
                 value: "florian",
+                locale: "fr-FR",
                 accent: "FR",
-                gender: "Male"
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Ambre",
+                value: "ambre",
+                locale: "fr-FR",
+                accent: "FR",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
             }
         ]
     },
@@ -210,16 +240,22 @@ const VoicesByLanguage = {
         flag: "🇮🇹",
         voices: [
             {
-                label: "Beatrice",
-                value: "beatrice",
-                accent: "IT",
-                gender: "Female"
-            },
-            {
                 label: "Lorenzo",
                 value: "lorenzo",
+                locale: "it-IT",
                 accent: "IT",
-                gender: "Male"
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Beatrice",
+                value: "beatrice",
+                locale: "it-IT",
+                accent: "IT",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
             }
         ]
     },
@@ -227,33 +263,100 @@ const VoicesByLanguage = {
         flag: "🇩🇪",
         voices: [
             {
-                label: "Greta",
-                value: "greta",
-                accent: "DE",
-                gender: "Female"
-            },
-            {
                 label: "Lennart",
                 value: "lennart",
+                locale: "de-DE",
                 accent: "DE",
-                gender: "Male"
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Tina",
+                value: "tina",
+                locale: "de-DE",
+                accent: "DE",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Greta",
+                value: "greta",
+                locale: "de-DE",
+                accent: "DE",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
             }
         ]
     },
     "Spanish": {
-        flag: "🇪🇸",
+        flag: "🇪🇸🇺🇸",
         voices: [
-            {
-                label: "Lupe",
-                value: "lupe",
-                accent: "ES",
-                gender: "Female"
-            },
             {
                 label: "Carlos",
                 value: "carlos",
-                accent: "ES",
-                gender: "Male"
+                locale: "en-US/es-US",
+                accent: "US/ES",
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Lupe",
+                value: "lupe",
+                locale: "en-US/es-US",
+                accent: "US/ES",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            }
+        ]
+    },
+    "Portuguese": {
+        flag: "🇧🇷",
+        voices: [
+            {
+                label: "Camila",
+                value: "camila",
+                locale: "pt-BR",
+                accent: "BR",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Leo",
+                value: "leo",
+                locale: "pt-BR",
+                accent: "BR",
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            }
+        ]
+    },
+    "Hindi": {
+        flag: "🇮🇳",
+        voices: [
+            {
+                label: "Aditi",
+                value: "aditi",
+                locale: "en-IN/hi-IN",
+                accent: "IN",
+                gender: "Female",
+                polyglot: true,
+                polyglotLanguages: "with English"
+            },
+            {
+                label: "Rohan",
+                value: "rohan",
+                locale: "en-IN/hi-IN",
+                accent: "IN",
+                gender: "Male",
+                polyglot: true,
+                polyglotLanguages: "with English"
             }
         ]
     }

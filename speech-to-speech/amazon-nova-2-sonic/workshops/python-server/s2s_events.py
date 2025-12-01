@@ -156,15 +156,15 @@ class S2sEvent:
         }
 
   @staticmethod
-  def content_start_text(prompt_name, content_name):
+  def content_start_text(prompt_name, content_name, interactive=False, role="SYSTEM"):
     return {
         "event":{
         "contentStart":{
           "promptName":prompt_name,
           "contentName":content_name,
           "type":"TEXT",
-          "interactive":False,
-          "role": "SYSTEM",
+          "interactive":interactive,
+          "role": role,
           "textInputConfiguration":{
             "mediaType":"text/plain"
             }

@@ -1,6 +1,8 @@
 # Nova S2S workshop sample code
 
-> August 26, 2025 🆕🚀 A new Nova Sonic Multi-Agent Architecture lab using Amazon Bedrock AgentCore has been added. For more information and sample code refer to [./agent-core](./agent-core/) folder.
+> 🆕 **V2 Update (November 2025)**: Enhanced session management, improved event handling, and refined UI components for better stability and user experience. The v2 update includes optimized WebSocket connection handling, better state management, and improved audio processing.
+
+> August 26, 2025 🚀 A new Nova Sonic Multi-Agent Architecture lab using Amazon Bedrock AgentCore has been added. For more information and sample code refer to [./agent-core](./agent-core/) folder.
 
 This project is for the [Amazon Nova Sonic speech-to-speech (S2S) workshop](https://catalog.workshops.aws/amazon-nova-sonic-s2s/en-US) and is intended for training purposes. It showcases a sample architecture for building applications that integrate with Nova Sonic, with features specifically designed to expose technical details for educational use.
 
