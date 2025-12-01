@@ -1,0 +1,9 @@
+boto3==1.40.17
+numpy==2.2.4
+scipy==1.15.2
+rx==3.2.0
+websockets==15.0.1
+requests==2.32.3
+aws_sdk_bedrock_runtime>=0.1.0,<0.2.0
+mcp==1.13.1
+strands-agents==0.1.6
