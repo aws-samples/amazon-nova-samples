@@ -25,7 +25,7 @@ def debug_print(message):
 class S2sSessionManager:
     """Manages bidirectional streaming with AWS Bedrock using asyncio"""
     
-    def __init__(self, region, model_id='amazon.nova-sonic-v1:0', mcp_client=None, strands_agent=None):
+    def __init__(self, region, model_id='amazon.nova-2-sonic-v1:0', mcp_client=None, strands_agent=None):
         """Initialize the stream manager."""
         self.model_id = model_id
         self.region = region

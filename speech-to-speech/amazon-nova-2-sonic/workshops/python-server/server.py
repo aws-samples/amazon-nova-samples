@@ -127,7 +127,7 @@ async def websocket_handler(websocket):
 
                         """Handle WebSocket connections from the frontend."""
                         # Create a new stream manager for this connection
-                        stream_manager = S2sSessionManager(model_id='amazon.nova-sonic-v1:0', region=aws_region, mcp_client=MCP_CLIENT, strands_agent=STRANDS_AGENT)
+                        stream_manager = S2sSessionManager(model_id='amazon.nova-2-sonic-v1:0', region=aws_region, mcp_client=MCP_CLIENT, strands_agent=STRANDS_AGENT)
                         
                         # Initialize the Bedrock stream
                         await stream_manager.initialize_stream()

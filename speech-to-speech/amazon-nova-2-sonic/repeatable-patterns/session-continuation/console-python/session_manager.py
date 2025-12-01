@@ -693,7 +693,7 @@ class SessionTransitionManager:
 
             self.next_session = await self.create_session(
                 BedrockStreamManager,
-                model_id='amazon.nova-sonic-v1:0',
+                model_id='amazon.nova-2-sonic-v1:0',
                 region='us-east-1'
             )
             self._log(f"[NEXT_SESSION] Created: {self.next_session.session_id}")
@@ -810,7 +810,7 @@ class SessionTransitionManager:
 
                 self.next_session = await self.create_session(
                     BedrockStreamManager,
-                    model_id='amazon.nova-sonic-v1:0',
+                    model_id='amazon.nova-2-sonic-v1:0',
                     region='us-east-1'
                 )
                 self._log(f"[NEXT_SESSION_RECREATE] Created: {self.next_session.session_id}")

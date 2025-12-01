@@ -256,7 +256,7 @@ class BedrockStreamManager:
         }
         return json.dumps(tool_result_event)
    
-    def __init__(self, model_id='amazon.nova-sonic-v1:0', region='us-east-1'):
+    def __init__(self, model_id='amazon.nova-2-sonic-v1:0', region='us-east-1'):
         """Initialize the stream manager."""
         self.model_id = model_id
         self.region = region
@@ -875,7 +875,7 @@ async def main(debug=False):
     DEBUG = debug
 
     # Create stream manager
-    stream_manager = BedrockStreamManager(model_id='amazon.nova-sonic-v1:0', region='us-east-1')
+    stream_manager = BedrockStreamManager(model_id='amazon.nova-2-sonic-v1:0', region='us-east-1')
 
     # Create audio streamer
     audio_streamer = AudioStreamer(stream_manager)

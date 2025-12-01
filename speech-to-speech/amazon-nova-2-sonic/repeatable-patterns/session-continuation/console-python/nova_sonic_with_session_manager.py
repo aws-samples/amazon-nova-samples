@@ -201,7 +201,7 @@ async def main(debug=False):
     print("\nInitializing first session...")
     await session_manager.initialize_first_session(
         BedrockStreamManager,
-        model_id='amazon.nova-sonic-v1:0',
+        model_id='amazon.nova-2-sonic-v1:0',
         region='us-east-1'
     )
     print("First session initialized successfully!")

@@ -25,7 +25,7 @@ public class NovaSonicBedrockInteractClient {
     ) {
         log.info("initialRequest={}", initialRequest);
         InvokeModelWithBidirectionalStreamRequest request = InvokeModelWithBidirectionalStreamRequest.builder()
-                .modelId("amazon.nova-sonic-v1:0")
+                .modelId("amazon.nova-2-sonic-v1:0")
                 .build();
         // we expire the messages after one minute to save memory after connection as this is aligned with the timeout
         ReplayProcessor<InvokeModelWithBidirectionalStreamInput> publisher = ReplayProcessor.createWithTime(
