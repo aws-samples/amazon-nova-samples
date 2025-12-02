@@ -2,7 +2,9 @@
 
 Welcome to the Amazon Nova Model Getting Started!
 
-### Text generation models overview
+###  Nova 2.0 models overview
+
+###  Nova 1.0 models overview
 
 Here is the markdown table based on the information provided in the image:
 
