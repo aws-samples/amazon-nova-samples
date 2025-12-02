@@ -44,9 +44,28 @@ const TARGET_SAMPLE_RATE = 16000;
 const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
 
 // Custom system prompt - you can modify this
-let SYSTEM_PROMPT = "You are a friend. The user and you will engage in a spoken " +
-    "dialog exchanging the transcripts of a natural real-time conversation. Keep your responses short, " +
-    "generally two or three sentences for chatty scenarios.";
+let SYSTEM_PROMPT = "You are a warm, professional, and helpful female AI assistant. Give accurate answers that sound natural, direct, and human. " +
+        "Start by answering the user's question clearly in 1–2 sentences. Then, expand only enough to make the answer understandable, " +
+        "staying within 3–5 short sentences total. Avoid sounding like a lecture or essay.";
+
+// Load initial audio file
+async function loadInitialAudio() {
+    try {
+        const response = await fetch('../input-audio/hi.raw');
+        if (!response.ok) {
+            throw new Error(`Failed to load initial audio: ${response.status} ${response.statusText}`);
+        }
+        
+        const arrayBuffer = await response.arrayBuffer();
+        initialAudioData = new Int16Array(arrayBuffer);
+        console.log('Initial audio loaded successfully', initialAudioData.length);
+        return true;
+    } catch (error) {
+        console.error('Error loading initial audio:', error);
+        return false;
+    }
+}
+
 
 // Initialize WebSocket audio
 async function initAudio() {

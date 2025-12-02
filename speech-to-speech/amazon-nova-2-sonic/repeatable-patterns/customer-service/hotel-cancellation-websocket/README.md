@@ -1,14 +1,14 @@
-# Amazon Nova Sonic TypeScript Example: Hotel Reservation Cancellation Customer Service
+# Amazon Nova 2 Sonic TypeScript Example: Hotel Reservation Cancellation Customer Service
 
-This example demonstrates a practical customer service use case for Amazon Nova Sonic model, implementing a hotel reservation cancellation system. The application enables natural conversational interactions through a web interface, allowing customers to cancel their hotel reservations through voice commands while interacting with an AI assistant.
+This example demonstrates a practical customer service use case for Amazon Nova 2 Sonic model, implementing a hotel reservation cancellation system. The application enables natural conversational interactions through a web interface, allowing customers to cancel their hotel reservations through voice commands while interacting with an AI assistant.
 
-The system showcases how businesses can leverage Amazon Nova Sonic model to create seamless, human-like customer service experiences for handling hotel cancellations, including policy explanations, refund calculations, and confirmation processes.
+The system showcases how businesses can leverage Amazon Nova 2 Sonic model to create seamless, human-like customer service experiences for handling hotel cancellations, including policy explanations, refund calculations, and confirmation processes.
 
 ## Use Case Overview
 
 This application simulates a hotel reservation cancellation service with the following workflow:
 
-1. Customer initiates a conversation with the Amazon Nova Sonic
+1. Customer initiates a conversation with the Amazon Nova 2 Sonic
 2. Agent verifies customer identity and reservation details (name, check-in date)
 3. Agent explains applicable cancellation policies and potential refund amounts
 4. Customer confirms cancellation intent
@@ -119,14 +119,39 @@ http://localhost:3000
 
 3. Grant microphone permissions when prompted.
 
+### Test Scenarios
+
+The demo includes three reservations with different cancellation policy scenarios (dates are dynamically generated relative to today):
+
+#### Scenario 1: Free Cancellation Available (Angela Park)
+- **Name**: Angela Park
+- **Check-in**: 30 days from today
+- **Hotel**: Seaview Hotel (Deluxe Ocean View)
+- **Policy**: Free cancellation available until 7 days before check-in, 50% partial refund until 2 days before
+- **Expected Outcome**: Full refund eligible
+
+#### Scenario 2: Free Cancellation Passed (Don Smith)
+- **Name**: Don Smith
+- **Check-in**: 5 days from today
+- **Hotel**: Mountain Lodge (Standard King)
+- **Policy**: Free cancellation deadline has passed, 50% partial refund available until 2 days before check-in
+- **Expected Outcome**: 50% partial refund only
+
+#### Scenario 3: No Free Cancellation (Maria Rodriguez)
+- **Name**: Maria Rodriguez
+- **Check-in**: 15 days from today
+- **Hotel**: City Central Hotel (Executive Suite)
+- **Policy**: No free cancellation offered, only 50% partial refund available until 7 days before check-in
+- **Expected Outcome**: 50% partial refund only
+
 ### Sample Conversation Flow
 
 Here's an example of how a conversation might flow:
 
 1. **Customer**: "Hi, I need to cancel my hotel reservation."
 2. **Agent**: "Hello! I'm here to help you cancel your hotel reservation. Could you please provide your full name and check-in date?"
-3. **Customer**: "My name is Angela Park and my check-in date is April 12, 2025."
-4. **Agent**: "Thank you, Angela. I've found your reservation at Seaview Hotel for a Deluxe Ocean View room from April 12 to April 15, 2025. According to our policy, you're eligible for a full refund if you cancel by April 5, 2025, or a 50% refund until April 10. Would you like to proceed with cancelling this reservation?"
+3. **Customer**: "My name is Angela Park and my check-in date is [dynamically generated - 30 days from today]."
+4. **Agent**: "Thank you, Angela. I've found your reservation at Seaview Hotel for a Deluxe Ocean View room. According to our policy, you're eligible for a full refund if you cancel by [7 days before check-in], or a 50% refund until [2 days before check-in]. Would you like to proceed with cancelling this reservation?"
 5. **Customer**: "Yes, please cancel it."
 6. **Agent**: "I've processed your cancellation. Your confirmation code is CANX-123456. You'll receive a full refund of $750.00 to your original payment method within 5-7 business days. Is there anything else I can help you with?"
 
@@ -167,7 +192,7 @@ The application processes audio input through a pipeline that converts speech to
 ```ascii
 User Speech -> Browser → Server → Client
      ↑                               ↓
-     │                   Amazon Nova Sonic Model
+     │                   Amazon Nova 2 Sonic Model
      │                               ↓
 Audio Output ← Browser ← Server ← Client
 ```
@@ -175,8 +200,8 @@ Audio Output ← Browser ← Server ← Client
 Key flow components:
 1. User speaks into the microphone through Browser
 2. Audio is streamed through Server to Client
-3. Client sends audio to Amazon Nova Sonic Model with hotel cancellation context
-4. Nova Sonic processes audio, uses reservation tools, and generates response
+3. Client sends audio to Amazon Nova 2 Sonic Model with hotel cancellation context
+4. Nova 2 Sonic processes audio, uses reservation tools, and generates response
 5. Response is sent back through client to server to browser
 6. Browser plays audio response to user
 

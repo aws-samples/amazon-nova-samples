@@ -1,0 +1,538 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#app {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 150px; /* Space for fixed controls and text input */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+/* Configuration Panel */
+.config-panel {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: visible;
+  will-change: height;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-header {
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  user-select: none;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s;
+}
+
+.config-header:hover {
+  background-color: #e8e8e8;
+}
+
+.gear-icon::before {
+  content: '⚙️ ';
+}
+
+.toggle-icon::before {
+  content: '▼';
+  transition: transform 0.25s ease-out;
+  display: inline-block;
+}
+
+.config-panel.collapsed .toggle-icon::before {
+  transform: rotate(-90deg);
+}
+
+.config-content {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: max-height 0.25s ease-out, opacity 0.2s ease-out;
+  padding: 1rem;
+  text-align: left;
+  opacity: 1;
+  background-color: #f9f9f9;
+}
+
+.config-panel.collapsed .config-content {
+  max-height: 0;
+  padding: 0 1rem;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.config-group {
+  margin-bottom: 1rem;
+}
+
+.config-group:last-child {
+  margin-bottom: 0;
+}
+
+.config-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.config-group textarea,
+.config-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: white;
+  box-sizing: border-box;
+}
+
+.config-group textarea:focus,
+.config-group select:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.config-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.config-group select {
+  cursor: pointer;
+}
+
+/* Button styling */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#mute.muted {
+  background-color: #f44336;
+}
+
+#mute.muted:hover:not(:disabled) {
+  background-color: #da190b;
+}
+
+/* Status indicator (in bottom bar) */
+#status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+#status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.connected {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #2e7d32;
+}
+
+.connected::before {
+  background-color: #4CAF50;
+}
+
+.disconnected {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: #e65100;
+}
+
+.disconnected::before {
+  background-color: #ff9800;
+  animation: none;
+}
+
+.error {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #c62828;
+}
+
+.error::before {
+  background-color: #f44336;
+  animation: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+/* Chat container */
+#chat-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  scroll-behavior: smooth;
+  min-height: 0; /* Important for flex overflow */
+}
+
+/* Messages */
+.message {
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 70%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.user {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.assistant {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.system {
+  background-color: #f5f5f5;
+  color: #666;
+  font-style: italic;
+  max-width: 90%;
+  align-self: center;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.5rem 1rem;
+}
+
+.role-label {
+  font-size: 0.75em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.conversation-end {
+  background-color: #f5f5f5;
+  color: #999;
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.85em;
+  align-self: center;
+}
+
+.message-content {
+  line-height: 1.4;
+}
+
+
+/* Controls */
+#controls {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 100;
+}
+
+#controls::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+}
+
+/* Text Input Container */
+#text-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+#text-input {
+  flex: 1;
+  max-width: 600px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+  background-color: white;
+  color: #213547;
+}
+
+#text-input:focus {
+  border-color: #4CAF50;
+}
+
+#text-input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#send-text {
+  padding: 10px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1a1a1a;
+  }
+
+  .config-panel {
+    background-color: #2a2a2a;
+    border-color: #444;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .config-header {
+    background-color: #333;
+    color: #e4e4e4;
+  }
+
+  .config-header:hover {
+    background-color: #3a3a3a;
+  }
+
+  .config-content {
+    background-color: #2a2a2a;
+  }
+
+  .config-group label {
+    color: #e4e4e4;
+  }
+
+  .config-group textarea,
+  .config-group select {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e4e4e4;
+  }
+
+  .system {
+    background-color: #2a2a2a;
+    color: #999;
+  }
+
+  .conversation-end {
+    background-color: #2a2a2a;
+    color: #999;
+  }
+
+  #controls {
+    background: rgba(26, 26, 26, 0.95);
+  }
+
+  #text-input-container {
+    background: rgba(26, 26, 26, 0.95);
+  }
+
+  #text-input {
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+    border-color: #444;
+  }
+
+  #text-input:focus {
+    border-color: #4CAF50;
+  }
+
+  #text-input:disabled {
+    background-color: #2d2d2d;
+    color: #888;
+  }
+
+  .connected {
+    background-color: rgba(76, 175, 80, 0.15);
+    color: #81c784;
+  }
+
+  .disconnected {
+    background-color: rgba(255, 152, 0, 0.15);
+    color: #ffb74d;
+  }
+
+  .error {
+    background-color: rgba(244, 67, 54, 0.15);
+    color: #e57373;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  #controls {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message {
+    max-width: 85%;
+  }
+
+  button {
+    padding: 0.6em 1.2em;
+    font-size: 0.9em;
+  }
+
+  #app {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    max-width: 95%;
+  }
+
+  #chat-container {
+    padding: 0.5rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+  }
+
+  #app {
+    padding: 0.5rem;
+  }
+
+  .config-group textarea,
+  .config-group select {
+    font-size: 0.9rem;
+  }
+}

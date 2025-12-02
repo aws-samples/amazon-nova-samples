@@ -1,10 +1,10 @@
-# Amazon Nova Sonic Python Example: Session Continuation
+# Amazon Nova 2 Sonic Python Example: Session Continuation
 
-This example demonstrates how to enable unlimited conversation length with Amazon Nova Sonic by implementing seamless session transitions. The application automatically creates and switches to new sessions in the background, allowing conversations to continue indefinitely without interruption or context loss.
+This example demonstrates how to enable unlimited conversation length with Amazon Nova 2 Sonic by implementing seamless session transitions. The application automatically creates and switches to new sessions in the background, allowing conversations to continue indefinitely without interruption or context loss.
 
 ## Overview
 
-Amazon Nova Sonic sessions have an AWS-imposed time limit of approximately 8 minutes. This implementation solves that limitation by:
+Amazon Nova 2 Sonic sessions have an AWS-imposed time limit of approximately 8 minutes. This implementation solves that limitation by:
 
 1. **Monitoring session duration** and detecting when a transition is needed
 2. **Creating the next session in the background** while the current conversation continues
@@ -140,7 +140,7 @@ python nova_sonic_with_session_manager.py
 ```
 
 2. The application will:
-   - Start a conversation with Nova Sonic
+   - Start a conversation with Nova 2 Sonic
    - Monitor session duration
    - Automatically transition to new sessions as needed
    - Log all transitions to console

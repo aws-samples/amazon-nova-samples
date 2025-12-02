@@ -1,22 +1,22 @@
-# Amazon Nova Sonic Python Streaming Implementation
+# Amazon Nova 2 Sonic Python Streaming Implementation
 
-This repository contains Python scripts that implement real-time audio streaming applications integrating with Amazon Nova Sonic model. These implementations enable natural conversational interactions through a command-line interface while leveraging Amazon's powerful Nova Sonic model for processing and generating responses.
+This repository contains Python scripts that implement real-time audio streaming applications integrating with Amazon Nova 2 Sonic model. These implementations enable natural conversational interactions through a command-line interface while leveraging Amazon's powerful Nova 2 Sonic model for processing and generating responses.
 
 ## Available Implementations
 
-This repository includes three different implementations of the Nova Sonic model:
+This repository includes three different implementations of the Nova 2 Sonic model:
 
 1. **nova_sonic_simple.py**: A basic implementation that demonstrates how events are structured in the bidirectional streaming API. This version does not support barge-in functionality (interrupting the assistant while it's speaking) and does not implement true bidirectional communication.
 
 2. **nova_sonic.py**: The full-featured implementation with real bidirectional communication and barge-in support. This allows for more natural conversations where users can interrupt the assistant while it's speaking, similar to human conversations.
 
-3. **nova_sonic_tool_use.py**: An advanced implementation that extends the bidirectional communication capabilities with tool use examples. This version demonstrates how Nova Sonic can interact with external tools and APIs to provide enhanced functionality.
+3. **nova_sonic_tool_use.py**: An advanced implementation that extends the bidirectional communication capabilities with tool use examples. This version demonstrates how Nova 2 Sonic can interact with external tools and APIs to provide enhanced functionality.
 
 ## Features
 
 - Real-time audio streaming from your microphone to AWS Bedrock
-- Bidirectional communication with Nova Sonic model
-- Audio playback of Nova Sonic responses
+- Bidirectional communication with Nova 2 Sonic model
+- Audio playback of Nova 2 Sonic responses
 - Simple console-based interface showing transcripts
 - Support for debug mode with verbose logging
 - Barge-in capability (in nova_sonic.py and nova_sonic_tool_use.py)
@@ -91,13 +91,13 @@ python nova_sonic.py --debug
    - Connect to AWS Bedrock
    - Initialize a streaming session
    - Start capturing audio from your microphone
-   - Stream the audio to the Nova Sonic model
+   - Stream the audio to the Nova 2 Sonic model
    - Play back audio responses through your speakers
    - Display transcripts in the console
 
 2. During the conversation:
    - Your speech will be transcribed and shown as "User: [transcript]"
-   - The Nova Sonic's responses will be shown as "Assistant: [response]"
+   - The Nova 2 Sonic's responses will be shown as "Assistant: [response]"
    - Audio responses will be played through your speakers
 
 3. To end the conversation:
@@ -108,7 +108,7 @@ python nova_sonic.py --debug
 
 ### nova_sonic_simple.py
 This implementation provides a basic example of how to interact with the bidirectional streaming API. It:
-- Demonstrates the event structure used by Nova Sonic
+- Demonstrates the event structure used by Nova 2 Sonic
 - Provides a simple one-way communication flow
 - Does not support barge-in (interrupting the assistant)
 - Does not implement true bidirectional communication
@@ -124,9 +124,9 @@ This is the full-featured implementation that:
 
 ### nova_sonic_tool_use.py
 This advanced implementation extends the bidirectional capabilities with:
-- Tool use examples showing how Nova Sonic can interact with external tools
+- Tool use examples showing how Nova 2 Sonic can interact with external tools
 - Demonstrates how to structure tool use requests and handle responses
-- Shows integration patterns for enhancing Nova Sonic with additional capabilities
+- Shows integration patterns for enhancing Nova 2 Sonic with additional capabilities
 - Includes examples of practical tool integrations
 
 ## Customization
@@ -188,7 +188,7 @@ You can also customize the system prompt by modifying the `default_system_prompt
 ## Data Flow
 
 ```
-User Speech → PyAudio → Amazon Nova Sonic Model → Audio Output
+User Speech → PyAudio → Amazon Nova 2 Sonic Model → Audio Output
      ↑                                                      ↓
      └──────────────────────────────────────────────────────┘
                           Conversation
@@ -197,7 +197,7 @@ User Speech → PyAudio → Amazon Nova Sonic Model → Audio Output
 For tool use implementation, the flow extends to:
 
 ```
-User Speech → PyAudio → Amazon Nova Sonic Model → Tool Execution → Audio Output
+User Speech → PyAudio → Amazon Nova 2 Sonic Model → Tool Execution → Audio Output
      ↑                                                                      ↓
      └──────────────────────────────────────────────────────────────────────┘
                                   Conversation

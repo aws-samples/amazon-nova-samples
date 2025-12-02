@@ -145,8 +145,8 @@ button:disabled,
   margin: 10px;
   padding: 10px;
   border-radius: 4px;
-  margin-bottom: 80px;
-  /* Space for controls */
+  margin-bottom: 140px;
+  /* Space for controls and text input */
   display: flex;
   flex-direction: column;
 }
@@ -316,7 +316,7 @@ button:disabled,
 /* Controls styling */
 #controls {
   position: fixed;
-  bottom: 0;
+  bottom: 60px;
   left: 0;
   right: 0;
   padding: 15px;
@@ -325,6 +325,49 @@ button:disabled,
   justify-content: center;
   gap: 10px;
   z-index: 100;
+}
+
+/* Text input container styling */
+#text-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background-color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+#text-input {
+  flex: 1;
+  max-width: 600px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#text-input:focus {
+  border-color: #646cff;
+}
+
+#text-input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+#send-text {
+  padding: 10px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 /* Dark/light mode adaptations */
@@ -356,6 +399,25 @@ button:disabled,
 
   #controls {
     background-color: #242424;
+  }
+
+  #text-input-container {
+    background-color: #242424;
+  }
+
+  #text-input {
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+    border-color: #444;
+  }
+
+  #text-input:focus {
+    border-color: #646cff;
+  }
+
+  #text-input:disabled {
+    background-color: #2d2d2d;
+    color: #888;
   }
 
   .role-label {
@@ -397,6 +459,10 @@ button:disabled,
   }
 
   #controls {
+    background-color: white;
+  }
+
+  #text-input-container {
     background-color: white;
   }
 }

@@ -9,6 +9,8 @@ const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
 const statusElement = document.getElementById('status');
 const chatContainer = document.getElementById('chat-container');
+const textInput = document.getElementById('text-input');
+const sendTextButton = document.getElementById('send-text');
 
 // Chat history management
 let chat = { history: [] };
@@ -36,10 +38,7 @@ let transcriptionReceived = false;
 let displayAssistantText = false;
 let role;
 const audioPlayer = new AudioPlayer();
-let initialAudioSent = false;
-let initialAudioData = null;
-let initialAudioChunkSize = 512; // Size of chunks to send initial audio in
-let initialMessageShown = false;
+let initialTextSent = false;
 let manualDisconnect = false;
 let sessionInitialized = false;
 
@@ -48,36 +47,15 @@ const TARGET_SAMPLE_RATE = 16000;
 const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
 
 // Custom system prompt - you can modify this
-let SYSTEM_PROMPT = "You are a friend. The user and you will engage in a spoken " +
-    "dialog exchanging the transcripts of a natural real-time conversation. Keep your responses short, " +
-    "generally two or three sentences for chatty scenarios.";
-
-// Load initial audio file
-async function loadInitialAudio() {
-    try {
-        const response = await fetch('../input-audio/hi.raw');
-        if (!response.ok) {
-            throw new Error(`Failed to load initial audio: ${response.status} ${response.statusText}`);
-        }
-        
-        const arrayBuffer = await response.arrayBuffer();
-        initialAudioData = new Int16Array(arrayBuffer);
-        console.log('Initial audio loaded successfully', initialAudioData.length);
-        return true;
-    } catch (error) {
-        console.error('Error loading initial audio:', error);
-        return false;
-    }
-}
+let SYSTEM_PROMPT = "You are a warm, professional, and helpful female AI assistant. Give accurate answers that sound natural, direct, and human. " +
+        "Start by answering the user's question clearly in 1–2 sentences. Then, expand only enough to make the answer understandable, " +
+        "staying within 3–5 short sentences total. Avoid sounding like a lecture or essay.";
 
 // Initialize WebSocket audio
 async function initAudio() {
     try {
         statusElement.textContent = "Requesting microphone access...";
         statusElement.className = "connecting";
-
-        // Load initial audio file
-        await loadInitialAudio();
 
         // Request microphone access
         audioStream = await navigator.mediaDevices.getUserMedia({
@@ -147,28 +125,18 @@ async function initializeSession() {
     }
 }
 
-// Send initial audio file to model
-async function sendInitialAudio() {
-    if (!initialAudioData || initialAudioSent) return false;
-    
+// Send initial text to start conversation
+async function sendInitialText() {
+    if (initialTextSent) return false;
+
     try {
-        // Send initial audio data in chunks to simulate streaming
-        for (let i = 0; i < initialAudioData.length; i += initialAudioChunkSize) {
-            const end = Math.min(i + initialAudioChunkSize, initialAudioData.length);
-            const chunk = initialAudioData.slice(i, end);
-            
-            // Convert chunk to base64
-            const base64Data = arrayBufferToBase64(chunk.buffer);
-            
-            // Send chunk to server
-            socket.emit('audioInput', base64Data);
-        }
-        
-        initialAudioSent = true;
-        console.log('Initial audio sent successfully');
+        console.log('Sending initial text: "hi"');
+        socket.emit('textInput', { content: 'hi' });
+        initialTextSent = true;
+        console.log('Initial text sent successfully');
         return true;
     } catch (error) {
-        console.error('Error sending initial audio:', error);
+        console.error('Error sending initial text:', error);
         return false;
     }
 }
@@ -181,10 +149,9 @@ async function startStreaming() {
         chat.history = [];
         chatRef.current = chat;
         updateChatUI();
-        
+
         // Reset all client-side state
-        initialAudioSent = false;
-        initialMessageShown = false;
+        initialTextSent = false;
         
         // Clean up audio processing components
         if (processor) {
@@ -231,9 +198,9 @@ async function startStreaming() {
 
         // Use ScriptProcessorNode for audio processing
         if (audioContext.createScriptProcessor) {
-            // Send initial audio first (as if it's coming from the user)
-            if (initialAudioData && !initialAudioSent) {
-                await sendInitialAudio();
+            // Send initial text to start the conversation
+            if (!initialTextSent) {
+                await sendInitialText();
             }
             processor = audioContext.createScriptProcessor(512, 1, 1);
 
@@ -268,6 +235,8 @@ async function startStreaming() {
         isStreaming = true;
         startButton.disabled = true;
         stopButton.disabled = false;
+        textInput.disabled = false;
+        sendTextButton.disabled = false;
         statusElement.textContent = "Streaming... Speak now";
         statusElement.className = "recording";
 
@@ -278,6 +247,8 @@ async function startStreaming() {
         isStreaming = false;
         startButton.disabled = false;
         stopButton.disabled = true;
+        textInput.disabled = true;
+        sendTextButton.disabled = true;
         
         // Reset audio processors to ensure clean state
         if (processor) {
@@ -308,7 +279,7 @@ function stopStreaming() {
     audioPlayer.bargeIn();
 
     isStreaming = false;
-    
+
     // Clean up audio processing
     if (processor) {
         processor.disconnect();
@@ -321,6 +292,8 @@ function stopStreaming() {
 
     startButton.disabled = true; // Keep disabled until cleanup is complete
     stopButton.disabled = true;
+    textInput.disabled = true;
+    sendTextButton.disabled = true;
     statusElement.textContent = "Processing...";
     statusElement.className = "processing";
     
@@ -368,13 +341,7 @@ function base64ToFloat32Array(base64String) {
 // Process message data and add to chat history
 function handleTextOutput(data) {
     console.log("Processing text output:", data);
-   // Skip adding the initial "hi" message to chat history if it's from USER
-    if (data.role === 'USER' && !initialMessageShown) {
-        initialMessageShown = true;
-        console.log("Initial user message skipped in UI:", data.content);
-        return;
-    }
-    
+
     if (data.content) {
         const messageData = {
             role: data.role,
@@ -649,11 +616,10 @@ socket.on('connect', () => {
     statusElement.textContent = "Connected to server";
     statusElement.className = "connected";
     sessionInitialized = false;
-    initialAudioSent = false;
-    initialMessageShown = false;
+    initialTextSent = false;
 });
 
-socket.on('disconnect', () => { 
+socket.on('disconnect', () => {
     if (manualDisconnect) {
         // Manual disconnect - keep buttons enabled for restart
         manualDisconnect = false;
@@ -669,7 +635,7 @@ socket.on('disconnect', () => {
         stopButton.disabled = true;
     }
     sessionInitialized = false;
-    initialAudioSent = false;
+    initialTextSent = false;
     hideUserThinkingIndicator();
     hideAssistantThinkingIndicator();
 });
@@ -683,9 +649,38 @@ socket.on('error', (error) => {
     hideAssistantThinkingIndicator();
 });
 
+// Function to send text message
+function sendTextMessage() {
+    const message = textInput.value.trim();
+    if (!message || !isStreaming) return;
+
+    console.log('Sending text message:', message);
+
+    // Add the user's text message to chat history immediately
+    const messageData = {
+        role: 'USER',
+        message: message
+    };
+    chatHistoryManager.addTextMessage(messageData);
+
+    // Send to server
+    socket.emit('textInput', { content: message });
+
+    // Clear the input
+    textInput.value = '';
+}
+
 // Button event listeners
 startButton.addEventListener('click', startStreaming);
 stopButton.addEventListener('click', stopStreaming);
+sendTextButton.addEventListener('click', sendTextMessage);
+
+// Text input event listener
+textInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendTextMessage();
+    }
+});
 
 // Initialize the app when the page loads
 document.addEventListener('DOMContentLoaded', initAudio);

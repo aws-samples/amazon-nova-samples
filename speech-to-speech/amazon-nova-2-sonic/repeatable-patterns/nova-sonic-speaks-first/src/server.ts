@@ -336,6 +336,33 @@ io.on('connection', (socket) => {
         }
     });
 
+    socket.on('textInput', async (data: { content: string }) => {
+        try {
+            const session = socketSessions.get(socket.id);
+            const currentState = sessionStates.get(socket.id);
+            console.log(`Text input received for ${socket.id}, session exists: ${!!session}, state: ${currentState}`);
+
+            if (!session || currentState !== SessionState.ACTIVE) {
+                console.error(`Invalid session state for text input: session=${!!session}, state=${currentState}`);
+                socket.emit('error', {
+                    message: 'No active session for text input',
+                    details: `Session exists: ${!!session}, Session state: ${currentState}. Session must be ACTIVE to receive text input.`
+                });
+                return;
+            }
+
+            // Send the text input to the session
+            await session.sendTextInput(data.content);
+            console.log(`Text input sent for ${socket.id}: ${data.content}`);
+        } catch (error) {
+            console.error('Error processing text input:', error);
+            socket.emit('error', {
+                message: 'Error processing text input',
+                details: error instanceof Error ? error.message : String(error)
+            });
+        }
+    });
+
     socket.on('stopAudio', async () => {
         try {
             const session = socketSessions.get(socket.id);

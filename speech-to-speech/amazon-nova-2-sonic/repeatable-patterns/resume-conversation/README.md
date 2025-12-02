@@ -1,10 +1,10 @@
-# Amazon Nova Sonic TypeScript Example: Conversation Resumption
+# Amazon Nova 2 Sonic TypeScript Example: Conversation Resumption
 
-This example demonstrates how to implement conversation resumption capabilities with Amazon Nova Sonic model. Using a hotel reservation cancellation scenario as the context, the application shows how to maintain conversation state across sessions, allowing users to seamlessly continue interactions that were previously interrupted.
+This example demonstrates how to implement conversation resumption capabilities with Amazon Nova 2 Sonic model. Using a hotel reservation cancellation scenario as the context, the application shows how to maintain conversation state across sessions, allowing users to seamlessly continue interactions that were previously interrupted.
 
 ## Conversation Resumption Overview
 
-The primary focus of this example is to showcase how Nova Sonic can maintain context across conversation sessions by:
+The primary focus of this example is to showcase how Nova 2 Sonic can maintain context across conversation sessions by:
 
 1. Reloading the conversation history when a user continues the conversation
 3. Enabling the model to pick up exactly where the conversation left off

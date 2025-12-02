@@ -1,6 +1,6 @@
-# Amazon Nova Sonic Python Streaming Implementation
+# Amazon Nova 2 Sonic Python Streaming Implementation
 
-This repository contains Python scripts that implement real-time audio streaming applications integrating with Amazon Nova Sonic model. These implementations enable natural conversational interactions through a command-line interface while leveraging Amazon's powerful Nova Sonic model for processing and generating responses.
+This repository contains Python scripts that implement real-time audio streaming applications integrating with Amazon Nova 2 Sonic model. These implementations enable natural conversational interactions through a command-line interface while leveraging Amazon's powerful Nova 2 Sonic model for processing and generating responses.
 
 ## Available Implementations
 
@@ -8,7 +8,7 @@ This repository contains Python scripts that implement real-time audio streaming
 
 ## Chat History and Token Usage Logging
 
-This implementation includes a token logging system that captures and preserves all interactions between the user and Nova Sonic, including:
+This implementation includes a token logging system that captures and preserves all interactions between the user and Nova 2 Sonic, including:
 
 - **Token usage metrics** for monitoring consumption and costs
 - Text messages from both user and assistant
@@ -40,7 +40,7 @@ This feature is particularly useful for:
 
 ### Usage Metrics Tracking
 
-The system captures detailed usage metrics from Nova Sonic in real-time, including:
+The system captures detailed usage metrics from Nova 2 Sonic in real-time, including:
 
 - Input token counts (speech and text)
 - Output token counts (speech and text)
@@ -95,8 +95,8 @@ This data is saved in the chat history JSON file for later analysis, with usage 
 ## Features
 
 - Real-time audio streaming from your microphone to AWS Bedrock
-- Bidirectional communication with Nova Sonic model
-- Audio playback of Nova Sonic responses
+- Bidirectional communication with Nova 2 Sonic model
+- Audio playback of Nova 2 Sonic responses
 - Simple console-based interface showing transcripts
 - Support for debug mode with verbose logging
 - Barge-in capability
@@ -168,13 +168,13 @@ python nova_sonic.py --debug
    - Connect to AWS Bedrock
    - Initialize a streaming session
    - Start capturing audio from your microphone
-   - Stream the audio to the Nova Sonic model
+   - Stream the audio to the Nova 2 Sonic model
    - Play back audio responses through your speakers
    - Display transcripts in the console
 
 2. During the conversation:
    - Your speech will be transcribed and shown as "User: [transcript]"
-   - The Nova Sonic's responses will be shown as "Assistant: [response]"
+   - The Nova 2 Sonic's responses will be shown as "Assistant: [response]"
    - Audio responses will be played through your speakers
    - Usage metrics will be collected and logged in real-time
    - All events are recorded in their exact chronological order
@@ -244,7 +244,7 @@ You can also customize the system prompt by modifying the `default_system_prompt
 ## Data Flow
 
 ```
-User Speech → PyAudio → Amazon Nova Sonic Model → Tool Execution → Audio Output
+User Speech → PyAudio → Amazon Nova 2 Sonic Model → Tool Execution → Audio Output
      ↑                                                                      ↓
      └──────────────────────────────────────────────────────────────────────┘
                                   Conversation

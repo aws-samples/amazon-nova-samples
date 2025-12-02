@@ -1,8 +1,8 @@
-# Amazon Nova Sonic WebSocket Example: Real-time Audio Streaming with AWS Bedrock Integration
+# Amazon Nova 2 Sonic WebSocket Example: Real-time Audio Streaming with AWS Bedrock Integration
 
-This project implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova Sonic model for real-time speech-to-speech conversion. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful Speech to Speech model for processing and generating responses.
+This project implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova 2 Sonic model for real-time speech-to-speech conversion. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful Speech to Speech model for processing and generating responses.
 
-The system consists of a Java-based WebSocket server that handles the core communication and AWS Bedrock integration, paired with a modern web client that manages audio streaming and user interactions. Key features include real-time audio streaming, integration with Amazon Nova Sonic model, bidirectional communication handling, and a responsive web interface with chat history management. The application implements the Observer pattern for handling events and provides comprehensive error handling and logging capabilities.
+The system consists of a Java-based WebSocket server that handles the core communication and AWS Bedrock integration, paired with a modern web client that manages audio streaming and user interactions. Key features include real-time audio streaming, integration with Amazon Nova 2 Sonic model, bidirectional communication handling, and a responsive web interface with chat history management. The application implements the Observer pattern for handling events and provides comprehensive error handling and logging capabilities.
 
 ## Repository Structure
 ```
@@ -96,7 +96,7 @@ The application implements a bidirectional streaming architecture with the follo
 ```ascii
 User Speech -> Browser → WebSocket → Java Backend 
      ↑                                     ↓
-     │                         Amazon Nova Sonic Model
+     │                         Amazon Nova 2 Sonic Model
      │                                     ↓
 Audio Output ← Browser ← WebSocket ← Java Backend
 ```
@@ -105,8 +105,8 @@ Audio Output ← Browser ← WebSocket ← Java Backend
 Key flow components:
 1. User speaks into the microphone through Browser
 2. Audio is streamed through WebSocket to Java backend
-3. Backend sends audio to Amazon Nova Sonic Model
-4. Nova Sonic processes audio and generates AI response
+3. Backend sends audio to Amazon Nova 2 Sonic Model
+4. Nova 2 Sonic processes audio and generates AI response
 5. Response is sent back through backend to browser
 6. Browser plays audio response to user
 
@@ -117,7 +117,7 @@ Key flow components:
       ↕
 [WebSocket Server]
       ↕
-[Amazon Nova Sonic Model]
+[Amazon Nova 2 Sonic Model]
 ```
 
 ### WebSocket Components

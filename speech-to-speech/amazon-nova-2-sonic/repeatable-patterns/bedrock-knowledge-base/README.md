@@ -1,11 +1,11 @@
-# Amazon Nova Sonic TypeScript Example: Bedrock Knowledge Base Integration
+# Amazon Nova 2 Sonic TypeScript Example: Bedrock Knowledge Base Integration
 
-This project demonstrates how to build an intelligent conversational application by integrating Amazon Nova Sonic model with Amazon Bedrock Knowledge Base. The application enables natural speech-to-speech interactions while leveraging a knowledge base to provide accurate, contextual responses about company benefit policies.
+This project demonstrates how to build an intelligent conversational application by integrating Amazon Nova 2 Sonic model with Amazon Bedrock Knowledge Base. The application enables natural speech-to-speech interactions while leveraging a knowledge base to provide accurate, contextual responses about company benefit policies.
 
 ## Key Features
 
 - **Knowledge Base Integration**: Retrieves accurate information from company benefit policies stored in Amazon Bedrock Knowledge Base
-- **Real-time Speech-to-Speech**: Bidirectional WebSocket-based audio streaming with Amazon Nova Sonic model
+- **Real-time Speech-to-Speech**: Bidirectional WebSocket-based audio streaming with Amazon Nova 2 Sonic model
 - **Natural Conversational Experience**: Seamless interaction through a responsive web interface
 - **Contextual Responses**: AI-generated answers informed by knowledge base content
 - **Multi-platform Support**: Web interface and command-line options for interactions
@@ -15,18 +15,18 @@ This project demonstrates how to build an intelligent conversational application
 This implementation showcases how to enhance AI responses with domain-specific knowledge:
 
 1. **Knowledge Base Creation**: Uses a sample benefit policy document (`kb/Aglaia_Benefit_Policy.pdf`) to create a searchable knowledge base
-2. **Tool Schema Integration**: Configures Nova Sonic model with a tool schema for knowledge base queries
+2. **Tool Schema Integration**: Configures Nova 2 Sonic model with a tool schema for knowledge base queries
 3. **Intelligent Retrieval**: Model determines when to use the knowledge base based on user questions
 4. **Contextual Response Generation**: Retrieved information is incorporated into natural-sounding responses
 
 ### Knowledge Base Workflow
 
 ```
-User Speech → Amazon Nova Sonic → Tool Use Detection → Bedrock KB Query → 
+User Speech → Amazon Nova 2 Sonic → Tool Use Detection → Bedrock KB Query → 
                                                                              ↓
                                                                         Vector DB
                                                                              ↓
-User ← Audio Output ← Amazon Nova Sonic ← Tool Results ← Retrieved Context
+User ← Audio Output ← Amazon Nova 2 Sonic ← Tool Results ← Retrieved Context
 
 ```
 
@@ -206,7 +206,7 @@ User Question → Browser → Server → Client → Knowledge Base Decision
      ↑                                              ↓
      │                                     Knowledge Base Query
      │                                              ↓
-     │                                     Amazon Nova Sonic Model
+     │                                     Amazon Nova 2 Sonic Model
      │                                              ↓
 Audio Response ← Browser ← Server ← Client ← Response Generation
 ```
@@ -217,5 +217,5 @@ The application runs on a Node.js server with the following key components:
 
 - Express.js server handling WebSocket connections
 - Socket.IO for real-time communication
-- Nova Sonic client for speech to speech model processing
+- Nova 2 Sonic client for speech to speech model processing
 - Bedrock Knowledge Base client for information retrieval

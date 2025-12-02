@@ -1,8 +1,8 @@
-# Amazon Nova Sonic TypeScript Example: Real-time Audio Streaming with AWS Bedrock Integration
+# Amazon Nova 2 Sonic TypeScript Example: Real-time Audio Streaming with AWS Bedrock Integration
 
-This project implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova Sonic model for real-time speech-to-speech conversion. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful Nova Sonic model for processing and generating responses.
+This project implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova 2 Sonic model for real-time speech-to-speech conversion. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful Nova 2 Sonic model for processing and generating responses.
 
-The system consists of a server that handles the bidirectional streaming and AWS Bedrock integration, paired with a modern web client that manages audio streaming and user interactions. Key features include real-time audio streaming, integration with Amazon Nova Sonic model, bidirectional communication handling, and a responsive web interface with chat history management. It supports also command-line interface to run an interaction with a recorded audio.
+The system consists of a server that handles the bidirectional streaming and AWS Bedrock integration, paired with a modern web client that manages audio streaming and user interactions. Key features include real-time audio streaming, integration with Amazon Nova 2 Sonic model, bidirectional communication handling, and a responsive web interface with chat history management. It supports also command-line interface to run an interaction with a recorded audio.
 
 ## Repository Structure
 ```
@@ -140,7 +140,7 @@ The application processes audio input through a pipeline that converts speech to
 ```ascii
 User Speech -> Browser → Server → Client
      ↑                               ↓
-     │                   Amazon Nova Sonic Model
+     │                   Amazon Nova 2 Sonic Model
      │                               ↓
 Audio Output ← Browser ← Server ← Client
 ```
@@ -148,8 +148,8 @@ Audio Output ← Browser ← Server ← Client
 Key flow components:
 1. User speaks into the microphone through Browser
 2. Audio is streamed through Server to Client
-3. Client sends audio to Amazon Nova Sonic Model
-4. Nova Sonic processes audio and generates AI response
+3. Client sends audio to Amazon Nova 2 Sonic Model
+4. Nova 2 Sonic processes audio and generates AI response
 5. Response is sent back through client to server to browser
 6. Browser plays audio response to user
 
@@ -159,4 +159,4 @@ The application runs on a Node.js server with the following key components:
 
 - Express.js server handling WebSocket connections
 - Socket.IO for real-time communication
-- Nova Sonic client for speech to speech model processing
+- Nova 2 Sonic client for speech to speech model processing

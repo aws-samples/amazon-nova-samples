@@ -81,6 +81,14 @@ export class StreamSession {
     this.processAudioQueue();
   }
 
+  // Send text input for this session
+  public async sendTextInput(textContent: string): Promise<void> {
+    if (!this.isActive) {
+      throw new Error('Session is not active');
+    }
+    await this.client.sendTextInput(this.sessionId, textContent);
+  }
+
   // Process audio queue for continuous streaming
   private async processAudioQueue() {
     if (this.isProcessingAudio || this.audioBufferQueue.length === 0 || !this.isActive) return;
@@ -739,6 +747,53 @@ export class NovaSonicBidirectionalStreamClient {
           promptName: session.promptName,
           contentName: session.audioContentId,
           content: base64Data,
+        },
+      }
+    });
+  }
+
+  // Send text input for a session
+  public async sendTextInput(sessionId: string, textContent: string): Promise<void> {
+    const session = this.activeSessions.get(sessionId);
+    if (!session || !session.isActive) {
+      throw new Error(`Invalid session ${sessionId} for text input`);
+    }
+
+    const textContentId = randomUUID();
+
+    // Text content start
+    this.addEventToSessionQueue(sessionId, {
+      event: {
+        contentStart: {
+          promptName: session.promptName,
+          contentName: textContentId,
+          type: "TEXT",
+          interactive: true,
+          role: "USER",
+          textInputConfiguration: {
+            mediaType: "text/plain"
+          }
+        }
+      }
+    });
+
+    // Text input content
+    this.addEventToSessionQueue(sessionId, {
+      event: {
+        textInput: {
+          promptName: session.promptName,
+          contentName: textContentId,
+          content: textContent,
+        },
+      }
+    });
+
+    // Text content end
+    this.addEventToSessionQueue(sessionId, {
+      event: {
+        contentEnd: {
+          promptName: session.promptName,
+          contentName: textContentId,
         },
       }
     });

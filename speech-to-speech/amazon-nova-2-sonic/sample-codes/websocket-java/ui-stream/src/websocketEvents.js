@@ -360,9 +360,9 @@ export class WebSocketEventManager {
         };
         this.sendEvent(contentStartEvent);
 
-        const systemPrompt = "You are a friend. The user and you will engage in a spoken " +
-            "dialog exchanging the transcripts of a natural real-time conversation. Keep your responses short, " +
-            "generally two or three sentences for chatty scenarios.";
+        const systemPrompt = "You are a warm, professional, and helpful male AI assistant. Give accurate answers that sound natural, direct, and human. " +
+        "Start by answering the user's question clearly in 1–2 sentences. Then, expand only enough to make the answer understandable, " +
+        "staying within 3–5 short sentences total. Avoid sounding like a lecture or essay.";
 
         const textInputEvent = {
             event: {

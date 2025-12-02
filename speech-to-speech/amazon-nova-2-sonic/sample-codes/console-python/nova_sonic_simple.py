@@ -117,9 +117,7 @@ class SimpleNovaSonic:
         '''
         await self.send_event(text_content_start)
         
-        system_prompt = "You are a friendly assistant. The user and you will engage in a spoken dialog " \
-            "exchanging the transcripts of a natural real-time conversation. Keep your responses short, " \
-            "generally two or three sentences for chatty scenarios."
+        system_prompt = "You are a warm, professional, and helpful male AI assistant. Give accurate answers that sound natural, direct, and human. Start by answering the user's question clearly in 1–2 sentences. Then, expand only enough to make the answer understandable, staying within 3–5 short sentences total. Avoid sounding like a lecture or essay."
         
 
 
@@ -285,13 +283,32 @@ class SimpleNovaSonic:
             format=FORMAT,
             channels=CHANNELS,
             rate=OUTPUT_SAMPLE_RATE,
-            output=True
+            output=True,
+            frames_per_buffer=CHUNK_SIZE
         )
-        
+
         try:
             while self.is_active:
                 audio_data = await self.audio_queue.get()
-                stream.write(audio_data)
+
+                # Write the audio data in chunks to avoid blocking
+                for i in range(0, len(audio_data), CHUNK_SIZE):
+                    if not self.is_active:
+                        break
+
+                    end = min(i + CHUNK_SIZE, len(audio_data))
+                    chunk = audio_data[i:end]
+
+                    # Write chunk in executor to avoid blocking the event loop
+                    await asyncio.get_event_loop().run_in_executor(
+                        None,
+                        stream.write,
+                        chunk
+                    )
+
+                    # Brief yield to allow other tasks to run
+                    await asyncio.sleep(0.001)
+
         except Exception as e:
             print(f"Error playing audio: {e}")
         finally:

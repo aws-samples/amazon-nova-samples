@@ -39,66 +39,92 @@ interface CancellationResult {
     message: string;
 }
 
+// Helper function to add days to a date
+const addDays = (date: Date, days: number): string => {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result.toISOString().split('T')[0];
+};
+
+// Generate dynamic dates based on today
+const today = new Date();
+const checkIn1 = addDays(today, 30); // 30 days from now - Free cancellation available
+const checkOut1 = addDays(today, 33); // 33 days from now (3-night stay)
+const checkIn2 = addDays(today, 5); // 5 days from now - Free cancellation passed, only partial refund
+const checkOut2 = addDays(today, 10); // 10 days from now (5-night stay)
+const checkIn3 = addDays(today, 15); // 15 days from now - No free cancellation, only partial refund
+const checkOut3 = addDays(today, 19); // 19 days from now (4-night stay)
+const createdAt1 = addDays(today, -15); // Created 15 days ago
+const createdAt2 = addDays(today, -30); // Created 30 days ago
+const createdAt3 = addDays(today, -25); // Created 25 days ago
+
 // Mock database
 const mockReservations: Reservation[] = [
     {
         reservationId: "RES-12345",
         name: "Angela Park",
-        checkInDate: "2026-04-12",
-        checkOutDate: "2026-04-15",
+        checkInDate: checkIn1,
+        checkOutDate: checkOut1,
         hotelName: "Seaview Hotel",
         roomType: "Deluxe Ocean View",
         totalCost: 750.00,
         isPaid: true,
-        createdAt: "2024-12-15",
+        createdAt: createdAt1,
     },
     {
         reservationId: "RES-23456",
         name: "Don Smith",
-        checkInDate: "2026-05-15",
-        checkOutDate: "2026-05-20",
+        checkInDate: checkIn2,
+        checkOutDate: checkOut2,
         hotelName: "Mountain Lodge",
         roomType: "Standard King",
         totalCost: 850.00,
         isPaid: true,
-        createdAt: "2024-11-30",
+        createdAt: createdAt2,
     },
     {
         reservationId: "RES-34567",
         name: "Maria Rodriguez",
-        checkInDate: "2026-06-10",
-        checkOutDate: "2026-06-14",
+        checkInDate: checkIn3,
+        checkOutDate: checkOut3,
         hotelName: "City Central Hotel",
         roomType: "Executive Suite",
         totalCost: 1200.00,
         isPaid: true,
-        createdAt: "2024-12-05",
+        createdAt: createdAt3,
     }
 ];
+
+// Generate dynamic cancellation policy dates
+const freeCancellation1 = addDays(today, 23); // 7 days before check-in (30 - 7) - Still available
+const partialRefund1 = addDays(today, 28); // 2 days before check-in (30 - 2)
+const freeCancellation2 = addDays(today, -2); // 7 days before check-in (5 - 7) - Already passed
+const partialRefund2 = addDays(today, 3); // 2 days before check-in (5 - 2) - Still available
+const partialRefund3 = addDays(today, 8); // 7 days before check-in (15 - 7) - No free cancellation
 
 const mockCancellationPolicies: { [key: string]: CancellationPolicy } = {
     "RES-12345": {
         reservationId: "RES-12345",
-        freeCancellationUntil: "2026-04-05", // 7 days before check-in
-        partialRefundUntil: "2026-04-10", // 2 days before check-in
+        freeCancellationUntil: freeCancellation1, // 7 days before check-in - AVAILABLE: Full refund
+        partialRefundUntil: partialRefund1, // 2 days before check-in
         partialRefundPercentage: 50,
-        noRefundAfter: "2026-04-10",
-        additionalNotes: null,
+        noRefundAfter: partialRefund1,
+        additionalNotes: "Free cancellation available",
     },
     "RES-23456": {
         reservationId: "RES-23456",
-        freeCancellationUntil: "2026-05-10", // 5 days before check-in
-        partialRefundUntil: "2026-05-14", // 1 day before check-in
-        partialRefundPercentage: 30,
-        noRefundAfter: "2026-05-14",
-        additionalNotes: "Non-refundable deposit of $100 applies to all cancellations",
+        freeCancellationUntil: freeCancellation2, // 7 days before check-in - PASSED: Only partial refund
+        partialRefundUntil: partialRefund2, // 2 days before check-in - Still available
+        partialRefundPercentage: 50,
+        noRefundAfter: partialRefund2,
+        additionalNotes: "Free cancellation deadline has passed",
     },
     "RES-34567": {
         reservationId: "RES-34567",
-        freeCancellationUntil: null, // No free cancellation
-        partialRefundUntil: "2026-06-03", // 7 days before check-in
-        partialRefundPercentage: 25,
-        noRefundAfter: "2026-06-03",
+        freeCancellationUntil: null, // NO free cancellation - Only partial refund available
+        partialRefundUntil: partialRefund3, // 7 days before check-in
+        partialRefundPercentage: 50,
+        noRefundAfter: partialRefund3,
         additionalNotes: "Special event rate with limited cancellation options",
     }
 };

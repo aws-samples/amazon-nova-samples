@@ -1,22 +1,22 @@
-# Amazon Nova Sonic with LangChain Knowledge Base Integration
+# Amazon Nova 2 Sonic with LangChain Knowledge Base Integration
 
-This implementation demonstrates how to integrate Amazon Nova Sonic's speech-to-speech capabilities with a LangChain-powered knowledge base for enhanced conversational experiences.
+This implementation demonstrates how to integrate Amazon Nova 2 Sonic's speech-to-speech capabilities with a LangChain-powered knowledge base for enhanced conversational experiences.
 
 ## Overview
 
 This project combines:
 
-1. **Amazon Nova Sonic** - State-of-the-Art speech-to-speech foundation model that enables natural conversational interactions
+1. **Amazon Nova 2 Sonic** - State-of-the-Art speech-to-speech foundation model that enables natural conversational interactions
 2. **LangChain** - A framework for developing applications powered by language models
 3. **Knowledge Base** - A vector database created from PDF documents for context-aware responses
 
 ## How It Works
 
-1. The system uses `nova_sonic_tool_use.py` to handle bidirectional audio streaming with the Nova Sonic model
-2. When a user asks a question about the Aglaia benefit policy, Nova Sonic recognizes it as a tool use case
+1. The system uses `nova_sonic_tool_use.py` to handle bidirectional audio streaming with the Nova 2 Sonic model
+2. When a user asks a question about the Aglaia benefit policy, Nova 2 Sonic recognizes it as a tool use case
 3. The system calls the `retrieve_benefit_policy` tool, which queries the knowledge base
 4. `langchain-kb.py` processes the query against the vector database created from the PDF
-5. The relevant information is returned to Nova Sonic, which formulates a natural language response
+5. The relevant information is returned to Nova 2 Sonic, which formulates a natural language response
 6. The response is converted to speech and played back to the user
 
 ## Implementation Details
@@ -34,9 +34,9 @@ The `langchain-kb.py` script:
 
 The `nova_sonic_tool_use.py` script:
 - Defines a tool schema for the benefit policy retrieval
-- Processes tool use requests from Nova Sonic
+- Processes tool use requests from Nova 2 Sonic
 - Calls the knowledge base retrieval function
-- Returns the results back to Nova Sonic for response generation
+- Returns the results back to Nova 2 Sonic for response generation
 
 ## Getting Started
 
@@ -57,7 +57,7 @@ The `nova_sonic_tool_use.py` script:
    python langchain-kb.py
    ```
 
-4. Run the Nova Sonic application with tool use:
+4. Run the Nova 2 Sonic application with tool use:
    ```bash
    python nova_sonic_tool_use.py
    ```
@@ -66,7 +66,7 @@ The `nova_sonic_tool_use.py` script:
 
 ## Example Queries
 
-Try asking Nova Sonic questions like:
+Try asking Nova 2 Sonic questions like:
 - "What medical benefits does Aglaia offer?"
 - "Tell me about the vision coverage in the Aglaia policy"
 - "What are the retirement benefits at Aglaia?"
@@ -75,11 +75,11 @@ Try asking Nova Sonic questions like:
 ## Technical Architecture
 
 ```
-User Speech → PyAudio → Nova Sonic → Tool Use Detection → LangChain KB Query → 
+User Speech → PyAudio → Nova 2 Sonic → Tool Use Detection → LangChain KB Query → 
                                                                              ↓
                                                                         Vector DB
                                                                              ↓
-User ← Audio Output ← Nova Sonic ← Tool Results ← Retrieved Context
+User ← Audio Output ← Nova 2 Sonic ← Tool Results ← Retrieved Context
 ```
 
 ## Customization
@@ -87,5 +87,5 @@ User ← Audio Output ← Nova Sonic ← Tool Results ← Retrieved Context
 You can extend this implementation by:
 - Adding more PDF documents to the knowledge base
 - Creating additional tools for different types of queries
-- Customizing the system prompt for Nova Sonic
+- Customizing the system prompt for Nova 2 Sonic
 - Adjusting the chunking and retrieval parameters for better results
