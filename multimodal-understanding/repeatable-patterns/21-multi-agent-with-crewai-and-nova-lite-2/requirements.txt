@@ -1,0 +1,7 @@
+crewai==1.5.0
+crewai-tools==1.5.0
+langchain-aws==1.0.0
+langchain-community==0.4.1
+duckduckgo_search==8.1.1
+litellm==1.80.0
+ddgs==9.9.1
