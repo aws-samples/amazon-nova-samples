@@ -185,7 +185,7 @@ const VoicesByLanguage = {
                 accent: "US",
                 gender: "Female",
                 polyglot: true,
-                polyglotLanguages: "English, French, Italian, German, and Spanish"
+                polyglotLanguages: "English, French, Italian, German, Spanish, Portuguese, Hindi"
             },
             {
                 label: "Matthew",
@@ -193,7 +193,8 @@ const VoicesByLanguage = {
                 locale: "en-US",
                 accent: "US",
                 gender: "Male",
-                polyglot: false
+                polyglot: true,
+                polyglotLanguages: "English, French, Italian, German, Spanish, Portuguese, Hindi"
             },
             {
                 label: "Amy",
@@ -318,8 +319,8 @@ const VoicesByLanguage = {
         flag: "🇧🇷",
         voices: [
             {
-                label: "Camila",
-                value: "camila",
+                label: "Carolina",
+                value: "carolina",
                 locale: "pt-BR",
                 accent: "BR",
                 gender: "Female",
@@ -341,8 +342,8 @@ const VoicesByLanguage = {
         flag: "🇮🇳",
         voices: [
             {
-                label: "Aditi",
-                value: "aditi",
+                label: "Kiara",
+                value: "kiara",
                 locale: "en-IN/hi-IN",
                 accent: "IN",
                 gender: "Female",
@@ -350,8 +351,8 @@ const VoicesByLanguage = {
                 polyglotLanguages: "with English"
             },
             {
-                label: "Rohan",
-                value: "rohan",
+                label: "Arjun",
+                value: "arjun",
                 locale: "en-IN/hi-IN",
                 accent: "IN",
                 gender: "Male",
