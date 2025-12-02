@@ -1,5 +1,9 @@
 # Amazon Nova Sonic Speech-to-Speech Model Samples 
 
+>**Note:** We have announced Amazon Nova 2 Sonic on Dec 2nd, 2025.
+➡️ Existing examples continue to work with model ID `amazon.nova-2-sonic-v1:0`
+➡️ Updated examples using Amazon Nova 2 Sonic are available in the [`amazon-nova-2-sonic`](amazon-nova-2-sonic/) directory.
+
 The Amazon Nova Sonic model provides real-time, conversational interactions through bidirectional audio streaming. Amazon Nova Sonic processes and responds to real-time speech as it occurs, enabling natural, human-like conversational experiences.
 
 The Amazon Nova Sonic model uses the `InvokeModelWithBidirectionalStream` API, which enables real-time bidirectional streaming conversations. This differs from traditional request-response patterns by maintaining an open channel for continuous audio streaming in both directions.

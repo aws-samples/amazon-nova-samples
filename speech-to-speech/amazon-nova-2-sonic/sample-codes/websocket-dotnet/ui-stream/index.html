@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Streaming to Bedrock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div id="app">
+  <!-- Configuration Section (Collapsible) -->
+  <div id="config-section" class="config-panel collapsed">
+    <div class="config-header" id="config-toggle">
+      <span><span class="gear-icon"></span>Configuration</span>
+      <span class="toggle-icon"></span>
+    </div>
+    <div class="config-content">
+      <div class="config-group">
+        <label for="system-prompt">System Prompt</label>
+        <textarea id="system-prompt" rows="4" placeholder="Enter system prompt...">You are a warm, professional, and helpful female AI assistant. Give accurate answers that sound natural, direct, and human. Start by answering the user's question clearly in 1–2 sentences. Then, expand only enough to make the answer understandable, staying within 3–5 short sentences total. Avoid sounding like a lecture or essay.</textarea>
+      </div>
+      
+      <div class="config-group">
+        <label for="voice-select">Voice Selection</label>
+        <select id="voice-select">
+          <optgroup label="English">
+            <option value="tiffany" selected>Tiffany (Feminine)</option>
+            <option value="matthew">Matthew (Masculine)</option>
+            <option value="amy">Amy (Feminine)</option>
+            <option value="olivia">Olivia (Feminine)</option>
+          </optgroup>
+          <optgroup label="Spanish">
+            <option value="lupe">Lupe (Feminine)</option>
+            <option value="carlos">Carlos (Masculine)</option>
+          </optgroup>
+          <optgroup label="French">
+            <option value="ambre">Ambre (Feminine)</option>
+            <option value="florian">Florian (Masculine)</option>
+          </optgroup>
+          <optgroup label="German">
+            <option value="tina">Tina (Feminine)</option>
+            <option value="lennart">Lennart (Masculine)</option>
+          </optgroup>
+          <optgroup label="Italian">
+            <option value="beatrice">Beatrice (Feminine)</option>
+            <option value="lorenzo">Lorenzo (Masculine)</option>
+          </optgroup>
+          <optgroup label="Portuguese">
+            <option value="carolina">Carolina (Feminine)</option>
+            <option value="leo">Leo (Masculine)</option>
+          </optgroup>
+          <optgroup label="Hindi">
+            <option value="arjun">Arjun (Masculine)</option>
+            <option value="kiara">Kiara (Feminine)</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Chat Container -->
+  <div id="chat-container"></div>
+  
+  <!-- Controls -->
+  <div id="controls">
+    <div id="status" class="disconnected">Disconnected</div>
+    <button id="start" class="button">Start Streaming</button>
+    <button id="stop" class="button" disabled>Stop Streaming</button>
+    <button id="mute" class="button">Mute</button>
+  </div>
+
+  <!-- Text Input Container -->
+  <div id="text-input-container">
+    <input type="text" id="text-input" placeholder="Type a message and press Enter..." disabled />
+    <button id="send-text" class="button" disabled>Send</button>
+  </div>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

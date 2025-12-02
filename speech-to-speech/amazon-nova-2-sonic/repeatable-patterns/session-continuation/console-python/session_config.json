@@ -1,0 +1,17 @@
+{
+	"session_transition": {
+		"transition_threshold_seconds": 10,
+		"audio_buffer_duration_seconds": 10,
+		"audio_start_timeout_seconds": 20,
+		"next_session_ready_timeout_seconds": 30,
+		"enable_session_recording": true,
+		"recording_output_dir": "./session_recordings",
+		"max_single_message_bytes": 1024,
+		"max_chat_history_bytes": 40960
+	},
+	"session_logging": {
+		"log_transitions": true,
+		"log_barge_in_events": true,
+		"log_audio_events": true
+	}
+}

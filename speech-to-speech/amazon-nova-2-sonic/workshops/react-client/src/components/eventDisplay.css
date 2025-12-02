@@ -1,0 +1,336 @@
+.s2s{
+    width: 100%;
+}
+
+.s2s .top {
+    display: block;
+}
+
+.s2s .top .action .chathistory {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.s2s .top .action .chathistory .desc {
+    display: block;
+    font-size: small;
+    color: gray;
+}
+.s2s .meter {
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+.s2s .top .setting {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+
+.s2s .chatarea {
+    display: inline-block;
+    width: 100%;
+    margin: 1%;
+    padding: 10px;
+    vertical-align: top;
+    height: 600px;
+    background-color: #f5f4f4;
+    overflow-y: auto;
+}
+.s2s .events {
+    display: inline-block;
+    width: 100%;
+    margin: 1%;
+    padding: 10px;
+    vertical-align: top;
+    height: 600px;
+    overflow-y: auto;
+    background-color: #f5f4f4;
+}
+
+.s2s .chatarea .item { position: relative; width: 100%; padding: 10px; overflow: hidden; }
+.s2s .chatarea .item .user { 
+    display: block; 
+    float: left; 
+    text-align: left; 
+    background-color: #b1dafc; 
+    width: 40%; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.s2s .chatarea .item .bot { 
+    display: block; 
+    float: right; 
+    text-align: left; 
+    background-color: #bbdfbc; 
+    width: 40%; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.s2s .chatarea .loading-bubble {
+    background-color: #bbdfbc; 
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    float: right;
+}
+
+.s2s .chatarea .loading-dots {
+    display: inline-block;
+}
+
+.s2s .chatarea .loading-dots span {
+    width: 8px;
+    height: 8px;
+    background-color: #666;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.s2s .chatarea .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+.s2s .chatarea .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+.s2s .chatarea .endbar {
+    display: block;
+}
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+.s2s .toggleUsage {
+    display: block;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+/* Event bubble styles - consolidated from s2s.css */
+.s2s .events .event-in {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    border-radius: 15px;
+    width: 65%;
+    max-width: 65%;
+    margin: 2px 2px;
+    font-weight: 500;
+    float: right;
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-in:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.4);
+}
+
+.s2s .events .event-usage {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(135deg, #a5caa7 0%, #8fb991 100%);
+    border-radius: 15px;
+    width: 65%;
+    max-width: 65%;
+    margin: 2px 2px;
+    font-weight: 500;
+    float: right;
+    box-shadow: 0 4px 15px rgba(165, 202, 167, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-usage:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(165, 202, 167, 0.4);
+}
+
+.s2s .events .event-out {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 65%;
+    max-width: 65%;
+    margin: 2px 2px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-out:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.s2s .events .event-tool-use {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 65%;
+    max-width: 65%;
+    margin: 2px 2px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    float: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-tool-use:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.s2s .events .event-tool-result {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 65%;
+    max-width: 65%;
+    margin: 2px 2px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    float: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-tool-result:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.s2s .events .event-int {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 70%;
+    margin: 2px 2px 2px 15%;
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.s2s .events .event-int:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+}
+
+.s2s .events .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.eventdetail {
+    overflow: auto;
+}
+
+.event-item .event-json .json-display {
+    margin: 0;
+    padding: 16px;
+    background: #ffffff;
+    border: none;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #2c3e50;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}

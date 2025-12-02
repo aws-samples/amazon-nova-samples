@@ -1,0 +1,4 @@
+livekit-agents==1.2.1
+livekit-plugins-aws==1.2.1
+aws-sdk-bedrock-runtime==0.0.2
+aws-sdk-signers==0.0.3
