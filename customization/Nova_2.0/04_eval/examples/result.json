@@ -1,0 +1,9 @@
+{
+   "statusCode":200,
+   "body":[
+      {
+         "metric":"inverted_accuracy_custom",
+         "value":1.0
+      }
+   ]
+}

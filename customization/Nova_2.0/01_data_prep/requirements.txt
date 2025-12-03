@@ -1,0 +1,6 @@
+datasets==3.5.1
+pandas
+sagemaker==2.254.1
+boto3
+scikit-learn==1.6.1
+ipywidgets
