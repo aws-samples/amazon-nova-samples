@@ -12,7 +12,7 @@ This repository provides sample applications, organized into subfolders:
 - The `repeatable-patterns` folder includes common integration patterns, such as Retrieval-Augmented Generation (RAG) using Amazon Bedrock Knowledge Bases or Langchain, chat history logging, and business-oriented sample apps like customer service and resume conversation scenarios.
 - The `workshops` folder contains sample code for both AWS-led and self-service workshops. It includes a Python WebSocket server and a React web application designed to expose technical details for training purposes.
 
-To learn more about Amazon Nova 2 Sonic, refer to the [User Guide](https://docs.aws.amazon.com/nova/latest/userguide/speech.html)
+To learn more about Amazon Nova 2 Sonic, refer to the [User Guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html)
 
 
 ## Browser Compatibility Warning
