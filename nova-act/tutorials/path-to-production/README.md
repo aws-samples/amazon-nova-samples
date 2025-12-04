@@ -49,7 +49,7 @@ Before starting this tutorial series, ensure you have:
 
 - **AWS Account**: Active AWS account with billing enabled
 - **IAM Permissions**: User or role with Nova Act service permissions (see 00-setup)
-- **AWS CLI v2**: Installed and configured ([installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html))
+- **AWS CLI v2**: Installed and configured (<a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">installation guide</a>)
 - **Python 3.10+**: With pip and virtual environment support
 - **Nova Act SDK**: Version 3.0.5.0 or later (`pip install nova-act`)
 
@@ -73,7 +73,7 @@ Before starting this tutorial series, ensure you have:
    ```
 
 3. **View Results in AWS Console**
-   - Navigate to [Nova Act Console](https://us-east-1.console.aws.amazon.com/nova-act/home)
+   - Navigate to <a href="https://us-east-1.console.aws.amazon.com/nova-act/home" target="_blank">Nova Act Console</a>
    - View workflow runs, traces, and metrics
 
 ### Learning Path
@@ -140,12 +140,12 @@ Nova Act pricing includes:
 - **AWS infrastructure**: Compute, storage, and data transfer costs
 - **CloudWatch**: Metrics and log storage
 
-Visit the [Amazon Nova Act pricing page](https://aws.amazon.com/nova/pricing/) for current rates.
+Visit the <a href="https://aws.amazon.com/nova/pricing/" target="_blank">Amazon Nova Act pricing page</a> for current rates.
 
 ## Support & Resources
 
 ### Documentation
-- [Nova Act User Guide](https://docs.aws.amazon.com/nova-act/latest/userguide/)
-- [AWS Console](https://us-east-1.console.aws.amazon.com/nova-act/home)
-- [More GitHub Samples](https://github.com/amazon-agi-labs/nova-act-samples)
+- <a href="https://docs.aws.amazon.com/nova-act/latest/userguide/" target="_blank">Nova Act User Guide</a>
+- <a href="https://us-east-1.console.aws.amazon.com/nova-act/home" target="_blank">AWS Console</a>
+- <a href="https://github.com/amazon-agi-labs/nova-act-samples" target="_blank">More GitHub Samples</a>
 
