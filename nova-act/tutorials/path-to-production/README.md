@@ -140,7 +140,7 @@ Nova Act pricing includes:
 - **AWS infrastructure**: Compute, storage, and data transfer costs
 - **CloudWatch**: Metrics and log storage
 
-Visit the [Amazon Nova Act pricing page](https://aws.amazon.com/nova/act/pricing) for current rates.
+Visit the [Amazon Nova Act pricing page](https://aws.amazon.com/nova/pricing/) for current rates.
 
 ## Support & Resources
 
