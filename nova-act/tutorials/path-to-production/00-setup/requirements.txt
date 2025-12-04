@@ -1,0 +1,4 @@
+nova-act[cli]
+boto3
+strands-agents
+mcp
