@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.903 outlines conditions for offers or sales of securities by issuers, distributors, or their affiliates to be deemed outside the U.S., including offshore transactions, no directed selling efforts in the U.S., and specific conditions for different security categories. Category 1 applies to foreign issuers with no substantial U.S. market interest, while Categories 2 and 3 impose additional restrictions and compliance periods for other securities.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve official SEC text for private placement rules\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance validation\", \"edgar_check\": \"Private placement agreement terms\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Compliance requires regulation text verification against contract language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law defining 'reasonable care'\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 reasonable care standard interpretation\"}, \"Reasoning\": \"Judicial interpretation requires analyzing court precedents about statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 144A resale clause meets SEC requirements with 2022 case interpretations"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg 144A + 2022 cases + EDGAR validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 144A\"}, \"Reasoning\": \"Start with official regulation text\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"2022 Rule 144A resale restrictions\"}, \"Reasoning\": \"Need recent judicial interpretations\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale clause compliance\", \"edgar_check\": \"EDGAR resale agreement\", \"regulation\": \"Rule 144A\", \"case_interpretation_check\": \"2022 case law precedents\"}, \"Reasoning\": \"Final validation requires all three components\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

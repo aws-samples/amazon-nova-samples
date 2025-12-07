@@ -1,0 +1,44 @@
+# Note:
+# This recipe can run on p5.48xlarge, p5en.48xlarge and p4d.24xlarge instance types.
+
+## Run config
+display_name: "Nova Lite SFT on P5 GPU"
+versions: ["2.0"]
+instance_types: ["ml.p5.48xlarge", "ml.p5en.48xlarge", "ml.p4d.24xlarge"]
+
+run:
+  name: "my-fullrank-run"             # A descriptive name for your training job
+  model_type: "amazon.nova-2-lite-v1:0:256k" # Model variant specification, do not change
+  model_name_or_path: "nova-lite-2/prod" # Base model path, do not change
+  replicas: 4                     # Number of compute instances for training, allowed values are 4, 8, 16
+  data_s3_path: ""                # Customer data path
+  output_s3_path: ""              # Output artifact path, Sagemaker Hyperpod job-specific configuration - not compatible with standard Sagemaker Training jobs
+
+## Training specific configs
+training_config:
+  max_steps: 10                   # Maximum training steps
+  max_length: 8192                 # Sequence length (options: 8192 [default], 16384, 32768)
+  global_batch_size: 64           # Global batch size, allowed values are 16, 32, 64.
+  reasoning_enabled: true
+
+  model:
+    config:
+      language_transformer_config:
+        hidden_dropout: 0.0        # Dropout for hidden states (0.0–1.0)
+        attention_dropout: 0.0     # Dropout for attention weights (0.0–1.0)
+
+  lr_scheduler:
+    warmup_steps: 10               # Learning rate warmup steps
+    constant_steps: 0              # Steps at constant learning rate
+    min_lr: 1e-6                   # Minimum learning rate
+
+  optim_config:                    # Optimizer settings
+    lr: 1e-5                       # Learning rate
+    weight_decay: 0.0              # L2 regularization strength (0.0–1.0)
+    adam_beta1: 0.9
+    adam_beta2: 0.95
+
+  loraplus_lr_ratio: 64.0          # LoRA+ learning rate scaling factor (0.0–100.0)
+
+  peft:                            # Parameter-efficient fine-tuning (LoRA)
+    peft_scheme: "null"            # disable LoRA for PEFT

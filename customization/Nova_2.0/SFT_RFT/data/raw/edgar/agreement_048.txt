@@ -1,0 +1,219 @@
+EX-10.1
+4
+ea025937001ex10-1_21shares.htm
+FORM OF SPONSOR AGREEMENT
+Exhibit 10.1
+SPONSOR AGREEMENT
+THIS SPONSOR AGREEMENT
+(the “Agreement”), dated as of [ ], is made by and between 21Shares US LLC, a Delaware limited liability company (“Sponsor”), and 21Shares
+Solana ETF, a statutory trust organized under the laws of Delaware (the “Trust”).
+1.
+The
+Trust.
+The Trust is not an investment company under the Investment Company Act of 1940, as amended (the “1940 Act”)
+and it is not required to register thereunder. The Trust is not a commodity pool for purposes of the Commodity Exchange Act of 1936, as
+amended, and the Sponsor is not subject to regulation by the Commodity Futures Trading Commission as a commodity pool operator or a commodity
+trading advisor. The Sponsor is not registered as an investment adviser under the Investment Advisers Act of 1940, as amended, and is
+not required to register thereunder.
+2.
+Appointment.
+Pursuant to the terms of the Trust’s Amended and Restated Declaration of Trust and Trust Agreement (the “Trust Agreement”),
+Sponsor was appointed to serve as sponsor for the Trust, with full powers and rights to effectuate and carry out the purposes, activities
+and objectives of the Trust. Sponsor has accepted such appointment and hereby agrees to render such services to the Trust on the terms
+and conditions set forth in this Agreement and the Trust Agreement. The Sponsor shall have power to cause legal title to any Trust property
+to be held by or in the name of the Sponsor, or to have any contract entered into in the name of the Sponsor, on such terms as the Sponsor
+may determine, with the same effect as if such property were held in the name of the Trust or such contract were entered into in the name
+of the Trust.
+3.
+Duties.
+Sponsor will perform such duties for the Trust as set forth in Article VI of the Trust Agreement in accordance with Sponsor’s best
+judgment and as outlined in the Trust’s then-current prospectus included as part of a registration statement filed with the U.S.
+Securities and Exchange Commission (“SEC”).
+4.
+Execution
+of Trust Documents.
+Pursuant to the terms of the Trust Agreement, the Sponsor is authorized to execute documents for and on behalf
+of the Trust. For the avoidance of doubt, when a specified officer of the Trust is required to execute, or executes, a document, including
+but not limited to filings required to be made with regulatory authorities such as the Securities and Exchange Commission, the following
+officers of the Sponsor (or persons performing similar functions, including in the event of a vacancy in one or more of the specified
+Sponsor’s officer positions) or their designated delegees shall be authorized to execute the document in the capacities indicated
+below:
+Specified Trust Officer
+Sponsor Officer Authorized to Execute Trust Document
+in the Capacity of the Specified Trust Officer
+Principal Executive Officer / Chief Executive Officer / President
+Chief Executive Officer / President
+Principal Financial Officer / Chief Financial Officer
+Chief Financial Officer / Treasurer
+Principal Accounting Officer
+Chief Financial Officer / Treasurer
+Comptroller
+Chief Financial Officer / Treasurer
+Treasurer
+Chief Financial Officer / Treasurer
+Vice President
+Any Sponsor officer
+Secretary
+Any Sponsor officer
+5.
+Reporting;
+Record Keeping.
+Sponsor will be available at reasonable times to discuss the activities of the Trust with the trustee of the Trust
+or its designee. Any written reports supplied by Sponsor to the Trust discussing the activities of the Trust are intended solely for the
+benefit of the Trust, and the Trust agrees that it will not disseminate such reports to any other party (other than the Trust’s
+service providers) without the prior consent of Sponsor, except as may be required by applicable law. Sponsor shall make or cause to be
+made, and shall maintain or cause to be maintained, all records as are required to be made or maintained by it in its capacity as Sponsor
+of the Trust.
+6.
+Other
+Accounts.
+The Trust understands and acknowledges that Sponsor may act as sponsor for various persons other than the Trust. The
+Trust acknowledges that Sponsor may give advice and take action concerning other persons that may be the same as, similar to or different
+from the advice given, or the timing and nature of action taken, concerning the Trust. Except to the extent necessary to perform Sponsor’s
+obligations under this Agreement, nothing herein shall be deemed to limit or restrict the right of Sponsor, or any affiliate of Sponsor
+or any employee of Sponsor to engage in any other business or to devote time and attention to the management or other aspects of any other
+business, whether of a similar or dissimilar nature, or to render services of any kind to any other corporation, firm, individual or association.
+7.
+Sponsor’s
+Compensation.
+The Trust shall pay to Sponsor a fee as described in Schedule A that is attached hereto and made a part hereof.
+Such fee shall be computed daily and paid not less than weekly in arrears by the Trust. No other compensation is paid to the Sponsor by
+the Trust. Sponsor’s compensation is paid in consideration of Sponsor’s (i) services under this Agreement and the Trust Agreement
+and (ii) the payment by Sponsor of the Trust expenses described in paragraph 8 below. The Sponsor may, in its sole discretion, voluntarily
+waive all or a portion of the fee it receives from the Trust.
+8.
+Trust
+Expenses
+(a)
+Ordinary
+Fees and Expenses.
+As partial consideration for receipt of the Sponsor fee, the Sponsor shall assume and pay all fees and other expenses
+incurred by the Trust in the ordinary course of its affairs, excluding taxes, but including (i) the Marketing Fee, (ii) the Administrator
+Fee, if any, (iii) the Ether Custodian Fee, (iv) the Transfer Agent Fee, (v) the Trustee fee, (vi) the fees and expenses related to any
+future listing, trading or quotation of the Shares on any listing ex-change or quotation system (including legal, marketing and audit
+fees and expenses), (vii) ordinary course legal fees and expenses that are not litigation-related, up to $100,000 per annum,(viii) audit
+fees, (ix) regulatory fees, including if applicable any fees relating to the registration of the Shares under the Securities Act or Exchange
+Act, (x) printing and mailing costs; (xi) costs of maintaining the Trust’s website and (xii) applicable license fees (each, a “Sponsor-paid
+Expense” and together, the “Sponsor-paid Expenses”), provided that any expense that qualifies as an Additional Trust
+Expense will be deemed to be an Additional Trust Expense and not a Sponsor-paid Expense. In the Sponsor’s sole discretion, all or
+any portion of a Sponsor-paid Expense may be redesignated as an Additional Trust Expense.
+(b)
+Additional
+Trust Expenses
+.
+The Trust may incur certain extraordinary, non-recurring expenses that are not Sponsor-paid Expenses, including,
+but not limited to, taxes and governmental charges, expenses and costs of any extraordinary services performed by the Sponsor (or any
+other service provider) on behalf of the Trust to protect the Trust or the interests of Shareholders, any indemnification of the Ether
+Custodian, Administrator or other agents, service providers or counterparties of the Trust, the fees and expenses related to the listing,
+and extraordinary legal fees and expenses, including any legal fees and expenses incurred in connection with litigation, regulatory enforcement
+or investigation matters (collectively, “Additional Trust Expenses”).
+9.
+Liability
+and Indemnification.
+Sponsor will not be liable for losses to the Trust, and Sponsor shall be indemnified, to the extent provided
+in Section 4.05 of the Trust Agreement.
+10.
+Tax
+Filings.
+Except as described in any applicable filings with the SEC, Sponsor will not be responsible for making any tax credit
+or similar claim or any legal filing on the Trust’s behalf.
+11.
+Governing
+Law/Disputes.
+This Agreement is entered into in accordance with and shall be governed by the laws of the State of Delaware; provided,
+however, that in the event that any law of the State of Delaware shall require that the laws of another state or jurisdiction be applied
+in any proceeding, such Delaware law shall be superseded by this paragraph, and the remaining laws of the State of Delaware shall nonetheless
+be applied in such proceeding. Each party agrees that in the event that any dispute arising from or relating to this Agreement becomes
+subject to any judicial proceeding, such party waives any right it may otherwise have to (a) seek punitive damages, or (b) request a jury
+trial.
+12.
+Termination.
+This Agreement may be terminated (i) by Sponsor at any time upon 30 days’ prior written notice; or (ii) by either party upon discovery
+of acts of fraud or willful malfeasance of the other party in performing its duties hereunder. Any obligation or liability of either party
+resulting from actions or inactions occurring prior to termination shall not be affected by termination of this Agreement.
+13.
+Assignment.
+This Agreement may be assigned by either party upon prior notice to the other party.
+14.
+Notices.
+All notices and other communications under this Agreement shall be in writing and shall be addressed to the parties at their respective
+addresses.
+Sponsor shall comply with, and be entitled to act
+on, any instructions reasonably believed to be from an authorized representative of the Trust. Sponsor and its employees and agents shall
+be fully protected from all liability in acting upon such instructions, without being required to determine the authenticity of the authorization
+or authority of the persons providing such instructions.
+15.
+Severability.
+In the event any provision of this Agreement is adjudicated to be void, illegal, invalid or unenforceable, the remaining terms and provisions
+of this Agreement shall not be affected thereby, and each of such remaining terms and provisions shall be valid and enforceable to the
+fullest extent permitted by law, unless a party demonstrates by a preponderance of the evidence that the invalidated provision was an
+essential economic term of this Agreement.
+2
+16.
+Integration;
+Amendment.
+This Agreement together with any other written agreements between the parties entered into concurrently with this Agreement
+contain the entire agreement between the parties with respect to the transactions contemplated hereby and supersede all previous oral
+or written negotiations, agreements, commitments and understandings related thereto. This Agreement may not be amended or modified in
+any respect, nor may any provision be waived, without the written agreement of both parties. No waiver by one party of any obligation
+of the other hereunder shall be considered a waiver of any other obligation of such party.
+17.
+Further
+Assurances.
+Each party hereto shall execute and deliver such other documents or agreements as may be necessary or desirable for
+the implementation of this Agreement and the consummation of the transactions contemplated hereby.
+18.
+Headings.
+The headings of paragraphs herein are included solely for convenience and shall have no effect on the meaning of this Agreement.
+19.
+Counterparts.
+This Agreement may be executed in one or more counterparts, each of which shall be deemed to be an original and all of which taken together
+shall be deemed to be one and the same instrument.
+20.
+Trustee.
+The Trust is a Delaware statutory trust and a separate legal entity under the Delaware Statutory Trust Act and pursuant to such act a
+trustee, when acting in such capacity, is not personally liable to any person (other than the statutory trust or any beneficial owner
+thereof) for any act, omission or obligation of a statutory trust. In furtherance thereof, (a) this Agreement is executed and delivered
+by CSC Delaware Trust Company, not individually or personally, but solely as Trustee of the Trust, (b) each of the representations, undertakings
+and agreements herein made on the part of the Trust is made and intended not as personal representations, undertakings and agreements
+by CSC Delaware Trust Company but is made and intended for the purpose of binding only the Trust, (c) nothing herein contained shall be
+construed as creating any liability on CSC Delaware Trust Company, individually or personally, to perform any covenant either expressed
+or implied contained herein of the, all such liability, if any, being expressly waived by the parties hereto and by any Person claiming
+by, through or under the parties hereto, and (d) under no circumstances shall CSC Delaware Trust Company be personally liable for the
+payment of any indebtedness or expenses of the Trust or be liable for the breach or failure of any obligation, representation, warranty
+or covenant made or undertaken by the Trust under this Agreement.
+3
+IN WITNESS WHEREOF, the parties hereto have executed
+this Agreement as of the day and year first above written.
+21Shares Solana ETF
+By:
+21Shares US LLC
+By:
+Name:
+Title:
+21Shares US LLC
+By:
+Name:
+Title:
+Signature Page –
+Sponsor Agreement
+SCHEDULE A
+to the
+SPONSOR AGREEMENT
+Dated [ ] between
+21SHARES SOLANA ETF
+and
+21SHARES US LLC
+The Trust will pay to the Sponsor, as compensation for the Sponsor’s
+services rendered to the Trust, a fee computed daily at an annual rate based on the average daily net assets of Trust in accordance with
+the following fee schedule:
+Rate
+21Shares Solana ETF
+0.21
+%
+The Trust will pay to the Sponsor as partial consideration for the Sponsor arranging for the staking of the Trust’s Solana, a percentage of the staking rewards generated by the Trust’s staking program
+in accordance with the following fee schedule:
+Rate
+21Shares Solana ETF
+10
+%

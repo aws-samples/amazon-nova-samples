@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.424 outlines the requirements for filing prospectuses with the SEC, specifying that five copies of any pre-effective prospectus with substantive changes must be filed, and ten copies of each post-effective prospectus must be filed unless it only contains omitted information or is used in specific offerings. The regulation details various deadlines for filing these prospectuses, depending on the type of changes or the nature of the offering.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption under Reg D require verification of accredited investor status? Show full analysis path"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Reg D verification requirements + judicial precedent\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506(c)\"}, \"Reasoning\": \"Need authoritative text about verification obligations\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reg D accredited investor verification standards\"}, \"Reasoning\": \"Must find judicial interpretations of 'reasonable steps' verification requirement\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Validate this EDGAR clause against Section 5 registration requirements: 'Company shall file S-1 within 90 days of closing'"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Section 5 requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5\"}, \"Reasoning\": \"Must first retrieve official registration obligations\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"S-1 filing timeline\", \"edgar_check\": \"EDGAR S-1 filing clause\", \"regulation\": \"Section 5\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Compliance validation requires regulation + EDGAR text comparison\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Is '15 U.S.C. \u00a7 77e' properly cited for public offering exemptions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"USC code accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"15 U.S.C. \u00a7 77e\"}, \"Reasoning\": \"Citation verification requires format/code validation tool only\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

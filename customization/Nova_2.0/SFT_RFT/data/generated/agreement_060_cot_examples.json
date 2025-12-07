@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Placement Agent Warrant issued by Aptorum Group Limited, dated October 14, 2025, which allows the holder to purchase a specific number of Ordinary Shares at an exercise price of $2.50 per share. The warrant can be exercised starting from the initial exercise date until the earlier of 24 months after the effective date of a resale registration statement or October 10, 2030. The warrant includes provisions for cashless exercise if there is no effective registration statement for the resale of the shares.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of Regulation D safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance verification\", \"edgar_check\": \"Memorandum exemption claims\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation against both regulatory text and specific EDGAR language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the controlling precedent for material omission liability under Section 10(b)?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Key case law for 10(b) omissions\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 10(b) material omission precedents\"}, \"Reasoning\": \"Interpretation questions require judicial precedent analysis. Statute retrieval provides rule text but not court interpretations.\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 144A offering circular meets international transaction requirements under SEC rules."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg S/144A requirements + case law + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation S/Rule 144A\"}, \"Reasoning\": \"Must first establish international offering regulations\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Cross-border offering judicial interpretations\"}, \"Reasoning\": \"Need precedent on international application of rules\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International offering compliance\", \"edgar_check\": \"Offering circular language\", \"regulation\": \"Reg S/144A\", \"case_interpretation_check\": \"Jurisdictional precedents\"}, \"Reasoning\": \"Final validation requires all three sources\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.504 provides an exemption from registration for limited securities offerings not exceeding $10 million, provided the issuer is not subject to certain reporting requirements, is not an investment company, and does not lack a specific business plan. The exemption requires compliance with certain conditions, including state registration or accredited investor sales, and disqualifies issuers with \"bad actor\" events after January 20, 2017.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve authoritative safe harbor rules from Reg D\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Memorandum marketing restrictions\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR clauses against retrieved Reg D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial interpretation of 'material non-public information' in insider trading cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on materiality standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information insider trading precedents\"}, \"Reasoning\": \"Requires historical court interpretations of statutory language beyond SEC rules\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if [SEC Release 33-10880] citation exists and is accurate"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"SEC document validation\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC Release 33-10880\"}, \"Reasoning\": \"Citation format requires validation against official SEC release database\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

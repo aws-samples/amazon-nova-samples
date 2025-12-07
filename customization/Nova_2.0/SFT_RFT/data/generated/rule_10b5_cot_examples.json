@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 240.10b-5 prohibits the use of manipulative and deceptive practices in securities trading, including fraud, false statements, and omissions of material facts. This rule applies to any person using interstate commerce, mail, or national securities exchanges for the purchase or sale of securities. Violations can result in legal penalties.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the proposed private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve exact Reg D text to establish compliance baseline\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D private placement compliance\", \"edgar_check\": \"EDGAR subscription agreement\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"None\"}, \"Reasoning\": \"Compare EDGAR clauses directly against Reg D requirements using compliance tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial interpretation of 'material non-public information' in insider trading cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on materiality standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information insider trading precedents\"}, \"Reasoning\": \"Requires analysis of court decisions to understand practical application beyond statutory definitions\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(d) is properly cited in this prospectus"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy check of SEC regulation citation\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(d)\"}, \"Reasoning\": \"Citation verification requires format/code validation without needing full regulation text\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

@@ -1,0 +1,66 @@
+{
+  "summary": "This Employment Agreement dated August 18, 2025, is between Zynex, Inc. and Vikram Bajaj, who will serve as the Chief Financial Officer. Bajaj will receive a base salary of $450,000, be eligible for an annual bonus of up to 70% of his base salary, and receive equity awards valued at $2.5 million, vesting over three years, with certain accelerated vesting provisions upon termination without cause, disability, or death.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need to retrieve Rule 506 requirements first\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"Memorandum exemption language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Compliance validation requires both regulation text and EDGAR document analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for material misrepresentation in SEC enforcement actions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on materiality standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC Rule 10b-5 material misrepresentation precedent\"}, \"Reasoning\": \"Requires judicial interpretation of anti-fraud provisions through case precedents\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.502(d) is properly cited in this prospectus"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.502(d)\"}, \"Reasoning\": \"Citation verification requires dedicated validation tool for regulatory references\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

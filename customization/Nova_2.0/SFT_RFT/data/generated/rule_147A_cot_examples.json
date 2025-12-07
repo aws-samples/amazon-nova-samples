@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.147A provides an exemption from SEC registration for intrastate securities offerings, allowing issuers to use general solicitation and advertising if they meet specific criteria. The issuer must be a resident and do business in the state where sales occur, and sales must be limited to state residents, with resale restrictions for six months. Issuers must also take precautions to prevent interstate sales, including placing legends on securities and obtaining residency representations from purchasers.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need official SEC text of Reg D exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Private placement subscription agreement\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation against Reg D requirements after retrieving statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on Section 11 standard\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 reasonable care standard interpretation\"}, \"Reasoning\": \"Requires judicial precedent analysis since statutory text alone doesn't provide operational definitions\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this Form S-1 registration statement meets 1933 Act requirements"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"compliance_validation\", \"Information needed\": \"Registration statement validation\", \"Tools\": [{\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Form S-1 compliance\", \"edgar_check\": \"S-1 risk factors section\", \"regulation\": \"Securities Act of 1933\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Direct validation against statutory requirements without needing preliminary interpretation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

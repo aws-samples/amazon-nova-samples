@@ -1,0 +1,731 @@
+EX-10.1
+3
+ea026573201ex10-1_ondas.htm
+REGISTRATION RIGHTS AGREEMENT, DATED NOVEMBER 17, 2025, BY AND AMONG THE COMPANY AND THE SELLERS
+Exhibit 10.1
+REGISTRATION RIGHTS AGREEMENT
+THIS REGISTRATION RIGHTS
+AGREEMENT
+(this “
+Agreement
+”), dated as of November 17, 2025, is made and entered into by and among (i) Ondas Holdings
+Inc., a Nevada corporation (the “
+Parent
+”), (ii) each of the Persons listed on
+Schedule A
+attached hereto (the
+“
+Schedule of Holders
+”) as of the date hereof, (iii) each of the other Persons set forth from time to time on the Schedule
+of Holders who, at any time, own Registrable Securities and enter into a joinder to this Agreement agreeing to be bound by the terms hereof
+(each Person identified in the foregoing clauses (ii) and (iii), a “
+Holder
+” and, collectively, the “
+Holders
+”),
+and (iv) the Shareholders’ Agent (as defined below).
+RECITALS
+WHEREAS
+, the Parent
+has entered into a Share Purchase Agreement, dated as of November 3, 2025 (the “
+Share Purchase Agreement
+”), with Sentry
+CS Ltd., a company organized under the laws of the State of Israel (“
+Sentry
+”), the shareholders and option holders
+of Sentry as set forth on
+Exhibit B
+therein, including without limitation, the Holders, and Sagitta Holdco SARL, a private limited
+liability company organized under the laws of the Grand Duchy of Luxembourg, having its registered office at 15, Boulevard F.W. Raiffeisen,
+L-2411 Luxembourg, and registered with the Luxembourg Trade and Companies Register under number B268651, solely in its capacity as the
+representative, agent and attorney-in-fact of the Indemnifying Parties, as defined therein (the “
+Shareholders’ Agent
+”);
+and
+WHEREAS
+, in connection
+with the Share Purchase Agreement, the Parent may issue Common Stock as consideration pursuant to the terms of the Share Purchase Agreement.
+NOW
+,
+THEREFORE
+,
+in consideration of the representations, covenants and agreements contained herein, and certain other good and valuable consideration,
+the receipt and sufficiency of which are hereby acknowledged, the parties hereto, intending to be legally bound, hereby agree as follows:
+1.
+Resale Shelf Registration
+Rights
+.
+(a)
+Registration
+Statement Covering Resale of Registrable Securities
+. In accordance with
+Section 2
+, on each of the Closing Date, the Second
+Payment Date, the Third Payment Date and the Fourth Payment Date, the Parent shall prepare and file, or cause to be prepared and filed,
+with the Commission a prospectus supplement pursuant to Rule 424(b)(7) promulgated under the Securities Act (each, a “
+Prosupp
+”)
+to its Current Resale Shelf Registration Statement, providing for the resale from time to time by the Holders of any and all Registrable
+Securities pursuant to Rule 415 under the Securities Act (or any successor or similar provision adopted by the Commission then in effect),
+and each such Prosupp shall further provide that such Registrable Securities may be sold pursuant to any method or combination of methods
+legally available to the Holders, including in customary market and brokerage trades through any national exchange or over the counter
+market. The Parent shall use its best efforts to maintain the Current Resale Shelf Registration Statement in accordance with the terms
+hereof and keep the Current Resale Shelf Registration Statement continuously effective and shall cause the Current Resale Shelf Registration
+Statement to be supplemented and amended (including post-effective amendments) to the extent necessary to ensure that such Registration
+Statement is available or, if not available, to ensure that another Registration Statement is available and effective under the Securities
+Act at all times until the first date on which there are no longer any Registrable Securities outstanding (the “
+Effectiveness
+Period
+”).
+(b)
+Notification;
+Replacement Registration Statement on Form S-3; and Distribution of Materials
+. The Parent shall notify the Holders in writing of the
+filing of each Prosupp immediately following the filing thereof with the Commission, and the Parent shall notify the Holders in writing
+immediately following the Current Resale Shelf Registration Statement no longer being current or otherwise available to the Holders as
+provided by
+Section 1(a)
+. If the Current Resale Shelf Registration Statement becomes unavailable for the use by the Holders because
+the Parent is no longer eligible to use an Automatic Shelf Registration Statement, then the Parent shall promptly (and in any event within
+five Business Days following the unavailability of such Registration Statement) file with the Commission a replacement Registration Statement
+on such form as it is then currently able to use (which shall be Form S-3 if the Parent is then able to use such form), and the Parent
+shall use its best efforts to have such replacement Registration Statement declared effective by the Commission as soon as possible after
+such filing, which replacement Registration Statement shall provide for the resale from time to time by the Holders of any and all Registrable
+Securities pursuant to Rule 415 under the Securities Act (or any successor or similar provision adopted by the Commission then in effect),
+and the Prospectus contained therein shall further provide that such Registrable Securities may be sold pursuant to any method or combination
+of methods legally available to the Holders, including in customary market and brokerage trades through any national exchange or over
+the counter market. The Parent shall notify the Holders of the effectiveness of such replacement Registration Statement as soon as practicable,
+and in any event within one (1) Business Day after the Registration Statement becomes effective, and shall furnish to them, without charge,
+such number of copies of such Registration Statement (including any amendments, supplements and exhibits), the Prospectus contained therein
+(including each preliminary prospectus and all related amendments and supplements) and any documents incorporated by reference in such
+Shelf Registration Statement or such other documents as the Holders may reasonably request in order to facilitate the sale of the Registrable
+Securities in the manner described in such Registration Statement. The Parent shall use its best efforts to maintain such replacement
+Registration Statement in accordance with the terms hereof and keep such Registration Statement continuously effective and shall cause
+such Registration Statement to be supplemented and amended (including post-effective amendments) to the extent necessary to ensure that
+such Registration Statement is available or, if not available, to ensure that another Registration Statement is available and effective
+under the Securities Act at all times during the Effectiveness Period.
+(c)
+Amendments
+and Supplements
+. Subject to the provisions of
+Section 1(a)
+above, the Parent shall promptly prepare and file with the Commission
+from time to time such amendments and supplements to the Current Resale Shelf Registration Statement and Prospectus used in connection
+therewith as may be necessary to keep the Current Resale Shelf Registration Statement continuously effective and to comply with the provisions
+of the Securities Act with respect to the disposition of all the Registrable Securities during the Effectiveness Period. If any Registration
+Statement filed pursuant to
+Section 1(b)
+is filed on Form S-3 and thereafter the Parent becomes ineligible to use Form S-3 for
+secondary sales, then the Parent shall promptly notify the Holders of such ineligibility and shall file with the Commission a shelf registration
+on Form S-1 or other appropriate form as promptly as practicable (but in all events no later than fifteen (15) days thereafter) to replace
+the shelf registration statement on Form S-3 and use its best efforts to have such replacement Registration Statement declared effective
+as promptly as practicable and to cause such replacement Registration Statement to remain effective, and shall cause the Registration
+Statement to be supplemented and amended to the extent necessary to ensure that such Registration Statement is continuously available
+or, if not available, that another Registration Statement is available, for the resale of all the Registrable Securities held by the Holders
+during the Effectiveness Period;
+provided, however
+, that at any time the Parent once again becomes eligible to use Form S-3, the
+Parent shall, as promptly as practicable, cause such replacement Resale Shelf Registration Statement to be amended, or shall file a new
+replacement Registration Statement, such that the Registration Statement is once again on Form S-3.
+2
+(d) Notwithstanding
+the registration obligations set forth in this
+Section 1
+, in the event the Commission informs the Parent that all of the Registrable
+Securities cannot, as a result of the application of Rule 415, be registered for resale as a secondary offering on a single registration
+statement, the Parent agrees to promptly (i) inform each of the Holders thereof and shall file amendments to the Resale Shelf Registration
+Statement as required by the Commission and/or (ii) withdraw the applicable Registration Statement and file a new registration statement
+(a “
+New Registration Statement
+”), on Form S-3, or if Form S-3 is not then available to the Parent for such registration
+statement, on such other form available to register for resale the Registrable Securities as a secondary offering;
+provided, however
+,
+that prior to filing such amendment or New Registration Statement, the Parent shall advocate with the Commission for the registration
+of all of the Registrable Securities in accordance with any publicly-available written or oral guidance, comments, requirements or requests
+of the Commission staff (the “
+SEC Guidance
+”), including without limitation, the Manual of Publicly Available Telephone
+Interpretations D.29 and successor guidance. Notwithstanding any other provision of this Agreement, if any SEC Guidance sets forth a limitation
+of the number of Registrable Securities permitted to be registered on a particular Registration Statement as a secondary offering (and
+notwithstanding that the Parent used diligent efforts to advocate with the Commission for the registration of all or a greater number
+of Registrable Securities in accordance with the preceding sentence), unless otherwise directed in writing by a Holder as to its Registrable
+Securities, the number of Registrable Securities to be registered on such Registration Statement will be reduced on a pro rata basis based
+on the total number of Registrable Securities held by the Holders, subject to a determination by the Commission that certain Holders’
+amount of Registrable Securities must be reduced first based on the number of Registrable Securities held by such Holders. In the event
+the Parent amends the applicable Registration Statement or files a New Registration Statement, as the case may be, under clauses (i) or
+(ii) above, the Parent shall file with the Commission, as promptly as allowed by Commission or SEC Guidance provided to the Parent or
+to registrants of securities in general, one or more Registration Statements on Form S-3 or such other form available to register for
+resale those Registrable Securities that were not registered for resale on the applicable Registration Statement, as amended, or the New
+Registration Statement. Notwithstanding anything to the contrary contained in this Agreement, the Parent shall not name any Holder as
+an underwriter (as defined in Section 2(a)(11) of the Securities Act) in any Registration Statement without such Holder’s written
+consent.
+2.
+Registration
+Procedures
+. In connection with the Registration to be effected pursuant to
+Section 1
+, the Parent shall expeditiously as reasonably
+possible:
+(a) without derogating from
+the Parent’s obligations contained in
+Section 1
+, prepare in accordance with the Securities Act and all applicable rules and
+regulations promulgated thereunder and file with the Commission a Registration Statement, and all amendments and supplements thereto and
+related prospectuses as may be necessary to comply with applicable securities laws, with respect to such Registrable Securities and use
+best efforts to cause such Registration Statement to become effective immediately upon filing with the Commission, or if not on Form S-3ASR
+to become effective as promptly as practicable upon filing of a Form S-3 (provided that at least two (2) Business Days before filing a
+Registration Statement or prospectus or any amendments or supplements thereto, the Parent shall furnish to counsel selected by the Applicable
+Approving Party draft copies of all such documents proposed to be filed);
+3
+(b) notify
+each Holder of Registrable Securities of (A) the issuance by the Commission of any stop order suspending the effectiveness of any Registration
+Statement or the initiation of any proceedings for that purpose, (B) the receipt by the Parent or its counsel of any notification with
+respect to the suspension of the qualification of the Registrable Securities for sale in any jurisdiction or the initiation or threatening
+of any proceeding for such purpose, and (C) the effectiveness of each Registration Statement filed hereunder;
+(c) prepare
+and file with the Commission such amendments and supplements to a Registration Statement and the prospectus used in connection therewith
+as may be necessary to keep such Registration Statement effective during the Effectiveness Period and comply with the provisions of the
+Securities Act with respect to the disposition of all Registrable Securities covered by such Registration Statement during such period
+in accordance with the intended methods of disposition by the Holders as set forth in such registration statement;
+(d) furnish
+to each Holder such number of copies of such Registration Statement, each amendment and supplement thereto, the prospectus included in
+such Registration Statement (including each preliminary prospectus), each Free-Writing Prospectus and such other documents as such seller
+may reasonably request in order to facilitate the disposition of the Registrable Securities owned by such Holder;
+(e) during
+any period in which a prospectus is required to be delivered under the Securities Act, promptly and timely file all documents required
+to be filed with the Commission, including pursuant to Sections 13(a), 13(c), 14 or 15(d) of the Exchange Act;
+(f) use
+its commercially reasonable efforts to register, qualify or secure an exemption from registration with respect to such Registrable Securities
+under such other securities or blue sky laws of such jurisdictions as the Applicable Approving Party reasonably requests and do any and
+all other acts and things which may be reasonably necessary or advisable to enable the Holders to consummate the disposition in such jurisdictions
+of the Registrable Securities owned by the Holders (provided that the Parent shall not be required to (i) qualify generally to do business
+in any jurisdiction where it would not otherwise be required to qualify but for this
+Section 2(f)
+, (ii) consent to general
+service of process in any such jurisdiction or (iii) subject itself to taxation in any such jurisdiction);
+(g) promptly
+notify in writing each seller of such Registrable Securities (i) after it receives notice thereof, of the date and time when such Registration
+Statement and each post-effective amendment thereto has become effective or a prospectus or supplement to any prospectus relating to a
+Registration Statement has been filed and when any registration or qualification has become effective under a state securities or blue
+sky law or any exemption thereunder has been obtained, (ii) after receipt thereof, of any request by the Commission for the amendment
+or supplementing of such Registration Statement or prospectus or for additional information, and (iii) at any time when a prospectus
+relating thereto is required to be delivered under the Securities Act, of the happening of any event as a result of which the prospectus
+included in such Registration Statement contains an untrue statement of a material fact or omits any fact necessary to make the statements
+therein not misleading, and, the Parent promptly (and in any event within two (2) Business Days) shall prepare, file with the Commission
+and furnish to each Holder (upon request) a reasonable number of copies of a supplement or amendment to such Prospectus so that, as thereafter
+delivered to the purchasers of such Registrable Securities, such Prospectus shall not contain an untrue statement of a material fact or
+omit to state any fact necessary to make the statements therein not misleading;
+4
+(h) cause
+all such Registrable Securities to be listed on each securities exchange on which similar securities issued by the Parent are then listed
+and, if not so listed, to be listed on a securities exchange and, without limiting the generality of the foregoing, to arrange for at
+least two market makers to register as such with respect to such Registrable Securities with FINRA;
+(i) provide
+a transfer agent and registrar for all such Registrable Securities not later than the effective date of such registration statement;
+(j) make
+available for inspection by any Holder of Registrable Securities, any underwriter participating in any disposition pursuant to such Registration
+Statement and any attorney, accountant or other agent retained by any such seller or underwriter, all financial and other records, pertinent
+corporate and business documents and properties of the Parent as shall be necessary to enable them to exercise their due diligence responsibility,
+and cause the Parent’s officers, managers, directors, employees, agents, representatives and independent accountants to supply all
+information reasonably requested by any such seller, underwriter, attorney, accountant or agent in connection with such registration statement;
+(k) otherwise
+use its best efforts to comply with all applicable rules and regulations of the Commission;
+(l) in
+the event of the issuance of any stop order suspending the effectiveness of a Registration Statement, or of any order suspending or preventing
+the use of any related Prospectus or suspending the qualification of any Common Stock included in such Registration Statement for sale
+in any jurisdiction, the Parent shall use its best efforts promptly to obtain the withdrawal of such order;
+(m) use
+its commercially reasonable efforts to cause such Registrable Securities covered by such Registration Statement to be registered with
+or approved by such other governmental agencies or authorities as may be necessary to enable the sellers thereof to consummate the disposition
+of such Registrable Securities;
+5
+(n) cooperate
+with the Holders of Registrable Securities covered by the Registration Statement to facilitate the timely preparation and delivery of
+certificates representing securities to be sold under the Registration Statement;
+(o) cooperate
+with each Holder of Registrable Securities covered by the Registration Statement and each underwriter or agent participating in the disposition
+of such Registrable Securities and their respective counsel in connection with any filings required to be made with FINRA;
+(p) provide
+a legal opinion of the Parent’s outside counsel, dated as of the date of each Prosupp, or, in the event that Registration of the
+Registrable Securities is not effected pursuant to
+Section 1(a)
+and is instead effected pursuant to
+Section 1(b)
+or
+Section
+1(c)
+, dated as of the effective date of such Registration Statement (substantially in the form attached hereto as
+Exhibit A
+,
+the “
+Form of Opinion
+”), with respect to the Registration Statement, each amendment and supplement thereto, the prospectus
+included therein (including the preliminary prospectus) and such other documents relating thereto in customary form and covering such
+matters of the type customarily covered by legal opinions of such nature;
+(q) if
+the Parent files an Automatic Shelf Registration Statement covering any Registrable Securities, use its commercially reasonable efforts
+to remain a WKSI (and not become an ineligible issuer (as defined in Rule 405)) during the Effectiveness Period;
+(r) if
+an Automatic Shelf Registration Statement has been outstanding for at least three (3) years, at the end of the third year, refile a new
+Automatic Shelf Registration Statement covering the Registrable Securities, and, if at any time when the Parent is required to re-evaluate
+its WKSI status the Parent determines that it is not a WKSI, use its commercially reasonable efforts to refile the registration statement
+on Form S-3 and keep such Registration Statement effective (including by filing a new Resale Shelf Registration Statement or replacement
+Resale Shelf Registration Statement, if necessary) during the Effectiveness Period;
+(s) if
+reasonably requested by a Holder, (i) incorporate in a prospectus supplement or post-effective amendment such information as such Holder
+reasonably requests to be included therein relating to the sale and distribution of Registrable Securities, including information with
+respect to the number of Registrable Securities being offered or sold, the purchase price being paid therefor and any other terms of the
+offering of the Registrable Securities to be sold in such offering; and (ii) make all required filings of such prospectus supplement or
+post-effective amendment with the Commission after being notified of the matters to be incorporated in such prospectus supplement or post-effective
+amendment.
+3.
+Trade
+Limitations
+.
+(a) In
+connection with resales by the Holders, each Holder severally, and not jointly with any other Holder, agrees to comply with the Trade
+Limitations and, if applicable to such Holder, the Parent Insider Trading Policy.
+(b) In
+connection with resales by the Holders, the Shareholders’ Agent agrees to make a representation regarding the Holder’s compliance
+with the Trade Limitations and further agrees to provide a completed and executed representation letter in the form attached as
+Exhibit
+B
+to the Form of Opinion.
+6
+4.
+Registration
+Expenses
+. All expenses incident to the Parent’s performance of or compliance with this Agreement, including, without limitation,
+all registration, qualification and filing fees, listing fees, fees and expenses of compliance with securities or blue sky laws, stock
+exchange rules and filings, printing expenses, messenger and delivery expenses, fees and disbursements of custodians, and fees and disbursements
+of counsel for the Parent and all independent certified public accountants, underwriters (excluding underwriting discounts and commissions)
+and other Persons retained by the Parent (all such expenses being herein called “
+Registration Expenses
+”), shall be
+borne by the Parent and, for the avoidance of doubt, the Parent also shall pay all of its internal expenses (including, without limitation,
+all salaries and expenses of its officers and employees performing legal or accounting duties), the expense of any annual audit or quarterly
+review, and the expenses and fees for listing the Registrable Securities on each securities exchange on which similar securities issued
+by the Parent are then listed
+5.
+Indemnification
+.
+(a) The
+Parent agrees to (i) indemnify and hold harmless, to the fullest extent permitted by law, each Holder and such Holder’s officers,
+directors, members, partners, agents, affiliates and employees and each Person who controls such Holder (within the meaning of the Securities
+Act or the Exchange Act) against all losses, claims, actions, damages, liabilities and expenses related to or arising out of (A) any untrue
+or alleged untrue statement of material fact contained in any registration statement, prospectus or preliminary prospectus or any amendment
+thereof or supplement thereto or any omission or alleged omission of a material fact required to be stated therein or necessary to make
+the statements therein not misleading, or (B) any violation or alleged violation by the Parent of the Securities Act or any other similar
+federal or state securities laws or any rule or regulation promulgated thereunder applicable to the Parent and relating to action or inaction
+required of the Parent in connection with any such registration, qualification or compliance, and (ii) pay to each Holder and such Holder’s
+officers, directors, members, partners, agents, affiliates and employees and each Person who controls such Holder (within the meaning
+of the Securities Act or the Exchange Act), as incurred, all legal and any other expenses reasonably incurred in connection with investigating,
+preparing or defending any such claim, loss, damage, liability or action, except insofar as the same are caused by or contained in any
+information furnished in writing to the Parent or any managing underwriter by such Holders expressly for use therein;
+provided, however
+,
+that the indemnity agreement contained in this
+Section 5
+shall not apply to amounts paid in settlement of any such claim, loss,
+damage, liability or action if such settlement is effected without the consent of the Parent (which consent shall not be unreasonably
+withheld, conditioned or delayed), nor shall the Parent be liable in any such case for any such claim, loss, damage, liability or action
+to the extent that it solely arises out of or is based upon an untrue statement of any material fact contained in the Registration Statement
+or omission to state therein a material fact required to be stated therein or necessary to make the statements therein not misleading,
+in each case to the extent that such untrue statement or alleged untrue statement or omission or alleged omission was made in the Registration
+Statement, in reliance upon and in conformity with written information furnished by such Holder expressly for use in connection with such
+Registration Statement. In connection with an underwritten offering, the Parent shall indemnify any underwriters or deemed underwriters,
+their officers and directors and each Person who controls such underwriters (within the meaning of the Securities Act or the Exchange
+Act) to the same extent as provided above with respect to the indemnification of the Holders of Registrable Securities.
+7
+(b) In
+connection with any Registration Statement in which a Holder of Registrable Securities is participating, (1) each such Holder shall furnish
+to the Parent in writing such information as the Parent reasonably requests for use in connection with any such registration statement
+or prospectus and, (2) to the extent permitted by law, shall indemnify the Parent, its officers, directors, employees, agents and representatives
+and each Person who controls the Parent (within the meaning of the Securities Act) against any losses, claims, damages, liabilities and
+expenses resulting from any untrue or alleged untrue statement of material fact contained in the Registration Statement, prospectus or
+preliminary prospectus or any amendment thereof or supplement thereto or any omission or alleged omission of a material fact required
+to be stated therein or necessary to make the statements therein not misleading, but only to the extent that such untrue statement or
+omission is contained in any information expressly furnished in writing by such holder to the Parent for use in a Registration Statement;
+provided that the foregoing obligation to indemnify shall be individual to such Holder, and not joint and several among the Holders, and
+shall be limited to the net amount of proceeds actually received by such Holder from the sale of Registrable Securities pursuant to such
+registration statement.
+(c) Any
+Person entitled to indemnification hereunder shall (i) give prompt written notice to the indemnifying party of any claim with respect
+to which it seeks indemnification (provided that the failure to give prompt notice shall not impair any Person’s right to indemnification
+hereunder except to the extent such failure has materially prejudiced the indemnifying party) and (ii) unless in such indemnified party’s
+reasonable judgment a conflict of interest between such indemnified and indemnifying parties may exist with respect to such claim, permit
+such indemnifying party to assume the defense of such claim with counsel reasonably satisfactory to the indemnified party. If such defense
+is assumed, the indemnifying party shall not be subject to any liability for any settlement made by the indemnified party without its
+consent (but such consent shall not be unreasonably withheld, conditioned or delayed). An indemnifying party who is not entitled to, or
+elects not to, assume the defense of a claim shall not be obligated to pay the fees and expenses of more than one counsel (as well as
+one local counsel) for all parties indemnified by such indemnifying party with respect to such claim, unless in the reasonable judgment
+of any indemnified party a conflict of interest may exist between such indemnified party and any other of such indemnified parties with
+respect to such claim. In such instance, the conflicted indemnified parties shall have a right to retain one separate counsel, chosen
+by the holders of a majority of the Registrable Securities included in the registration, at the expense of the indemnifying party. No
+indemnifying party, in the defense of such claim or litigation, shall, except with the consent of each indemnified party, consent to the
+entry of any judgment or enter into any settlement which does not include as an unconditional term thereof the giving by the claimant
+or plaintiff to such indemnified party of a release from all liability in respect to such claim or litigation.
+(d) Each
+party hereto agrees that, if for any reason the indemnification provisions contemplated by
+Sections 5(a)
+or
+5(b)
+are unavailable
+to or insufficient to hold harmless an indemnified party in respect of any losses, claims, damages, liabilities or expenses (or actions
+in respect thereof) referred to therein, then each indemnifying party, in lieu of indemnifying such indemnified party, shall contribute
+to the amount paid or payable by such indemnified party as a result of such losses, claims, damages, liabilities or expenses (or actions
+in respect thereof) in such proportion as is appropriate to reflect the relative fault of the indemnifying party and the indemnified party
+in connection with the actions which resulted in such losses, claims, damages, liabilities or expenses, as well as any other relevant
+equitable considerations. The relative fault of such indemnifying party and indemnified party shall be determined by reference to, among
+other things, whether any action in question, including any untrue or alleged untrue statement of a material fact or omission or alleged
+omission to state a material fact, relates to information supplied by such indemnifying party or indemnified party, and the parties’
+relative intent, knowledge, access to information and opportunity to correct or prevent such statement or omission. The parties hereto
+agree that it would not be just or equitable if contribution pursuant to this
+Section 5(d)
+were determined by pro rata allocation
+(even if the holders or any underwriters or all of them were treated as one entity for such purpose) or by any other method of allocation
+which does not take account of the equitable considerations referred to in this
+Section 5(d)
+. The amount paid or payable by an
+indemnified party as a result of the losses, claims, damages, liabilities or expenses (or actions in respect thereof) referred to above
+shall be deemed to include any legal or other fees or expenses reasonably incurred by such indemnified party in connection with investigating
+or, except as provided in
+Section 5(c)
+, defending any such action or claim. No Person guilty of fraudulent misrepresentation (within
+the meaning of Section 10(f) of the Securities Act) shall be entitled to contribution from any Person who was not guilty of such fraudulent
+misrepresentation. The sellers’ obligations in this
+Section 5(d)
+to contribute shall be several in proportion to the amount
+of securities registered by them and not joint and shall be limited to an amount equal to the net proceeds actually received by such seller
+from the sale of Registrable Securities effected pursuant to such registration.
+8
+(e) The
+indemnification and contribution provided for under this Agreement shall remain in full force and effect regardless of any investigation
+made by or on behalf of the indemnified party or any officer, director or controlling Person of such indemnified party and shall survive
+the transfer of Registrable Securities and the termination or expiration of this Agreement.
+6.
+Other
+Agreements; Certain Limitations on Registration Rights
+. The Parent shall file all reports required to be filed by it under the Securities
+Act and the Exchange Act and the rules and regulations adopted by the Commission thereunder and shall take such further action as the
+Holders may reasonably request, all to the extent required to enable such Persons to sell securities pursuant to (a) Rule 144 or (b) a
+Registration Statement on Form S-3 or any similar registration form hereafter adopted by the Commission. Upon request, the Parent shall
+promptly deliver to the Holders a written statement as to whether it has complied with such requirements. The Parent shall at all times
+use its commercially reasonable efforts to cause the securities registered or to be registered pursuant hereto to be listed, or continue
+to be listed, on one or more of the Nasdaq Stock Market, the New York Stock Exchange, or the NYSE American.
+7.
+Definitions
+.
+(a) “
+Applicable
+Approving Party
+” means the Holders of a majority of the Registrable Securities participating in the applicable offering.
+(b) “
+Automatic
+Shelf Registration Statement
+” means an “automatic shelf registration statement” as defined in Rule 405 (or any successor
+rule then in effect) promulgated under the Securities Act.
+(c) “
+Average
+Daily Trading Volume
+” means, with respect to the Common Stock, the average daily trading volume of such stock as reported on
+the principal Trading Market on which the Common Stock is listed, calculated based on the ten (10) consecutive Trading Days immediately
+preceding the relevant date of determination.
+(d) “
+Business
+Day
+” means any day except Saturday, Sunday or any days on which banks are generally not open for business in New York, New York.
+(e) “
+Commission
+”
+means the U.S. Securities and Exchange Commission.
+(f) “
+Common
+Stock
+” means the Common Stock of the Parent, par value $0.0001 per share.
+(g) “
+Current
+Resale Shelf Registration Statement
+” means Parent’s automatic shelf registration statement on Form S-3 filed by Parent
+with the Commission on September 9, 2025 (File No. 333-290121), including the prospectus, amendments and supplements (including each Prosupp)
+to such registration statement or prospectus (including post-effective amendments, all exhibits thereto and all material incorporated
+by reference or deemed to be incorporated by reference, if any, in such registration statement), or any replacement thereof (including,
+for the elimination of doubt, any replacement Registration Statement filed in accordance with
+Section 1(b)
+).
+9
+(h) “
+Exchange
+Act
+” means the Securities Exchange Act of 1934, as amended from time to time, or any successor federal law then in force, together
+with all rules and regulations promulgated thereunder.
+(i) “
+FINRA
+”
+means the Financial Industry Regulatory Authority, Inc.
+(j) “
+Free-Writing
+Prospectus
+” means a free-writing prospectus, as defined in Rule 405.
+(k) “
+Form
+S-3
+” means a Form S-3 registration statement under the Securities Act.
+(l) “
+Permitted
+Transferee
+” means an Person who receives any Registrable Securities from a Holder pursuant to: (a) any gift or bequest or through
+inheritance to, or for the benefit of, any member or members of such Holder’s immediate family (which shall include any spouse,
+lineal ancestor or descendant or sibling) or to a trust, partnership or limited liability company for the exclusive benefit of such Holder’s
+immediate family; (b) any transfer to a trust in respect of which such Holder serves as a trustee; or (c) a distribution in respect of
+such Person’s equity ownership in such Holder (any transfer described in the immediately preceding clauses (a), (b) and (c), a “
+Permitted
+Transfer
+”);
+provided
+, that with respect to any Permitted Transfer, it shall be a condition precedent to such Permitted
+Transfer that the Permitted Transferee executes a counterpart signature page to this Agreement, pursuant to which such Permitted Transferee
+agrees to be bound hereby as a “Holder”.
+(m) “
+Person
+”
+means an individual, a partnership, a corporation, a limited liability company, an association, a joint stock company, a trust, a joint
+venture, an unincorporated organization and a governmental entity or any department, agency or political subdivision thereof.
+(n) “
+Prospectus
+”
+means the prospectus included in any Registration Statement, as supplemented by any and all prospectus supplements and as amended by any
+and all post-effective amendments and including all material incorporated by reference in such prospectus.
+(o) “
+Register
+,”
+”
+Registered
+” and “
+Registration
+” mean a registration effected by preparing and filing a Registration
+Statement or similar document in compliance with the requirements of the Securities Act, and the applicable rules and regulations promulgated
+thereunder, and such Registration Statement becoming effective.
+(p) “
+Registrable
+Securities
+” means, with respect to any Holder, (i) any shares of Common Stock issued to such Holder pursuant to the Share Purchase
+Agreement, and (ii) any Common Stock issued or issuable with respect to the securities referred to in the clauses (i) by way of a stock
+dividend or stock split or in connection with a combination of shares, recapitalization, merger, consolidation or other reorganization;
+provided
+,
+however
+, that any Registrable Securities shall cease to be Registrable Securities when (i) a Registration Statement
+covering such Registrable Securities has been declared effective by the Commission and such Registrable Securities has been disposed of
+pursuant to such effective registration statement, (ii) such Registrable Securities has been resold to the public pursuant to Rule
+144, (iii) such Registrable Securities may be sold without manner of sale, volume, current public information or other restrictions pursuant
+to Rule 144, or (iv) such Registrable Securities ceases to be outstanding.
+10
+(q) “
+Registration
+Statement
+” means any registration statement filed by the Parent with the Commission in compliance with the Securities Act and
+the rules and regulations promulgated thereunder for a sale of Common Stock or Registrable Securities, including the Prospectus included
+in such registration statement, amendments (including post-effective amendments) and supplements to such registration statement, and all
+exhibits to and all material incorporated by reference in such registration statement (other than a registration statement on Form S-4
+or Form S-8, or their successors).
+(r) “
+Rule
+144
+”, “
+Rule 405
+”, and “
+Rule 415
+” mean, in each case, such rule promulgated under the Securities
+Act (or any successor provision) by the Commission, as the same shall be amended from time to time, or any successor rule then in force.
+(s) “
+Securities
+Act
+” means the Securities Act of 1933, as amended from time to time, or any successor federal law then in force, together with
+all rules and regulations promulgated thereunder.
+(t) “
+Trade
+Limitations
+” means that the Holders shall be subject to daily trading volume limitations, whereby all such Holders may not sell,
+in the aggregate, any Common Stock issued to such Holders pursuant to the Share Purchase Agreement on any Trading Market in any single
+Trading Day to the extent such sales would exceed ten percent (10%) of the Average Daily Trading Volume of the Common Stock with respect
+to such Trading Day. For illustration, if a sale occurs on Monday, December 22, 2025, the Trading Limitation is determined based on the
+ten (10) consecutive Trading Days beginning on Monday, December 8, 2025 and ending on Friday, December 19, 2025.
+(u) “
+WKSI
+”
+means a “well-known seasoned issuer” as defined under Rule 405.
+(v) Capitalized
+terms used and not specifically defined hereunder shall have the respective meanings ascribed to such terms under the Share Purchase Agreement.
+8.
+Miscellaneous
+.
+(a)
+Effectiveness
+.
+This Agreement shall become effective upon the Closing Date.
+(b)
+No
+Inconsistent Agreements
+. The Parent shall not hereafter enter into any agreement with respect to its securities which is inconsistent
+with or violates or in any way impairs the rights granted to the Holders in this Agreement.
+(c)
+Entire
+Agreement
+. This Agreement and the Share Purchase Agreement constitute the entire agreement of the parties hereto with respect to the
+subject matter hereof and supersedes all prior agreements, understandings, negotiations and discussions among the parties hereto, written
+or oral, with respect to the subject matter hereof.
+(d)
+Remedies
+.
+Any Person having rights under any provision of this Agreement shall be entitled to enforce such rights specifically (without posting
+a bond or other security), to recover damages caused by reason of any breach of any provision of this Agreement and to exercise all other
+rights granted by law. The parties hereto agree and acknowledge that money damages would not be an adequate remedy for any breach of the
+provisions of this Agreement and that, in addition to any other rights and remedies existing in its favor, any party shall be entitled
+to specific performance and/or other injunctive relief from any court of law or equity of competent jurisdiction (without posting any
+bond or other security) in order to enforce or prevent violation of the provisions of this Agreement.
+11
+(e)
+Amendments
+and Waivers
+. Compliance with any of the provisions, covenants and conditions set forth in this Agreement may be waived, or any of
+such provisions, covenants or conditions may be amended or modified, with the written consent of the Parent and the Holders of at least
+a majority in interest of the Registrable Securities at the time of such waiver, amendment or modification;
+provided, however
+,
+that notwithstanding the foregoing, any amendment hereto or waiver hereof that adversely affects one Holder, solely in its capacity as
+a holder of Registrable Securities, in a manner that is materially different from the other Holders (in such capacity) shall require the
+consent of the Holder so affected. Any amendment or waiver effected in accordance with this
+Section 8(e)
+shall be binding upon
+each Holder and the Parent. No course of dealing between any Holder or the Parent and any other party hereto or any failure or delay on
+the part of a Holder or the Parent in exercising any rights or remedies under this Agreement shall operate as a waiver of any rights or
+remedies of any Holder or the Parent. No single or partial exercise of any rights or remedies under this Agreement by a party shall operate
+as a waiver or preclude the exercise of any other rights or remedies hereunder or thereunder by such party.
+(f)
+Successors
+and Assigns; No Third-Party Beneficiaries
+. This Agreement and the rights, duties and obligations of the Parent hereunder may not be
+assigned or delegated by the Parent in whole or in part. A Holder may assign or delegate such Holder’s rights, duties or obligations
+under this Agreement, in whole or in part, to (a) a Permitted Transferee of such Holder or (b) any Person with the prior written consent
+of the Parent (which consent shall not be unreasonably withheld, conditioned or delayed). This Agreement and the provisions hereof shall
+be binding upon and shall inure to the benefit of each of the parties and their respective successors and permitted assigns. This Agreement
+shall not confer any rights or benefits on any persons that are not parties hereto, other than as expressly set forth in
+Section 5
+.
+Any transfer or assignment made other than as provided in this
+Section 8(f)
+shall be null and void.
+(g) All
+covenants and agreements in this Agreement by or on behalf of any of the parties hereto shall bind and inure to the benefit of the respective
+successors and permitted assigns of the parties hereto whether so expressed or not.
+(h)
+Severability
+.
+If any term or other provision of this Agreement is invalid, illegal or incapable of being enforced by any rule or law, or public policy,
+all other terms, conditions and provisions of this Agreement shall nevertheless remain in full force and effect so long as the economic
+or legal substance of the transactions contemplated hereby is not affected in any manner materially adverse to any party hereto. Upon
+such determination that any term or other provision is invalid, illegal or incapable of being enforced, the parties hereto shall negotiate
+in good faith to modify this Agreement so as to effect the original intent of the parties as closely as possible in an acceptable manner
+to the end that transactions contemplated hereby are fulfilled to the extent possible.
+12
+(i)
+Counterparts
+.
+This Agreement may be executed in one or more counterparts, all of which shall be considered one and the same agreement and shall become
+effective when one or more counterparts have been signed by each of the parties hereto and delivered to the other parties. Any such counterpart
+delivered by .pdf, .tif, .gif, .jpeg or similar attachment to electronic mail or by electronic signature delivered by electronic transmission
+(any such delivery, “Electronic Delivery”) shall be treated in all manner and respects as an original executed counterpart
+and shall be considered to have the same binding legal effect as if it were the original signed version thereof delivered in person. No
+party hereto shall raise the use of Electronic Delivery to deliver a counterpart or signature, or the fact that any counterpart or signature
+was transmitted or communicated through the use of Electronic Delivery, as a defense to the formation of a contract, and each party forever
+waives any such defense, except to the extent such defense relates to lack of authenticity.
+(j)
+Descriptive
+Headings; Interpretation
+. The descriptive headings of this Agreement are inserted for convenience only and do not constitute a part
+of this Agreement. The use of the word “including” herein shall mean “including without limitation.”
+(k)
+Governing
+Law; Jurisdiction
+. This Agreement shall be governed by, and construed in accordance with, the Laws of the State of Delaware without
+giving effect to any choice or conflict of law provision or rule (whether of the State of Delaware or any other jurisdiction) that would
+cause the application of laws of any jurisdictions other than those of the State of Delaware. Each of the parties hereto (a) consents
+to submit itself to the personal jurisdiction of the Court of Chancery of the State of Delaware or any federal court within the District
+of Delaware in the event any dispute arises out of this Agreement or the transactions contemplated by this Agreement, (b) agrees that
+it will not attempt to deny or defeat such personal jurisdiction by motion or other request for leave from any such court, (c) agrees
+that it will not bring any action relating to this Agreement or the transactions contemplated by this Agreement in any court other than
+the Court of Chancery of the State of Delaware or any federal court within the District of Delaware, (d) waives, to the fullest extent
+permitted by law, the defense of an inconvenient forum to the maintenance of such action or proceeding in the Court of Chancery of the
+State of Delaware or such Federal court. Each party agrees that (i) this Agreement involves at least $100,000.00 and (ii) this Agreement
+has been entered into by the parties in express reliance upon 6 Del. C. § 2708. Each party agrees that a final judgment in any such
+action or proceeding shall be conclusive and may be enforced in other jurisdictions by suit on the judgment or in any other manner provided
+by law. Any judgment from any such court described above may, however, be enforced by any party in any other court in any other jurisdiction.
+13
+(l)
+Notices
+.
+All notices, demands or other communications to be given or delivered under or by reason of the provisions of this Agreement shall be
+in writing and shall be given (and shall be deemed to have been duly given upon receipt) by delivery in person, by telecopy or email or
+by registered or certified mail (postage prepaid, return receipt requested) to each Holder at the address indicated on the Schedule of
+Holders attached hereto and to the Parent at the address indicated below (or at such other address for a party as shall be specified in
+a notice given in accordance with this
+Section 8(l)
+):
+if to the Parent:
+Ondas Holdings Inc.
+One Marina Park Drive, Suite 1410
+Boston, MA 02210
+Attention: Eric Brock
+Email: [***]
+with a copy to (which shall not constitute notice):
+Akerman LLP
+Three Brickell City Centre
+98 Southeast Seventh Street, Suite 1100
+Miami, FL 33131
+Attention: Christina Russo
+Email: [***]
+(m)
+Mutual
+Waiver of Jury Trial
+. EACH PARTY HERETO HEREBY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO
+A TRIAL BY JURY IN RESPECT OF ANY SUIT, ACTION OR OTHER PROCEEDING ARISING OUT OF THIS AGREEMENT OR THE TRANSACTIONS CONTEMPLATED HEREBY.
+EACH PARTY (A) CERTIFIES THAT NO REPRESENTATIVE, AGENT OR ATTORNEY OF ANY OTHER PARTY HAS REPRESENTED, EXPRESSLY OR OTHERWISE, THAT SUCH
+PARTY WOULD NOT, IN THE EVENT OF ANY ACTION, SUIT OR PROCEEDING, SEEK TO ENFORCE THE FOREGOING WAIVER AND (B) ACKNOWLEDGES THAT IT AND
+THE OTHER PARTIES HERETO HAVE BEEN INDUCED TO ENTER INTO THIS AGREEMENT, BY, AMONG OTHER THINGS, THE MUTUAL WAIVER AND CERTIFICATIONS
+IN THIS
+SECTION 8(m)
+.
+(n)
+No
+Strict Construction
+. The parties hereto have participated jointly in the negotiation and drafting of this Agreement. In the event
+an ambiguity or question of intent or interpretation arises, this Agreement shall be construed as if drafted jointly by the parties hereto,
+and no presumption or burden of proof shall arise favoring or disfavoring any party by virtue of the authorship of any of the provisions
+of this Agreement.
+[signature pages follow]
+14
+ONDAS HOLDINGS INC.
+By:
+/s/ Eric Brock
+Name:
+Eric Brock
+Title:
+Chief Executive Officer
+[Signature Page to Registration Rights Agreement]
+SAGITTA HOLDCO SARL
+By:
+/s/ Allen Foley & /s/ Gaetan Dumont
+Name:
+Allen Foley & Gaetan Dumont
+Title:
+Manager & Manager
+*
+INDIVIDUAL MAJOR SHAREHOLDERS SIGNATURES OMITTED FOR CONFIDENTIALITY
+[Signature Page to Registration Rights Agreement]
+Schedule A
+Schedule of Holders
+Exhibit A
+Form of Opinion
+[***]

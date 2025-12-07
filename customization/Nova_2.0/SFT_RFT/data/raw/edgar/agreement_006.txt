@@ -1,0 +1,530 @@
+EX-10.1
+4
+tm2531444d1_ex10-1.htm
+EXHIBIT 10.1
+Exhibit 10.1
+CLEARSIGN TECHNOLOGIES CORPORATION
+2021 EQUITY INCENTIVE PLAN
+STOCK OPTION AGREEMENT
+NOTICE OF STOCK OPTION GRANT
+Unless otherwise defined herein,
+the terms defined in the ClearSign Technologies Corporation 2021 Equity Incentive Plan, as amended from time to time (the “Plan”),
+will have the same defined meanings in this Stock Option Agreement which includes the Notice of Stock Option Grant (the “Notice
+of Grant”), the Terms and Conditions of Stock Option Grant, attached hereto as
+Exhibit A
+, the Exercise Notice, attached
+hereto as
+Exhibit B
+, and all other exhibits, appendices, and addenda attached hereto (together, the “Option Agreement”).
+Participant Name:
+[INSERT]
+Address:
+[INSERT]
+The undersigned Participant
+has been granted an Option to purchase Common Stock of ClearSign Technologies Corporation (the “Company”), subject to the
+terms and conditions of the Plan and this Option Agreement, as follows:
+Grant Number:
+Date of Grant:
+Vesting Commencement Date:
+Exercise Price per Share (in U.S. Dollars):
+Total Number of Shares Subject to Option:
+Total Exercise Price (in U.S. Dollars):
+Type of Option:
+Term/Expiration Date:
+Vesting Schedule:
+Subject to any acceleration
+provisions contained in the Plan or set forth below, this Option will vest and be exercisable, in whole or in part, in accordance with
+the following schedule:
+[INSERT]
+Termination
+Period
+:
+In the event of cessation
+of Participant’s status as a Service Provider, this Option will be exercisable, to the extent vested, for a period of ninety (90)
+days after Participant ceases to be a Service Provider. Notwithstanding the foregoing sentence, in no event may this Option be exercised
+after the Term/Expiration Date as provided above and this Option may be subject to earlier termination as provided in the Plan.
+By Participant’s signature
+and the signature of the representative of the Company below, Participant and the Company agree that this Option is granted under and
+governed by the terms and conditions of the Plan and this Option Agreement, including the Terms and Conditions of Stock Option Grant,
+attached hereto as
+Exhibit A
+, the Exercise Notice, attached hereto as
+Exhibit B
+, and all other exhibits, appendices,
+and addenda attached hereto, all of which are made a part of this document. Participant acknowledges receipt of a copy of the Plan. Participant
+has reviewed the Plan and this Option Agreement in their entirety, has had an opportunity to obtain the advice of counsel prior to executing
+this Option Agreement, and fully understands all provisions of the Plan, this Option, and the Option Agreement. Participant hereby agrees
+to accept as binding, conclusive, and final all decisions or interpretations of the Administrator upon any questions relating to the Plan
+or this Option Agreement. Participant further agrees to notify the Company upon any change in the residence address indicated below.
+PARTICIPANT
+CLEARSIGN TECHNOLOGIES CORPORATION
+Signature
+Signature
+Print Name:
+Print Name:
+Title:
+Address:
+8023 E. 63rd PL, Suite 101
+Tulsa, OK 74133
+EXHIBIT A
+TERMS AND CONDITIONS OF STOCK OPTION GRANT
+1.
+Grant
+of Option
+.
+(a)
+The
+Company hereby grants to the individual (“Participant”) named in the Notice of Stock Option Grant of this Option Agreement
+(the “Notice of Grant”) an option (the “Option”) to purchase the number of Shares set forth in the Notice of Grant,
+at the exercise price per Share set forth in the Notice of Grant (the “Exercise Price”), subject to all of the terms and conditions
+in this Option Agreement and the Plan, which is incorporated herein by this reference. Subject to Section 14(c) of the Plan,
+in the event of a conflict between the terms and conditions of the Plan and the terms and conditions of this Option Agreement, the terms
+and conditions of the Plan will prevail.
+(b)
+For
+U.S. taxpayers, the Option will be designated as either an Incentive Stock Option (“ISO”) or a Nonstatutory Stock Option (“NSO”).
+If designated in the Notice of Grant as an ISO, this Option is intended to qualify as an ISO under Section 422 of the Internal Revenue
+Code of 1986, as amended (the “Code”). However, if this Option is intended to be an ISO, to the extent that it exceeds the
+$100,000 rule of Code Section 422(d) it will be treated as an NSO. Further, if for any reason this Option (or portion thereof)
+will not qualify as an ISO, then, to the extent of such nonqualification, such Option (or portion thereof) will be regarded as a NSO granted
+under the Plan. In no event will the Administrator, the Company, or any Parent or Subsidiary or any of their respective employees or directors
+have any liability to Participant (or any other person) due to the failure of the Option to qualify for any reason as an ISO.
+(c)
+For
+non-U.S. taxpayers, the Option will be designated as an NSO.
+2.
+Vesting
+Schedule
+. Except as provided in Section 3, the Option awarded by this Option Agreement will vest in accordance with the vesting
+provisions set forth in the Notice of Grant. Unless specifically provided otherwise in this Option Agreement or other written agreement
+between Participant and the Company or any of its Subsidiaries or Parents, as applicable, Shares subject to this Option that are scheduled
+to vest on a certain date or upon the occurrence of a certain condition will not vest in accordance with any of the provisions of this
+Option Agreement, unless Participant will have been continuously a Service Provider from the Date of Grant until the date such vesting
+occurs.
+3.
+Administrator
+Discretion
+. The Administrator, in its discretion, may accelerate the vesting of the balance, or some lesser portion of the balance,
+of the unvested Option at any time, subject to the terms of the Plan. If so accelerated, such Option will be considered as having vested
+as of the date specified by the Administrator.
+4.
+Exercise
+of Option
+.
+(a)
+Right
+to Exercise
+. This Option may be exercised only within the term set out in the Notice of Grant, and may be exercised during such term
+only in accordance with the Vesting Schedule set out in the Notice of Grant and with the applicable provisions of the Plan and the terms
+of this Option Agreement.
+(b)
+Method
+of Exercise
+. This Option is exercisable by delivery of an exercise notice (the “Exercise Notice”) in the form attached
+as
+Exhibit B
+to the Notice of Grant or in a manner and pursuant to such procedures as the Administrator may determine, which
+will state the election to exercise the Option, the number of Shares in respect of which the Option is being exercised (the “Exercised
+Shares”), and such other representations and agreements as may be required by the Company pursuant to the provisions of the Plan.
+The Exercise Notice will be completed by Participant and delivered to the Company. The Exercise Notice will be accompanied by payment
+of the aggregate Exercise Price as to all Exercised Shares and of any Tax Obligations (as defined in Section 6(a)). This Option will
+be deemed to be exercised upon receipt by the Company of such fully executed Exercise Notice accompanied by the aggregate Exercise Price,
+together with any applicable Tax Obligations.
+5.
+Method
+of Payment
+. Payment of the aggregate Exercise Price will be by any of the following, or a combination thereof, at the election of
+Participant:
+(a)
+cash
+in U.S. dollars;
+(b)
+check
+designated in U.S. dollars;
+(c)
+consideration
+received by the Company under a formal cashless exercise program adopted by the Company in connection with the Plan; or
+(d)
+if
+Participant is a U.S. employee, surrender of other Shares which have a Fair Market Value on the date of surrender equal to the aggregate
+Exercise Price of the Exercised Shares and that are owned free and clear of any liens, claims, encumbrances, or security interests, provided
+that accepting such Shares, in the sole discretion of the Administrator, will not result in any adverse accounting consequences to the
+Company.
+6.
+Tax
+Obligations
+.
+(a)
+Responsibility
+for Taxes
+. Participant acknowledges that, regardless of any action taken by the Company or, if different, Participant’s employer
+(the “Employer”) or any Parent or Subsidiary to which Participant is providing services (together, the “Service Recipients”),
+the ultimate liability for any tax and/or social insurance liability obligations and requirements in connection with the Option, including,
+without limitation, (i) all federal, state, and local taxes (including Participant’s Federal Insurance Contributions Act (FICA)
+obligations) that are required to be withheld by any Service Recipient or other payment of tax-related items related to Participant’s
+participation in the Plan and legally applicable to Participant; (ii) Participant’s and, to the extent required by any Service
+Recipient, the Service Recipient’s fringe benefit tax liability, if any, associated with the grant, vesting, or exercise of the
+Option or sale of Shares; and (iii) any other Service Recipient taxes the responsibility for which Participant has, or has agreed
+to bear, with respect to the Option (or exercise thereof or issuance of Shares thereunder) (collectively, the “Tax Obligations”),
+is and remains Participant’s sole responsibility and may exceed the amount actually withheld by the applicable Service Recipient(s).
+Participant further acknowledges that no Service Recipient (A) makes any representations or undertakings regarding the treatment
+of any Tax Obligations in connection with any aspect of the Option, including, but not limited to, the grant, vesting, or exercise of
+the Option, the subsequent sale of Shares acquired pursuant to such exercise and the receipt of any dividends or other distributions,
+and (B) makes any commitment to and is under any obligation to structure the terms of the grant or any aspect of the Option to reduce
+or eliminate Participant’s liability for Tax Obligations or achieve any particular tax result. Further, if Participant is subject
+to Tax Obligations in more than one jurisdiction between the Date of Grant and the date of any relevant taxable or tax withholding event,
+as applicable, Participant acknowledges that the applicable Service Recipient(s) (or former employer, as applicable) may be required
+to withhold or account for Tax Obligations in more than one jurisdiction. If Participant fails to make satisfactory arrangements for the
+payment of any required Tax Obligations hereunder at the time of the applicable taxable event, Participant acknowledges and agrees that
+the Company may refuse to issue or deliver the Shares.
+(b)
+Tax
+Withholding
+. Pursuant to such procedures as the Administrator may specify from time to time, the applicable Service Recipient(s) will
+withhold the amount required to be withheld for the payment of Tax Obligations. The Administrator, in its sole discretion and pursuant
+to such procedures as it may specify from time to time, may permit Participant to satisfy such Tax Obligations, in whole or in part (without
+limitation), if permissible by applicable local law, by (i) paying cash in U.S. dollars; (ii) electing to have the Company withhold
+otherwise deliverable Shares having a fair market value equal to the minimum amount that is necessary to meet the withholding requirement
+for such Tax Obligations (or such greater amount as Participant may elect if permitted by the Administrator, if such greater amount would
+not result in adverse financial accounting consequences); (iii) having the amount of such Tax Obligations withheld from Participant’s
+wages or other cash compensation paid to Participant by the applicable Service Recipient(s); (iv) delivering to the Company Shares
+that Participant owns and that have vested with a fair market value equal to such Tax Obligations; or (v) selling a sufficient number
+of such Shares otherwise deliverable to Participant through such means as the Company may determine in its sole discretion (whether through
+a broker or otherwise) equal to the minimum amount that is necessary to meet the withholding requirement for such Tax Obligations (or
+such greater amount as Participant may elect if permitted by the Administrator, if such greater amount would not result in adverse financial
+accounting consequences). Further, if Participant is subject to tax in more than one jurisdiction between the Date of Grant and a date
+of any relevant taxable or tax withholding event, as applicable, Participant acknowledges and agrees that the applicable Service Recipient(s) (and/or
+former employer, as applicable) may be required to withhold or account for tax in more than one jurisdiction.
+(c)
+Notice
+of Disqualifying Disposition of ISO Shares
+. If the Option is an ISO, and if Participant sells or otherwise disposes of any of the
+Shares acquired pursuant to the ISO on or before the later of (i) the date two (2) years after the Date of Grant, or (ii) the
+date one (1) year after the date of exercise, Participant immediately will notify the Company in writing of such disposition. Participant
+agrees that Participant may be subject to income tax withholding by the Company on the compensation income recognized by Participant.
+(d)
+Section 409A
+.
+Under Section 409A, a stock right (such as the Option) that vests after December 31, 2004 (or that vested on or prior to such
+date but which was materially modified after October 3, 2004) that was granted with a per share exercise price that is determined
+by the Internal Revenue Service (the “IRS”) to be less than the fair market value of an underlying share on the date of grant
+(a “discount option”) may be considered “deferred compensation.” A stock right that is a “discount option”
+may result in (i) income recognition by the recipient of the stock right prior to the exercise of the stock right; (ii) an additional
+twenty percent (20%) federal income tax; and (iii) potential penalty and interest charges. The “discount option” also
+may result in additional state income, penalty, and interest tax to the recipient of the stock right. Participant acknowledges that the
+Company cannot and has not guaranteed that the IRS will agree that the per Share exercise price of this Option equals or exceeds the fair
+market value of a Share on the date of grant in a later examination. Participant agrees that if the IRS determines that the Option was
+granted with a per Share exercise price that was less than the fair market value of a Share on the date of grant, Participant will be
+solely responsible for Participant’s costs related to such a determination. In no event will the Company or any of its Parent or
+Subsidiaries have any liability or obligation to reimburse, indemnify, or hold harmless Participant for any taxes, penalties, and interest
+that may be imposed, or other costs that may be incurred, as a result of Section 409A.
+7.
+Rights
+as Stockholder
+. Neither Participant nor any person claiming under or through Participant will have any of the rights or privileges
+of a stockholder of the Company in respect of any Shares deliverable hereunder unless and until certificates representing such Shares
+(which may be in book entry form) will have been issued, recorded on the records of the Company or its transfer agents or registrars,
+and delivered to Participant (including through electronic delivery to a brokerage account). After such issuance, recordation, and delivery,
+Participant will have all the rights of a stockholder of the Company with respect to voting such Shares and receipt of dividends and distributions
+on such Shares.
+8.
+No
+Guarantee of Continued Service
+. PARTICIPANT ACKNOWLEDGES AND AGREES THAT THE VESTING OF SHARES PURSUANT TO THE VESTING SCHEDULE HEREOF
+IS EARNED ONLY BY CONTINUING AS A SERVICE PROVIDER, WHICH UNLESS PROVIDED OTHERWISE UNDER APPLICABLE LAW IS AT THE WILL OF THE APPLICABLE
+SERVICE RECIPIENT AND NOT THROUGH THE ACT OF BEING HIRED, BEING GRANTED THIS OPTION OR ACQUIRING SHARES HEREUNDER. PARTICIPANT FURTHER
+ACKNOWLEDGES AND AGREES THAT THIS OPTION AGREEMENT, THE TRANSACTIONS CONTEMPLATED HEREUNDER, AND THE VESTING SCHEDULE SET FORTH HEREIN
+DO NOT CONSTITUTE AN EXPRESS OR IMPLIED PROMISE OF CONTINUED ENGAGEMENT AS A SERVICE PROVIDER FOR THE VESTING PERIOD, FOR ANY PERIOD,
+OR AT ALL, AND WILL NOT INTERFERE IN ANY WAY WITH PARTICIPANT’S RIGHT OR THE RIGHT OF ANY SERVICE RECIPIENT TO TERMINATE PARTICIPANT’S
+RELATIONSHIP AS A SERVICE PROVIDER, SUBJECT TO APPLICABLE LAW, WHICH TERMINATION, UNLESS PROVIDED OTHERWISE UNDER APPLICABLE LAW, MAY BE
+AT ANY TIME, WITH OR WITHOUT CAUSE.
+9.
+Nature
+of Grant
+. In accepting the Option, Participant acknowledges, understands and agrees that:
+(a)
+the
+grant of the Option is voluntary and occasional and does not create any contractual or other right to receive future grants of options,
+or benefits in lieu of options, even if options have been granted in the past;
+(b)
+all
+decisions with respect to future option or other grants, if any, will be at the sole discretion of the Administrator;
+(c)
+Participant
+is voluntarily participating in the Plan;
+(d)
+the
+Option and any Shares acquired under the Plan are not intended to replace any pension rights or compensation;
+(e)
+the
+Option and Shares acquired under the Plan and the income and value of same, are not part of normal or expected compensation for purposes
+of calculating any severance, resignation, termination, redundancy, dismissal, end-of-service payments, bonuses, long-service awards,
+pension or retirement, or welfare benefits or similar payments;
+(f)
+the
+future value of the Shares underlying the Option is unknown, indeterminable, and cannot be predicted;
+(g)
+if
+the underlying Shares do not increase in value, the Option will have no value;
+(h)
+if
+Participant exercises the Option and acquires Shares, the value of such Shares may increase or decrease in value, even below the Exercise
+Price;
+(i)
+for
+purposes of the Option, Participant’s status as a Service Provider will be considered terminated as of the date Participant is no
+longer actively providing services to the Company or any Parent or Subsidiary (regardless of the reason for such termination and whether
+or not later found to be invalid or in breach of employment laws in the jurisdiction where Participant is a Service Provider or the terms
+of Participant’s employment or service agreement, if any), and unless otherwise expressly provided in this Option Agreement (including
+by reference in the Notice of Grant to other arrangements or contracts) or determined by the Administrator, (i) Participant’s
+right to vest in the Option under the Plan, if any, will terminate as of such date and will not be extended by any notice period (e.g.,
+Participant’s period of service would not include any contractual notice period or any period of “garden leave” or similar
+period mandated under employment laws in the jurisdiction where Participant is a Service Provider or the terms of Participant’s
+employment or service agreement, if any, unless Participant is providing bona fide services during such time), and (ii) the period
+(if any) during which Participant may exercise the Option after such termination of Participant’s engagement as a Service Provider
+will commence on the date Participant ceases to actively provide services and will not be extended by any notice period mandated under
+employment laws in the jurisdiction where Participant is employed or terms of Participant’s engagement agreement, if any; the Administrator
+will have the exclusive discretion to determine when Participant is no longer actively providing services for purposes of this Option
+grant (including whether Participant may still be considered to be providing services while on a leave of absence and consistent with
+local law);
+(j)
+unless
+otherwise provided in the Plan or by the Administrator in its discretion, the Option and the benefits evidenced by this Option Agreement
+do not create any entitlement to have the Option or any such benefits transferred to, or assumed by, another company nor be exchanged,
+cashed out, or substituted for, in connection with any corporate transaction affecting the Shares; and
+(k)
+the
+following provisions apply only if Participant is providing services outside the United States:
+(i)
+the
+Option and the Shares subject to the Option are not part of normal or expected compensation or salary for any purpose;
+(ii)
+Participant
+acknowledges and agrees that no Service Recipient will be liable for any foreign exchange rate fluctuation between Participant’s
+local currency and the United States Dollar that may affect the value of the Option or of any amounts due to Participant pursuant to the
+exercise of the Option or the subsequent sale of any Shares acquired upon exercise; and
+(iii)
+no
+claim or entitlement to compensation or damages will arise from forfeiture of the Option resulting from the termination of Participant’s
+status as a Service Provider (for any reason whatsoever, whether or not later found to be invalid or in breach of employment laws in the
+jurisdiction where Participant is a Service Provider or the terms of Participant’s employment or service agreement, if any), and
+in consideration of the grant of the Option to which Participant is otherwise not entitled, Participant irrevocably agrees never to institute
+any claim against any Service Recipient, waives his or her ability, if any, to bring any such claim, and releases each Service Recipient
+from any such claim; if, notwithstanding the foregoing, any such claim is allowed by a court of competent jurisdiction, then, by participating
+in the Plan, Participant will be deemed irrevocably to have agreed not to pursue such claim and agrees to execute any and all documents
+necessary to request dismissal or withdrawal of such claim.
+10.
+No
+Advice Regarding Grant
+. The Company is not providing any tax, legal, or financial advice, nor is the Company making any recommendations
+regarding Participant’s participation in the Plan, or Participant’s acquisition or sale of the Shares underlying the Option.
+Participant is hereby advised to consult with his or her own personal tax, legal, and financial advisors regarding his or her participation
+in the Plan before taking any action related to the Plan.
+11.
+Data
+Privacy
+.
+Participant hereby explicitly and unambiguously consents to the collection, use, and transfer, in electronic or other
+form, of Participant’s personal data as described in this Option Agreement and any other Option grant materials by and among, as
+applicable, the Service Recipients for the exclusive purpose of implementing, administering, and managing Participant’s participation
+in the Plan.
+Participant understands
+that the Company and the Service Recipient may hold certain personal information about Participant, including, but not limited to, Participant’s
+name, home address and telephone number, date of birth, social insurance number or other identification number, salary, nationality, job
+title, any Shares or directorships held in the Company, details of all Options or any other entitlement to Shares awarded, canceled, exercised,
+vested, unvested or outstanding in Participant’s favor (“Data”), for the exclusive purpose of implementing, administering,
+and managing the Plan.
+Participant understands
+that Data may be transferred to a stock plan service provider, as may be selected by the Company in the future, assisting the Company
+with the implementation, administration, and management of the Plan. Participant understands that the recipients of the Data may be located
+in the United States or elsewhere, and that the recipients’ country of operation (e.g., the United States) may have different data
+privacy laws and protections than Participant’s country. Participant understands that if he or she resides outside the United States,
+he or she may request a list with the names and addresses of any potential recipients of the Data by contacting his or her local human
+resources representative. Participant authorizes the Company, any stock plan service provider selected by the Company, and any other possible
+recipients which may assist the Company (presently or in the future) with implementing, administering, and managing the Plan to receive,
+possess, use, retain, and transfer the Data, in electronic or other form, for the sole purpose of implementing, administering, and managing
+his or her participation in the Plan. Participant understands that Data will be held only as long as is necessary to implement, administer,
+and manage Participant’s participation in the Plan. Participant understands if he or she resides outside the United States, he or
+she may, at any time, view Data, request additional information about the storage and processing of Data, require any necessary amendments
+to Data or refuse or withdraw the consents herein, in any case without cost, by contacting in writing his or her local human resources
+representative. Further, Participant understands that he or she is providing the consents herein on a purely voluntary basis. If Participant
+does not consent, or if Participant later seeks to revoke his or her consent, his or her status as a Service Provider and career with
+the Service Recipient will not be adversely affected. The only adverse consequence of refusing or withdrawing Participant’s consent
+is that the Company would not be able to grant Participant Options or other equity awards or administer or maintain such awards. Therefore,
+Participant understands that refusing or withdrawing his or her consent may affect Participant’s ability to participate in the Plan.
+For more information on the consequences of Participant’s refusal to consent or withdrawal of consent, Participant understands that
+he or she may contact his or her local human resources representative.
+12.
+Address
+for Notices
+. Any notice to be given to the Company under the terms of this Option Agreement will be addressed to the Company at ClearSign
+Technologies Corporation, 8023 E. 63rd Place, Suite 101, Tulsa, Oklahoma 74133, or at such other address as the Company may hereafter
+designate in writing.
+13.
+Non-Transferability
+of Option
+. This Option may not be transferred in any manner otherwise than by will or by the laws of descent and distribution and
+may be exercised during the lifetime of Participant only by Participant.
+14.
+Successors
+and Assigns
+. The Company may assign any of its rights under this Option Agreement to single or multiple assignees, and this Option
+Agreement will inure to the benefit of the successors and assigns of the Company. Subject to the restrictions on transfer herein set forth,
+this Option Agreement will be binding upon Participant and his or her heirs, executors, administrators, successors, and assigns. The rights
+and obligations of Participant under this Option Agreement may be assigned only with the prior written consent of the Company.
+15.
+Additional
+Conditions to Issuance of Stock
+. If at any time the Company will determine, in its discretion, that the listing, registration, qualification,
+or rule compliance of the Shares upon any securities exchange or under any state, federal, or non-U.S. law, the tax code, and related
+regulations or under the rulings or regulations of the United States Securities and Exchange Commission, or any other governmental regulatory
+body or the clearance, consent, or approval of the United States Securities and Exchange Commission or any other governmental regulatory
+authority is necessary or desirable as a condition to the exercise of the Options or the purchase by, or issuance of Shares, to Participant
+(or his or her estate) hereunder, such exercise, purchase, or issuance will not occur unless and until such listing, registration, qualification,
+rule compliance, clearance, consent, or approval will have been completed, effected, or obtained free of any conditions not acceptable
+to the Company. Subject to the terms of the Option Agreement and the Plan, the Company will not be required to issue any certificate or
+certificates for (or make any entry on the books of the Company or of a duly authorized transfer agent of the Company of) the Shares hereunder
+prior to the lapse of such reasonable period of time following the date of exercise of the Option as the Administrator may establish from
+time to time for reasons of administrative convenience.
+16.
+Language
+.
+If Participant has received this Option Agreement or any other document related to the Plan translated into a language other than English
+and if the meaning of the translated version is different than the English version, the English version will control.
+17.
+Interpretation
+.
+The Administrator will have the power to interpret the Plan and this Option Agreement and to adopt such rules for the administration,
+interpretation, and application of the Plan as are consistent therewith and to interpret or revoke any such rules (including, but
+not limited to, the determination of whether or not any Shares subject to the Option have vested). All actions taken and all interpretations
+and determinations made by the Administrator in good faith will be final and binding upon Participant, the Company, and all other interested
+persons. Neither the Administrator nor any person acting on behalf of the Administrator will be personally liable for any action, determination,
+or interpretation made in good faith with respect to the Plan or this Option Agreement.
+18.
+Electronic
+Delivery and Acceptance
+. The Company may, in its sole discretion, decide to deliver any documents related to the Option awarded under
+the Plan or future options that may be awarded under the Plan by electronic means or require Participant to participate in the Plan by
+electronic means. Participant hereby consents to receive such documents by electronic delivery and agrees to participate in the Plan through
+any on-line or electronic system established and maintained by the Company or a third party designated by the Company.
+19.
+Captions
+.
+Captions provided herein are for convenience only and are not to serve as a basis for interpretation or construction of this Option Agreement.
+20.
+Option
+Agreement Severable
+. In the event that any provision in this Option Agreement will be held invalid or unenforceable, such provision
+will be severable from, and such invalidity or unenforceability will not be construed to have any effect on, the remaining provisions
+of this Option Agreement.
+21.
+Amendment,
+Suspension or Termination of the Plan
+. By accepting this Option, Participant expressly warrants that he or she has received an Option
+under the Plan, and has received, read, and understood a description of the Plan. Participant understands that the Plan is discretionary
+in nature and may be amended, suspended, or terminated by the Administrator at any time.
+22.
+Governing
+Law and Venue
+. This Option Agreement and the Option are governed by the internal substantive laws, but not the choice of law rules of
+the State of Delaware. For purposes of litigating any dispute that arises under this Option or this Option Agreement, the parties hereby
+submit to and consent to the jurisdiction of the State of Delaware, and agree that such litigation will be conducted in the United States
+District Court in the State of Delaware (or should such court lack jurisdiction to hear such action, suit or proceeding, in a state court
+in the State of Delaware).
+23.
+Country
+Addendum
+. Notwithstanding any provisions in this Option Agreement, this Option will be subject to any special terms and conditions
+set forth in an appendix (if any) to this Option Agreement for any country whose laws are applicable to Participant and this Option (as
+determined by the Administrator in its sole discretion) (the “Country Addendum”). Moreover, if Participant relocates to one
+of the countries included in the Country Addendum (if any), the special terms and conditions for such country will apply to Participant,
+to the extent the Company determines that the application of such terms and conditions is necessary or advisable for legal or administrative
+reasons. The Country Addendum (if any) constitutes a part of this Option Agreement.
+24.
+Modifications
+to the Option Agreement
+. This Option Agreement constitutes the entire understanding of the parties on the subjects covered. Participant
+expressly warrants that he or she is not accepting this Option Agreement in reliance on any promises, representations, or inducements
+other than those contained herein. Modifications to this Option Agreement or the Plan can be made only in an express written contract
+executed by a duly authorized officer of the Company. Notwithstanding anything to the contrary in the Plan or this Option Agreement, the
+Company reserves the right to revise this Option Agreement as it deems necessary or advisable, in its sole discretion and without the
+consent of Participant, to comply with Section 409A or to otherwise avoid imposition of any additional tax or income recognition
+under Section 409A in connection with the Option.
+25.
+No
+Waiver
+. Either party’s failure to enforce any provision or provisions of this Option Agreement will not in any way be construed
+as a waiver of any such provision or provisions, nor prevent that party from thereafter enforcing each and every other provision of this
+Option Agreement. The rights granted both parties herein are cumulative and will not constitute a waiver of either party’s right
+to assert all other legal remedies available to it under the circumstances.
+26.
+Tax
+Consequences
+. Participant has reviewed with his or her own tax advisors the U.S. federal, state, local, and non-U.S. tax consequences
+of this investment and the transactions contemplated by this Option Agreement. With respect to such matters, Participant relies solely
+on such advisors and not on any statements or representations of the Company or any of its agents, written or oral. Participant understands
+that Participant (and not the Company) will be responsible for Participant’s own tax liability that may arise as a result of this
+investment or the transactions contemplated by this Option Agreement.
+*           *           *
+EXHIBIT B
+CLEARSIGN TECHNOLOGIES CORPORATION
+2021 EQUITY INCENTIVE PLAN
+EXERCISE NOTICE
+ClearSign Technologies Corporation
+8023 E. 63rd Place, Suite 101
+Tulsa, Oklahoma 74133
+Attention: [Stock Administration]
+1.
+Exercise
+of Option
+. Effective as of today, ________________, _____, the undersigned (“Purchaser”) hereby elects to purchase ______________
+shares (the “Shares”) of the Common Stock of ClearSign Technologies Corporation (the “Company”) under and pursuant
+to the 2021 Equity Incentive Plan (the “Plan”) and the Stock Option Agreement, dated ________ and including the Notice of
+Grant, the Terms and Conditions of Stock Option Grant, and other exhibits, appendices, and addenda attached thereto (the “Option
+Agreement”). Unless otherwise defined herein, capitalized terms used in this Exercise Notice will be ascribed the same defined meanings
+as set forth in the Option Agreement (or, as applicable, the Plan or other written agreement or arrangement as specified in the Option
+Agreement).
+2.
+Delivery
+of Payment
+. Purchaser herewith delivers to the Company the full purchase price of the Shares and any Tax Obligations (as defined in
+Section 6(a) of the Option Agreement) to be paid in connection with the exercise of the Option.
+3.
+Representations
+of Purchaser
+. Purchaser acknowledges that Purchaser has received, read, and understood the Plan and the Option Agreement and agrees
+to abide by and be bound by their terms and conditions.
+4.
+Rights
+as Stockholder
+. Until the issuance (as evidenced by the appropriate entry on the books of the Company or of a duly authorized transfer
+agent of the Company) of the Shares, no right to vote or receive dividends or any other rights as a stockholder will exist with respect
+to the Shares subject to the Option, notwithstanding the exercise of the Option. The Shares so acquired will be issued to Purchaser as
+soon as practicable after the Option is exercised in accordance with the Option Agreement. No adjustment will be made for a dividend or
+other right for which the record date is prior to the date of issuance, except as provided in Section 13 of the Plan.
+5.
+Tax
+Consultation
+. Purchaser understands that Purchaser may suffer adverse tax consequences as a result of Purchaser’s purchase or
+disposition of the Shares. Purchaser represents that Purchaser has consulted with any tax consultants Purchaser deems advisable in connection
+with the purchase or disposition of the Shares and that Purchaser is not relying on the Company for any tax advice.
+6.
+Entire
+Agreement; Governing Law
+. The Plan and Option Agreement are incorporated herein by this reference. This Exercise Notice, the Plan
+and the Option Agreement (including the exhibits, appendices, and addenda thereto) constitute the entire agreement of the parties with
+respect to the subject matter hereof and supersede in their entirety all prior undertakings and agreements of the Company and Purchaser
+with respect to the subject matter hereof, and may not be modified adversely to the Purchaser’s interest except by means of a writing
+signed by the Company and Purchaser. This Option Agreement is governed by the internal substantive laws, but not the choice of law rules,
+of the State of Delaware.
+PURCHASER
+CLEARSIGN TECHNOLOGIES CORPORATION
+Accepted by:
+Signature
+Signature
+Print Name:
+Print Name:
+Title:
+Title:
+Address:
+Date Received:

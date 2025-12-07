@@ -1,0 +1,25 @@
+display_name: "Nova Lite 2.0 General Multi-Modal Benchmark Evaluation on P5"
+version: "1.0.0"
+instance_types: ['ml.p5.48xlarge']
+
+run:
+  name: nova-lite-v2-mmmu-eval-job
+  model_type: amazon.nova-2-lite-v1:0:256k
+  model_name_or_path: nova-lite-2/prod # or s3://escrow_bucket/model_location
+  replicas: 1 # modifiable for Sagemaker Training job, unmodifiable for Sagemaker Hyperpod job
+  data_s3_path: "" # unmodifiable
+  output_s3_path: "" # (Required) Output artifact path, Sagemaker Hyperpod job-specific configuration - not compatible with Sagemaker Training jobs
+
+evaluation:
+  task: mmmu
+  strategy: zs_cot
+  metric: accuracy
+
+# Optional Inference configs
+inference:
+  max_new_tokens: 8196
+  top_k: -1
+  top_p: 1.0
+  temperature: 0
+  top_logprobs: 0 # Change to a value between (0,20] to enable
+  reasoning_effort: null  # Enable reasoning, options are low, medium, high

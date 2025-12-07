@@ -1,0 +1,66 @@
+{
+  "summary": "This Registration Rights Agreement dated November 17, 2025, is between Ondas Holdings Inc. and various Holders, outlining the rights for Holders to resell their securities. The agreement mandates Ondas to maintain an effective resale shelf registration statement and to file necessary supplements and amendments to ensure continuous effectiveness during the period until no registrable securities remain outstanding. If Ondas becomes ineligible to use the current registration form, it must promptly file a replacement and notify the Holders.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the 2022 private placement exemption under Reg D require investor verification beyond SEC Form 15c2-11? Show regulatory basis and case precedents"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg D verification requirements + judicial precedents + EDGAR implementation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506(c)\"}, \"Reasoning\": \"Must first retrieve exact regulatory language about verification requirements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reg D investor verification case law post-2012\"}, \"Reasoning\": \"Need judicial interpretations of verification standards after 2012 JOBS Act changes\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Verification compliance\", \"edgar_check\": \"EDGAR investor accreditation clause\", \"regulation\": \"Rule 506(c)\", \"case_interpretation_check\": \"Verification burden standards\"}, \"Reasoning\": \"Final validation requires combining regulatory text, case precedents, and EDGAR implementation analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' citation is properly formatted for Bluebook standards"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Bluebook citation accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston, 673 F.3d 1297 (11th Cir. 2012)\"}, \"Reasoning\": \"Citation verification requires specialized validation tool to check formatting against Bluebook standards\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What constitutes 'material non-public information' under Reg FD? Provide full regulatory text and judicial clarifications"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Reg FD text + judicial definitions\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation FD 100(b)(1)\"}, \"Reasoning\": \"Requires direct retrieval of regulatory definition from Rule 100\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information judicial interpretations under Reg FD\"}, \"Reasoning\": \"Needs case precedents to clarify ambiguous regulatory language about materiality standards\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

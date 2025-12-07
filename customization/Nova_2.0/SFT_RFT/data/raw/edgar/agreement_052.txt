@@ -1,0 +1,1398 @@
+EX-4.4
+3
+ea026545601ex4-4_praeto.htm
+FORM OF WARRANT AGREEMENT BETWEEN ODYSSEY TRANSFER AND TRUST COMPANY AND THE REGISTRANT
+Exhibit 4.4
+WARRANT AGREEMENT
+THIS WARRANT AGREEMENT
+(this “
+Agreement
+”), dated as of [●], 2025, is by and between Praetorian Acquisition Corp., a Cayman Islands
+exempted company (the “
+Company
+”), and Odyssey Transfer and Trust Company, a Minnesota corporation, as warrant
+agent (in such capacity, the “
+Warrant Agent
+,” and also referred to herein as the “
+Transfer Agent
+”).
+WHEREAS
+, the Company
+is engaged in an initial public offering (the “
+Offering
+”) of units of the Company’s equity securities,
+each such unit comprised of one Class A ordinary share of the Company, par value $0.0001 per share (“
+Class A Shares
+”)
+and one-third of one redeemable Public Warrant (as defined below) (the “
+Units
+”) and, in connection therewith,
+has determined to issue and deliver up to 7,333,333 warrants (or up to 8,433,333 warrants if the underwriter exercises in full its right
+to purchase additional Units in the Offering (the “
+Over-allotment Option
+”)) to public investors in the Offering
+(the “
+Public Warrants
+”);
+WHEREAS
+, the Company
+entered into that certain Private Placement Warrants Purchase Agreement with Praetorian Sponsor LLC, a Delaware limited liability company
+(the “
+Sponsor
+”), pursuant to which the Sponsor agreed to purchase an aggregate of 4,670,000 private placement
+warrants (or 5,000,000 private placement warrants if the Over-allotment Option is exercised in full) simultaneously with the closing of
+the Offering (the “
+Private Placement Warrants
+”) at a purchase price of $1.00 per Private Placement Warrant,
+each bearing the legend set forth in
+Exhibit A
+hereto;
+WHEREAS
+, the Company
+was incorporated for the purpose of effecting a merger, share exchange, asset acquisition, share purchase, reorganization or similar business
+combination with one or more businesses (a “
+Business Combination
+”);
+WHEREAS
+, in order to
+finance the Company’s transaction costs in connection with an intended initial Business Combination, the Sponsor or an affiliate
+of the Sponsor or the Company’s officers and directors may, but are not obligated to, loan to the Company funds as the Company may
+require, of which up to $1,500,000 of such loans may be convertible into up to an additional 1,500,000 warrants at a price of $1.00 per
+warrant (the “
+Working Capital Warrants
+” and, together with the Public Warrants and the Private Placement Warrants,
+the “
+Warrants
+”), which will be identical to the Private Placement Warrants;
+WHEREAS
+, each Warrant
+entitles the holder thereof to purchase one Class A Share at a price of $11.50 per share, subject to adjustment as described herein;
+WHEREAS
+, the Company
+has filed with the U.S. Securities and Exchange Commission (the “
+Commission
+”) a registration statement on Form
+S-1, File No. 333-[●] (the “
+Registration Statement
+”), and a prospectus (the “
+Prospectus
+”),
+for the registration, under the Securities Act of 1933, as amended (the “
+Securities Act
+”), of the Units, the
+Public Warrants and the Class A Shares included in the Units;
+WHEREAS
+, the Company
+desires the Warrant Agent to act on behalf of the Company, and the Warrant Agent is willing to so act, in connection with the issuance,
+registration, transfer, exchange, redemption and exercise of the Warrants;
+WHEREAS
+, the Company
+desires to provide for the form and provisions of the Warrants, the terms upon which they shall be issued and exercised, and the respective
+rights, limitation of rights, and immunities of the Company, the Warrant Agent, and the holders of the Warrants; and
+WHEREAS
+, all acts and
+things have been done and performed which are necessary to make the Warrants, when executed on behalf of the Company and countersigned
+by or on behalf of the Warrant Agent, as provided herein, the valid, binding and legal obligations of the Company, and to authorize the
+execution and delivery of this Agreement.
+NOW, THEREFORE
+, in
+consideration of the mutual agreements herein contained, the parties hereto agree as follows:
+1.
+Appointment of Warrant Agent
+. The Company hereby appoints
+the Warrant Agent to act as agent for the Company for the Warrants, and the Warrant Agent hereby accepts such appointment and agrees
+to perform the same in accordance with the terms and conditions set forth in this Agreement.
+2.
+Warrants
+.
+2.1
+Form of Warrant
+. Each Warrant shall be issued in registered
+form only, and, if a physical certificate is issued, shall be in substantially the form of
+Exhibit B
+hereto, the provisions of
+which are incorporated herein and shall be signed by, or bear the facsimile signature of, the Chairperson of the Company’s board
+of directors (the “
+Board
+”), President, Chief Executive Officer, Chief Financial Officer, Secretary or other
+principal officer of the Company. In the event the person whose facsimile signature has been placed upon any Warrant shall have ceased
+to serve in the capacity in which such person signed the Warrant before such Warrant is issued, it may be issued with the same effect
+as if he or she had not ceased to be such at the date of issuance. All of the Public Warrants shall initially be represented by one or
+more book-entry certificates (each, a “
+Book-Entry Warrant Certificate
+”).
+2.2
+Effect of Countersignature
+. If a physical certificate
+is issued, unless and until countersigned by the Warrant Agent pursuant to this Agreement, a Warrant certificate shall be invalid and
+of no effect and may not be exercised by the holder thereof.
+2.3
+Registration
+.
+2.3.1
+Warrant Register
+. The Warrant Agent shall maintain books
+(the “
+Warrant Register
+”) for the registration of original issuance and the registration of transfer of the
+Warrants. Upon the initial issuance of the Warrants, the Warrant Agent shall issue and register the Warrants in the names of the respective
+holders thereof in such denominations and otherwise in accordance with instructions delivered to the Warrant Agent by the Company. All
+of the Public Warrants shall initially be represented by one or more Book-Entry Warrant Certificates deposited with The Depository Trust
+Company (the “
+Depositary
+”) and registered in the name of Cede & Co., a nominee of the Depositary. Ownership
+of beneficial interests in the Public Warrants shall be shown on, and the transfer of such ownership shall be effected through, records
+maintained by (i) the Depositary or its nominee for each Book-Entry Warrant Certificate, or (ii) institutions that have accounts with
+the Depositary (each such institution, with respect to a Warrant in its account, a “
+Participant
+”).
+If the Depositary subsequently ceases
+to make its book-entry settlement system available for the Public Warrants, the Company may instruct the Warrant Agent regarding making
+other arrangements for book-entry settlement. In the event that the Public Warrants are not eligible for, or it is no longer necessary
+to have the Public Warrants available in, book-entry form, the Warrant Agent shall provide written instructions to the Depositary to deliver
+to the Warrant Agent for cancellation each Book-Entry Warrant Certificate, and the Company shall instruct the Warrant Agent to deliver
+to the Depositary definitive certificates in physical form evidencing such Warrants (“
+Definitive Warrant Certificate
+”).
+Such Definitive Warrant Certificate shall be in the form annexed hereto as
+Exhibit B
+, with appropriate insertions, modifications
+and omissions, as provided above.
+2.3.2
+Registered Holder
+. Prior to due presentment for registration
+of transfer of any Warrant, the Company and the Warrant Agent may deem and treat the person in whose name such Warrant is registered
+in the Warrant Register (the “
+Registered Holder
+”) as the absolute owner of such Warrant and of each Warrant
+represented thereby (notwithstanding any notation of ownership or other writing on a Definitive Warrant Certificate made by anyone other
+than the Company or the Warrant Agent), for the purpose of any exercise thereof, and for all other purposes, and neither the Company
+nor the Warrant Agent shall be affected by any notice to the contrary.
+-
+2
+-
+2.4
+Detachability of Warrants
+. The Class A Shares and Public
+Warrants comprising the Units shall begin separate trading on the 52nd day following the date of the Prospectus or, if such 52nd day
+is not on a day, other than a Saturday, Sunday or federal holiday, on which banks in New York City are generally open for normal business
+(a “
+Business Day
+”), then on the immediately succeeding Business Day following such date, or earlier (the “
+Detachment
+Date
+”) with the consent of Clear Street, LLC, as representative of the several underwriters, but in no event shall the
+Class A Shares and the Public Warrants comprising the Units be separately traded until the Company issues a press release and files with
+the Commission a Current Report on Form 8-K announcing when such separate trading shall begin. Holders of Warrants shall contact the
+Transfer Agent in order to effect such separation.
+2.5
+No Fractional Warrants Other Than as Part of Units
+. The
+Company shall not issue fractional Warrants other than as part of the Units, each of which is comprised of one Class A Share and one-third
+of one Public Warrant. If, upon the detachment of Public Warrants from the Units or otherwise, a holder of Warrants would be entitled
+to receive a fractional Warrant, the Company shall round down to the nearest whole number the number of Warrants to be issued to such
+holder.
+2.6
+Private Placement Warrants and Working Capital Warrants
+.
+The Private Placement Warrants and Working Capital Warrants shall be identical to the Public Warrants, except that until the date that
+is thirty (30) days after the completion by the Company of an initial Business Combination the Private Placement Warrants and the Working
+Capital Warrants may not be transferred, assigned or sold by the holders thereof, other than:
+2.6.1
+to the Company’s officers or directors, any affiliate or family member of any of the Company’s
+officers or directors, any members or partners of the Sponsor or their affiliates, any affiliates of the Sponsor, or any employees of
+such affiliates;
+2.6.2
+in the case of an individual, by gift to a member of such individual’s immediate family or to a
+trust, the beneficiary of which is a member of such individual’s immediate family, an affiliate of such individual or to a charitable
+organization;
+2.6.3
+in the case of an individual, by virtue of the laws of descent and distribution upon death of such person;
+2.6.4
+in the case of an individual, pursuant to a qualified domestic relations order;
+2.6.5
+by private sales or transfers made in connection with any forward purchase agreement or similar arrangement,
+in connection with an extension of the timeframe for the Company to consummate a Business Combination or in connection with the consummation
+of an initial Business Combination at prices no greater than the price at which the Warrants were originally purchased;
+2.6.6
+by pro rata distributions from the Sponsor to its respective members, partners or stockholders pursuant
+to the Sponsor’s limited liability company agreement or other charter documents;
+2.6.7
+by virtue of the laws of the Cayman Islands or the limited liability company agreement of the Sponsor
+upon dissolution of the Sponsor;
+2.6.8
+in the event of the Company’s liquidation prior to the consummation of a Business Combination;
+2.6.9
+to a nominee or custodian of a person or entity to whom a disposition or transfer would be permissible
+under
+subsections 2.6.1
+through
+2.6.7
+above;
+2.6.10
+to the Company for no value for cancellation in connection with the consummation of an initial Business
+Combination; and
+2.6.11
+in the event that, subsequent to the consummation of an initial Business Combination, the Company completes
+a liquidation, merger, share exchange or other similar transaction which results in all of its shareholders having the right to exchange
+their Class A Shares for cash, securities or other property;
+provided
+,
+however
+, that, in the case of
+subsections 2.6.1
+through
+2.6.7
+, and
+2.6.9
+these transferees (the “
+Permitted Transferees
+”) enter into a written
+agreement with the Company agreeing to be bound by the transfer restrictions in this Agreement and the other restrictions contained in
+the letter agreement, dated as of the date hereof, by and among the Company, the Sponsor, and the Company’s officers and directors.
+-
+3
+-
+2.7
+Working Capital Warrants
+. Each of the Working Capital
+Warrants shall be identical to the Private Placement Warrants.
+3.
+Terms
+ and Exercise of Warrants
+.
+3.1
+Warrant Price
+. Each Warrant shall entitle the Registered
+Holder thereof, subject to the provisions of such Warrant and of this Agreement, including without limitation,
+subsection 3.3.5
+,
+to purchase from the Company the number of Class A Shares stated therein, at the price of $11.50 per share, subject to the adjustments
+provided in
+Section 4
+hereof and in the last sentence of this
+Section 3.1
+. The term “
+Warrant Price
+”
+as used in this Agreement shall mean the price per share (including in cash or by payment of Warrants pursuant to a “cashless exercise,”
+to the extent permitted hereunder) described in the prior sentence at which the Class A Shares may be purchased at the time a Warrant
+is exercised. The Company in its sole discretion may lower the Warrant Price at any time prior to the Expiration Date (as defined below)
+for a period of not less than twenty (20) Business Days (unless otherwise required by the Commission, any national securities exchange
+on which the Warrants are listed or applicable law),
+provided
+, that the Company shall provide at least three (3) days’ prior
+written notice of such reduction to Registered Holders of the Warrants and,
+provided further
+that any such reduction shall be
+identical among all of the Warrants.
+3.2
+Duration of Warrants
+. A Warrant may be exercised only
+during the period (the “
+Exercise Period
+”) (A) commencing on the date that is thirty (30) days after the first
+date on which the Company completes a Business Combination, and terminating on the earliest to occur of: (x) 5:00 p.m., New York City
+time on the date that is five (5) years after the date on which the Company completes its initial Business Combination, (y) the liquidation
+of the Company, and (z) with respect to a redemption pursuant to
+Section 6.1
+hereof, 5:00 p.m., New York City time on the Redemption
+Date (as defined below) as provided in
+Section 6.2
+hereof (the “
+Expiration Date
+”);
+provided
+,
+however
+, that the exercise of any Warrant shall be subject to the satisfaction of any applicable conditions, as set forth in
+subsection
+3.3.2
+below, with respect to an effective registration statement or a valid exemption therefrom being available. Each outstanding
+Warrant not exercised on or before the Expiration Date shall become void, and all rights thereunder and all rights in respect thereof
+under this Agreement shall cease at 5:00 p.m. New York City time on the Expiration Date. The Company in its sole discretion may extend
+the duration of the Warrants by delaying the Expiration Date;
+provided
+, that the Company shall provide at least twenty (20) days
+prior written notice of any such extension to Registered Holders of the Warrants and,
+provided further
+that any such extension
+shall be identical in duration among all the Warrants.
+3.3
+Exercise of Warrants
+.
+3.3.1
+Payment
+. Subject to the provisions of the Warrant and
+this Agreement, including without limitation,
+subsection 3.3.5
+, a Warrant may be exercised by the Registered Holder thereof by
+delivering to the Warrant Agent at its corporate trust department (i) the Definitive Warrant Certificate evidencing the Warrants to be
+exercised, or, in the case of a Book-Entry Warrant Certificate, the Warrants to be exercised (the “
+Book-Entry Warrants
+”)
+on the records of the Depositary to an account of the Warrant Agent at the Depositary designated for such purposes in writing by the
+Warrant Agent to the Depositary from time to time, (ii) an election to purchase (“
+Election to Purchase
+”) Class
+A Shares pursuant to the exercise of a Warrant, properly completed and executed by the Registered Holder on the reverse of the Definitive
+Warrant Certificate or, in the case of a Book-Entry Warrant Certificate, properly delivered by the Participant in accordance with the
+Depositary’s procedures, and (iii) payment in full of the Warrant Price for each Class A Share as to which the Warrant is exercised
+and any and all applicable taxes due in connection with the exercise of the Warrant, the exchange of the Warrant for the Class A Shares
+and the issuance of such Class A Shares, as follows:
+(a)
+in lawful money of the United States, in good bank draft or good certified check payable to the order
+of the Warrant Agent or by wire transfer of immediately available funds;
+-
+4
+-
+(b)
+in the event of a redemption pursuant to
+Section 6
+hereof in which the Company’s board of
+directors (the “
+Board
+”) has elected to require all holders of the Warrants to exercise such Warrants on a “cashless
+basis,” by surrendering the Warrants for that number of Class A Shares equal to the quotient obtained by dividing (x) the product
+of the number of Class A Shares underlying the Warrants, multiplied by the excess of the “Fair Market Value”, as defined in
+this
+subsection 3.3.1(b)
+, over the Warrant Price by (y) the Fair Market Value. Solely for purposes of this
+subsection 3.3.1(b)
+and
+Section 6.3
+, the “
+Fair Market Value
+” shall mean the average reported closing price of the Class A
+Shares for the ten (10) trading days ending on the third trading day prior to the date on which the notice of redemption is sent to the
+holders of the Warrants, pursuant to
+Section 6
+hereof; or
+(c)
+on a cashless basis as provided in
+Section 7.4
+hereof.
+3.3.2
+Issuance of Class A Shares on Exercise
+. As soon as practicable
+after the exercise of any Warrant and the clearance of the funds in payment of the Warrant Price (if payment is pursuant to
+subsection
+3.3.1(a)
+), the Company shall issue to the Registered Holder of such Warrant a book-entry position or certificate, as applicable,
+for the number of Class A Shares to which he, she or it is entitled, registered in such name or names as may be directed by him, her
+or it, and if such Warrant shall not have been exercised in full, a new book-entry position or countersigned Warrant, as applicable,
+for the number of Class A Shares as to which such Warrant shall not have been exercised. If fewer than all the Warrants evidenced by
+a Book-Entry Warrant Certificate are exercised, a notation shall be made to the records maintained by the Depositary, its nominee for
+each Book-Entry Warrant Certificate, or a Participant, as appropriate, evidencing the balance of the Warrants remaining after such exercise.
+Notwithstanding the foregoing, the Company shall not be obligated to deliver any Class A Shares pursuant to the exercise of a Warrant
+and shall have no obligation to settle such Warrant exercise unless a registration statement under the Securities Act with respect to
+the Class A Shares underlying the Public Warrants is then effective and a prospectus relating thereto is current, subject to the Company’s
+satisfying its obligations under
+Section 7.4
+or a valid exemption from registration is available. No Warrant shall be exercisable
+and the Company shall not be obligated to issue Class A Shares upon exercise of a Warrant unless the Class A Shares issuable upon such
+Warrant exercise have been registered, qualified or deemed to be exempt from registration or qualification under the securities laws
+of the state of residence of the Registered Holder of the Warrants. In the event that the conditions in the two immediately preceding
+sentences are not satisfied with respect to a Warrant, the holder of such Warrant shall not be entitled to exercise such Warrant. In
+no event will the Company be required to net cash settle the Warrant exercise. The Company may require holders of Public Warrants to
+settle the Warrant on a “cashless basis” pursuant to
+Section 7.4
+. If, by reason of any exercise of Warrants on a “cashless
+basis,” the holder of any Warrant would be entitled, upon the exercise of such Warrant, to receive a fractional interest in a Class
+A Share, the Company shall round down to the nearest whole number, the number of Class A Shares to be issued to such holder.
+3.3.3
+Valid Issuance
+. All Class A Shares issued upon the proper
+exercise of a Warrant in conformity with this Agreement shall be validly issued, fully paid and non-assessable.
+3.3.4
+Date of Issuance
+. Each person in whose name any book-entry
+position or certificate, as applicable, for Class A Shares is issued shall for all purposes be deemed to have become the holder of record
+of such Class A Shares on the date on which the Warrant, or book-entry position representing such Warrant, was surrendered and payment
+of the Warrant Price was made, irrespective of the date of delivery of such certificate in the case of a certificated Warrant, except
+that, if the date of such surrender and payment is a date when the share transfer books of the Company or book-entry system of the Warrant
+Agent are closed, such person shall be deemed to have become the holder of such Class A Shares at the close of business on the next succeeding
+date on which the share transfer books or book-entry system are open.
+-
+5
+-
+3.3.5
+Maximum Percentage
+. A holder of a Warrant may notify
+the Company in writing in the event it elects to be subject to the provisions contained in this
+subsection 3.3.5
+; however, no
+holder of a Warrant shall be subject to this
+subsection 3.3.5
+unless he, she or it makes such election. If the election is made
+by a holder, the Warrant Agent shall not effect the exercise of the holder’s Warrant, and such holder shall not have the right
+to exercise such Warrant, to the extent that after giving effect to such exercise, such person (together with such person’s affiliates)
+or any “group” of which the holder or its affiliate is a member, would beneficially own in excess of 4.9% or 9.8% (or such
+other amount as a holder may specify) (the “
+Maximum Percentage
+”) of the Class A Shares outstanding immediately
+after giving effect to such exercise. For purposes of the foregoing sentence, the aggregate number of Class A Shares beneficially owned
+by such person and its affiliates, or any group of which such person and its affiliates is a member, shall include the number of Class
+A Shares issuable upon exercise of the Warrant with respect to which the determination of such sentence is being made, but shall exclude
+Class A Shares that would be issuable upon (x) exercise of the remaining, unexercised portion of the Warrant beneficially owned by such
+person and its affiliates, or any group of which any such person or its affiliates is a member, and (y) exercise or conversion of the
+unexercised or unconverted portion of any other securities of the Company beneficially owned by such person and its affiliates, or any
+group of which such person or its affiliates is a member (including, without limitation, any convertible notes or convertible preferred
+shares or warrants) subject to a limitation on conversion or exercise analogous to the limitation contained herein. Except as set forth
+in the preceding sentence, for purposes of this paragraph, beneficial ownership shall be calculated in accordance with Section 13(d)
+of the Securities Exchange Act of 1934, as amended (the “
+Exchange Act
+”), and the applicable regulations of
+the Commission. For purposes hereof, “group” has the meaning set forth in Section 13(d) of the Exchange Act and applicable
+regulations of the Commission, and the percentage held by the holder shall be determined in a manner consistent with the provisions of
+Section 13(d) of the Exchange Act. To the extent that a holder makes the election described in this
+subsection 3.3.5
+, the Warrant
+Agent shall not effect the exercise of the holder’s Warrant, and such holder shall not have the right to exercise such Warrant
+unless it provides to the Warrant Agent in its Election to Purchase, a certification that, upon after giving effect to such exercise,
+such person (together with such person’s affiliates) or any “group” of which such holder or its affiliates is a member,
+would not beneficially own in excess of the Maximum Percentage of the Class A Shares outstanding immediately after giving effect to such
+exercise as determined in accordance with this
+subsection 3.3.5
+. For purposes of the Warrant, in determining the number of outstanding
+Class A Shares, the holder may rely on the number of outstanding Class A Shares as reflected in (1) the Company’s most recent Annual
+Report on Form 10-K, Quarterly Report on Form 10-Q, Current Report on Form 8-K or other public filing with the Commission as the case
+may be, (2) a more recent public announcement by the Company or (3) any other notice by the Company or the Transfer Agent setting forth
+the number of Class A Shares outstanding. For any reason at any time, upon the written request of the holder of the Warrant, the Company
+shall, within two (2) Business Days, confirm orally and in writing to such holder the number of Class A Shares then outstanding. In any
+case, the number of outstanding Class A Shares shall be determined after giving effect to the conversion or exercise of equity securities
+of the Company by the holder and its affiliates since the date as of which such number of outstanding Class A Shares was reported. By
+written notice to the Company, the holder of a Warrant may from time to time increase or decrease the Maximum Percentage applicable to
+such holder to any other percentage specified in such notice;
+provided
+,
+however
+, that any such increase shall not be effective
+until the sixty-first (61st) day after such notice is delivered to the Company.
+4.
+Adjustments
+.
+4.1
+Share Capitalizations
+.
+4.1.1
+Sub-division
+. If after the date hereof, and subject to
+the provisions of
+Section 4.6
+below, the number of outstanding Class A Shares is increased by a share capitalization payable in
+Class A Shares, or by a sub-division of Class A Shares or other similar event, then, on the effective date of such share capitalization,
+sub-division or similar event, the number of Class A Shares issuable on exercise of each Warrant shall be increased in proportion to
+such increase in the outstanding Class A Shares. A rights offering made to all or substantially all holders of the Class A Shares entitling
+holders to purchase Class A Shares at a price less than the “Historical Fair Market Value” (as defined below) shall be deemed
+a share capitalization of a number of Class A Shares equal to the product of (i) the number of Class A Shares actually sold in such rights
+offering (or issuable under any other equity securities sold in such rights offering that are convertible into or exercisable for Class
+A Shares) and (ii) one (1) minus the quotient of (x) the price per Class A Share paid in such rights offering divided by (y) the Historical
+Fair Market Value. For purposes of this
+subsection 4.1.1
+, (i) if the rights offering is for securities convertible into or exercisable
+for Class A Shares, in determining the price payable for Class A Shares, there shall be taken into account any consideration received
+for such rights, as well as any additional amount payable upon exercise or conversion and (ii) “
+Historical Fair Market Value
+”
+means the volume weighted average price of the Class A Shares as reported during the ten (10) trading day period ending on the trading
+day prior to the first date on which the Class A Shares trade on the applicable exchange or in the applicable market, regular way, without
+the right to receive such rights. No Class A Shares shall be issued at less than their par value.
+-
+6
+-
+4.1.2
+Extraordinary Dividends
+. If the Company, at any time
+while the Warrants are outstanding and unexpired, shall pay a dividend or make a distribution in cash, securities or other assets to
+all or substantially all of the holders of Class A Shares on account of such Class A Shares (or other shares of the Company’s share
+capital into which the Warrants are convertible), other than (a) as described in
+subsection 4.1.1
+above, (b) Ordinary Cash Dividends
+(as defined below), (c) to satisfy the redemption rights of the holders of Class A Shares in connection with a proposed initial Business
+Combination, (d) to satisfy the redemption rights of the holders of Class A Shares in connection with a shareholder vote to amend the
+Company’s amended and restated memorandum and articles of association (as amended from time to time, the “
+Charter
+”)
+(A) to modify the substance or timing of the Company’s obligation to allow redemption in connection with the Company’s initial
+business combination or to redeem 100% of the Class A Shares included in the Units sold in the Offering (the “
+Public Shares
+”)
+if the Company does not complete the Business Combination within the period set forth in the Charter or (B) with respect to any other
+material provisions relating to shareholders’ rights or pre-initial Business Combination activity or (e) in connection with the
+redemption of Public Shares upon the failure of the Company to complete its initial Business Combination and any subsequent distribution
+of its assets upon its liquidation (any such non-excluded event being referred to herein as an “
+Extraordinary Dividend
+”),
+then the Warrant Price shall be decreased, effective immediately after the effective date of such Extraordinary Dividend, by the amount
+of cash and/or the fair market value (as determined by the Board, in good faith) of any securities or other assets paid on each Class
+A Share in respect of such Extraordinary Dividend. For purposes of this
+subsection 4.1.2
+, “
+Ordinary Cash Dividends
+”
+means any cash dividend or cash distribution which, when combined on a per share basis, with the per share amounts of all other cash
+dividends and cash distributions paid on the Class A Shares during the 365-day period ending on the date of declaration of such dividend
+or distribution (as adjusted to appropriately reflect any of the events referred to in other subsections of this
+Section 4
+and
+excluding cash dividends or cash distributions that resulted in an adjustment to the Warrant Price or to the number of Class A Shares
+issuable on exercise of each Warrant) does not exceed $0.50 (being 5% of the offering price of the Units in the Offering) but only with
+respect to the amount of the aggregate cash dividends or cash distributions equal to or less than $0.50. Solely for purposes of illustration,
+if the Company, at a time while the Warrants are outstanding and unexpired, pays a cash dividend of $0.35 and previously paid an aggregate
+of $0.40 of cash dividends and cash distributions on the Class A Shares during the 365-day period ending on the date of declaration of
+such $0.35 dividend, then the Warrant Price will be decreased, effectively immediately after the effective date of such $0.35 dividend,
+by $0.25 (the absolute value of the difference between $0.75 (the aggregate amount of all cash dividends and cash distributions paid
+or made in such 365-day period, including such $0.35 dividend) and $0.50 (the greater of (x) $0.50 and (y) the aggregate amount of all
+cash dividends and cash distributions paid or made in such 365-day period prior to such $0.35 dividend)).
+4.2
+Aggregation of Shares
+. If after the date hereof, and
+subject to the provisions of
+Section 4.6
+hereof, the number of outstanding Class A Shares is decreased by a consolidation, combination,
+reverse share sub-division or reclassification of Class A Shares or other similar event, then, on the effective date of such consolidation,
+combination, reverse share sub-division, reclassification or similar event, the number of Class A Shares issuable on exercise of each
+Warrant shall be decreased in proportion to such decrease in outstanding Class A Shares.
+-
+7
+-
+4.3
+Adjustments in Warrant Price
+.
+4.3.1
+Whenever the number of Class A Shares purchasable upon the exercise of the Warrants is adjusted, as provided
+in
+subsection 4.1.1
+or
+Section 4.2
+above, the Warrant Price shall be adjusted (to the nearest cent) by multiplying such
+Warrant Price immediately prior to such adjustment by a fraction (x) the numerator of which shall be the number of Class A Shares purchasable
+upon the exercise of the Warrants immediately prior to such adjustment, and (y) the denominator of which shall be the number of Class
+A Shares so purchasable immediately thereafter.
+4.3.2
+If (x) the Company issues additional Class A Shares or equity-linked securities for capital raising purposes
+in connection with the closing of the initial Business Combination at an issue price or effective issue price of less than $9.20 per Class
+A Share (with such issue price or effective issue price to be determined in good faith by the Board and, in the case of any such issuance
+to the initial shareholders (as defined in the Prospectus) or their affiliates, without taking into account any Class B Ordinary Shares
+(as defined below) held by such shareholders or their affiliates, as applicable, prior to such issuance (the “
+Newly Issued
+Price
+”)), (y) the aggregate gross proceeds from such issuances represent more than 60% of the total equity proceeds, and
+interest thereon, available for funding the initial Business Combination on the date of the consummation of the initial Business Combination
+(net of redemptions), and (z) the volume weighted average trading price of the Class A Shares during the 20 trading day period starting
+on the trading day prior to the day on which the Company consummates the Business Combination (such price, the “
+Market Value
+”)
+is below $9.20 per share, the Warrant Price shall be adjusted (to the nearest cent) to be equal to 115% of the higher of the Market Value
+and the Newly Issued Price, the $18.00 per share redemption trigger price described in
+Section 6.1
+below shall be adjusted (to
+the nearest cent) to be equal to 180% of the higher of the Market Value and the Newly Issued Price.
+4.4
+Replacement of Securities upon Reorganization, etc.
+In case of any reclassification or reorganization of the outstanding Class A Shares (other than a change covered by
+subsections 4.1.1
+,
+4.1.2
+or
+Section 4.2
+hereof or that solely affects the par value of such Class A Shares), or in the case of any merger
+or consolidation of the Company with or into another entity or conversion of the Company as another entity (other than a consolidation
+or merger in which the Company is the continuing corporation and is not a subsidiary of another entity whose shareholders did not own
+all or substantially all of the Class A Shares of the Company in substantially the same proportions immediately before such transaction
+and that does not result in any reclassification or reorganization of the outstanding Class A Shares), or in the case of any sale or
+conveyance to another entity of the assets or other property of the Company as an entirety or substantially as an entirety in connection
+with which the Company is dissolved, the holders of the Warrants shall thereafter have the right to purchase and receive, upon the basis
+and upon the terms and conditions specified in the Warrants and in lieu of the Class A Shares of the Company immediately theretofore
+purchasable and receivable upon the exercise of the rights represented thereby, the kind and amount of shares or other securities or
+property (including cash) receivable upon such reclassification, reorganization, merger or consolidation, or upon a dissolution following
+any such sale or transfer, that the holder of the Warrants would have received if such holder had exercised his, her or its Warrant(s)
+immediately prior to such event (the “
+Alternative Issuance
+”);
+provided
+,
+however
+, that (i) if
+the holders of the Class A Shares were entitled to exercise a right of election as to the kind or amount of securities, cash or other
+assets receivable upon such consolidation or merger, then the kind and amount of securities, cash or other assets constituting the Alternative
+Issuance for which each Warrant shall become exercisable shall be deemed to be the weighted average of the kind and amount received per
+share by the holders of the Class A Shares in such consolidation or merger that affirmatively make such election, and (ii) if a tender,
+exchange or redemption offer shall have been made to and accepted by the holders of the Class A Shares (other than a tender, exchange
+or redemption offer made by the Company in connection with redemption rights held by shareholders of the Company as provided for in the
+Charter or as a result of the redemption of Class A Shares by the Company if a proposed initial Business Combination is presented to
+the shareholders of the Company for approval) under circumstances in which, upon completion of such tender or exchange offer, the maker
+thereof, together with members of any group (within the meaning of Rule 13d-5(b)(1) under the Exchange Act (or any successor rule)) of
+which such maker is a part, and together with any affiliate or associate of such maker (within the meaning of Rule 12b-2 under the Exchange
+Act (or any successor rule)) and any members of any such group of which any such affiliate or associate is a part, own beneficially (within
+the meaning of Rule 13d-3 under the Exchange Act (or any successor rule)) more than 65% of the voting power of the Company’s outstanding
+equity securities (including with respect to the election of directors), the holder of a Warrant shall be entitled to receive as the
+Alternative Issuance, the weighted average of the amount of cash, securities or other property to which such holder would actually have
+been entitled as a shareholder if such Warrant holder had exercised the Warrant prior to the expiration of such tender or exchange offer,
+accepted such offer and participated in such tender or exchange offer on a pro rata basis with all other holders of Class A Shares, subject
+to adjustments (from and after the consummation of such tender or exchange offer) as nearly equivalent as possible to the adjustments
+provided for in this
+Section 4
+. If any reclassification or reorganization also results in a change in Class A Shares covered by
+subsection 4.1.1
+, then such adjustment shall be made pursuant to
+subsection 4.1.1
+or
+Sections 4.2
+,
+4.3
+and
+this
+Section 4.4
+. The provisions of this
+Section 4.4
+shall similarly apply to successive reclassifications, reorganizations,
+mergers or consolidations, sales or other transfers. In no event will the Warrant Price be reduced to less than the par value per share
+issuable upon exercise of the Warrant.
+-
+8
+-
+4.5
+Notices of Changes in Warrant
+. Upon every adjustment
+of the Warrant Price or the number of Class A Shares issuable upon exercise of a Warrant, the Company shall give written notice thereof
+to the Warrant Agent, which notice shall state the Warrant Price resulting from such adjustment and the increase or decrease, if any,
+in the number of Class A Shares purchasable at such price upon the exercise of a Warrant, setting forth in reasonable detail the method
+of calculation and the facts upon which such calculation is based. Upon the occurrence of any event specified in
+Sections 4.1
+,
+4.2
+,
+4.3
+or
+4.4
+, the Company shall give written notice of the occurrence of such event to each holder of a Warrant,
+at the last address set forth for such holder in the Warrant Register, of the record date or the effective date of the event. Failure
+to give such notice, or any defect therein, shall not affect the legality or validity of such event.
+4.6
+No Fractional Shares
+. Notwithstanding any provision contained
+in this Agreement to the contrary, the Company shall not issue fractional Class A Shares upon the exercise of Warrants. If, by reason
+of any adjustment made pursuant to this
+Section 4
+, the holder of any Warrant would be entitled, upon the exercise of such Warrant,
+to receive a fractional interest in a share, the Company shall, upon such exercise, round down to the nearest whole number the number
+of Class A Shares to be issued to such holder.
+4.7
+Form of Warrant
+. The form of Warrant need not be changed
+because of any adjustment pursuant to this
+Section 4
+, and Warrants issued after such adjustment may state the same Warrant Price
+and the same number of Class A Shares as is stated in the Warrants initially issued pursuant to this Agreement;
+provided
+,
+however
+,
+that the Company may at any time in its sole discretion make any change in the form of Warrant that the Company may deem appropriate
+and that does not affect the substance thereof, and any Warrant thereafter issued or countersigned, whether in exchange or substitution
+for an outstanding Warrant or otherwise, may be in the form as so changed.
+4.8
+Other Events
+. In case any event shall occur affecting
+the Company as to which none of the provisions of the preceding subsections of this
+Section 4
+are strictly applicable, but which
+would require an adjustment to the terms of the Warrants in order to (i) avoid an adverse impact on the Warrants and (ii) effectuate
+the intent and purpose of this
+Section 4
+, then, in each such case, the Company shall appoint a firm of independent public accountants,
+investment banking or other appraisal firm of recognized national standing, which shall give its opinion as to whether or not any adjustment
+to the rights represented by the Warrants is necessary to effectuate the intent and purpose of this
+Section 4
+and, if they determine
+that an adjustment is necessary, the terms of such adjustment. The Company shall adjust the terms of the Warrants in a manner that is
+consistent with any adjustment recommended in such opinion. For the avoidance of doubt, all adjustments made pursuant to this
+Section
+4.8
+shall be made equally to all outstanding Warrants.
+4.9
+No Adjustment
+. For the avoidance of doubt, no adjustment
+shall be made to the terms of the Warrants solely as a result of an adjustment to the conversion ratio of the Company’s Class B
+ordinary shares (the “
+Class B Ordinary Shares
+”) into Class A Shares or the conversion of the Class B Ordinary
+Shares into Class A Shares, in each case, pursuant to the Charter.
+-
+9
+-
+5.
+Transfer and Exchange of Warrants
+.
+5.1
+Registration of Transfer
+. The Warrant Agent shall register
+the transfer, from time to time, of any outstanding Warrant upon the Warrant Register, upon surrender of such Warrant for transfer, in
+the case of a certificated Warrant, properly endorsed with signatures properly guaranteed and accompanied by appropriate instructions
+for transfer. Upon any such transfer, a new Warrant representing an equal aggregate number of Warrants shall be issued and the old Warrant
+shall be cancelled by the Warrant Agent. In the case of certificated Warrants, the Warrants so cancelled shall be delivered by the Warrant
+Agent to the Company from time to time upon request.
+5.2
+Procedure for Surrender of Warrants
+. Warrants may be
+surrendered to the Warrant Agent, together with a written request for exchange or transfer, and thereupon the Warrant Agent shall issue
+in exchange therefor one or more new Warrants as requested by the Registered Holder of the Warrants so surrendered, representing an equal
+aggregate number of Warrants;
+provided
+,
+however
+, that except as otherwise provided herein or in any Book-Entry Warrant
+Certificate or Definitive Warrant Certificate, each Book-Entry Warrant Certificate and Definitive Warrant Certificate may be transferred
+only in whole and only to the Depositary, to another nominee of the Depositary, to a successor depository, or to a nominee of a successor
+depository;
+provided further
+,
+however
+, that in the event that a Warrant surrendered for transfer bears a restrictive legend
+(as in the case of the Private Placement Warrants and the Working Capital Warrants), the Warrant Agent shall not cancel such Warrant
+and issue new Warrants in exchange thereof until the Warrant Agent has received an opinion of counsel for the Company stating that such
+transfer may be made and indicating whether the new Warrants must also bear a restrictive legend.
+5.3
+Fractional Warrants
+. The Warrant Agent shall not be required
+to effect any registration of transfer or exchange which shall result in the issuance of a warrant certificate or book-entry position
+for a fraction of a warrant, except as part of the Units.
+5.4
+Service Charges
+. No service charge shall be made for
+any exchange or registration of transfer of Warrants.
+5.5
+Warrant Execution and Countersignature
+. The Warrant
+Agent is hereby authorized to countersign and to deliver, in accordance with the terms of this Agreement, the Warrants required to be
+issued pursuant to the provisions of this
+Section 5
+, and the Company, whenever required by the Warrant Agent, shall supply the
+Warrant Agent with Warrants duly executed on behalf of the Company for such purpose.
+5.6
+Transfer of Warrants
+. Prior to the Detachment Date,
+the Public Warrants may be transferred or exchanged only together with the Unit in which such Warrant is included, and only for the purpose
+of effecting, or in conjunction with, a transfer or exchange of such Unit. Furthermore, each transfer of a Unit on the register relating
+to such Units shall operate also to transfer the Warrants included in such Unit. Notwithstanding the foregoing, the provisions of this
+Section 5.6
+shall have no effect on any transfer of Warrants on and after the Detachment Date.
+6.
+Redemption
+.
+6.1
+Redemption of Warrants for Cash
+. All, but not less
+than all, of the outstanding Warrants may be redeemed (in whole and not in part), at the option of the Company, at any time during the
+Exercise Period, at the office of the Warrant Agent, upon notice to the Registered Holders of the Warrants, as described in
+Section
+6.2
+below, at a Redemption Price (as defined below) of $0.01 per Warrant;
+provided
+that (a) the Reference Value equals or
+exceeds $18.00 per share (subject to adjustment in compliance with
+Section 4
+hereof) and (b) there is an effective registration
+statement covering the Class A Shares issuable upon exercise of the Warrants, and a current prospectus relating thereto, available throughout
+the Measurement Period and the 30-day Redemption Period (each as defined in
+Section 6.2
+below).
+-
+10
+-
+6.2
+Date Fixed for, and Notice of, Redemption; Redemption
+Price; Reference Value
+. In the event that the Company elects to redeem the Warrants pursuant to
+Section 6.1
+, the Company shall
+fix a date for the redemption (the “
+Redemption Dat
+e
+”). Notice of redemption shall be mailed by first
+class mail, postage prepaid, by the Company not less than thirty (30) days prior to the Redemption Date (such period, the “
+Redemption
+Period
+”) to the Registered Holders of the Warrants to be redeemed at their last addresses as they shall appear on the registration
+books. Any notice mailed in the manner herein provided shall be conclusively presumed to have been duly given whether or not the Registered
+Holder received such notice. As used in this Agreement, (a) “
+Redemption Price
+” shall mean the price per Warrant
+at which any Warrants are redeemed pursuant to
+Sections 6.1
+and (b) “
+Reference Value
+” shall mean the
+last reported sales price of the Class A Shares for any twenty (20) trading days within the thirty (30) trading-day period commencing
+at least 30 days after the completion of the initial Business Combination and ending on the third trading day prior to the date on which
+notice of the redemption is given (the “
+Measurement Period
+”).
+6.3
+Exercise After Notice of Redemption
+. The Warrants
+may be exercised, for cash (or on a “cashless basis” in accordance with
+Section 3
+of this Agreement) at any time after
+notice of redemption shall have been given by the Company pursuant to
+Section 6.2
+hereof and prior to the Redemption Date. In
+the event the Company determines to require all holders of Warrants to exercise their Warrants on a “cashless basis” pursuant
+to
+subsection 3.3.1(b)
+, the notice of redemption will contain the information necessary to calculate the number of Class A Shares
+to be received upon exercise of the Warrants, including the “Fair Market Value” (as such term is defined in
+subsection
+3.3.1(b)
+hereof) in such case. On and after the Redemption Date, the record holder of the Warrants shall have no further rights except
+to receive, upon surrender of the Warrants, the Redemption Price.
+7.
+Other Provisions Relating to Rights of Holders of Warrants
+.
+7.1
+No Rights as Shareholder
+. A Warrant does not entitle
+the Registered Holder thereof to any of the rights of a shareholder of the Company, including, without limitation, the right to receive
+dividends, or other distributions, exercise any preemptive rights to vote or to consent or to receive notice as shareholders in respect
+of the meetings of shareholders or the election of directors of the Company or any other matter.
+7.2
+Lost, Stolen, Mutilated, or Destroyed Warrants
+. If
+any Warrant is lost, stolen, mutilated, or destroyed, the Company and the Warrant Agent may on such terms as to indemnity or otherwise
+as they may in their discretion impose (which shall, in the case of a mutilated Warrant, include the surrender thereof), issue a new
+Warrant of like denomination, tenor, and date as the Warrant so lost, stolen, mutilated, or destroyed. Any such new Warrant shall constitute
+a substitute contractual obligation of the Company, whether or not the allegedly lost, stolen, mutilated, or destroyed Warrant shall
+be at any time enforceable by anyone.
+7.3
+Reservation of Class A Shares
+. The Company shall at
+all times reserve and keep available a number of its authorized but unissued Class A Shares that shall be sufficient to permit the exercise
+in full of all outstanding Warrants issued pursuant to this Agreement.
+-
+11
+-
+7.4
+Registration of Class A Shares; Cashless Exercise at Company’s
+Option
+.
+7.4.1
+Registration of the Class A Shares
+. The Company agrees
+that as soon as practicable, but in no event later than twenty (20) Business Days after the closing of its initial Business Combination,
+it shall use its commercially reasonable efforts to file with the Commission a post-effective amendment to the Registration Statement,
+or a new registration statement registering, under the Securities Act, the issuance of the Class A Shares issuable upon exercise of the
+Warrants. The Company shall use its commercially reasonable efforts to cause the same to become effective and to maintain the effectiveness
+of such post-effective amendment or registration statement, and a current prospectus relating thereto, until the expiration or redemption
+of the Warrants in accordance with the provisions of this Agreement. If any such post-effective or registration statement has not been
+declared effective by the sixtieth (60th) Business Day following the closing of the initial Business Combination, holders of the Warrants
+shall have the right, during the period beginning on the sixty-first (61st) Business Day after the closing of the initial Business Combination
+and ending upon such post-effective amendment or registration statement being declared effective by the Commission, and during any other
+period when the Company shall fail to have maintained an effective registration statement covering the Class A Shares issuable upon exercise
+of the Warrants, to exercise such Warrants on a “cashless basis,” by exchanging the Warrants (in accordance with Section
+3(a)(9) of the Securities Act (or any successor rule) or another exemption) for that number of Class A Shares equal to the quotient obtained
+by dividing (x) the product of the number of Class A Shares underlying the Warrants, multiplied by the excess of the “Fair Market
+Value” (as defined below) over the Warrant Price by (y) the Fair Market Value. Solely for purposes of this
+subsection 7.4.1
+,
+“Fair Market Value” shall mean the average reported closing price of the Class A Shares as reported during the ten (10) trading
+day period ending on the third (3rd) trading day prior to the date that notice of exercise is received by the Warrant Agent from the
+holder of such Warrants or its securities broker or intermediary. The date that notice of “cashless exercise” is received
+by the Warrant Agent shall be conclusively determined by the Warrant Agent. In connection with the “cashless exercise” of
+a Public Warrant, the Company shall, upon request, provide the Warrant Agent with an opinion of counsel for the Company (which shall
+be an outside law firm with securities law experience) stating that (i) the exercise of the Warrants on a “cashless basis”
+in accordance with this
+subsection 7.4.1
+is not required to be registered under the Securities Act and (ii) the Class A Shares
+issued upon such exercise shall be freely tradable under United States federal securities laws by anyone who is not an affiliate (as
+such term is defined in Rule 144 under the Securities Act (or any successor rule)) of the Company and, accordingly, shall not be required
+to bear a restrictive legend. Except as provided in
+subsection 7.4.2
+, for the avoidance of any doubt, unless and until all of
+the Warrants have been exercised or have expired, the Company shall continue to be obligated to comply with its registration obligations
+under the first three sentences of this
+subsection 7.4.1
+.
+7.4.2
+Cashless Exercise at Company’s Option
+. If the
+Class A Shares are at the time of any exercise of a Warrant not listed on a national securities exchange such that they satisfy the definition
+of “covered securities” under Section 18(b)(1) of the Securities Act (or any successor rule), the Company may, at its option,
+require holders of Warrants who exercise their Warrants to exercise such Public Warrants on a “cashless basis” in accordance
+with Section 3(a)(9) of the Securities Act (or any successor rule) as described in
+subsection 7.4.1
+and (i) in the event the Company
+so elects, the Company shall not be required to file or maintain in effect a registration statement for the registration, under the Securities
+Act, of the Class A Shares issuable upon exercise of the Warrants, notwithstanding anything in this Agreement to the contrary or (ii)
+if the Company does not so file or maintain such registration statement, the Company agrees to use its commercially reasonable efforts
+to register or qualify for sale the Class A Shares issuable upon exercise of the Public Warrants under the applicable blue sky laws of
+the state of residence of the exercising Public Warrant holder to the extent an exemption is not available.
+-
+12
+-
+8.
+Concerning the Warrant Agent and Other Matters
+.
+8.1
+Payment of Taxes
+. The Company shall from time to time
+promptly pay all taxes and charges that may be imposed upon the Company or the Warrant Agent in respect of the issuance or delivery of
+Class A Shares upon the exercise of the Warrants, but the Company shall not be obligated to pay any transfer taxes in respect of the
+Warrants or such Class A Shares.
+8.2
+Resignation, Consolidation, or Merger of Warrant Agent
+.
+8.2.1
+Appointment of Successor Warrant Agent
+. The Warrant
+Agent, or any successor to it hereafter appointed, may resign its duties and be discharged from all further duties and liabilities hereunder
+after giving sixty (60) days’ notice in writing to the Company. If the office of the Warrant Agent becomes vacant by resignation
+or incapacity to act or otherwise, the Company shall appoint in writing a successor Warrant Agent in place of the Warrant Agent. If the
+Company shall fail to make such appointment within a period of thirty (30) days after it has been notified in writing of such resignation
+or incapacity by the Warrant Agent or by the holder of a Warrant (who shall, with such notice, submit his, her or its Warrant for inspection
+by the Company), then the holder of any Warrant may apply to the Supreme Court of the State of New York for the County of New York for
+the appointment of a successor Warrant Agent at the Company’s cost. Any successor Warrant Agent, whether appointed by the Company
+or by such court, shall be a corporation or other entity organized and existing under the laws of the State of New York, in good standing
+and having its principal office in the Borough of Manhattan, City and State of New York, and authorized under such laws to exercise corporate
+trust powers and subject to supervision or examination by federal or state authority. After appointment, any successor Warrant Agent
+shall be vested with all the authority, powers, rights, immunities, duties, and obligations of its predecessor Warrant Agent with like
+effect as if originally named as Warrant Agent hereunder, without any further act or deed; but if for any reason it becomes necessary
+or appropriate, the predecessor Warrant Agent shall execute and deliver, at the expense of the Company, an instrument transferring to
+such successor Warrant Agent all the authority, powers, and rights of such predecessor Warrant Agent hereunder; and upon request of any
+successor Warrant Agent the Company shall make, execute, acknowledge, and deliver any and all instruments in writing for more fully and
+effectually vesting in and confirming to such successor Warrant Agent all such authority, powers, rights, immunities, duties, and obligations.
+8.2.2
+Notice of Successor Warrant Agent
+. In the event a
+successor Warrant Agent shall be appointed, the Company shall give notice thereof to the predecessor Warrant Agent and the Transfer Agent
+for the Class A Shares not later than the effective date of any such appointment.
+8.2.3
+Merger or Consolidation of Warrant Agent
+. Any entity
+into which the Warrant Agent may be merged or with which it may be consolidated or any entity resulting from any merger or consolidation
+to which the Warrant Agent shall be a party shall be the successor Warrant Agent under this Agreement without any further act.
+8.3
+Fees and Expenses of Warrant Agent
+.
+8.3.1
+Remuneration
+. The Company agrees to pay the Warrant
+Agent reasonable remuneration for its services as such Warrant Agent hereunder and shall, pursuant to its obligations under this Agreement,
+reimburse the Warrant Agent upon demand for all expenditures that the Warrant Agent may reasonably incur in the execution of its duties
+hereunder.
+8.3.2
+Further Assurances
+. The Company agrees to perform,
+execute, acknowledge, and deliver or cause to be performed, executed, acknowledged, and delivered all such further and other acts, instruments,
+and assurances as may reasonably be required by the Warrant Agent for the carrying out or performing of the provisions of this Agreement.
+-
+13
+-
+8.4
+Liability of Warrant Agent
+.
+8.4.1
+Reliance on Company Statement
+. Whenever in the performance
+of its duties under this Agreement, the Warrant Agent shall deem it necessary or desirable that any fact or matter be proved or established
+by the Company prior to taking or suffering any action hereunder, such fact or matter (unless other evidence in respect thereof be herein
+specifically prescribed) may be deemed to be conclusively proved and established by a statement signed by the Chief Executive Officer,
+Chief Financial Officer, President, Executive Vice President, Vice President, Secretary or Chairman of the Board of the Company and delivered
+to the Warrant Agent. The Warrant Agent may rely upon such statement for any action taken or suffered in good faith by it pursuant to
+the provisions of this Agreement.
+8.4.2
+Indemnity
+. The Warrant Agent shall be liable hereunder
+only for its own gross negligence, willful misconduct, fraud or bad faith. The Company agrees to indemnify the Warrant Agent and save
+it harmless against any and all liabilities, including judgments, out of pocket costs and reasonable outside counsel fees, for anything
+done or omitted by the Warrant Agent in the execution of this Agreement, except as a result of the Warrant Agent’s gross negligence,
+willful misconduct, fraud or bad faith.
+8.4.3
+Exclusions
+. The Warrant Agent shall have no responsibility
+with respect to the validity of this Agreement or with respect to the validity or execution of any Warrant (except its countersignature
+thereof). The Warrant Agent shall not be responsible for any breach by the Company of any covenant or condition contained in this Agreement
+or in any Warrant. The Warrant Agent shall not be responsible to make any adjustments required under the provisions of
+Section 4
+hereof or responsible for the manner, method, or amount of any such adjustment or the ascertaining of the existence of facts that would
+require any such adjustment; nor shall it by any act hereunder be deemed to make any representation or warranty as to the authorization
+or reservation of any Class A Shares to be issued pursuant to this Agreement or any Warrant or as to whether any Class A Shares shall,
+when issued, be valid and fully paid and non-assessable.
+8.5
+Acceptance of Agency
+. The Warrant Agent hereby accepts
+the agency established by this Agreement and agrees to perform the same upon the terms and conditions herein set forth and among other
+things, shall account promptly to the Company with respect to Warrants exercised and concurrently account for, and pay to the Company,
+all monies received by the Warrant Agent for the purchase of Class A Shares through the exercise of the Warrants.
+8.6
+Waiver
+. The Warrant Agent has no right of set-off
+or any other right, title, interest or claim of any kind (“
+Claim
+”) in, or to any distribution of, the Trust
+Account (as defined in that certain Investment Management Trust Agreement, dated as of the date hereof, by and between the Company and
+the Warrant Agent as trustee thereunder) and hereby agrees not to seek recourse, reimbursement, payment or satisfaction for any Claim
+against the Trust Account for any reason whatsoever. The Warrant Agent hereby irrevocably waives any and all Claims against the Trust
+Account, including any monies therein or any distribution therefrom, and any and all rights to seek access to the Trust Account.
+9.
+Miscellaneous Provisions
+.
+9.1
+Successors
+. All the covenants and provisions of this
+Agreement by or for the benefit of the Company or the Warrant Agent shall bind and inure to the benefit of their respective successors
+and assigns.
+-
+14
+-
+9.2
+Notices
+. Any notice, statement or demand authorized
+by this Agreement to be given or made by the Warrant Agent or by the holder of any Warrant to or on the Company shall be sufficiently
+given when so delivered if by hand or overnight delivery or if sent by certified mail or private courier service within five (5) days
+after deposit of such notice, postage prepaid, addressed (until another address is filed in writing by the Company with the Warrant Agent),
+as follows:
+Praetorian Acquisition Corp.
+2 S Biscayne Blvd
+PMB 1004 Suite #3200
+Miami, FL 33131
+Attention: Justin Di Rezze, Chief Executive Officer
+Any notice, statement or demand authorized
+by this Agreement to be given or made by the holder of any Warrant or by the Company to or on the Warrant Agent shall be sufficiently
+given when so delivered if by hand or overnight delivery or if sent by certified mail or private courier service within five (5) days
+after deposit of such notice, postage prepaid, addressed (until another address is filed in writing by the Warrant Agent with the Company),
+as follows:
+Odyssey Transfer and Trust Company
+2155 Woodlane Drive, Suite 100
+Woodbury, MN 55125
+Attention: Compliance Department
+in each case, with copies to:
+[●]
+Attn: [●]
+Email: [●]
+Clear Street, LLC
+4 World Trade Center, Floor 45
+New York, NY 10007
+Facsimile: [●]
+and
+Reed Smith LLP
+2850 N Harwood Street, Suite 1500
+Dallas, TX 75201
+Tel: (469) 680-4200
+Attn: Lynwood Reinhardt, Esq.
+Email: LReinhardt@reedsmith.com
+9.3
+Applicable Law and Exclusive Forum
+. The validity,
+interpretation, and performance of this Agreement and of the Warrants shall be governed in all respects by the laws of the State of New
+York, without giving effect to conflicts of law principles that would result in the application of the substantive laws of another jurisdiction.
+The Company hereby agrees that any action, proceeding or claim against it arising out of or relating in any way to this Agreement shall
+be brought and enforced in the courts of the State of New York or the United States District Court for the Southern District of New York,
+and irrevocably submits to such jurisdiction, which jurisdiction shall be the exclusive forum for any such action, proceeding or claim.
+The Company hereby waives any objection to such exclusive jurisdiction and that such courts represent an inconvenient forum. Notwithstanding
+the foregoing, the provisions of this paragraph will not apply to suits brought to enforce any liability or duty created by the Exchange
+Act or any other claim for which the federal district courts of the United States of America are the sole and exclusive forum. Any person
+or entity purchasing or otherwise acquiring any interest in the Warrants shall be deemed to have notice of and to have consented to the
+forum provisions in this
+Section 9.3
+. If any action, the subject matter of which is within the scope the forum provisions above,
+is filed in a court other than a court located within the State of New York or the United States District Court for the Southern District
+of New York (a “
+foreign action
+”) in the name of any warrant holder, such warrant holder shall be deemed to
+have consented to: (x) the personal jurisdiction of the state and federal courts located within the State of New York or the United States
+District Court for the Southern District of New York in connection with any action brought in any such court to enforce the forum provisions
+(an “
+enforcement action
+”), and (y) having service of process made upon such warrant holder in any such enforcement
+action by service upon such warrant holder’s counsel in the foreign action as agent for such warrant holder.
+-
+15
+-
+9.4
+Persons Having Rights under this Agreement
+. Nothing
+in this Agreement shall be construed to confer upon, or give to, any person, corporation or other entity other than the parties hereto
+and the Registered Holders of the Warrants any right, remedy, or claim under or by reason of this Agreement or of any covenant, condition,
+stipulation, promise, or agreement hereof. All covenants, conditions, stipulations, promises, and agreements contained in this Agreement
+shall be for the sole and exclusive benefit of the parties hereto and their successors and assigns and of the Registered Holders of the
+Warrants.
+9.5
+Examination of the Warrant Agreement
+. A copy of this
+Agreement shall be available at all reasonable times at the office of the Warrant Agent in the Borough of Manhattan, City and State of
+New York, for inspection by the Registered Holder of any Warrant. The Warrant Agent may require any such holder to submit such holder’s
+Warrant for inspection by the Warrant Agent.
+9.6
+Counterparts
+. This Agreement may be executed in any
+number of original or facsimile counterparts and each of such counterparts shall for all purposes be deemed to be an original, and all
+such counterparts shall together constitute but one and the same instrument.
+9.7
+Effect of Headings
+. The section headings herein are
+for convenience only and are not part of this Agreement and shall not affect the interpretation thereof.
+9.8
+Amendments
+. This Agreement may be amended by the parties
+hereto without the consent of any Registered Holder (i) for the purpose of (x) curing any ambiguity or to correct any defective provision
+contained herein, including to conform the provisions hereof to the description of the terms of the Warrants and this Agreement set forth
+in the Prospectus, (y) adjusting the definition of “Ordinary Cash Dividend” as contemplated by and in accordance with the
+second sentence of
+subsection 4.1.2
+or (z) adding or changing any other provisions with respect to matters or questions arising
+under this Agreement as the parties may deem necessary or desirable and that the parties deem shall not adversely affect the interest
+of the Registered Holders, and (ii) to provide for the delivery of an Alternative Issuance pursuant to
+Section 4.4
+. All other
+modifications or amendments, including any modification or amendment to increase the Warrant Price or shorten the Exercise Period shall
+require the vote or written consent of the Registered Holders of 50% of the number of the then outstanding Public Warrants and, solely
+with respect to any amendment to the terms of the Private Placement Warrants or Working Capital Warrants or any provision of this Agreement
+with respect to the Private Placement Warrants, or Working Capital Warrants (including, for the avoidance of doubt, the forfeiture or
+cancellation of any Private Placement Warrants or Working Capital Warrants), 50% of the number of then outstanding Private Placement
+Warrants and Working Capital Warrants. Notwithstanding the foregoing, the Company may lower the Warrant Price or extend the duration
+of the Exercise Period pursuant to
+Sections 3.1
+and
+3.2
+, respectively, without the consent of the Registered Holders.
+9.9
+Severability
+. This Agreement shall be deemed severable,
+and the invalidity or unenforceability of any term or provision hereof shall not affect the validity or enforceability of this Agreement
+or of any other term or provision hereof. Furthermore, in lieu of any such invalid or unenforceable term or provision, the parties hereto
+intend that there shall be added as a part of this Agreement a provision as similar in terms to such invalid or unenforceable provision
+as may be possible and be valid and enforceable.
+[Signature Page Follows]
+-
+16
+-
+IN WITNESS WHEREOF, the parties
+hereto have caused this Agreement to be duly executed as of the date first above written.
+PRAETORIAN ACQUISITION CORP.
+By:
+Name:
+Justin Di Rezze
+Title:
+Chief Executive Officer
+ODYSSEY TRANSFER AND TRUST COMPANY,
+as
+ Warrant Agent
+By:
+Name:
+Title:
+-
+17
+-
+EXHIBIT A
+PRIVATE PLACEMENT WARRANTS LEGEND
+THE SECURITIES REPRESENTED BY THIS CERTIFICATE
+HAVE NOT BEEN REGISTERED UNDER THE SECURITIES ACT OF 1933, AS AMENDED, OR ANY STATE SECURITIES LAWS, AND MAY NOT BE OFFERED, SOLD, TRANSFERRED
+OR OTHERWISE DISPOSED OF UNLESS REGISTERED UNDER THE SECURITIES ACT OF 1933, AS AMENDED, AND ANY APPLICABLE STATE SECURITIES LAWS OR AN
+EXEMPTION FROM REGISTRATION IS AVAILABLE. IN ADDITION, SUBJECT TO ANY ADDITIONAL LIMITATIONS ON TRANSFER DESCRIBED IN THE AGREEMENTS BY
+AND AMONG PRAETORIAN ACQUISITION CORP. (THE “
+COMPANY
+”), PRAETORIAN SPONSOR LLC AND THE OTHER SIGNATORIES THERETO, THE
+SECURITIES REPRESENTED BY THIS CERTIFICATE MAY NOT BE SOLD OR TRANSFERRED PRIOR TO THE DATE THAT IS THIRTY (30) DAYS AFTER THE DATE UPON
+WHICH THE COMPANY COMPLETES ITS INITIAL BUSINESS COMBINATION (AS DEFINED IN
+SECTION 3
+OF THE WARRANT AGREEMENT REFERRED TO HEREIN)
+EXCEPT TO A PERMITTED TRANSFEREE WHO AGREES IN WRITING WITH THE COMPANY TO BE SUBJECT TO SUCH TRANSFER PROVISIONS.
+SECURITIES EVIDENCED BY THIS CERTIFICATE AND ORDINARY
+SHARES OF THE COMPANY ISSUED UPON EXERCISE OF SUCH SECURITIES SHALL BE ENTITLED TO REGISTRATION RIGHTS UNDER A REGISTRATION RIGHTS AGREEMENT
+TO BE EXECUTED BY THE COMPANY.
+-
+18
+-
+EXHIBIT B
+[Form of Warrant Certificate]
+[FACE]
+Number
+Warrants
+THIS WARRANT SHALL BE VOID IF NOT EXERCISED PRIOR TO
+THE EXPIRATION OF THE EXERCISE PERIOD PROVIDED FOR IN THE
+WARRANT AGREEMENT DESCRIBED BELOW
+PRAETORIAN ACQUISITION CORP.
+Incorporated Under the Laws of the Cayman Islands
+CUSIP
+[●]
+Warrant Certificate
+This Warrant Certificate certifies that                    , or registered
+assigns, is the registered holder of warrants evidenced hereby (the “
+Warrants
+” and each, a “
+Warrant
+”)
+to purchase Class A Ordinary Shares, $0.0001 par value per share (the “
+Ordinary Shares
+”), of Praetorian Acquisition
+Corp., a Cayman Islands exempted company (the “
+Company
+”). Each whole Warrant entitles the holder, upon exercise during
+the period set forth in the Warrant Agreement referred to below, to receive from the Company that number of fully paid and non-assessable
+Ordinary Shares as set forth below, at the exercise price (the “
+Warrant Price
+”) as determined pursuant to the Warrant
+Agreement, payable in lawful money (or through “cashless exercise” as provided for in the Warrant Agreement) of the United
+States of America upon surrender of this Warrant Certificate and payment of the Warrant Price at the office or agency of the Warrant Agent
+referred to below, subject to the conditions set forth herein and in the Warrant Agreement. Defined terms used in this Warrant Certificate
+but not defined herein shall have the meanings given to them in the Warrant Agreement.
+Each whole Warrant is initially exercisable for
+one fully paid and non-assessable Ordinary Share. No fractional shares will be issued upon exercise of any Warrant. If, upon the exercise
+of Warrants, a holder would be entitled to receive a fractional interest in an Ordinary Share, the Company will, upon exercise, round
+down to the nearest whole number the number of Ordinary Shares to be issued to the Warrant holder. The number of Ordinary Shares issuable
+upon exercise of the Warrants is subject to adjustment upon the occurrence of certain events set forth in the Warrant Agreement.
+The initial Warrant Price per Ordinary Share for
+any Warrant is equal to $11.50 per share. The Warrant Price is subject to adjustment upon the occurrence of certain events set forth in
+the Warrant Agreement.
+Subject to the conditions set forth in the Warrant
+Agreement, the Warrants may be exercised only during the Exercise Period and to the extent not exercised by the end of such Exercise Period,
+such Warrants shall become void. The Warrants may be redeemed, subject to certain conditions, as set forth in the Warrant Agreement. In
+addition, and notwithstanding anything else in this Warrant Certificate or the Warrant Agreement, to the extent that the holder of a Warrant
+has delivered a notice contemplated by
+subsection 3.5.5
+of the Warrant Agreement, neither the Company nor the Warrant Agent shall
+issue to Holder, and Holder may not acquire, any right it might have to acquire, a number of Ordinary Shares upon exercise of any Warrant
+to the extent that, upon such exercise, the number of Ordinary Shares then beneficially owned by Holder would exceed the Maximum Percentage
+of Ordinary Shares outstanding immediately after giving effect to such exercise as determined in accordance with
+subsection 3.3.5
+of the Warrant Agreement.
+Reference is hereby made to the further provisions
+of this Warrant Certificate set forth on the reverse hereof and such further provisions shall for all purposes have the same effect as
+though fully set forth at this place.
+This Warrant Certificate shall not be valid unless
+countersigned by the Warrant Agent, as such term is used in the Warrant Agreement.
+-
+19
+-
+This Warrant Certificate shall be governed by
+and construed in accordance with the internal laws of the State of New York.
+PRAETORIAN ACQUISITION CORP.
+By:
+Name:
+Title:
+ODYSSEY TRANSFER AND TRUST COMPANY as Warrant Agent
+By:
+Name:
+Title:
+-
+20
+-
+[Form of Warrant Certificate]
+[Reverse]
+The Warrants evidenced by this Warrant Certificate
+are part of a duly authorized issue of Warrants entitling the holder on exercise to receive Ordinary Shares and are issued or to be issued
+pursuant to a Warrant Agreement dated as of [●], 2025 (the “
+Warrant Agreement
+”), duly executed and delivered
+by the Company to Odyssey Transfer and Trust Company, a Minnesota corporation, as warrant agent (the “
+Warrant Agent
+”),
+which Warrant Agreement is hereby incorporated by reference in and made a part of this instrument and is hereby referred to for a description
+of the rights, limitation of rights, obligations, duties and immunities thereunder of the Warrant Agent, the Company and the holders (the
+words “
+holders
+” or “
+holder
+” meaning the Registered Holders or Registered Holder, respectively) of
+the Warrants. A copy of the Warrant Agreement may be obtained by the holder hereof upon written request to the Company. Defined terms
+used in this Warrant Certificate but not defined herein shall have the meanings given to them in the Warrant Agreement.
+Warrants may be exercised at any time during the
+Exercise Period set forth in the Warrant Agreement. The holder of Warrants evidenced by this Warrant Certificate may exercise them by
+surrendering this Warrant Certificate, with the form of election to purchase set forth hereon properly completed and executed, together
+with payment of the Warrant Price as specified in the Warrant Agreement (or through “cashless exercise” as provided for in
+the Warrant Agreement) at the principal corporate trust office of the Warrant Agent. In the event that upon any exercise of Warrants evidenced
+hereby the number of Warrants exercised shall be less than the total number of Warrants evidenced hereby, there shall be issued to the
+holder hereof or his, her or its assignee, a new Warrant Certificate evidencing the number of Warrants not exercised.
+Notwithstanding anything else in this Warrant
+Certificate or the Warrant Agreement, no Warrant may be exercised unless at the time of exercise (i) a registration statement covering
+the Ordinary Shares to be issued upon exercise is effective under the Securities Act of 1933, as amended, and (ii) a prospectus thereunder
+relating to the Ordinary Shares is current, except through “cashless exercise” as provided for in the Warrant Agreement.
+The Warrant Agreement provides that upon the occurrence
+of certain events the number of Ordinary Shares issuable upon the exercise of the Warrants set forth on the face hereof may, subject to
+certain conditions, be adjusted. If, upon exercise of a Warrant, the holder thereof would be entitled to receive a fractional interest
+in an Ordinary Share, the Company shall, upon exercise, round down to the nearest whole number of Ordinary Shares to be issued to the
+holder of the Warrant.
+Warrant Certificates, when surrendered at the
+principal corporate trust office of the Warrant Agent by the Registered Holder thereof in person or by legal representative or attorney
+duly authorized in writing, may be exchanged, in the manner and subject to the limitations provided in the Warrant Agreement, but without
+payment of any service charge, for another Warrant Certificate or Warrant Certificates of like tenor evidencing in the aggregate a like
+number of Warrants.
+Upon due presentation for registration of transfer
+of this Warrant Certificate at the office of the Warrant Agent, a new Warrant Certificate or Warrant Certificates of like tenor and evidencing
+in the aggregate a like number of Warrants shall be issued to the transferee(s) in exchange for this Warrant Certificate, subject to the
+limitations provided in the Warrant Agreement, without charge except for any tax or other governmental charge imposed in connection therewith.
+The Company and the Warrant Agent may deem and
+treat the Registered Holder(s) hereof as the absolute owner(s) of this Warrant Certificate (notwithstanding any notation of ownership
+or other writing hereon made by anyone), for the purpose of any exercise hereof, of any distribution to the holder(s) hereof, and for
+all other purposes, and neither the Company nor the Warrant Agent shall be affected by any notice to the contrary. Neither the Warrants
+nor this Warrant Certificate entitles any holder hereof to any rights of a shareholder of the Company.
+-
+21
+-
+Election to Purchase
+(To Be Executed Upon Exercise of Warrant)
+The undersigned hereby irrevocably elects to exercise
+the right, represented by this Warrant Certificate, to receive Ordinary Shares and herewith tenders payment for such Ordinary Shares to
+the order of Praetorian Acquisition Corp. (the “
+Company
+”) in the amount of $_____ in accordance with the terms hereof.
+The undersigned requests that a certificate for such Ordinary Shares be registered in the name of                    , whose address is                    , and that such Ordinary
+Shares be delivered to                    , whose address is                    . If said number of Ordinary Shares is less than all of the Ordinary Shares purchasable hereunder,
+the undersigned requests that a new Warrant Certificate representing the remaining balance of such Ordinary Shares be registered in the
+name of                    , whose address is                     and that such Warrant Certificate be delivered to                    , whose address is                    .
+In the event that the Warrant has been called
+for redemption by the Company pursuant to
+Section 6.1
+of the Warrant Agreement and the Company has required “cashless”
+exercise pursuant to
+Section 6.3
+and
+Section 3.3.1(b)
+of the Warrant Agreement, the number of Ordinary Shares that this
+Warrant is exercisable for shall be determined in accordance with
+Section 6.3
+and
+Section 3.3.1(b)
+of the Warrant Agreement.
+In the event that the Warrant is to be exercised
+on a “cashless” basis pursuant to
+Section 7.4
+of the Warrant Agreement, the number of Ordinary Shares that this Warrant
+is exercisable for shall be determined in accordance with
+Section 7.4
+of the Warrant Agreement.
+In the event that the Warrant may be exercised,
+to the extent allowed by the Warrant Agreement, through cashless exercise (i) the number of Ordinary Shares that this Warrant is exercisable
+for would be determined in accordance with the relevant section of the Warrant Agreement which allows for such cashless exercise and (ii)
+the holder hereof shall complete the following: The undersigned hereby irrevocably elects to exercise the right, represented by this Warrant
+Certificate, through the cashless exercise provisions of the Warrant Agreement, to receive Ordinary Shares. If said number of Ordinary
+Shares is less than all of the Ordinary Shares purchasable hereunder (after giving effect to the cashless exercise), the undersigned requests
+that a new Warrant Certificate representing the remaining balance of such Ordinary Shares be registered in the name of                    , whose address
+is and that such Warrant Certificate be delivered to                    , whose address is                    .
+To be included in any Election to Purchase of
+a holder who has provided the notice set forth in
+subsection 3.3.5
+of the Warrant Agreement.
+By signing this Election to Purchase, the undersigned
+hereby certifies that upon after giving effect to such exercise, the undersigned (together with such person’s affiliates) or any
+“group” of which holder or its affiliates is a member, would not beneficially own in excess of the Maximum Percentage of the
+Ordinary Shares outstanding immediately after giving effect to such exercise as determined in accordance with
+subsection 3.3.5
+of the Warrant Agreement.
+[Signature Page Follows]
+-
+22
+-
+Date:
+(Signature)
+(Address)
+(Tax Identification Number)
+Signature Guaranteed:
+THE SIGNATURE(S) SHOULD BE GUARANTEED BY AN ELIGIBLE
+GUARANTOR INSTITUTION (BANKS, STOCKBROKERS, SAVINGS AND LOAN ASSOCIATIONS AND CREDIT UNIONS WITH MEMBERSHIP IN AN APPROVED SIGNATURE GUARANTEE
+MEDALLION PROGRAM, PURSUANT TO SEC RULE 17Ad-15 UNDER THE SECURITIES EXCHANGE ACT OF 1934, AS AMENDED (OR ANY SUCCESSOR RULE)).
+-
+23
+-

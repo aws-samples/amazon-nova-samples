@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Revolving Credit and Guaranty Agreement dated November 17, 2025, involving Compass, Inc. as the borrower, various lenders and issuing banks, and Morgan Stanley Senior Funding, Inc. as the administrative and collateral agent. It outlines the terms for loans and letters of credit, representations and warranties, conditions for borrowing, covenants, financial covenants, guaranty provisions, events of default, and miscellaneous provisions including governing law and notices.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Memorandum's accredited investor verification clause\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Must validate EDGAR language against established Reg D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for material non-public information in international transactions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on MNPI in cross-border deals\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Dorozhko international insider trading precedent\"}, \"Reasoning\": \"Requires judicial interpretation of MNPI application in global context\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'Regulation S offshore offering' citation is correct"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Format accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.901\"}, \"Reasoning\": \"Citation validation requires format/code verification tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

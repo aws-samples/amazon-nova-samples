@@ -1,0 +1,66 @@
+{
+  "summary": "This Subscription Agreement is between Greenpro Capital Corp., a Nevada corporation, and a Purchaser, outlining the sale of common stock shares at $1.30 per share under exemptions from registration. The agreement specifies the terms of the sale, representations and warranties from both parties, and the closing details, including the location and method of payment.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D require SEC registration verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D exemption criteria and registration requirements\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"First need to retrieve official exemption requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"SEC registration exemption verification\", \"edgar_check\": \"EDGAR private placement clause\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"After establishing requirements, validate EDGAR clause against Regulation D criteria\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the latest judicial interpretation of 'material non-public information' in insider trading?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Recent case law on insider trading definitions\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Recent Supreme Court cases on material non-public information definition\"}, \"Reasoning\": \"Case law search required for judicial interpretations of legal concepts not explicitly defined in statutes\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this S-1 filing complies with Section 5 registration requirements considering 1933 Act precedents"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Section 5 requirements + judicial precedents + EDGAR filing compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Securities Act of 1933 Section 5\"}, \"Reasoning\": \"Start with statutory registration requirements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Landmark cases interpreting Section 5 registration obligations\"}, \"Reasoning\": \"Need judicial context for historical interpretations\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"S-1 registration statement compliance\", \"edgar_check\": \"S-1 prospectus language\", \"regulation\": \"1933 Act Section 5\", \"case_interpretation_check\": \"Relevant case precedents\"}, \"Reasoning\": \"Combine regulations, precedents and EDGAR text for final validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

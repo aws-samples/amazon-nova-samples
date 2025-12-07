@@ -1,0 +1,161 @@
+EX-10.1
+2
+ex101bankservicesagreement.htm
+EX-10.1 BANK SERVICES AGREEMENT
+Document
+Schedules Omitted Pursuant to Rule 601(b)(10)(iv)    Exhibit 10.1
+BANK SERVICES AGREEMENT
+THIS BANK SERVICES AGREEMENT (this “
+Agreement
+”), effective as of September 1, 2019 (the “
+Effective Date
+”), is entered into by and between
+GJF Financial Management II, LLC
+, a Delaware limited liability company (the “
+Service Provider
+”), and
+Mechanics Bank
+, a California banking corporation (the “
+Service Recipient
+”).
+WHEREAS
+, the Service Provider and Service Recipient are affiliates (as such term is defined in Sections 23A of the Federal Reserve Act) and subject to the applicable affiliate transaction laws, rules and regulations, including Sections 23A and 23B of the Federal Reserve Act;
+WHEREAS
+, affiliates of the Service Provider own approximately 80% of the capital stock of Service Recipient;
+WHEREAS
+, the parties hereto believe that Service Provider will provide Service Recipient with certain expertise and efficiencies through the services provided by Service Provider to Service Recipient;
+WHEREAS
+, the Service Provider desires to provide, from time to time, various services to the Service Recipient, and the Service Recipient desires to purchase such services in compliance with Sections 23A and 23B of the Federal Reserve Act (where applicable) and applicable banking regulations and policies; and
+WHEREAS
+, the parties hereto are aware of the current written guidance provided by applicable bank regulatory authorities with respect to the payment of management and related fees among affiliates and the management of third-party risk and intend for this Agreement to comply with such guidance.
+NOW, THEREFORE
+, in consideration of the mutual promises, covenants and conditions set forth in this Agreement, the receipt and sufficiency of which are hereby acknowledged, the parties hereto mutually agree as follows:
+1.
+Nature and Scope of Services
+.
+(a)
+Subject to the terms and conditions of this Agreement, the Service Recipient hereby engages the Service Provider to perform the respective services set forth on
+Schedule A
+to this Agreement (the “
+Services
+”), and the Service Provider hereby accepts such engagement and agrees to render and perform such Services for the Service Recipient on its behalf. From time to time, the Services to be provided to the Service Recipient may be modified, in accordance with Section 10, to include other services or to eliminate some or all of the Services provided to the Service Recipient, and a corresponding modification to the Service Fee (as defined below) may be made, by the mutual written agreement of the Service Provider and the Service Recipient.
+MECHANICS BANK – BANK SERVICES AGREEMENT
+(b)
+The Service Provider shall use commercially reasonable efforts to ensure that the Services to be performed by the Service Provider shall be performed by persons of similar position, background and experience as the Service Provider for companies engaged in a business similar to that conducted by the Service Recipient.
+(c)
+The Service Recipient agrees to use its commercially reasonable efforts to assist the Service Provider in performing the Services under this Agreement. Without limiting the generality of the foregoing, the Service Recipient agrees to provide all information, to execute any certificates, instruments or other documents and to take such other action that is reasonably requested by the Service Provider in connection with the provision of the Services.
+2.
+Fees and Expense Reimbursement
+.
+(a)
+In consideration for the Service Provider’s performance of the Services, the Service Recipient shall pay to the Service Provider an annual fee in the amount set forth on
+Schedule B
+(the “
+Service Fee
+”) for each calendar year during the term of this Agreement, payable in equal quarterly installments as set forth on
+Schedule B
+(the “
+Quarterly Amount
+”) within thirty (30) days following the last day of each calendar quarter during the term of this Agreement;
+provided
+,
+however
+, that for the quarter ending September 30, 2019, such Service Fee shall equal the pro rata portion of the Quarterly Amount for any partial calendar quarter. Notwithstanding the foregoing, in the event that this Agreement is terminated for any reason during any calendar year, or all of the Services for the Service Recipient is terminated during any calendar year prior to the termination of this Agreement, then the Service Recipient shall only pay to the Service Provider with respect to such calendar year the pro rata portion of the Service Fee otherwise payable with respect to such calendar year based upon the number of days during such calendar year that elapsed prior to the date of termination of this Agreement or termination of the Services, as the case may be.
+(b)
+From time to time, upon thirty (30) days’ prior written notice, the Service Provider may revise the Service Fee for the Service Recipient based on its historical experience and costs with the Service Recipient, the Service Provider’s reasonable estimates of future costs, and any assignment of some or all of the obligations to perform the Services. The Service Provider shall review the Service Fee of the Service Recipient at least annually and may adjust the Service Fee in accordance with this paragraph and in accordance with the methodologies used to calculate such fees. Notwithstanding anything herein to the contrary, in no event shall the Service Fee exceed $10.0 million in any given calendar year.
+(c)
+The parties to this Agreement believe that the fees, terms and conditions of this Agreement are at least as favorable to the Service Provider as those prevailing at this time for comparable services provided by a non-affiliated company. It is the belief of the parties that in the absence of any comparable transactions, the fees, terms and conditions are at least as favorable as those that in good faith would be offered or could be obtained from a non-affiliated company.
+(d)
+The parties to this Agreement further believe that the methodologies used to calculate the fees set forth on
+Schedule B
+provide an equitable proration of the administrative
+2
+MECHANICS BANK – BANK SERVICES AGREEMENT
+overhead of the Service Provider’s overhead cost centers with respect to the Services and reflect that the Service Provider is being compensated for the fair value of the Services provided under this Agreement.
+3.
+Compliance with Laws
+.
+(a)
+In connection with the Services provided under this Agreement, each party shall comply with all applicable laws, regulations, and regulatory guidance. The Service Recipient shall reasonably cooperate with the Service Provider to provide reports and, during normal business hours and upon reasonable advance notice, access to books and records as are necessary for the Service Provider to evaluate compliance with applicable laws, regulations, and regulatory guidance. The Service Recipient shall coordinate with the Service Provider to deliver any required consumer, employee and other public disclosures.
+(b)
+Notwithstanding anything to the contrary herein, the Service Provider shall have no obligation to provide Services that would be reasonably likely to result in a violation of Section 23A or Section 23B of the Federal Reserve Act or Regulation W.
+(c)
+The Service Provider shall conduct or cause to be conducted periodic audits of all Services performed for the purpose of assessing compliance with applicable laws, regulations, and regulatory guidance. Reports of such audits shall be delivered to the Service Recipients upon request.
+4.
+Confidentiality
+. Each party hereto shall appropriately secure, maintain and not disclose or cause to be disclosed any confidential, proprietary or nonpublic data or information obtained from any other party hereto pursuant to this Agreement, except as required by law or in accordance with this Agreement.
+5.
+Indemnity
+. The Service Recipient shall indemnify, save, defend and hold harmless the Service Provider and its directors, officers, employees and agents (collectively, for the purpose of this paragraph, “
+Insiders
+”), from and against, and shall reimburse the Service Provider and its Insiders with respect to, any and all damages, liabilities, losses, obligations, actions, suits, disbursements, claims, deficiencies, penalties, interest, expenses, fines, assessments, charges and costs (including, without limitation, reasonable attorneys’ and expert witness’ fees, costs of investigation and court costs) of every kind (collectively, “
+Losses
+”) imposed on, incurred by or asserted against the Service Provider or its Insiders (or any of them) in any way relating to or arising from or out of (a) the performance of the Services under this Agreement, other than Losses that directly result from the gross negligence or willful misconduct of the Service Provider, (b) any acts or omissions of the Service Recipient or its Insiders, or (c) any breach of this Agreement by the Service Recipient.
+6.
+Warranty
+. EXCEPT AS EXPRESSLY PROVIDED HEREIN, THE SERVICES TO BE PROVIDED UNDER THIS AGREEMENT ARE FURNISHED “AS IS, WHERE IS,” WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+3
+MECHANICS BANK – BANK SERVICES AGREEMENT
+7.
+Limited Liability
+. NOTWITHSTANDING ANYTHING IN THIS AGREEMENT TO THE CONTRARY, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL ANY PARTY, UNDER ANY CIRCUMSTANCE, HAVE ANY LIABILITY TO ANY OTHER PARTY FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES CLAIMED BY SUCH OTHER PARTY UNDER THE TERMS OF OR DUE TO ANY BREACH OR NON PERFORMANCE OF THIS AGREEMENT.
+8.
+Force Majeure
+. The Service Provider shall not be liable for any failure or delay in the performance of the Services or any of its obligations hereunder, when such failure or delay is caused by or results from any cause whatsoever beyond the reasonable control of the Service Provider, including but not limited to, riot, war or hostilities between any nations, embargoes, government orders or regulations, acts of god, fire, accidents, strikes, differences with workmen, delays of carriers, lack of transportation facilities, inability to obtain materials, or curtailment of or failure in obtaining sufficient power, but the Service Provider shall give the Service Recipient prompt notice of the interruption and the cause thereof and shall use commercially reasonable efforts to resume full performance of its obligations under this Agreement as soon as possible.
+9.
+Term
+. This Agreement shall remain in effect until termination (a) by the mutual written consent of the parties hereto or (b) by the Service Provider, on the one hand, or the Service Recipient, on the other hand, upon giving thirty (30) days’ prior written notice to the other.
+10.
+Amendment
+. This Agreement may be amended, or any term waived, discharged or terminated, only by a written instrument signed by the parties hereto;
+provided
+,
+however
+, an amendment or modification to the Services provided to the Service Recipient, as set forth on
+Schedule B
+, may be made by the mutual written consent of the parties affected thereby without the consent of any other party hereto, which shall not affect any other terms or conditions of this Agreement.
+11.
+Notices
+. Whenever under this Agreement notice is required or permitted, such notice shall be in writing and signed by the party giving such notice, and deemed made, given and received upon the earlier of actual receipt or two (2) days after being mailed by United States registered or certified mail, return receipt requested, postage prepaid.
+12.
+Entire Agreement
+. This Agreement constitutes the entire agreement among the parties with respect to the subject matter hereof, and there are no agreements, understandings, representations or warranties among the parties on the subject matter hereof other than those set forth herein and therein.
+13.
+Severability
+. If any provision of this Agreement is held to be illegal, invalid or unenforceable under present or future laws, then (a) this Agreement is to be construed and enforced as if such illegal, invalid or unenforceable provision were not a part hereof, (b) the remaining provisions of this Agreement shall remain in full force and effect and shall not be affected by such illegal, invalid or unenforceable provision or by its severance from this Agreement, and (c) there shall be added automatically as a part of this Agreement a provision
+4
+MECHANICS BANK – BANK SERVICES AGREEMENT
+mutually agreed to which is similar in terms to such illegal, invalid or unenforceable provision as may be possible and still be legal, valid and enforceable.
+14.
+Binding Effect; Assignability
+. All of the terms, covenants, representations, warranties and conditions of this Agreement are binding upon, and inure to the benefit of and are enforceable by, the parties and their respective successors, representatives and permitted assigns. Nothing expressed or referred to herein is intended or is to be construed to give any person other than the parties hereto any legal or equitable right, remedy or claim under or in respect of this Agreement, it being the intent of the parties that this Agreement, and the terms hereof are for the sole benefit of the parties to this Agreement and not for the benefit of any other person. No party to this Agreement shall assign this Agreement, or any right or obligations under this Agreement, by operation of law or otherwise, in whole or in part, without the prior written consent of the other parties hereto, and any assignment made or attempted in violation of this Section is void and of no force or effect;
+provided
+,
+however
+, that the Service Provider may assign this Agreement and any of it rights or obligations under this Agreement to an affiliate of the Service Provider without the prior written consent of the Service Recipients.
+15.
+Governing Law
+. THIS AGREEMENT SHALL BE CONSTRUED IN ACCORDANCE WITH AND GOVERNED BY THE LAWS OF THE STATE OF TEXAS, WITHOUT REGARD FOR THE PROVISIONS THEREOF REGARDING CHOICE OF LAW.
+16.
+Authority.
+Each party represents that it has full right, power and authority to enter into and carry out the terms of this Agreement.
+17.
+Multiple Counterparts
+. For the convenience of the parties hereto, this Agreement may be signed in multiple counterparts, each of which shall be deemed an original, and all counterparts hereof so signed by the parties hereto, whether or not such counterpart shall bear the execution of each of the parties hereto, shall be deemed to be, and is to be construed as, one and the same Agreement. A telecopy, facsimile or electronic scan in “.pdf” format of a signed counterpart of this Agreement shall be sufficient to bind the party or parties whose signature(s) appear thereon.
+[Signature Page Follows]
+5
+MECHANICS BANK – BANK SERVICES AGREEMENT
+Schedules Omitted Pursuant to Rule 601(b)(10)(iv)
+[Signature Page to Affiliate Services Agreement]
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement by authorized officers thereof to be effective as of the date first above written.
+Mechanics Bank
+By:
+/s/ JOHN DECERO
+John DeCero
+Chief Executive Officer
+GJF Financial Management II, LLC
+By:
+/s/ GERALD J. FORD
+Gerald J. Ford
+Member
+MECHANICS BANK – BANK SERVICES AGREEMENT

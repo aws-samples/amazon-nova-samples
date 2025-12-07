@@ -1,0 +1,66 @@
+{
+  "summary": "Jillian C. Evanko will transition from her role as CEO and President of Chart Industries, Inc. to a Senior Advisor on January 6, 2026, providing consulting services related to the company's merger until its consummation or termination. She will receive a one-time cash fee of $1,000,000 per month, subject to a minimum of $4,000,000 and a maximum of $9,000,000, payable upon merger completion, and will retain vested equity awards but forfeit unvested ones.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the 2023 private placement memorandum comply with Regulation S safe harbor conditions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg S requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation S\"}, \"Reasoning\": \"First retrieve authoritative safe harbor conditions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg S compliance\", \"edgar_check\": \"Memorandum offshore offering clause\", \"regulation\": \"Regulation S\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR language against Regulation S requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial interpretation of 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Court rulings on Section 11 standard\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reasonable care standard under Section 11 Securities Act\"}, \"Reasoning\": \"Judicial interpretation requires case precedent analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(d) citation exists and analyze corresponding exemption requirements"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Citation validation + Rule 506(d) analysis\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(d)\"}, \"Reasoning\": \"First confirm citation accuracy before analysis\"}, {\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 506(d)\"}, \"Reasoning\": \"Retrieve regulation text for exemption requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

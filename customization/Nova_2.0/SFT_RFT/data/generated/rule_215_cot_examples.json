@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.215 defines \"accredited investor\" under the Securities Act of 1933, aligning it with the definition provided in rule 501(a) of the Act. This regulation was updated on October 9, 2020, as published in the Federal Register.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption under Regulation D require general solicitation? Show full reasoning chain"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Reg D solicitation rules and judicial clarifications\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 502(c)\"}, \"Reasoning\": \"First retrieve exact SEC language about solicitation prohibitions in private placements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Judicial interpretations of Regulation D general solicitation prohibition 2010-present\"}, \"Reasoning\": \"Need court rulings to clarify SEC's evolving interpretation of 'general solicitation' in digital age\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if XYZ Corp's 2022 S-1 filing complies with Section 5 registration requirements considering recent 10th Circuit rulings on materiality standards"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Section 5 requirements + circuit precedent + EDGAR filing validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5 of Securities Act 1933\"}, \"Reasoning\": \"Registration requirements originate from statutory language\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"10th Circuit rulings on Section 5 materiality 2018-2023\"}, \"Reasoning\": \"Circuit-specific interpretations affect registration standards\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"S-1 registration statement compliance\", \"edgar_check\": \"XYZ Corp 2022 S-1 filing\", \"regulation\": \"Section 5\", \"case_interpretation_check\": \"10th Circuit materiality precedent\"}, \"Reasoning\": \"Final validation requires statutory baseline + judicial interpretation + specific filing analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Check citation accuracy: 17 CFR 230.506(b)(2)(ii) for qualified institutional buyer definition"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Correct CFR citation format\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(b)(2)(ii)\"}, \"Reasoning\": \"Citation verification requires only structural validation against official CFR format\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

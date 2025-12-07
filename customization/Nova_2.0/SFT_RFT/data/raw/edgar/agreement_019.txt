@@ -1,0 +1,1016 @@
+EX-4.1
+3
+d56914dex41.htm
+EX-4.1
+EX-4.1
+Exhibit 4.1
+EXECUTION VERSION
+I
+NTERCONTINENTAL
+E
+XCHANGE
+, I
+NC
+.
+,
+as Issuer
+,
+and
+C
+OMPUTERSHARE
+T
+RUST
+C
+OMPANY
+, N.A.
+,
+as Trustee
+Seventh Supplemental Indenture
+Dated as of November 17, 2025
+to Senior Debt Indenture
+Dated as
+of August 13, 2018
+Establishing two separate series of Securities designated as:
+3.950% Senior Notes due 2028
+4.200% Senior Notes due 2031
+SEVENTH SUPPLEMENTAL INDENTURE, dated as of November 17, 2025 (herein called this
+“
+Seventh Supplemental Indenture
+”), between Intercontinental Exchange, Inc., a corporation duly organized and existing under the laws of the State of Delaware (herein called the “
+Company
+”), and Computershare
+Trust Company, N.A., as successor to Wells Fargo Bank, National Association, as Trustee under the Base Indenture referred to below (herein called the “
+Trustee
+”).
+WITNESSETH:
+WHEREAS, the
+Company has heretofore executed and delivered to the Trustee an indenture dated as of August 13, 2018 (herein called the “
+Base Indenture
+,” together with this Seventh Supplemental Indenture, the
+“
+Indenture
+”), to provide for the issuance from time to time of its unsecured debentures, notes or other evidences of indebtedness (herein called the “
+Securities
+”), the form and terms of which are to be
+established as set forth in Sections 201 and 301 of the Base Indenture;
+WHEREAS, Section 901 of the Base Indenture provides, among
+other things, that the Company and the Trustee may enter into indentures supplemental to the Base Indenture to, among other things, establish the form and terms of the Securities of any series as permitted in Sections 201 and 301 of the Base
+Indenture;
+WHEREAS, the Company desires to create two separate series of Securities, consisting of one series in an aggregate principal
+amount of $600,000,000 to be designated the “3.950% Senior Notes due 2028” (herein called the “
+2028 Notes
+”) and one series in an aggregate principal amount of $650,000,000 to be designated the “4.200% Senior
+Notes due 2031” (herein called the “
+2031 Notes
+” and, together with the 2028 Notes, the “
+Notes
+”), and all action on the part of the Company necessary to authorize the issuance of the Notes under the Base
+Indenture and this Seventh Supplemental Indenture has been duly taken;
+WHEREAS, the Company desires to issue the Notes in accordance with
+Section 2.3 of this Seventh Supplemental Indenture and treat the Notes as two separate series of Securities for all purposes, as amended or supplemented from time to time in accordance with the terms of this Seventh Supplemental Indenture and
+the Base Indenture; and
+WHEREAS, all acts and things necessary to make the Notes, when executed by the Company and completed,
+authenticated and delivered by the Trustee as provided in the Indenture, the valid and binding obligations of the Company and to constitute a valid and binding agreement according to its terms, have been done and performed.
+NOW, THEREFORE, THIS SEVENTH SUPPLEMENTAL INDENTURE WITNESSETH:
+That in consideration of the premises and of the acceptance and purchase of the Notes by the Holders thereof and of the acceptance of this
+trust by the Trustee, the Company covenants and agrees with the Trustee, for the equal benefit of Holders of the Notes, as follows:
+ARTICLE 1.
+DEFINITIONS
+Except to the
+extent such terms are otherwise defined in this Seventh Supplemental Indenture or the context clearly requires otherwise, all terms used in this Seventh Supplemental Indenture which are defined in the Base Indenture or the forms of the 2028 Notes
+and the 2031 Notes attached hereto as
+Exhibit A
+and
+Exhibit B
+, respectively, have the meanings assigned to them therein.
+In
+addition, as used in this Seventh Supplemental Indenture, the following terms have the following meanings:
+“
+2028 Notes
+”
+has the meaning given to such term in the recitals hereof.
+“
+2028 Par Call Date
+” means November 1, 2028.
+“
+2031 Notes
+” has the meaning given to such term in the recitals hereof.
+“
+2031 Par Call Date
+” means February 15, 2031.
+“
+Attributable Debt
+” with regard to a Sale and Lease-Back Transaction with respect to any Principal Property means, at the
+time of determination, the present value of the total net amount of rent required to be paid under such lease during the remaining term thereof (including any period for which such lease has been extended), discounted at the rate of interest set
+forth or implicit in the terms of such lease (or, if not practicable to determine such rate, the weighted average interest rate per annum borne by the securities of all series then Outstanding under the Indenture) compounded semi-annually. In the
+case of any lease which is terminable by the lessee upon the payment of a penalty, such net amount shall be the lesser of (x) the net amount determined assuming termination upon the first date such lease may be terminated (in which case the net
+amount shall also include the amount of the penalty, but shall not include any rent that would be required to be paid under such lease subsequent to the first date upon which it may be so terminated) or (y) the net amount determined assuming no
+such termination.
+“
+Bankruptcy Law
+” means Title 11, U.S. Code or any similar federal or state law for the relief of
+debtors.
+“
+Base Indenture
+” has the meaning provided in the recitals hereof.
+“
+Business Day
+” means any weekday that is not a day on which banking institutions in New York City are authorized or
+obligated by law or regulation to be closed.
+“
+Capital Stock
+” means (i) in the case of a corporation or a company,
+corporate stock or shares; (ii) in the case of an association or business entity, any and all shares, interests, participations, rights or other equivalents (however designated) of corporate stock; (iii) in the case of a partnership or
+limited liability company, partnership or membership interests (whether general or limited); and (iv) any other interest or participation that confers on a person the right to receive a share of the profits and losses of, or distributions of
+assets of, the issuing person.
+-2-
+“
+Company
+” means the Person named as such in the preamble hereof and,
+subject to the provisions of Section 3.3, any successor to the Company.
+“
+Consolidated Net Worth
+” means, the
+consolidated stockholders’ equity of the Company and its Subsidiaries, as defined according to GAAP.
+“
+Credit
+Agreement
+”
+means the Credit Agreement, dated as of April 3, 2014, as amended by the First Amendment to Credit Agreement, dated as of May 15, 2015, as further amended by the Second Amendment to the Credit Agreement, dated
+as of November 9, 2015, as further amended by the Third Amendment to the Credit Agreement, dated as of November 13, 2015, as further amended by the Fourth Amendment to the Credit Agreement, dated as of August 18, 2017, as further
+amended by the Fifth Amendment to the Credit Agreement, dated as of August 18, 2017, as further amended by the Sixth Amendment to the Credit Agreement, dated as of August 9, 2018, as further amended by the Seventh Amendment to the Credit
+Agreement, dated as of August 14, 2020, as further amended by the Eighth Amendment to the Credit Agreement, dated as of August 21, 2020, as further amended by the Ninth Amendment to the Credit Agreement, dated as of March 8, 2021, as
+further amended by the Tenth Amendment to the Credit Agreement, dated as of October 15, 2021, as further amended by the Eleventh Amendment to the Credit Agreement, dated as of May 11, 2021, as further amended by the Twelfth Amendment,
+dated as of May 25, 2022, and as further amended by the Thirteenth Amendment, dated as of May 31, 2024, by and among the Company (formerly IntercontinentalExchange Group, Inc.), as borrower, Wells Fargo Bank, National Association, as
+administrative agent, issuing lender and swingline lender, Bank of America, N.A., as syndication agent, and each of the lenders signatory thereto, as amended, restated, supplemented, increased, extended, renewed, replaced, refinanced (with the same
+or other lenders) or otherwise modified from time to time.
+“
+Definitive Securities
+” means certificated Securities
+registered in the name of the Holder thereof and issued in accordance with Section 2.2(b) hereof, substantially in the form of
+Exhibit A
+hereto (with respect to the 2028 Notes) or
+Exhibit B
+hereto (with respect to the 2031 Notes),
+except that such Security shall not bear the Global Security Legend.
+“
+Depositary
+” means DTC, together with any Person
+succeeding thereto by merger, consolidation or acquisition of all or substantially all of its assets, including substantially all of its securities payment and transfer operations.
+“
+DTC
+” means The Depository Trust Company, a New York corporation, having a principal office at 55 Water Street, New York,
+New York 10041-0099.
+“
+Events of Default
+” has the meaning specified in Section 5.1 hereof.
+“
+GAAP
+” means generally accepted accounting principles in the United States of America as in effect from time to time.
+“
+Global Security Legend
+” means the legend set forth in Section 204 of the Base Indenture.
+“
+H.15
+” has the meaning specified in the definition of “Treasury Rate.”
+-3-
+“
+H.15 TCM
+” has the meaning specified in the definition of “Treasury
+Rate.”
+“
+Indebtedness
+” means any indebtedness (whether being principal, premium, interest or other amounts) for
+or in respect of any borrowed money, or evidenced by notes, bonds, debentures or other instruments for money borrowed, or under any lease required to be capitalized under GAAP as in effect on the Issue Date, or any liability under or in respect of
+any banker’s acceptance (other than a daylight overdraft).
+“
+Indenture
+” has the meaning provided in the recitals
+hereof.
+“
+Indirect Participant
+” means a Person who holds a beneficial interest in a Global Security through a
+Participant.
+“
+Issue Date
+” means November 17, 2025, the date on which the Notes are originally issued under this
+Seventh Supplemental Indenture.
+“
+Lien
+” means any lien, mortgage, deed of trust, hypothecation, pledge, security
+interest, charge or encumbrance of any kind.
+“
+Make-Whole Optional Redemption Price
+” has the meaning specified in
+Section 4.1(a).
+“
+Maturity
+,” when used with respect to any Note, means the date on which the principal of such
+Note or an instrument of principal becomes due and payable as therein or herein provided, whether at stated maturity or by declaration of acceleration, call for redemption or otherwise.
+“
+Notes
+” has the meaning given to such term in the recitals hereof.
+“
+Optional Redemption Price
+” means the Make-Whole Optional Redemption Price or the Par Call Optional Redemption Price.
+“
+Par Call Date
+” means the 2028 Par Call Date or the 2031 Par Call Date.
+“
+Par Call Optional Redemption Price
+” has the meaning specified in Section 4.1(b).
+“
+Participant
+” means, with respect to the Depositary, a Person who has an account with the Depositary.
+“
+Paying Agent
+” means, initially, the Trustee, having its Corporate Trust Office at Attn: Corporate Trust Services –
+ICE Administrator, 1505 Energy Park Drive, St. Paul, MN 55108, and any successor Paying Agent appointed in accordance with the terms of the Indenture.
+“
+Permitted Liens
+” means:
+(a) Liens imposed by law or any governmental authority for taxes, assessments, levies or charges that are not yet overdue by more than 60 days
+or are being contested in good faith (and, if necessary, by appropriate proceedings) or for commitments that have not been violated;
+-4-
+(b) carriers’, warehousemen’s, mechanics’, materialmen’s,
+repairmen’s, landlords’ and similar Liens imposed by law or which arise by operation of law and which are incurred in the ordinary course of business or where the validity or amount thereof is being contested in good faith (and, if
+necessary, by appropriate proceedings);
+(c) Liens incurred or pledges or deposits made in compliance with workers’ compensation,
+unemployment insurance and other social security laws or regulations;
+(d) Liens incurred or pledges or deposits made to secure the
+performance of bids, trade contracts, tenders, leases, statutory obligations, surety, customs and appeal bonds, performance bonds, customer deposits and other obligations of a similar nature, in each case in the ordinary course of business;
+(e) judgment Liens in respect of judgments that do not constitute an Event of Default under the Indenture;
+(f) easements, zoning restrictions, minor title defects, irregularities or imperfections, restrictions on use, rights of way, leases,
+subleases and similar charges and other similar encumbrances on real property imposed by law or arising in the ordinary course of business that do not secure any monetary obligations (other than customary maintenance requirements) and which could
+not reasonably be expected to have a material adverse effect on the business or financial condition of the Company and its Subsidiaries taken as a whole;
+(g) Liens on (1) any property or asset prior to the acquisition thereof (
+provided
+that such Lien may only extend to such property
+or asset) or (2) property of a Significant Subsidiary where (A) such Significant Subsidiary becomes a Subsidiary after the Issue Date, (B) the Lien exists at the time such Significant Subsidiary becomes a Subsidiary, (C) the Lien
+was not created in contemplation of such Significant Subsidiary becoming a Subsidiary and (D) the principal amount secured by the Lien at the time such Significant Subsidiary becomes a Subsidiary is not subsequently increased or the Lien is not
+extended to any other assets other than those owned by the entity becoming a Subsidiary;
+(h) any Lien existing on the Issue Date;
+(i) Liens upon fixed, capital, real or tangible personal property acquired after the Issue Date (by purchase, construction, development,
+improvement, capital lease or otherwise) by the Company or any Significant Subsidiary, each of which was created for the purpose of securing Indebtedness representing, or incurred to finance, refinance or refund, the cost (including the cost of
+construction, development or improvement) of such property;
+provided
+that no such Lien shall extend to or cover any property other than the property so acquired and improvements thereon;
+(j) Liens in favor of the Company or any Significant Subsidiary;
+-5-
+(k) Liens arising from the sale of accounts receivable for which fair equivalent value is
+received;
+(l) any extension, renewal or replacement (or successive extensions, renewals or replacements) in whole or in part, of any
+Liens referred to in the foregoing clauses (g), (h), (i), (j) and (k);
+provided
+that the principal amount of Indebtedness secured thereby and not otherwise authorized as a Permitted Lien shall not exceed the principal amount of Indebtedness,
+plus any premium or fee payable in connection with any such extension, renewal or replacement, so secured at the time of such extension, renewal or replacement;
+(m) Liens securing the Company’s obligations or those of any of the Subsidiaries of the Company in respect of any swap agreements
+entered into (1) in the ordinary course of business and for
+non-speculative
+purposes or (2) solely in order to serve clearing, depositary, regulated exchange or settlement activities in respect
+thereof;
+(n) Liens created in connection with any share repurchase program in favor of any broker, dealer, custodian, trustee or agent
+administering or effecting transactions pursuant to a share repurchase program;
+(o) Liens consisting of an agreement to sell, transfer or
+dispose of any asset or property (to the extent such sale, transfer or disposition is not prohibited by Section 3.2 and Section 3.3 hereof; and
+(p) Liens arising in connection with the Company’s operations or the operations of any of the Company’s Subsidiaries relating to
+clearing, depository, matched principal, regulated exchange or settlement activities, including, without limitation, Liens on securities sold by the Company or any Subsidiary in repurchase agreements, reverse repurchase agreements, sell buy back and
+buy sell back agreements, securities lending and borrowing agreements and any other similar agreement or transaction entered into in the ordinary course of clearing, depository, matched principal and settlement operations or in the management of
+liabilities.
+“
+Person
+” means any individual, firm, corporation, partnership, association, joint venture, tribunal,
+trust, government or political subdivision or agency or instrumentality thereof, or any other entity or organization and includes a “person” as used in Section 13(d)(3) of the Exchange Act.
+“
+Principal Property
+” means the land, improvements, buildings and fixtures (including any leasehold interest therein)
+constituting a corporate office, facility or other capital asset within the United States (including its territories and possessions) which is owned or leased by the Company or any of its Significant Subsidiaries unless the Company’s Board of
+Directors has determined in good faith that such office or facility is not of material importance to the total business conducted by the Company and its Significant Subsidiaries taken as a whole. With respect to any Sale and Lease-Back Transaction
+or series of related Sale and Lease-Back Transactions, the determination of whether any property is a Principal Property shall be determined by reference to all properties affected by such transaction or series of transactions.
+-6-
+“
+Regular Record Date
+” for the interest payable on any Interest Payment
+Date means, in the case of the 2028 Notes, May 15 and November 15 and, in the case of the 2031 Notes, March 1 and September 1, in each case, whether or not a Business Day, immediately preceding the applicable Interest Payment
+Date.
+“
+Remaining Life
+” has the meaning specified in the definition of “Treasury Rate.”
+“
+Sale and Lease-Back Transaction
+” means any arrangement with any person providing for the leasing by the Company or any of
+its Significant Subsidiaries of any Principal Property, whether now owned or hereafter acquired, which Principal Property has been or is to be sold or transferred by the Company or such Significant Subsidiary to such person.
+“
+Securities
+” has the meaning given to such term in the recitals hereof.
+“
+Seventh Supplemental Indenture
+” has the meaning provided in the preamble hereof.
+“
+Signature Law
+” has the meaning specified in Section 9.8.
+“
+Significant Subsidiary
+” means, with respect to any person, any Subsidiary of such person that satisfies the criteria for a
+“Significant Subsidiary” set forth in Rule
+1-02(w)
+of Regulation
+S-X
+under the Exchange Act.
+“
+Subsidiary
+” means any corporation, limited liability company or other similar type of business entity in which the Company
+or one or more of the Company’s Subsidiaries together own more than 50% of the total voting power of shares of Capital Stock entitled (without regard to the occurrence of any contingency) to vote in the election of the board of directors or
+similar governing body of such corporation, limited liability company or other similar type of business entity, directly or indirectly.
+“
+Treasury Rate
+” means, with respect to any Redemption Date, the yield determined by the Company in accordance with the
+following two paragraphs:
+The Treasury Rate shall be determined by the Company after 4:15 p.m., New York City time (or after such time as
+yields on U.S. government securities are posted daily by the Board of Governors of the Federal Reserve System), on the third Business Day preceding the redemption date based upon the yield or yields for the most recent day that appear after such
+time on such day in the most recent statistical release published by the Board of Governors of the Federal Reserve System designated as “Selected Interest Rates (Daily) - H.15” (or any successor designation or publication)
+(“
+H.15
+”) under the caption “U.S. government securities–Treasury constant maturities–Nominal” (or any successor caption or heading) (“
+H.15 TCM
+”). In determining the Treasury Rate, the
+Company shall select, as applicable: (1) the yield for the Treasury constant maturity on H.15 exactly equal to the period from the redemption date to the Par Call Date (the “
+Remaining Life
+”); or (2) if there is no such
+Treasury constant maturity on H.15 exactly equal to the Remaining Life, the two yields – one yield corresponding to the Treasury constant maturity on H.15 immediately shorter than and one yield corresponding to the Treasury constant maturity
+on H.15 immediately longer than the Remaining Life – and shall interpolate to the Par Call Date on a straight-line basis (using the actual number of days) using such yields and rounding the result to three decimal places; or (3) if there
+is no such Treasury constant maturity on H.15 shorter than or longer than the Remaining Life, the yield for the single
+-7-
+Treasury constant maturity on H.15 closest to the Remaining Life. For purposes of this paragraph, the applicable Treasury constant maturity or maturities on H.15 shall be deemed to have a
+maturity date equal to the relevant number of months or years, as applicable, of such Treasury constant maturity from the redemption date.
+If on the third Business Day preceding the Redemption Date H.15 TCM is no longer published, the Company shall calculate the Treasury Rate
+based on the rate per annum equal to the semi-annual equivalent yield to maturity at 11:00 a.m., New York City time, on the second Business Day preceding such Redemption Date of the United States Treasury security maturing on, or with a maturity
+that is closest to, the Par Call Date, as applicable. If there is no United States Treasury security maturing on the Par Call Date but there are two or more United States Treasury securities with a maturity date equally distant from the Par Call
+Date, one with a maturity date preceding the Par Call Date and one with a maturity date following the Par Call Date, the Company shall select the United States Treasury security with a maturity date preceding the Par Call Date. If there are two or
+more United States Treasury securities maturing on the Par Call Date or two or more United States Treasury securities meeting the criteria of the preceding sentence, the Company shall select from among these two or more United States Treasury
+securities the United States Treasury security that is trading closest to par based upon the average of the bid and asked prices for such United States Treasury securities at 11:00 a.m., New York City time. In determining the Treasury Rate in
+accordance with the terms of this paragraph, the semi-annual yield to maturity of the United States Treasury security shall be based upon the average of the bid and asked prices (expressed as a percentage of principal amount) at 11:00 a.m., New York
+City time, of such United States Treasury security, and rounded to three decimal places.
+“
+Trustee
+” means the person
+named as such in the preamble hereof and, subject to the provisions of Article Six of the Base Indenture, any successor to that person.
+ARTICLE 2.
+THE NOTES
+Section 2.1
+Issue of Notes
+.
+(a) A series of Securities, which shall be designated the “3.950% Senior Notes due 2028,” shall be executed, authenticated and
+delivered in accordance with the provisions of, and shall in all respects be subject to, the terms, conditions and covenants of, the Base Indenture and this Seventh Supplemental Indenture (including the form of the 2028 Notes attached hereto as
+Exhibit A
+). The aggregate principal amount of 2028 Notes which may be authenticated and delivered under this Seventh Supplemental Indenture shall not, except as permitted by the provisions of the Base Indenture, initially exceed $600,000,000.
+The Company may from time to time or at any time, without notice to, or the consent of, any Holder of the 2028 Notes, create and issue additional 2028 Notes having the same terms as the 2028 Notes (except for the public offering price, issue date
+and, if applicable, the initial interest accrual date and first Interest Payment Date), which additional 2028 Notes shall increase the aggregate principal amount of the 2028 Notes and, together with the 2028 Notes, will constitute a single series
+under the Indenture and vote together as one class on all matters with respect to the 2028
+-8-
+Notes;
+provided
+,
+however
+, that any additional 2028 Notes that are not fungible with existing 2028 Notes for U.S. federal income tax purposes will have a separate CUSIP, ISIN and
+other identifying number than the existing 2028 Notes.
+(b) A series of Securities, which shall be designated the “4.200% Senior
+Notes due 2031,” shall be executed, authenticated and delivered in accordance with the provisions of, and shall in all respects be subject to, the terms, conditions and covenants of, the Base Indenture and this Seventh Supplemental Indenture
+(including the form of the 2031 Notes attached hereto as
+Exhibit B
+). The aggregate principal amount of 2031 Notes which may be authenticated and delivered under this Seventh Supplemental Indenture shall not, except as permitted by the
+provisions of the Base Indenture, initially exceed $650,000,000. The Company may from time to time or at any time, without notice to, or the consent of, any Holder of the 2031 Notes, create and issue additional 2031 Notes having the same terms as
+the 2031 Notes (except for the public offering price, issue date and, if applicable, the initial interest accrual date and first Interest Payment Date), which additional 2031 Notes shall increase the aggregate principal amount of the 2031 Notes and,
+together with the 2031 Notes, will constitute a single series under the Indenture and vote together as one class on all matters with respect to the 2031 Notes;
+provided
+,
+however
+, that any additional 2031 Notes that are not fungible
+with existing 2031 Notes for U.S. federal income tax purposes will have a separate CUSIP, ISIN and other identifying number than the existing 2031 Notes.
+Section 2.2
+Form of Notes; Incorporation of Terms
+.
+(a) The Notes of each series shall be issued initially in the form of one or more Global Securities and, together with the Trustee’s
+certificate of authentication thereon, shall be in substantially the form set forth in
+Exhibit A
+or
+Exhibit B
+attached hereto, as applicable. The Notes may have such notations, legends or endorsements approved as to form by the Company
+and required, as applicable, by law, stock exchange or depository rules and agreements to which the Company is subject or usage. The terms of the 2028 Notes set forth in
+Exhibit
+A
+and the 2031 Notes set forth in
+Exhibit
+B
+are herein incorporated by reference and are part of the terms of this Seventh Supplemental Indenture. The Notes shall be issuable in definitive, fully registered form without coupons only in minimum denominations of $2,000 and any integral
+multiples of $1,000 in excess thereof.
+(b) The 2028 Notes and the 2031 Notes issued in global form shall be substantially in the form of
+Exhibit A
+and
+Exhibit B
+attached hereto, respectively (including the Global Security Legend thereon). The 2028 Notes and the 2031 Notes issued in definitive certificated form in accordance with the terms of the Base Indenture and this
+Seventh Supplemental Indenture, if any, shall be substantially in the form of
+Exhibit A
+and
+Exhibit B
+, respectively, attached hereto (but without the Global Security Legend thereon). Each Global Security shall represent such of the
+Outstanding Notes as shall be specified therein and each shall provide that it shall represent the aggregate principal amount of Outstanding Notes from time to time endorsed thereon and that the aggregate principal amount of Outstanding Notes
+represented thereby may from time to time be reduced or increased, as appropriate, to reflect exchanges and redemptions. Any endorsement of a Global Security to reflect the amount of any increase or decrease in the aggregate principal amount of
+Outstanding Notes represented thereby shall be made by the Trustee in accordance with Section 2.7 hereof pursuant to instructions given by the
+-9-
+Holder thereof as required by Section 2.6 hereof.
+Section 2.3
+Execution and Authentication
+. The Trustee, upon a Company Order and pursuant to the terms of the Base Indenture and this Seventh Supplemental Indenture, shall authenticate and deliver the 2028 Notes for original issue in an initial aggregate
+principal amount of $600,000,000 and the 2031 Notes for original issue in an initial aggregate principal amount of $650,000,000. Such Company Order shall specify the amount of the Notes of each series to be authenticated and the date on which the
+original issue of Notes of each series is to be authenticated.
+Section 2.4
+Global Securities
+. The Depositary for the Global
+Securities issued under this Seventh Supplemental Indenture shall be DTC in the City of New York. The provisions of clauses (1), (2), (3) and (4) below shall apply only to Global Securities:
+(1) Each Global Security authenticated under this Seventh Supplemental Indenture shall be registered in the name of the
+Depositary designated for such Global Security or a nominee thereof and delivered to such Depositary or a nominee thereof or custodian therefor, and each such Global Security shall constitute a single Security for all purposes of the Indenture.
+(2) Notwithstanding any other provision in the Indenture, no Global Security may be exchanged in whole or in part for
+Securities registered, and no transfer of a Global Security in whole or in part may be registered, in the name of any Person other than the Depositary for such Global Security or a nominee thereof unless (A) such Depositary has notified the
+Company that it is unwilling or unable or no longer permitted under applicable law to continue as Depositary for such Global Security, or the Depositary ceases to be a clearing agency registered under the Exchange Act, and in each case the Company
+has not appointed a successor Depositary within 90 days of receipt of such notice or (B) an Event of Default with respect to such series of Securities has occurred and is continuing and a Holder of Securities of such series makes such request.
+(3) Subject to clause (2) above, any exchange of a Global Security for other Securities may be made in whole or in
+part, and all Securities issued in exchange for a Global Security or any portion thereof shall be registered in such names as the Depositary for such Global Security shall direct.
+(4) Every Security authenticated and delivered upon registration of transfer of, or in exchange for or in lieu of, a Global
+Security or any portion thereof, shall be authenticated and delivered in the form of, and shall be, a Global Security, unless such Security is registered in the name of a Person other than the Depositary for such Global Security or a nominee
+thereof.
+Section 2.5
+Place of Payment
+. The Place of Payment in respect of the Notes will be at the office or agency of the
+Company in The City of New York, State of New York or at the designated office or agency of the Paying Agent.
+-10-
+Section 2.6
+Transfer and Exchange
+.
+(a) The transfer and exchange of beneficial interests in the Global Securities shall be effected through the Depositary, in accordance with
+the provisions of the Indenture and the then Applicable Procedures of the Depositary. In connection with all transfers and exchanges of beneficial interests, the transferor of such beneficial interest must deliver to the Trustee either (A)(1) a
+written order from a Participant or an Indirect Participant given to the Depositary in accordance with the Applicable Procedures directing the Depositary to credit or cause to be credited a beneficial interest in another Global Security in an amount
+equal to the beneficial interest to be transferred or exchanged and (2) instructions given in accordance with the Applicable Procedures containing information regarding the Participant account to be credited with such increase or, if Definitive
+Securities are at such time permitted to be issued pursuant to the Indenture, (B)(1) a written order from a Participant or an Indirect Participant given to the Depositary in accordance with the Applicable Procedures directing the Depositary to cause
+to be issued a Definitive Security in an amount equal to the beneficial interest to be transferred or exchanged and (2) instructions given by the Depositary to the Security Registrar containing information regarding the Person in whose name
+such Definitive Security shall be registered to effect the transfer or exchange referred to in (1) above. Upon satisfaction of all of the requirements for transfer or exchange of beneficial interests in Global Securities contained in the
+Indenture and the Notes or otherwise applicable under the Securities Act, the Security Registrar shall adjust the principal amount of the relevant Global Securities pursuant to Section 2.7 hereof.
+(b) Upon request by a Holder of Definitive Securities and such Holder’s compliance with the provisions of this Section 2.6(b), the
+Security Registrar shall register the transfer or exchange of Definitive Securities. Prior to such registration of transfer or exchange, the requesting Holder shall present or surrender to the Trustee the Definitive Securities duly endorsed or
+accompanied by a written instruction of transfer in form satisfactory to the Security Registrar duly executed by such Holder or by its attorney, duly authorized in writing. The Trustee shall cancel any such Definitive Securities so surrendered, and
+the Company shall execute and, upon receipt of a Company Order pursuant to Section 303 of the Base Indenture, the Trustee shall authenticate and deliver to the Person designated in the instructions a new Definitive Security in the appropriate
+principal amount. Any Definitive Security issued pursuant to this Section 2.6(b) shall be registered in such name or names and in such authorized denomination or denominations as the Holder of such beneficial interest shall instruct the
+Security Registrar through instructions from the Depositary and the Participant or Indirect Participant. The Trustee shall deliver such Definitive Securities to the Persons in whose names such Definitive Securities are so registered. In addition,
+the requesting Holder shall provide any additional certifications, documents and information, as applicable, required pursuant to Section 305 of the Base Indenture.
+Section 2.7
+Cancellation or Adjustment of Global Securities
+. At such time as all beneficial interests in a particular Global
+Security have been exchanged for Definitive Securities or a particular Global Security has been redeemed, repurchased or cancelled in whole and not in part, each such Global Security shall be returned to or retained and cancelled by the Trustee in
+accordance with Section 309 of the Base Indenture. At any time prior to such cancellation, if any beneficial interest in a Global Security is exchanged for or transferred to a Person who will take delivery thereof in the form of a beneficial
+interest for Definitive
+-11-
+Securities, the principal amount of Notes represented by such Global Security shall be reduced accordingly and an endorsement shall be made on such Global Security by the Trustee or by the
+Depositary at the direction of the Trustee to reflect such reduction; and if the beneficial interest is being exchanged for or transferred to a Person who will take delivery thereof in the form of a beneficial interest in another Global Security,
+such other Global Security shall be increased accordingly and an endorsement shall be made on such Global Security by the Security Registrar or by the Depositary at the direction of the Security Registrar to reflect such increase.
+Section 2.8
+Forms Generally
+. The Base Indenture is hereby amended, with respect to the Notes only, by replacing the text of the
+penultimate sentence of Section 202 thereof with the following text:
+“Unless the certificate of authentication hereon has been
+executed by the Trustee or an authentication agent on its behalf referred to on the reverse hereof by manual, facsimile or electronic signature, this Security shall not be entitled to any benefit under the Indenture or be valid or obligatory for any
+purpose.”
+Section 2.9
+Execution, Authentication, Delivery and Dating
+.
+(a) The Base Indenture is hereby amended, with respect to the Notes only, by replacing the text of the second and third sentences of
+Section 303 thereof with the following text:
+“The signature of any of these officers on the Securities may be manual, facsimile
+or electronic.
+Securities bearing the manual, facsimile or electronic signatures of individuals who were at any time the proper officers
+of the Company, as the case may be, shall bind the Company, notwithstanding that such individuals or any of them have ceased to hold such offices prior to the authentication and delivery of such Securities or did not hold such offices at the date of
+issuance of such Securities.”
+(b) The Base Indenture is hereby amended, with respect to the Notes only, by replacing the text of
+the penultimate sentence of Section 303 thereof with the following text:
+“No Security shall be entitled to any benefit under
+this Indenture or be valid or obligatory for any purpose unless there appears on such Security a certificate of authentication substantially in the form provided for herein executed by the Trustee by manual, facsimile or electronic signature, and
+such certificate upon any Security shall be conclusive evidence, and the only evidence, that such Security has been duly authenticated and delivered hereunder.”
+-12-
+ARTICLE 3.
+COVENANTS
+Section 3.1
+Limitations on Liens
+. The Company shall not (nor shall it permit any of its Significant Subsidiaries to) create or
+permit to exist any Lien on any Principal Property of the Company or any of its Significant Subsidiaries (or on any Capital Stock of a Significant Subsidiary), whether owned on the Issue Date or thereafter acquired, to secure any Indebtedness,
+unless the Company shall contemporaneously secure the Notes (together with, if the Company so determines, any other Indebtedness of, or guaranteed by, the Company or such Significant Subsidiary then existing or thereafter created which is not
+subordinated to the Notes) equally and ratably with (or, at the Company’s option, prior to) that obligation. The foregoing restriction, however, will not require the Company to secure the Notes if the Lien consists of either of the following:
+(a) Permitted Liens (it being understood that the definition of Permitted Liens is not intended to broaden the interpretation or otherwise
+expand the scope of the first sentence of this Section 3.1); or
+(b) Liens securing Indebtedness if at the time the Indebtedness is
+incurred and after giving effect to such Indebtedness and to the retirement of Indebtedness which is concurrently being retired, the sum of (i) the aggregate principal amount of all Indebtedness of the Company and its Significant Subsidiaries
+secured by Liens that are restricted by, and not otherwise permitted by, the provisions described under this Section 3.1 and (ii) the aggregate amount of Attributable Debt of all of the Company’s Sale and Lease-Back Transactions not
+otherwise permitted by the provisions described under the first sentence of Section 3.2 hereof, does not exceed 15% of Consolidated Net Worth.
+Section 3.2
+Limitation on Sale and Lease-Back Transactions
+. The Company shall not, and shall not permit any of its Significant
+Subsidiaries to, enter into any Sale and Lease-Back Transaction with respect to any Principal Property, other than (x) any such Sale and Lease-Back Transaction involving a lease for a term of not more than three years or (y) any such Sale
+and Lease-Back Transaction between the Company and one of its Significant Subsidiaries or between its Significant Subsidiaries, unless:
+(a) the Company or such Significant Subsidiary, as applicable, could have incurred Indebtedness secured by a Lien on the Principal Property
+involved in such Sale and Lease-Back Transaction in an amount at least equal to the Attributable Debt with respect to such Sale and Lease-Back Transaction, without equally and ratably securing the Notes, pursuant to Section 3.1 hereof; or
+(b) the proceeds of such Sale and Lease-Back Transaction are at least equal to the fair market value of the affected Principal Property (as
+determined in good faith by the Board of Directors of the Company or such Significant Subsidiary, as the case may be) and the Company applies an amount equal to the net proceeds of such Sale and Lease-Back Transaction within 365 days of such Sale
+and Lease-Back Transaction to any (or a combination) of:
+(i) the prepayment or retirement of the Notes;
+(ii) the prepayment or retirement (other than any mandatory retirement, mandatory prepayment or sinking fund payment or by
+payment at maturity) of other Indebtedness of the Company or of one of its Significant Subsidiaries (other than Indebtedness that is subordinated to the Notes or Indebtedness owed to the Company or one of its Significant Subsidiaries) that matures
+more than 12 months after its creation; or
+-13-
+(iii) the purchase, construction, development, expansion or improvement of
+other comparable property.
+Notwithstanding the foregoing, the Company and its Significant Subsidiaries may enter into any Sale and
+Lease-Back Transaction if at the time such Sale and Lease-Back Transaction is incurred and after giving effect to such Sale and Lease-Back Transaction and the retirement of any Sale and Lease-Back Transaction which is concurrently being retired, the
+sum of (i) the aggregate principal amount of all Indebtedness of the Company and its Significant Subsidiaries secured by Liens that are restricted by, and not otherwise permitted by, the provisions described under Section 3.1 hereof and
+(ii) the aggregate amount of Attributable Debt of all of the Company’s Sale and Lease-Back Transactions not otherwise permitted by the provisions described under the first sentence of this Section 3.2, does not exceed 15% of
+Consolidated Net Worth.
+Section 3.3
+Limitations on Mergers and Other Transactions
+. Section 801 of the Base Indenture
+shall, with respect to the Notes, be replaced with the following:
+(a) “The Company will not consolidate or amalgamate with or merge
+into any Person and will not convey, transfer or lease all or substantially all of the assets of the Company and its Subsidiaries, taken as a whole, to any Person, unless:
+(1) either (x) the Company is the surviving Person or (y) the Person surviving any such consolidation, amalgamation
+or merger (if other than the Company) or the Person to which such conveyance, transfer or lease has been made expressly assumes the Company’s obligations on the Notes and the due and punctual performance and observance of all of the covenants
+and agreements of the Indenture to be performed or observed by the Company and the Person so assuming the Company’s obligations is organized under the laws of the United States or any state thereof; and
+(2) immediately after giving effect to the transaction, no Event of Default (and no event which, after notice or lapse of time
+or both, would become an Event of Default) shall have happened and be continuing.
+(b) Notwithstanding the foregoing paragraph (a), the
+restrictions in paragraph (a) of this Section will not apply to any conveyance, transfer, lease or other disposition of assets between or among the Company and its Subsidiaries.”
+ARTICLE 4.
+REDEMPTION
+Section 4.1
+Optional Redemption by Company
+.
+(a) Subject to Article Eleven of the Base Indenture, prior to the Par Call Date, the Company may redeem the Notes of the applicable series, at
+its option, in whole or in part, at any time and from time to time, at a redemption price (expressed as a percentage of principal amount and rounded to three decimal places) (the “
+Make-Whole Optional Redemption Price
+”) equal to
+the greater of:
+-14-
+(1) (a) the sum of the present values of the remaining scheduled payments of
+principal and interest on the Notes of such series discounted to the Redemption Date (assuming the Notes of such series matured on the Par Call Date) on a semi-annual basis (assuming a
+360-day
+year consisting
+of twelve
+30-day
+months) at the Treasury Rate plus 10 basis points, in the case of the 2028 Notes, and 10 basis points, in the case of the 2031 Notes, less (b) interest accrued to the Redemption Date, and
+(2) 100% of the principal amount of the Notes of such series to be redeemed,
+plus, in either case, accrued and unpaid interest on the Notes of such series to be redeemed to the Redemption Date.
+(b) Subject to Article Eleven of the Base Indenture, on or after the Par Call Date, the Company may redeem the Notes of the applicable series,
+in whole or in part, at a redemption price (the “
+Par Call Optional Redemption Price
+”) equal to 100% of the principal amount of the Notes being redeemed plus accrued and unpaid interest on the Notes to the Redemption Date.
+(c) Unless the Company defaults in payment of the Optional Redemption Price, on and after the Redemption Date interest will cease to accrue on
+the Notes or portions thereof called for redemption.
+(d) Notice of any redemption pursuant to this Section 4.1 shall be given as
+provided in Section 1104 of the Base Indenture, except that any notice of such redemption shall not specify the related Optional Redemption Price but only the manner of calculation thereof. The Trustee shall not be responsible for the
+calculation of such Optional Redemption Price. The Company shall calculate such Optional Redemption Price and promptly notify the Trustee thereof. The Company’s actions and determinations in determining the Optional Redemption Price shall be
+conclusive and binding for all purposes, absent manifest error.
+Section 4.2
+Notice of Redemption to Holders
+.
+(a) The Base Indenture is hereby amended, with respect to the Notes only, by replacing the text of the first paragraph of Section 1103
+thereof with the following text:
+“In the case of a partial redemption, selection of the Securities for redemption will be made
+pro rata
+, by lot or by such other method as the Trustee in its sole discretion deems appropriate and fair. No Securities of a principal amount of $2,000 or less will be redeemed in part. If any Security is to be redeemed in part only, the
+notice of redemption that relates to the Security will state the portion of the principal amount of the Security to be redeemed. A new Security in a principal amount equal to the unredeemed portion of the Security will be issued in the name of the
+Holder of the Security upon surrender for cancellation of the original Security. For so long as the Securities are held by DTC (or another Depositary), the redemption of the Securities shall be done in accordance with the policies and procedures of
+the Depositary.”
+-15-
+(b) The Base Indenture is hereby amended, with respect to the Notes only, by replacing the
+text of the first paragraph of Section 1104 thereof with the following text:
+“Notice of any redemption will be mailed or
+electronically delivered (or otherwise transmitted in accordance with the Depositary’s procedures) at least 10 days but not more than 60 days before the Redemption Date to each Holder of Securities to be redeemed.
+Notice of any redemption may, at the Company’s discretion, be given subject to one or more conditions precedent, including, but not
+limited to, completion of a corporate transaction that is pending (such as an equity or equity-linked offering, an incurrence of indebtedness or an acquisition or other strategic transaction involving a change of control in the Company or another
+entity). If any redemption is subject to satisfaction of one or more conditions precedent, the applicable notice of redemption shall describe each such condition, and may be rescinded in the event that any or all of the conditions to the redemption
+shall not have been satisfied or otherwise waived on or prior to the Business Day immediately preceding the relevant Redemption Date.
+The
+Company shall notify Holders of any such rescission as soon as practicable after it determines that the conditions precedent to the redemption will not be able to be satisfied or the Company is not able or willing to waive such conditions precedent,
+in each case subject to policies and procedures of the Depositary. The Company shall provide written notice to the Trustee prior to the close of business on the Business Day prior to the relevant Redemption Date if any such redemption has been
+rescinded or delayed, and upon receipt the Trustee shall provide such notice to each Holder of the Securities in the same manner in which the notice of redemption was given. Once a notice of redemption is mailed or sent, subject to the satisfaction
+of any conditions precedent provided in the notice of redemption, the Securities called for redemption will become due and payable on the Redemption Date and at the applicable Optional Redemption Price.”
+ARTICLE 5.
+REMEDIES
+Section 5.1
+Events of Default
+.
+(a) The provisions of Section 501 of the Base Indenture shall be applicable to the Notes.
+(b) In addition, any of the following events will constitute an “Event of Default” with respect to either series of the Notes:
+(i) a default on any Indebtedness of the Company or a Significant Subsidiary of the Company having an aggregate amount of
+at least $250,000,000, constituting a default either of payment of principal or which results in acceleration of the Indebtedness unless the default has been cured or waived or the Indebtedness discharged in full within 60 days after the Company has
+been notified of the default by the Trustee or Holders of 25% of the Outstanding aggregate principal amount of Securities of all affected series under the Indenture; and
+-16-
+(ii) one or more final judgments for the payment of money in an aggregate
+amount in excess of $250,000,000 above available insurance or indemnity coverage shall be rendered against the Company or a Significant Subsidiary of the Company and the same shall remain undischarged for a period of 60 consecutive days during which
+execution shall not be effectively stayed, but only if such judgment is an event of default at that time under the Credit Agreement.
+(c)
+a default or Event of Default with respect to one series of Notes will not necessarily be a default or Event of Default with respect to another series of Notes.
+ARTICLE 6.
+REPORTS
+Section 6.1
+Reports by Company
+. The Base Indenture is hereby amended, with respect to the Notes only, by replacing the
+text of Section 704 thereof with the following text:
+“The Company shall file such information, documents or reports required to
+be filed with the Commission pursuant to Section 13 or 15(d) of the Exchange Act with the Trustee within 15 days after the same is filed with the Commission. For purposes of this provision, any such information, document or report that the
+Company has filed with the Commission and that is publicly accessible on the Commission’s EDGAR system (or any successor thereto) shall be deemed to be filed with the Trustee; provided that the Trustee shall have no responsibility whatsoever
+to monitor whether any such filing has occurred.
+Delivery of such reports, information and documents to the Trustee is for informational
+purposes only and the Trustee’s receipt of such shall not constitute constructive notice of any information contained therein or determinable from information contained therein, including the Company’s compliance with any of its
+covenants hereunder (as to which the Trustee is entitled to rely exclusively on Officer’s Certificates).”
+ARTICLE 7.
+AMENDMENTS
+Section 7.1
+Amendments
+. Supplemental indentures modifying the Indenture and the terms of the Notes may be entered into in
+accordance with Article IX of the Base Indenture,
+provided
+that the Base Indenture is hereby amended by deleting Section 902(2) thereof.
+ARTICLE 8.
+DEFEASANCE
+Section 8.1
+Company’s Option to Effect Defeasance or Covenant Defeasance
+.
+Pursuant to Section 301 of
+the Base Indenture, the Company hereby designates both series of the Notes as being defeasible under Section 1302 or Section 1303 of the Base Indenture. The provisions of Article Thirteen of the Base Indenture shall be applicable to the
+Notes, subject to Section 8.2 hereof.
+-17-
+Section 8.2
+Covenant Defeasance
+.
+Upon the Company’s exercise of its
+option to have Section 1303 of the Base Indenture applied to either series of the Notes, in addition to the provisions in clauses (1) and (2) of Section 1303 of the Base Indenture, the occurrence of any event specified under
+Section 5.1(b) hereof shall be deemed not to be or result in an Event of Default with respect to such series of the Notes as provided in Section 1303 of the Base Indenture on and after the date the conditions set forth in Section 1304
+of the Base Indenture (as amended by paragraph (b) of this Section) are satisfied;
+provided
+that the Base Indenture is hereby amended by deleting “and 501(5)” from clause (2) of Section 1303 thereof.
+ARTICLE 9.
+MISCELLANEOUS
+Section 9.1
+Execution as Supplemental Indenture
+. This Seventh Supplemental Indenture is executed and shall be construed as an
+indenture supplemental to the Base Indenture and, as provided in the Base Indenture, this Seventh Supplemental Indenture forms a part thereof.
+Section 9.2
+Conflict with Trust Indenture Act
+. If any provision hereof limits, qualifies or conflicts with another provision
+hereof, or with a provision of the Base Indenture, which is required to be included in this Seventh Supplemental Indenture, or in the Base Indenture, respectively, by any of the provisions of the Trust Indenture Act, such required provision shall
+control to the extent it is applicable.
+Section 9.3
+Certificates, Opinions, Etc.
+In any case where, pursuant to the Base
+Indenture with respect to the Notes or this Seventh Supplemental Indenture or pursuant to the Indenture, several matters are required to be certified by, or covered by an opinion of, any specified Person, it is not necessary that all such matters be
+certified by, or covered by the opinion of, only one such Person, or that they be so certified or covered by only one document, but one such Person may certify or give an opinion with respect to some matters and one or more other such Persons as to
+other matters, and any such Person may certify or give an opinion as to such matters in one or several documents. Where any Person is required to make, give or execute two or more applications, requests, consents, certificates, statements, opinions
+or other instruments under the Base Indenture with respect to the Notes or this Seventh Supplemental Indenture or under the Indenture, they may, but need not, be consolidated and form one instrument.
+Section 9.4
+Effect of Headings
+. The Article and Section headings herein are for convenience only and shall not affect the
+construction hereof.
+Section 9.5
+Successors and Assigns
+. All covenants and agreements by the Company and the Trustee in this
+Seventh Supplemental Indenture shall bind its successors and assigns, whether so expressed or not.
+Section 9.6
+Separability
+Clause
+. In case any provision in this Seventh Supplemental Indenture or in the Notes shall be invalid, illegal or unenforceable, the validity, legality and enforceability of the remaining provisions shall not in any way be affected or impaired
+thereby.
+-18-
+Section 9.7
+Benefits of Seventh Supplemental Indenture
+. Nothing in this Seventh
+Supplemental Indenture or in the Notes, express or implied, shall give to any Person, other than the parties hereto and their successors hereunder and the Holders, any benefit or any legal or equitable right, remedy or claim under this Seventh
+Supplemental Indenture.
+Section 9.8
+Execution and Counterparts
+. This Seventh Supplemental Indenture shall be valid, binding,
+and enforceable against a party when executed and delivered by an authorized individual on behalf of the party by means of (i) an original manual signature; (ii) a faxed, scanned, or photocopied manual signature; or (iii) any other
+electronic signature permitted by the federal Electronic Signatures in Global and National Commerce Act, state enactments of the Uniform Electronic Transactions Act, and/or any other relevant electronic signatures law, including any relevant
+provisions of the Uniform Commercial Code (collectively, “
+Signature Law
+”), in each case to the extent applicable. Each faxed, scanned, or photocopied manual signature, or other electronic signature, shall for all purposes have the
+same validity, legal effect, and admissibility in evidence as an original manual signature. Each party hereto shall be entitled to conclusively rely upon, and shall have no liability with respect to, any faxed, scanned, or photocopied manual
+signature, or other electronic signature, of any other party and shall have no duty to investigate, confirm or otherwise verify the validity or authenticity thereof.
+This Seventh Supplemental Indenture may be executed in any number of counterparts, each of which shall be deemed to be an original, but such
+counterparts shall, together, constitute one and the same instrument. For the avoidance of doubt, original manual signatures shall be used for execution or indorsement of writings when required under the Uniform Commercial Code or other Signature
+Law due to the character or intended character of the writings.
+Section 9.9
+Governing Law
+. This Seventh Supplemental
+Indenture and the Notes shall be governed by and construed in accordance with the laws of the State of New York.
+[
+Remainder of page
+intentionally left blank
+]
+-19-
+IN WITNESS WHEREOF, the parties hereto have caused this Seventh Supplemental Indenture to be
+duly executed as of the day and year first above written.
+INTERCONTINENTAL EXCHANGE, INC.
+By:
+/s/ Martin Hunter
+Name:
+Martin Hunter
+Title:
+Senior Vice President, Tax & Treasurer
+[
+Signature Page to Seventh Supplemental Indenture
+]
+COMPUTERSHARE TRUST COMPANY, N.A.,
+as Trustee
+By:
+/s/ Agata Theiler
+Name:
+Agata Theiler
+Title:
+Vice President
+[
+Signature Page to Seventh Supplemental Indenture
+]
+EXHIBIT A
+[FORM OF FACE OF 3.950% SENIOR NOTES DUE 2028]
+[THIS SECURITY IS A GLOBAL SECURITY WITHIN THE MEANING OF THE INDENTURE HEREINAFTER REFERRED TO AND IS REGISTERED IN THE NAME OF A DEPOSITARY
+OR A NOMINEE THEREOF. THIS SECURITY MAY NOT BE EXCHANGED IN WHOLE OR IN PART FOR A SECURITY REGISTERED, AND NO TRANSFER OF THIS SECURITY IN WHOLE OR IN PART MAY BE REGISTERED, IN THE NAME OF ANY PERSON OTHER THAN SUCH DEPOSITARY OR A NOMINEE
+THEREOF, EXCEPT IN THE LIMITED CIRCUMSTANCES DESCRIBED IN THE INDENTURE.]
+[Insert any legend required by the Internal Revenue Code and
+the regulations thereunder.]
+INTERCONTINENTAL EXCHANGE, INC.
+3.950% Senior Notes due 2028
+No.
+CUSIP No. 45865V AA8
+Intercontinental Exchange, Inc., a corporation duly organized and existing under the laws of the State of Delaware (herein called the
+“
+Company
+,” which term includes any successor Person under the Indenture hereinafter referred to), for value received, hereby promises to pay to   , or registered assigns, the principal sum of   
+Dollars on December 1, 2028 and to pay interest thereon from the most recent Interest Payment Date (or with respect to the first interest payment, the Issue Date) to which interest has been paid or duly provided for, semi-annually in arrears on
+June 1 and December 1 in each year, commencing June 1, 2026, and at the Maturity thereof, at the rate of 3.950% per annum, until the principal hereof is paid or made available for payment,
+provided
+that any principal and
+premium, and any such installment of interest (including post-petition interest in any proceeding under any Bankruptcy Law), which is overdue shall bear interest at the rate of 3.950% per annum (to the extent that the payment of such interest shall
+be legally enforceable), from the dates such amounts are due (without regard to any grace period) until they are paid or made available for payment, and such interest shall be payable on demand. The interest so payable, and punctually paid or duly
+provided for, on any Interest Payment Date will, as provided in such Indenture, be paid to the Person in whose name this Security (or one or more Predecessor Securities) is registered at the close of business on the Regular Record Date for such
+interest, which shall be May 15 and November 15 (whether or not a Business Day), as the case may be, next preceding such Interest Payment Date. Any such interest so payable, but not punctually paid or duly provided for, on any Interest
+Payment Date will forthwith cease to be payable to the Holder on such Regular Record Date and may either be paid to the Person in whose name this Security (or one or more Predecessor Securities) is registered at the close of business on a Special
+Record Date for the payment of such Defaulted Interest to be fixed by the Trustee, and notice whereof shall be given to Holders of Securities of this series not less than 10 days prior to such Special Record Date, or be paid at any time in any other
+lawful manner not inconsistent with the requirements of any securities exchange on which the Securities of this series may be listed, and upon such notice as may be required by such exchange, all as more fully provided in said Indenture.
+Payment of the principal of (and premium, if any) and interest on this Security will be made
+at the office or agency maintained for that purpose in New York, New York, in such coin or currency of the United States of America as at the time of payment is legal tender for payment of public and private debts, against surrender of this Security
+in the case of any payment due at the Maturity of the principal hereof (other than any payment of interest that first becomes payable on a day other than an Interest Payment Date);
+provided
+,
+however
+, that at the option of the Company
+payment of interest may be made (1) by check mailed to the address of the Person entitled thereto as such address shall appear in the Security Register, or (2) by wire transfer in immediately available funds at the bank account number
+maintained within the United States as may be designated by the Person entitled thereto, as specified in the Securities Register in writing; and
+provided
+,
+further
+, that if this Security is a Global Security, payment may be made
+pursuant to the Applicable Procedures of the Depositary as permitted in the Indenture.
+Reference is hereby made to the further provisions
+of this Security set forth on the reverse hereof, which further provisions shall for all purposes have the same effect as if set forth at this place.
+Unless the certificate of authentication hereon has been executed by the Trustee or an authentication agent on its behalf referred to on the
+reverse hereof by manual, facsimile or electronic signature, this Security shall not be entitled to any benefit under the Indenture or be valid or obligatory for any purpose.
+IN WITNESS WHEREOF, the Company has caused this instrument to be duly executed.
+INTERCONTINENTAL EXCHANGE, INC.
+By:
+Name:
+Title:
+TRUSTEE’S CERTIFICATE OF AUTHENTICATION
+This is one of the Securities of the series designated herein referred to in the within-mentioned Indenture.
+Dated:
+Computershare Trust Company, N.A.,
+As Trustee
+By:
+Authorized Signatory
+[FORM OF REVERSE OF 3.950% SENIOR NOTE DUE 2028]
+This Security is one of a duly authorized issue of securities of the Company (herein called the “
+Securities
+”), issued and
+to be issued in one or more series under a Senior Debt Indenture, dated as of August 13, 2018 (the “
+Base Indenture
+”), as supplemented by the Seventh Supplemental Indenture, dated as of November 17, 2025 (the
+“
+Seventh Supplemental Indenture
+” and, together with the Base Indenture, the “
+Indenture
+”), between the Company and Computershare Trust Company, N.A., as successor to Wells Fargo Bank, National Association, as
+Trustee (herein called the “
+Trustee
+,” which term includes any successor trustee under the Indenture), and reference is hereby made to the Indenture for a statement of the respective rights, limitations of rights, duties and
+immunities thereunder of the Company, the Trustee and the Holders of the Securities and of the terms upon which the Securities are, and are to be, authenticated and delivered. This Security is one of the series designated on the face hereof
+initially limited in aggregate principal amount to $600,000,000. The Company may from time to time or at any time, without notice to, or the consent of, any Holder of Securities of this series, create and issue additional Securities having the same
+terms as Securities of this series (except for public offering price, issue date and, if applicable, the initial interest accrual date and first Interest Payment Date), which additional Securities may increase the aggregate principal amount of the
+Securities of this series and, together with the Securities of this series, will constitute a single series under the Indenture and vote together as one class on all matters with respect to the Securities of this series;
+provided
+,
+however
+, that any additional Securities that are not fungible with existing Securities of this series for U.S. federal income tax purposes will have a separate CUSIP, ISIN and other identifying number than the existing Securities of this
+series.
+As provided in Section 4.1 of the Seventh Supplemental Indenture, prior to the Par Call Date, the Company may redeem the
+Securities of this series, at the Company’s option, in whole or in part, at any time and from time to time, at a redemption price (expressed as a percentage of principal amount and rounded to three decimal places) equal to the greater of: (1)
+(a) the sum of the present values of the remaining scheduled payments of principal and interest on the Securities to be redeemed discounted to the Redemption Date (assuming the Securities matured on the Par Call Date) on a semi-annual basis
+(assuming a
+360-day
+year consisting of twelve
+30-day
+months) at the Treasury Rate plus 10 basis points, less (b) interest accrued to the Redemption Date, and
+(2) 100% of the principal amount of the Securities to be redeemed, plus, in either case, accrued and unpaid interest on the Securities to be redeemed to the Redemption Date.
+In addition, as provided in Section 4.1 of the Seventh Supplemental Indenture, on or after the Par Call Date, the Company may redeem the
+Securities, in whole or in part, at any time and from time to time, at a redemption price equal to 100% of the principal amount of the Securities being redeemed plus accrued and unpaid interest on such Securities to the Redemption Date.
+This Security will not be subject to any sinking fund.
+The Indenture contains provisions for defeasance at any time of the entire indebtedness of this Security or certain restrictive covenants and
+Events of Default with respect to this Security, in each case upon compliance with certain conditions set forth in the Indenture.
+In the event of redemption of this Security in part only, a new Security or Securities of
+this series and of like tenor for the unredeemed portion hereof will be issued in the name of the Holder hereof upon the cancellation hereof.
+If an Event of Default with respect to Securities of this series shall occur and be continuing, the principal of the Securities of this series
+may be declared due and payable in the manner and with the effect provided in the Indenture.
+The Indenture permits, with certain
+exceptions as therein provided, the amendment thereof and the modification of the rights and obligations of the Company and the rights of the Holders of the Securities of each series to be affected under the Indenture at any time by the Company and
+the Trustee with the consent of the Holders of not less than a majority in principal amount of the Securities at the time Outstanding of all series to be affected (voting together as a single class). The Indenture also contains provisions
+(i) permitting the Holders of not less than a majority of the aggregate principal amount of the Securities of all affected series at the time Outstanding (voting together as a single class), on behalf of the Holders of all Securities of such
+series, to waive compliance by the Company with certain provisions of the Indenture with respect to such series and (ii) permitting the Holders of a majority in principal amount of the Securities at the time Outstanding of all series to be
+affected under the Indenture (voting together as a single class), on behalf of the Holders of all Securities of such series, to waive certain past defaults under the Indenture and their consequences. Any such consent or waiver by the Holder of this
+Security shall be conclusive and binding upon such Holder and upon all future Holders of this Security and of any Security issued upon the registration of transfer hereof or in exchange herefor or in lieu hereof, whether or not notation of such
+consent or waiver is made upon this Security.
+As provided in and subject to the provisions of the Indenture, the Holder of this Security
+shall not have the right to institute any proceeding with respect to the Indenture, or for the appointment of a receiver or trustee, or for any other remedy thereunder, unless such Holder shall have previously given the Trustee written notice of a
+continuing Event of Default with respect to the Securities of this series, the Holders of at least 25% of the principal amount of the Securities of all affected series at the time Outstanding (voting together as a single class) shall have made
+written request to the Trustee to institute proceedings in respect of such Event of Default as Trustee and offered the Trustee reasonable indemnity against the costs, expenses and liabilities to be incurred in compliance with such request, and the
+Trustee shall not have received from the Holders of a majority in principal amount of Securities of all affected series at the time Outstanding (voting together as a single class) a direction inconsistent with such request, and shall have failed to
+institute any such proceeding, for 60 days after receipt of such notice, request and offer of indemnity. The foregoing shall not apply to any suit instituted by the Holder of this Security for the enforcement of any payment of principal hereof or
+any premium or interest hereon on or after the respective due dates expressed herein.
+No reference herein to the Indenture and no
+provision of this Security or of the Indenture shall alter or impair the obligation of the Company, which is absolute and unconditional, to pay the principal of and any premium and interest on this Security at the times, place and rate, and in the
+coin or currency, herein prescribed.
+As provided in the Indenture and subject to certain limitations therein set forth, the
+transfer of this Security is registrable in the Security Register, upon surrender of this Security for registration of transfer at the office or agency of the Company in any place where the principal of and any premium and interest on this Security
+are payable, duly endorsed by, or accompanied by a written instrument of transfer in form satisfactory to the Company and the Security Registrar duly executed by the Holder hereof or his attorney duly authorized in writing, and thereupon one or more
+new Securities of this series and of like tenor, of authorized denominations and for the same aggregate principal amount, will be issued to the designated transferee or transferees.
+The Securities of this series are issuable only in registered form without coupons in denominations of $2,000 and any integral multiples of
+$1,000 in excess thereof. As provided in the Indenture and subject to certain limitations therein set forth, Securities of this series are exchangeable for a like aggregate principal amount of Securities of this series and of like tenor of a
+different authorized denomination, as requested by the Holder surrendering the same. No service charge shall be made for any such registration of transfer or exchange, but the Company may require payment of a sum sufficient to cover any tax or other
+governmental charge payable in connection therewith.
+Prior to due presentment of this Security for registration of transfer, the Company,
+the Trustee and any agent of the Company or the Trustee shall treat the Person in whose name this Security is registered as the owner hereof for all purposes, whether or not this Security be overdue, and none of the Company, the Trustee and any such
+agent shall be affected by notice to the contrary.
+[This Security is a Global Security and is subject to the provisions of the Indenture
+relating to Global Securities, including the limitations in Section 305 of the Base Indenture and Section 2.4 and Section 2.6 of the Seventh Supplemental Indenture on transfers and exchanges of Global Securities.]
+Interest on the principal balance of this Security shall be calculated on the basis of a
+360-day
+year
+of twelve
+30-day
+months.
+THIS SECURITY SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH
+THE LAWS OF THE STATE OF NEW YORK.
+All terms used in this Security which are defined in the Indenture shall have the meanings
+assigned to them in the Indenture.
+EXHIBIT B
+[FORM OF FACE OF 4.200% SENIOR NOTES DUE 2031]
+[THIS SECURITY IS A GLOBAL SECURITY WITHIN THE MEANING OF THE INDENTURE HEREINAFTER REFERRED TO AND IS REGISTERED IN THE NAME OF A DEPOSITARY
+OR A NOMINEE THEREOF. THIS SECURITY MAY NOT BE EXCHANGED IN WHOLE OR IN PART FOR A SECURITY REGISTERED, AND NO TRANSFER OF THIS SECURITY IN WHOLE OR IN PART MAY BE REGISTERED, IN THE NAME OF ANY PERSON OTHER THAN SUCH DEPOSITARY OR A NOMINEE
+THEREOF, EXCEPT IN THE LIMITED CIRCUMSTANCES DESCRIBED IN THE INDENTURE.]
+[Insert any legend required by the Internal Revenue Code and
+the regulations thereunder.]
+INTERCONTINENTAL EXCHANGE, INC.
+4.200% Senior Notes due 2031
+No.
+CUSIP No. 45865V AC4
+Intercontinental Exchange, Inc., a corporation duly organized and existing under the laws of the State of Delaware (herein called the
+“
+Company
+,” which term includes any successor Person under the Indenture hereinafter referred to), for value received, hereby promises to pay to   , or registered assigns, the principal sum
+of   Dollars on March 15, 2031, and to pay interest thereon from the most recent Interest Payment Date (or with respect to the first interest payment, the Issue Date) to which interest has been paid or duly provided for,
+semi-annually in arrears on March 15 and September 15 in each year, commencing March 15, 2026, and at the Maturity thereof, at the rate of 4.200% per annum, until the principal hereof is paid or made available for payment,
+provided
+that any principal and premium, and any such installment of interest (including post-petition interest in any proceeding under any Bankruptcy Law), which is overdue shall bear interest at the rate of 4.200% per annum (to the extent that the
+payment of such interest shall be legally enforceable), from the dates such amounts are due (without regard to any grace period) until they are paid or made available for payment, and such interest shall be payable on demand. The interest so
+payable, and punctually paid or duly provided for, on any Interest Payment Date will, as provided in such Indenture, be paid to the Person in whose name this Security (or one or more Predecessor Securities) is registered at the close of business on
+the Regular Record Date for such interest, which shall be March 1 and September 1 (whether or not a Business Day), as the case may be, next preceding such Interest Payment Date. Any such interest so payable, but not punctually paid or duly
+provided for, on any Interest Payment Date will forthwith cease to be payable to the Holder on such Regular Record Date and may either be paid to the Person in whose name this Security (or one or more Predecessor Securities) is registered at the
+close of business on a Special Record Date for the payment of such Defaulted Interest to be fixed by the Trustee, and notice whereof shall be given to Holders of Securities of this series not less than 10 days prior to such Special Record Date, or
+be paid at any time in any other lawful manner not inconsistent with the requirements of any securities exchange on which the Securities of this series may be listed, and upon such notice as may be required by such exchange, all as more fully
+provided in said Indenture.
+Payment of the principal of (and premium, if any) and interest on this Security will be made
+at the office or agency maintained for that purpose in New York, New York, in such coin or currency of the United States of America as at the time of payment is legal tender for payment of public and private debts, against surrender of this Security
+in the case of any payment due at the Maturity of the principal hereof (other than any payment of interest that first becomes payable on a day other than an Interest Payment Date);
+provided
+,
+however
+, that at the option of the Company
+payment of interest may be made (1) by check mailed to the address of the Person entitled thereto as such address shall appear in the Security Register, or (2) by wire transfer in immediately available funds at the bank account number
+maintained within the United States as may be designated by the Person entitled thereto, as specified in the Securities Register in writing; and
+provided
+,
+further
+, that if this Security is a Global Security, payment may be made
+pursuant to the Applicable Procedures of the Depositary as permitted in the Indenture.
+Reference is hereby made to the further provisions
+of this Security set forth on the reverse hereof, which further provisions shall for all purposes have the same effect as if set forth at this place.
+Unless the certificate of authentication hereon has been executed by the Trustee or an authentication agent on its behalf referred to on the
+reverse hereof by manual, facsimile or electronic signature, this Security shall not be entitled to any benefit under the Indenture or be valid or obligatory for any purpose.
+IN WITNESS WHEREOF, the Company has caused this instrument to be duly executed.
+INTERCONTINENTAL EXCHANGE, INC.
+By:
+Name:
+Title:
+TRUSTEE’S CERTIFICATE OF AUTHENTICATION
+This is one of the Securities of the series designated herein referred to in the within-mentioned Indenture.
+Dated:
+Computershare Trust Company, N.A.,
+As Trustee
+By:
+Authorized Signatory
+[FORM OF REVERSE OF 4.200% SENIOR NOTE DUE 2031]
+This Security is one of a duly authorized issue of securities of the Company (herein called the “
+Securities
+”), issued and
+to be issued in one or more series under a Senior Debt Indenture, dated as of August 13, 2018 (the “
+Base Indenture
+”), as supplemented by the Seventh Supplemental Indenture, dated as of November 17, 2025 (the
+“
+Seventh Supplemental Indenture
+” and, together with the Base Indenture, the “
+Indenture
+”), between the Company and Computershare Trust Company, N.A., as successor to Wells Fargo Bank, National Association, as
+Trustee (herein called the “
+Trustee
+,” which term includes any successor trustee under the Indenture), and reference is hereby made to the Indenture for a statement of the respective rights, limitations of rights, duties and
+immunities thereunder of the Company, the Trustee and the Holders of the Securities and of the terms upon which the Securities are, and are to be, authenticated and delivered. This Security is one of the series designated on the face hereof
+initially limited in aggregate principal amount to $650,000,000. The Company may from time to time or at any time, without notice to, or the consent of, any Holder of Securities of this series, create and issue additional Securities having the same
+terms as Securities of this series (except for public offering price, issue date and, if applicable, the initial interest accrual date and first Interest Payment Date), which additional Securities may increase the aggregate principal amount of the
+Securities of this series and, together with the Securities of this series, will constitute a single series under the Indenture and vote together as one class on all matters with respect to the Securities of this series;
+provided
+,
+however
+, that any additional Securities that are not fungible with existing Securities of this series for U.S. federal income tax purposes will have a separate CUSIP, ISIN and other identifying number than the existing Securities of this
+series.
+As provided in Section 4.1 of the Seventh Supplemental Indenture, prior to the Par Call Date, the Company may redeem the
+Securities of this series, at the Company’s option, in whole or in part, at any time and from time to time, at a redemption price (expressed as a percentage of principal amount and rounded to three decimal places) equal to the greater of: (1)
+(a) the sum of the present values of the remaining scheduled payments of principal and interest on the Securities to be redeemed discounted to the Redemption Date (assuming the Securities matured on the Par Call Date) on a semi-annual basis
+(assuming a
+360-day
+year consisting of twelve
+30-day
+months) at the Treasury Rate plus 10 basis points, less (b) interest accrued to the Redemption Date, and
+(2) 100% of the principal amount of the Securities to be redeemed, plus, in either case, accrued and unpaid interest on the Securities to be redeemed to the Redemption Date.
+In addition, as provided in Section 4.1 of the Seventh Supplemental Indenture, on or after the Par Call Date, the Company may redeem the
+Securities, in whole or in part, at any time and from time to time, at a redemption price equal to 100% of the principal amount of the Securities being redeemed plus accrued and unpaid interest on such Securities to the Redemption Date.
+This Security will not be subject to any sinking fund.
+The Indenture contains provisions for defeasance at any time of the entire indebtedness of this Security or certain restrictive covenants and
+Events of Default with respect to this Security, in each case upon compliance with certain conditions set forth in the Indenture.
+In the event of redemption of this Security in part only, a new Security or Securities of
+this series and of like tenor for the unredeemed portion hereof will be issued in the name of the Holder hereof upon the cancellation hereof.
+If an Event of Default with respect to Securities of this series shall occur and be continuing, the principal of the Securities of this series
+may be declared due and payable in the manner and with the effect provided in the Indenture.
+The Indenture permits, with certain
+exceptions as therein provided, the amendment thereof and the modification of the rights and obligations of the Company and the rights of the Holders of the Securities of each series to be affected under the Indenture at any time by the Company and
+the Trustee with the consent of the Holders of not less than a majority in principal amount of the Securities at the time Outstanding of all series to be affected (voting together as a single class). The Indenture also contains provisions
+(i) permitting the Holders of not less than a majority of the aggregate principal amount of the Securities of all affected series at the time Outstanding (voting together as a single class), on behalf of the Holders of all Securities of such
+series, to waive compliance by the Company with certain provisions of the Indenture with respect to such series and (ii) permitting the Holders of a majority in principal amount of the Securities at the time Outstanding of all series to be
+affected under the Indenture (voting together as a single class), on behalf of the Holders of all Securities of such series, to waive certain past defaults under the Indenture and their consequences. Any such consent or waiver by the Holder of this
+Security shall be conclusive and binding upon such Holder and upon all future Holders of this Security and of any Security issued upon the registration of transfer hereof or in exchange herefor or in lieu hereof, whether or not notation of such
+consent or waiver is made upon this Security.
+As provided in and subject to the provisions of the Indenture, the Holder of this Security
+shall not have the right to institute any proceeding with respect to the Indenture, or for the appointment of a receiver or trustee, or for any other remedy thereunder, unless such Holder shall have previously given the Trustee written notice of a
+continuing Event of Default with respect to the Securities of this series, the Holders of at least 25% of the principal amount of the Securities of all affected series at the time Outstanding (voting together as a single class) shall have made
+written request to the Trustee to institute proceedings in respect of such Event of Default as Trustee and offered the Trustee reasonable indemnity against the costs, expenses and liabilities to be incurred in compliance with such request, and the
+Trustee shall not have received from the Holders of a majority in principal amount of Securities of all affected series at the time Outstanding (voting together as a single class) a direction inconsistent with such request, and shall have failed to
+institute any such proceeding, for 60 days after receipt of such notice, request and offer of indemnity. The foregoing shall not apply to any suit instituted by the Holder of this Security for the enforcement of any payment of principal hereof or
+any premium or interest hereon on or after the respective due dates expressed herein.
+No reference herein to the Indenture and no
+provision of this Security or of the Indenture shall alter or impair the obligation of the Company, which is absolute and unconditional, to pay the principal of and any premium and interest on this Security at the times, place and rate, and in the
+coin or currency, herein prescribed.
+As provided in the Indenture and subject to certain limitations therein set forth, the
+transfer of this Security is registrable in the Security Register, upon surrender of this Security for registration of transfer at the office or agency of the Company in any place where the principal of and any premium and interest on this Security
+are payable, duly endorsed by, or accompanied by a written instrument of transfer in form satisfactory to the Company and the Security Registrar duly executed by the Holder hereof or his attorney duly authorized in writing, and thereupon one or more
+new Securities of this series and of like tenor, of authorized denominations and for the same aggregate principal amount, will be issued to the designated transferee or transferees.
+The Securities of this series are issuable only in registered form without coupons in denominations of $2,000 and any integral multiples of
+$1,000 in excess thereof. As provided in the Indenture and subject to certain limitations therein set forth, Securities of this series are exchangeable for a like aggregate principal amount of Securities of this series and of like tenor of a
+different authorized denomination, as requested by the Holder surrendering the same. No service charge shall be made for any such registration of transfer or exchange, but the Company may require payment of a sum sufficient to cover any tax or other
+governmental charge payable in connection therewith.
+Prior to due presentment of this Security for registration of transfer, the Company,
+the Trustee and any agent of the Company or the Trustee shall treat the Person in whose name this Security is registered as the owner hereof for all purposes, whether or not this Security be overdue, and none of the Company, the Trustee and any such
+agent shall be affected by notice to the contrary.
+[This Security is a Global Security and is subject to the provisions of the Indenture
+relating to Global Securities, including the limitations in Section 305 of the Base Indenture and Section 2.4 and Section 2.6 of the Seventh Supplemental Indenture on transfers and exchanges of Global Securities.]
+Interest on the principal balance of this Security shall be calculated on the basis of a
+360-day
+year
+of twelve
+30-day
+months.
+THIS SECURITY SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH
+THE LAWS OF THE STATE OF NEW YORK.
+All terms used in this Security which are defined in the Indenture shall have the meanings
+assigned to them in the Indenture.

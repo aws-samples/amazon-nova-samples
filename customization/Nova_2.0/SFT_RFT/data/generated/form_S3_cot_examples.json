@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 239.13 outlines the requirements for using Form S-3 to register securities under the Securities Act of 1933, specifying registrant eligibility and transaction types. Eligible registrants must meet criteria such as being organized under U.S. laws, having registered securities, and maintaining timely filings, while eligible transactions include primary and secondary offerings and offerings of non-convertible securities under certain conditions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does a 2022 private placement under Reg D need SEC registration verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D exemption criteria + EDGAR filing validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve Regulation D text to confirm exemption requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement registration exemption\", \"edgar_check\": \"2022 Form D filing\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate actual filing against Regulation D criteria using compliance_checker\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial precedent for 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law defining 'reasonable care' standard\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 reasonable care standard interpretation\"}, \"Reasoning\": \"Judicial interpretation requires searching court precedents for statutory term definitions\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if XYZ Corp's S-1 resale registration complies with Rule 144 safe harbor"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Rule 144 requirements + case law + S-1 compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 144\"}, \"Reasoning\": \"Must first retrieve Rule 144 text for safe harbor conditions\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Rule 144 public information requirements\"}, \"Reasoning\": \"Need judicial interpretation of 'adequate public information'\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale registration compliance\", \"edgar_check\": \"XYZ Corp S-1 resale clause\", \"regulation\": \"Rule 144\", \"case_interpretation_check\": \"Precedent on public info adequacy\"}, \"Reasoning\": \"Combine regulation, case law, and EDGAR clause for final validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

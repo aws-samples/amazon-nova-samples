@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.904 outlines conditions for offshore resales of securities, specifying that such transactions are deemed to occur outside the U.S. if they are offshore transactions with no directed selling efforts in the U.S. and meet additional conditions. Additional conditions include ensuring that dealers or those receiving remuneration do not knowingly sell to U.S. persons and that officers or directors affiliated solely by their position do not receive remuneration beyond customary broker's commissions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Reg D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Must retrieve authoritative Rule 506 text before compliance validation\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Memorandum investor accreditation clause\", \"regulation\": \"Rule 506\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Compliance validation requires regulation text and specific EDGAR clause analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for materiality standards in SEC anti-fraud cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on materiality standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"TSC Industries v Northway definition of materiality\"}, \"Reasoning\": \"TSC Industries established core materiality principles that courts reference in SEC fraud cases\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506 citation is correct for accredited investor definition"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506\"}, \"Reasoning\": \"Citation verification requires format check against official CFR structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

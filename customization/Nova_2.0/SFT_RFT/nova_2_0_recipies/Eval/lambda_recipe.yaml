@@ -1,0 +1,26 @@
+run:
+  name: support-ticket-classification
+  model_type: "amazon.nova-2-lite-v1:0:256k" # Model variant specification, do not change
+  # model_name_or_path: "nova-lite-2/prod" # Base model path, do not change
+  model_name_or_path: "" # S3 URI
+  replicas: 1
+evaluation:
+  task: gen_qa
+  strategy: gen_qa
+  metric: all
+inference:
+  max_new_tokens: 2048
+  temperature: 0
+  top_logprobs: 10
+processor:
+  preset_reward_function: "" # options are prime_math, prime_code
+  lambda_arn:
+    # Provide valid lambda arn to enable custom metrics processing
+    # lambda_type: "rft" # or "custom_metrics"
+
+  lambda_type: "custom_metrics"
+  preprocessing:
+    enabled: true
+  postprocessing:
+    enabled: true
+  aggregation: average

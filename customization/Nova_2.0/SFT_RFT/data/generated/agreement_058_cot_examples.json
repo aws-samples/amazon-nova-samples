@@ -1,0 +1,66 @@
+{
+  "summary": "Helpert (Thailand) Co., Ltd. has entered into a lease agreement dated July 23, 2025, for office space on the 24th floor of 66 Tower, totaling 488.0 square meters, with a three-year lease term starting September 1, 2025. The monthly rent and service fee is 650.00 Thai Baht per square meter, with additional costs for parking, utilities, and other services. The tenant must pay a deposit and comply with building regulations and standards for renovations and use of the space.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D require SEC registration verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"Need authoritative text of Reg D exemptions before validation\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement exemption verification\", \"edgar_check\": \"EDGAR subscription agreement language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Post-retrieval validation requires regulation + EDGAR clause analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'material non-public information' in insider trading cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on materiality standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information insider trading precedents\"}, \"Reasoning\": \"Judicial interpretation requires case law analysis of court rulings\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.504 compliance applies to this international crowdfunding campaign"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg CF requirements + case law + EDGAR filing validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation Crowdfunding\"}, \"Reasoning\": \"Establish baseline requirements first\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"International application of Reg CF\"}, \"Reasoning\": \"Need judicial interpretation of cross-border applicability\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International crowdfunding compliance\", \"edgar_check\": \"EDGAR Form C disclosure\", \"regulation\": \"Reg CF\", \"case_interpretation_check\": \"Relevant case precedents\"}, \"Reasoning\": \"Requires full integration of regulation, case law, and filing details\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

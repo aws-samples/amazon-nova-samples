@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Credit Agreement dated November 14, 2025, involving YELLOWSTONE INTERCO HOLDINGS, LLC, YELLOWSTONE BORROWER, LLC, various lenders and issuing banks, and WELLS FARGO BANK, NATIONAL ASSOCIATION as the Administrative Agent. The agreement outlines the terms for a $150 million term loan and a $140 million revolving loan facility, including commitments, borrowing procedures, repayment terms, and various covenants and conditions. It also details representations and warranties, affirmative and negative covenants, events of default, and the roles and responsibilities of the Administrative Agent.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Reg D safe harbor requirements under Rule 506(c)?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D Rule 506(c) requirements + EDGAR document validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506(c)\"}, \"Reasoning\": \"Need authoritative text of Rule 506(c) to establish compliance baseline\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D 506(c) compliance\", \"edgar_check\": \"Private placement memorandum terms\", \"regulation\": \"Regulation D Rule 506(c)\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Must validate EDGAR document against retrieved regulatory requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the controlling precedent for Section 5 registration requirements in cross-border M&A transactions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law about Section 5 international application\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 5 Securities Act cross-border M&A precedent\"}, \"Reasoning\": \"Requires judicial interpretation of statutory requirements in international context\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston Purina Co.' citation is valid for Rule 147 analysis"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format and relevance check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston Purina Co. 346 U.S. 119 (1953)\"}, \"Reasoning\": \"Citation verification requires format check and case relevance confirmation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

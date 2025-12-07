@@ -1,0 +1,66 @@
+{
+  "summary": "Palladyne AI Corp. has granted a Participant an award of Restricted Stock Units (RSUs) that will vest in ten tranches, each contingent on achieving specific stock price thresholds and continued service. The award is subject to stockholder approval at the 2026 Annual Meeting, and no vesting will occur before such approval. If the stock price goals are met, vesting will occur incrementally over specified periods following the achievement date, with additional vesting provisions in the event of qualifying terminations of employment.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption in Regulation D require SEC registration for accredited investors?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements and accredited investor criteria\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"First retrieve authoritative text of Reg D exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Accredited investor exemption\", \"edgar_check\": \"\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Validate if accredited investor clause satisfies Reg D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' properly applied Section 5 registration requirements to international token sales"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_compliance_assessment\", \"Information needed\": \"Case interpretation of Section 5 in cross-border context\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Ralston Section 5 application\"}, \"Reasoning\": \"Must first find judicial reasoning in Ralston case\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International token sale registration\", \"edgar_check\": \"\", \"regulation\": \"Section 5\", \"case_interpretation_check\": \"Ralston precedent\"}, \"Reasoning\": \"Check if EDGAR filings meet combined regulatory + judicial standards\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal citation for the Howey Test definition?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Formal case citation for Howey Test\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. W.J. Howey Co., 328 U.S. 293 (1946)\"}, \"Reasoning\": \"Citation verification requires exact case format check against legal databases\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

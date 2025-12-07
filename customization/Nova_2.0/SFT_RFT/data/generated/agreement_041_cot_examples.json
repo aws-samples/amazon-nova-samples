@@ -1,0 +1,66 @@
+{
+  "summary": "This document is an Assignment of Lease and Consent to Assignment dated July 10, 2025, involving Allurion Technologies, Inc. (Assignor), Aila Technologies, Inc. (Assignee), and 3 Huron Investments, LLC (Landlord). It details the transfer of lease obligations from Assignor to Assignee, effective September 1, 2025, with Landlord's consent, and includes provisions regarding security deposits and the condition of the premises. The Assignor remains liable for past and future obligations under the lease.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the proposed Regulation D exemption apply to our international private placement structure?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D international applicability + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First need to retrieve Regulation D text to understand international transaction rules\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International private placement compliance\", \"edgar_check\": \"EDGAR cross-border transaction clause\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"None\"}, \"Reasoning\": \"After establishing regulatory framework, validate against EDGAR filing language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' citation is correctly formatted for Blue Sky law arguments"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston\"}, \"Reasoning\": \"Citation verification requires only legal citation tool to check format correctness\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How do courts interpret 'material information' under Section 10(b) anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law definitions of materiality\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material information under Section 10(b)\"}, \"Reasoning\": \"Judicial interpretation requires direct case law analysis of statutory terms\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

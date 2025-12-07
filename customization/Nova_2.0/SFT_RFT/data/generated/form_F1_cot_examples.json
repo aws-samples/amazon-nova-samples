@@ -1,0 +1,66 @@
+{
+  "summary": "Form F-1 is used by foreign private issuers to register securities under the Securities Act of 1933, unless another form is specified. It cannot be used for asset-backed securities. If a majority-owned subsidiary does not meet eligibility, it can still use Form F-1 if the parent company guarantees the securities and meets the requirements.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR compliance check\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve authoritative text of Regulation D to establish compliance baseline\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Memorandum exemption claims\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR claims against retrieved regulations using compliance tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for Section 5 registration exemptions in international offerings?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation_research\", \"Information needed\": \"Case law about international Section 5 exemptions\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5\"}, \"Reasoning\": \"Need statutory foundation before interpreting international applications\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"International Section 5 registration exemptions precedent\"}, \"Reasoning\": \"Search for judicial interpretations of international registration requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506 citation is correct for private placement rules"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of 17 CFR 230.506 reference\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506\"}, \"Reasoning\": \"Citation verification requires exact format/code validation through specialized tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

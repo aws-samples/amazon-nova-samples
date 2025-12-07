@@ -1,0 +1,66 @@
+{
+  "summary": "This Separation Agreement dated November 1, 2025, between ECD Automotive Design, Inc. and Emily Humble, outlines the terms of Humble's termination, including severance pay of $172,000, equity issuance, and COBRA premium payments for six months. In exchange, Humble agrees to release the company from any claims related to her employment or termination.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D comply with SEC requirements? Agreement states 35 non-accredited US investors but includes 10 sophisticated foreign investors"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D investor limits + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506(b)\"}, \"Reasoning\": \"First need to retrieve exact SEC limits on non-accredited investors in private placements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"35 US + 10 foreign investors\", \"regulation\": \"Reg D Rule 506(b)\", \"case_interpretation_check\": \"None\"}, \"Reasoning\": \"After establishing regulatory baseline, validate EDGAR clause against Rule 506(b) requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the controlling precedent for materiality standards in SEC anti-fraud cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Key case law on materiality\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC Rule 10b-5 materiality standards\"}, \"Reasoning\": \"Materiality in securities fraud requires judicial interpretation of TSC Industries v. Northway precedent\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506 properly cites Regulation D safe harbor provisions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506\"}, \"Reasoning\": \"Citation verification requires structural validation against official CFR formatting standards\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

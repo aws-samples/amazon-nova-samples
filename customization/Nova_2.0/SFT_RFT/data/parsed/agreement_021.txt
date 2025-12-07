@@ -1,0 +1,2628 @@
+EX-4.1
+2
+d43544dex41.htm
+EX-4.1
+EX-4.1
+Exhibit 4.1
+MATTEL, INC.
+INDENTURE
+Dated as of November 17, 2025
+U.S. Bank Trust Company, National Association
+as Trustee
+TABLE OF CONTENTS
+Page
+ARTICLE I DEFINITIONS AND INCORPORATION BY REFERENCE
+1
+Section 1.1
+Definitions
+1
+Section 1.2
+Other Definitions
+8
+Section 1.3
+Incorporation by Reference of Trust Indenture Act
+8
+Section 1.4
+Rules of Construction
+9
+ARTICLE II THE SECURITIES
+9
+Section 2.1
+Issuable in Series
+9
+Section 2.2
+Establishment of Terms of Series of Securities
+9
+Section 2.3
+Execution and Authentication
+12
+Section 2.4
+Registrar, Paying Agent and Service Agent
+13
+Section 2.5
+Paying Agent to Hold Money in Trust
+13
+Section 2.6
+Holder Lists
+14
+Section 2.7
+Transfer and Exchange
+14
+Section 2.8
+Mutilated, Destroyed, Lost and Stolen Securities
+15
+Section 2.9
+Outstanding Securities
+15
+Section 2.10
+Treasury Securities
+16
+Section 2.11
+Temporary Securities
+16
+Section 2.12
+Cancellation
+16
+Section 2.13
+Defaulted Interest
+17
+Section 2.14
+Global Securities
+17
+Section 2.15
+CUSIP and ISIN Numbers
+19
+ARTICLE III REDEMPTION
+19
+Section 3.1
+Notice to Trustee
+19
+Section 3.2
+Selection of Securities to be Redeemed
+19
+Section 3.3
+Notice of Redemption
+20
+Section 3.4
+Effect of Notice of Redemption
+21
+Section 3.5
+Deposit of Redemption Price
+21
+Section 3.6
+Securities Redeemed in Part
+21
+ARTICLE IV COVENANTS
+21
+Section 4.1
+Payment of Principal and Interest
+21
+Section 4.2
+SEC Reports
+21
+Section 4.3
+Compliance Certificate
+22
+Section 4.4
+Stay, Extension and Usury Laws
+22
+Section 4.5
+Limitation on Liens
+23
+Section 4.6
+Limitation on Sale/Leaseback Transactions
+24
+i
+ARTICLE V SUCCESSORS
+24
+Section 5.1
+When Company May Merge, Etc.
+24
+Section 5.2
+Successor Corporation Substituted
+25
+ARTICLE VI DEFAULTS AND REMEDIES
+25
+Section 6.1
+Events of Default
+25
+Section 6.2
+Acceleration of Maturity; Rescission and Annulment
+27
+Section 6.3
+Collection of Indebtedness and Suits for Enforcement by Trustee
+27
+Section 6.4
+Trustee May File Proofs of Claim
+28
+Section 6.5
+Trustee May Enforce Claims Without Possession of Securities
+28
+Section 6.6
+Application of Money Collected
+29
+Section 6.7
+Limitation on Suits
+29
+Section 6.8
+Unconditional Right of Holders to Receive Principal and Interest
+30
+Section 6.9
+Restoration of Rights and Remedies
+30
+Section 6.10
+Rights and Remedies Cumulative
+30
+Section 6.11
+Delay or Omission Not Waiver
+30
+Section 6.12
+Control by Holders
+30
+Section 6.13
+Waiver of Past Defaults
+31
+Section 6.14
+Undertaking for Costs
+31
+ARTICLE VII TRUSTEE
+32
+Section 7.1
+Duties of Trustee
+32
+Section 7.2
+Rights of Trustee
+33
+Section 7.3
+Individual Rights of Trustee
+35
+Section 7.4
+Trustee’s Disclaimer
+35
+Section 7.5
+Notice of Defaults
+35
+Section 7.6
+Reports by Trustee to Holders
+35
+Section 7.7
+Compensation and Indemnity
+35
+Section 7.8
+Replacement of Trustee
+36
+Section 7.9
+Successor Trustee by Merger, etc.
+37
+Section 7.10
+Eligibility; Disqualification
+38
+Section 7.11
+Preferential Collection of Claims Against Company
+38
+ARTICLE VIII SATISFACTION AND DISCHARGE
+38
+Section 8.1
+Satisfaction and Discharge of Indenture
+38
+Section 8.2
+Application of Trust Funds; Indemnification
+39
+Section 8.3
+Legal Defeasance of Securities of any Series
+40
+Section 8.4
+Covenant Defeasance
+41
+Section 8.5
+Repayment to Company
+42
+Section 8.6
+Reinstatement
+42
+ARTICLE IX AMENDMENTS AND WAIVERS
+43
+Section 9.1
+Without Consent of Holders
+43
+Section 9.2
+With Consent of Holders
+44
+Section 9.3
+Limitations
+44
+ii
+Section 9.4
+Compliance with Trust Indenture Act
+45
+Section 9.5
+Revocation and Effect of Consents
+45
+Section 9.6
+Notation on or Exchange of Securities
+45
+Section 9.7
+Trustee Protected
+45
+ARTICLE X MISCELLANEOUS
+46
+Section 10.1
+Trust Indenture Act Controls
+46
+Section 10.2
+Notices
+46
+Section 10.3
+Communication by Holders with Other Holders
+47
+Section 10.4
+Certificate and Opinion as to Conditions Precedent
+47
+Section 10.5
+Statements Required in Certificate or Opinion
+48
+Section 10.6
+Rules by Trustee and Agents
+48
+Section 10.7
+Legal Holidays
+48
+Section 10.8
+No Recourse Against Others
+48
+Section 10.9
+Counterparts
+48
+Section 10.10
+Governing Laws; Waiver of Jury Trial; Consent to Jurisdiction
+49
+Section 10.11
+No Adverse Interpretation of Other Agreements
+50
+Section 10.12
+Successors
+50
+Section 10.13
+Severability
+50
+Section 10.14
+Table of Contents, Headings, Etc.
+50
+Section 10.15
+Securities in a Foreign Currency
+50
+Section 10.16
+Judgment Currency
+51
+Section 10.17
+Force Majeure
+51
+Section 10.18
+U.S.A. Patriot Act
+51
+ARTICLE XI SINKING FUNDS
+52
+Section 11.1
+Applicability of Article
+52
+Section 11.2
+Satisfaction of Sinking Fund Payments with Securities
+52
+Section 11.3
+Redemption of Securities for Sinking Fund
+53
+iii
+MATTEL, INC.
+Reconciliation and tie between Trust Indenture Act of 1939 and Indenture,
+dated as of November 17, 2025
+§ 310(a)(1)
+7.10
+(a)(2)
+7.10
+(a)(3)
+Not Applicable
+(a)(4)
+Not Applicable
+(a)(5)
+7.10
+(b)
+7.10
+§ 311(a)
+7.11
+(b)
+7.11
+(c)
+Not Applicable
+§ 312(a)
+2.6
+(b)
+10.3
+(c)
+10.3
+§ 313(a)
+7.6
+(b)(1)
+7.6
+(b)(2)
+7.6
+(c)(1)
+7.6
+(d)
+7.6
+§ 314(a)
+4.2, 10.5
+(b)
+Not Applicable
+(c)(1)
+10.4
+(c)(2)
+10.4
+(c)(3)
+Not Applicable
+(d)
+Not Applicable
+(e)
+10.5
+(f)
+Not Applicable
+§ 315(a)
+7.1
+(b)
+7.5
+(c)
+7.1
+(d)
+7.1
+(e)
+6.14
+§ 316(a)
+2.10
+(a)(1)(A)
+6.12
+(a)(1)(B)
+6.13
+(b)
+6.8
+§ 317(a)(1)
+6.3
+(a)(2)
+6.4
+(b)
+2.5
+§ 318(a)
+10.1
+Note: This reconciliation and tie shall not, for any purpose, be deemed to be part of the Indenture.
+iv
+Indenture dated as of November 17, 2025 between Mattel, Inc., a Delaware corporation
+(“
+Company
+”), and U.S. Bank Trust Company, National Association, a national banking association, as trustee (“
+Trustee
+”).
+Each party agrees as follows for the benefit of the other party and for the equal and ratable benefit of the Holders of the Securities issued
+under this Indenture.
+ARTICLE I
+DEFINITIONS AND INCORPORATION BY REFERENCE
+Section 1.1
+Definitions
+.
+“
+Affiliate
+” of any specified Person means any other Person directly or indirectly controlling or controlled by or under
+direct or indirect common control with such specified Person. For purposes of this definition, “
+control
+” (including, with correlative meanings, the terms “
+controlling
+,” “
+controlled by
+” and
+“
+under common control with
+”), as used with respect to any Person, means the possession, directly or indirectly, of the power to direct or cause the direction of the management or policies of such Person, whether through the
+ownership of voting securities, by agreement or otherwise.
+“
+Agent
+” means any Registrar, Paying Agent or Service Agent.
+“
+Bankruptcy Law
+” means Title 11, United States Code, as the same may be amended, or any similar applicable
+Federal or state law for the relief of debtors.
+“
+Board of Directors
+” means the Board of Directors of the Company or
+any duly authorized committee thereof.
+“
+Board Resolution
+” means a copy of a resolution certified by the Secretary or
+an Assistant Secretary of the Company to have been adopted by the Board of Directors or pursuant to authorization by the Board of Directors and to be in full force and effect on the date of the certificate and delivered to the Trustee.
+“
+Business Day
+” means a day other than a Saturday, Sunday or other day on which banking institutions are authorized or
+required by law or regulation to close in the State of New York or, with respect to any payments to be made under this Indenture, the place of payment.
+“
+Capitalized Lease Obligation
+” means, at the time any determination thereof is to be made, the amount of the liability in
+respect of a capital lease that would at such time be required to be capitalized and reflected as a liability on a balance sheet (excluding the footnotes thereto) in accordance with GAAP;
+provided
+,
+however
+, that any obligations
+relating to a lease that was accounted for by the Company as an operating lease as of November 20, 2019 and any similar lease entered into after November 20, 2019 shall be accounted for as an operating lease and not a Capitalized Lease
+Obligation for all purposes under this Indenture.
+“
+Company
+” means the party named as such above until a successor
+replaces it and thereafter means the successor.
+“
+Company Order
+” means a written request or order signed in the name of
+the Company by any Officer of the Company and delivered to the Trustee.
+“
+Consolidated Net Tangible Assets
+” has the
+meaning set forth in the Existing Indenture as in effect on the issuance date of any Series of Securities.
+“
+Corporate Trust
+Office
+” means the office of the Trustee at which at any particular time its corporate trust business related to this Indenture shall be principally administered, which office at the date of this Indenture is located at the address for the
+Trustee set forth in Section 10.2, or such other address as the Trustee may designate from time to time by notice to the Holders and the Company.
+“
+Current Assets
+” means any asset of the Company or any of its Subsidiaries that would be classified as a current asset on
+an audited consolidated balance sheet of the Company prepared, in accordance with generally accepted accounting principles, on the date any Lien on such asset is incurred.
+“
+Custodian
+” means any receiver, trustee, assignee, liquidator or similar official under any Bankruptcy Law.
+“
+Default
+” means any event which is, or after notice or passage of time or both would be, an Event of Default.
+“
+Depositary
+” means, with respect to the Securities of any Series issuable or issued in whole or in part in the form of one
+or more Global Securities, the Person designated as Depositary for such Series by the Company, which Depositary shall be a clearing agency registered under the Exchange Act; and if at any time there is more than one such Person,
+“
+Depositary
+” as used with respect to the Securities of any Series shall mean the Depositary with respect to the Securities of such Series.
+“
+Discount Security
+” means any Security that provides for an amount less than the stated principal amount thereof to be due
+and payable upon declaration of acceleration of the maturity thereof pursuant to
+Section
+6.2
+.
+“
+Dollars
+” means the currency of the United States of America.
+“
+euro
+” means the single currency of participating members of the economic and monetary union as contemplated in the Treaty
+on the European Union.
+“
+Exchange Act
+” means the Securities Exchange Act of 1934, as amended, and the rules and
+regulations of the SEC promulgated thereunder.
+“
+Fair Market Value
+” means, with respect to any asset or property, the
+price that could be negotiated in an
+arm’s-length,
+free market transaction, for cash, between a willing seller and a willing and able buyer, neither of whom is under undue pressure or compulsion to
+complete the transaction (as determined in good faith by the senior management or the Board of Directors of the Company or any direct or indirect parent of the Company, whose determination will be conclusive for all purposes under this Indenture and
+any Securities).
+2
+“
+Foreign Currency
+” means any currency or currency unit issued by a
+government other than the government of the United States of America.
+“
+Foreign Government Obligations
+” means with
+respect to Securities of any Series that are denominated in a Foreign Currency, noncallable direct obligations of, or obligations guaranteed by, the government that issued or caused to be issued such Foreign Currency for the payment of which
+obligations its full faith and credit is pledged and which are not callable or redeemable at the option of the issuer thereof.
+“
+GAAP
+” means generally accepted accounting principles in the United States of America as in effect from time to time,
+including those set forth in the opinions and pronouncements of the Accounting Principles Board of the American Institute of Certified Public Accountants and statements and pronouncements of the Financial Accounting Standards Board or in such other
+statements by such other entity as approved by a significant segment of the accounting profession (but excluding the policies, rules, and regulations of the SEC applicable only to public companies);
+provided
+that at any time after the
+issuance date of any Series of Securities, the Company may by written notice to the Trustee (1) elect to use GAAP as of the date specified in such notice and/or (2) elect to use IFRS in lieu of GAAP for financial reporting purposes and,
+upon any such notice, references herein to GAAP shall thereafter be construed to mean (1) for periods beginning on and after the date specified in such notice, IFRS as in effect on the date specified in such notice and (2) for prior
+periods, GAAP as defined in the first sentence of this definition prior to the proviso. All ratios and computations based on GAAP contained in this Indenture shall be computed in conformity with GAAP.
+“
+Global Security
+” or “
+Global Securities
+” means a Security or Securities, as the case may be, in the form
+established pursuant to
+Section
+2.2
+evidencing all or part of a Series of Securities, issued to the Depositary for such Series or its nominee, and registered in the name of such Depositary or nominee.
+“
+Holder
+” means the Person in whose name a Security is registered on the Registrar’s books.
+“
+IFRS
+” means the International Financial Reporting Standards as issued by the International Accounting Standards Board.
+“
+Indebtedness
+” means, with respect to any Person, without duplication:
+(1) the principal of any indebtedness of such Person, whether or not contingent, (i) in respect of borrowed money, (ii) evidenced by
+bonds, notes, debentures or similar instruments or letters of credit or bankers’ acceptances (or, without duplication, reimbursement agreements in respect thereof), (iii) representing the deferred and unpaid purchase price of any property,
+(iv) in respect of Capitalized Lease Obligations, or (v) representing any Swap Contracts, in each case, if and to the extent that any of the foregoing Indebtedness (other than letters of credit and Swap Contracts) would appear as a
+liability on a balance sheet (excluding the footnotes thereto) of such Person prepared in accordance with GAAP;
+3
+(2) to the extent not otherwise included, any guarantee by such Person of the Indebtedness
+of another Person (other than by endorsement of negotiable instruments for collection in the ordinary course of business); and
+(3) to the
+extent not otherwise included, Indebtedness of another Person secured by a Lien on any asset owned by such Person (whether or not such Indebtedness is assumed by such Person);
+provided
+,
+however
+, that the amount of such Indebtedness
+will be the lesser of: (i) the Fair Market Value of such asset at such date of determination and (ii) the amount of such Indebtedness of such other Person.
+“
+Indenture
+” means this Indenture as amended or supplemented from time to time and shall include the form and terms of
+particular Series of Securities established or contemplated hereunder.
+“
+Lien
+” means any lien, security interest,
+charge, mortgage, pledge or other encumbrance of any kind (including any conditional sale or other title retention agreement, any lease in the nature thereof, and any agreement to give any security interest).
+“
+Maturity
+” when used with respect to any Security, means the date on which the principal of such Security becomes due and
+payable as therein or herein provided, whether at the Stated Maturity or by declaration of acceleration, call for redemption or otherwise.
+“
+Officer
+” means, with respect to any Person, the Chairman of the Board, Chief Executive Officer, Chief Financial Officer,
+President, any Executive Vice President, Senior Vice President, or Vice President, the Treasurer or the Secretary (or any Person serving the equivalent function of any of the foregoing) of such Person (or of the general partner, managing member, or
+sole member of such Person) or any individual designated as an “Officer” for purposes of this Indenture by the Board of Directors of such Person (or the Board of Directors of the general partner, managing member, or sole member of such
+Person).
+“
+Officer’s Certificate
+” means a certificate signed on behalf of the Company or any direct or indirect
+parent of the Company by an Officer of the Company or such parent entity that meets the requirements set forth in this Indenture.
+“
+Opinion of Counsel
+” means a written opinion from legal counsel who is reasonably acceptable to the Trustee. The counsel
+may be an employee of or counsel to the Company.
+“
+Ordinary Course Lien
+” means:
+(1) Liens of taxes, assessments or governmental charges or levies on the property of the Company or any of its Subsidiaries if the same shall
+not at the time be delinquent or thereafter can be paid without penalty, or are being contested in good faith and by appropriate proceedings and for which adequate reserves in accordance with generally accepted accounting principles shall have been
+set aside on the books of the Company;
+(2) Liens imposed by law, such as carriers’, warehousemen’s, landlords’,
+materialmen’s and mechanics’ liens and other similar liens, arising in the ordinary course of business which secure obligations not more than 60 days past due or which are being contested in good faith by appropriate proceedings and for
+which adequate reserves in accordance with generally accepted accounting principles shall have been set aside on the books of the Company;
+4
+(3) Liens (other than any Lien imposed by the Employee Retirement Income Security Act of
+1974, as amended) arising out of pledges or deposits under worker’s compensation laws, unemployment insurance, old age pensions, or other social security or retirement benefits, or similar legislation;
+(4) Liens in favor of issuers of performance, surety, bid, indemnity, warranty, release, appeal, or similar bonds or with respect to other
+regulatory requirements or letters of credit or bankers acceptances issued, and completion guarantees provided for, in each case, issued pursuant to the request of and for the account of such Person in the ordinary course of its business;
+(5) utility easements, building restrictions and such other encumbrances or charges against real property as are of a nature generally
+existing with respect to properties of a similar character and which do not in any material way affect the marketability of the same or interfere with the use thereof in the business of the Company or any of its Subsidiaries, as the case may be;
+(6) Liens relating to a judgment or other
+court-ordered
+award or settlement as to which the
+Company has not exhausted its appellate rights;
+(7) (i) licenses and sublicenses granted by the Company or a Subsidiary, (ii) leases
+or subleases granted to or by the Company or any Subsidiary (by the Company or any Subsidiary as lessor or sublessor) to third parties not pursuant to a Sale/Leaseback Transaction, and (iii) franchise or
+co-development
+arrangements entered into by the Company or any Subsidiary with third parties for the development, marketing, and/or sale of the Company’s or any Subsidiary’s products and media
+content, in each case, in the ordinary course of business of the Company or any such Subsidiary, not materially interfering with the business of the Company, taken as a whole, and not for the purpose of providing a lien, security interest, charge,
+mortgage, pledge, or other such encumbrance to secure another obligation;
+(8) any encumbrance or restriction (including put and call
+arrangements and rights of first refusal and similar rights) with respect to Equity Interests of any joint venture or similar arrangement pursuant to any joint venture or similar agreement;
+(9) Liens arising out of conditional sale, title retention, consignment, or similar arrangements with vendors for the sale or purchase of
+goods entered into by the Company or any Subsidiary in the ordinary course of business; and
+(10) Liens on copyrights with respect to film
+and episodic assets granted in the ordinary course of business.
+“
+Person
+” means any individual, corporation, company,
+partnership, limited liability company, joint venture, association, joint stock company, trust, unincorporated organization, government (or any agency or political subdivision thereof) or any other entity.
+“
+principal
+” of a Security means the principal of the Security plus, when appropriate, the premium, if any, on the Security.
+5
+“
+Responsible Officer
+” means any officer of the Trustee in its Corporate
+Trust Office having responsibility for administration of this Indenture and also means, with respect to a particular corporate trust matter, any other officer to whom any corporate trust matter relating to this Indenture is referred because of his
+or her knowledge of and familiarity with a particular subject.
+“
+Sale/Leaseback Transaction
+” means any arrangement with
+any Person (other than the Company or any of its Subsidiaries) providing for the leasing by the Company or any of its Subsidiaries of any property which has been or is to be sold or transferred by the Company or such Subsidiary to such Person or to
+any Person (other than the Company or any of its Subsidiaries) to which funds have been or are to be advanced by such Person on the security of the leased property.
+“
+SEC
+” means the Securities and Exchange Commission.
+“
+Securities
+” means the debentures, notes or other debt instruments of the Company of any Series authenticated and delivered
+under this Indenture.
+“
+Securities Act
+” means the Securities Act of 1933, as amended, and the rules and regulations of
+the SEC promulgated thereunder.
+“
+Series
+” or “
+Series of Securities
+” means each series of debentures,
+notes or other debt instruments of the Company created pursuant to
+Sections
+2.1
+and
+2.2
+hereof.
+“
+Significant Subsidiary
+” means (1) any direct or indirect Subsidiary of the Company that would be a “significant
+subsidiary” as defined in Article 1, Rule
+1-02
+of Regulation
+S-X,
+promulgated pursuant to the Securities Act, as such regulation is in effect on
+November 20, 2019, or (2) any group of direct or indirect Subsidiaries of the Company that, taken together as a group, would be a “significant subsidiary” as defined in Article 1, Rule
+1-02
+of Regulation
+S-X,
+promulgated pursuant to the Securities Act, as such regulation is in effect on November 20, 2019.
+“
+Stated Maturity
+” means, with respect to any Security, the date specified in such Security as the fixed date on which the
+final payment of principal of such Security is due and payable, including pursuant to any mandatory redemption provision (but excluding any provision providing for the repurchase of such Security at the option of the Holder thereof upon the
+happening of any contingency unless such contingency has occurred).
+“
+Subsidiary
+” (1) except for purposes of
+Sections 4.5
+and
+4.6
+, means, with respect to any Person (i) any corporation, association or other business entity (other than a partnership, joint venture, limited liability company or similar entity) of which more than 50% of the
+total voting power of the Voting Stock is at the time of determination owned or controlled, directly or indirectly, by such Person or one or more of the other Subsidiaries of that Person or a combination thereof, (ii) any partnership, joint
+venture, limited liability company or similar entity of which (x) more than 50% of the capital accounts, distribution rights, total equity and voting interests or general and limited partnership interests, as applicable, are owned or
+controlled, directly or indirectly, by such Person or one or more of the other Subsidiaries of that Person or a combination thereof, whether in the form of membership, general, special or limited partnership interests or otherwise, and (y) such
+Person or any Subsidiary of such Person is a controlling general partner or otherwise controls such entity, and (iii) any Person that is consolidated in the consolidated financial statements of the specified Person in accordance with GAAP and
+(2) for purposes of
+Sections 4.5
+and
+4.6
+, has the meaning set forth in the Existing Indenture as in effect on the issuance date of any Series of Securities.
+6
+“
+Swap Contract
+” means (1) any and all rate swap transactions, basis
+swaps, credit derivative transactions, forward rate transactions, commodity swaps, commodity options, forward commodity contracts, equity or equity index swaps or options, bond or bond price or bond index swaps or options or forward bond or forward
+bond price or forward bond index transactions, interest rate options, forward foreign exchange transactions, cap transactions, floor transactions, collar transactions, currency swap transactions, cross-currency rate swap transactions, currency
+options, spot contracts, or any other similar transactions or any combination of any of the foregoing (including any options to enter into any of the foregoing), whether or not any such transaction is governed by or subject to any master agreement
+and (2) any and all transactions of any kind, and the related confirmations, which are subject to the terms and conditions of, or governed by, any form of master agreement published by the International Swaps and Derivatives Association, Inc.,
+any International Foreign Exchange Master Agreement, or any other master agreement, including any obligations or liabilities under any such master agreement.
+“
+TIA
+” means the Trust Indenture Act of 1939 (15 U.S. Code
+§§ 77aaa-77bbbb)
+as in effect on the date of this Indenture;
+provided
+,
+however
+, that in the event the Trust Indenture Act of 1939 is amended after such date, “TIA”
+means, to the extent required by any such amendment, the Trust Indenture Act as so amended.
+“
+Trustee
+” means the Person
+named as the “Trustee” in the first paragraph of this instrument until a successor Trustee shall have become such pursuant to the applicable provisions of this Indenture, and thereafter “Trustee” shall mean or include each
+Person who is then a Trustee hereunder, and if at any time there is more than one such Person, “Trustee” as used with respect to the Securities of any Series shall mean the Trustee with respect to Securities of that Series.
+“
+U.S.
+Government Obligations
+” means securities that are:
+(1) direct obligations of the United States of America for the timely payment of which its full faith and credit is pledged; or
+(2) obligations of a Person controlled or supervised by and acting as an agency or instrumentality of the United States of America the
+timely payment of which is unconditionally guaranteed as a full faith and credit obligation by the United States of America,
+which, in
+each case, are not callable or redeemable at the option of the issuer thereof, and shall also include a depository receipt issued by a bank (as defined in Section 3(a)(2) of the Securities Act) as custodian with respect to any such
+U.S. Government Obligations or a specific payment of principal of or interest on any such U.S. Government Obligations held by such custodian for the account of the holder of such depository receipt;
+provided
+that (except as required
+by law) such custodian is not authorized to make any deduction from the amount payable to the holder of such depository receipt from any amount received by the custodian in respect of the U.S. Government Obligations or the specific payment of
+principal of or interest on the U.S. Government Obligations evidenced by such depository receipt.
+7
+Section 1.2
+Other Definitions
+.
+Term
+Defined in
+Section
+“
+Actual Knowledge
+”
+7.1(g)
+“
+Agent Members
+”
+2.14(f)
+“
+DTC
+”
+2.14(c)
+“
+EDGAR
+”
+4.2
+“
+Event of Default
+”
+6.1
+“
+Judgment Currency
+”
+10.16
+“
+Mandatory Sinking Fund Payment
+”
+11.1
+“
+New York Banking Day
+”
+10.16
+“Optional Sinking Fund Payment”
+11.1
+“
+Paying Agent
+”
+2.4
+“
+Registrar
+”
+2.4
+“
+Required Currency
+”
+10.16
+“
+Service Agent
+”
+2.4
+“
+Specified Courts
+”
+10.10
+Section 1.3
+Incorporation by Reference of Trust Indenture Act
+.
+Whenever this Indenture refers to a provision of the TIA, the provision is incorporated by reference in and made a part of this Indenture. The
+following TIA terms used in this Indenture have the following meanings:
+“
+Commission
+” means the SEC.
+“
+indenture securities
+” means the Securities.
+“
+indenture security holder
+” means a Holder.
+“
+indenture to be qualified
+” means this Indenture.
+“
+indenture trustee
+” or “
+institutional trustee
+” means the Trustee.
+“
+obligor
+” on the indenture securities means the Company and any successor obligor upon the Securities.
+All other terms used in this Indenture that are defined by the TIA, defined by TIA reference to another statute or defined by SEC rule under
+the TIA and not otherwise defined herein are used herein as so defined.
+8
+Section 1.4
+Rules of Construction
+.
+Unless the context otherwise requires:
+(a) a term has the meaning assigned to it;
+(b) an accounting term not otherwise defined has the meaning assigned to it in accordance with GAAP;
+(c) “or” is not exclusive;
+(d) words in the singular include the plural, and in the plural include the singular;
+(e) provisions apply to successive events and transactions;
+(f) in the computation of periods of time from a specified date to a later specified date, the word “from” means “from and
+including,” and the words “to” and “until” each mean “to but excluding”;
+(g) the phrase
+“in writing” as used herein shall be deemed to include PDFs,
+e-mails
+and other electronic means of transmission, unless otherwise indicated; and
+(h) “including” means including, without limitation.
+ARTICLE II
+THE
+SECURITIES
+Section 2.1
+Issuable in Series
+.
+The aggregate principal amount of Securities that may be authenticated and delivered under this Indenture is unlimited. The Securities may be
+issued in one or more Series. All Securities of a Series shall be identical except as may be set forth or determined in the manner provided in a Board Resolution, a supplemental indenture or an Officer’s Certificate detailing the adoption of
+the terms thereof pursuant to the authority granted under a Board Resolution. In the case of Securities of a Series to be issued from time to time, the Board Resolution, Officer’s Certificate or supplemental indenture detailing the adoption of
+the terms thereof pursuant to the authority granted under a Board Resolution may provide for the method by which specified terms (such as interest rate, maturity date, record date or date from which interest shall accrue) are to be determined.
+Securities may differ between Series, in respect of any matters;
+provided
+that all Series of Securities shall be equally and ratably entitled to the benefits of this Indenture.
+Section 2.2
+Establishment of Terms of Series of Securities
+.
+At or prior to the issuance of any Securities within a Series, the following shall be established (as to the Series generally, in the case of
+subsection (a)
+and either as to such Securities within the Series or as to the Series generally in the case of
+subsections (b)
+through
+(w)
+) by or pursuant to a Board Resolution, and set forth or determined in the
+manner provided in a Board Resolution, supplemental indenture hereto or Officer’s Certificate:
+(a) the title (which shall
+distinguish the Securities of that particular Series from the Securities of any other Series) and ranking (including the terms of any subordination provisions) of the Series;
+9
+(b) the price or prices (expressed as a percentage of the principal amount thereof) at which
+the Securities of the Series will be issued;
+(c) any limit upon the aggregate principal amount of the Securities of the Series which may
+be authenticated and delivered under this Indenture (except for Securities authenticated and delivered upon registration of transfer of, or in exchange for, or in lieu of, other Securities of the Series pursuant to
+Section
+2.7
+,
+2.8
+,
+2.11
+,
+3.6
+or
+9.6
+);
+(d) the date or dates on which the principal
+of the Securities of the Series is payable;
+(e) the rate or rates (which may be fixed or variable) per annum or, if applicable, the
+method used to determine such rate or rates (including, but not limited to, any commodity, commodity index, stock exchange index or financial index) at which the Securities of the Series shall bear interest, if any, the date or dates from which such
+interest, if any, shall accrue, the date or dates on which such interest, if any, shall commence and be payable and any regular record date for the interest payable on any interest payment date and the basis upon which interest shall be calculated
+if other than that of a
+360-day
+year of twelve
+30-day
+months;
+(f) the place or places where the principal of and interest, if any, on the Securities of the Series shall be payable, where the Securities of
+such Series may be surrendered for registration of transfer or exchange and where notices and demands to or upon the Company in respect of the Securities of such Series and this Indenture may be delivered, and the method of such payment, if by wire
+transfer, mail or other means;
+(g) if applicable, the period or periods within which, the price or prices at which and the terms and
+conditions upon which the Securities of the Series may be redeemed, in whole or in part, at the option of the Company;
+(h) the
+obligation, if any, of the Company to redeem or purchase the Securities of the Series pursuant to any sinking fund or analogous provisions or at the option of a Holder thereof and the period or periods within which, the price or prices at which and
+the terms and conditions upon which Securities of the Series shall be redeemed or purchased, in whole or in part, pursuant to such obligation;
+(i) the dates, if any, on which and the price or prices at which the Securities of the Series will be repurchased by the Company at the option
+of the Holders thereof and other detailed terms and provisions of such repurchase obligations;
+(j) if other than denominations of $1,000
+and any integral multiple thereof, the denominations in which the Securities of the Series shall be issuable;
+(k) the forms of the
+Securities of the Series and whether the Securities will be issuable as Global Securities;
+10
+(l) if other than the principal amount thereof, the portion of the principal amount of the
+Securities of the Series that shall be payable upon declaration of acceleration of the maturity thereof pursuant to
+Section
+6.2
+;
+(m) the currency of denomination of the Securities of the Series, which may be Dollars or any Foreign Currency, and if such currency of
+denomination is a composite currency, the agency or organization, if any, responsible for overseeing such composite currency;
+(n) the
+designation of the currency, currencies or currency units in which payment of the principal of and interest, if any, on the Securities of the Series will be made;
+(o) if payments of principal of or interest, if any, on the Securities of the Series are to be made in one or more currencies or currency
+units other than that or those in which such Securities are denominated, the manner in which the exchange rate with respect to such payments will be determined;
+(p) the manner in which the amounts of payment of principal of or interest, if any, on the Securities of the Series will be determined, if
+such amounts may be determined by reference to an index based on a currency or currencies or by reference to a commodity, commodity index, stock exchange index or financial index;
+(q) the provisions, if any, relating to any security provided for the Securities of the Series;
+(r) any addition to, deletion of or change in the Events of Default which applies to any Securities of the Series and any change in the right
+of the Trustee or the requisite Holders of such Securities to declare the principal amount thereof due and payable pursuant to
+Section
+6.2
+;
+(s) any addition to, deletion of or change in the covenants applicable to Securities of the Series;
+(t) any Depositaries, interest rate calculation agents, exchange rate calculation agents or other agents with respect to Securities of such
+Series if other than those appointed herein;
+(u) the provisions, if any, relating to conversion or exchange of any Securities of such
+Series, including if applicable, the conversion or exchange price, the conversion or exchange period, provisions as to whether conversion or exchange will be mandatory, at the option of the Holders thereof or at the option of the Company, the events
+requiring an adjustment of the conversion price or exchange price and provisions affecting conversion or exchange if such Series of Securities are redeemed;
+(v) any other terms of the Series (which may supplement, modify or delete any provision of this Indenture insofar as it applies to such
+Series), including any terms that may be required under applicable law or regulations or advisable in connection with the marketing of Securities of that Series;
+(w) whether any of the Company’s direct or indirect Subsidiaries will guarantee the Securities of that Series, including the terms of
+subordination, if any, of such guarantees; and
+(x) the terms applicable to Discount Securities, including rate or rates at which original
+issue discount will accrue.
+11
+All Securities of any one Series need not be issued at the same time and may be issued from
+time to time, consistent with the terms of this Indenture, if so provided by or pursuant to the Board Resolution, supplemental indenture hereto or Officer’s Certificate referred to above.
+Section 2.3
+Execution and Authentication
+.
+One Officer shall sign the Securities for the Company by manual, facsimile or electronic signature. If an Officer whose signature is on a
+Security no longer holds that office at the time the Security is authenticated, the Security shall nevertheless be valid.
+A Security
+shall not be valid until authenticated by the manual signature of the Trustee or an authenticating agent. The signature shall be conclusive evidence that the Security has been authenticated under this Indenture.
+The Trustee shall at any time, and from time to time, authenticate Securities for original issue in the principal amount provided in the Board
+Resolution, supplemental indenture hereto or Officer’s Certificate, upon receipt by the Trustee of a Company Order. Each Security shall be dated the date of its authentication.
+The aggregate principal amount of Securities of any Series outstanding at any time may not exceed any limit upon the maximum principal amount
+for such Series set forth in the Board Resolution, supplemental indenture hereto or Officer’s Certificate delivered pursuant to
+Section
+2.2
+, except as provided in
+Section
+2.8
+.
+Prior to the issuance of Securities of any Series, the Trustee shall have received and (subject to
+Section
+7.2
+)
+shall be fully protected in relying on: (1) the Board Resolution, supplemental indenture hereto or Officer’s Certificate establishing the form of the Securities of that Series or of Securities within that Series and the terms of the
+Securities of that Series or of Securities within that Series, (2) an Officer’s Certificate complying with
+Sections
+10.4
+and
+10.5
+, and (3) an Opinion of Counsel complying with
+Sections
+10.4
+and
+10.5
+.
+The Trustee shall have the right to decline to authenticate and deliver any
+Securities of such Series: (1) if the Trustee, being advised by counsel, determines that such action may not be taken lawfully or (2) if the Trustee in good faith determines that such action may expose the Trustee to personal liability.
+The Trustee may appoint an authenticating agent acceptable to the Company to authenticate Securities. An authenticating agent may
+authenticate Securities whenever the Trustee may do so. Each reference in this Indenture to authentication by the Trustee includes authentication by such agent. An authenticating agent has the same rights as an Agent to deal with the Company or an
+Affiliate.
+12
+Section 2.4
+Registrar, Paying Agent and Service Agent
+.
+The Company shall maintain, with respect to each Series of Securities, at the place or places specified with respect to such Series pursuant
+to
+Section
+2.2
+, an office or agency where Securities of such Series may be presented or surrendered for payment (“
+Paying Agent
+”), where Securities of such Series may be surrendered for registration of
+transfer or exchange (“
+Registrar
+”) and where notices and demands to or upon the Company in respect of the Securities of such Series and this Indenture may be delivered (“
+Service Agent
+”). The Registrar shall keep
+a register with respect to each Series of Securities and to their transfer and exchange. The Company will give prompt written notice to the Trustee of the name and address, and any change in the name or address, of each Registrar, Paying Agent or
+Service Agent. If at any time the Company shall fail to maintain any such required Registrar, Paying Agent or Service Agent or shall fail to furnish the Trustee with the name and address thereof, such presentations, surrenders, notices and demands
+may be made or served at the Corporate Trust Office of the Trustee, and the Company hereby appoints the Trustee as its agent to receive all such presentations, surrenders, notices and demands;
+provided
+,
+however
+, that any appointment of
+the Trustee as the Service Agent shall exclude the appointment of the Trustee or any office of the Trustee as an agent to receive the service of legal process on the Company.
+The Company may also from time to time designate one or more
+co-registrars,
+additional paying agents
+or additional service agents and may from time to time rescind such designations;
+provided
+,
+however
+, that no such designation or rescission shall in any manner relieve the Company of its obligations to maintain a Registrar, Paying
+Agent and Service Agent in each place so specified pursuant to
+Section
+2.2
+for Securities of any Series for such purposes. The Company will give prompt written notice to the Trustee of any such designation or rescission and
+of any change in the name or address of any such
+co-registrar,
+additional paying agent or additional service agent. The term “Registrar” includes any
+co-registrar;
+the term “Paying Agent” includes any additional paying agent; and the term “Service Agent” includes any additional service agent. The Company or any of its Affiliates may
+serve as Registrar or Paying Agent.
+The Company hereby appoints the Trustee the initial Registrar, Paying Agent and Service Agent for
+each Series unless another Registrar, Paying Agent or Service Agent, as the case may be, is appointed prior to the time Securities of that Series are first issued. The rights, powers, duties, obligations and actions of each Agent under this
+Indenture are several and not joint or joint and several, and the Agents shall only be obliged to perform those duties expressly set out in this Indenture and shall have no implied duties.
+Section 2.5
+Paying Agent to Hold Money in Trust
+.
+The Company shall require each Paying Agent other than the Trustee to agree in writing that the Paying Agent will hold in trust, for the
+benefit of Holders of any Series of Securities, or the Trustee, all money held by the Paying Agent for the payment of principal of or interest on the Series of Securities, and will notify the Trustee in writing of any default by the Company in
+making any such payment. While any such default continues, the Trustee may require a Paying Agent to pay all money held by it to the Trustee. The Company at any time may require a Paying Agent to pay all money held by it to the Trustee. Upon payment
+over to the Trustee, the Paying Agent (if other than the Company or a Subsidiary) shall have no further liability for the money. If the
+13
+Company or a Subsidiary acts as Paying Agent, it shall segregate and hold in a separate trust fund for the benefit of Holders of any Series of Securities all money held by it as Paying Agent.
+Upon any bankruptcy, reorganization or similar proceeding with respect to the Company, the Trustee shall serve as Paying Agent for the Securities. For the avoidance of doubt, a Paying Agent and the Trustee shall be held harmless and have no
+liability with respect to payments or disbursements (including to the Holders) until they have confirmed receipt of funds sufficient to make the relevant payment. No money held by an Agent needs to be segregated except as is required by law.
+Section 2.6
+Holder Lists
+.
+If it is serving as the Registrar, the Trustee shall preserve in as current a form as is reasonably practicable the most recent list available
+to it of the names and addresses of Holders of each Series of Securities and shall otherwise comply with TIA § 312(a). If the Trustee is not the Registrar, the Company shall furnish to the Trustee at least ten days before each interest
+payment date and at such other times as the Trustee may request in writing a list, in such form and as of such date as the Trustee may reasonably require, of the names and addresses of Holders of each Series of Securities.
+Every Holder, by receiving and holding Securities, agrees with the Company and the Trustee that neither the Company nor the Trustee or any
+agent of either of them shall be held accountable by reason of the disclosure of any such information as to the names and addresses of the Holders in accordance with TIA § 312, regardless of the source from which such information was
+derived, and that the Trustee shall not be held accountable by reason of mailing any material pursuant to a request made under TIA § 312(b).
+Section 2.7
+Transfer and Exchange
+.
+Where Securities of a Series are presented to the Registrar or a
+co-registrar
+with a request to
+register a transfer or to exchange them for an equal principal amount of Securities of the same Series, the Registrar shall register the transfer or make the exchange if its requirements for such transactions are met. To permit registrations of
+transfers and exchanges, the Trustee shall authenticate Securities at the Registrar’s request. No service charge shall be made for any registration of transfer or exchange (except as otherwise expressly permitted herein), but the Company may
+require payment of a sum sufficient to cover any transfer tax or similar governmental charge payable in connection therewith (other than any such transfer tax or similar governmental charge payable upon exchanges pursuant to
+Section
+2.11
+,
+3.6
+or
+9.6
+).
+Neither the Company nor the Registrar shall be required (1) to
+issue, register the transfer of, or exchange Securities of any Series for the period beginning at the opening of business fifteen days immediately preceding the sending of a notice of redemption of Securities of that Series selected for redemption
+and ending at the close of business on the day such notice is sent, (2) to register the transfer of or exchange Securities of any Series selected, called or being called for redemption as a whole or the portion being redeemed of any such
+Securities selected, called or being called for redemption in part, or (3) to register the transfer of or exchange Securities of any Series between a record date and payment date for such Series of Securities.
+14
+Section 2.8
+Mutilated, Destroyed, Lost and Stolen Securities
+.
+If any mutilated Security is surrendered to the Trustee, the Company shall execute and the Trustee shall authenticate and deliver in exchange
+therefor a new Security of the same Series and of like tenor and principal amount and bearing a number not contemporaneously outstanding.
+If there shall be delivered to the Company and the Trustee (1) evidence to their satisfaction of the destruction, loss or theft of any
+Security and (2) such security or indemnity bond as may be required by each of them to hold itself and any of its agents harmless, then, in the absence of notice to the Company or the Trustee that such Security has been acquired by a bona fide
+purchaser, the Company shall execute and upon receipt of a Company Order the Trustee shall authenticate and make available for delivery, in lieu of any such destroyed, lost or stolen Security, a new Security of the same Series and of like tenor and
+principal amount and bearing a number not contemporaneously outstanding.
+In case any such mutilated, destroyed, lost or stolen Security
+has become or is about to become due and payable, the Company in its discretion may, instead of issuing a new Security, pay such Security.
+Upon the issuance of any new Security under this Section, the Company may require the payment of a sum sufficient to cover any tax or other
+governmental charge that may be imposed in relation thereto and any other expenses (including the fees and expenses of the Trustee) connected therewith.
+Every new Security of any Series issued pursuant to this Section in lieu of any destroyed, lost or stolen Security shall constitute an
+original additional contractual obligation of the Company, whether or not the destroyed, lost or stolen Security shall be at any time enforceable by anyone, and shall be entitled to all the benefits of this Indenture equally and proportionately with
+any and all other Securities of that Series duly issued hereunder.
+The provisions of this Section are exclusive and shall preclude
+(to the extent lawful) all other rights and remedies with respect to the replacement or payment of mutilated, destroyed, lost or stolen Securities.
+Section 2.9
+Outstanding Securities
+.
+The Securities outstanding at any time are all the Securities authenticated by the Trustee except for those canceled by it, those delivered to
+it for cancellation, those reductions in the interest on a Global Security effected by the Trustee in accordance with the provisions hereof and those described in this Section as not outstanding.
+If a Security is replaced pursuant to
+Section
+2.8
+, it ceases to be outstanding until the Trustee receives proof
+satisfactory to it that the replaced Security is held by a bona fide purchaser.
+If the Paying Agent (other than the Company, a Subsidiary
+or an Affiliate of any thereof) holds on the Maturity of Securities of a Series money sufficient to pay such Securities payable on that date, then on and after that date such Securities of the Series cease to be outstanding and interest on them
+ceases to accrue.
+15
+The Company may purchase or otherwise acquire the Securities, whether by open market
+purchases, negotiated transactions or otherwise. A Security does not cease to be outstanding because the Company or an Affiliate holds the Security (but see
+Section
+2.10
+below).
+In determining whether the Holders of the requisite principal amount of outstanding Securities have given any request, demand, authorization,
+direction, notice, consent or waiver hereunder, (1) the principal amount of a Discount Security that shall be deemed to be outstanding for such purposes shall be the amount of the principal thereof that would be due and payable as of the date
+of such determination upon a declaration of acceleration of the Maturity thereof pursuant to
+Section
+6.2
+, and (2) the principal amount of a Security denominated in any Foreign Currency or composite currency which shall
+be deemed to be outstanding for such purposes shall be the Dollars equivalent, determined as of such date in the manner provided as contemplated by
+Section
+2.2
+, of the principal amount of such Security (or, in the case of a
+Security described in
+clause (1)
+above, of the amount determined as provided in such clause).
+Section 2.10
+Treasury
+Securities
+.
+In determining whether the Holders of the required principal amount of Securities of a Series have concurred in any
+request, demand, authorization, direction, notice, waiver or consent, Securities of a Series owned by the Company or any Affiliate shall be disregarded, except that for the purposes of determining whether the Trustee shall be protected in relying on
+any such request, demand, authorization, direction, notice, waiver or consent, only Securities of a Series that a Responsible Officer of the Trustee knows are so owned shall be so disregarded.
+Section 2.11
+Temporary Securities
+.
+Until definitive Securities are ready for delivery, the Company may prepare and the Trustee shall authenticate temporary Securities upon a
+Company Order. Temporary Securities shall be substantially in the form of definitive Securities but may have variations that the Company considers appropriate for temporary Securities. Without unreasonable delay, the Company shall prepare and the
+Trustee upon receipt of a Company Order shall authenticate definitive Securities of the same Series and date of maturity in exchange for temporary Securities. Until so exchanged, temporary securities shall have the same rights under this Indenture
+as the definitive Securities.
+Section 2.12
+Cancellation
+.
+The Company at any time may deliver Securities to the Trustee for cancellation. The Registrar and the Paying Agent shall forward to the
+Trustee any Securities surrendered to them for registration of transfer, exchange or payment. The Trustee shall cancel all Securities surrendered for transfer, exchange, payment, replacement or cancellation and shall destroy such canceled Securities
+(subject to the record retention requirements of the Exchange Act and the Trustee) and deliver a certificate of such cancellation to the Company upon written request of the Company. The Company may not issue new Securities to replace Securities that
+it has paid or delivered to the Trustee for cancellation.
+16
+Section 2.13
+Defaulted Interest
+.
+If the Company defaults in a payment of interest on a Series of Securities, it shall pay the defaulted interest, plus, to the extent permitted
+by law, any interest payable on the defaulted interest, to the Persons who are Holders of the Series on a subsequent special record date. The Company shall fix the record date and payment date. At least 30 days before the special record date, the
+Company shall send to the Trustee and to each Holder of the Series a notice that states the special record date, the payment date and the amount of interest to be paid. The Company may pay defaulted interest in any other lawful manner.
+Section 2.14
+Global Securities
+.
+(a)
+Terms of Securities
+. A Board Resolution, a supplemental indenture hereto or an Officer’s Certificate shall establish whether
+the Securities of a Series shall be issued in whole or in part in the form of one or more Global Securities and the Depositary for such Global Security or Securities.
+(b)
+Transfer and Exchange
+. Notwithstanding any provisions to the contrary contained in
+Section
+2.7
+of this
+Indenture and in addition thereto, any Global Security shall be exchangeable pursuant to
+Section
+2.7
+of this Indenture for Securities registered in the names of Holders other than the Depositary for such Security or its
+nominee only if (1) such Depositary notifies the Company that it is unwilling or unable to continue as Depositary for such Global Security or if at any time such Depositary ceases to be a clearing agency registered under the Exchange Act, and,
+in either case, the Company fails to appoint a successor Depositary registered as a clearing agency under the Exchange Act within 90 days of such event or (2) the Company executes and delivers to the Trustee an Officer’s Certificate to
+the effect that such Global Security shall be so exchangeable. Any Global Security that is exchangeable pursuant to the preceding sentence shall be exchangeable for Securities registered in such names as the Depositary shall direct in writing in an
+aggregate principal amount equal to the principal amount of the Global Security with like tenor and terms.
+Except as provided in this
+Section
+2.14(b)
+a Global Security may not be transferred except as a whole by the Depositary with respect to such Global Security to a nominee of such Depositary, by a nominee of such Depositary to such Depositary or
+another nominee of such Depositary or by the Depositary or any such nominee to a successor Depositary or a nominee of such a successor Depositary.
+None of the Trustee or any Agent shall have any obligation or duty to monitor, determine or inquire as to compliance with any restrictions on
+transfer imposed under this Indenture or under applicable law with respect to any transfer of any interest in any Security (including any transfers between or among Depositary participants, members or beneficial owners in any Global Security) other
+than to require delivery of such certificates and other documentation or evidence as are expressly required by, and to do so if and when expressly required by the terms of, this Indenture, and to examine the same to determine substantial compliance
+as to form with the express requirements hereof.
+17
+None of the Trustee or any Agent shall have any responsibility or obligation to any
+beneficial owner of a Global Security, a member of, or a participant in the Depositary or other Person with respect to the accuracy of the records of the Depositary or its nominee or of any participant or member thereof, with respect to any
+ownership interest in any Security or with respect to the delivery to any participant, member, beneficial owner or other Person (other than the Depositary) of any notice (including any notice of optional redemption) or the payment of any amount,
+under or with respect to such Security.
+(c)
+Legend
+. Any Global Security issued hereunder shall bear a legend in substantially the
+following form:
+“THIS SECURITY IS A GLOBAL SECURITY WITHIN THE MEANING OF THE INDENTURE HEREINAFTER REFERRED TO AND IS REGISTERED IN
+THE NAME OF THE DEPOSITARY OR A NOMINEE OF THE DEPOSITARY. THIS SECURITY IS EXCHANGEABLE FOR SECURITIES REGISTERED IN THE NAME OF A PERSON OTHER THAN THE DEPOSITARY OR ITS NOMINEE ONLY IN THE LIMITED CIRCUMSTANCES DESCRIBED IN THE INDENTURE, AND MAY
+NOT BE TRANSFERRED EXCEPT AS A WHOLE BY THE DEPOSITARY TO A NOMINEE OF THE DEPOSITARY, BY A NOMINEE OF THE DEPOSITARY TO THE DEPOSITARY OR ANOTHER NOMINEE OF THE DEPOSITARY OR BY THE DEPOSITARY OR ANY SUCH NOMINEE TO A SUCCESSOR DEPOSITARY OR A
+NOMINEE OF SUCH A SUCCESSOR DEPOSITARY.”
+In addition, so long as The Depository Trust Company (“
+DTC
+”) is the
+Depositary, each Global Security registered in the name of DTC or its nominee shall bear a legend in substantially the following form:
+“UNLESS THIS GLOBAL SECURITY IS PRESENTED BY AN AUTHORIZED REPRESENTATIVE OF THE DEPOSITORY TRUST COMPANY, A NEW YORK CORPORATION
+(“DTC”), TO THE COMPANY OR ITS AGENT FOR REGISTRATION OF TRANSFER, EXCHANGE OR PAYMENT, AND ANY GLOBAL SECURITY ISSUED IS REGISTERED IN THE NAME OF CEDE & CO. OR IN SUCH OTHER NAME AS IS REQUESTED BY AN AUTHORIZED REPRESENTATIVE
+OF DTC (AND ANY PAYMENT IS MADE TO CEDE & CO. OR TO SUCH OTHER ENTITY AS IS REQUESTED BY AN AUTHORIZED REPRESENTATIVE OF DTC), ANY TRANSFER, PLEDGE OR OTHER USE HEREOF FOR VALUE OR OTHERWISE BY OR TO ANY PERSON IS WRONGFUL INASMUCH AS THE
+REGISTERED OWNER HEREOF, CEDE & CO., HAS AN INTEREST HEREIN.”
+(d)
+Acts of Holders
+. The Depositary, as a Holder, may
+appoint agents and otherwise authorize participants to give or take any request, demand, authorization, direction, notice, consent, waiver or other action which a Holder is entitled to give or take under this Indenture.
+(e)
+Payments
+. Notwithstanding the other provisions of this Indenture, unless otherwise specified as contemplated by
+Section
+2.2
+, payment of the principal of and interest, if any, on any Global Security shall be made to the Holder thereof.
+18
+(f)
+Agent Members
+. The registered Holder of a Security will be treated as the owner
+of such Security for all purposes and only registered Holders shall have rights under this Indenture and the Securities. Members of, or participants in, the Depositary (“
+Agent Members
+”) and Persons who hold beneficial interests in
+a Global Security through an Agent Member shall have no rights under this Indenture with respect to any Global Security held on their behalf by the Depositary. The Depositary may be treated by the Company, the Trustee, the Paying Agent, the
+Registrar and any agent of the foregoing as the absolute owner of the Global Securities for all purposes whatsoever. Notwithstanding the foregoing, nothing herein shall prevent the Company, the Trustee, the Paying Agent, the Registrar or any agent
+of the foregoing from giving effect to any written certification, proxy or other authorization furnished by the Depositary or impair, as between the Depositary and its Agent Members, the operation of customary practices of such Depositary governing
+the exercise of the rights of a Holder of a beneficial interest in any Global Security.
+Section 2.15
+CUSIP and ISIN Numbers
+.
+The Company in issuing the Securities may use CUSIP, ISIN and/or similar numbers (if then generally in use), and, if so, the Trustee
+shall use such numbers in notices of redemption as a convenience to Holders;
+provided
+that any such notice may state that no representation is made as to the correctness of such numbers either as printed on the Securities or as contained in
+any notice of a redemption and that reliance may be placed only on the other elements of identification printed on the Securities, and any such redemption shall not be affected by any defect in or omission of such numbers.
+ARTICLE III
+REDEMPTION
+Section 3.1
+Notice to Trustee
+.
+The Company may, with respect to any Series of Securities, reserve the right to redeem and pay the Series of Securities or may covenant to
+redeem and pay the Series of Securities or any part thereof prior to the Stated Maturity thereof at such time and on such terms as provided for in such Securities. If a Series of Securities is redeemable and the Company wants or is obligated to
+redeem prior to the Stated Maturity thereof all or part of the Series of Securities pursuant to the terms of such Securities, it shall notify the Trustee in writing of the redemption date and the principal amount of the Series of Securities to be
+redeemed. The Company shall give the notice at least 15 days before the redemption date (or such shorter period as may be acceptable to the Trustee).
+Section 3.2
+Selection of Securities to be Redeemed
+.
+Unless otherwise indicated for a particular Series by a Board Resolution, a supplemental indenture hereto or an Officer’s Certificate,
+if less than all the Securities of a Series are to be redeemed, the Securities of the Series to be redeemed will be selected as follows: (1) if the Securities are in the form of Global Securities, in accordance with the procedures of the
+Depositary, (2) if the Securities are listed on any national securities exchange, in compliance with the requirements of the principal national securities exchange, if any, on which the Securities are listed, or (3) if not otherwise
+provided for under
+clause (1)
+or
+(2)
+in the manner that the Trustee deems fair and appropriate, including by lot or other method, unless otherwise required by law or
+19
+applicable stock exchange requirements, subject, in the case of Global Securities, to the applicable rules and procedures of the Depositary. The Securities to be redeemed shall be selected from
+Securities of the Series outstanding not previously called for redemption. Portions of the principal of Securities of the Series that have denominations larger than $1,000 may be selected for redemption. Securities of the Series and portions of them
+it selected for redemption shall be in amounts of $1,000 or whole multiples of $1,000 or, with respect to Securities of any Series issuable in other denominations pursuant to
+Section
+2.2(j)
+, the minimum principal
+denomination for each Series and the authorized integral multiples thereof. Provisions of this Indenture that apply to Securities of a Series called for redemption also apply to portions of Securities of that Series called for redemption. Neither
+the Trustee nor the Paying Agent shall be liable for any selection made by it in accordance with this paragraph (including the procedures of the Depositary).
+Section 3.3
+Notice of Redemption
+.
+Unless otherwise indicated for a particular Series by a Board Resolution, a supplemental indenture hereto or an Officer’s Certificate,
+at least ten days but not more than 60 days before a redemption date (whether or not a Business Day), the Company shall send or cause to be sent by first-class mail or electronically, to each Holder’s registered address or otherwise in
+accordance with the procedures of the Depositary, a notice of redemption to each Holder whose Securities are to be redeemed, with a copy to the Trustee. The notice shall identify the Securities of the Series to be redeemed and shall state:
+(a) the redemption date;
+(b)
+the redemption price;
+(c) the name and address of the Paying Agent;
+(d) if any Securities are being redeemed in part, the portion of the principal amount of such Securities to be redeemed and that, after the
+redemption date and upon surrender of such Security, a new Security or Securities in principal amount equal to the unredeemed portion of the original Security shall be issued in the name of the Holder thereof upon cancellation of the original
+Security;
+(e) that Securities of the Series called for redemption must be surrendered to the Paying Agent to collect the redemption
+price;
+(f) the “CUSIP” number, if any, any that no representation is made as to the accuracy or correctness of such CUSIP
+number listed in such notice or printed on the Securities;
+(g) that interest on Securities of the Series called for redemption ceases to
+accrue on and after the redemption date unless the Company defaults in deposit of the redemption price; and
+(h) any other information as
+may be required by the terms of the particular Series or the Securities of a Series being redeemed.
+20
+At the Company’s request, the Trustee shall give the notice of redemption in the
+Company’s name and at its expense,
+provided
+,
+however
+, that the Company has delivered to the Trustee, at least three (3) Business Days (unless a shorter time shall be acceptable to the Trustee) prior to the notice date, an
+Officer’s Certificate requesting that the Trustee give such notice and setting forth the information to be stated in such notice and the form of such notice.
+Section 3.4
+Effect of Notice of Redemption
+.
+Once notice of redemption is sent as provided in
+Section
+3.3
+, Securities of a Series called for redemption become
+due and payable on the redemption date and at the redemption price. Except as otherwise provided in a Board Resolution, a supplemental indenture or Officer’s Certificate for a Series, a notice of redemption may not be conditional. Upon
+surrender to the Paying Agent, such Securities shall be paid at the redemption price plus accrued interest to the redemption date.
+Section 3.5
+Deposit of Redemption Price
+.
+On or before 10:00 am, New York City time, on the redemption date, the Company shall deposit with the Paying Agent money sufficient to pay the
+redemption price of and accrued interest, if any, on all Securities to be redeemed on that date.
+Section 3.6
+Securities Redeemed
+in Part
+.
+Upon surrender of a Security that is redeemed in part, the Trustee shall authenticate for the Holder a new Security of the
+same Series and the same Maturity equal in principal amount to the unredeemed portion of the Security surrendered.
+ARTICLE IV
+COVENANTS
+Section 4.1
+Payment of Principal and Interest
+.
+The Company covenants and agrees for the benefit of the Holders of each Series of Securities that it will duly and punctually pay or cause to
+be paid when due the principal of and interest, if any, on the Securities of that Series in accordance with the terms of such Securities and this Indenture. On or before 10:00 a.m., New York City time, on the applicable payment date, the Company
+shall deposit with the Paying Agent money sufficient to pay the principal of and interest, if any, on the Securities of each Series in accordance with the terms of such Securities and this Indenture.
+Section 4.2
+SEC Reports
+.
+To the extent any Securities of a Series are outstanding, the Company shall deliver to the Trustee within 30 days after it files them with the
+SEC copies of the annual reports and of the information, documents, and other reports (or copies of such portions of any of the foregoing as the SEC may by rules and regulations prescribe) which the Company is required to file with the SEC pursuant
+to Section 13 or 15(d) of the Exchange Act;
+provided
+that any such annual reports, information, documents, or other reports filed or furnished with the SEC pursuant to its Electronic Data Gathering, Analysis and Retrieval
+“
+EDGAR
+” system or any successor system shall be
+21
+deemed to be delivered to the Trustee as of the time such annual reports, information, documents, or other reports are filed or furnished via EDGAR;
+provided
+,
+further
+,
+that (1) the Company shall not be required to deliver to the Trustee any materials for which the Company has sought confidential treatment by the SEC and (2) such reports and information shall not be required to comply with the
+requirements of Rule
+3-10
+of Regulation
+S-X
+promulgated by the SEC (or any successor provision). The Trustee shall have no responsibility to determine whether any
+filings have been made on EDGAR. The Company also shall comply with the other provisions of TIA § 314(a).
+Delivery of annual
+reports, information and documents to the Trustee is for informational purposes only and its receipt of such reports shall not constitute actual or constructive notice of any information contained therein or determinable from information contained
+therein, including the Company’s compliance with any of its covenants hereunder (as to which the Trustee is entitled to rely exclusively on Officer’s Certificates). The Trustee shall not be obligated to monitor or confirm, on a
+continuing basis or otherwise, the Company’s compliance with the covenants hereunder or with respect to any reports or other documents filed with the SEC on EDGAR or any website under this Indenture, or participate in any conference calls.
+Section 4.3
+Compliance Certificate
+.
+To the extent any Securities of a Series are outstanding, the Company shall deliver to the Trustee, within 120 days after the end of each
+fiscal year of the Company, an Officer’s Certificate stating that a review of the activities of the Company and its Subsidiaries during the preceding fiscal year has been made under the supervision of the signing Officers with a view to
+determining whether the Company has kept, observed, performed and fulfilled its obligations under this Indenture, and further stating, as to such Officer signing such certificate, that to the best of his/her knowledge the Company has kept, observed,
+performed and fulfilled each and every covenant contained in this Indenture and is not in default in the performance or observance of any of the terms, provisions and conditions hereof (or, if a Default or Event of Default shall have occurred,
+describing all such Defaults or Events of Default of which he may have knowledge).
+So long as any of the Securities are outstanding, upon
+any Officer of the Company becoming aware of any Default or Event of Default, the Company shall deliver to the Trustee, within 30 days of such officer becoming aware of such Default or Event of Default (unless such Default or Event of Default has
+been cured or waived within such
+30-day
+time period), an Officer’s Certificate specifying such Default or Event of Default and what action the Company is taking or proposes to take with respect thereto.
+Section 4.4
+Stay, Extension and Usury Laws
+.
+The Company covenants (to the extent that it may lawfully do so) that it shall not at any time insist upon, plead, or in any manner whatsoever
+claim or take the benefit or advantage of, any stay, extension or usury law wherever enacted, now or at any time hereafter in force, that may affect the covenants or the performance of this Indenture; and the Company (to the extent it may lawfully
+do so) hereby expressly waives all benefit or advantage of any such law, and covenants that it will not, by resort to any such law, hinder, delay or impede the execution of any power herein granted to the Trustee, but will suffer and permit the
+execution of every such power as though no such law has been enacted.
+22
+Section 4.5
+Limitation on Liens
+.
+The Company shall not and shall not permit any of its Subsidiaries to, directly or indirectly, create, assume or otherwise cause or suffer to
+exist, except in favor of the Company, any Lien of or upon any of the properties or assets, real, personal or mixed (including stock and other securities of its Subsidiaries), of the Company or any of its Subsidiaries whether owned at the date of
+this Indenture or thereafter acquired, or of or upon any income or profits therefrom, except for:
+(a) Liens existing on the date hereof or
+arising under this Indenture;
+(b) any extension, renewal, or replacement (or successive extensions, renewals, or replacements) of any
+Lien existing on the date hereof, if limited to the same property subject to, and securing not more than the amount secured by, the Lien extended, renewed, or replaced;
+(c) Liens on Current Assets (or on any promissory note received in satisfaction of any accounts receivable of the Company or any of its
+Subsidiaries which, immediately prior to such satisfaction, was subject to such a Lien) securing Indebtedness incurred to finance working capital requirements,
+provided
+,
+however
+, such Indebtedness is secured by a Lien that does not
+mature later than 36 months from the date incurred;
+(d) any Ordinary Course Lien arising, and only so long as continuing, in the ordinary
+course of the business of the Company or any of its Subsidiaries;
+(e) Liens upon any property hereafter acquired (including by reason of
+a merger or consolidation of another entity into the Company or a Subsidiary) existing thereon at the time of acquisition,
+provided
+that such Liens (1) are not incurred in connection with, or in contemplation of, the acquisition of the
+property acquired, except as permitted under
+subsection (f)
+of this
+Section
+4.5
+and (2) do not extend to or cover any property or assets of the Company or any Subsidiary other than the property so acquired;
+(f) purchase money Liens upon or in any real or personal property (including fixtures and other equipment) acquired or held by the
+Company or any of its Subsidiaries in the ordinary course of business to secure the purchase price of such property or to secure Indebtedness incurred solely for the purpose of financing or refinancing the acquisition or improvement of or
+construction costs related to such property,
+provided
+that no such Lien shall extend to or cover any property or assets of the Company or any Subsidiary other than the property being acquired or improved;
+(g) any interest or title of a lessor in the property subject to any Capitalized Lease Obligation or Sale/Leaseback Transaction that is
+permitted under
+Section
+4.6
+; or
+(h) other Liens securing Indebtedness in an aggregate principal amount which,
+together with the aggregate outstanding principal amount of all other Indebtedness of the Company and its Subsidiaries secured by Liens permitted under the terms of this
+subsection
+(h)
+, and the aggregate amount (before
+deducting expenses) of Sale/Leaseback Transactions which would otherwise be permitted under the provisions of
+Section
+4.6(a)
+, does not at the time such Liens are incurred exceed 10% of the Company’s Consolidated Net
+Tangible Assets as shown on the most recent audited consolidated balance sheet of the Company and its Subsidiaries.
+23
+Section 4.6
+Limitation on Sale/Leaseback Transactions
+.
+The Company shall not and shall not permit any of its Subsidiaries to, directly or indirectly, enter into any Sale/Leaseback Transaction
+unless either:
+(a) the Company or such Subsidiary would be permitted, pursuant to the terms of
+Section
+4.5(h)
+,
+to incur Indebtedness in an aggregate principal amount equal to or exceeding the aggregate amount (before deducting expenses) of the Sale/Leaseback Transaction secured by a Lien on the property subject to such Sale/Leaseback Transaction; or
+(b) the Company or such Subsidiary within 90 days of the effectiveness of such Sale/Leaseback Transaction applies or unconditionally agrees to
+apply to the retirement of Indebtedness an amount equal to the greater of (x) the net proceeds of the Sale/Leaseback Transaction or (y) the fair value, in the opinion of the Board of Directors of the Company, of the subject property of the
+Sale/Leaseback Transaction at the time of such transaction (in either case adjusted to reflect the remaining term of the lease subject to such Sale/Leaseback Transaction).
+ARTICLE V
+SUCCESSORS
+Section 5.1
+When Company May Merge, Etc
+.
+The Company shall not consolidate, merge, or amalgamate with or into or wind up into (whether or not the Company is the surviving Person), or
+sell, assign, transfer, lease, convey, or otherwise dispose of all or substantially all of its properties or assets in one or more transactions, to, any Person unless:
+(a) the Company is the surviving Person or the Person formed by or surviving any such consolidation or merger (if other than the Company), or
+to which such sale, lease, conveyance or other disposition shall have been made, is a corporation organized and existing under the laws of the United States, any state thereof or the District of Columbia;
+(b) the corporation formed by or surviving any such consolidation or merger (if other than the Company), or to which such sale, lease,
+conveyance or other disposition shall have been made, assumes by supplemental indenture all the obligations of the Company under the Securities and this Indenture or becomes a
+co-issuer
+of the Securities; and
+(c) immediately after giving effect to the transaction, no Default or Event of Default shall have occurred or be continuing.
+The Company shall deliver to the Trustee prior to the consummation of the proposed transaction an Officer’s Certificate to the foregoing
+effect and an Opinion of Counsel stating that the proposed transaction and such supplemental indenture comply with this Indenture.
+24
+Notwithstanding the above, any Subsidiary of the Company may consolidate, merge, or
+amalgamate with or into wind up into, or sell, assign, transfer, lease, convey or otherwise dispose of all or substantially all of its properties to the Company. Neither an Officer’s Certificate nor an Opinion of Counsel shall be required to
+be delivered in connection therewith.
+Section 5.2
+Successor Corporation Substituted
+.
+Upon any consolidation or merger, or any sale, lease, conveyance or other disposition of all or substantially all of the assets of the Company
+in accordance with
+Section
+5.1
+, the successor corporation formed by such consolidation or into or with which the Company is merged or to which such sale, lease, conveyance or other disposition is made shall succeed to, and
+be substituted for, and may exercise every right and power of, the Company under this Indenture with the same effect as if such successor Person has been named as the Company herein;
+provided
+,
+however
+, that the predecessor Company in
+the case of a sale, lease, conveyance or other disposition shall not be released from the obligation to pay the principal of and interest on the Securities.
+ARTICLE VI
+DEFAULTS AND
+REMEDIES
+Section 6.1
+Events of Default
+.
+“
+Event of Default
+,” wherever used herein with respect to Securities of any Series, means any one of the following events,
+unless in the establishing Board Resolution, supplemental indenture or Officer’s Certificate, it is provided that such Series shall not have the benefit of said Event of Default:
+(a) default in any payment of interest on any Security of that Series when due, continued for 30 days;
+(b) default in the payment of the principal or premium, if any, of any Security of that Series when due at its Stated Maturity, upon optional
+redemption (in the case of optional redemption, to the extent such Event of Default arises from failure to pay the redemption price that is then due and is not subject to any conditions in connection with such optional redemption on all the
+Securities), upon required purchase, upon acceleration or otherwise;
+(c) default in the deposit of any sinking fund payment, when and as
+due by the terms of a Security of that Series;
+(d) the failure by the Company or any Subsidiary to comply for 60 days after receipt of
+written notice referred to below with any of its obligations, covenants or agreements (other than a default pursuant to
+Section
+6.1(a)
+or
+6.1(b)
+) contained in this Indenture or the Securities,
+provided
+that in the case of a failure to comply with
+Section
+4.2
+, such period of continuance of such default or breach shall be 75 days after written notice described in this
+clause (d)
+has been given;
+25
+(e) the failure by the Company or any Subsidiary to pay the principal amount of any
+Indebtedness for borrowed money (other than Indebtedness for borrowed money owing to the Company or a Subsidiary) within any applicable grace period after final maturity or the acceleration of any such Indebtedness by the holders thereof because of
+a default, in each case, if the total amount of such Indebtedness unpaid at final maturity or acceleration exceeds $150.0 million or its foreign currency equivalent;
+(f) the Company or any Significant Subsidiaries pursuant to or within the meaning of any Bankruptcy Law:
+(i) commences a voluntary case;
+(ii) consents to the entry of an order for relief against it in any voluntary case;
+(iii) consents to the appointment of a Custodian of it or for any substantial part of its property;
+(iv) makes a general assignment for the benefit of its creditors;
+or takes any comparable action under any foreign laws relating to insolvency; or
+(g) a court of competent jurisdiction enters an order or decree under any Bankruptcy Law that:
+(i) is for relief against the Company or any Significant Subsidiaries in an involuntary case;
+(ii) appoints a Custodian of the Company or any Significant Subsidiaries any substantial part of its property;
+(iii) orders the winding up or liquidation of the Company or any Significant Subsidiaries; or
+(iv) any similar relief is granted under any foreign laws and the order or decree remains unstayed and in effect for 60 days;
+(h) failure by the Company or any Significant Subsidiary to pay final and
+non-appealable
+judgments aggregating in excess of $150.0 million or its foreign currency equivalent (net of any amounts which are covered by enforceable insurance policies issued by solvent insurance companies), which judgments are not discharged, waived or
+stayed for a period of 60 days after such judgment becomes final and, in the event such judgment is covered by insurance, an enforcement proceeding has been commenced by any creditor upon such judgment or decree which is not promptly stayed; or
+(i) any other Event of Default provided with respect to Securities of that Series.
+26
+Section 6.2
+Acceleration of Maturity; Rescission and Annulment
+.
+If an Event of Default with respect to Securities of any Series at the time outstanding occurs and is continuing (other than an Event of
+Default referred to in
+Section
+6.1(f)
+or
+6.1(g)
+), then in every such case the Trustee or the Holders of not less than 30% in principal amount of the outstanding Securities of that Series may declare the principal
+amount (or, if any Securities of that Series are Discount Securities, such portion of the principal amount as may be specified in the terms of such Securities) of and accrued and unpaid interest, if any, on all of the Securities of that Series to be
+due and payable immediately, by a notice in writing to the Company (and to the Trustee if given by Holders), and upon any such declaration such principal amount (or specified amount) and accrued and unpaid interest, if any, shall become immediately
+due and payable. If an Event of Default specified in
+Section
+6.1(f)
+or
+6.1(g)
+shall occur, the principal amount (or specified amount) of and accrued and unpaid interest, if any, on all outstanding Securities shall
+ipso facto
+become and be immediately due and payable without any declaration or other act on the part of the Trustee or any Holder.
+At any time after such a declaration of acceleration with respect to any Series has been made and before a judgment or decree for payment of
+the money due has been obtained by the Trustee as hereinafter in this Article provided, the Holders of a majority in principal amount of the outstanding Securities of that Series, by written notice to the Company and the Trustee, may rescind
+and annul such declaration and its consequences if all Events of Default with respect to Securities of that Series, other than the
+non-payment
+of the principal and interest, if any, of Securities of that
+Series which have become due solely by such declaration of acceleration, have been cured or waived as provided in
+Section
+6.13
+.
+No such rescission shall affect any subsequent Default or impair any right consequent thereon.
+Section 6.3
+Collection of Indebtedness and Suits for Enforcement by
+Trustee
+.
+The Company covenants that if:
+(a) default is made in the payment of any interest on any Security when such interest becomes due and payable and such default continues for a
+period of 60 days;
+(b) default is made in the payment of principal of any Security at the Maturity thereof; or
+(c) default is made in the deposit of any sinking fund payment, if any, when and as due by the terms of a Security,
+then,
+the Company will, upon demand of the Trustee, pay to it, for the benefit of the Holders of such Securities, the whole amount then due and payable
+on such Securities for principal and interest and, to the extent that payment of such interest shall be legally enforceable, interest on any overdue principal and any overdue interest at the rate or rates prescribed therefor in such Securities, and,
+in addition thereto, such further amount as shall be sufficient to cover the costs and expenses of collection, including the reasonable compensation, expenses, disbursements and advances of the Trustee, its agents and counsel.
+If the Company fails to pay such amounts forthwith upon such demand, the Trustee, in its own name and as trustee of an express trust, may
+institute a judicial proceeding for the collection of the sums so due and unpaid, may prosecute such proceeding to judgment or final decree and may enforce the same against the Company or any other obligor upon such Securities and collect the moneys
+adjudged or deemed to be payable in the manner provided by law out of the property of the Company or any other obligor upon such Securities, wherever situated.
+27
+If an Event of Default with respect to any Securities of any Series occurs and is
+continuing, the Trustee, subject to
+Article VII
+hereof, may in its discretion proceed to protect and enforce its rights and the rights of the Holders of Securities of such Series by such appropriate judicial proceedings as the Trustee shall
+deem most effectual to protect and enforce any such rights, whether for the specific enforcement of any covenant or agreement in this Indenture or in aid of the exercise of any power granted herein, or to enforce any other proper remedy.
+Section 6.4
+Trustee May File Proofs of Claim
+.
+In case of the pendency of any receivership, insolvency, liquidation, bankruptcy, reorganization, arrangement, adjustment, composition or
+other judicial proceeding relative to the Company or any other obligor upon the Securities or the property of the Company or of such other obligor or their creditors, the Trustee (irrespective of whether the principal of the Securities shall then be
+due and payable as therein expressed or by declaration or otherwise and irrespective of whether the Trustee shall have made any demand on the Company for the payment of overdue principal or interest) shall be entitled and empowered, by intervention
+in such proceeding or otherwise,
+(a) to file and prove a claim for the whole amount of principal and interest owing and unpaid in respect
+of the Securities and to file such other papers or documents as may be necessary or advisable in order to have the claims of the Trustee (including any claim for the reasonable compensation, expenses, disbursements and advances of the Trustee, its
+agents and counsel) and of the Holders allowed in such judicial proceeding; and
+(b) to collect and receive any moneys or other property
+payable or deliverable on any such claims and to distribute the same, and any custodian, receiver, assignee, trustee, liquidator, sequestrator or other similar official in any such judicial proceeding is hereby authorized by each Holder to make such
+payments to the Trustee and, in the event that the Trustee shall consent to the making of such payments directly to the Holders, to pay to the Trustee any amount due it for the reasonable compensation, expenses, disbursements and advances of the
+Trustee, its agents and counsel, and any other amounts due the Trustee under
+Section
+7.7
+.
+Nothing herein
+contained shall be deemed to authorize the Trustee to authorize or consent to or accept or adopt on behalf of any Holder any plan of reorganization, arrangement, adjustment or composition affecting the Securities or the rights of any Holder thereof
+or to authorize the Trustee to vote in respect of the claim of any Holder in any such proceeding.
+Section 6.5
+Trustee May Enforce
+Claims Without Possession of
+Securities
+.
+All rights of action and claims under this Indenture or the Securities may be
+prosecuted and enforced by the Trustee without the possession of any of the Securities or the production thereof in any proceeding relating thereto, and any such proceeding instituted by the Trustee shall be brought in its own name as trustee of an
+express trust, and any recovery of judgment shall, after provision for the payment of the reasonable compensation, expenses, disbursements and advances of the Trustee, its agents and counsel, be for the ratable benefit of the Holders of the
+Securities in respect of which such judgment has been recovered.
+28
+Section 6.6
+Application of Money Collected
+.
+Any money or property collected by the Trustee pursuant to this Article shall be applied in the following order, at the date or dates
+fixed by the Trustee and, in case of the distribution of such money or property on account of principal or interest, upon presentation of the Securities and the notation thereon of the payment if only partially paid and upon surrender thereof if
+fully paid:
+First: To the payment of all amounts due the Trustee under
+Section
+7.7
+;
+Second: To the payment of the amounts then due and unpaid for principal of and interest on the Securities in respect of which or for the
+benefit of which such money has been collected, ratably, without preference or priority of any kind, according to the amounts due and payable on such Securities for principal and interest, respectively; and
+Third: To the Company.
+Section 6.7
+Limitation on Suits
+.
+No Holder of any Security of any Series shall have any right to institute any proceeding, judicial or otherwise, with respect to this
+Indenture, or for the appointment of a receiver or trustee, or for any other remedy hereunder, unless:
+(a) such Holder has previously
+given the Trustee written notice that an Event of Default is continuing with respect to the Securities of that Series;
+(b) Holders of at
+least 30% of the aggregate principal amount of the outstanding Securities of that Series have requested in writing the Trustee to pursue the remedy;
+(c) such Holder have offered the Trustee security or indemnity reasonably satisfactory to the Trustee in respect of any loss, liability or
+expense;
+(d) the Trustee has not complied with such request within 60 days after receipt of the request and the offer and security or
+indemnity; and
+(e) the Holders of a majority in principal amount of the outstanding Securities of that Series have not given the Trustee
+a written direction inconsistent with such request within such
+60-day
+period,
+it being
+understood, intended and expressly covenanted by the Holder of every Security with every other Holder and the Trustee that no one or more of such Holders shall have any right in any manner whatever by virtue of, or by availing of, any provision of
+this Indenture to affect, disturb or prejudice the rights of any other of such Holders, or to obtain or to seek to obtain priority or preference over any other of such Holders or to enforce any right under this Indenture, except in the manner herein
+provided and for the equal and ratable benefit of all such Holders of the applicable Series.
+29
+Section 6.8
+Unconditional Right of Holders to Receive Principal and
+Interest
+.
+Notwithstanding any other provision in this Indenture, the Holder of any Security shall have the right, which is
+absolute and unconditional, to receive payment of the principal of and interest, if any, on such Security on the Maturity of such Security, including the Stated Maturity expressed in such Security (or, in the case of redemption, on the redemption
+date) and to institute suit for the enforcement of any such payment, and such rights shall not be impaired without the consent of such Holder.
+Section 6.9
+Restoration of Rights and Remedies
+.
+If the Trustee or any Holder has instituted any proceeding to enforce any right or remedy under this Indenture and such proceeding has been
+discontinued or abandoned for any reason, or has been determined adversely to the Trustee or to such Holder, then and in every such case, subject to any determination in such proceeding, the Company, the Trustee and the Holders shall be restored
+severally and respectively to their former positions hereunder and thereafter all rights and remedies of the Trustee and the Holders shall continue as though no such proceeding had been instituted.
+Section 6.10
+Rights and Remedies Cumulative
+.
+Except as otherwise provided with respect to the replacement or payment of mutilated, destroyed, lost or stolen Securities in
+Section
+2.8
+, no right or remedy herein conferred upon or reserved to the Trustee or to the Holders is intended to be exclusive of any other right or remedy, and every right and remedy shall, to the extent permitted by law,
+be cumulative and in addition to every other right and remedy given hereunder or now or hereafter existing at law or in equity or otherwise. The assertion or employment of any right or remedy hereunder, or otherwise, shall not, to the extent
+permitted by law, prevent the concurrent assertion or employment of any other appropriate right or remedy.
+Section 6.11
+Delay or
+Omission Not Waiver
+.
+No delay or omission of the Trustee or of any Holder of any Securities to exercise any right or remedy accruing
+upon any Event of Default shall impair any such right or remedy or constitute a waiver of any such Event of Default or an acquiescence therein. Every right and remedy given by this Article or by law to the Trustee or to the Holders may be
+exercised from time to time, and as often as may be deemed expedient, by the Trustee or by the Holders, as the case may be.
+Section 6.12
+Control by Holders
+.
+The Holders of a majority in principal amount of the outstanding Securities of any Series shall have the right to direct the time, method and
+place of conducting any proceeding for any remedy available to the Trustee, or exercising any trust or power conferred on the Trustee, with respect to the Securities of such Series,
+provided
+that:
+(a) such direction shall not be in conflict with any rule of law or with this Indenture;
+30
+(b) the Trustee may take any other action deemed proper by the Trustee which is not
+inconsistent with such direction;
+(c) subject to the provisions of
+Section
+7.1
+, the Trustee shall have the
+right to decline to follow any such direction if the Trustee in good faith shall, by a Responsible Officer of the Trustee, determine that the proceeding so directed is unduly prejudicial to the rights of any other Holder or would involve the Trustee
+in personal liability; and
+(d) prior to taking any action as directed under this
+Section
+6.12
+, the Trustee
+shall be entitled to indemnity satisfactory to it against the costs and expenses and liabilities which might be incurred by it in compliance with such request or direction.
+Section 6.13
+Waiver of Past Defaults
+.
+The Holders of not less than a majority in principal amount of the outstanding Securities of any Series may on behalf of the Holders of all
+the Securities of such Series, by written notice to the Trustee and the Company, waive any past Default hereunder with respect to such Series and its consequences, except a Default in the payment of the principal of or interest on any Security of
+such Series (
+provided
+,
+however
+, that the Holders of a majority in principal amount of the outstanding Securities of any Series may rescind an acceleration and its consequences, including any related payment default that resulted from
+such acceleration). Upon any such waiver, such Default shall cease to exist, and any Event of Default arising therefrom shall be deemed to have been cured, for every purpose of this Indenture; but no such waiver shall extend to any subsequent or
+other Default or impair any right consequent thereon.
+Section 6.14
+Undertaking for Costs
+.
+All parties to this Indenture agree, and each Holder of any Security by his acceptance thereof shall be deemed to have agreed, that any court
+may in its discretion require, in any suit for the enforcement of any right or remedy under this Indenture, or in any suit against the Trustee for any action taken, suffered or omitted by it as Trustee, the filing by any party litigant in such suit
+of an undertaking to pay the costs of such suit, and that such court may in its discretion assess reasonable costs, including reasonable attorneys’ fees, against any party litigant in such suit, having due regard to the merits and good faith
+of the claims or defenses made by such party litigant; but the provisions of this Section shall not apply to any suit instituted by the Company, to any suit instituted by the Trustee, to any suit instituted by any Holder, or group of Holders,
+holding in the aggregate more than 10% in principal amount of the outstanding Securities of any Series, or to any suit instituted by any Holder for the enforcement of the payment of the principal of or interest on any Security on or after the
+Maturity of such Security, including the Stated Maturity expressed in such Security (or, in the case of redemption, on the redemption date).
+31
+ARTICLE VII
+TRUSTEE
+Section 7.1
+Duties of Trustee
+.
+(a) If an Event of Default has occurred and is continuing, the Trustee shall, in the exercise of its rights and
+powers under this Indenture, use the same degree of care and skill in its exercise of such rights and powers as a prudent Person would exercise or use under the circumstances in the conduct of such Person’s own affairs, subject to the
+provisions of
+clause (h)
+below.
+(b) Except during the continuance of an Event of Default of which a Responsible Officer has
+actual knowledge, the Trustee and the Agents:
+(i) undertake to perform such duties and only such duties as are
+specifically set forth in this Indenture and no implied covenants or obligations shall be read into this Indenture against the Trustee or the Agents; and
+(ii) in the absence of willful misconduct or gross negligence on its part, may conclusively rely, as to the truth of the
+statements and the correctness of the opinions expressed therein, upon certificates or opinions furnished to the Trustee under this Indenture and the Securities, as applicable. However, in the case of any such certificates or opinions which by any
+provisions hereof are specifically required to be furnished to the Trustee, the Trustee shall examine such certificates and opinions to determine whether or not they conform to the requirements of this Indenture and the Securities as the case may be
+(but need not confirm or investigate the accuracy of mathematical calculations or other facts stated therein).
+(c) The Trustee and the
+Agents shall not be relieved from liability for their own negligent action, their own negligent failure to act or their own willful misconduct, except that:
+(i) this
+Section
+7.1(c)
+does not limit the effect of
+Section
+7.1(b)
+;
+(ii) the Trustee and the Agents shall not be liable for any error of judgment made in good faith by a Responsible Officer or
+Responsible Officers unless it is proved in a final
+non-appealable
+decision of a court of competent jurisdiction that the Trustee and the Agents were negligent in ascertaining the pertinent facts; and
+(iii) the Trustee and the Agents shall not be liable with respect to any action they take or omit to take in good faith in
+accordance with a direction received by it pursuant to
+Section
+6.12
+.
+(d) The Trustee and the Agents shall not
+be liable for interest on any money received by it except as the Trustee and the Agents may agree in writing with the Company.
+(e) Money
+held in trust by the Trustee or the Agents need not be segregated from other funds except to the extent required by law.
+(f) No provision
+of this Indenture or the Securities shall require the Trustee or an Agent to expend or risk its own funds or otherwise incur any financial liability in the performance of any of its duties hereunder or thereunder or in the exercise of any of its
+rights or powers, if it shall have reasonable grounds to believe that repayment of such funds or indemnity satisfactory to it against such risk or liability is not reasonably assured to it.
+32
+(g) Every provision of this Indenture relating to the conduct or affecting the liability of
+or affording protection to the Trustee and the Agents shall be subject to the provisions of this
+Section
+7.1
+.
+(h) The Trustee shall be under no obligation to exercise any of the rights or powers vested in it by this Indenture at the request or
+direction of any of the Holders unless such Holders shall have offered, and if requested, provided to the Trustee, security, prefunding or indemnity satisfactory to it against the costs, expenses (including reasonable attorneys’ fees and
+expenses), losses and liabilities that might be incurred by it in compliance with such request or direction.
+(i) The Agents shall have
+the right to become Holders as freely as if they were not a party to this Indenture.
+(j) The Agents shall act solely as agents of the
+Company and need not act in the best interests of the Holders.
+(k) The obligations of the Agents under this Indenture shall be several
+and not joint.
+(l) The Paying Agent, the Service Agent, the Registrar, any authenticating agent and the Trustee when acting in any other
+capacity hereunder shall be entitled to the protections and immunities as are set forth in this Article VII.
+Section 7.2
+Rights
+of Trustee
+.
+(a) The Trustee and the Agents may conclusively rely and shall be protected in acting upon any resolution, certificate,
+statement, instrument, opinion, notice, request, direction, consent, order, bond or any other paper or document believed by it to be genuine and to have been signed or presented by the proper Person or Persons. The Trustee and the Agents need not
+investigate any fact or matter stated in the document.
+(b) Before the Trustee or an Agent acts or refrains from acting, it may require an
+Officer’s Certificate or an Opinion of Counsel or both. The Trustee or an Agent shall not be liable for any action it takes or omits to take in good faith in reliance on an Officer’s Certificate or Opinion of Counsel.
+(c) The Trustee may act through its attorneys, custodians, nominees and agents and shall not be responsible for the misconduct or negligence
+of or for the supervision of any agent, custodians, nominees or attorney appointed with due care.
+(d) Neither the Trustee nor an Agent
+shall be liable for any action it takes or omits to take in good faith which it believes to be authorized or within its rights or powers;
+provided
+,
+however
+, that the Trustee’s or such Agent’s conduct does not
+constitute willful misconduct or gross negligence as determined in a final
+non-appealable
+decision of a court of competent jurisdiction.
+(e) The Trustee or an Agent may consult with counsel of its selection, and the advice or opinion of counsel with respect to legal matters
+relating to this Indenture and the Securities shall be full and complete authorization and protection from liability in respect to any action taken, omitted or suffered by it hereunder or under the Securities in good faith and in accordance with the
+advice or opinion of such counsel.
+33
+(f) The Trustee and the Agents shall not be bound to make any investigation into any
+statement, warranty or representation, or the facts or matters stated in any resolution, certificate, statement, instrument, opinion, notice, request, direction, consent, order, bond or other paper or document made or in connection with this
+Indenture; moreover, the Trustee and the Agents shall not be bound to make any investigation into (1) the performance or observance of any of the covenants, agreements or other terms or conditions set forth herein, (2) the occurrence of
+any default, or the validity, enforceability, effectiveness or genuineness of this Indenture or any other agreement, instrument or document, or (3) the facts or matters stated in any resolution, certificate, statement, instrument, opinion,
+report, notice, request, direction, consent, order, bond, debenture, note or other evidence of indebtedness or other paper or document, but the Trustee or an Agent, in its discretion, may make such further inquiry or investigation into such facts or
+matters as it may see fit, and, if the Trustee or an Agent, as applicable, shall determine to make such further inquiry or investigation, it shall be entitled to examine the books, records and premises of the Company, personally or by agent or
+attorney and shall incur no liability or additional liability of any kind by reason of such inquiry or investigation.
+(g) The Trustee
+shall not be deemed to have knowledge of any Default or Event of Default except any Default or Event of Default of which a Responsible Officer shall have (1) received written notification from the Company or a Holder at the Corporate Trust
+Office of the Trustee and such notice references the Securities and this Indenture or (2) obtained “actual knowledge.” “
+Actual knowledge
+” shall mean the actual fact or statement of knowing by a Responsible Officer
+without independent investigation with respect thereto.
+(h) In no event shall the Trustee or an Agent be responsible or liable for
+special, indirect, punitive or consequential loss or damage of any kind whatsoever (including, but not limited to, loss of profit) irrespective of whether the Trustee or Agent has been advised of the likelihood of such loss or damage and regardless
+of the form of action.
+(i) The rights, privileges, protections, immunities and benefits given to the Trustee, including, without
+limitation, its right to be indemnified, are extended to, and shall be enforceable by, the Trustee in each of its capacities hereunder, and each agent (including the Agents), custodian and other Person employed to act hereunder.
+(j) The Trustee may request that the Company deliver a certificate setting forth the names of individuals and/or titles of officers authorized
+at such time to take specified actions pursuant to this Indenture.
+(k) The Trustee shall not have any duty (1) to see to any
+recording, filing, or depositing of this Indenture or any agreement referred to herein, or to see to the maintenance of any such recording or filing or depositing or to any rerecording,
+re-filing
+or
+redepositing of any thereof or (2) to see to any insurance.
+(l) The right of the Trustee or an Agent to perform any discretionary
+act enumerated in this Indenture shall not be construed as a duty.
+34
+(m) The Trustee will not be required to give any bond or surety in respect of the execution
+of this Indenture or otherwise.
+Section 7.3
+Individual Rights of Trustee
+.
+The Trustee in its individual or any other capacity may become the owner or pledgee of Securities and may otherwise deal with the Company or
+an Affiliate with the same rights it would have if it were not Trustee. Any Agent may do the same with like rights. However, the Trustee is subject to
+Sections
+7.10
+and
+7.11
+.
+Section 7.4
+Trustee
+’
+s Disclaimer
+.
+The Trustee makes no representation as to the validity or adequacy of this Indenture or the Securities, it shall not be accountable for the
+Company’s use of the proceeds from the Securities, and it shall not be responsible for any statement in the Securities other than its certificate of authentication.
+Section 7.5
+Notice of Defaults
+.
+If a Default or Event of Default occurs and is continuing with respect to the Securities of any Series and if it is known to a Responsible
+Officer of the Trustee, the Trustee shall send to each Holder of the Securities of that Series, notice of a Default or Event of Default within 90 days after it occurs or, if later, after a Responsible Officer of the Trustee has knowledge of such
+Default or Event of Default. Except in the case of a Default or Event of Default in payment of principal of or interest on any Security of any Series, the Trustee may withhold the notice if and so long as the Trustee in good faith determines that
+withholding the notice is in the interests of Holders of that Series. The Trustee will not be deemed to have notice or be charged with knowledge of any Default or Event of Default unless written notice thereof has been received by a Responsible
+Officer, and such notice references the applicable Series of Securities and this Indenture states on its face that a Default or Event of Default has occurred.
+Section 7.6
+Reports by Trustee to Holders
+.
+Within 60 days each year, commencing on September 1, 2026, the Trustee shall transmit by mail to all Holders, as their names and
+addresses appear on the register kept by the Registrar as of such date, in accordance with, and to the extent required under, TIA § 313.
+A copy of each report at the time of its mailing to Holders of any Series shall be filed with the SEC and each national securities exchange on
+which the Securities of that Series are listed. The Company shall promptly notify the Trustee in writing when Securities of any Series are listed on any national securities exchange.
+Section 7.7
+Compensation and Indemnity
+.
+The Company shall pay to the Trustee and the Agents from time to time such compensation for their services as the parties shall agree in
+writing from time to time. The Trustee’s compensation shall not be limited by any law on compensation of a trustee of an express trust. The Company shall reimburse the Trustee and the Agents upon request for all reasonable
+out-of-pocket
+35
+expenses incurred or made by it, including, but not limited to, costs of collection, costs of preparing and reviewing reports, certificates and other documents, costs of preparation and mailing
+of notices to Holders and reasonable costs of counsel, in addition to the compensation for its services. Such expenses shall include the reasonable compensation and expenses, disbursements and advances of the Trustee’s agents, counsel,
+accountants and experts.
+The Company shall indemnify the Trustee or any predecessor Trustee in each of its capacities hereunder
+(including as Paying Agent, Registrar or as an Agent, as applicable), and each of their officers, directors, employees, counsel and agents, against any and all loss, liability or expense (including, but not limited to, reasonable attorneys’
+fees and expenses) incurred by it in connection with the administration of this trust and the performance of their duties hereunder and under the Securities, including the costs and expenses of enforcing this Indenture (including this
+Section
+7.7
+), the Securities and of defending itself against any claims (whether asserted by any Holder, the Company or otherwise). The Trustee and the Agents shall notify the Company promptly of any claim for which it may
+seek indemnity. Failure by the Trustee or an Agent to so notify the Company shall not relieve the Company of its obligations hereunder. The Company shall defend the claim and the Trustee and the Agents may have separate counsel and the Company shall
+pay the reasonable fees and expenses of such counsel. The Company need not reimburse any expense or indemnify against any loss, liability or expense incurred by the Trustee or an Agent as a result of its own willful misconduct or gross negligence as
+determined in a final
+non-appealable
+decision of a court of competent jurisdiction.
+To secure the
+Company’s payment obligations in this Section, the Trustee shall have a lien prior to the Securities of any Series on all money or property held or collected by the Trustee other than money or property held in trust to pay principal and
+interest on particular Securities of that Series. The right of the Trustee to receive payment of any amounts due under this
+Section
+7.7
+shall not be subordinate to any other liability or indebtedness of the Company.
+The Company’s obligations pursuant to this Section and any lien arising hereunder shall survive the satisfaction and discharge of this
+Indenture and the resignation or removal of the Trustee or an Agent. When the Trustee or an Agent incurs expenses or renders services after an Event of Default specified in
+Section
+6.1(f)
+or
+6.1(g)
+occurs with
+respect to the Company, the expenses and the compensation for the services are intended to constitute expenses of administration under any Bankruptcy Law.
+The provisions of this Section shall survive the termination of this Indenture and the resignation or removal of the Trustee.
+Section 7.8
+Replacement of Trustee
+.
+A resignation or removal of the Trustee and appointment of a successor Trustee shall become effective only upon the successor Trustee’s
+acceptance of appointment as provided in this Section.
+36
+The Trustee may resign with respect to the Securities of one or more Series by so notifying
+the Company at least 30 days prior to the date of the proposed resignation. The Holders of a majority in principal amount of the Securities of any Series may remove the Trustee with respect to that Series by so notifying the Trustee and the Company.
+The Company may at any time remove the Trustee with respect to Securities of one or more Series unless an Event of Default occurs and is then continuing with respect to such Securities, or if:
+(a) the Trustee fails to comply with
+Section
+7.10
+;
+(b) the Trustee is adjudged a bankrupt or an insolvent or an order for relief is entered with respect to the Trustee under any Bankruptcy Law;
+(c) a Custodian or public officer takes charge of the Trustee or its property; or
+(d) the Trustee otherwise becomes incapable of acting.
+If the Trustee resigns or is removed or if a vacancy exists in the office of Trustee for any reason, the Company shall promptly appoint a
+successor Trustee. Within one year after the successor Trustee takes office, the Holders of a majority in principal amount of the then outstanding Securities may appoint a successor Trustee to replace the successor Trustee appointed by the Company.
+If a successor Trustee with respect to the Securities of any one or more Series does not take office within 60 days after the retiring
+Trustee resigns or is removed, the retiring Trustee, the Company or the Holders of at least 10% in principal amount of the Securities of the applicable Series may petition, at the Company’s expense, any court of competent jurisdiction for the
+appointment of a successor Trustee.
+If the Trustee with respect to the Securities of any one or more Series fails to comply with
+Section
+7.10
+, any Holder of the applicable Series may petition any court of competent jurisdiction for the removal of the Trustee and the appointment of a successor Trustee.
+A successor Trustee shall deliver a written acceptance of its appointment to the retiring Trustee and to the Company. Immediately after that,
+the retiring Trustee shall transfer all property held by it as Trustee to the successor Trustee subject to the lien provided for in
+Section
+7.7
+, the resignation or removal of the retiring Trustee shall become effective, and
+the successor Trustee shall have all the rights, powers and duties of the Trustee with respect to each Series of Securities for which it is acting as Trustee under this Indenture. A successor Trustee shall send a notice of its succession to each
+Holder of each such Series. Notwithstanding replacement of the Trustee pursuant to this
+Section
+7.8
+, the Company’s obligations under
+Section
+7.7
+hereof shall continue for the benefit of the
+retiring Trustee with respect to expenses and liabilities incurred by it for actions taken or omitted to be taken in accordance with its rights, powers and duties under this Indenture prior to such replacement.
+Section 7.9
+Successor Trustee by Merger, etc
+.
+If the Trustee consolidates with, merges or converts into, or transfers all or substantially all its corporate trust business or assets to,
+another corporation or banking association, the resulting, surviving or transferee corporation without any further act shall be the successor Trustee.
+37
+In case at the time such successor or successors by merger, conversion or consolidation to
+the Trustee shall succeed to the trusts created by this Indenture, any of the Securities shall have been authenticated but not delivered, any such successor to the Trustee may adopt the certificate of authentication of any predecessor trustee, and
+deliver such Securities so authenticated; and in case at that time any of the Securities shall not have been authenticated, any successor to the Trustee may authenticate such Securities either in the name of any predecessor hereunder or in the name
+of the successor to the Trustee; and in all such cases such certificates shall have the full force which it is anywhere in the Securities or in this Indenture provided that the certificate of the Trustee shall have.
+Section 7.10
+Eligibility; Disqualification
+.
+This Indenture shall always have a Trustee who satisfies the requirements of TIA §§ 310(a)(1), (2) and (5). The Trustee shall
+always have a combined capital and surplus of at least $25,000,000 as set forth in its most recent published annual report of condition. The Trustee shall comply with TIA § 310(b).
+Section 7.11
+Preferential Collection of Claims Against Company
+.
+The Trustee is subject to TIA § 311(a), excluding any creditor relationship listed in TIA § 311(b). A Trustee who has
+resigned or been removed shall be subject to TIA § 311(a) to the extent indicated.
+ARTICLE VIII
+SATISFACTION AND DISCHARGE
+Section 8.1
+Satisfaction and Discharge of Indenture
+.
+This Indenture shall upon Company Order be discharged with respect to the Securities of any Series and cease to be of further effect as to all
+Securities of such Series (except as hereinafter provided in this
+Section
+8.1
+), and the Trustee, at the expense of the Company, shall execute instruments acknowledging satisfaction and discharge of this Indenture, when:
+(a) either
+(i) all Securities of such Series theretofore authenticated and delivered (other than Securities that have been destroyed, lost
+or stolen and that have been replaced or paid) have been delivered to the Trustee for cancellation; or
+(ii) all such
+Securities of such Series not theretofore delivered to the Trustee for cancellation
+(A) have become due and payable by
+reason of sending a notice of redemption or otherwise,
+(B) will become due and payable at their Stated Maturity within one
+year,
+38
+(C) have been called for redemption or are to be called for redemption
+within one year under arrangements satisfactory to the Trustee for the giving of notice of redemption by the Trustee in the name, and at the expense, of the Company, or
+(D) are deemed paid and discharged pursuant to
+Section
+8.3
+, as applicable;
+and the Company, in the case of (A), (B) or (C) above, has irrevocably deposited or caused to be deposited with the Trustee as trust funds in trust an
+amount of money or U.S. Government Obligations, which amount shall be sufficient for the purpose of paying and discharging each installment of principal (including Mandatory Sinking Fund Payments or analogous payments) of and interest on all
+Securities of such Series on dates such installments of principal or interest are due;
+(b) the Company has paid or caused to be paid all
+other sums payable hereunder by the Company; and
+(c) the Company has delivered to the Trustee an Officer’s Certificate and an
+Opinion of Counsel, each stating that all conditions precedent provided for relating to the satisfaction and discharge contemplated by this Section have been complied with.
+Notwithstanding the satisfaction and discharge of this Indenture, (1) the obligations of the Company to the Trustee under
+Section
+7.7
+, (2) if money shall have been deposited with the Trustee pursuant to
+clause (a)
+of this Section, the provisions in
+Section
+2.4
+,
+2.7
+,
+2.8
+,
+8.2
+and
+8.5
+, and (3) the rights, powers, trusts and immunities of the Trustee hereunder and the Company’s obligations in connection therewith shall survive.
+Section 8.2
+Application of Trust Funds; Indemnification
+.
+(a) Subject to the provisions of
+Section
+8.5
+, all money and U.S. Government Obligations or Foreign Government
+Obligations deposited with the Trustee pursuant to
+Section 8.1
+,
+8.3
+or
+8.4
+and all money received by the Trustee in respect of U.S. Government Obligations or Foreign Government Obligations deposited with the Trustee
+pursuant to
+Section
+8.1
+,
+8.3
+or
+8.4
+, shall be held in trust and applied by it, in accordance with the provisions of the Securities and this Indenture, to the payment, either directly or through any Paying
+Agent (including the Company acting as its own Paying Agent) as the Trustee may determine, to the Persons entitled thereto, of the principal and interest for whose payment such money has been deposited with or received by the Trustee or to make
+Mandatory Sinking Fund Payments or analogous payments as contemplated by
+Sections
+8.1
+,
+8.3
+or
+8.4
+.
+(b) The Company shall pay and shall indemnify the Trustee (which indemnity shall survive termination of this Indenture) against any tax, fee
+or other charge imposed on or assessed against U.S. Government Obligations or Foreign Government Obligations deposited pursuant to
+Sections
+8.1
+,
+8.3
+or
+8.4
+or the interest and principal received in
+respect of such obligations other than any payable by or on behalf of Holders.
+39
+(c) The Trustee shall deliver or pay to the Company from time to time upon Company Order any
+U.S. Government Obligations or Foreign Government Obligations or money held by it as provided in
+Sections
+8.3
+or
+8.4
+which, in the opinion of a nationally recognized firm of independent certified public
+accountants expressed in a written certification thereof delivered to the Trustee, are then in excess of the amount thereof which then would have been required to be deposited for the purpose for which such U.S. Government Obligations or Foreign
+Government Obligations or money were deposited or received.
+This provision shall not authorize the sale by the Trustee of any
+U.S. Government Obligations or Foreign Government Obligations held under this Indenture.
+Section 8.3
+Legal Defeasance of
+Securities of any
+Series
+.
+Unless this
+Section
+8.3
+is otherwise specified, pursuant to
+Section
+2.2
+, to be inapplicable to Securities of any Series, the Company shall be deemed to have paid and discharged the entire indebtedness on all the outstanding Securities of any Series on the 91st day after the date of
+the deposit referred to in
+subparagraph (d)
+hereof, and the provisions of this Indenture, as it relates to such outstanding Securities of such Series, shall no longer be in effect (and the Trustee, at the expense of the Company, shall,
+upon receipt of a Company Order, execute instruments acknowledging the same), except as to:
+(a) the rights of Holders of Securities of
+such Series to receive, from the trust funds described in
+subparagraph (d)
+hereof, (1) payment of the principal of and each installment of principal of or interest on the outstanding Securities of such Series on the Maturity of such
+principal or installment of principal and interest and (2) the benefit of any Mandatory Sinking Fund Payments applicable to the Securities of such Series on the day on which such payments are due and payable in accordance with the terms of this
+Indenture and the Securities of such Series;
+(b) the provisions of
+Sections
+2.4
+,
+2.5
+,
+2.7
+,
+2.8
+,
+7.7
+,
+8.2
+,
+8.3
+,
+8.5
+and
+8.6
+; and
+(c) the rights, powers, trusts and immunities of the
+Trustee hereunder and the duties of the Trustee under
+Section
+8.2
+and the Company’s obligations in connection therewith,
+provided
+that, the following conditions shall have been satisfied:
+(d) the Company shall have irrevocably deposited or caused to be deposited (except as provided in
+Section
+8.2(c))
+with the Trustee as trust funds, specifically pledged as security for and dedicated solely to the benefit of the Holders of such Securities (1) in the case of Securities of such Series denominated in Dollars, cash in Dollars and/or
+U.S. Government Obligations or (2) in the case of Securities of such Series denominated in a Foreign Currency (other than a composite currency), money and/or Foreign Government Obligations, which through the payment of interest and
+principal in respect thereof, in accordance with their terms, will provide (and without reinvestment and assuming no tax liability will be imposed on such Trustee), not later than one day before the due date of any payment of money, an amount in
+cash, sufficient, in the opinion of a nationally recognized firm of independent public accountants or investment bank expressed in a written certification thereof delivered to the Trustee, to pay and discharge each installment of principal of and
+interest, on and any Mandatory Sinking Fund Payments in respect of all the Securities of such Series on the dates such installments of principal or interest and such sinking fund payments are due;
+40
+(e) such deposit will not result in a breach or violation of, or constitute a default under,
+this Indenture or any other agreement or instrument to which the Company is a party or by which it is bound;
+(f) no Default or Event of
+Default with respect to the Securities of such Series shall have occurred and be continuing on the date of such deposit or during the period ending on the 91st day after such date;
+(g) the Company shall have delivered to the Trustee an Officer’s Certificate and an Opinion of Counsel to the effect that (1) the
+Company has received from, or there has been published by, the Internal Revenue Service a ruling or (2) since the date of execution of this Indenture, there has been a change in the applicable Federal income tax law, in either case to the
+effect that, and based thereon such Opinion of Counsel shall confirm that, the Holders of the Securities of such Series will not recognize income, gain or loss for Federal income tax purposes as a result of such deposit, defeasance and discharge and
+will be subject to Federal income tax on the same amount and in the same manner and at the same times as would have been the case if such deposit, defeasance and discharge had not occurred;
+(h) the Company shall have delivered to the Trustee an Officer’s Certificate stating that the deposit was not made by the Company with
+the intent of defeating, hindering, delaying or defrauding any other creditors of the Company; and
+(i) the Company shall have delivered
+to the Trustee an Officer’s Certificate and an Opinion of Counsel, each stating that all conditions precedent provided for relating to the defeasance contemplated by this Section have been complied with.
+Section 8.4
+Covenant Defeasance
+.
+Unless this
+Section
+8.4
+is otherwise specified pursuant to
+Section
+2.2
+to be inapplicable
+to Securities of any Series, the Company may omit to comply with respect to the Securities of any Series with any term, provision or condition set forth under
+Sections
+4.2
+,
+4.3
+,
+4.4
+,
+4.5
+,
+4.6
+,
+and
+5.1
+and, unless otherwise specified therein, any additional covenants specified in a supplemental indenture for such Series of Securities or a Board Resolution or an Officer’s Certificate delivered pursuant to
+Section
+2.2
+(and the failure to comply with any such covenants shall not constitute a Default or Event of Default with respect to such Series under
+Section
+6.1
+) and the occurrence of any event
+specified in a supplemental indenture for such Series of Securities or a Board Resolution or an Officer’s Certificate delivered pursuant to
+Section
+2.2
+and designated as an Event of Default shall not constitute a
+Default or Event of Default hereunder, with respect to the Securities of such Series, but, except as specified above, the remainder of this Indenture and such Securities will be unaffected thereby;
+provided
+that the following conditions shall
+have been satisfied:
+(a) With reference to this
+Section
+8.4
+, the Company has irrevocably deposited or caused to
+be irrevocably deposited (except as provided in
+Section
+8.2(c)
+) with the Trustee as trust funds in trust for the purpose of making the following payments specifically pledged as security for, and dedicated solely to, the
+benefit of the Holders of such Securities (1) in the case of Securities
+41
+of such Series denominated in Dollars, cash in Dollars and/or U.S. Government Obligations or (2) in the case of Securities of such Series denominated in a Foreign Currency (other than a
+composite currency), money and/or Foreign Government Obligations, which through the payment of interest and principal in respect thereof, in accordance with their terms, will provide (and without reinvestment and assuming no tax liability will be
+imposed on such Trustee), not later than one day before the due date of any payment of money, an amount in cash, sufficient, in the opinion of a nationally recognized firm of independent certified public accountants or investment bank expressed in a
+written certification thereof delivered to the Trustee, to pay and discharge each installment of principal (including Mandatory Sinking Fund Payments or analogous payments) of and interest on all the Securities of such Series on the dates such
+installments or principal or interest are due;
+(b) Such deposit will not result in a breach or violation of, or constitute a default
+under, this Indenture or any other agreement or instrument to which the Company is a party or by which it is bound;
+(c) No Default or
+Event of Default with respect to the Securities of such Series shall have occurred and be continuing on the date of such deposit;
+(d) the
+Company shall have delivered to the Trustee an Opinion of Counsel to the effect that the Holders of the Securities of such Series will not recognize income, gain or loss for federal income tax purposes as a result of such deposit and covenant
+defeasance and will be subject to federal income tax on the same amount and in the same manner and at the same times as would have been the case if such deposit and covenant defeasance had not occurred;
+(e) the Company shall have delivered to the Trustee an Officer’s Certificate stating the deposit was not made by the Company with the
+intent of defeating, hindering, delaying or defrauding any other creditors of the Company; and
+(f) The Company shall have delivered to
+the Trustee an Officer’s Certificate and an Opinion of Counsel, each stating that all conditions precedent herein provided for relating to the covenant defeasance contemplated by this Section have been complied with.
+Section 8.5
+Repayment to Company
+.
+Subject to applicable abandoned property law, the Trustee and the Paying Agent shall pay to the Company upon request any money held by them
+for the payment of principal and interest that remains unclaimed for two years. After that, Holders entitled to the money must look to the Company for payment as general creditors unless an applicable abandoned property law designates another
+Person.
+Section 8.6
+Reinstatement
+.
+If the Trustee or the Paying Agent is unable to apply any money deposited with respect to Securities of any Series in accordance with
+Section
+8.1
+by reason of any legal proceeding or by reason of any order or judgment of any court or governmental authority enjoining, restraining or otherwise prohibiting such application, the obligations of the Company
+under this Indenture with respect to the Securities of such Series and under the Securities of such Series shall be revived and
+42
+reinstated as though no deposit had occurred pursuant to
+Section
+8.1
+until such time as the Trustee or the Paying Agent is permitted to apply all such money in
+accordance with
+Section
+8.1
+;
+provided
+,
+however
+, that if the Company has made any payment of principal of or interest on any Securities because of the reinstatement of its obligations, the Company shall be
+subrogated to the rights of the Holders of such Securities to receive such payment from the money or U.S. Government Obligations held by the Trustee or Paying Agent after payment in full to the Holders.
+ARTICLE IX
+AMENDMENTS
+AND WAIVERS
+Section 9.1
+Without Consent of Holders
+.
+The Company and the Trustee may amend or supplement this Indenture or the Securities of one or more Series without the consent of any Holder:
+(a) to cure any ambiguity, defect or inconsistency;
+(b) to comply with
+Article
+V
+;
+(c) to provide for uncertificated Securities in addition to or in place of certificated Securities;
+(d) to add guarantees with respect to Securities of any Series or secure Securities of any Series;
+(e) to surrender any of the Company’s rights or powers under this Indenture;
+(f) to add covenants or events of default for the benefit of holders of Securities of any Series;
+(g) to comply with the applicable procedures of the applicable depository;
+(h) to make any change that does not adversely affect the rights of any Holder;
+(i) to provide for the issuance of and establish the form and terms and conditions of Securities of any Series as permitted by this Indenture;
+(j) to evidence and provide for the acceptance of appointment hereunder by a successor Trustee with respect to the Securities of one or
+more Series and to add to or change any of the provisions of this Indenture as shall be necessary to provide for or facilitate the administration of the trusts hereunder by more than one Trustee; or
+(k) to comply with requirements of the SEC in order to effect or maintain the qualification of this Indenture under the TIA.
+43
+Section 9.2
+With Consent of Holders
+.
+Subject to
+Section
+9.3
+, the Company and the Trustee may enter into a supplemental indenture with the written consent
+of the Holders of at least a majority in principal amount of the outstanding Securities of each Series affected by such supplemental indenture (including consents obtained in connection with a tender offer or exchange offer for the Securities of
+such Series), for the purpose of adding any provisions to or changing in any manner or eliminating any of the provisions of this Indenture or of any supplemental indenture or of modifying in any manner the rights of the Holders of each such Series.
+Except as provided in
+Section
+6.13
+and subject to
+Section
+9.3
+, the Holders of at least a majority in principal amount of the outstanding Securities of any Series by notice to the Trustee (including
+consents obtained in connection with a tender offer or exchange offer for the Securities of such Series) may waive compliance by the Company with any provision of this Indenture or the Securities with respect to such Series.
+It shall not be necessary for the consent of the Holders of Securities under this
+Section
+9.2
+to approve the
+particular form of any proposed supplemental indenture or waiver, but it shall be sufficient if such consent approves the substance thereof. After a supplemental indenture or waiver under this section becomes effective, the Company shall send to the
+Holders of Securities affected thereby, a notice briefly describing the supplemental indenture or waiver. Any failure by the Company to send such notice, or any defect therein, shall not, however, in any way impair or affect the validity of any such
+supplemental indenture or waiver.
+Section 9.3
+Limitations
+.
+Without the consent of each Holder affected, an amendment or waiver may not:
+(a) reduce the principal amount of Securities whose Holders must consent to an amendment, supplement or waiver;
+(b) reduce the rate of or extend the time for payment of interest (including default interest) on any Security;
+(c) reduce the principal or change the Stated Maturity of any Security or reduce the amount of, or postpone the date fixed for, the payment of
+any sinking fund or analogous obligation, if applicable;
+(d) reduce the principal amount of Discount Securities payable upon acceleration
+of the maturity thereof;
+(e) waive a Default or Event of Default in the payment of the principal of, premium, if any, or interest, if
+any, on any Security (except a rescission of acceleration of the Securities of any Series by the Holders of at least a majority in principal amount of the outstanding Securities of such Series and a waiver of the payment default that resulted from
+such acceleration);
+(f) make the principal of or interest, if any, on any Security payable in any currency other than that stated in the
+Security;
+(g) make any change in
+Sections
+6.8
+,
+6.13
+or
+9.3
+(this sentence); or
+44
+(h) waive a redemption payment with respect to any Security,
+provided
+that such
+redemption is made at the Company’s option.
+Section 9.4
+Compliance with Trust Indenture Act
+.
+Every amendment to this Indenture or the Securities of one or more Series shall be set forth in a supplemental indenture hereto that complies
+with the TIA as then in effect.
+Section 9.5
+Revocation and Effect of Consents
+.
+Until an amendment is set forth in a supplemental indenture or a waiver becomes effective, a consent to it by a Holder of a Security is a
+continuing consent by the Holder and every subsequent Holder of a Security or portion of a Security that evidences the same debt as the consenting Holder’s Security, even if notation of the consent is not made on any Security. However, any
+such Holder or subsequent Holder may revoke the consent as to his Security or portion of a Security if the Trustee receives the notice of revocation before the date of the supplemental indenture or the date the waiver becomes effective.
+Any amendment or waiver once effective shall bind every Holder of each Series affected by such amendment or waiver unless it is of the type
+described in any of
+clauses (a)
+through
+(g)
+of
+Section
+9.3
+. In that case, the amendment or waiver shall bind each Holder of a Security who has consented to it and every subsequent Holder of a Security or
+portion of a Security that evidences the same debt as the consenting Holder’s Security.
+The Company may, but shall not be obligated
+to, fix a record date for the purpose of determining the Holders entitled to give their consent or take any other action described above or required or permitted to be taken pursuant to this Indenture. If a record date is fixed, then notwithstanding
+the second immediately preceding paragraph, those Persons who were Holders at such record date (or their duly designated proxies), and only those Persons, shall be entitled to give such consent or to revoke any consent previously given or take any
+such action, whether or not such Persons continue to be Holders after such record date. No such consent shall be valid or effective for more than 120 days after such record date.
+Section 9.6
+Notation on or Exchange of Securities
+.
+The Company or the Trustee, but shall not be obligated to, may place an appropriate notation about an amendment or waiver on any Security of
+any Series thereafter authenticated. The Company in exchange for Securities of that Series may issue and the Trustee shall authenticate upon receipt of a Company Order in accordance with
+Section
+2.3
+new Securities of that
+Series that reflect the amendment or waiver.
+Section 9.7
+Trustee Protected
+.
+In executing, or accepting the additional trusts created by, any supplemental indenture permitted by this Article or the modifications
+thereby of the trusts created by this Indenture, the Trustee shall be entitled to receive, upon request, an Officer’s Certificate and/or an Opinion of Counsel complying with
+Sections 10.4
+and
+10.5
+and (subject to
+Section
+7.1
+) shall be fully protected in relying upon, such Officer’s Certificate and/or Opinion of Counsel. The Trustee shall sign all supplemental indentures upon delivery of such an Officer’s Certificate or
+Opinion of Counsel or both, except that the Trustee need not sign any supplemental indenture that adversely affects its rights, duties, liabilities or immunities under this Indenture.
+45
+ARTICLE X
+MISCELLANEOUS
+Section 10.1
+Trust Indenture Act Controls
+.
+If any provision of this Indenture limits, qualifies, or conflicts with another provision which is required or deemed to be included in this
+Indenture by the TIA, such required or deemed provision shall control.
+Section 10.2
+Notices
+.
+Any notice or communication by the Company or the Trustee to the other, or by a Holder to the Company or the Trustee, is duly given if in
+writing and delivered in person or mailed by
+first-class
+mail (registered or certified, return receipt requested), email or overnight air courier guaranteeing next day delivery, to the others’ address:
+if to the Company:
+Mattel,
+Inc.
+333 Continental Blvd.
+El Segundo, California 90245
+Attention: Assistant General Counsel
+Email: tiffani.magri@mattel.com
+with a copy to:
+Latham & Watkins LLP
+1271 Avenue of the Americas
+New
+York, New York 10020
+Attention: Senet Bischoff
+Email: senet.bischoff@lw.com
+if
+to the Trustee:
+U.S. Bank Trust Company, National Association
+633 West 5
+th
+Street, 24
+th
+Floor
+Los Angeles, California 90071
+Attention: Bradley E. Scarbrough (Mattel Notes Administrator)
+Email: bradley.scarbrough@usbank.com
+46
+The Company or the Trustee by notice to the other may designate additional or different
+addresses for subsequent notices or communications.
+Any notice or communication to a Holder shall be sent electronically or by
+first-class mail or overnight air courier to his, her or its address shown on the register kept by the Registrar, in accordance with the procedures of the Depositary. Failure to send a notice or communication to a Holder of any Series or any defect
+in it shall not affect its sufficiency with respect to other Holders of that or any other Series.
+If a notice or communication is sent or
+published in the manner provided above, within the time prescribed, it is duly given, whether or not the Holder receives it.
+If the
+Company sends a notice or communication to Holders, it shall send a copy to the Trustee and each Agent at the same time.
+The Trustee
+shall not have any duty to confirm that the Person sending any notice, instruction or other communication by electronic transmission (including by
+e-mail,
+facsimile transmission, web portal or other electronic
+methods) is, in fact, a Person authorized to do so. Electronic signatures believed by the Trustee to comply with the ESIGN Act of 2000 or other applicable law (including electronic images of handwritten signatures and digital signatures provided by
+DocuSign, Orbit, Adobe Sign or any other digital signature provider acceptable to the Trustee) shall be deemed original signatures for all purposes. The Company assumes all risks arising out of the use of electronic signatures and electronic methods
+to send communications to the Trustee, including without limitation the risk of the Trustee acting on an unauthorized communication, and the risk of interception or misuse by third parties.
+Notwithstanding any other provision of this Indenture or any Security, where this Indenture or any Security provides for notice of any event
+(including any notice of redemption) to a Holder of a Global Security (whether by mail or otherwise), such notice shall be sufficiently given to the Depositary for such Security (or its designee) pursuant to the customary procedures of such
+Depositary.
+Section 10.3
+Communication by Holders with Other Holders
+.
+Holders of any Series may communicate pursuant to TIA § 312(b) with other Holders of that Series or any other Series with respect to
+their rights under this Indenture or the Securities of that Series or all Series. The Company, the Trustee, the Registrar and anyone else shall have the protection of TIA § 312(c).
+Section 10.4
+Certificate and Opinion as to Conditions Precedent
+.
+Upon any request or application by the Company to the Trustee to take any action under this Indenture, the Company shall furnish to the
+Trustee:
+(a) an Officer’s Certificate stating that, in the opinion of the signers, all conditions precedent, if any, provided for in
+this Indenture relating to the proposed action have been complied with; and
+47
+(b) an Opinion of Counsel stating that, in the opinion of such counsel, all such conditions
+precedent have been complied with.
+Section 10.5
+Statements Required in Certificate or Opinion
+.
+Each certificate or opinion with respect to compliance with a condition or covenant provided for in this Indenture (other than a certificate
+provided pursuant to TIA § 314(a)(4)) shall comply with the provisions of TIA § 314(e) and shall include:
+(a) a
+statement that the Person making such certificate or opinion has read such covenant or condition;
+(b) a brief statement as to the nature
+and scope of the examination or investigation upon which the statements or opinions contained in such certificate or opinion are based;
+(c) a statement that, in the opinion of such Person, such Person has made such examination or investigation as is necessary to enable such
+Person to express an informed opinion as to whether or not such covenant or condition has been complied with; and
+(d) a statement as to
+whether or not, in the opinion of such Person, such condition or covenant has been complied with.
+Section 10.6
+Rules by Trustee
+and Agents
+.
+The Trustee may make reasonable rules for action by or a meeting of Holders of one or more Series. Any Agent may make
+reasonable rules and set reasonable requirements for its functions.
+Section 10.7
+Legal Holidays
+.
+If a payment date for any payment made under this Indenture is not a Business Day, payment may be made on the next succeeding Business Day,
+and no interest shall accrue for the intervening period.
+Section 10.8
+No Recourse Against Others
+.
+A director, officer, employee or stockholder (past or present), as such, of the Company shall not have any liability for any obligations of
+the Company under the Securities or this Indenture or for any claim based on, in respect of or by reason of such obligations or their creation. Each Holder by accepting a Security waives and releases all such liability. The waiver and release are
+part of the consideration for the issue of the Securities.
+Section 10.9
+Counterparts
+.
+This Indenture may be executed in any number of counterparts and by the parties hereto in separate counterparts, each of which when so
+executed shall be deemed to be an original and all of which taken together shall constitute one and the same agreement. The exchange of copies of this Indenture and of signature pages by facsimile or electronic format (e.g., “.pdf” or
+“.tif”) transmission shall constitute effective execution and delivery of this Indenture as to the parties hereto and may be used in lieu of the original Indenture for all purposes. Signatures of the parties hereto transmitted by
+facsimile or electronic format (e.g., “.pdf” or “.tif”) shall be deemed to be their original signatures for all purposes.
+48
+Unless otherwise provided herein or in any other Securities, the words
+“execute”, “execution”, “signed” and “signature” and words of similar import used in or related to any document to be signed in connection with this Indenture, any Securities or any of the transactions
+contemplated hereby (including amendments, waivers, consents and other modifications) shall be deemed to include electronic signatures and the keeping of records in electronic form, each of which shall be of the same legal effect, validity or
+enforceability as a manually executed signature in ink or the use of a paper-based recordkeeping system, as applicable, to the fullest extent and as provided for in any applicable law, including the Federal Electronic Signatures in Global and
+National Commerce Act, the New York State Electronic Signatures and Records Act and any other similar state laws based on the Uniform Electronic Transactions Act.
+Section 10.10
+Governing Laws; Waiver of Jury Trial; Consent to Jurisdiction
+.
+THIS INDENTURE AND THE SECURITIES, INCLUDING ANY CLAIM OR CONTROVERSY ARISING OUT OF OR RELATING TO THE INDENTURE OR THE SECURITIES, SHALL
+BE GOVERNED BY THE LAWS OF THE STATE OF NEW YORK.
+THE COMPANY, THE TRUSTEE AND THE HOLDERS (BY THEIR ACCEPTANCE OF THE SECURITIES)
+EACH HEREBY IRREVOCABLY WAIVE, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY AND ALL RIGHT TO TRIAL BY JURY IN ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THIS INDENTURE, THE SECURITIES OR THE TRANSACTIONS CONTEMPLATED HEREBY OR
+THEREBY.
+Any legal suit, action or proceeding arising out of or based upon this Indenture or the transactions contemplated hereby may
+be instituted in the federal courts of the United States of America located in the City of New York or the courts of the State of New York in each case located in the City of New York (collectively, the “
+Specified Courts
+”), and
+each party irrevocably submits to the
+non-exclusive
+jurisdiction of such courts in any such suit, action or proceeding. Service of any process, summons, notice or document by mail (to the extent allowed under
+any applicable statute or rule of court) to such party’s address set forth above shall be effective service of process for any suit, action or other proceeding brought in any such court. The Company, the Trustee and the Holders (by their
+acceptance of the Securities) each hereby irrevocably and unconditionally waive any objection to the laying of venue of any suit, action or other proceeding in the Specified Courts and irrevocably and unconditionally waive and agree not to plead or
+claim any such suit, action or other proceeding has been brought in an inconvenient forum.
+49
+Section 10.11
+No Adverse Interpretation of Other Agreements
+.
+This Indenture may not be used to interpret another indenture, loan or debt agreement of the Company or a Subsidiary. Any such indenture, loan
+or debt agreement may not be used to interpret this Indenture.
+Section 10.12
+Successors
+.
+All agreements of the Company in this Indenture and the Securities shall bind its successor. All agreements of the Trustee in this Indenture
+shall bind its successor.
+Section 10.13
+Severability
+.
+In case any provision in this Indenture or in the Securities shall be invalid, illegal or unenforceable, the validity, legality and
+enforceability of the remaining provisions shall not in any way be affected or impaired thereby.
+Section 10.14
+Table of Contents,
+Headings, Etc
+.
+The Table of Contents,
+Cross-Reference
+Table, headings of the
+Articles and Sections of this Indenture have been inserted for convenience of reference only, are not to be considered a part hereof, and shall in no way modify or restrict any of the terms or provisions hereof.
+Section 10.15
+Securities in a Foreign Currency
+.
+Unless otherwise specified in a Board Resolution, a supplemental indenture hereto or an Officer’s Certificate delivered pursuant to
+Section
+2.2
+of this Indenture with respect to a particular Series of Securities, whenever for purposes of this Indenture any action may be taken by the Holders of a specified percentage in aggregate principal amount of
+Securities of all Series or all Series affected by a particular action at the time outstanding and, at such time, there are outstanding Securities of any Series which are denominated in more than one currency, then the principal amount of Securities
+of such Series which shall be deemed to be outstanding for the purpose of taking such action shall be determined by converting any such other currency into a currency that is designated upon issuance of any particular Series of Securities. Unless
+otherwise specified in a Board Resolution, a supplemental indenture hereto or an Officer’s Certificate delivered pursuant to
+Section
+2.2
+of this Indenture with respect to a particular Series of Securities, such
+conversion shall be made by the Company at the spot rate for the purchase of the designated currency as published in The Financial Times in the “Currency Rates” section (or, if The Financial Times is no longer published, or if such
+information is no longer available in The Financial Times, such source as may be selected in good faith by the Company) on any date of determination. The provisions of this paragraph shall apply in determining the equivalent principal amount in
+respect of Securities of a Series denominated in currency other than Dollars in connection with any action taken by Holders of Securities pursuant to the terms of this Indenture.
+All decisions and determinations provided for in the preceding paragraph shall, in the absence of manifest error, to the extent permitted by
+law, be conclusive for all purposes and irrevocably binding upon the Trustee and all Holders.
+50
+Section 10.16
+Judgment Currency
+.
+The Company agrees, to the fullest extent that it may effectively do so under applicable law, that (1) if for the purpose of obtaining
+judgment in any court it is necessary to convert the sum due in respect of the principal of or interest or other amount on the Securities of any Series (the “
+Required Currency
+”) into a currency in which a judgment will be rendered
+(the “
+Judgment Currency
+”), the rate of exchange used shall be the rate at which in accordance with normal banking procedures the Trustee could purchase in the City of New York the Required Currency with the Judgment Currency on
+the day on which final unappealable judgment is entered, unless such day is not a New York Banking Day, then, the rate of exchange used shall be the rate at which in accordance with normal banking procedures the Trustee could purchase in the City of
+New York the Required Currency with the Judgment Currency on the New York Banking Day preceding the day on which final unappealable judgment is entered and (2) its obligations under this Indenture to make payments in the Required Currency
+(i) shall not be discharged or satisfied by any tender, any recovery pursuant to any judgment (whether or not entered in accordance with
+subsection (1)
+), in any currency other than the Required Currency, except to the extent that such
+tender or recovery shall result in the actual receipt, by the payee, of the full amount of the Required Currency expressed to be payable in respect of such payments, (ii) shall be enforceable as an alternative or additional cause of action for
+the purpose of recovering in the Required Currency the amount, if any, by which such actual receipt shall fall short of the full amount of the Required Currency so expressed to be payable, and (iii) shall not be affected by judgment being
+obtained for any other sum due under this Indenture. For purposes of the foregoing, “
+New York Banking Day
+” means any day except a Saturday, Sunday or a legal holiday in the City of New York on which banking institutions are
+authorized or required by law, regulation or executive order to close.
+Section 10.17
+Force Majeure
+.
+In no event shall the Trustee be responsible or liable for any failure or delay in the performance of its obligations hereunder arising out of
+or caused by, directly or indirectly, forces beyond its control, including, without limitation, strikes, work stoppages, accidents, acts of war or terrorism, civil or military disturbances, nuclear or natural catastrophes, pandemics, epidemics or
+other public health emergencies, or acts of God, and interruptions, loss or malfunctions of utilities, communications or computer (software and hardware) services, it being understood that the Trustee shall use reasonable best efforts which are
+consistent with accepted practices in the banking industry to resume performance as soon as practicable under the circumstances.
+Section 10.18
+U.S.A. Patriot Act
+.
+The parties hereto acknowledge that in accordance with Section 326 of the U.S.A. Patriot Act, the Trustee is required to obtain, verify
+and record information that identifies each Person or legal entity that establishes a relationship or opens an account with the Trustee. The parties to this Indenture agree that they will provide the Trustee with such information as it may request
+in order for the Trustee to satisfy the requirements of the U.S.A. Patriot Act.
+51
+ARTICLE XI
+SINKING FUNDS
+Section 11.1
+Applicability of Article
+.
+The provisions of this Article shall be applicable to any sinking fund for the retirement of the Securities of a Series if so provided by
+the terms of such Securities pursuant to
+Section
+2.2
+, except as otherwise permitted or required by any form of Security of such Series issued pursuant to this Indenture.
+The minimum amount of any sinking fund payment provided for by the terms of the Securities of any Series is herein referred to as a
+“
+Mandatory Sinking Fund Payment
+” and any other amount provided for by the terms of Securities of such Series is herein referred to as an “
+Optional Sinking Fund Payment
+.” If provided for by the terms of
+Securities of any Series, the cash amount of any sinking fund payment may be subject to reduction as provided in
+Section
+11.2
+. Each sinking fund payment shall be applied to the redemption of Securities of any Series as
+provided for by the terms of the Securities of such Series.
+Section 11.2
+Satisfaction of Sinking Fund Payments with
+Securities
+.
+The Company may, in satisfaction of all or any part of any sinking fund payment with respect to the Securities of any
+Series to be made pursuant to the terms of such Securities (1) deliver outstanding Securities of such Series to which such sinking fund payment is applicable (other than any of such Securities previously called for mandatory sinking fund
+redemption) and (2) apply as credit Securities of such Series to which such sinking fund payment is applicable and which have been repurchased by the Company or redeemed either at the election of the Company pursuant to the terms of such Series
+of Securities (except pursuant to any mandatory sinking fund) or through the application of permitted Optional Sinking Fund Payments or other optional redemptions pursuant to the terms of such Securities, provided that such Securities have not been
+previously so credited. Such Securities shall be received by the Trustee, together with an Officer’s Certificate with respect thereto, not later than 15 days prior to the date on which the Trustee begins the process of selecting Securities for
+redemption, and shall be credited for such purpose by the Trustee at the price specified in such Securities for redemption through operation of the sinking fund and the amount of such sinking fund payment shall be reduced accordingly. If as a result
+of the delivery or credit of Securities in lieu of cash payments pursuant to this
+Section
+11.2
+, the principal amount of Securities of such Series to be redeemed in order to exhaust the aforesaid cash payment shall be less
+than $100,000, the Trustee need not call Securities of such Series for redemption, except upon receipt of a Company Order that such action be taken, and such cash payment shall be held by the Trustee or a Paying Agent and applied to the next
+succeeding sinking fund payment,
+provided
+,
+however
+, that the Trustee or such Paying Agent shall from time to time upon receipt of a Company Order pay over and deliver to the Company any cash payment so being held by the Trustee or such
+Paying Agent upon delivery by the Company to the Trustee of Securities of that Series purchased by the Company having an unpaid principal amount equal to the cash payment required to be released to the Company.
+52
+Section 11.3
+Redemption of Securities for Sinking Fund
+.
+Not less than 60 days (unless otherwise indicated in the Board Resolution, Officer’s Certificate or supplemental indenture in respect of
+a particular Series of Securities) prior to each sinking fund payment date for any Series of Securities, the Company will deliver to the Trustee an Officer’s Certificate specifying the amount of the next ensuing mandatory sinking fund payment
+for that Series pursuant to the terms of that Series, the portion thereof, if any, which is to be satisfied by payment of cash and the portion thereof, if any, which is to be satisfied by delivering and crediting of Securities of that Series
+pursuant to
+Section
+11.2
+, and the optional amount, if any, to be added in cash to the next ensuing mandatory sinking fund payment, and the Company shall thereupon be obligated to pay the amount therein specified. Not less
+than 30 days (unless otherwise indicated in the Board Resolution, Officer’s Certificate or supplemental indenture in respect of a particular Series of Securities) before each such sinking fund payment date the Securities to be redeemed upon
+such sinking fund payment date will be selected in the manner specified in
+Section
+3.2
+, and the Company shall send or cause to be sent a notice of the redemption thereof to be given in the name of and at the expense of the
+Company in the manner provided in and in accordance with
+Section
+3.3
+. Such notice having been duly given, the redemption of such Securities shall be made upon the terms and in the manner stated in
+Sections
+3.4
+,
+3.5
+and
+3.6
+.
+[
+Signature pages to follow
+]
+53
+IN WITNESS WHEREOF, the parties hereto have caused this Indenture to be duly executed as of
+the day and year first above written.
+MATTEL, INC.
+By:
+/s/ Mandana Sadigh
+Name:
+Mandana Sadigh
+Title:
+Senior Vice President & Treasurer
+U.S. BANK TRUST COMPANY,
+NATIONAL ASSOCIATION, AS TRUSTEE
+By:
+/s/ Bradley E. Scarbrough
+Name:
+Bradley Scarbrough
+Title:
+Vice President
+54

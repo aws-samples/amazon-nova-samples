@@ -1,0 +1,909 @@
+EX-4.25
+3
+ea026527801ex4-25_gelteq.htm
+PRODUCT DEVELOPMENT AND PROFIT SHARE AGREEMENT, DATED JULY 31, 2025, BETWEEN MELBOURNE HEALTH TRADING AS THE ROYAL MELBOURNE HOSPITAL AND GELTEQ LIMITED
+Exhibit 4.25
+Pursuant to Item 601(b)(10)(iv) of Regulation
+S-K, certain identified information marked with [*****] has been excluded from the exhibit because it is both (i) not material and (ii)
+the type that the registrant treats as private or confidential.
+Product
+Development and Profit Share Agreement
+Between:
+Gelteq Limited (ACN 619 501 254)
+and
+Melbourne Health (ABN 73 802 706
+972)
+Gladwin Legal | www.gladwinlegal.com.au
+A: PO Box 302, Ormond, VIC, 3204
+E: [*****]
+P: [*****]
+Liability limited by a scheme approved under Professional Standards Legislation.
+Table of Contents
+1.
+Definitions and interpretation
+3
+2.
+Development and Sale of the Product
+5
+3.
+Term
+6
+4.
+Transfer and use of Material and Research Data
+6
+5.
+Marketing, Branding and Acknowledgement
+7
+6.
+Profit Share
+8
+7.
+Warranties
+9
+8.
+Intellectual Property
+9
+9.
+Termination
+10
+10.
+Effect of termination
+10
+11.
+Non-compete
+11
+12.
+Confidentiality
+11
+13.
+Liability
+13
+14.
+Dispute Resolution
+13
+15.
+GST
+14
+16.
+Notices
+14
+17.
+General
+15
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+2
+of
+16
+Product Development and Profit Share
+Agreement
+This Agreement Dated
+31/7/2025
+BETWEEN
+1.
+Gelteq Limited ACN 619 501 254 of 641 Glenhuntly Road, Caulfield VIC 3162 (
+Gelteq
+); and
+2.
+Melbourne Health trading as The Royal Melbourne Hospital ABN 73 802 706 972 of 300 Grattan Street, Parkville VIC 3050 a body corporate
+pursuant to the provisions of the
+Health Services Act 1988
+(Victoria) (
+Melbourne Health
+),
+(collectively, the
+parties
+).
+RECITALS
+A.
+Gelteq specialises in the formulation, development, and manufacturing of products using its patented gel-based oral drug delivery
+system.
+B.
+Gelteq intends to manufacture a product that incorporates the Material known as HAMSB, which is a form of acylated starch.
+C.
+Melbourne Health has conducted extensive studies and research on this Material and has agreed to provide Gelteq with the Material,
+and where possible any relevant data and findings to support the product’s development.
+D.
+Gelteq acknowledges Melbourne Health’s contributions to the studies and research related to the Material and its benefits. As a result,
+Gelteq proposes a profit-sharing arrangement with Melbourne Health, governed by the terms and conditions set forth in this Agreement.
+OPERATIVE PROVISIONS
+1.
+Definitions
+ and interpretation
+1.1
+Definitions
+In this Agreement, unless the context
+requires otherwise:
+Agreement
+means this agreement
+and its schedules and annexures and any subsequent variation.
+Background IP
+means Intellectual
+Property owned or controlled by a party, including Intellectual Property developed before or independently of this Agreement, which the
+party determines, in its sole discretion, to make available to the other party in relation to this Agreement.
+Business Day
+means a day which
+is not a Saturday, Sunday or bank or public holiday in Victoria, Australia.
+CSIRO
+means the Commonwealth
+Scientific and Industrial Research Organisation.
+CSIRO Report
+means
+the reported
+Subchronic preclinical toxicity and quality control testing of butyrylated high amylose maize starch in rats
+Commencement Date
+means the
+date that the last party signs this Agreement.
+Commercialisation
+in relation
+to the Product(s) means to do any of the following:
+(a)
+manufacture, use, sell, exploit, offer to sell, lease or hire the Product(s);
+(b)
+provides services which involve use or exploitation of or incorporate Product(s);
+(c)
+licence any third Party to do any of the things referred to in paragraphs (a) and (b) of this definition;
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+3
+of
+16
+(d)
+otherwise licence, use or exploitation of any of the Product(s); and
+(e)
+further develop the Product(s) to the extent required to enable or make it commercially feasible to do any of the things referred
+to in paragraphs (a) to (d) of this definition.
+Commercialisation Expenses
+means those expenses reasonably and directly incurred in the Commercialisation of the Product(s), including but not limited to:
+(f)
+the costs of negotiating the terms of any Commercialisation licenses with third parties;
+(g)
+all taxes, levies, duties and other government charges payable by or on behalf of a party in relation to Commercialisation;
+(h)
+any direct non-salary expenses payable by or on behalf of a Party in connection with the Commercialisation of the Products including
+any costs in relation to the packaging, marketing and distribution of the Products (such as freight costs, distributor discounts and commissions);
+and
+(i)
+the costs of any legal proceedings by or against a Party (including damages) that arises as a direct result of the Commercialisation
+of the Products.
+Confidential Information
+means
+all unpatented inventions, ideas, know-how, concepts, trade secrets, processes, techniques, software, products and any and all other unregistered
+or unpatented intellectual property, financial and business information and all other commercially valuable information of the disclosing
+party which the disclosing party regards as confidential to it or which is evident by its nature or the manner of its disclosure to be
+confidential, whether provided or accessible to the other party before or after the date of this Agreement.
+Corporations Act
+means the
+Corporations Act 2001
+(Cth).
+GST Law
+means the definition
+given to that term in the
+A New Tax System (Products & Services Tax) Act 1999
+(Cth).
+Intellectual Property
+means
+patents, rights to inventions, copyright and related rights, trade marks, business names and domain names, rights in get-up, goodwill
+and the right to sue for passing off, rights in designs and unregistered designs, rights to use, and protect the confidentiality of, confidential
+information (including know-how, trade secrets, and datasets), technology and all other intellectual property rights, in each case whether
+registered or unregistered and including all applications and rights to apply for and be granted, renewals or extensions of, and rights
+to claim priority from, such rights and all similar or equivalent rights or forms of protection which subsist now or in the future, anywhere
+in the world.
+Material
+means the HAMSB, which
+is a form of acylated starch, that has been previously used for R&D and trials by CSIRO and Melbourne Health. The parties agree that
+the Materials does not include any new batches of HAMSB that Gelteq would order from suppliers to use in the Product on an ongoing basis.
+MH Branding
+has the meaning
+set out in clause 5.
+Net Profit
+means Gelteq’s total
+revenue for any Product(s) less all Commercialisation Expenses.
+Operating Funds
+has the meaning
+set out in clause 6.1.
+Personnel
+means an employee,
+director, officer, agent, representative, contractor or sub- contractor of a party.
+Profit Share
+has the meaning
+set out in clause 6.1.
+Product(s)
+has the meaning
+set out in clause 2 and includes any improvements, modifications, or derivative works related to such Product(s).
+Related Body Corporate
+has
+the same meaning as it has in the Corporations Act.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+4
+of
+16
+Research Data
+means the studies,
+analyses, reports and investigations conducted or provided by Melbourne Health related to the Material including any findings and data.
+For the avoidance of doubt, Research Data includes the CSIRO Report.
+Term
+has the meaning set out
+in clause 3.
+1.2
+Interpretation
+In this Agreement, unless the context
+requires otherwise:
+(a)
+words in the singular include the plural and vice versa;
+(b)
+headings (including those in brackets at the beginning of paragraphs) are for convenience only and do not affect the interpretation
+of this Agreement;
+(c)
+any reference to gender includes the other gender;
+(d)
+a reference to a clause, paragraph, schedule or annexure is a reference to a clause, paragraph, schedule or annexure, as the case
+may be, of this Agreement;
+(e)
+if any act which must be done under this Agreement is to be done on a day that is not a Business Day then the act must be done on
+or by the next Business Day;
+(f)
+a reference to any legislation includes subordinate legislation and all amendments, consolidations or replacements from time to time;
+(g)
+a reference to a natural person includes a body corporate, partnership, joint venture, association, government or statutory body or
+authority or other legal entity;
+(h)
+the words “includes” and “including” or words of similar effect are not words of limitation;
+(i)
+any ambiguity in this Agreement shall be interpreted in a manner that is fair and reasonable, taking into account the intentions of
+the parties at the time they entered into this Agreement;
+(j)
+a reference to a party includes the party’s successors,
+assigns and persons substituted by novation;
+(k)
+a reference to a covenant, obligation or agreement of two or more persons binds or benefits them jointly and severally;
+(l)
+a reference to time and date is to local time and dates in
+Victoria, Australia; and (m) unless specified otherwise, a reference to “$” or dollars refers to Australian dollars.
+2.
+Development and Sale of the Product
+2.1
+Gelteq shall endeavour to develop and market a ready-to-consume product(s) which uses or incorporates HAMSB (
+Product(s)
+).
+2.2
+Gelteq shall be solely responsible for all costs associated with the manufacturing, sales, and marketing of the Products. The parties
+agree that no costs will be borne by Melbourne Health.
+2.3
+Melbourne Health agrees to transfer the Materials to Gelteq for Gelteq’s use in accordance with Clause 4 below.
+2.4
+Melbourne Health agrees to share with Gelteq any Research Data it feels would be useful for the Product research and development,
+but Melbourne Health are not required to do so under this Agreement.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+5
+of
+16
+2.5
+Melbourne Health acknowledges and agrees that Gelteq shall
+have sole discretion in determining the marketing strategies, sales approaches, and applicable jurisdictions for the Product. However,
+the parties agree that Melbourne Health retains the right to approve any use of Melbourne Health’s branding on the Product or in
+the marketing strategies prior to its implementation, as outlined in Clause 5 below.
+2.6
+Gelteq must promptly disclose in writing to Melbourne Health any information relating to any modifications or improvements to the
+Material with sufficient detail such that Melbourne Health can comply with any notification obligations it may have to any third party,
+including CSIRO. Gelteq will not prevent Melbourne Health from complying with any notification obligations to any such third party, though
+Melbourne Health agrees to take reasonable steps to ensure that any such third party required to be notified keeps any such information
+confidential at all times.
+2.7
+If at any time Gelteq decides:
+(a)
+not to progress with development, marketing or commercialisation
+of any Product(s) for any reason; or
+(b)
+to sell, assign, licence or otherwise deal with Gelteq’s Intellectual Property relating to the Product or any other proprietary
+rights arising from the development, formulation, and commercialisation of the Product(s),
+Gelteq will promptly notify Melbourne
+Health in writing. If Melbourne Health requests, Gelteq will meet with Melbourne Health to discuss and negotiate in good faith potential
+arrangements for development, marketing or use of the Product(s) by Melbourne Health or a third party. If, despite making reasonable attempts
+and negotiating in good faith, the parties cannot reach a mutually acceptable arrangement for the development, or marketing use within
+90 days of notification being provided by Gelteq pursuant to this clause, then Gelteq will be free to proceed with its intentions specified
+in (a) or (b) of this clause.
+3.
+Term
+3.1
+This Agreement commences on the Commencement Date and continues indefinitely until it is terminated in accordance with this Agreement
+(
+Term
+).
+4.
+Transfer and use of Material and Research Data
+Transfer
+4.1
+Melbourne Health agrees to provide Gelteq with the Material
+within a reasonable period of time after the effective date of this Agreement. Melbourne Health will not provide the Material to any
+other third party without the prior written consent of Gelteq.
+4.2
+The Material shall be delivered to Gelteq at its Clayton based
+R&D facility. Gelteq will arrange for, and will pay any costs associated with transport and delivery of the Materials to Gelteq’s
+premises.
+Use of Material and Research Data
+4.3
+Melbourne Health does not provide any representations, warranties or other assurances about or relating
+to the Material. Without limiting the preceding, Melbourne Health provides no representation or warranty that the Material it is fit for
+any purpose (including any purpose expressly contemplated by this Agreement), is up to date, is free from any defects or deficiencies,
+or that any use of the Material by Gelteq will not infringe on a thirdparty’s
+intellectual property or other rights. Melbourne
+Health provides the Material to Gelteq ‘as is’ basis. Any use of the Material is at Gelteq’s sole risk.
+4.4
+Subject to the terms of this Agreement, Gelteq shall have the right to use the Material provided by Melbourne Health for the sole
+purpose of research and development for the Products. Gelteq must not use the Material for any purpose or in any way which may cause Melbourne
+Health to be in breach of its obligations to any third parties including CSIRO. Accordingly, Gelteq acknowledges and agrees:
+(a)
+Gelteq may only use the Material provided by Melbourne Health as reference material for a research and development purposes;
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+6
+of
+16
+(b)
+Gelteq must ensure the Material provided by Melbourne Health is not used for human or animal consumption, is not fed to any human
+or animal, or used for or in connection with any human or animal trials, testing or treatment;
+(c)
+Gelteq must comply with any directions about handling, storage or disposal of the Material provided by Melbourne Health or third parties
+Melbourne Health have received the Material from;
+(d)
+Gelteq must ensure that its use, storage or handling of the Material provided by Melbourne Health is in accordance with all applicable
+laws, regulations, guidelines and codes;
+(e)
+Gelteq must not provide the Material provided by Melbourne Health to any third party for any reason;
+(f)
+Gelteq must not attempt to obtain patent coverage of the Material provided by Melbourne Health; and
+(g)
+if the agreement between CSIRO and Melbourne Health about the Material is terminated by CSIRO for any reason, following notification
+from Melbourne Health, Gelteq will promptly cease all use of, and will return to Melbourne Health, the Material provided by Melbourne
+Health and all copies of the CSIRO Report.
+4.5
+If Melbourne Health provides any Research Data to Gelteq which has not been published or is otherwise
+not publicly available, Gelteq will treat that Research Data as Melbourne Health’s
+Confidential Information unless and must
+not publish or made publicly available such Research Data in whole or part without the prior written consent of Melbourne Health. Without
+limiting the preceding, if Melbourne Health provides a copy of the CSIRO Report to Gelteq, Gelteq must not publish, make publicly available
+or provide that report to any third party for any reason.
+4.6
+Gelteq acknowledges and agrees:
+(a)
+that Melbourne Health obtained the Material and the CSIRO Report from CSIRO and Melbourne Health did not manufacture or contribute
+to the development of the Material and did not prepare the CSIRO Report;
+(b)
+the Material may be toxic, contain infectious agents or substances that are hazardous or dangerous, or be harmful to persons or property;
+and
+(c)
+it receives, handles and uses the Material at its own risk and will be responsible for the safe handling, storage and use of the Material,
+and will ensure that the Material will not cause any harm to any person, or to property.
+5.
+Marketing, Branding and Acknowledgement
+Acknowledgement
+5.1
+Subject to clauses 5.2 to 5.4, Gelteq agrees to appropriately
+attribute and give recognition to use of the Material, recognizing Melbourne Health’s contributions to the research and development of
+the Product.
+Use of MH Branding
+5.2
+Gelteq must not utilise the logo, trademark, company name, or any branding associated with Melbourne Health or The Royal Melbourne
+Hospital (
+MH Branding
+) or the name of any Melbourne Health Personnel in connection with any Product, any marketing materials related
+to any Product or any other public statement or publication without obtaining prior written approval from Melbourne Health.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+7
+of
+16
+5.3
+Gelteq agrees that all marketing materials (including packaging or other information provided with the
+Products) or any public statement or other
+that references Melbourne Health or incorporates the MH Branding or the name of any Melbourne Health Personnel
+must be submitted for review and must receive written pre- approval from Melbourne Health before it is published or distributed.
+5.4
+Prior to any release of any materials, publications or other content contemplated by clause 5.2 or 5.3, Gelteq shall provide Melbourne
+Health with a copy of such materials for review. Melbourne Health shall have ten (10) Business Days to provide feedback or request modifications.
+If Melbourne Health:
+(a)
+provides written consent to any release of any materials,
+publications or other content, Gelteq may proceed to publicly release such material;
+(b)
+provides feedback or requests modifications, the parties will
+work together in good faith to implement such feedback or modification in a mutually acceptable manner prior to any release of any materials,
+publications or other content; or
+(c)
+confirms in writing that it does not consent to any release
+of any materials, publications or other content contemplated by clause 5.2 or 5.3, Gelteq Gelteq must remove any references to Melbourne
+Health or its Personnel and any MH Branding from the relevant materials, publication or other content before Gelteq or any other person
+release or distribute the relevant material;
+(d)
+does not respond within the ten (10) day period, Gelteq must
+remove any references to Melbourne Health or its Personnel and any MH Branding from the relevant materials, publication or other content
+before Gelteq or any other person release or distribute the relevant material.
+Nothing in this clause 5.4 prevents
+Melbourne Health and Gelteq subsequently agreeing in writing on the use of MH Branding or the name of Melbourne Health Personnel on those
+materials.
+Gelteq’s Intellectual Property
+5.5
+Melbourne Health shall not use any of the Gelteq’s Intellectual property without the prior written consent of Gelteq.
+6.
+Profit Share
+6.1
+At the end of each quarter during the Term and for the period contemplated by clause 10.1, Gelteq agrees to pay Melbourne Health the
+Profit Share, calculated in accordance with the formula below, provided always that such Profit Share does not result in the balance of
+cash held by Gelteq falling below the amount of the Operating Funds, of $25,000.00, after such payment is made:
+Profit Share
+= 15% x Net Profit
+6.2
+For the first quarter of the Term, the Profit Share will be pro-rated for the period from the Commencement Date to the end of that
+quarter.
+6.3
+Gelteq will pay the Profit Share to Melbourne Health within 30 Business Days of the end of each quarter.
+6.4
+The Profit Share outlined in Clause 6.1 will be subject to ongoing reviews by both parties. This review will take into account the
+contributions made by Melbourne Health, particularly in terms of the research and development support provided in relation to the Products
+and the Material. The parties will assess the extent of Melbourne Health’s involvement and the impact of its assistance on the overall
+success and profitability of the Products. Any adjustments to the Profit Share must be agreed by the parties in writing in accordance
+with clause 17.1 prior to being implemented.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+8
+of
+16
+7.
+Warranties
+7.1
+Each party warrants, represents and undertakes to the other party that:
+(a)
+prior to entering into this Agreement, it was given a reasonable opportunity to obtain any advice (legal or otherwise) about this
+Agreement and the obligations and restraints contained in it;
+(b)
+it understands that this Agreement and agree that its terms are fair and reasonable in the circumstances;
+(c)
+it has entered into this Agreement voluntarily of his own freewill without duress, coercion, undue influence or pressure from either
+the other party or any other person; and
+(d)
+it has full capacity and authority to enter into, and perform its obligations, under this Agreement.
+7.2
+Each party acknowledges and agrees that it has not relied on any representation or warranty from the other party in entering into
+this Agreement other than those expressly stated in this Agreement.
+7.3
+Gelteq uses the Material and Research Data at Gelteq’s own risk. Melbourne Health does not make, and to the extent permitted
+by law, expressly excludes any warranties regarding the Material or Research Data or any part thereof.
+8.
+Intellectual Property
+Material, Research Data and Background
+IP
+8.1
+Gelteq acknowledges that the Material provided by Melbourne Health is owned by CSIRO. Melbourne Health confirms that Melbourne Health
+has the consent of CSIRO to share the Material with Gelteq for Gelteq to use as for the purpose described in clause 4.4.
+8.2
+Nothing in this Agreement:
+(a)
+affects the ownership of the Material, any Research Data provided to Gelteq by Melbourne Health or any Melbourne Health’s Background
+IP; or
+(b)
+transfers any right, title or interest in the Material, Research Data or any of Melbourrne Health’s Background IP to Gelteq,
+except for the right to use the Material and Research Data as expressly contemplated by clause 4 of this Agreement.
+Product
+8.3
+For the avoidance of doubt, all Intellectual Property and any other proprietary rights arising from the development, formulation,
+and commercialisation of the Product(s), shall be exclusively owned by Gelteq. This includes any improvements, modifications, or derivative
+works related to the Product(s).
+8.4
+The parties expressly agree that nothing in this Agreement shall be construed as transferring or granting any rights, licenses, or
+interests in the Intellectual Property related to the Product(s) to Melbourne Health. Ownership and title to all Intellectual Property
+rights related to the Product(s) shall remain with Gelteq or its licensees at all times. Melbourne Health acknowledges that it will not
+acquire any rights, title, or interest in the Intellectual Property related to the Product(s), except as expressly set forth in this Agreement.
+8.5
+Melbourne Health agrees to promptly
+notify Gelteq of any unauthorized use or infringement of the Intellectual Property rights in the Product(s) that comes to Melbourne Health’s
+attention. Melbourne Health will provide reasonable assistance to Gelteq in any legal actions taken to protect such rights, to the extent
+legal
+action, provided that:
+(a)
+Gelteq shall have sole discretion over and responsibility
+for managing the conduct of such actions;
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+9
+of
+16
+(b)
+Gelteq shall be solely responsible for all costs, liabilities, damages or expenses associated with or arising out of such actions;
+and
+(c)
+Gelteq pay for or promptly reimburse Melbourne Health for all liabilities, expenses or costs (including legal costs) incurred by Melbourne
+Health in providing assistance to Gelteq.
+8.6
+Notwithstanding the above, Gelteq may grant a limited, non-exclusive, non-transferable license to Melbourne Health for the use of
+the Intellectual Property related to the Products solely for the purpose of conducting studies and research related to the Product, as
+outlined in this Agreement. Such license will be the subject of a separate agreement between the Parties and will not grant Melbourne
+Health any ownership rights in the Intellectual Property of the Products.
+9.
+Termination
+9.1
+Termination rights
+Without affecting any other right
+or remedy available to it, either party (
+First Party
+) may terminate this Agreement with immediate effect by giving written notice
+to the other party (
+Second Party
+) if:
+(a)
+the Second Party commits serious or persistent breaches of
+any provision of this Agreement;
+(b)
+the Second Party commits a material breach of any term of this Agreement and either:
+(i)
+the breach is not capable of remedy; or
+(ii)
+the breach is capable of remedy and the other party fails to remedy that breach within a period of ten (10) Business Days’ after the
+other party has received written notice requesting it to do so;
+(c)
+the Second Party becomes or is in jeopardy of becoming, subject to any form of insolvency (including suspension or cessation of business
+activities, liquidation, bankruptcy or insolvency, appointment of a receiver, trustee or administrator, application for court order for
+winding up, deemed insolvency or any such similar event);
+(d)
+any warranty given by the Second Party in clause 7 of this Agreement is found to be untrue or misleading; or
+(e)
+the Second Party or its Personnel do anything (whether or not connected to this Agreement) which in the opinion of the First Party
+(acting reasonably) causes damage to the goodwill or reputation of the First Party or its goods and services.
+10.
+Effect of termination
+10.1
+If this Agreement is terminated for any reason, the obligations in clause 6 will continue to apply for a period of five (5) years
+after the effective date of termination.
+10.2
+Immediately upon termination of this Agreement for any reason:
+(a)
+Gelteq must cease all use of the Material and any Research Data provided by Melbourne Health and must
+promptly (and in any event within five (5) Business Days) arrange for the return or destruction of such Material and Research Data as
+directed by Melbourne Health at Gelteq’s
+sole expense. For the avoidance of doubt, during the term of this Agreement and
+after termination, Gelteq shall be permitted to use and order HAMSB from suppliers to use in the Product. Nothing in this Agreement shall
+restrict Gelteq from commercialising the Product after termination; and
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+10
+of
+16
+(b)
+Each party must immediately cease all use of the other party’s use of Confidential Information.
+10.3
+Within five (5) Business Days after termination of this Agreement, each party must return to the other, the other party’s Confidential
+Information and all copies of it except that each party may retain one (1) copy of such Confidential Information if required to comply
+with any audit, legal or regulatory obligations. The obligation in this clause does not require a party to delete any copies of Confidential
+Information which were created through system backups provided that such copies are not used or accessed for any purpose.
+10.4
+If Melbourne Health requests in writing, Gelteq must take all reasonable steps to remove any MH Branding or any references to Melbourne
+Health or its Personnel from any materials, publications or other content as specified by Melbourne Health provided that this obligation
+applies only to future publications and materials and does not require the removal of branding or references from past publications already
+in circulation.
+11.
+Non-compete
+11.1
+The parties hereby agree that Melbourne Health shall not, directly or indirectly, develop, manufacture, market, or distribute any
+product that is competitive with the Product. This obligation shall remain in effect for the Term and for a period of twelve (12) months
+following the termination of this Agreement. Notwithstanding the preceding, this obligation shall immediately cease to apply if Gelteq
+provides notice under clause 2.7 that Gelteq has decided not to progress with development, marketing or commercialisation of any Product(s)
+for any reason.
+11.2
+Melbourne Health further agrees that it shall not leverage any of Gelteq’s Confidential Information to gain a competitive advantage
+over Gelteq or any third party. This includes, but is not limited to, the development of similar or competing products, services, or technologies
+based on the insights or data obtained through Confidential Information provided by Gelteq.
+11.3
+The parties acknowledge that the restrictions set forth in this clause are reasonable and necessary to protect the legitimate interests
+of Gelteq. In the event of a breach of this clause, Gelteq shall be entitled to seek injunctive relief and any other remedies available
+under law or equity.
+12.
+Confidentiality
+12.1
+Each party agrees during the Term, and at all times after the termination or expiry of this Agreement that:
+(a)
+it will maintain confidentiality and will not disclose the Confidential Information of the other party to any party, except to the
+other party’s Personnel who have a legitimate need to know such information for the purposes of this Agreement. Such Personnel shall
+be bound by confidentiality obligations no less restrictive than those contained herein. Disclosure to any other thirty party is prohibited
+unless the disclosing party has provided express written consent. For the avoidance of doubt, Gelteq consents to Melbourne Health disclosing
+Gelteq’s Confidential Information if required to the persons contemplated by clause 12.6;
+(b)
+it
+will not make any copies of the Confidential Information without prior written consent;
+(c)
+it will not use the Confidential Information of the other party for its own benefit or the benefit of any third party;
+(d)
+it will only use the Confidential Information of the other party for the purpose of this Agreement or any other purpose expressly
+agreed to in writing by the other party;
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+11
+of
+16
+(e)
+it will use best endeavours to protect the Confidential Information of the other party from any unauthorised disclosure;
+(f)
+it will not challenge the other party’s ownership of the other party’s Confidential Information; and
+(g)
+it will notify the other party if it becomes obliged to disclose any part of the other party’s Confidential Information.
+12.2
+Each party’s obligations set out in clause 12.1 do not apply to Confidential Information:
+(a)
+that is in the public domain, except as a result of the party’s breach of this Agreement;
+(b)
+that is independently created by the other party without any breach of confidentiality;
+(c)
+obtained lawfully from a third party without any breach of confidentiality or any restrictions; or
+(d)
+that must be disclosed by law.
+12.3
+Each party will immediately notify the other party if there has been a breach, or if it suspects that there has been a breach, of
+confidentiality of the Confidential Information of the other party and will provide any assistance requested by the other party to investigate
+any breach or suspected breach of the confidentiality of the Confidential Information of the other party and to mitigate the damage or
+potential damage caused by the breach.
+12.4
+Each party agrees to indemnify the other party against all damage, losses, liabilities, claims, costs and expenses which the other
+party may incur directly as a result of any breach of this clause 12 by the party.
+12.5
+Each party acknowledges and agrees that damages may be inadequate compensation for breach of the obligations
+contained in this clause 12
+the
+other party may seek specific performance or may seek to restrain, by an injunction or similar remedy, any conduct or threatened conduct
+which is or will be in breach of this clause, in addition to any other remedy the other party may wish to pursue.
+12.6
+Notwithstanding any other clause in this Agreement, Gelteq acknowledges and agrees:
+(a)
+Melbourne
+Health may be required to disclose information relating to use of the Material which may include Gelteq’s Confidential Information,
+to CSIRO in order to comply with its contractual obligations to CSIRO. Such disclosure will not constitute a breach of the Melbourne Health’s
+obligations under this clause 12, provided that
+(i)
+only the information strictly required to be disclosed is shared with CSIRO; and
+(ii)
+Melbourne Health notifies Gelteq in writing within five (5) Business Days of any such disclosure, including details of the Gelteq
+Confidential Information disclosed; and
+(iii)
+Melbourne Health indicates to CSIRO that any material containing Gelteq Confidential Information which is provided to CSIRO is confidential;
+and
+(b)
+Gelteq will be responsible for entering into confidentiality agreements or other agreements with any third parties involved in the
+development of the Product(s) or any other matters contemplated by this Agreement, including without limitation Trevor Locket and Julie
+Clarke.
+12.7
+This clause shall survive termination of this Agreement.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+12
+of
+16
+13.
+Liability
+13.1
+Subject to the other terms of this clause 13, the parties exclude any liability to the other party, whether in contract, tort (excluding
+negligence) or otherwise, for any special, indirect or consequential loss arising under or in connection with this Agreement or with the
+Product.
+13.2
+The parties agree that Melbourne Health shall not be liable for any losses, claims, damages or expenses arising from or in any way
+related to the Product(s) or the development of the Product(s), or from any use by Gelteq of the Material or Research Data.
+13.3
+Gelteq will be liable for and must indemnify Melbourne Health, its officers, employees and agents against any liability, loss, damage,
+or expense (including reasonable legal costs) incurred or suffered as a direct or indirect result of any of the following:
+(a)
+the transfer, transport or delivery to, or the use, storage, handling and overall treatment and possession of the Material by Gelteq;
+(b)
+the development or Commercialisation of any Product(s);
+(c)
+any use of any Research Data or CSIRO Report by Gelteq;
+(d)
+any actual or alleged infringement of any third party’s
+Intellectual Property in relation the Product or this Agreement;
+(e)
+any negligence or other wrongful act or omission of Gelteq or any person for whose acts or omissions Gelteq is liable;
+(f)
+any injury to persons, including injury resulting in death and economic loss relating to the Material, this Agreement or any Product(s);
+and
+(g)
+any breach of this Agreement by the Gelteq.
+13.4
+This clause shall survive termination of this Agreement.
+14.
+Dispute Resolution
+(a)
+If a dispute arises out of or relates to this Agreement, a party must not commence any court or other proceedings relating to the
+dispute unless it has first complied with the following procedure:
+(i)
+the party claiming that a dispute has arisen must give written notice to the other party specifying the nature of the dispute;
+(ii)
+within 10 days of receipt of that notice by the other party, the representatives of parties will meet (including by telephone or other
+electronic means) to negotiate in good faith using their best endeavours to resolve the dispute;
+(iii)
+if such negotiations do not resolve the dispute, a party may give notice to the other party requiring the parties to endeavour in
+good faith to resolve the dispute using informal dispute resolution techniques such as mediation, expert evaluation, arbitration or similar
+methods agreed by them;
+(iv)
+if the parties do not agree within 10 days of receipt of that notice (or such further period as the parties agree in writing) as to:
+A.
+the dispute resolution method and procedures to be adopted;
+B.
+the timetable for all steps in those procedures; and
+C.
+the selection and compensation of the independent person
+required for such method,
+the parties must mediate the dispute in accordance with the Mediation Rules of the Law Institute of Victoria.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+13
+of
+16
+14.2
+Nothing in this Agreement will prejudice the right of a party
+to seek injunctive or declaratory relief in respect of a dispute or any matter arising under this Agreement.
+15.
+GST
+15.1
+Words used in this clause 15 that have a defined meaning in the GST Law have the same meaning as in the GST Law unless the context
+indicates otherwise.
+15.2
+Unless expressly stated otherwise, the consideration for any supply under or in connection with this Agreement is exclusive of GST.
+15.3
+To the extent that any supply made under or in connection with this Agreement is a taxable supply (other than any supply made under
+another agreement that contains a specific provision dealing with GST), the amount payable by the recipient is the consideration provided
+under this agreement for that supply (unless it expressly includes GST) plus an amount (additional amount) equal to the amount of that
+consideration (or its GST exclusive market value) multiplied by the rate at which GST is imposed in respect of the supply.
+15.4
+The recipient must pay the additional amount at the same time as the consideration to which it is referable, and upon the issue of
+an invoice relating to the supply.
+15.5
+Whenever an adjustment event occurs in relation to any taxable supply to which clause 15.3 applies:
+(a)
+the supplier must determine the amount of the GST component of the consideration payable; and
+(b)
+if the GST component of that consideration differs from the amount previously paid, the amount of the difference must be paid by,
+refunded to or credited to the recipient, as applicable.
+15.6
+If either party is entitled under this agreement to be reimbursed or indemnified by the other party for a cost or expense incurred
+in connection with this agreement, the reimbursement or indemnity payment must not include any GST component of the cost or expense to
+the extent that the cost or expense is the consideration for a creditable acquisition made by the party being reimbursed or indemnified,
+or by its representative member.
+16.
+Notices
+16.1
+In this Agreement, Notices include any approvals, consents, instructions, orders, directions, statements, requests and certificates
+or other communications that may be given, or are required to be given, under this Agreement.
+16.2
+Unless expressly stated otherwise in this agreement, all Notices:
+(a)
+must be:
+(i)
+in writing;
+(ii)
+signed by an authorised representative of the party; and
+(iii)
+hand delivered, sent by prepaid ordinary post, sent by email, or given in any other way permitted by law.
+(b)
+take effect from the time they are received unless a later time is specified.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+14
+of
+16
+17.
+General
+17.1
+Variation
+. Any modification, alteration, change or variation of any term and condition of this Agreement shall only be made
+in writing and executed by both parties.
+17.2
+Assignment
+: Neither party may assign, transfer, novate or deal with the whole or any part of their rights or obligations under
+this Agreement without the prior written consent of the other party. Any purported dealing in breach of this clause is of no effect.
+17.3
+Costs
+: Each party must pay its costs of entering into and negotiation of this Agreement.
+17.4
+Counterparts
+: This Agreement may be executed in any number of counterparts, each of which when executed and delivered shall
+constitute an original of this Agreement, but all the counterparts shall together constitute the same agreement. No counterpart shall
+be effective until each party has executed at least one counterpart. The parties agree that an executed electronic copy of a digital scan
+(including in portable document format), of this Agreement (where such email address has been notified by a party to another party for
+these purposes) will serve as a legal and binding agreement with the same force and effect as the original.
+17.5
+Entire agreement
+: This Agreement is the entire agreement between the parties and supersedes all and any communications, negotiations,
+arrangements and agreements, whether oral or written, between the parties in respect of the matters that are the subject of this Agreement.
+17.6
+Further assurance
+: Each party must from time to time and in a timely manner do all things reasonably required of it by the
+other party to give effect to this Agreement.
+17.7
+No representations or warranties
+: The parties acknowledge that no representations or warranties have been made other than those
+expressly recorded in this Agreement and that, in respect of this Agreement or any part of it including the transactions contemplated
+pursuant to this Agreement, no party has relied or will rely upon any representations or information, whether oral or written, previously
+provided to or discovered by it.
+17.8
+Relationship
+: Except as expressly stated in this Agreement, nothing in this Agreement is intended to create a relationship
+of partnership, joint venture, agency or employer-employee between the parties. Neither party has authority to create, assume or otherwise
+enter into any agreement that imposes rights or obligations on the part of the other party.
+17.9
+Severance
+: If any provision of this Agreement is prohibited by law or judged by a court to be unlawful, void or unenforceable,
+the provision shall, to the extent required, be severed from this Agreement and rendered ineffective as far as possible without modifying
+the remaining provisions of this Agreement and shall not in any way affect any other circumstances of or the validity or enforcement of
+this Agreement.
+17.10
+Survival
+: The following clauses are continuing obligations and will continue after termination or expiry of this Agreement:
+1 (Definitions and interpretation), 4.3 to 4.6 (Use of Material and Research Data), 5 (Marketing, Branding and Acknowledgement), 7 (Warranties),
+8 (Intellectual Property), 10 (Effect of termination), 7 (Warranties), 11 (Non-compete), 12 (Confidentiality), 13 (Liability), 14 (Dispute
+Resolution) and 17 (General).
+17.11
+Third parties
+: This Agreement does not, and is not intended to, confer any rights or remedies upon any person other than the
+parties.
+17.12
+Waiver
+: A failure by either party to take action to enforce its rights does not constitute a waiver of any right or remedy
+under this Agreement unless it is in writing signed by the party granting the waiver.
+17.13
+Jurisdiction
+: The parties irrevocably submit to the exclusive jurisdiction of the courts of the state of Victoria, Australia.
+17.14
+Governing law
+: This Agreement will be governed by and construed and interpreted in accordance with the laws of Victoria, Australia.
+Product Development and Profit Share Agreement Gelteq x Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+15
+of
+16
+Executed as an
+agreement
+Executed
+by
+Gelteq Limited ACN 619 501 254
+by
+its authorised representatives:
+/s/ Nathan Givoni
+/s/ Simon Szewach
+Director Signature
+Director/Secretary Signature
+Nathan Givoni
+Simon Szewach
+Print Name
+Print Name
+31/7/2025
+Date Signed
+Executed
+by
+Melbourne Health
+ABN 73 802 706 972
+by its authorised representative:
+/s/ Authorized Signatory
+Signature of authorised representative
+Authorized Signatory
+Print Name
+06 August 2025 | 10:22 AM AEST
+Date Signed
+Product Development and Profit Share Agreement Gelteq x
+ Melbourne Health
+Gladwin Legal | Version: 30966/31 July 2025
+Page
+16
+of
+16

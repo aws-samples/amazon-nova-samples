@@ -1,0 +1,1796 @@
+EX-10.1
+2
+ea026593401ex10-1_inflec4.htm
+FORM OF AMENDMENT NO. 1 TO THE SECURITIES PURCHASE AGREEMENT (CLOSING PIPE SUBSCRIPTION AGREEMENT)
+Exhibit 10.1
+AMENDMENT NO. 1 TO SECURITIES PURCHASE AGREEMENT
+THIS AMENDMENT NO. 1 TO SECURITIES
+PURCHASE AGREEMENT, dated as of November 17, 2025 (this “
+Amendment
+”), is entered into by and among Inflection Point
+Acquisition Corp. IV, a Cayman Islands exempted company (f/k/a Bleichroeder Acquisition Corp. I, the “
+Company
+”), Merlin
+Labs, Inc., a Delaware corporation (the “
+Target
+”), and the purchaser identified on the signature pages hereto (the
+“
+Purchaser
+”), and amends that certain Securities Purchase Agreement, dated as of August 13, 2025, by and among the
+Company, the Target and the Purchaser. Capitalized terms used and not defined in this Amendment have the respective meanings assigned
+to them in the Agreement.
+WHEREAS
+, the Company,
+the Target and the Purchaser entered into the Agreement pursuant to which the Company agrees to sell, and the Purchaser agrees to purchase,
+an aggregate of (i) 4,901,961 shares of Preferred Stock and (ii) a Warrant covering 4,901,961 Warrant Shares in exchange for the Subscription
+Amount;
+WHEREAS
+, the Company,
+the Target and the Purchaser desire to amend the Agreement to provide that the Company agrees to sell, and the Purchaser agrees to purchase,
+(i) 9,803,922 shares of Preferred Stock and (ii) a Warrant covering 9,803,922 Warrant Shares in exchange for $100,000,000; and
+WHEREAS
+, the Company,
+the Target and the Purchaser may amend the Agreement by mutual written consent.
+NOW, THEREFORE
+, in
+consideration of the mutual covenants and agreements hereinafter set forth and for other good and valuable consideration, the receipt
+and sufficiency of which are hereby acknowledged, the parties hereto agree as follows:
+Section 1.
+Amendment
+.
+(a) Schedule
+A of the Agreement is hereby amended, restated and replaced in its entirety by
+Schedule A
+hereto.
+(b) The
+Purchaser’s signature page to the Agreement is hereby amended to provide that the Subscription Amount, the number of shares of Preferred
+Stock and the number of Warrant Shares to be issued to the Purchaser shall be as set forth on
+Schedule A
+of this Amendment.
+(c) Section
+1.1 of the Agreement is hereby amended to add the following definition:
+“
+Placement Agents
+”
+means TD Securities (USA) LLC, Cantor Fitzgerald & Co., and Cohen & Company Securities, LLC.’
+(d) Section
+3.2 of the Agreement is hereby amended to add the following as Sections 3.2(v), 3.2(w) and 3.2(x):
+“(v) The Purchaser acknowledges
+that it is not relying upon, and has not relied upon, any statement, representation or warranty made by any of the Placement Agents, any
+of their respective Affiliates or any of their respective control persons, officers, directors and employees, in making its investment
+or decision to invest in the Company.
+(w) The Purchaser agrees that no Placement
+Agent shall be liable to any Purchaser for any action heretofore or hereafter taken or omitted to be taken by any of them or have any
+liability or obligation (including without limitation, for or with respect to any losses, claims, damages, obligations, penalties, judgments,
+awards, liabilities, costs, expenses or disbursements incurred by you, the Company or any other person or entity), whether in contract,
+tort or otherwise, to any Purchaser, or to any person claiming through such Purchaser, in respect of the Transactions.
+(x) Each Purchaser hereby acknowledges
+and agrees that (a) each Placement Agent is not and shall not be construed as a fiduciary for such Purchaser, the Company or any other
+person or entity in connection with the Transaction, (b) no Placement Agent has made or will make any representation or warranty, whether
+express or implied, of any kind or character and has not provided any advice or recommendation in connection with the Transaction, and
+(c) no Placement Agent will have any responsibility with respect to (i) any representations, warranties or agreements made by any person
+or entity under or in connection with the Transaction or any of the documents furnished pursuant thereto or in connection therewith, or
+the execution, legality, validity or enforceability (with respect to any person) or any thereof, or (ii) the business, affairs, financial
+condition, operations, properties or prospects of, or any other matter concerning the Company or the Transactions.
+(e) Section
+5.8 of the Agreement is hereby amended and restated in its entirety as follows:
+5.8
+No
+Third-Party Beneficiaries
+. The Placement Agents shall be the third-party beneficiaries of the representations and warranties of
+the Purchasers set forth in Sections 3.2(v), (w) and (x) of this Agreement. This Agreement is intended for the benefit of the parties
+hereto and their respective successors and permitted assigns and is not for the benefit of, nor may any provision hereof be enforced by,
+any other Person, except as otherwise set forth in
+Section 4.10
+and this
+Section 5.8
+.
+(f) Exhibit
+A to the Agreement is hereby amended, restated and replaced in its entirety by
+Exhibit A
+hereto.
+Section 2.
+Effect
+of this Amendment
+. This Amendment is made a part of the Agreement. Except as otherwise expressly provided herein, the Agreement
+is, and shall continue to be, in full force and effect and is hereby ratified and confirmed in all respects, except that on and
+after the date hereof all references in the Agreement to “this Agreement”, “hereto”, “hereof”,
+“hereunder” or words of like import referring to the Agreement shall mean the Agreement as amended by this
+Amendment.
+Section 3.
+Miscellaneous
+.
+Sections 5.5 (
+Amendments; Waivers
+), 5.6 (
+Headings
+), 5.7 (
+Successors and Assigns
+), 5.9 (
+Governing Law
+),
+5.11 (
+Execution
+), 5.12 (
+Severability
+), 5.17 (
+Usury
+), 5.19 (
+Saturdays, Sundays, Holidays, etc.
+), 5.20
+(
+Construction
+) and 5.23 (
+Waiver of Jury Trial
+) of the Agreement (as amended hereby) are hereby incorporated by
+reference herein,
+mutatis mutandis
+.
+[
+Signature page follows
+]
+2
+IN WITNESS WHEREOF
+, the parties hereto have
+executed this Amendment on the date first written above.
+COMPANY:
+INFLECTION POINT ACQUISITION CORP. IV
+Name:
+Michael Blitzer
+Title:
+Chief Executive Officer
+TARGET:
+MERLIN LABS, INC.
+Name:
+Title:
+PURCHASER:
+[●]
+By:
+Name:
+Title:
+[Signature Page to Amendment No. 1 to Securities
+Purchase Agreement]
+SCHEDULE A
+SCHEDULE OF PURCHASERS
+[Omitted.]
+Exhibit A
+Form of Certificate of Designation
+MERLIN LABS, INC.
+CERTIFICATE OF DESIGNATION OF PREFERENCES,
+RIGHTS AND LIMITATIONS
+OF
+12.0% SERIES A CUMULATIVE CONVERTIBLE PREFERRED STOCK
+PURSUANT TO SECTION 151(g) OF THE
+DELAWARE GENERAL CORPORATION LAW
+The undersigned,
+[●], does hereby certify that:
+1.
+He is the Chief Executive Officer of Merlin Labs, Inc., a Delaware corporation (the “
+Corporation
+”).
+2.
+The Corporation is authorized to issue [●] shares of preferred stock, none of which have been issued.
+3.
+The following resolutions were duly adopted by the board of directors of the Corporation (the “
+Board of Directors
+”):
+WHEREAS, the certificate of
+incorporation of the Corporation provides for a class of its authorized stock known as preferred stock, consisting of [●] shares,
+$0.0001 par value per share, issuable from time to time in one or more series;
+WHEREAS, the Board of Directors
+is authorized to fix the dividend rights, dividend rate, voting rights, conversion rights, rights and terms of redemption and liquidation
+preferences of any wholly unissued series of preferred stock and the number of shares constituting any series and the designation thereof,
+of any of them; and
+WHEREAS, it is the desire
+of the Board of Directors, pursuant to its authority as aforesaid, to fix the rights, preferences, restrictions and other matters relating
+to a series of the preferred stock, which shall consist of up to [●] shares of the preferred stock which the Corporation has the
+authority to issue, as follows:
+NOW, THEREFORE, BE IT RESOLVED,
+that the Board of Directors does hereby provide for the issuance of a series of preferred stock for cash or exchange of other securities,
+rights or property and does hereby fix and determine the rights, preferences, restrictions and other matters relating to such series of
+preferred stock as follows:
+TERMS OF 12.0% SERIES A CUMULATIVE CONVERTIBLE
+PREFERRED STOCK
+Section 1.
+Definitions
+. For the purposes hereof, the following terms shall have the following meanings:
+“
+Accrued
+Dividend
+” shall have the meaning set forth in
+Section 3(a)
+.
+“
+Accrued
+Value
+” means, as of any date, with respect to each share of Preferred Stock as of the determination date, the sum, subject to
+appropriate adjustment in the event of any stock dividend, stock split, combination or other similar recapitalization with respect to
+the Preferred Stock, of (i) the Stated Value per share of Preferred Stock, plus (ii) the aggregate amount of any accrued PIK Dividends
+on such share of Preferred Stock as of such date, plus (iii) on each Semi-Annual Dividend Date and on a cumulative basis, an additional
+amount equal to the dollar value of all Cash Dividends that have accrued on such share pursuant to
+Section 3(b)
+, but only
+to the extent such Cash Dividends have not been paid, whether or not declared, but that have not, as of such date, been added to the Accrued
+Value.
+“
+Affiliate
+”
+means any Person that, directly or indirectly through one or more intermediaries, controls or is controlled by or is under common control
+with a Person, as such terms are used in and construed under Rule 405 of the Securities Act.
+“
+Alternate
+Consideration
+” shall have the meaning set forth in
+Section 7(f)
+.
+“
+Annual
+Rate
+” means with respect to a PIK Dividend, 12.0% of the Accrued Value and with respect to a Cash Dividend, 10% of the Accrued
+Value.
+“
+Attribution
+Parties
+” shall have the meaning set forth in
+Section 6(d)
+.
+“
+Available
+Proceeds
+” shall have the meaning set forth in
+Section 5(c)(i)
+.
+“
+Beneficial
+Ownership Limitation
+” shall have the meaning set forth in
+Section 6(d)
+.
+“
+Business
+Combination”
+means the transactions contemplated by the Business Combination Agreement.
+“
+Business
+Combination Agreement
+” means that certain Business Combination Agreement, dated as of August 13, 2025, by and among the Corporation
+(or its predecessor), IPDX Merger Sub, Inc. and Merlin Labs. Inc., as it may be further amended, modified or supplemented from time to
+time.
+“
+Business
+Day
+” means any day other than Saturday, Sunday or other day on which commercial banks in The City of New York are authorized
+or required by law to remain closed;
+provided
+,
+however
+, for clarification, commercial banks shall not be deemed
+to be authorized or required by law to remain closed due to “stay at home”, “shelter-in-place”, “non-essential
+employee” or any other similar orders or restrictions or the closure of any physical branch locations at the direction of any governmental
+authority so long as the electronic funds transfer systems (including for wire transfers) of commercial banks in The City of New York
+generally are open for use by customers on such day.
+“
+Buy-In
+”
+shall have the meaning set forth in
+Section 6(c)(iv)
+.
+“
+Cash Dividend
+”
+shall have the meaning set forth in
+Section 3(a)
+.
+“
+Closing
+”
+means the closing of the Business Combination.
+2
+“
+Closing
+Date
+” means the Trading Day on which the Business Combination is consummated.
+“
+Commission
+”
+means the United States Securities and Exchange Commission.
+“
+Common
+Stock
+” means the common stock, par value $0.0001 per share, of the Corporation and stock of any other class of securities into
+which such securities may hereafter be reclassified or changed.
+“
+Common
+Stock Equivalents
+” means any securities of the Corporation that would entitle the holder thereof to acquire at any time Common
+Stock, including, without limitation, any debt, preferred stock, right, option, warrant or other instrument that is at any time convertible
+into or exercisable or exchangeable for, or otherwise entitles the holder thereof to receive, Common Stock.
+“
+Conversion
+Date
+” shall have the meaning set forth in
+Section 6(a)
+.
+“
+Conversion
+Price
+” shall have the meaning set forth in
+Section 6(b)
+.
+“
+Conversion
+Shares
+” means, collectively, the shares of Common Stock issuable upon conversion of the shares of Preferred Stock in accordance
+with the terms hereof.
+“
+Convertible
+Securities
+” means any stock or securities (other than Options) directly or indirectly convertible into or exercisable or exchangeable
+for, or which otherwise entitles the holder thereof to acquire, any shares of Common Stock;
+“
+Corporation
+Notice
+” shall have the meaning set forth in
+Section 8(a)
+.
+“
+Deemed
+Liquidation Event
+” means: (i) a merger or consolidation in which (a) the Corporation is a constituent party or (b) a subsidiary
+of the Corporation is a constituent party and the Corporation issues shares of its capital stock pursuant to such merger or consolidation;
+provided
+, that, a Deemed Liquidation Event shall not include any such merger or consolidation involving the Corporation or a subsidiary
+in which the shares of capital stock of the Corporation outstanding immediately prior to such merger or consolidation continue to represent,
+or are converted into or exchanged for shares of capital stock that represent, immediately following such merger or consolidation, at
+least a majority, by voting power, of the capital stock of (1) the surviving or resulting corporation; or (2) if the surviving or resulting
+corporation is a wholly owned subsidiary of another corporation immediately following such merger or consolidation, the parent corporation
+of such surviving or resulting corporation; or (ii) (a) the sale, in a single transaction or series of related transactions, by the Corporation
+or any subsidiary of the Corporation of all or substantially all the assets of the Corporation and its subsidiaries taken as a whole,
+or (b) the sale or disposition (whether by merger, consolidation or otherwise, and whether in a single transaction or a series of related
+transactions) of one (1) or more subsidiaries of the Corporation if substantially all of the assets of the Corporation and its subsidiaries
+taken as a whole are held by such subsidiary or subsidiaries, except where such sale is to a wholly owned subsidiary of the Corporation.
+3
+“
+Delaware
+Courts
+” shall have the meaning set forth in
+Section 9(d)
+.
+“
+Dilutive
+Issuance
+” shall have the meaning set forth in
+Section 7(c)
+.
+“
+Distribution
+”
+shall have the meaning set forth in
+Section 7(e)
+.
+“
+Effective
+Date
+” means the date that the Registration Statement filed by the Corporation pursuant to the Registration Rights Agreement
+is first declared effective by the Commission.
+“
+Exchange
+Act
+” means the Securities Exchange Act of 1934, as amended, and the rules and regulations promulgated thereunder.
+“
+Exempt
+Issuance
+” means the issuance of (a) any securities of the Corporation to employees, officers or directors, consultants, contractors,
+vendors or other agents of the Corporation pursuant to any stock or option plan duly adopted for such purpose, by a majority of the non-employee
+members of the Board of Directors or a majority of the members of a committee of non-employee directors established for such purpose
+for services rendered to the Corporation, (b) securities upon the exercise or exchange of or conversion of any securities issued pursuant
+to the Purchase Agreements or the Business Combination Agreement and/or other securities exercisable or exchangeable for or convertible
+into shares of Common Stock issued and outstanding on the Closing Date,
+provided that
+such securities have not been amended
+since the Closing Date to increase the number of such securities or to decrease the exercise price, exchange price or conversion price
+of such securities (other than in connection with stock splits or combinations and automatic adjustments to such terms pursuant to anti-dilution
+or similar provisions of such securities which are not more favorable to the holder thereof than the anti-dilution and similar provisions
+set forth herein) or to extend the term of such securities, (c) the Conversion Shares, (d) securities issued pursuant to any merger,
+acquisition or strategic transaction or partnership approved by a majority of the directors of the Corporation,
+provided that
+(i) such securities are issued as “restricted securities” (as defined in Rule 144) or are issued pursuant to an effective
+registration statement pursuant to the Securities Act and (ii) any such issuance shall only be to a Person (or to the equityholders of
+a Person) which is, itself or through its subsidiaries, an operating company or an owner of an asset in a business synergistic with the
+business of the Corporation and shall provide to the Corporation additional benefits in addition to the investment of funds and (e) any
+securities issued by the corporation pursuant to any legal settlement or similar arrangement agreed or entered into by the Corporation,
+provided that
+, in the aggregate, not more than [●]
+1
+shares
+of Common Stock are issued or deemed issued or issuable upon conversion, settlement, exercise or exchange of any such securities that
+are Options or Convertible Securities,
+but
+any such Exempt Issuance shall not include a transaction in which the Corporation
+is issuing securities (i) primarily for the purpose of raising capital, including an at-the-market offering, or (ii) to an entity whose
+primary business is investing in securities.
+1
+NTD: To be equal to $1,000,000 divided by the Redemption
+price.
+4
+“
+Floor
+Price
+” means the lesser of (i) $5.00 (as adjusted for any stock dividend, stock split, stock combination, reclassification or
+similar transaction occurring after the date of the Purchase Agreement) and (ii) the Conversion Price then in effect.
+“
+Fundamental
+Transaction
+” shall have the meaning set forth in
+Section 7(f)
+.
+“
+Holder
+”
+shall have the meaning set forth in
+Section 2(a)
+.
+“
+Junior
+Securities
+” shall have the meaning set forth in
+Section 5(a)
+.
+“
+New Issuance
+Price
+” shall have the meaning set forth in
+Section 7(c)
+.
+“
+Notice
+of Conversion
+” shall have the meaning set forth in
+Section 6(a)
+.
+“
+Options
+”
+means any rights, warrants or options to subscribe for or purchase shares of Common Stock or Convertible Securities.
+“
+Option
+Value
+” means the value of an Option based on the Black-Scholes Option Pricing model obtained from the “OV” function
+on Bloomberg determined as of (A) the Trading Day prior to the public announcement of the issuance of the applicable Option, if the issuance
+of such Option is publicly announced or (B) the Trading Day immediately following the issuance of the applicable Option if the issuance
+of such Option is not publicly announced, for pricing purposes and reflecting (i) a risk-free interest rate corresponding to the U.S.
+Treasury rate for a period equal to the remaining term of the applicable Option as of the applicable date of determination, (ii) an expected
+volatility equal to the
+greater
+of 100% and the 100 day volatility obtained from the HVT function on Bloomberg as of (A)
+the Trading Day immediately following the public announcement of the applicable Option if the issuance of such Option is publicly announced
+or (B) the Trading Day immediately following the issuance of the applicable Option if the issuance of such Option is not publicly announced,
+(iii) the underlying price per share used in such calculation shall be the highest weighted average price of the Common Stock during the
+period beginning on the Trading Day prior to the execution of definitive documentation relating to the issuance of the applicable Option
+and ending on (A) the Trading Day immediately following the public announcement of such issuance, if the issuance of such Option is publicly
+announced or (B) the Trading Day immediately following the issuance of the applicable Option if the issuance of such Option is not publicly
+announced, (iv) a zero cost of borrow and (v) a 360 day annualization factor,
+provided
+,
+however
+, in case any
+Option is issued in connection with the issue or sale of other securities of the Corporation, together comprising one integrated transaction,
+in no event shall the Option Value exceed a fraction of the aggregate consideration received (excluding the minimum aggregate amount of
+additional consideration (as set forth in the instruments relating thereto, without regard to any provision contained therein for a subsequent
+adjustment of such consideration) payable to the Corporation upon the exercise of such Options, or in the case of Options for Convertible
+Securities, the exercise of such Options for Convertible Securities and the conversion or exchange of such Convertible Securities) equal
+to (1) the number of shares of common stock underlying such Option divided by (2) the total number of shares of Common Stock issued or
+issuable in the integrated transaction (including the number of shares underlying such Option).
+5
+“
+Original
+Issue Date
+” means the date of the first issuance of any shares of the Preferred Stock regardless of the number of transfers
+of any particular shares of Preferred Stock and regardless of the number of certificates which may be issued to evidence such Preferred
+Stock.
+“
+Person
+”
+means an individual or corporation, partnership, trust, incorporated or unincorporated association, joint venture, limited liability company,
+joint stock company, government (or an agency or subdivision thereof) or other entity of any kind.
+“
+PIK Dividend
+”
+shall have the meaning set forth in
+Section 3(a)
+.
+“
+Preferred
+Stock
+” shall have the meaning set forth in
+Section 2(a)
+.
+“
+Preferred
+Stock Liquidation Amount
+” shall have the meaning set forth in
+Section 5(b)(ii)
+.
+“
+Preferred
+Stock Register
+” shall have the meaning set forth in
+Section 2(b)
+.
+“
+Purchase
+Agreements
+” means the several Securities Purchase Agreements, between the Corporation and certain original Holders, as amended,
+modified or supplemented from time to time in accordance with their respective terms.
+“
+Purchase
+Rights
+” shall have the meaning set forth in
+Section 7(d)
+.
+“
+Redemption
+Date
+” shall have the meaning set forth in
+Section 8(b)(i)
+.
+“
+Redemption
+Notice
+” shall have the meaning set forth in
+Section 7(c)
+.
+“
+Redemption
+Price
+” shall have the meaning set forth in
+Section 8(b)(i)
+.
+“
+Redemption
+Request
+” shall have the meaning set forth in
+Section 8(b)(i)
+.
+“
+Registration
+Rights Agreement
+” means the Registration Rights Agreement, dated as of the Closing Date, among the Corporation, the original
+Holders and certain other securityholders of the Corporation.
+“
+Registration
+Statement
+” means a registration statement meeting the requirements set forth in the Registration Rights Agreement and covering
+the resale of the Conversion Shares by each Holder as provided for in the Registration Rights Agreement, including the Initial Registration
+Statement (as defined in the Registration Rights Agreement) and any additional Registration Statements which may be required thereunder.
+“
+Required
+Holder
+s” shall have the meaning set forth in
+Section 4(c)
+.
+6
+“
+Rule 144
+”
+means Rule 144 promulgated by the Commission pursuant to the Securities Act, as such Rule may be amended from time to time, or any similar
+rule or regulation hereafter adopted by the Commission having substantially the same effect as such Rule.
+“
+Rule 424
+”
+means Rule 424 promulgated by the Commission pursuant to the Securities Act, as such Rule may be amended or interpreted from time to time,
+or any similar rule or regulation hereafter adopted by the Commission having substantially the same purpose and effect as such Rule.
+“
+Securities
+Act
+” means the Securities Act of 1933, as amended, and the rules and regulations promulgated thereunder.
+“
+Semi-Annual
+Dividend Date
+” shall mean June 1 and December 1 of each year.
+“
+Share
+Delivery Date
+” shall have the meaning set forth in
+Section 6(c)(i)
+.
+“
+Standard
+Settlement Period
+” shall have the meaning set forth in
+Section 6(c)(i)
+.
+“
+Stated
+Value
+” shall have the meaning set forth in
+Section 2(a)
+.
+“
+Subsidiary
+”
+means any subsidiary of the Corporation as of the Closing Date.
+“
+Successor
+Entity
+” shall have the meaning set forth in
+Section 7(f)
+.
+“
+Trading
+Day
+” means a day on which the principal Trading Market is open for business.
+“
+Trading
+Market
+” means any of the following markets or exchanges on which the Common Stock is listed or quoted for trading on the date
+in question: the NYSE American, the Nasdaq Capital Market, the Nasdaq Global Market, the Nasdaq Global Select Market, the New York Stock
+Exchange (or any successors to any of the foregoing).
+“
+Transfer
+Agent
+” means [●], the current transfer agent of the Corporation, and any successor transfer agent of the Corporation.
+“
+VWAP
+”
+means, for any date, the price determined by the first of the following clauses that applies: (a) if the Common Stock is then listed or
+quoted on a Trading Market, the daily volume weighted average price of the Common Stock for the 20 Trading Days preceding such date (or
+the nearest preceding date) on the Trading Market on which the Common Stock is then listed or quoted as reported by Bloomberg L.P. (based
+on a Trading Day from 9:30 a.m. (New York City time) to 4:02 p.m. (New York City time)), (b) if OTCQB or OTCQX is not a Trading Market,
+the volume weighted average price of the Common Stock for the 20 Trading Days preceding such date (or the nearest preceding date) on OTCQB
+or OTCQX as applicable, (c) if the Common Stock is not then listed or quoted for trading on OTCQB or OTCQX and if prices for the Common
+Stock are then reported in The Pink Open Market (or a similar organization or agency succeeding to its functions of reporting prices),
+the average of the highest closing bid price and the lowest closing ask price of the Common Stock for the 20 Trading Days preceding such
+date, or (d) in all other cases, the fair market value of a share of Common Stock as determined by an independent appraiser selected in
+good faith by the Holders of a majority in interest of the Preferred Stock then outstanding and reasonably acceptable to the Corporation,
+the fees and expenses of which shall be paid by the Corporation.
+7
+Section 2.
+Designation, Amount and Par Value
+.
+(a)
+The
+series of preferred stock shall be designated as its “12.0% Series A Cumulative Convertible Preferred Stock” (the
+“
+Preferred Stock
+”) and the number of shares so designated shall be up to [●] (which shall not be subject
+to increase without the written consent of the holders of 50% of the then outstanding Preferred Stock (each, a
+“
+Holder
+” and collectively, the “
+Holders
+”)). Each share of Preferred Stock shall have a par
+value of $0.0001 per share and a stated value equal to $12.00 (the “
+Stated Value
+”).
+(b)
+The Corporation shall register, or cause its Transfer Agent to register, shares of the Preferred Stock upon records to be maintained
+by the Corporation or its Transfer Agent for that purpose (the “
+Preferred Stock Register
+”), in the name of the Holders
+thereof from time to time. The Corporation may deem and treat the registered Holder of shares of Preferred Stock as the absolute owner
+thereof for the purpose of any conversion thereof and for all other purposes. The Corporation shall register, or cause its Transfer Agent
+to register, the transfer of any shares of Preferred Stock in the Preferred Stock Register, upon surrender of the certificates evidencing
+such shares to be transferred, duly endorsed by the Holder thereof, to the Corporation at its address specified herein and after such
+Holder shall have provided to the Corporation such documentation and legal opinions, if any, as may be reasonably requested by the Corporation
+(including any documentation required by the Transfer Agent with respect to such transfer). Upon the registration of such transfer, a
+new certificate (to the extent such shares are certificated) evidencing the shares of Preferred Stock so transferred shall be issued to
+the transferee and a new certificate evidencing the remaining portion of the shares not so transferred, if any, shall be issued to the
+transferring Holder, in each case, within three Business Days. The Board of Directors may provide by resolution or resolutions that some
+or all of the Preferred Stock shall be uncertificated shares. The Corporation shall not be required to register, or cause its Transfer
+Agent to register, or record any transfer of any shares of the Preferred Stock that would violate, conflict with, or fail to be in compliance
+with federal or state securities laws.
+Section 3.
+Dividends
+.
+(a)
+From and after the Closing, subject to the terms of this
+Section 3
+, cumulative dividends shall accrue on the Accrued
+Value of each share of Preferred Stock at the Annual Rate. Dividends on each share of Preferred Stock shall be cumulative and shall accrue
+daily from and after the Closing, but shall compound on a semi-annual basis on each Semi-Annual Dividend Date (each, an “
+Accrued
+Dividend
+”) whether or not earned or declared, and whether or not there are earnings or profits, surplus, or other funds or assets
+of the Corporation legally available for the payment of dividends. Each Accrued Dividend shall be paid, at the election of the Corporation,
+(i) in cash (a “
+Cash Dividend
+”), or (ii) in kind by increasing the Accrued Value of such share (a “
+PIK Dividend
+”).
+8
+(b)
+The Corporation shall not declare, pay or set aside any dividends on shares of any other class or series of capital stock of the
+Corporation ranking junior to the Preferred Stock (other than dividends on shares of Common Stock payable in shares of Common Stock) unless
+(in addition to the obtaining of any consents required in this Certificate of Designation or the Corporation’s certificate of incorporation)
+the Holders of the Preferred Stock then outstanding shall first receive, or simultaneously receive, a dividend on each outstanding share
+of Preferred Stock in an amount at least equal to the sum of (i) the amount of the aggregate Accrued Dividends then accrued on such share
+of Preferred Stock and not previously paid and (ii) (A) in the case of a dividend on Common Stock or any class or series that is convertible
+into Common Stock, that dividend per share of Preferred Stock as would equal the product of (1) the dividend payable on each share of
+such class or series determined, if applicable, as if all shares of such class or series had been converted into Common Stock and (2)
+the number of shares of Common Stock issuable upon conversion of a share of Series A Cumulative Convertible Preferred Stock, in each case
+calculated on the record date for determination of holders entitled to receive such dividend or (B) in the case of a dividend on any class
+or series of capital stock of the Corporation ranking junior to the Preferred Stock that is not convertible into Common Stock, at a rate
+per share of Preferred Stock determined by (1) dividing the amount of the dividend payable on each share of such class or series of capital
+stock by the original issuance price of such class or series of capital stock (subject to appropriate adjustment in the event of any stock
+dividend, stock split, combination or other similar recapitalization with respect to such class or series) and (2) multiplying such fraction
+by an amount equal to the Accrued Value; provided that if the Corporation declares, pays or sets aside, on the same date, a dividend on
+shares of more than one class or series of capital stock of the Corporation that is junior to the Preferred Stock, the dividend payable
+to the Holders of Preferred Stock pursuant to this
+Section 3
+shall be calculated based upon the dividend on the class or series
+of capital stock that would result in the highest Preferred Stock dividend.
+(c)
+Subject to
+Section 5
+and
+Section 7
+, the Holders shall be entitled to receive, and the Corporation shall
+pay, dividends on shares of Preferred Stock (other than Accrued Dividends), on an as-converted basis, equal to and in the same form as
+dividends actually paid on shares of the Common Stock when, as and if such dividends are paid on shares of the Common Stock.
+(d)
+Notwithstanding anything to the contrary herein, to the extent that the Holder’s right to participate in any dividend would
+result in the Holder exceeding the Beneficial Ownership Limitation, then the Holder shall not be entitled to participate in such dividend
+to such extent (or in the beneficial ownership of any shares of Common Stock as a result of such Distribution to such extent) and the
+portion of such dividend shall be held in abeyance for the benefit of the Holder until such time, if ever, such grant, issuance or sale,
+as its right thereto would not result in the Holder exceeding the Beneficial Ownership Limitation.
+Section 4.
+Voting Rights
+.
+(a)
+The Holders shall be entitled to notice of any meeting of stockholders of the Corporation and, except as otherwise required by
+law or as may be provided herein, shall vote together with the holders of Common Stock as a single class upon any matter submitted to
+the stockholders for a vote.
+9
+(b)
+On any matter presented to the stockholders of the Corporation for their action or consideration at any meeting of the stockholders
+of the Corporation (or by written consent in lieu of a meeting), a Holder, together with its Attribution Parties, shall be entitled to
+the number of votes equal to the number of whole shares of Common Stock into which the shares of Preferred Stock held by such Holder,
+together with its Attribution Parties, as are convertible on the record date for determining stockholders entitled to vote on such matter
+(as adjusted from time to time pursuant to
+Section 7
+hereof and subject to the Beneficial Ownership Limitation), but without regard
+as to whether sufficient shares of Common Stock are available out of the Corporation’s authorized by unissued stock, for the purpose
+of effecting the conversion of the Preferred Stock.
+(c)
+As long as at least 20% or more of the shares of Preferred Stock issued as of the Closing are outstanding, the Corporation shall
+not, without the affirmative vote or action by written consent of the Holders of a majority of the issued and outstanding shares of the
+Preferred Stock (the “
+Required Holders
+”):
+(i)
+liquidate, dissolve or wind-up the affairs of the Corporation;
+(ii)
+amend, alter or repeal the Corporation’s certificate of incorporation or bylaws, this Certificate of Designation or any similar
+document of the Corporation in a manner that materially and adversely affects the powers, preferences or rights given to the Preferred
+Stock;
+(iii)
+create any equity security, authorize the creation of any equity security, classify any equity security, reclassify any equity
+security, or issue any other security convertible into or exercisable for any equity security, unless such security ranks junior to the
+Preferred Stock with respect to its rights, preferences and privileges or increase the number of authorized shares of Preferred Stock;
+(iv)
+except as set forth in
+Section 3
+, purchase or redeem or pay any cash dividend on any capital stock of the Corporation ranking
+junior to the Preferred Stock prior to payment of such cash dividend on the Preferred Stock or purchase or redeem any capital stock of
+the Corporation ranking junior to the Preferred Stock, other than capital stock repurchased at cost from former employees and consultants
+in connection with the cessation of their service or pursuant to the terms of any equity incentive plan of the Corporation;
+(v)
+enter into any transaction with an affiliate, other than the issuance of equity or awards to eligible participants under the Corporation’s
+incentive plan, equity plan or equity-based compensation plan or with respect to employment, consulting or award agreements with respect
+to executive officers of the Corporation, in each case regardless of whether such person (or such person’s affiliates) would be
+considered an affiliate of the Corporation; or
+10
+(vi)
+incur or guarantee any indebtedness other than equipment leases or trade payables incurred in the ordinary course of business;
+provided
+,
+however
+, that the Preferred Stock shall not be considered indebtedness for purposes of this calculation.
+(d)
+Notwithstanding anything to the contrary herein,
+Section 6(d)
+may not be amended, modified or waived in any manner
+that materially and adversely affects a Holder of Preferred Stock without such Holder’s consent.
+Section 5.
+Ranking; Liquidation
+.
+(a)
+The Preferred Stock shall rank senior to all of the Common Stock and any other class or series of capital stock of the Corporation
+currently existing or hereafter authorized, classified or reclassified by the Corporation (collectively, “
+Junior Securities
+”),
+in each case, as to rights to receive dividends or to participate in distributions of assets or payments upon liquidation, dissolution
+or winding up of the Corporation, whether voluntarily or involuntarily.
+(b)
+Preferential
+Payments to Holders of Preferred Stock; Distribution of Remaining Assets
+.
+(i)
+In the event of any voluntary or involuntary liquidation, dissolution or winding up of the Corporation, the Holders of shares of
+Preferred Stock then outstanding shall be entitled to be paid out of the assets of the Corporation available for distribution to its stockholders,
+and in the event of a Deemed Liquidation Event, the Holders of shares of Preferred Stock then outstanding shall be entitled to be paid
+out of the consideration payable to stockholders in such Deemed Liquidation Event or out of the Available Proceeds (as defined below),
+as applicable, before any payment shall be made to the holders of Common Stock or other Junior Securities by reason of their ownership
+thereof, an amount per share equal to the greater of (i) 100% of the Accrued Value on each share of Preferred Stock or (ii) such
+amount per share as would have been payable had all shares of Preferred Stock been converted into Common Stock pursuant to
+Section
+6
+immediately prior to such liquidation, dissolution, winding up or Deemed Liquidation Event based on the then effective rate of conversion
+and without giving effect to the Beneficial Ownership Limitation or any other limitations on conversion set forth herein. If upon any
+such liquidation, dissolution or winding up of the Corporation or Deemed Liquidation Event, the assets of the Corporation available for
+distribution to its stockholders shall be insufficient to pay the Holders of shares of Preferred Stock the full amount to which they shall
+be entitled under this
+Section 5(b)
+, the Holders of shares of Preferred Stock shall share ratably in any distribution of the assets
+available for distribution in proportion to the respective amounts that would otherwise be payable in respect of the shares held by them
+upon such distribution if all amounts payable on or with respect to such shares were paid in full.
+(ii)
+In the event of any voluntary or involuntary liquidation, dissolution or winding up of the Corporation, after the payment in full
+of all amounts required to be paid to the holders of shares of Preferred Stock pursuant to
+Section 5(b)(i)
+, the remaining assets
+of the Corporation available for distribution to its stockholders or, in the case of a Deemed Liquidation Event, the consideration not
+payable to the holders of shares of Preferred Stock pursuant to
+Section 5(b)(i)
+or the remaining Available Proceeds, as the case
+may be, shall be distributed among the holders of the shares of Preferred Stock and Common Stock, pro rata based on the number of shares
+held by each such holder, treating for this purpose all such securities as if they had been converted to Common Stock pursuant to the
+terms of this Certificate of Designation immediately prior to such liquidation, dissolution or winding up of the Corporation. The aggregate
+amount which a holder of a share of Preferred Stock is entitled to receive under
+Sections 5(b)(i)
+and
+5(b)(ii)
+is hereinafter
+referred to as the “
+Preferred Stock Liquidation Amount
+.”
+11
+(c)
+Deemed Liquidation
+Events
+.
+(i)
+In the event of a Deemed Liquidation Event, if the Corporation does not effect a dissolution of the Corporation under the Delaware
+General Corporation Law within ninety (90) days after such Deemed Liquidation Event, then (i) the Corporation shall send a written notice
+to each Holder of Preferred Stock no later than the ninetieth (90
+th
+) day after the Deemed Liquidation Event advising such Holders
+of their right (and the requirements to be met to secure such right) pursuant to the terms of the following clause to require the redemption
+of such shares of Preferred Stock, and (ii) if the Required Holders so request in a written instrument delivered to the Corporation not
+later than one hundred twenty (120) days after such Deemed Liquidation Event, the Corporation shall use the consideration received by
+the Corporation for such Deemed Liquidation Event (net of any retained liabilities associated with the assets sold or technology licensed,
+or any other expenses associated with the Deemed Liquidation Event or the dissolution of the Corporation, in each case as determined in
+good faith by the Board of Directors of the Corporation), together with any other assets of the Corporation available for distribution
+to its stockholders, all to the extent permitted by Delaware law governing distributions to stockholders (the “
+Available Proceeds
+”),
+on the one hundred fiftieth (150
+th
+) day after such Deemed Liquidation Event, to redeem all outstanding shares of Preferred
+Stock at a price per share equal to the Preferred Stock Liquidation Amount. Notwithstanding the foregoing, in the event of a redemption
+pursuant to the preceding sentence, if the Available Proceeds are not sufficient to redeem all outstanding shares of Preferred Stock,
+the Corporation shall redeem a pro rata portion of each Holder’s shares of Preferred Stock to the fullest extent of such Available
+Proceeds, based on the respective amounts that would otherwise be payable in respect of the shares to be redeemed if the Available Proceeds
+were sufficient to redeem all such shares, and shall redeem the remaining shares as soon as it may lawfully do so under Delaware law governing
+distributions to stockholders. The provisions of
+(i)
+shall apply, with such necessary changes in the details thereof as are necessitated
+by the context, to the redemption of the Preferred Stock pursuant to this
+Section 5(c)(i)
+. Prior to the distribution or redemption
+provided for in this
+Section 5(c)(i)
+, the Corporation shall not expend or dissipate the consideration received for such Deemed
+Liquidation Event, except to discharge expenses incurred in connection with such Deemed Liquidation Event.
+(ii)
+In any Deemed Liquidation Event, if Available Proceeds are in a form of property other than in cash, the value of such distribution
+shall be deemed to be the fair market value of such property. The determination of fair market value of such property shall be made in
+good faith by the Board of Directors of the Corporation, provided that to the extent such property consists of securities, the fair market
+value of such securities shall be determined as follows:
+For securities not subject
+to investment letters or other similar restrictions on free marketability covered by
+Section 5(c)(iii)
+below, the value shall be
+the VWAP of such securities.
+(iii)
+The method of valuation of securities subject to investment letters or other similar restrictions on free marketability (other
+than restrictions arising solely by virtue of a stockholder’s status as an affiliate or former affiliate) shall take into account
+an appropriate discount (as determined in good faith by the Board of Directors of the Corporation) from the market value as determined
+pursuant to
+Section 5(c)(ii)
+above so as to reflect the approximate fair market value thereof.
+12
+(iv)
+If any portion of the consideration payable to the stockholders of the Corporation is payable only upon satisfaction of contingencies
+(the “
+Additional Consideration
+”), (a) the portion of such consideration that is not Additional Consideration (such
+portion, the “
+Initial Consideration
+”) shall be allocated in accordance with the foregoing
+Section 5(b)
+and this
+Section 5(c)
+as if the Initial Consideration were the only consideration payable in connection with such Deemed Liquidation Event;
+and (b) any Additional Consideration which becomes payable to the stockholders of the Corporation upon satisfaction of such contingencies
+shall be allocated among the holders of capital stock of the Corporation in accordance with
+Sections 5(b)
+and
+5(c)
+after
+taking into account the previous payment of the Initial Consideration as part of the same transaction. For the purposes of this
+Section
+5(c)(iv)
+, consideration placed into escrow or retained as a holdback to be available for satisfaction of indemnification or similar
+obligations in connection with such Deemed Liquidation Event shall be deemed to be Additional Consideration.
+Section 6.
+Conversion
+.
+(a)
+Conversions
+at Option of Holder
+. Each share of Preferred Stock shall be convertible, at any time and from time to time from and after the Original
+Issue Date at the option of the Holder thereof, into that number of whole shares of Common Stock (subject to the limitations set forth
+in
+Section 6(d)
+) determined by dividing the Accrued Value of such share of Preferred Stock by the Conversion Price. Holders
+shall effect conversions by providing the Corporation with the form of conversion notice attached hereto as
+Annex A
+(a
+“
+Notice of Conversion
+”), unless the Corporation directs Holders that the Notice of Conversion shall be delivered to
+the Corporation’s transfer agent. Each Notice of Conversion shall specify the number of shares of Preferred Stock to be converted,
+the number of shares of Preferred Stock owned prior to the conversion at issue, the number of shares of Preferred Stock owned subsequent
+to the conversion at issue and the date on which such conversion is to be effected, which date may not be prior to the date the applicable
+Holder delivers by e-mail attachment or by a nationally recognized overnight courier service such Notice of Conversion to the Corporation
+(such date, the “
+Conversion Date
+”). If no Conversion Date is specified in a Notice of Conversion, the Conversion Date
+shall be the date that such Notice of Conversion to the Corporation is deemed delivered hereunder. No ink-original Notice of Conversion
+shall be required, nor shall any medallion guarantee (or other type of guarantee or notarization) of any Notice of Conversion form be
+required. The calculations and entries set forth in the Notice of Conversion shall control in the absence of manifest or mathematical
+error. To effect conversions of shares of Preferred Stock, a Holder shall not be required to surrender the certificate(s) representing
+the shares of Preferred Stock to the Corporation unless all of the shares of Preferred Stock represented thereby are so converted, in
+which case such Holder shall deliver the certificate representing such shares of Preferred Stock promptly following the Conversion Date
+at issue. Shares of Preferred Stock converted into Common Stock or redeemed in accordance with the terms hereof shall be canceled and
+shall not be reissued, and all rights (other than the right to receive the Conversion Shares) with respect to such shares will terminate.
+The Corporation’s stock ledger and transfer book shall serve as the exclusive record of outstanding shares of Preferred Stock.
+(b)
+Conversion Price
+. The initial conversion price is $12.00, subject to adjustment herein (the “
+Conversion Price
+”).
+13
+(c)
+Mechanics
+of Conversion
+(i)
+Delivery
+of Conversion Shares Upon Conversion
+. Not later than the number of Trading Days comprising the Standard Settlement Period (as
+defined below) after each Conversion Date (the “
+Share Delivery Date
+”), the Corporation shall deliver, or cause to
+be delivered, to the converting Holder (A) the number of Conversion Shares being acquired upon the conversion of the Preferred
+Stock, which on or after the earlier of (i) the one year anniversary of the Original Issue Date or (ii) the Effective Date, shall be
+free of restrictive legends and trading restrictions (other than those which may then be required by any Purchase Agreement or any
+other applicable lock-up agreement or similar agreement) and (B) cash in an amount equal to any accrued and unpaid dividends, if
+any. On or after the earlier of (i) the one year anniversary of the Original Issue Date or (ii) the Effective Date, the Corporation
+shall deliver the Conversion Shares required to be delivered by the Corporation under this
+Section 6
+electronically
+through the Depository Trust Company or another established clearing corporation performing similar functions. As used herein,
+“
+Standard Settlement Period
+” means the standard settlement period, expressed in a number of Trading Days, on the
+Corporation’s primary Trading Market with respect to the Common Stock as in effect on the date of delivery of the Notice of
+Conversion. Notwithstanding the foregoing, with respect to any Notice(s) of Conversion delivered at or prior to 12:00 p.m. (New York
+City time) on the Original Issue Date, the Corporation agrees to deliver the Conversion Shares subject to such notice(s) by 4:00
+p.m. (New York City time) on the Original Issue Date.
+(ii)
+Failure to Deliver Conversion Shares
+. If, in the case of any Notice of Conversion, such Conversion Shares are not delivered to
+or as reasonably directed by the applicable Holder by the Share Delivery Date, the Holder shall be entitled to elect by written
+notice to the Corporation at any time on or before its receipt of such Conversion Shares, to rescind such conversion, in which event
+the Corporation shall promptly return to the Holder any original Preferred Stock certificate delivered to the Corporation and the
+Holder shall promptly return to the Corporation the Conversion Shares issued to such Holder pursuant to the rescinded Notice of
+Conversion.
+(iii)
+Obligation
+Absolute; Partial Liquidated Damages
+. The Corporation’s obligation to issue and deliver the Conversion Shares upon conversion
+of Preferred Stock in accordance with the terms hereof are absolute and unconditional, irrespective of any action or inaction by a Holder
+to enforce the same, any waiver or consent with respect to any provision hereof, the recovery of any judgment against any Person or any
+action to enforce the same, or any setoff, counterclaim, recoupment, limitation or termination, or any breach or alleged breach by such
+Holder or any other Person of any obligation to the Corporation or any violation or alleged violation of law by such Holder or any other
+person, and irrespective of any other circumstance which might otherwise limit such obligation of the Corporation to such Holder in connection
+with the issuance of such Conversion Shares;
+provided
+,
+however
+, that such delivery shall not operate as a
+waiver by the Corporation of any such action that the Corporation may have against such Holder. In the event a Holder shall elect to
+convert any or all of the Accrued Value of its Preferred Stock, the Corporation may not refuse conversion based on any claim that such
+Holder or anyone associated or affiliated with such Holder has been engaged in any violation of law, agreement or for any other reason,
+unless an injunction from a court, on notice to Holder, restraining and/or enjoining conversion of all or part of the Preferred Stock
+of such Holder shall have been sought and obtained, and the Corporation posts a surety bond for the benefit of such Holder in the amount
+of 150% of the Accrued Value of Preferred Stock which is subject to the injunction, which bond shall remain in effect until the completion
+of arbitration/litigation of the underlying dispute and the proceeds of which shall be payable to such Holder to the extent it obtains
+judgment. In the absence of such injunction, the Corporation shall issue Conversion Shares and, if applicable, cash, upon a properly
+noticed conversion. If the Corporation fails to deliver to a Holder such Conversion Shares pursuant to
+Section 6(c)(i)
+by 10
+th
+Trading Day after the Share Delivery Date applicable to such conversion, the Corporation shall pay to such Holder, in cash, as liquidated
+damages and not as a penalty, for each $5,000 of Accrued Value of Preferred Stock being converted, $25 per Trading Day (increasing to
+$50 per Trading Day on the third Trading Day and increasing to $100 per Trading Day on the sixth Trading Day after such damages begin
+to accrue) for each Trading Day after the 10
+th
+Trading Day after the Share Delivery Date until such Conversion Shares are
+delivered or Holder rescinds such conversion. Nothing herein shall limit a Holder’s right to pursue actual damages for the Corporation’s
+failure to deliver Conversion Shares within the period specified herein and such Holder shall have the right to pursue all remedies available
+to it hereunder, at law or in equity, including, without limitation, a decree of specific performance and/or injunctive relief. The exercise
+of any such rights shall not prohibit a Holder from seeking to enforce damages pursuant to any other Section hereof or under applicable
+law.
+14
+(iv)
+Compensation for Buy-In on Failure to Timely Deliver Conversion Shares Upon Conversion
+. In addition to any other rights
+available to the Holder, if the Corporation fails for any reason unrelated to the actions of the Holder or its Affiliates to deliver to
+a Holder the applicable Conversion Shares by the Share Delivery Date pursuant to
+Section 6(c)(i)
+, and if after such Share
+Delivery Date such Holder is required by its brokerage firm to purchase (in an open market transaction or otherwise), or the Holder’s
+brokerage firm otherwise purchases, shares of Common Stock to deliver in satisfaction of a sale by such Holder of the Conversion Shares
+which such Holder was entitled to receive upon the conversion relating to such Share Delivery Date (a “
+Buy-In
+”), then
+the Corporation shall (A) pay in cash to such Holder (in addition to any other remedies available to or elected by such Holder) the amount,
+if any, by which (x) such Holder’s total purchase price (including any brokerage commissions) for the Common Stock so purchased
+exceeds (y) the product of (1) the aggregate number of shares of Common Stock that such Holder was entitled to receive from the conversion
+at issue multiplied by (2) the actual sale price at which the sell order giving rise to such purchase obligation was executed (excluding
+any brokerage commissions) and (B) at the option of such Holder, either reissue (if surrendered) the shares of Preferred Stock equal to
+the number of shares of Preferred Stock submitted for conversion (in which case, such conversion shall be deemed rescinded) or deliver
+to such Holder the number of shares of Common Stock that would have been issued if the Corporation had timely complied with its delivery
+requirements under
+Section 6(c)(i)
+. For example, if a Holder purchases shares of Common Stock having a total purchase price
+of $11,000 to cover a Buy-In with respect to an attempted conversion of shares of Preferred Stock with respect to which the actual sale
+price of the Conversion Shares (including any applicable brokerage commissions) giving rise to such purchase obligation was a total of
+$10,000, under clause (A) of the immediately preceding sentence, the Corporation shall be required to pay such Holder $1,000. The Holder
+shall provide the Corporation written notice indicating the amounts payable to such Holder in respect of the Buy-In and, upon the request
+of the Corporation, evidence of the amount of such loss. If a Holder purchases shares of Common Stock having a total purchase price of
+$9,000 to cover a Buy-In with respect to an attempted conversion of shares of Preferred Stock with respect to which the actual sale price
+of the Conversion Shares (including any applicable brokerage commissions) giving rise to such purchase obligation was a total of $10,000,
+under clause (A) of the preceding sentence, the Corporation shall not be required to pay Holder any amount. For the avoidance of doubt,
+in the event of a Buy-In, the Holder shall use commercially reasonable efforts to purchase shares at the lowest available price, paying
+the lowest reasonably available brokerage commission. The Holder shall provide the Corporation written notice indicating the amounts payable
+to such Holder in respect of the Buy-In and evidence of the amount of such loss. Nothing herein shall limit a Holder’s right to
+pursue any other remedies available to it hereunder, at law or in equity including, without limitation, a decree of specific performance
+and/or injunctive relief with respect to the Corporation’s failure to timely deliver Conversion Shares upon conversion of the shares
+of Preferred Stock as required pursuant to the terms hereof.
+(v)
+Reservation of Shares Issuable Upon Conversion
+. The Corporation covenants that it will at all times reserve and keep available
+out of its authorized and unissued shares of Common Stock for the sole purpose of issuance upon conversion of the Preferred Stock as herein
+provided, free from preemptive rights or any other actual contingent purchase rights of Persons other than the Holder (and the other Holders
+of the Preferred Stock), not less than such aggregate number of shares of the Common Stock as shall (subject to the terms and conditions
+set forth in the Purchase Agreement) be issuable (taking into account the adjustments and restrictions of
+Section 7
+) upon
+the conversion of the then outstanding shares of Preferred Stock (assuming for such purpose a Conversion Price equal to the Floor Price
+and any such conversions are made without regard to any limitations on conversion set forth herein). The Corporation covenants that all
+shares of Common Stock that shall be so issuable shall, upon issue, be duly authorized, validly issued, fully paid and nonassessable and,
+if a Registration Statement is then effective under the Securities Act, shall be registered for public resale in accordance with such
+Registration Statement (subject to such Holder’s compliance with its obligations under the Registration Rights Agreement).
+(vi)
+Fractional Shares
+. No fractional shares or scrip representing fractional shares shall be issued upon the conversion of the
+Preferred Stock. As to any fraction of a share which the Holder would otherwise be entitled to purchase upon such conversion, the Corporation
+shall at its election, either pay a cash adjustment in respect of such final fraction in an amount equal to such fraction multiplied by
+the Conversion Price or round up to the next whole share. Notwithstanding anything to the contrary contained herein, but consistent with
+the provisions of this subsection with respect to fractional Conversion Shares, nothing shall prevent any Holder from converting fractional
+shares of Preferred Stock.
+15
+(vii)
+Transfer
+Taxes and Expenses
+. The issuance of Conversion Shares on conversion of this Preferred Stock shall be made without charge to any Holder
+for any documentary stamp or similar taxes that may be payable in respect of the issue or delivery of such Conversion Shares,
+provided
+that
+the Corporation shall not be required to pay any tax that may be payable in respect of any transfer involved in the issuance
+and delivery of any such Conversion Shares upon conversion in a name other than that of the Holders of such shares of Preferred Stock
+and the Corporation shall not be required to issue or deliver such Conversion Shares unless or until the Person or Persons requesting
+the issuance thereof shall have paid to the Corporation the amount of such tax or shall have established to the satisfaction of the Corporation
+that such tax has been paid.
+(d)
+Beneficial Ownership Limitation
+. A Holder may notify the Corporation in writing in the event it elects to be subject to
+the provisions contained in this
+Section 6(d)
+; however, no Holder shall be subject to this
+Section 6(d)
+unless he, she or
+it makes such election. If the election is made, (i) the Corporation shall not effect any conversion of the Preferred Stock, and such
+Holder shall not have the right to convert all or any portion of the Preferred Stock, to the extent that, after giving effect to the conversion
+set forth on the applicable Notice of Conversion, such Holder (together with such Holder’s Affiliates, and any Persons acting as
+a group together with such Holder or any of such Holder’s Affiliates (such Persons, “
+Attribution Parties
+”)) would
+beneficially own in excess of 4.9%, 9.9%, 19.9% of the Corporation’s Common Stock (or such other amount as a Holder may specify)
+(the “
+Beneficial Ownership Limitation
+”) and (ii) the Corporation shall not permit the Holder to vote, and such Holder
+shall not have the right vote pursuant to
+Section 4(b)
+of this Certificate of Designation, all or any portion of the Preferred
+Stock that such Holder is not permitted to convert pursuant to the preceding clause (i) (provided, however, that such Holder shall retain
+the right to vote pursuant to
+Section 4(c)
+of this Certificate of Designation to the extent that retaining such right does not
+cause such Holder to be deemed to beneficially own Conversion Shares within the meaning of Rule 13d-3 promulgated under the Exchange Act).
+For purposes of the foregoing sentence, the number of shares of Common Stock beneficially owned by such Holder and its Affiliates and
+Attribution Parties shall include the number of shares of Common Stock issuable upon conversion of the Preferred Stock with respect to
+which such determination is being made, but shall exclude the number of shares of Common Stock which are issuable upon (i) conversion
+of the remaining, unconverted Accrued Value of Preferred Stock beneficially owned by such Holder or any of its Affiliates or Attribution
+Parties and (ii) exercise or conversion of the unexercised or unconverted portion of any other securities of the Corporation subject to
+a limitation on conversion or exercise analogous to the limitation contained herein beneficially owned by such Holder or any of its Affiliates
+or Attribution Parties. Except as set forth in the preceding sentence, for purposes of this
+Section 6(d)
+, beneficial ownership
+shall be calculated in accordance with Section 13(d) of the Exchange Act and the rules and regulations promulgated thereunder. To the
+extent that the limitation contained in this
+Section 6(d)
+applies, the determination of whether the Preferred Stock is convertible
+(in relation to other securities owned by such Holder together with any Affiliates and Attribution Parties) and of how many shares of
+Preferred Stock are convertible shall be in the sole discretion of such Holder, and the submission of a Notice of Conversion shall be
+deemed to be such Holder’s determination of whether the shares of Preferred Stock may be converted (in relation to other securities
+owned by such Holder together with any Affiliates and Attribution Parties) and how many shares of the Preferred Stock are convertible,
+in each case subject to the Beneficial Ownership Limitation. To ensure compliance with this restriction, each Holder will be deemed to
+represent to the Corporation each time it delivers a Notice of Conversion that such Notice of Conversion has not violated the restrictions
+set forth in this paragraph and the Corporation shall have no obligation to verify or confirm the accuracy of such determination. In addition,
+a determination as to any group status as contemplated above shall be determined in accordance with Section 13(d) of the Exchange Act
+and the rules and regulations promulgated thereunder. The Holder shall provide the Corporation with any information reasonably requested
+by the Corporation in connection with this Beneficial Ownership Limitation and the provisions related thereto, in each case with respect
+to the Corporation’s reporting obligations pursuant to the Securities Act, the Exchange Act, or other federal or state securities
+regulations. For purposes of this
+Section 6(d)
+, in determining the number of outstanding shares of Common Stock, a Holder
+may rely on the number of outstanding shares of Common Stock as stated in the most recent of the following: (i) the Corporation’s
+most recent periodic or annual report filed with the Commission, as the case may be, (ii) a more recent public announcement by the Corporation
+or (iii) a more recent written notice by the Corporation or the Transfer Agent setting forth the number of shares of Common Stock outstanding.
+Upon the written or oral request (which may be via email) of a Holder, the Corporation shall within two Trading Days confirm in writing
+to such Holder the number of shares of Common Stock then outstanding. In any case, the number of outstanding shares of Common Stock shall
+be determined after giving effect to the conversion or exercise of securities of the Corporation, including the Preferred Stock, by such
+Holder or its Affiliates or Attribution Parties since the date as of which such number of outstanding shares of Common Stock was reported.
+By written notice to the Corporation, a Holder may from time to time increase or decrease the Beneficial Ownership Limitation applicable
+to such Holder, provided, however, that any such increase in the Beneficial Ownership Limitation will not be effective until the sixty-first
+(61
+st
+) day after such notice is delivered to the Corporation. The provisions of this paragraph
+shall be construed and implemented in a manner otherwise than in strict conformity with the terms of this
+Section 6(d)
+to
+correct this paragraph (or any portion hereof) which may be defective or inconsistent with the intended Beneficial Ownership Limitation
+contained herein or to make changes or supplements necessary or desirable to properly give effect to such limitation. The limitations
+contained in this paragraph shall apply to a successor Holder of Preferred Stock.
+16
+Section 7.
+Certain Adjustments
+.
+(a)
+Stock Dividends and Stock Splits
+. If the Corporation, at any time while this Preferred Stock is outstanding: (i) pays a
+stock dividend or otherwise makes a distribution or distributions payable in shares of Common Stock on shares of Common Stock or any other
+Common Stock Equivalents (which, for avoidance of doubt, shall not include any shares of Common Stock issued by the Corporation upon conversion
+of, or payment of a dividend on, this Preferred Stock or any cash distributions), (ii) subdivides outstanding shares of Common Stock into
+a larger number of shares, (iii) combines (including by way of a reverse stock split) outstanding shares of Common Stock into a smaller
+number of shares, or (iv) issues, in the event of a reclassification of shares of the Common Stock, any shares of capital stock of the
+Corporation, then each of the Conversion Price and the Floor Price shall be multiplied by a fraction of which the numerator shall be the
+number of shares of Common Stock (excluding any treasury shares of the Corporation) outstanding immediately before such event, and of
+which the denominator shall be the number of shares of Common Stock outstanding immediately after such event. Any adjustment made pursuant
+to this
+Section 7(a)
+shall become effective immediately after the record date for the determination of stockholders entitled
+to receive such dividend or distribution and shall become effective immediately after the effective date in the case of a subdivision,
+combination or re-classification.
+(b)
+VWAP Reset
+. If on the twenty-first trading day following the date that is six months after the Closing Date, the VWAP (the
+“
+Measurement Price
+”) is less than the Conversion Price then in effect, then the Conversion Price then in effect shall
+be reduced to an amount equal to the greater of (i) the Measurement Price and (ii) $5.00.
+(c)
+Adjustment of Conversion Price upon Issuance of Common Stock
+. If and whenever on or after the Closing Date until the first
+date on which no shares of Preferred Stock are outstanding the Corporation issues or sells, or in accordance with this
+Section
+7(c)
+is deemed to have issued or sold, any shares of Common Stock (including the issuance or sale of shares of Common Stock owned
+or held by or for the account of the Corporation,
+but
+excluding shares of Common Stock issued or sold, or deemed
+to have been issued or sold, by the Corporation in connection with any Exempt Issuance) for a consideration per share (the “
+New
+Issuance Price
+”) less than the Conversion Price then in effect (each such issue, sale or deemed issuance or sale, a “
+Dilutive
+Issuance
+”), where the aggregate amount of consideration received by the Corporation, together with all prior issuances and sales
+conducted for the purpose of raising capital by the Corporation on or after the Closing Date that were excluded from this
+Section 7(c)
+by this clause, exceeds $500,000, then, immediately after such Dilutive Issuance, the Conversion Price then in effect shall be reduced
+to an amount equal to the New Issuance Price. For all purposes of the foregoing (including, without limitation, determining the adjusted
+Conversion Price and the New Issuance Price under this
+Section 7(c)
+), the following shall be applicable:
+(i)
+Options
+and Convertible Securities
+. The consideration per share received by the Corporation for Common Stock issued or deemed to have
+been issued pursuant to
+Section 7(c)(ii)
+, relating to Options and Convertible Securities, shall be determined by
+dividing:
+a.
+the total amount, if any, received or receivable by the Corporation as consideration for the issue of
+such Options or Convertible Securities, plus the minimum aggregate amount of additional consideration (as set forth in the instruments
+relating thereto, without regard to any provision contained therein for a subsequent adjustment of such consideration) payable to the
+Corporation upon the exercise of such Options or the conversion or exchange of such Convertible Securities, or in the case of Options
+for Convertible Securities, the exercise of such Options for Convertible Securities and the conversion or exchange of such Convertible
+Securities, by
+17
+b.
+the maximum number of shares of Common Stock (as set forth in the instruments relating thereto, without
+regard to any provision contained therein for a subsequent adjustment of such number) deemed to be issued pursuant to
+Section 7(c)(ii)
+upon the issuance of such Options or Convertible Securities.
+(ii)
+Deemed Issuance of Options and Convertible Securities
+.
+a.
+If the Corporation at any time or from time to time shall issue any Options or Convertible Securities
+or shall fix a record date for the determination of holders of any class of securities entitled to receive any such Options or Convertible
+Securities, then the maximum number of shares of Common Stock (as set forth in the instrument relating thereto, assuming the satisfaction
+of any conditions to exercisability, convertibility or exchangeability but without regard to any provision contained therein for a subsequent
+adjustment of such number) issuable upon the exercise of such Options or, in the case of Convertible Securities and Options therefor,
+the conversion or exchange of such Convertible Securities, shall be deemed to be outstanding and to have been issued as of the time of
+such issue or, in case such a record date shall have been fixed, as of the close of business on such record date.
+b.
+If the purchase or exercise price provided for in any Options, the additional consideration, if any, payable
+upon the issue, conversion, exercise or exchange of any Convertible Securities, or the rate at which any Convertible Securities are convertible
+into or exercisable or exchangeable for Common Stock increases or decreases at any time (other than (i) proportional changes in conversion
+or exercise prices, as applicable, in connection with an event referred to in
+Section 7(a)
+above and (ii) automatic adjustments
+to such terms pursuant to anti-dilution or similar provisions of such Option or Convertible Security which are not more favorable to the
+holder thereof than the anti-dilution and similar provisions set forth herein), the Conversion Price in effect at the time of such increase
+or decrease shall be adjusted to the Conversion Price which would have been in effect at such time had such Options or Convertible Securities
+provided for such increased or decreased purchase price, additional consideration or increased or decreased conversion rate (as the case
+may be) at the time initially granted, issued or sold. For purposes of this
+Section 7(c)
+, if the terms of any Option or Convertible
+Security that was outstanding as of the date of first issuance of a share of Preferred Stock are increased or decreased in the manner
+described in the immediately preceding sentence, then such Option or Convertible Security and the shares of Common Stock deemed issuable
+upon exercise, conversion or exchange thereof shall be deemed to have been issued as of the date of such increase or decrease. No adjustment
+pursuant to this
+Section 7(c)(ii)
+shall be made if such adjustment would result in an increase of the Conversion Price then in
+effect.
+18
+(iii)
+Calculation of Consideration Received
+.
+a.
+In case one or more Option is issued in connection with the issue or sale of other securities of the Corporation,
+together comprising one integrated transaction, (x) each such Option will be deemed to have been issued for the Option Value of such Option
+and (y) the other securities issued or sold in such integrated transaction shall be deemed to have been issued or sold for the difference
+of (I) the aggregate consideration received by the Corporation less any consideration paid or payable by the Corporation pursuant to the
+terms of such other securities of the Corporation, less (II) the Option Value of each such Option.
+b.
+If any shares of Common Stock, Options or Convertible Securities are issued or sold or deemed to have
+been issued or sold for cash, the consideration other than cash received therefor will be deemed to be the net amount received by the
+Corporation therefor. If any shares of Common Stock, Options or Convertible Securities are issued or sold for a consideration other than
+cash, the amount of such consideration received by the Corporation will be the fair value of such consideration, except where such consideration
+consists of publicly traded securities, in which case the amount of consideration received by the Corporation will be the VWAP of such
+publicly traded securities on the date of receipt. If any shares of Common Stock, Options or Convertible Securities are issued to the
+owners of the non-surviving entity in connection with any merger in which the Corporation is the surviving entity, the amount of consideration
+therefor will be deemed to be the fair value of such portion of the net assets and business of the non-surviving entity as is attributable
+to such shares of Common Stock, Options or Convertible Securities, as the case may be. The fair value of any consideration other than
+cash or publicly traded securities will be determined jointly by the Corporation and the Required Holders. If such parties are unable
+to reach agreement within ten (10) days after the occurrence of an event requiring valuation (the “
+Valuation Event
+”),
+the fair value of such consideration will be determined within five (5) Business Days after the tenth (10th) day following the Valuation
+Event by an independent, reputable appraiser jointly selected by the Corporation and the Required Holders. The determination of such appraiser
+shall be final and binding upon all parties absent manifest error and the fees and expenses of such appraiser shall be borne by the Corporation.
+(iv)
+Record Date
+. If the Corporation takes a record of the holders of shares of Common Stock for the purpose of entitling them
+(A) to receive a dividend or other distribution payable in shares of Common Stock, Options or in Convertible Securities or (B) to subscribe
+for or purchase shares of Common Stock, Options or Convertible Securities, then such record date will be deemed to be the date of the
+issuance or sale of the shares of Common Stock deemed to have been issued or sold upon the declaration of such dividend or the making
+of such other distribution or the date of the granting of such right of subscription or purchase (as the case may be).
+(v)
+Expiration or Termination of Options or Convertible Securities
+. Upon the expiration or termination of any unexercised Option
+or unconverted or unexchanged Convertible Securities (or portion thereof) which resulted (either upon its original issuance or upon a
+revision of its terms) in an adjustment to the Conversion Price pursuant to the terms of
+Section 7(c)
+, the Conversion Price shall
+be readjusted to such Conversion Price as would have obtained had such Option or Convertible Securities (or portion thereof) never been
+issued.
+19
+(d)
+Subsequent Rights Offerings
+. In addition to any adjustments pursuant to
+Section 7(a)
+and
+Section 7(c)
+above, if at any time the Corporation grants, issues or sells any Common Stock Equivalents or rights to purchase stock, warrants, securities
+or other property pro rata to the record holders of any class of shares of Common Stock (the “
+Purchase Rights
+”), then
+the Holders will be entitled to acquire, upon the terms applicable to such Purchase Rights, the aggregate Purchase Rights which the Holder
+could have acquired if the Holder had held the number of shares of Common Stock acquirable upon complete conversion of such Holder’s
+Preferred Stock (without regard to any limitations on conversion hereof, including without limitation, the Beneficial Ownership Limitation)
+immediately before the date on which a record is taken for the grant, issuance or sale of such Purchase Rights, or, if no such record
+is taken, the date as of which the record holders of shares of Common Stock are to be determined for the grant, issue or sale of such
+Purchase Rights (
+provided
+,
+however
+, that, to the extent that the Holder’s right to participate in any
+such Purchase Right would result in the Holder exceeding the Beneficial Ownership Limitation, then the Holder shall not be entitled to
+participate in such Purchase Right to such extent (or beneficial ownership of such shares of Common Stock as a result of such Purchase
+Right to such extent) and such Purchase Right to such extent shall be held in abeyance for the Holder until such time, if ever, as its
+right thereto would not result in the Holder exceeding the Beneficial Ownership Limitation). To the extent that the issue price of such
+Purchase Rights would result in an adjustment of the Conversion Price pursuant to
+Section 7(c)
+, such adjustment shall not occur
+to the extent the Holders were granted the right to acquire such Purchase Rights on the applicable terms.
+(e)
+Pro Rata Distributions
+. In addition to the requirements of
+Section 3
+, during such time as this Preferred Stock
+is outstanding, if the Corporation declares or makes any dividend or other distribution of its assets (or rights to acquire its assets)
+to holders of shares of Common Stock, by way of return of capital or otherwise (including, without limitation, any distribution of cash,
+stock or other securities, property or options by way of a dividend, spin off, reclassification, corporate rearrangement, scheme of arrangement
+or other similar transaction) (a “
+Distribution
+”), in each such case, the Holders shall be entitled to participate in
+such Distribution to the same extent that the Holders would have participated therein if the Holder had held the number of shares of Common
+Stock acquirable upon complete conversion of this Preferred Stock (without regard to any limitations on conversion hereof, including without
+limitation, the Beneficial Ownership Limitation) immediately before the date of which a record is taken for such Distribution, or, if
+no such record is taken, the date as of which the record holders of shares of Common Stock are to be determined for the participation
+in such Distribution (
+provided
+,
+however
+, to the extent that the Holder’s right to participate in any
+such Distribution would result in the Holder exceeding the Beneficial Ownership Limitation, then the Holder shall not be entitled to participate
+in such Distribution to such extent (or in the beneficial ownership of any shares of Common Stock as a result of such Distribution to
+such extent) and the portion of such Distribution shall be held in abeyance for the benefit of the Holder until such time, if ever such
+grant, issuance or sale, as its right thereto would not result in the Holder exceeding the Beneficial Ownership Limitation).
+(f)
+Fundamental Transaction
+.
+(i)
+If, at any time while this Preferred Stock is outstanding, (i) the Corporation, directly or indirectly, in one or more related
+transactions effects any merger or consolidation of the Corporation with or into another Person, (ii) the Corporation (and all of its
+Subsidiaries, taken as a whole), directly or indirectly, effects any sale, lease, license, assignment, transfer, conveyance or other disposition
+of all or substantially all of its assets in one or a series of related transactions, (iii) any, direct or indirect, purchase offer, tender
+offer or exchange offer (whether by the Corporation or another Person) is completed pursuant to which holders of Common Stock are permitted
+to sell, tender or exchange their shares for other securities, cash or property and has been accepted by the holders of 50% or more of
+the outstanding Common Stock or 50% or more of the voting power of the common equity of the Corporation, (iv) the Corporation, directly
+or indirectly, in one or more related transactions effects any reclassification, reorganization or recapitalization of the Common Stock
+or any compulsory share exchange pursuant to which the Common Stock is effectively converted into or exchanged for other securities, cash
+or property (other than as a result of a stock split, combination or reclassification of shares of Common Stock covered by
+Section 7(a)
+),
+or (v) the Corporation, directly or indirectly, in one or more related transactions consummates a stock or share purchase agreement or
+other business combination (including, without limitation, a reorganization, recapitalization, spin-off or scheme of arrangement) with
+another Person whereby such other Person acquires 50% or more of the outstanding shares of Common Stock or 50% or more of the voting power
+of the common equity of the Corporation, and such event(s) do not constitute a Deemed Liquidation Event (each a “
+Fundamental
+Transaction
+”), then, upon any subsequent conversion of this Preferred Stock, the Holder shall have the right to receive, for
+each Conversion Share that would have been issuable upon such conversion immediately prior to the occurrence of such Fundamental Transaction
+(without regard to any limitation in
+Section 6(d)
+on the conversion of this Preferred Stock), the number of shares of capital
+stock of the successor or acquiring corporation or of the Corporation, if it is the surviving corporation, and any additional consideration
+(the “
+Alternate Consideration
+”) receivable as a result of such Fundamental Transaction by a holder of the number of
+shares of Common Stock for which this Preferred Stock is convertible immediately prior to such Fundamental Transaction (without regard
+to any limitation in
+Section 6(d)
+on the conversion of this Preferred Stock).
+20
+(ii)
+For purposes of any such conversion, the determination of the Conversion Price shall be appropriately adjusted to apply to such
+Alternate Consideration based on the amount of Alternate Consideration issuable in respect of one share of Common Stock in such Fundamental
+Transaction, and the Corporation shall apportion the Conversion Price among the Alternate Consideration in a reasonable manner reflecting
+the relative value of any different components of the Alternate Consideration. If holders of Common Stock are given any choice as to the
+securities, cash or property to be received in a Fundamental Transaction, then the Holder shall be given the same choice as to the Alternate
+Consideration it receives upon any conversion of this Preferred Stock following such Fundamental Transaction. To the extent necessary
+to effectuate the foregoing provisions, any successor to the Corporation or surviving entity in such Fundamental Transaction shall file
+a new Certificate of Designation with the same terms and conditions and issue to the Holders new preferred stock consistent with the foregoing
+provisions and evidencing the Holders’ right to convert such preferred stock into Alternate Consideration.
+(iii)
+The Corporation shall cause any successor entity in a Fundamental Transaction in which the Corporation is not the survivor (the
+“
+Successor Entity
+”) to assume in writing all of the obligations of the Corporation under this Certificate of Designation
+and the Registration Rights Agreement in accordance with the provisions of this
+Section 7(f)
+pursuant to written agreements in
+form and substance reasonably satisfactory to the Required Holders and approved by the Required Holders (without unreasonable delay) prior
+to such Fundamental Transaction and shall, at the option of the Holder of this Preferred Stock, deliver to the Holder in exchange for
+this Preferred Stock a security of the Successor Entity evidenced by a written instrument substantially similar in form and substance
+to this Preferred Stock which is convertible for a corresponding number of shares of capital stock of such Successor Entity (or its parent
+entity) equivalent to the shares of Common Stock acquirable and receivable upon conversion of this Preferred Stock (without regard to
+any limitations on the conversion of this Preferred Stock) prior to such Fundamental Transaction, and with a conversion price which applies
+the Conversion Price hereunder to such shares of capital stock (but taking into account the relative value of the shares of Common Stock
+pursuant to such Fundamental Transaction and the value of such shares of capital stock, such number of shares of capital stock and such
+conversion price being for the purpose of protecting the economic value of this Preferred Stock immediately prior to the consummation
+of such Fundamental Transaction), and which is reasonably satisfactory in form and substance to the Required Holders.
+(g)
+Calculations
+. All calculations under this
+Section 7
+shall be made to the nearest cent or the nearest 1/100th
+of a share, as the case may be. For purposes of this
+Section 7
+, the number of shares of Common Stock deemed to be issued and
+outstanding as of a given date shall be the sum of the number of shares of Common Stock (excluding any treasury shares of the Corporation)
+issued and outstanding.
+21
+(h)
+Notice to the Holders
+.
+(i)
+Adjustment to Conversion Price
+. Whenever the Conversion Price is adjusted pursuant to any provision of this
+Section 7
+,
+the Corporation shall promptly deliver to each Holder by email a notice setting forth the Conversion Price after such adjustment and setting
+forth a brief statement of the facts requiring such adjustment.
+(ii)
+Notice to Allow Conversion by Holder
+. If (A) the Corporation shall declare a dividend (or any other distribution in whatever
+form) on the Common Stock, (B) the Corporation shall declare a redemption of the Common Stock, (C) the Corporation shall authorize the
+granting to all holders of the Common Stock of rights or warrants to subscribe for or purchase any shares of capital stock of any class
+or of any rights, (D) the approval of any stockholders of the Corporation shall be required in connection with any reclassification of
+the Common Stock, any consolidation or merger to which the Corporation is a party, any sale or transfer of all or substantially all of
+the assets of the Corporation (and all of its Subsidiaries, taken as a whole), or any compulsory share exchange whereby the Common Stock
+is converted into other securities, cash or property or (E) the Corporation shall authorize the voluntary or involuntary dissolution,
+liquidation or winding up of the affairs of the Corporation, then, in each case, the Corporation shall cause to be filed at each office
+or agency maintained for the purpose of conversion of this Preferred Stock, and shall cause to be delivered by email to each Holder at
+its email address as it shall appear upon the stock books of the Corporation, at least twenty (20) calendar days prior to the applicable
+record or effective date hereinafter specified, a notice stating (x) the date on which a record is to be taken for the purpose of such
+dividend, distribution, redemption, rights or warrants, or if a record is not to be taken, the date as of which the holders of the Common
+Stock of record to be entitled to such dividend, distributions, redemption, rights or warrants are to be determined or (y) the date on
+which such reclassification, consolidation, merger, sale, transfer or share exchange is expected to become effective or close, and the
+date as of which it is expected that holders of the Common Stock of record shall be entitled to exchange their shares of the Common Stock
+for securities, cash or other property deliverable upon such reclassification, consolidation, merger, sale, transfer or share exchange,
+provided that
+the failure to deliver such notice or any defect therein or in the delivery thereof shall not affect the validity
+of the corporate action required to be specified in such notice. To the extent that any notice provided hereunder constitutes, or contains,
+material, non-public information regarding the Corporation or any of the Subsidiaries, the Corporation shall simultaneously file such
+notice with the Commission pursuant to a Current Report on Form 8-K, unless determined by the Corporation that such filing would be harmful
+to the Corporation at such time, in which case the Corporation shall file such 8-K as soon as is reasonably practicable in its discretion.
+For the avoidance of doubt, and without limiting the conversion rights of any Holder, each Holder shall remain entitled to convert the
+Accrued Value of this Preferred Stock (or any part hereof) during the twenty (20)-day period commencing on the date of such notice through
+the effective date of the event triggering such notice except as may otherwise be expressly set forth herein.
+22
+Section 8.
+Redemption
+.
+(a)
+Redemption by the Corporation
+. Subject to the provisions of this
+Section 8
+and unless prohibited by applicable
+law governing distributions to stockholders, the Corporation may, in its sole discretion, redeem all or a portion of the outstanding shares
+of Preferred Stock:
+(i) on or after
+the Closing but prior to the first anniversary of the Closing, at a redemption price per share equal to 150% of the Accrued
+Value;
+(ii)
+on or after the first anniversary of the Closing but prior to the second anniversary of the Closing, at a redemption price per share
+equal to 140% of the Accrued Value;
+(iii)
+on or after the second anniversary of the Closing but prior to the third anniversary of the Closing, at a redemption price per share
+equal to 130% of the Accrued Value;
+(iv)
+on or after the third anniversary of the Closing but prior to the fourth anniversary of the Closing, at a redemption price per
+share equal to 120% of the Accrued Value;
+(v)
+on or after the fourth anniversary of the Closing but prior to the fifth anniversary of the Closing, at a redemption price per
+share equal to 110% of the Accrued Value; and
+(vi)
+on or after the fifth anniversary of the Closing, at a redemption price per share equal to 100% of the Accrued Value.
+If, on the date of
+such redemption, applicable law governing distributions to stockholders prevents the Corporation from redeeming all shares of Preferred
+Stock scheduled to be redeemed, the Corporation shall be entitled to ratably redeem the maximum number of shares that it may redeem consistent
+with such law and any Preferred Stock not so redeemed shall remain outstanding. The Corporation shall provide written notice (the “
+Corporation
+Notice
+”) by e-mail and first class mail postage prepaid, to each Holder of record (determined at the close of business on the
+Business Day next preceding the day on which the Corporation Notice is given) of the Preferred Stock to be redeemed, at the address last
+shown on the records of the Corporation for such Holder, notifying such Holder of the redemption to be effected, specifying the number
+of shares to be redeemed from such Holder, specifying the date of such redemption, the redemption price, the place at which payment may
+be obtained and calling upon such Holder to surrender to the Corporation, in the manner and at the place designated, his, her or its certificate
+or certificates representing the shares to be redeemed;
+provided
+that the date of redemption shall be not less than 15 days from
+the date of the Corporation Notice. Except as otherwise provided herein, on or after the applicable date of redemption, each Holder to
+be redeemed shall surrender to the Corporation the certificate or certificates representing such shares, in the manner and at the place
+designated in the Corporation Notice, and thereupon the price of redemption of such shares shall be payable to the order of the person
+whose name appears on such certificate or certificates as the owner thereof and each surrendered certificate shall be cancelled. In the
+event less than all the shares represented by any such certificate are redeemed, a new certificate shall be issued representing the unredeemed
+shares. Notwithstanding anything herein to the contrary, each Holder shall remain entitled to convert all or a portion of the Accrued
+Value of its Preferred Stock (or any part thereof) at any time and from time to time during the 15-day period commencing on the date of
+the Corporation Notice through the applicable date of redemption.
+23
+(b)
+Redemption by the Holders
+.
+(i)
+Unless prohibited by applicable law governing distribution to stockholders, shares of Preferred Stock shall be redeemed by the
+Corporation at a purchase price equal to the Accrued Value (the “
+Redemption Price
+”), if at any time and from time to
+time after the fifth (5
+th
+) anniversary of the Closing, a Holder delivers to the Corporation a written notice demanding redemption
+of all of such Holder’s shares of Preferred Stock (the “
+Redemption Request
+”). The 20th day after the date of
+the Corporation Notice shall be referred to as the “
+Redemption Date
+.” Upon receipt of a Redemption Request, the Corporation
+shall apply all of its assets to any such redemption, and to no other corporate purpose, until the Redemption Price has been paid in full,
+except to the extent prohibited by Delaware law governing distributions to stockholders.
+(ii)
+Following receipt of a Redemption Request, the Corporation shall send written notice of the mandatory redemption (the “
+Redemption
+Notice
+”) to the redeeming Holder of record of Preferred Stock not less than 15 days prior to the Redemption Date. The Redemption
+Notice shall state:
+a.
+the number of shares of Preferred Stock held by the Holder that the Corporation shall redeem on the Redemption Date;
+b.
+the Redemption Date and the Redemption Price;
+c.
+the date upon which the Holder’s right to convert such shares terminates; and
+d.
+for Holders of shares in certificated form, that the Holder is to surrender to the Corporation, in the manner and at the place designated,
+his, her or its certificate or certificates representing the shares of Preferred Stock to be redeemed.
+(iii)
+On the Redemption Date, the Corporation shall redeem the Preferred Stock owned by such Holder. If on the Redemption Date Delaware
+law governing distributions to stockholders prevents the Corporation from redeeming all shares of Preferred Stock to be redeemed, the
+Corporation shall ratably redeem the maximum number of shares that it may redeem consistent with such law, and shall redeem the remaining
+shares as soon as it may lawfully do so under such law. In the event that any portion of the Redemption Price has not been paid within
+5 Business Days following the Redemption Date, interest on such unpaid portion of the Redemption Price shall accrue thereon until such
+amount is paid in full at a rate equal to the lesser of (i) 24.0% per annum and (ii) the maximum rate permitted under applicable law.
+(c)
+Rights
+Subsequent to Redemption
+. Upon the redemption of shares of Preferred Stock pursuant to
+Section 8(a)
+or
+Section 8(b)
+,
+all rights with respect to such shares of Preferred Stock shall immediately terminate, except with respect to the right of the
+Holders to receive the applicable redemption price with respect to such shares of Preferred Stock in accordance with
+Section 8(a)
+or
+Section 8(b)
+, as applicable.
+24
+Section 9.
+Miscellaneous
+.
+(a)
+Notices
+.
+Any and all notices or other communications or deliveries to be provided by the Holders hereunder including, without limitation, any
+Notice of Conversion, shall be in writing and delivered personally, by e-mail, or sent by nationally recognized overnight courier service,
+addressed to the Corporation, at the address set forth above the address or email address most recently provided to Holders by the Corporation
+for purposes of notice hereunder Attention: [●], e-mail address [●], or such other e-mail address or address as the Corporation
+may specify for such purposes by notice to the Holders delivered in accordance with this
+Section 9
+. Any and all notices or
+other communications or deliveries to be provided by the Corporation hereunder shall be in writing and delivered personally, by e-mail,
+or sent by a nationally recognized overnight courier service addressed to each Holder at the e-mail address or address of such Holder
+appearing on the books of the Corporation, or if no such facsimile number, e-mail address or address appears on the books of the Corporation,
+at the principal place of business of such Holder, as set forth in the Purchase Agreement. Any notice or other communication or deliveries
+hereunder shall be deemed given and effective on the earliest of (i) the time of transmission, if such notice or communication is delivered
+via facsimile at the facsimile number or e-mail at the e-mail address set forth in this Section prior to 5:30 p.m. (New York City time)
+on any date, (ii) the next Trading Day after the time of transmission, if such notice or communication is delivered via e-mail at the
+e-mail address set forth in this Section on a day that is not a Trading Day or later than 5:30 p.m. (New York City time) on any Trading
+Day, (iii) the second Trading Day following the date of mailing, if sent by U.S. nationally recognized overnight courier service, or
+(iv) upon actual receipt by the party to whom such notice is required to be given.
+(b)
+Absolute
+Obligation
+. Except as expressly provided herein, no provision of this Certificate of Designation shall alter or impair the obligation
+of the Corporation, which is absolute and unconditional, to pay liquidated damages and accrued dividends, as applicable, on the shares
+of Preferred Stock at the time, place, and rate, and in the coin or currency, herein prescribed.
+(c)
+Lost or
+Mutilated Preferred Stock Certificate
+. If a Holder’s Preferred Stock certificate shall be mutilated, lost, stolen or destroyed,
+the Corporation shall issue or cause to be issued, in exchange and substitution for and upon cancellation of a mutilated certificate,
+or in lieu of or in substitution for a lost, stolen or destroyed certificate, a new certificate for the shares of Preferred Stock so
+mutilated, lost, stolen or destroyed, but only upon receipt of evidence of such loss, theft or destruction of such certificate, and of
+the ownership hereof reasonably satisfactory to the Corporation (which shall not include the posting of any bond). The applicant for
+a new certificate under such circumstances shall also pay any reasonable third-party costs (including customary indemnity) associated
+with the issuance of such replacement certificate.
+25
+(d)
+Governing
+Law
+. All questions concerning the construction, validity, enforcement and interpretation of this Certificate of Designation shall
+be governed by and construed and enforced in accordance with the internal laws of the State of Delaware, without regard to the principles
+of conflict of laws thereof. All legal proceedings concerning the interpretation, enforcement and defense of the transactions contemplated
+by this Certificate of Designation (whether brought against a party hereto or its respective Affiliates, directors, officers, shareholders,
+employees or agents) shall be commenced in the state and federal courts sitting in the City of Wilmington, Delaware, County of New Castle
+(the “
+Delaware Courts
+”). The Corporation and each Holder hereby irrevocably submits to the exclusive jurisdiction
+of the Delaware Courts for the adjudication of any dispute hereunder or in connection herewith or with any transaction contemplated hereby
+or discussed herein, and hereby irrevocably waives, and agrees not to assert in any suit, action or proceeding, any claim that it is
+not personally subject to the jurisdiction of such Delaware Courts, or such Delaware Courts are improper or inconvenient venue for such
+proceeding. The Corporation and each Holder hereby irrevocably waives personal service of process and consents to process being served
+in any such suit, action or proceeding by mailing a copy thereof via registered or certified mail or overnight delivery (with evidence
+of delivery) to such party at the address in effect for notices to it under this Certificate of Designation and agrees that such service
+shall constitute good and sufficient service of process and notice thereof. Nothing contained herein shall be deemed to limit in any
+way any right to serve process in any other manner permitted by applicable law. The Corporation and each Holder hereby irrevocably waives,
+to the fullest extent permitted by applicable law, any and all right to trial by jury in any legal proceeding arising out of or relating
+to this Certificate of Designation or the transactions contemplated hereby. If the Corporation or any Holder shall commence an action
+or proceeding to enforce any provisions of this Certificate of Designation, then the prevailing party in such action or proceeding shall
+be reimbursed by the other party for its attorneys’ fees and other costs and expenses incurred in the investigation, preparation
+and prosecution of such action or proceeding.
+(e)
+Amendment
+. Subject to
+Section 4(c)
+, this Certificate of Designation (or any provision hereof) may be amended
+by obtaining the affirmative vote at a meeting duly called for such purpose, or written consent without a meeting in accordance with the
+Delaware General Corporation Law, of the Required Holders, voting separately as a single class, and with such other stockholder approval,
+if any, as may then be required pursuant to the DGCL and the Corporation’s certificate of incorporation; provided, however, and
+notwithstanding anything in this Certificate of Designation to the contrary, no provision of this Certificate of Designation shall be
+amended to the extent any such amendment would (i) disproportionately, materially and adversely modify any rights of any Holder (as compared
+to the rights of the other Holders) (ii) impose any additional financial obligations or liabilities on a Holder or (iii) amend the provisions
+of Section 3, Section 6, Section 7, Section 8(b) or this Section 9(e), unless such amendment applies to all Holders in the same fashion,
+and, in each case, unless any such Holder shall have previously consented in writing to such amendment or voted to approve such amendment
+at a meeting. No consideration shall be offered or paid to any Holder to amend or consent to a waiver or modification of any provision
+of this Certificate of Designation unless the same consideration is also offered to all of the Holders. For clarification purposes, this
+provision constitutes a separate right granted to each Holder by the Corporation and negotiated separately by each Holder, and is intended
+for the Corporation to treat the Holders as a group and shall not in any way be construed as the Holders acting in concert or as a group
+with respect to the purchase, disposition or voting of securities or otherwise.
+(f)
+Waiver.
+Any waiver by the Corporation or a Holder of a breach of any provision of this Certificate of Designation shall not operate as or be
+construed to be a waiver of any other breach of such provision or of any breach of any other provision of this Certificate of Designation
+or a waiver by any other Holders. The failure of the Corporation or a Holder to insist upon strict adherence to any term of this Certificate
+of Designation on one or more occasions shall not be considered a waiver or deprive that party (or any other Holder) of the right thereafter
+to insist upon strict adherence to that term or any other term of this Certificate of Designation on any other occasion. Any waiver by
+the Corporation or a Holder must be in writing.
+26
+(g)
+Severability
+.
+If any provision of this Certificate of Designation is invalid, illegal or unenforceable, the balance of this Certificate of Designation
+shall remain in effect, and if any provision is inapplicable to any Person or circumstance, it shall nevertheless remain applicable to
+all other Persons and circumstances. If it shall be found that any interest or other amount deemed interest due hereunder violates the
+applicable law governing usury, the applicable rate of interest due hereunder shall automatically be lowered to equal the maximum rate
+of interest permitted under applicable law.
+(h)
+Next Business
+Day
+. Whenever any payment or other obligation hereunder shall be due on a day other than a Business Day, such payment shall be made
+on the next succeeding Business Day.
+(i)
+Headings
+.
+The headings contained herein are for convenience only, do not constitute a part of this Certificate of Designation and shall not be
+deemed to limit or affect any of the provisions hereof.
+(j)
+Status of
+Converted or Redeemed Preferred Stock
+. Shares of Preferred Stock may only be issued pursuant to the Purchase Agreement. If any shares
+of Preferred Stock shall be converted, redeemed or reacquired by the Corporation, such shares shall resume the status of authorized but
+unissued shares of preferred stock and shall no longer be designated as 12.0% Series A Cumulative Convertible Preferred Stock.
+(k)
+Tax
+Withholding
+. The Corporation agrees that, provided that each Holder delivers to the Corporation a properly executed IRS Form W-9
+or other certification satisfactory to the Corporation certifying as to such Holder’s status (or the status of such Holder’s
+beneficial owner(s)) as a United States person (within the meaning of Section 7701(a)(30) of the Code) and such Holder’s (or such
+beneficial owners’) eligibility for complete exemption from backup withholding (“
+U.S. Person Certification
+”),
+under current law the Corporation (including any paying agent of the Corporation) shall not be required to, and shall not, withhold on
+any payments or deemed payments to any such Holder. In the event that any Holder fails to deliver to the Corporation such properly
+executed U.S. Person Certification, the Corporation reasonably believes that a previously delivered U.S. Person Certification is no longer
+accurate and/or valid, or there is a change in law that affects the withholding obligations of the Corporation, the Corporation and its
+paying agent shall be entitled to withhold taxes on all payments made to the relevant Holder in the form of cash or otherwise treated,
+in the Corporation’s reasonable discretion, as a dividend for U.S. federal tax purposes or to request that the relevant Holder
+promptly pay the Corporation in cash any amounts required to satisfy any withholding tax obligations, in each case, to the extent the
+Corporation or its paying agent determines in good faith it is required to deduct and withhold tax on payments to the relevant Holder
+under applicable law;
+provided, that the Corporation shall use commercially reasonable efforts to notify the relevant Holder of
+any required withholding tax reasonably in advance of the date of the relevant payment
+. In
+the event that the Corporation does not have sufficient cash with respect to any Holder from withholding on cash payments otherwise payable
+to such Holder and cash paid to the Corporation by such Holder to the Corporation pursuant to the immediately preceding sentence, the
+Corporation and its paying agent shall be entitled to withhold taxes on deemed payments, including distributions of additional Preferred
+Stock in lieu of cash and constructive distributions on the Preferred Stock to the extent required by law, and the Corporation and its
+paying agent shall be entitled to satisfy any required withholding tax on non-cash payments (including deemed payments) through a sale
+of a portion of the Preferred Stock received as a dividend or from cash dividends or sales proceeds subsequently paid or credited on
+the Preferred Stock.
+(l)
+Tax Treatment
+. Absent a change in law, Internal Revenue Service practice or a contrary determination (as defined in Section
+1313(a) of the Internal Revenue Code, as amended (the “
+Code
+”)), each holder of Preferred Stock and the Corporation
+shall not treat the Preferred Stock (based on their terms as set forth in this Certificate of Designation) as “preferred stock”
+within the meaning of Section 305 of the Code and Treasury Regulation Section 1.305-5 for United States federal income tax and withholding
+tax purposes and shall not take any position inconsistent with such treatment.
+*********************
+27
+IN WITNESS WHEREOF, this Certificate of Designation is
+executed on behalf of the Corporation by its Chief Executive Officer this [●] day of [●], 2025.
+Merlin Labs, Inc.
+By:
+Name:
+Title:
+Chief Executive Officer
+ANNEX A
+NOTICE OF CONVERSION
+(TO BE EXECUTED BY THE REGISTERED HOLDER IN ORDER TO CONVERT SHARES OF 12.0% SERIES A CUMULATIVE CONVERTIBLE PREFERRED STOCK)
+The undersigned hereby elects to convert the number
+of shares of 12.0% Series A Cumulative Convertible Preferred Stock, par value $0.0001 per share (the “
+Preferred Stock
+”),
+indicated below into shares of common stock, par value $0.0001 per share (the “
+Common Stock
+”), of Merlin Labs, Inc.,
+a Delaware corporation (the “
+Corporation
+”), according to the conditions hereof, as of the date written below. If shares
+of Common Stock are to be issued in the name of a Person other than the undersigned, the undersigned will pay all transfer taxes payable
+with respect thereto and is delivering herewith such certificates and opinions as may be required by the Corporation in accordance with
+the Purchase Agreement. No fee will be charged to the Holders for any conversion, except for any such transfer taxes.
+Conversion calculations:
+Date to Effect Conversion: ____________________________________________________
+Number of shares of Preferred Stock owned prior to
+Conversion: _______________________
+Number of shares of Preferred Stock to be Converted: ________________________________
+Accrued Value of shares of Preferred Stock to be
+Converted: __________________________
+Number of shares of Common Stock to be Issued:
+___________________________________
+Applicable Conversion Price: __________________________________________________
+Number of shares of Preferred Stock subsequent to Conversion:________________________
+Address for Delivery:_________________________________________________
+or
+DWAC Instructions:
+Broker no: _____________
+Account no: ___________
+[HOLDER]
+By:
+Name:
+Title:
+Annex A

@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Stock Option Agreement under the ClearSign Technologies Corporation 2021 Equity Incentive Plan, outlining the terms for a participant to purchase company stock at a specified price. It includes details such as the grant number, vesting schedule, exercise price, and expiration date, and specifies that the option can be exercised for 90 days after termination of service. The agreement also references the plan document for comprehensive terms and conditions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the 2023 XYZ Corp private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve authoritative safe harbor definitions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"XYZ Corp placement terms\", \"edgar_check\": \"Private placement agreement text\", \"regulation\": \"Reg D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR terms against retrieved regulations\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on Section 11 standard\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 reasonable care standard interpretation\"}, \"Reasoning\": \"Requires judicial precedent to interpret statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if ABC Inc's S-1 registration statement meets 1933 Act requirements considering 2019 SEC v. Jarkesy ruling"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Registration rules + case impact + EDGAR validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Securities Act of 1933\"}, \"Reasoning\": \"Establish foundational registration requirements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Jarkesy impact on registration statements\"}, \"Reasoning\": \"Determine judicial impact on regulatory requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"S-1 completeness\", \"edgar_check\": \"S-1 filing text\", \"regulation\": \"1933 Act\", \"case_interpretation_check\": \"Jarkesy precedent\"}, \"Reasoning\": \"Validate against both regulation and case law\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.251 outlines exemptions for public offerings and sales of eligible securities under Regulation A of the Securities Act of 1933, distinguishing between Tier 1 (up to $20 million) and Tier 2 (up to $75 million) offerings, with specific limitations on secondary sales and requirements for issuers. The regulation also details offering conditions, including the necessity of filing an offering statement with the SEC and restrictions on sales until qualification.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption under Reg D require SEC registration for resale transactions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg D resale requirements + judicial precedent + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"First retrieve base requirements for private placements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reg D resale restrictions post-2012 JOBS Act amendments\"}, \"Reasoning\": \"Find judicial interpretations about resale limitations after key legislative changes\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale registration exemption validity\", \"edgar_check\": \"EDGAR resale clause language\", \"regulation\": \"Reg D Rule 506\", \"case_interpretation_check\": \"Post-JOBS Act resale precedent\"}, \"Reasoning\": \"Combine regulatory text, judicial interpretation, and EDGAR language to validate compliance\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' properly cites Section 17(a) of the 1933 Act"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston 1933 Act Section 17(a) citation\"}, \"Reasoning\": \"Citation verification requires format/accuracy check against legal databases\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Analyze EDGAR Form D compliance with Reg CF advertising restrictions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg CF requirements + EDGAR validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation CF Rule 206\"}, \"Reasoning\": \"First need official advertising restriction language\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Form D advertising compliance\", \"edgar_check\": \"EDGAR Form D marketing language\", \"regulation\": \"Reg CF Rule 206\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Combine regulatory text with EDGAR filing validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

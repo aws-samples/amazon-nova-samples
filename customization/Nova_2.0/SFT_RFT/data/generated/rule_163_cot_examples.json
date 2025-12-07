@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.163 provides an exemption from section 5(c) of the Securities Act for certain communications by well-known seasoned issuers before filing a registration statement, provided the communication is a free writing prospectus and includes a specified legend. The issuer must also file the communication with the SEC promptly upon filing the registration statement, with exceptions for previously filed documents or those not requiring filing under Rule 433. The exemption does not apply to business combination transactions or communications by certain investment companies.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption under Reg D require SEC registration?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_definition\", \"Information needed\": \"Reg D registration requirements\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Regulatory definitions require direct access to official SEC text. Statute_retrieval provides authoritative language about registration exemptions.\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Analyze if XYZ Corp's resale restrictions comply with Rule 144 safe harbor conditions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Rule 144 conditions + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 144\"}, \"Reasoning\": \"First need official safe harbor requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale compliance\", \"edgar_check\": \"XYZ Corp transfer restrictions\", \"regulation\": \"Rule 144\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Combines regulation with EDGAR clause validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' citation is properly formatted for Blue Sky law arguments"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston [citation details]\"}, \"Reasoning\": \"Citation validation requires specialized format checking unrelated to regulation/case content.\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

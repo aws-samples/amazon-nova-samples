@@ -1,0 +1,175 @@
+EX-10.1
+2
+tm2531454d1_ex10-1.htm
+EXHIBIT 10.1
+Exhibit 10.1
+Name/Optionee:
+Number of [Shares/ADSs]:
+Exercise Price Per [Share/ADS]:
+Date of Grant:
+Vesting Commencement Date:
+Vesting Schedule:
+Expiration Date:
+Quoin Pharmaceuticals Ltd.
+2025 Equity Incentive Plan
+INCENTIVE STOCK OPTION
+GRANT NOTIFICATION LETTER
+This Grant Notification Letter (this “
+Agreement
+”)
+evidences an incentive stock option granted by Quoin Pharmaceuticals Ltd. (the “
+Company
+”) to the individual named above
+(the “
+Optionee
+”), pursuant to and subject to the terms of the Quoin Pharmaceuticals Ltd. 2025 Equity Incentive Plan
+(as amended from time to time, the “
+Plan
+”). Except as otherwise specified herein or unless the context herein requires
+otherwise, the terms defined in the Plan will have the same meanings herein.
+1.
+Grant
+of Share Option
+. The Company grants to the Optionee on the date set forth above (the “
+Date of Grant
+”) an incentive
+stock option to purchase, pursuant to and subject to the terms set forth in this Agreement and in the Plan, up to the number of [Ordinary
+Shares/ADSs] (the “
+Shares
+”) with an exercise price per Share as set forth above, in each case, subject to adjustment
+pursuant to Section 14.1 of the Plan (the “
+Option
+”). [Each ADS represents the right to receive [___] ([__]) Ordinary
+Shares (subject to any Share dividend, Share split, ratio change or combination of Shares (including a reverse Share split)).] The Option
+evidenced by this Agreement is an option that qualifies as an incentive stock option under Section 422 of the Code).
+2.
+Vesting;
+Method of Exercise; Cessation of Employment
+.
+(a)
+Vesting
+.
+The Option shall become vested in accordance with the schedule set forth above. The term “vest” as used herein with respect
+to the Option or any portion thereof means to become exercisable, and the term “vested” as applied to any outstanding Option
+means that the Share Option is then exercisable, subject, in each case, to the terms of the Plan and this Agreement.
+(b)
+Exercise
+of the Share Option
+. No portion of the Option may be exercised until such portion vests. Each election to exercise any vested portion
+of the Share Option shall be subject to the terms and conditions of the Plan and this Agreement and must be in written or electronic form
+acceptable to the Committee, signed (including by electronic signature) by the Optionee (or in such other form as is acceptable to the
+Committee). Each such written or electronic exercise election must be received by the Company at its principal office or by such other
+party as the Company may prescribe and be accompanied by payment in full of the exercise price and related taxes as provided in the Plan.
+The latest date on which the Option or any portion thereof may be exercised is the Expiration Date as set forth above and, if not exercised
+by such date, the Option or any remaining portion thereof shall thereupon immediately terminate for no consideration. Payment of the Exercise
+Price for the Shares may be made by one or more of the methods set forth in Section 6.4 of the Plan.
+(c)
+Cessation
+of Employment
+. If the Optionee’s employment ceases, except as expressly provided for in an employment or other individual
+agreement between the Optionee and the Company or any of its Subsidiaries, the unvested portion of the Option shall be immediately forfeited,
+and any vested portion of the Option that is then outstanding shall be treated as provided in Section 6 of the Plan.
+3.
+Forfeiture;
+Recovery of Compensation.
+(a)
+By
+accepting, or being deemed to have accepted, the Option, the Optionee expressly acknowledges and agrees that his or her rights, and those
+of any permitted transferee of the Option, under the Option, including the right to any Share acquired under the Option or proceeds from
+the disposition thereof, are subject to any clawback policy of the Company as described in Section 16.6 of the Plan.
+(b)
+The
+Optionee hereby (i) appoints the Company as the attorney-in-fact of the undersigned to take such actions as may be necessary or appropriate
+to effectuate a transfer of the record ownership of any Shares that are forfeited hereunder, (ii) agrees to deliver to the Company,
+as a precondition to the issuance of any certificate or certificates with respect to Shares hereunder, one or more stock powers, endorsed
+in blank, with respect to such Shares, and (iii) agrees to sign such other powers and take such other actions as the Company may
+reasonably request to accomplish the transfer or forfeiture of any Shares that are forfeited hereunder.
+4.
+Nontransferability
+and Investment Representations.
+(a)
+The
+Option may not be transferred except as expressly permitted under Section 15 of the Plan.
+(b)
+The
+Optionee hereby covenants that (i) any sale of any Share acquired upon the exercise of the Option shall be made either pursuant to
+an effective registration statement under the Securities Act of 1933, as amended (the “Securities Act”), and any other applicable
+foreign or state securities laws, or pursuant to an exemption from registration under the Securities Act and such foreign or state securities
+laws and (ii) the Optionee shall comply with all regulations and requirements of any regulatory authority having control of or supervision
+over the issuance of the Shares and, in connection therewith, shall execute any documents which the Company shall in its sole discretion
+deem necessary or advisable.
+5.
+Withholding
+.
+The exercise of the Option may give rise to “wages” subject to withholding. The Optionee expressly acknowledges and agrees
+that the Optionee’s rights hereunder, including the right to be issued Shares upon exercise, are subject to the Optionee promptly
+paying to the Company in cash or by check (or by such other means as may be acceptable to the Committee in its discretion and permissible
+under applicable law) all taxes required to be withheld. No Shares shall be issued pursuant to the exercise of the Option unless and until
+the person exercising the Option has remitted to the Company an amount in cash or by check sufficient to satisfy any federal, state, or
+local withholding tax requirements, or has made other arrangements satisfactory to the Committee with respect to such taxes. The Optionee
+authorizes the Company and its Subsidiaries to take the following actions with respect to withholding tax requirements: (i) withhold
+such amount from any amounts otherwise owed to the Optionee; (ii) cause the Optionee to tender a cash payment; (iii) permit
+or require the Optionee to enter into a “same day sale” commitment, if applicable, with a broker-dealer that is a member of
+the Financial Industry Regulatory Authority (a “FINRA Dealer”) whereby the Optionee irrevocably elects to sell a portion of
+the Shares to be delivered in connection with the exercise of the Option to satisfy the withholding taxes and whereby the FINRA Dealer
+irrevocably commits to forward the proceeds necessary to satisfy the withholding taxes directly to the Company and/or its affiliates;
+or (iv) withhold Shares from the Shares issued or otherwise issuable to the Optionee in connection with the exercise of the Option
+with a fair market value (measured as of the date Shares are issued) equal to the amount of such withholding taxes; provided, however,
+that the number of such Shares so withheld shall be at least the minimum amount necessary to satisfy the Company’s required tax
+withholding but in no event more than the maximum permitted withholding under applicable law; provided, further, that to the extent necessary
+to qualify for an exemption from application of Section 16(b) of the Securities Exchange Act of 1934, if applicable, such Share
+withholding procedure will be subject to the express prior approval of the Committee. Notwithstanding the foregoing, nothing in the preceding
+sentence may be construed as relieving the Optionee of any liability for satisfying his or her obligation under the preceding provisions
+of this Section.
+6.
+Change
+in Control
+. Section 14.2 of the Plan shall govern the treatment of the Option in connection with a sale or other change in control
+of the Company.
+7.
+Effect
+on Employment
+. Neither the grant of the Option, nor the issuance of Shares upon exercise of the Option, shall give the Optionee any
+right to be retained in the employ of the Company or any of its Subsidiaries, affect the right of the Company or any of its Subsidiaries
+to terminate the Optionee’s employment at any time, or affect any right of the Optionee to terminate his or her employment at any
+time.
+8.
+Rights
+as a Stockholder
+. Neither the Optionee nor the Optionee’s transferee or representative shall have any rights as a stockholder
+with respect to any Shares subject to this Option until the Option has been exercised and Share certificates have been issued to the Optionee,
+transferee or representative, as the case may be.
+9.
+Provisions
+of the Plan
+. This Agreement is subject in its entirety to the provisions of the Plan, which are incorporated herein by reference.
+A copy of the Plan as in effect on the Date of Grant has been furnished or made available to the Optionee. By accepting, or being deemed
+to have accepted, all or any part of the Option, the Optionee agrees to be bound by the terms of the Plan and this Agreement. In the event
+of any conflict between the terms of this Agreement and the Plan, the terms of the Plan will control.
+10.
+Amendment
+and Waiver
+. The Company may amend the provisions of this Agreement at any time; provided that an amendment that would adversely
+affect the Optionee’s rights under this Agreement shall be subject to the written consent of the Optionee. No course of conduct
+or failure or delay in enforcing the provisions of this Agreement shall affect the validity, binding effect or enforceability of this
+Agreement.
+11.
+Acknowledgements
+.
+The Optionee acknowledges and agrees that (i) this Agreement may be executed in two or more counterparts, each of which will be an
+original and all of which together will constitute one and the same instrument, (ii) this Agreement may be executed and exchanged
+using facsimile, portable document format (PDF) or electronic signature, which, in each case, will constitute an original signature for
+all purposes hereunder, and (iii) such signature by the Company will be binding against the Company and will create a legally binding
+agreement when this Agreement is countersigned by the Optionee.
+***************************
+By your signature and the
+signature of the Company’s representative below, you and the Company agree and acknowledge that this Option is granted under and
+governed by the terms and conditions of the Plan, which are incorporated herein by reference and this Incentive Stock Option Grant Notification
+Letter, and that you have been provided with a copy of the Plan.
+Optionee:
+Quoin Pharmaceuticals, Ltd.:
+By:
+By:
+Name:
+Name:
+Title:

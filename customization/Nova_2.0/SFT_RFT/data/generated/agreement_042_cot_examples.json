@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Convertible Promissory Note issued by ConnectM Technology Solutions, Inc., promising to pay $150,000 plus 20% annual interest, due 180 days from issuance unless converted or prepaid. The note can be converted into common stock at a price of $1.10 per share within 90 days of issuance. The securities are unregistered and subject to transfer restrictions under U.S. securities laws.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First need official SEC text for private placement rules\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Private placement agreement terms\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"After retrieving regulations, must validate specific contract language against Rule 506 requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for material misrepresentation in public offerings?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on Section 17(a) violations\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material misrepresentation precedent under Section 17(a)\"}, \"Reasoning\": \"Requires historical court interpretations of anti-fraud provisions in public offerings\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 8-K filing properly cites SEC Rule 144"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of 17 CFR 230.144 citation\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"Rule 144 citation in XYZ Corp 8-K filing\"}, \"Reasoning\": \"Citation format requires validation against official SEC code structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

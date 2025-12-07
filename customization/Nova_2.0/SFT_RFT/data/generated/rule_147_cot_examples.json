@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.147 outlines the requirements for intrastate offers and sales of securities to qualify for exemption under section 3(a)(11) of the Securities Act of 1933, including that the issuer must be a resident and do business in the state where the offers and sales are made, and that offers and sales must be limited to residents of that state. The regulation also mandates precautions against interstate sales, such as placing legends on securities and obtaining written representations of residency from purchasers.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First need to retrieve authoritative text of Regulation D safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"Memorandum disclosure language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Compliance validation requires comparing EDGAR content against Regulation D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(d) exists and applies to international transactions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format check + existence verification\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(d)\"}, \"Reasoning\": \"Must first validate citation format before checking applicability to international transactions\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted SEC Rule 10b-5 materiality standards in private placements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents about Rule 10b-5 in private contexts\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Rule 10b-5 materiality standards in private placements\"}, \"Reasoning\": \"Requires judicial precedent analysis rather than regulatory text retrieval\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

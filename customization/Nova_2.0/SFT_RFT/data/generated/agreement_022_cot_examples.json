@@ -1,0 +1,66 @@
+{
+  "summary": "This Executive Chair Agreement dated November 17, 2025, between Mobile Infrastructure Corporation, its Operating Company, and Manuel Chavez III, outlines Chavez's role as Executive Chairman, effective August 1, 2025, replacing his prior CEO position. The agreement specifies his duties, employment terms, and compensation, including a performance-based equity award contingent on achieving $100 million in asset sales by 2027. It also references his existing equity awards and the terms for termination of employment.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption require SEC registration under Regulation D? Analyze XYZ Corp's Form D filing against Rule 506(c) requirements"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR filing validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506(c)\"}, \"Reasoning\": \"Need exact regulatory text to establish exemption criteria\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"XYZ Corp Form D compliance\", \"edgar_check\": \"Form D filing details\", \"regulation\": \"Rule 506(c)\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Compliance validation requires regulation context + EDGAR document analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' properly interpreted Section 5 registration requirements for international offerings"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation_research\", \"Information needed\": \"Section 5 text + case interpretation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5 Securities Act\"}, \"Reasoning\": \"Need statutory foundation before analyzing judicial interpretation\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Ralston Section 5 interpretation\"}, \"Reasoning\": \"Case law search required to evaluate court's application of Section 5\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Check if ABC Fund's resale clause complies with Rule 144 safe harbor conditions post-Dolgow v. Anderson precedent"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Rule 144 + case precedent + EDGAR validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 144\"}, \"Reasoning\": \"Base analysis on official SEC safe harbor conditions\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Dolgow v. Anderson Rule 144 interpretation\"}, \"Reasoning\": \"Need judicial clarification of 'current public information' requirement\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale clause compliance\", \"edgar_check\": \"ABC Fund resale clause\", \"regulation\": \"Rule 144\", \"case_interpretation_check\": \"Dolgow precedent\"}, \"Reasoning\": \"Final validation requires integration of regulation + case law + EDGAR language\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

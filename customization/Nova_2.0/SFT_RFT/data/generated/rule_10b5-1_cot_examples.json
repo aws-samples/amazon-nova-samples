@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 240.10b5-1 prohibits trading securities based on material nonpublic information in breach of a duty, with exceptions for pre-planned trades under specific conditions. The rule outlines affirmative defenses, such as binding contracts or written trading plans, provided they meet strict criteria and cooling-off periods. It aims to prevent insider trading while allowing legitimate pre-arranged transactions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D comply with state blue sky laws?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D state law interaction\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"First retrieve federal exemption requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"State blue sky compliance\", \"edgar_check\": \"EDGAR state qualification clause\", \"regulation\": \"Reg D\", \"case_interpretation_check\": \"None\"}, \"Reasoning\": \"Validate EDGAR clause against federal requirements and state law interface\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the legal precedent for material misrepresentation in SEC v. Ralston Purina?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case-specific fraud interpretation\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Ralston Purina material misrepresentation standard\"}, \"Reasoning\": \"Requires direct case precedent retrieval for judicial interpretation\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.501(a) is properly cited in this prospectus"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.501(a)\"}, \"Reasoning\": \"Citation validation requires specialized format checking tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

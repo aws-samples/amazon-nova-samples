@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.253 mandates that an offering circular must include specific information as required by Form 1-A, but allows for the omission of certain details like pricing and underwriting specifics if conditions are met, such as providing a bona fide estimate of the offering price range. The omitted information must be filed with the Commission later, and the circular must be clear, dated, and include a disclaimer about SEC approval. Supplements to the offering circular must be filed with the Commission within specified timeframes if there are substantive changes or additions to the information.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the 2023 XYZ Corp private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First need authoritative text of Regulation D safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"XYZ Corp private placement compliance\", \"edgar_check\": \"XYZ Corp offering document language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation against Regulation D after retrieving statutory requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial precedent for 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on 'reasonable care' standard\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 'reasonable care' judicial precedent\"}, \"Reasoning\": \"Requires direct case analysis for judicial interpretation of statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if ABC Inc's S-1 registration meets 1933 Act requirements with SEC v. Ralston Purina precedent"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"1933 Act + case precedent + S-1 validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Securities Act of 1933\"}, \"Reasoning\": \"Need statutory foundation first\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Ralston Purina registration standards\"}, \"Reasoning\": \"Critical precedent interpretation required\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"ABC Inc S-1 compliance\", \"edgar_check\": \"ABC Inc prospectus language\", \"regulation\": \"Securities Act 1933\", \"case_interpretation_check\": \"Ralston Purina standards\"}, \"Reasoning\": \"Final validation requires all three components\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

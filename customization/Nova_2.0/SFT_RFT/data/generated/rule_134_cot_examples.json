@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.134 outlines communications that are not considered a prospectus, provided they are made after a registration statement has been filed. These communications can include factual information about the issuer, details about the securities, and procedural information about the offering, among other specified items. Additionally, such communications must include a disclaimer if the registration statement has not yet become effective and provide information on how to obtain a written prospectus.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D require SEC registration?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements and registration exemptions\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve Regulation D text to determine exemption criteria\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Does exemption apply?\", \"edgar_check\": \"Private placement agreement terms\", \"regulation\": \"Reg D Rule 506\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR terms against Rule 506 requirements\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' citation is correct for Rule 10b-5 anti-fraud precedent"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Case citation accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston, 369 U.S. 103 (1962)\"}, \"Reasoning\": \"Citation verification requires legal format check against official records\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How do courts interpret 'material information' in insider trading cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law definitions of materiality\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material information insider trading precedent\"}, \"Reasoning\": \"Requires analysis of judicial opinions defining 'material' in securities fraud context\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

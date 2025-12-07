@@ -1,0 +1,76 @@
+## Nova Lite RLVR Training (PEFT)
+
+display_name: "Nova Lite RLVR Training (PEFT)"
+versions: [ "2.0" ]
+instance_types: [ "ml.p5.48xlarge" ]
+
+## Run config - job metadata and replica counts
+run:
+  name: my-rft-run
+  model_type: amazon.nova-2-lite-v1:0:256k
+  model_name_or_path: nova-lite-2/prod
+  data_s3_path: s3://example-bucket/train.jsonl
+  output_s3_path: ""
+
+  replicas: 2 # Number of compute instances for training. All supported values: {2, 4, 8, 16}
+  generation_replicas: 2 # LLM inference replicas
+  rollout_worker_replicas: 1
+
+  # Lambda functions for RFT
+  reward_lambda_arn:
+
+    ## Training config - essential fields for all services
+training_config:
+  max_steps: 100
+  max_seq_length: 10240
+  global_batch_size: 256
+  reasoning_effort: high
+
+  data:
+    shuffle: false
+
+  rollout:
+    rollout_strategy:
+      type: off_policy_async
+      age_tolerance: 2
+    advantage_strategy:
+      number_generation: 16
+    generator:
+      max_new_tokens: 8192
+      set_random_seed: true
+      temperature: 1
+      top_k: 0
+    rewards:
+      api_endpoint:
+        lambda_arn: ${oc.select:run.reward_lambda_arn}
+        lambda_concurrency_limit: 100 # Lambda should be able to handle (rollout_worker_replicas * 64) requests
+
+  # Training configuration
+  train:
+    replicas: ${oc.select:run.replicas}
+    save_steps: 20 # saves intermediate checkpoint every 20 steps
+    top_k: 5
+
+    # RL parameters
+    clip_ratio_high: 0.2
+    ent_coeff: 0.001
+    loss_scale: 1
+    refit_freq: 4
+
+    # For Peft recipe - LoRA settings
+    peft:
+      peft_scheme: "lora" # Enable LoRA for parameter-efficient fine-tuning
+      lora_tuning:
+        loraplus_lr_ratio: 64.0 # LoRA+ learning rate scaling factor, must be between 0.0 and 100.0
+        alpha: 32 # Scaling factor for LoRA weights. Allowed values are 32, 64, 96, 128, 160 and 192
+        adapter_dropout: 0.01 # Regularization for LoRA parameters. Must be between 0.0 and 1.0
+
+    # Optimizer settings
+    optim:
+      lr: 7e-7
+      optimizer: "adam"
+      weight_decay: 0.01
+      adam_beta1: 0.9
+      adam_beta2: 0.95
+      warmup_steps: 5
+      min_lr: 1e-11

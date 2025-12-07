@@ -1,0 +1,66 @@
+{
+  "summary": "The document is a Receivables Purchase Agreement dated 11 November 2025, involving PayPal (Europe) S.\u00c0 R.L. et Cie, S.C.A. as the Seller and ALPS 2.0 Partners S.\u00c0 R.L. as the Purchaser, with BNY Mellon Corporate Trustee Services Limited acting as the Security Agent. The agreement outlines the terms for the sale and purchase of receivables, including conditions precedent, representations, warranties, and various obligations of the parties involved. It also addresses confidentiality, data protection, governing law, and jurisdiction, among other provisions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the proposed private placement exemption under Reg D satisfy safe harbor requirements for non-US investors?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg D safe harbor + international investor rules + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"Need authoritative text of safe harbor conditions\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reg D non-US investor judicial interpretations\"}, \"Reasoning\": \"Must understand how courts apply Reg D to international transactions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International investor exemption\", \"edgar_check\": \"Private placement subscription agreement\", \"regulation\": \"Reg D\", \"case_interpretation_check\": \"Relevant precedent on foreign investor exemptions\"}, \"Reasoning\": \"Final validation requires combining regulation, case law and specific EDGAR language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' citation is correctly formatted"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Bluebook compliance for case citation\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston\"}, \"Reasoning\": \"Citation verification requires specialized validation tool\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What constitutes 'material non-public information' under Rule 10b-5?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Rule 10b-5 text + judicial interpretations\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 10b-5\"}, \"Reasoning\": \"Requires original regulatory language\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information precedents\"}, \"Reasoning\": \"Judicial history clarifies ambiguous statutory terms\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

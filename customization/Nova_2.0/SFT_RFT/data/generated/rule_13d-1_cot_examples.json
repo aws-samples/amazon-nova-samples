@@ -1,0 +1,126 @@
+{
+  "summary": "17 CFR \u00a7 240.13d-1 requires individuals or entities acquiring over 5% of a class of equity securities to file a Schedule 13D with the SEC within five business days, unless they qualify for exemptions allowing them to file a shorter Schedule 13G. Exemptions apply to certain institutions like brokers, banks, and investment companies, provided they do not seek to influence the issuer's control. Additionally, those exceeding 10% ownership must file a Schedule 13G within five business days after surpassing the threshold.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption under Reg D require SEC registration verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D exemption criteria and registration requirements\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"Need exact regulatory text to determine registration exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"SEC registration requirement\", \"edgar_check\": \"Private placement agreement language\", \"regulation\": \"Reg D Rule 506\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Compliance validation requires cross-referencing EDGAR terms with statutory exemptions\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable care' obligations under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on 'reasonable care' standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 anti-fraud 'reasonable care' judicial standards\"}, \"Reasoning\": \"Judicial interpretations require analysis of court rulings on statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 144A offering circular complies with international transaction disclosure rules"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg S-K Item 303 requirements + international case law + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation S-K Item 303\"}, \"Reasoning\": \"Need disclosure requirements for international offerings\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Cross-border securities offering disclosure obligations\"}, \"Reasoning\": \"Must examine international transaction precedents\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Disclosure compliance\", \"edgar_check\": \"Offering circular text\", \"regulation\": \"Reg S-K 303\", \"case_interpretation_check\": \"International disclosure standards\"}, \"Reasoning\": \"Final validation requires statutory + judicial + EDGAR analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the XYZ Corporation's private placement exemption under Reg D meet all SEC requirements considering recent judicial trends?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg D requirements + judicial precedents + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of Regulation D exemptions first\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Recent judicial interpretations of Regulation D private placements\"}, \"Reasoning\": \"Must analyze how courts have recently applied Reg D requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"XYZ Corp private placement compliance\", \"edgar_check\": \"EDGAR Form D filing language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"Post-2018 Reg D case law\"}, \"Reasoning\": \"Final validation requires combining regulation text, judicial trends and specific EDGAR filing language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(b) is properly cited in the ABC Securities prospectus"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of SEC regulation citation format\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(b)\"}, \"Reasoning\": \"Citation verification requires exact format check against CFR structure standards. No other tools address citation formatting accuracy.\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Analyze whether DEF Inc's international crowdfunding campaign complies with both Reg CF and EU MAR cross-border requirements"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg CF requirements + EU MAR analysis + compliance validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation Crowdfunding\"}, \"Reasoning\": \"First retrieve US regulatory framework for crowdfunding\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International crowdfunding compliance\", \"edgar_check\": \"DEF Inc campaign terms\", \"regulation\": \"Regulation Crowdfunding\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation against Reg CF but lacks case law component in parameters\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

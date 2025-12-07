@@ -1,0 +1,66 @@
+{
+  "summary": "Amendment No. 1 to the Securities Purchase Agreement, dated November 17, 2025, modifies the original agreement between Inflection Point Acquisition Corp. IV, Merlin Labs, Inc., and the Purchaser to double the shares of Preferred Stock and Warrant Shares to be purchased for $100,000,000. It also introduces new terms regarding the roles and liabilities of the Placement Agents involved in the transaction. The amendment incorporates specific sections from the original agreement and includes a revised Schedule A and Exhibit A.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement exemption comply with Regulation D safe harbor requirements? Analyze using 2021 SEC guidance and relevant case precedents."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Reg D requirements + judicial precedents + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Start with official text of Regulation D safe harbor provisions\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Regulation D general solicitation violations\"}, \"Reasoning\": \"Need judicial interpretations of key compliance failures\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"S-1 private placement clause\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"Relevant case precedents\"}, \"Reasoning\": \"Combine regulatory requirements, judicial context, and EDGAR clause for final validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 'SEC v. Ralston' properly cites Section 5 of the Securities Act."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of case citation format\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston Section 5 citation\"}, \"Reasoning\": \"Citation verification requires specialized tool to check legal reference accuracy against Bluebook standards\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What constitutes 'material non-public information' under Rule 10b-5? Provide authoritative definition and key case precedent."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_interpretation_research\", \"Information needed\": \"Rule 10b-5 definition + judicial interpretation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 10b-5\"}, \"Reasoning\": \"Need exact regulatory language before analyzing interpretations\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Materiality standard under Rule 10b-5\"}, \"Reasoning\": \"Requires judicial precedent to clarify regulatory ambiguity about 'materiality'\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

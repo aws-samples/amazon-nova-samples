@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 239.11 specifies that Form S-1 is used for registering securities under the Securities Act of 1933 for registrants without an authorized alternative form, excluding foreign governments, their political subdivisions, and asset-backed securities. This regulation was updated on September 24, 2014.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the proposed private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Must retrieve official text of Regulation D to establish compliance criteria\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D private placement compliance\", \"edgar_check\": \"S-1 private placement terms\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation of EDGAR terms against Regulation D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents on 'reasonable care'\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 'reasonable care' judicial interpretation\"}, \"Reasoning\": \"Judicial interpretation requires analysis of court precedents about statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(d) citation is correct for accredited investor verification requirements"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of SEC regulation citation\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(d)\"}, \"Reasoning\": \"Citation verification requires checking format and existence of exact regulatory reference\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

@@ -1,0 +1,129 @@
+EX-10.1
+3
+ex_889254.htm
+EXHIBIT 10.1 - SUBSCRIPTION AGREEMENT DATED NOVEMBER 14, 2025 BETWEEN REGISTRANT AND LEWIS H. TITTERTON, JR.
+HTML Editor
+Exhibit 10.1
+Subscription Agreement
+This subscription agreement (this “
+Subscription
+”) is dated November 14, 2025, by and between the investor identified on the signature page hereto (the “
+Investor
+”) and ParkerVision, Inc., a Florida corporation (the “
+Company
+”), whereby the parties agree as follows:
+WHEREAS, the Company desires to sell, and the Investor desires to purchase shares of the Company’s common stock, $0.01 par value per share (“
+Common Stock
+”).
+NOW, THEREFORE, in consideration of the mutual agreements contained herein, the parties hereto agree as follows:
+1.
+Subscription
+.
+(a)    Investor agrees to buy and, subject to acceptance as provided below, the Company agrees to sell and issue to Investor, such number of shares (the “
+Shares
+”) of Common Stock as are set forth on the signature page hereto, for the aggregate purchase price set forth on the signature page hereto (the “
+Purchase Price
+”).
+(b)    The Shares have been registered pursuant to a Registration Statement on Form S-3, Registration No. 333-287427, which registration statement (the “
+Registration Statement
+”) was declared effective by the Securities and Exchange Commission on May 28, 2025 and is effective on the date hereof. A final prospectus supplement to the Registration Statement (the “
+Prospectus Supplement
+”) will be delivered as required by law.
+(c)    The Company may accept this Subscription at any time for all or any portion of the Shares subscribed for by executing a copy hereof as provided and notifying the Investor within a reasonable time thereafter. The Company has the right to reject this subscription for the Common Stock, in whole or in part for any reason and at any time prior to the Closing (as defined below) thereon, notwithstanding prior receipt by the Investor of notice of acceptance of the Investor’s subscription. In the event the Investor’s subscription is rejected, the Investor’s payment will be returned promptly to the Investor without interest or deduction and this Subscription will have no force or effect. The Shares subscribed for herein will not be deemed issued to or owned by the Investor until one copy of this Subscription has been executed by the Investor and countersigned by the Company and the Closing with respect to the Investor’s subscription has occurred.
+(d)    Provided that the full Purchase Price and a completed and executed copy of this Subscription have been tendered and not returned in accordance with Section 2 hereof, and the Company has filed the Prospectus Supplement pursuant to Rule 424(b) promulgated under the Securities Act of 1933, as amended, with respect to the offer and sale of the Shares, the closing of Investor’s purchase of the Shares shall occur on or prior to two business day following the date hereof (the date of the Closing, the “
+Closing Date
+”). Promptly thereafter, the Company shall cause the Shares to be delivered to the Investor, which delivery shall be made through the facilities of The Depository Trust Company’s DWAC system in accordance with the instructions set forth on the Investor’s signature page attached hereto under the heading “DWAC Instructions” or as otherwise provided for in writing by the investor.
+2.
+Investor Delivery of Documents and Payment
+. The Investor shall deliver the full Purchase Price by check or wire transfer on or prior to the Closing Date. In the event that the Closing is not consummated on or prior to the Closing Date, unless otherwise agreed to by Investor in writing, the Purchase Price shall be returned to the Investor, without interest or deduction.
+3.
+Company Representations and Warranties
+.  The Company represents and warrants that:
+(a)    (i) it has full corporate power and authority to enter into this Subscription and to perform all of its obligations hereunder; (ii) this Subscription has been duly authorized and executed by and, when delivered in accordance with the terms hereof, will constitute a valid and binding agreement of the Company enforceable in accordance with its terms, except as such enforceability may be limited by bankruptcy, insolvency, reorganization, moratorium or similar laws affecting the rights and remedies of creditors generally or subject to general principles of equity; (iii) the execution and delivery of this Subscription and the consummation of the transactions contemplated hereby do not conflict with or result in a breach of (A) the Company’s Certificate of Incorporation, as amended, or Bylaws, or (B) any material agreement to which the Company is a party or by which any of its property or assets is bound; (iv) the Shares when issued and paid for in accordance with the terms of this Subscription will be duly authorized, validly issued, fully paid and non-assessable; (v) all preemptive rights or rights of first refusal held by stockholders of the Company and applicable to the transactions contemplated hereby have been duly satisfied or waived in accordance with the terms of the agreements between the Company and such stockholders conferring such rights; and (vi) the transactions contemplated hereby have been duly authorized by the Company’s Board of Directors.
+(b)    The Company has filed all reports, schedules, forms, statements and other documents required to be filed by it with the United States Securities and Exchange Commission (the “SEC”) pursuant to the reporting requirements of the 1934 Act (all of the foregoing filed prior to the date hereof and all exhibits included therein and financial statements and schedules thereto and documents incorporated by reference therein being hereinafter referred to as the “
+SEC Documents
+”). As of their respective dates (except as they have been correctly amended), the SEC Documents complied in all material respects with the requirements of the 1934 Act and the rules and regulations of the SEC promulgated thereunder applicable to the SEC Documents, and none of the SEC Documents, at the time they were filed with the SEC (except as they may have been properly amended), contained any untrue statement of a material fact or omitted to state a material fact required to be stated therein or necessary in order to make the statements therein, in light of the circumstances under which they were made, not misleading. As of their respective dates (except as they have been properly amended), the financial statements of the Company included in the SEC Documents complied as to form in all material respects with applicable accounting requirements and the published rules and regulations of the SEC with respect thereto. Such financial statements have been prepared in accordance with generally accepted accounting principles, consistently applied, during the periods involved (except (i) as may be otherwise indicated in such financial statements or the notes thereto or (ii) in the case of unaudited interim statements, to the extent they may exclude footnotes or may be condensed or summary statements) and fairly present in all material respects the financial position of the Company as of the dates thereof and the results of its operations and cash flows for the periods then ended (subject, in the case of unaudited statements, to normal year-end audit adjustments). Except for routine correspondence, such as comment letters and notices of effectiveness in connection with previously filed registration statements or periodic reports publicly available on EDGAR, to the Company’s knowledge, none of the Company or any of its subsidiaries (the “
+Subsidiaries
+”) are presently the subject of any inquiry, investigation or action by the SEC.
+(c)    Except as disclosed in the SEC Documents, (i) no shares of the Company’s capital stock are subject to preemptive rights or any other similar rights or any liens or encumbrances suffered or permitted by the Company, (ii) there are no outstanding debt securities of the Company or any of its Subsidiaries, (iii) there are no outstanding options, warrants, scrip, rights to subscribe to, calls or commitments of any character whatsoever relating to, or securities or rights convertible into, any shares of capital stock of the Company or any of its Subsidiaries, or contracts, commitments, understandings or arrangements by which the Company or any of its Subsidiaries is or may become bound to issue additional shares of capital stock of the Company or any of its Subsidiaries or options, warrants, scrip, rights to subscribe to, calls or commitments of any character whatsoever relating to, or securities or rights convertible into, any shares of capital stock of the Company or any of its Subsidiaries, (iv) there are no material agreements or arrangements under which the Company or any of its Subsidiaries is obligated to register the sale of any of their securities under the 1933 Act, (v) there are no outstanding securities or instruments of the Company or any of its Subsidiaries which contain any redemption or similar provisions, and there are no contracts, commitments, understandings or arrangements by which the Company or any of its Subsidiaries is or may become bound to redeem a security of the Company or any of its Subsidiaries, (vi) there are no securities or instruments containing anti-dilution or similar provisions that will be triggered by the issuance of the Securities as described in this Subscription, and (vii) the Company does not have any stock appreciation rights or “phantom stock” plans or agreements or any similar plan or agreement.
+(d)    The Registration Statement has been declared effective by the SEC, and no stop order has been issued or is pending or, to the knowledge of the Company, threatened by the SEC with respect thereto. As of the date hereof, the Company has a dollar amount of securities registered and unsold under the Registration Statement, which is not less than the sum of the Purchase Price. The Company shall keep the Registration Statement effective and available for sales of all Shares to the Buyer through and including the Closing Date. The Registration Statement (including any amendments or supplements thereto and prospectuses or prospectus supplements, including the Prospectus contained therein and the Prospectus Supplement) shall not contain any untrue statement of a material fact or omit to state a material fact required to be stated therein, or necessary to make the statements therein, in light of the circumstances in which they were made, not misleading.
+4.
+Investor Representations, Warranties and Acknowledgments
+.
+(a)    The Investor represents and warrants that: (i) it has full right, power and authority to enter into this Subscription and to perform all of its obligations hereunder; (ii) this Subscription has been duly authorized and executed by the Investor and , when delivered in accordance with the terms hereof, will constitute a valid and binding agreement of the Investor enforceable against the Investor in accordance with its terms, except as such enforceability may be limited by bankruptcy, insolvency, reorganization, moratorium or similar laws affecting the rights and remedies of creditors generally or subject to general principles of equity; (iii) the execution and delivery of this Subscription and the consummation of the transactions contemplated hereby do not conflict with or result in a breach of (A) the Investor’s certificate of incorporation or by-laws (or other governing documents), or (B) any material agreement or any law or regulation to which the Investor is a party or by which any of its property or assets is bound; (iv) it has had full access to the base prospectus included in the Registration Statement and the Company’s periodic reports and other information incorporated by reference therein (the “
+Prospectus
+”), and was able to read, review, download and print such materials; (v) in making its investment decision with respect to the Shares, the Investor and its advisors, if any, have relied solely on the Prospectus; (vi) it is knowledgeable, sophisticated and experienced in making, and is qualified to make, decisions with respect to investments in securities representing an investment decision like that involved in the purchase of the Shares; and (vii) except as set forth below, the Investor is not a, and it has no direct or indirect affiliation or association with any, member of the Financial Industry Regulatory Authority as of the date hereof.
+Exceptions:
+NONE
+(b)    The Investor also represents and warrants that, other than the transactions contemplated hereunder, the Investor has not directly or indirectly, nor has any person acting on behalf of or pursuant to any understanding with the Investor, executed any disposition, including “short sales” as defined in Rule 200 of Regulation SHO under the Securities Exchange Act of 1934 (the “
+Short Sales
+”), in the securities of the Company during the period commencing from the time that the Investor first became aware of the proposed transactions contemplated hereunder until the date hereof (“
+Discussion Time
+”). The Investor has maintained the confidentiality of all disclosures made to it in connection with this transaction (including the existence and terms of this transaction) except with respect to the Investor’s legal counsel and advisors subject to a duty of confidentiality substantially similar to that contained herein. Investor shall be liable for any breach by its legal counsel or advisors of the confidentiality obligations contained herein as if such breach were by Investor.
+5.
+Investor Covenant Regarding Short Sales and Confidentiality
+. The Investor covenants that neither it nor any affiliates acting on its behalf or pursuant to any understanding with it will execute any Short Sales or other disposition of securities of the Company during the period after the Discussion Time and ending at the time that the transactions contemplated by this Subscription are first publicly announced through a press release, prospectus supplement and/or Form 8-K. Furthermore, the Investor covenants that no shares received from the offering will be used to cover any previously made short sales. The Investor covenants that until such time as the transactions contemplated by this Subscription are publicly disclosed by the Company through a press release, prospectus supplement and/or Form 8-K, the Investor will maintain the confidentiality of all disclosures made to it in connection with this transaction (including the existence and terms of this transaction).
+6.
+Miscellaneous
+.
+(a)    This Subscription constitutes the entire understanding and agreement between the parties with respect to its subject matter, and there are no agreements or understandings with respect to the subject matter hereof which are not contained in this Subscription.  This Subscription may be modified only in writing signed by the parties hereto.
+(b)    This Subscription may be executed in any number of counterparts, all of which taken together shall constitute one and the same instrument and shall become effective when counterparts have been signed by each party and delivered to the other parties hereto, it being understood that all parties need not sign the same counterpart.  Execution may be made by delivery by facsimile or by email delivery of a “.pdf” format data file.
+(c)    The provisions of this Subscription are severable and, in the event that any court or officials of any regulatory agency of competent jurisdiction shall determine that any one or more of the provisions or part of the provisions contained in this Subscription shall, for any reason, be held to be invalid, illegal or unenforceable in any respect, such invalidity, illegality or unenforceability shall not affect any other provision or part of a provision of this Subscription and this Subscription shall be reformed and construed as if such invalid or illegal or unenforceable provision, or part of such provision, had never been contained herein, so that such provisions would be valid, legal and enforceable to the maximum extent possible, so long as such construction does not materially adversely effect the economic rights of either party hereto.
+(d)    All communications hereunder shall be in writing and shall be mailed, hand delivered, sent by a recognized overnight courier service such as Federal Express, or sent via facsimile or email, to the party to whom it is addressed at the following addresses or such other address as such party may advise the other in writing:
+If to the Company:
+ParkerVision, Inc.
+4446-1A Hendricks Avenue, Suite 354
+Jacksonville, Florida 32207
+Telephone: (904) 732-6100
+Attention: Cynthia French, Chief Financial Officer
+E-Mail: cfrench@Parkervision.com
+With a copy (for informational purposes only) to:
+Graubard Miller
+405 Lexington Avenue, 44th Floor
+New York, NY 10174
+Telephone: (212) 818-8800
+Attention: David Alan Miller, Esq. / Paul Lucido, Esq.
+Email: dmiller@graubard.com / plucido@graubard.com
+If to the Investor:  as set forth on the signature page hereto.
+All notices hereunder shall be effective upon receipt by the party to which it is addressed.
+(e)    This Subscription shall be governed by and interpreted in accordance with the laws of the State of New York for contracts to be wholly performed in such state and without giving effect to the principles thereof regarding the conflict of laws. Each party hereby irrevocably submits to the exclusive jurisdiction of the state and federal courts sitting in New York, New York for the adjudication of any dispute hereunder or in connection herewith or with any transaction contemplated hereby or discussed herein, and each irrevocably waives any claim that it is not personally subject to the jurisdiction of such court, or that such court is an improper or inconvenient venue for such action, suit, or proceeding. THE PARTIES EACH KNOWINGLY AND INTENTIONALLY, TO THE GREATEST EXTENT PERMITTED BY APPLICABLE LAW, HEREBY ABSOLUTELY, UNCONDITIONALLY, IRREVOCABLY AND EXPRESSLY WAIVE FOREVER TRIAL BY JURY.
+[
+signature pages follow
+]
+If the foregoing correctly sets forth our agreement, please confirm this by signing and returning to us the duplicate copy of this Subscription.
+PARKERVISION, INC.
+By:
+/s/ Cynthia French
+Name: Cynthia French
+Number of Shares:
+4,761,905
+Purchase Price Per Share:
+$0.21
+Aggregate Purchase Price:
+$1,000,000
+Title: Chief Financial Officer
+INVESTOR:
+/s/ Lewis H Titterton, Jr.
+___________________________
+Lewis H. Titterton, Jr.
+Address for Notice:
+______________________________________________
+______________________________________________
+______________________________________________
+Facsimile: _____________________________________
+Attention: _____________________________________
+DWAC Instructions
+:
+Name of DTC Participant (broker-dealer at which the account or accounts to be credited with the Shares are maintained):
+_________________________________
+DTC Participant Number:
+_________________________________
+Name of Account at DTC Participant being
+credited with the Shares:
+_________________________________
+Account Number at DTC Participant being credited
+with the Shares
+_________________________________
+The sale of the Shares is being made pursuant to a registration statement under the Securities Act. A final prospectus supplement relating to the sale of the Shares will be filed with the Commission and will be available on the Commission
+’
+s website at www.sec.gov.

@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 240.14a-8 outlines the conditions under which a company must include a shareholder's proposal in its proxy materials for shareholder meetings, detailing eligibility requirements and procedural steps for submission. Shareholders must meet specific ownership thresholds and provide written statements of intent to hold securities and availability for discussions. The company can exclude proposals under certain conditions, subject to SEC review.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need official text of Regulation D exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Private placement subscription agreement\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"None\"}, \"Reasoning\": \"After retrieving regulations, must validate EDGAR clauses against them\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial interpretation of 'material non-public information' in insider trading cases?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law definitions of materiality\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Material non-public information insider trading precedent\"}, \"Reasoning\": \"Requires analysis of court rulings about materiality standards in different contexts\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 17 CFR 230.506 citation exists in securities law."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format and existence check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506\"}, \"Reasoning\": \"Citation verification requires format validation against official CFR structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

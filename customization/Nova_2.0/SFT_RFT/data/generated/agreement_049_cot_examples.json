@@ -1,0 +1,66 @@
+{
+  "summary": "This promissory note, dated September 30, 2025, is issued by Aperture AC to Aperture Sponsor LLC for up to $500,000 to cover IPO-related costs, with repayment due by June 30, 2026, or upon IPO completion, whichever is earlier. The note does not accrue interest and allows for drawdowns of at least $10,000, with a total cap of $500,000, and includes default provisions and waivers of certain notices and defenses.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements and EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of Regulation D safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"Memorandum exemption language\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Requires validation against both Regulation D text and specific EDGAR clauses\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted Section 5 registration exemptions for international token sales?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents about international application of Section 5\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 5 international token sales judicial interpretation\"}, \"Reasoning\": \"Query requires analysis of judicial precedent rather than statutory text or compliance validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 10-K filing's anti-fraud disclosures meet Rule 10b-5 standards considering SEC v. Texas Gulf Sulphur precedent"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Rule 10b-5 requirements + case interpretation + disclosure validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 10b-5\"}, \"Reasoning\": \"Need original regulatory text\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Texas Gulf Sulphur Rule 10b-5 application\"}, \"Reasoning\": \"Requires landmark case precedent interpretation\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Anti-fraud disclosure compliance\", \"edgar_check\": \"10-K risk factor section\", \"regulation\": \"Rule 10b-5\", \"case_interpretation_check\": \"Materiality standards from case\"}, \"Reasoning\": \"Final validation needs regulation + case precedent + specific disclosure language\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

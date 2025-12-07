@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.901 specifies that for the purposes of section 5 of the Securities Act of 1933, terms like \"offer,\" \"sell,\" and \"sale\" pertain to transactions within the United States, excluding those occurring outside the country. This regulation clarifies the geographic scope of these terms under the Act.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the private placement exemption under Regulation D require SEC registration verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements and registration verification\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D Rule 506\"}, \"Reasoning\": \"Need authoritative text to confirm registration exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Registration requirement verification\", \"edgar_check\": \"Private placement memorandum\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Must validate EDGAR documents against established regulatory requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Analyze judicial interpretations of 'reasonable care' under Section 11 anti-fraud provisions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents about Section 11 liability standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reasonable care standard under Securities Act Section 11\"}, \"Reasoning\": \"Requires historical court analysis of statutory language application\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Validate S-1 resale compliance against Rule 144 safe harbor conditions"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Rule 144 text + judicial precedent + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Rule 144\"}, \"Reasoning\": \"Need official safe harbor conditions first\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Rule 144(c)(1) affiliation interpretations\"}, \"Reasoning\": \"Courts clarify ambiguous terms like 'affiliate'\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Resale restriction compliance\", \"edgar_check\": \"S-1 resale clause\", \"regulation\": \"Rule 144\", \"case_interpretation_check\": \"Court rulings on holding periods\"}, \"Reasoning\": \"Combines regulation + precedent + EDGAR validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

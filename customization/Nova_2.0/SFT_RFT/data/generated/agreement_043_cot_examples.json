@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a letter dated November 13, 2025, from INVO Fertility, Inc. to James Goren of JAG Multi Investments LLC, regarding the extension of maturity dates for certain demand notes and a reduction in the warrant exercise price. If INVO pays $100,000 by November 31, 2025, the maturity date of the notes will extend to December 31, 2025, and the warrant exercise price will reduce to $0.75 per share.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of Rule 506 exemptions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance\", \"edgar_check\": \"Private placement offering document\", \"regulation\": \"Rule 506\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Must validate EDGAR clauses against Regulation D requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted Section 5 registration requirements for international token sales?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedents about international securities registration\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 5 international token sales precedents\"}, \"Reasoning\": \"Requires judicial interpretation of statutory requirements in cross-border context\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.502(d) is correctly cited in this prospectus supplement"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format accuracy check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.502(d)\"}, \"Reasoning\": \"Citation verification requires format validation against official CFR structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

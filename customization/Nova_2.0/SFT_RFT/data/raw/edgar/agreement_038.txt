@@ -1,0 +1,487 @@
+EX-10.21
+2
+hzo-ex10_21.htm
+EX-10.21
+EX-10.21
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+Exhibit 10.21
+FIFTH AMENDMENT TO CREDIT AGREEMENT
+THIS FIFTH AMENDMENT TO CREDIT AGREEMENT, dated as of August 5, 2025 (this “
+Fifth Amendment
+”), is made and entered into by and among
+MARINEMAX, INC.
+, a Florida corporation (the “
+Borrower Representative
+”), each of the other Loan Parties party hereto, each of the Lenders party hereto,
+MANUFACTURERS AND TRADERS TRUST COMPANY
+, a New York banking corporation (the “
+Administrative Agent
+”), as Administrative Agent, Swingline Lender and Issuing Bank and
+WELLS FARGO COMMERCIAL DISTRIBUTION FINANCE, LLC
+(the “
+Floor Plan Agent
+”), as Floor Plan Agent.
+RECITALS:
+WHEREAS, reference is made to the Credit Agreement dated as of August 8, 2022 (as amended, restated, supplemented or otherwise modified prior to the date hereof, the “
+Existing Credit Agreement
+,” and as amended by this Fifth Amendment, the “
+Credit Agreement
+”), by and among the Borrower Representative, the Loan Parties party thereto, the Lenders party thereto, the Administrative Agent and the Floor Plan Agent; and
+WHEREAS, subject to the terms and conditions of the Existing Credit Agreement the Borrowers have requested that the Existing Credit Agreement be amended in the manner provided for herein.
+NOW, THEREFORE, in consideration of the mutual agreements herein contained and other good and valuable consideration, the sufficiency and receipt of which are hereby acknowledged, the parties hereto agree as follows:
+SECTION 1.
+Defined Terms; Interpretation; Etc
+. Capitalized terms used and not defined herein shall have the meanings assigned to such terms in the Credit Agreement. This Fifth Amendment is a “Credit Document”, as defined in the Credit Agreement.
+SECTION 2.
+Amendments to Existing Credit Agreement.
+Subject to the terms and conditions set forth herein, the parties hereto agree that the Existing Credit Agreement is hereby amended in the following manner:
+(a)
+Section 1.01
+of the Existing Credit Agreement is hereby amended by deleting the definition of “Consolidated Fixed Charge Coverage Ratio” in its entirety and substituting in lieu thereof the following:
+““
+Consolidated Fixed Charge Coverage Ratio
+” means, as of the date of determination for any Measurement Period, the ratio for such Measurement Period of (a) Consolidated EBITDA of Holdings and its Subsidiaries for such period minus (i) Cash Taxes for Holdings and its Subsidiaries on a consolidated basis paid during such period, and (ii) all dividends, distributions, and other Restricted Payments paid in cash by Holdings or any Subsidiary on a consolidated basis during such period (
+provided
+that, beginning with the calculation of the Consolidated Fixed Charge Coverage Ratio for the Fiscal Quarter ending September 30, 2025 and for each Fiscal Quarter thereafter, this
+clause (ii)
+shall exclude any Restricted Payments made on or prior to June 30, 2025 consisting of
+1
+share repurchases made by Holdings in connection with a Rule 10b5-1 share repurchase plan), to (b) Consolidated Fixed Charges for such period.”;
+The parties hereto acknowledge and agree that this Fifth Amendment is not a novation of the Existing Credit Agreement, any other Credit Document or of any credit facility or guaranty provided thereunder or in respect thereof. As used in the Credit Agreement, the terms “
+Agreement
+”, “
+this Agreement
+”, “
+herein
+”, “
+hereinafter
+”, “
+hereto
+”, “
+hereof
+” and words of similar import shall, unless the context otherwise requires, from and after the Fifth Amendment Effective Date (as defined below), mean or refer to the Credit Agreement, as further amended, supplemented or modified from time to time in accordance with its terms. As used in any other Credit Document, from and after the Fifth Amendment Effective Date, all references to the “
+Credit Agreement
+” in such Credit Documents shall, unless the context otherwise requires, mean or refer to the Credit Agreement, as further amended, restated, supplemented or otherwise modified from time to time in accordance with its terms.
+SECTION 3.
+Conditions Precedent
+. This Fifth Amendment shall become effective as of the date on which the following conditions precedent are satisfied (such date, the “
+Fifth Amendment Effective Date
+”):
+(a)
+The Administrative Agent (or its counsel) shall have received from each Borrower, each other Loan Party and the Required Lenders a counterpart of this Fifth Amendment duly executed and delivered on behalf of such party and acknowledged by the Administrative Agent; and
+(b)
+The Administrative Agent shall have received all fees and other amounts due and payable on or prior to the Fifth Amendment Effective Date and reimbursement or payment of all reasonable and documented out-of-pocket expenses (including reasonable and documented fees, charges and disbursements of counsel) required to be reimbursed or paid by any Loan Party pursuant to the terms of the Credit Agreement to the extent invoiced prior to or on the Fifth Amendment Effective Date.
+The Administrative Agent shall promptly notify the Borrowers and the Lenders of the Fifth Amendment Effective Date, and such notice shall be conclusive and binding.
+SECTION 4.
+Representations and Warranties
+.	In order to induce the applicable Lenders, the Floor Plan Agent and the Administrative Agent to enter into this Fifth Amendment, each Loan Party hereby represents and warrants to the Lenders, the Floor Plan Agent and the Administrative Agent on and as of the Fifth Amendment Effective Date that:
+(a)
+Authorization; No Contravention
+. The execution and delivery by each Loan Party of this Fifth Amendment and performance by each Loan Party of this Fifth Amendment and the Credit Agreement have been duly authorized by all necessary corporate or other organizational action, and do not and will not (a) conflict with, constitute a default under or result in any breach of (i) the terms and conditions of the Organization Documents of any Loan Party, or (ii) any Law or any agreement or instrument or order, writ, judgment, injunction or decree to which any Loan Party is a party or by which it is bound or to which it is subject, which conflict, default or breach would cause a Material Adverse Change, or (b) result in the creation or enforcement of any Lien upon any property (now or hereafter acquired) of any of the Loan Parties (other than Liens securing the Obligations and the Permitted Encumbrances). No event has occurred and is continuing and no condition exists or will exist after giving effect to the Fifth Amendment which constitutes an Event of Default or a Default.
+(b)
+Binding Effect
+. This Fifth Amendment has been executed and delivered by the respective Loan Parties and will, upon such execution and delivery, constitute the legal, valid and binding obligations of such Loan Parties, enforceable against the respective Loan Parties in accordance with its terms, subject to applicable bankruptcy, insolvency, reorganization moratorium or similar Laws affecting the rights of creditors generally and to the effect of general principles of equity whether applied by a court of Law or equity.
+(c)
+Representations and Warranties
+. The representations and warranties of the Loan Parties contained in this Fifth Amendment or in any other Credit Document shall be true and correct in all material respects (and, in the case of any representation or warranty that is qualified by materiality or Material Adverse Change, shall be true and correct in all respects) on and as of the date hereof, except to the extent that such representations and warranties specifically refer to an earlier date, in which case they shall be true and correct in all material respects (and, in the case of any representation or warranty that is qualified by materiality or Material Adverse Change, shall be true and correct in all respects) as of such earlier date, and except that for purposes of this
+Section 4(c)
+, the representations and warranties contained in
+Section 3.08.1
+of the Credit Agreement shall be deemed to refer to the most recent statements furnished pursuant to
+Sections 5.09.2
+and
+5.09.3
+of the Credit Agreement, respectively (on and after the date that financial statements have been delivered pursuant to such Sections).
+SECTION 5.
+Reaffirmation of Guarantees and Security Interests
+. Each Loan Party hereby acknowledges its receipt of a copy of this Fifth Amendment and its review of the terms and conditions hereof and consents to the terms and conditions of this Fifth Amendment and the transactions contemplated hereby. Except as provided in this Fifth Amendment, including as it relates to the scope of Obligations secured by the Collateral on and after the Fifth Amendment Effective Date, each Loan Party hereby (a) affirms and confirms its guarantees, pledges, grants and other undertakings under the Existing Credit Agreement, the Guarantee and Collateral Agreement, and the other Credit Documents to which it is a party and (b) agrees that (i) each Credit Document to which it is a party shall continue to be in full force and effect and (ii) all guarantees, pledges, grants and other undertakings thereunder shall continue to be in full force and effect and shall accrue to the benefit of the Secured Parties, including the Floor Plan Lenders. In furtherance of the foregoing, each Loan Party party hereto affirms and confirms its guarantee of the Obligations as a “
+Guarantor
+” party to the Guarantee and Collateral Agreement.
+SECTION 6.
+Miscellaneous
+.
+(a)
+No Waiver
+. Nothing contained herein shall be deemed to constitute a waiver of compliance with, or consent to any deviation from, any term or condition contained in the Credit Agreement or any of the other Credit Documents except as expressly stated herein, or constitute a course of conduct or dealing among the parties. The Administrative Agent and the Lenders reserve all rights, privileges and remedies under the Credit Documents.
+(b)
+Fees and Expenses
+. The Borrowers shall reimburse the Administrative Agent and the Floor Plan Agent for all reasonable and documented out-of-pocket costs and expenses (including all outstanding reasonable and documented attorneys’ fees of counsel to the Administrative Agent and counsel to the Floor Plan Agent) incurred by the Administrative Agent and the Floor Plan Agent in connection with the preparation, negotiation, and execution of this Fifth Amendment and the other agreements and documents executed and delivered in connection herewith in addition to any other outstanding fees and expenses owing, in each case, in accordance with the terms of the Credit Agreement and incurred prior to the date hereof.
+(c)
+Release
+. In consideration of the agreements of Administrative Agent, Floor Plan Agent and each Lender contained in this Fifth Amendment and for other good and valuable consideration, the receipt and sufficiency of which is hereby acknowledged, each Borrower (collectively, the “
+Releasors
+”), on behalf of itself and its successors, assigns, and other legal representatives, hereby absolutely, unconditionally and irrevocably releases, remises and forever discharges Administrative Agent, Floor Plan Agent and each Lender, each of their successors and assigns, each of their respective affiliates, and their respective affiliates’ present and former shareholders, members, subsidiaries, divisions, predecessors, directors, officers, attorneys, employees, agents and other representatives (Administrative Agent, Floor Plan Agent, Lenders and all such other Persons being hereinafter referred to collectively as the “Releasees,” and individually as a “
+Releasee
+”), of and from all demands, actions, causes of action, suits, covenants, contracts, controversies, agreements, promises, sums of money, accounts, bills, reckonings, damages and any and all other claims, counterclaims, defenses, rights of set-off, demands and liabilities whatsoever (individually a “
+Claim
+” and collectively, “
+Claims
+”) of every name and nature, either known or unknown, both at law and in equity, which Releasors, or any of them, or any of their successors, assigns or other legal representatives may now or hereafter own, hold, have or claim to have against the Releasees or any of them for, upon, or by reason of any circumstance, action, cause or thing whatsoever which arises at any time on or prior to the date hereof, including, without limitation, for or on the account of, or in relation to, or in any way in connection with the Credit Agreement, or any of the other Credit Documents or transactions thereunder or related thereto.
+(d)
+Governing Law
+.
+This Fifth Amendment and any claims, disputes or causes of action (whether in contract or tort) arising out of or related to this Fifth Amendment and the transaction contemplated hereby shall be governed by, and construed in accordance with, the Laws of the Governing State.
+(e)
+JURISDICTION
+.
+EACH LOAN PARTY IRREVOCABLY AND UNCONDITIONALLY AGREES THAT IT WILL NOT COMMENCE ANY ACTION, LITIGATION OR PROCEEDING OF ANY KIND OR DESCRIPTION, WHETHER IN LAW OR EQUITY, WHETHER IN CONTRACT OR IN TORT OR OTHERWISE, AGAINST THE ADMINISTRATIVE AGENT, THE FLOOR PLAN AGENT, ANY LENDER, OR ANY RELATED PARTY OF THE FOREGOING IN ANY WAY RELATING TO THIS FIFTH AMENDMENT OR ANY OTHER CREDIT DOCUMENT OR THE TRANSACTIONS RELATING HERETO OR THERETO, IN ANY FORUM OTHER THAN THE COURTS OF THE STATE OF NEW YORK SITTING IN NEW YORK COUNTY AND OF THE UNITED STATES DISTRICT COURT OF THE SOUTHERN DISTRICT OF NEW YORK, AND ANY APPELLATE COURT FROM ANY THEREOF, AND EACH OF THE PARTIES HERETO IRREVOCABLY AND UNCONDITIONALLY SUBMITS TO THE NON-EXCLUSIVE JURISDICTION OF SUCH COURTS AND AGREES THAT ALL CLAIMS IN RESPECT OF ANY SUCH ACTION, LITIGATION OR PROCEEDING, OR ANY OTHER ACTION OR PROCEEDING ARISING OUT OF OR RELATING TO THIS FIFTH AMENDMENT OR ANY OTHER CREDIT DOCUMENT, OR FOR RECOGNITION OR ENFORCEMENT OF ANY JUDGMENT, MAY BE HEARD AND DETERMINED IN SUCH NEW YORK STATE COURT OR, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN SUCH FEDERAL COURT. EACH OF THE PARTIES HERETO AGREES THAT A FINAL JUDGMENT IN ANY SUCH ACTION OR PROCEEDING SHALL BE CONCLUSIVE AND MAY BE ENFORCED IN OTHER JURISDICTIONS BY SUIT ON THE JUDGMENT OR IN ANY OTHER MANNER PROVIDED BY LAW. NOTHING IN THIS FIFTH AMENDMENT OR IN ANY OTHER CREDIT DOCUMENT SHALL AFFECT ANY RIGHT THAT THE ADMINISTRATIVE AGENT OR ANY LENDER MAY OTHERWISE HAVE TO BRING ANY
+ACTION OR PROCEEDING RELATING TO THIS FIFTH AMENDMENT OR ANY OTHER CREDIT DOCUMENT AGAINST ANY LOAN PARTY OR ITS PROPERTIES IN THE COURTS OF ANY JURISDICTION.
+(f)
+VENUE
+. EACH LOAN PARTY IRREVOCABLY AND UNCONDITIONALLY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY OBJECTION THAT IT MAY NOW OR HEREAFTER HAVE TO THE LAYING OF VENUE OF ANY ACTION OR PROCEEDING ARISING OUT OF OR RELATING TO THIS FIFTH AMENDMENT OR ANY OTHER CREDIT DOCUMENT IN ANY COURT REFERRED TO IN
+SECTION 10.20
+OF THE CREDIT AGREEMENT. EACH OF THE PARTIES HERETO HEREBY IRREVOCABLY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, THE DEFENSE OF AN INCONVENIENT FORUM TO THE MAINTENANCE OF SUCH ACTION OR PROCEEDING IN ANY SUCH COURT.
+(g)
+SERVICE OF PROCESS
+. EACH LOAN PARTY IRREVOCABLY CONSENTS TO SERVICE OF PROCESS IN THE MANNER PROVIDED FOR NOTICES IN
+SECTION 10.10
+OF THE CREDIT AGREEMENT. NOTHING IN THIS FIFTH AMENDMENT WILL AFFECT THE RIGHT OF ANY PARTY HERETO TO SERVE PROCESS IN ANY OTHER MANNER PERMITTED BY APPLICABLE LAW.
+(h)
+WAIVER OF JURY TRIAL
+. EACH PARTY HERETO HEREBY IRREVOCABLY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY LITIGATION DIRECTLY OR INDIRECTLY ARISING OUT OF, UNDER OR IN CONNECTION WITH THIS FIFTH AMENDMENT OR THE OBLIGATIONS. EACH PARTY HERETO (A) CERTIFIES THAT NO REPRESENTATIVE, ADMINISTRATIVE AGENT OR ATTORNEY OF ANY OTHER PARTY HAS REPRESENTED, EXPRESSLY OR OTHERWISE, THAT SUCH OTHER PARTY WOULD NOT, IN THE EVENT OF LITIGATION, SEEK TO ENFORCE THE FOREGOING WAIVER AND (B) ACKNOWLEDGES THAT IT AND THE OTHER PARTIES HERETO HAVE BEEN INDUCED TO ENTER INTO THIS FIFTH AMENDMENT BY, AMONG OTHER THINGS, THE MUTUAL WAIVERS AND CERTIFICATIONS IN THIS SECTION
+.
+(i)
+Benefits
+. This Fifth Amendment shall be binding upon and shall inure to the benefit of the parties hereto and their respective successors and assigns.
+(j)
+Counterparts and Integration
+. This Fifth Amendment may be executed in counterparts (and by different parties hereto in different counterparts), each of which shall constitute an original, but all of which when taken together shall constitute a single contract. This Fifth Amendment and the other Credit Documents constitute the entire contract among the parties hereto relating to the subject matter hereof and supersede any and all previous agreements and understandings, oral or written, relating to the subject matter hereof. Except as provided in
+Section 3
+, this Fifth Amendment shall become effective when it shall have been executed by the Administrative Agent and when the Administrative Agent shall have received counterparts hereof that, when taken together, bear the signatures of each of the other parties hereto. Delivery of an executed counterpart of a signature page of this Fifth Amendment by facsimile or in electronic (i.e., “
+pdf
+” or “
+tif
+”) format shall be just as effective as the delivery of a manually executed counterpart of this Fifth Amendment.
+[
+Remainder of this page intentionally left blank
+]
+IN WITNESS WHEREOF, the parties hereto have caused this Fifth Amendment to be duly executed by their respective authorized officers as of the day and year first above written.
+BORROWER REPRESENTATIVE AND
+BORROWERS AND GUARANTORS:
+MARINEMAX, INC.
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+Executive Vice President, Chief Financial Officer, and Secretary
+BOATING GEAR CENTER, LLC
+BOATYARD, LLC
+FWW, LLC
+[****]
+GULFPORT MARINA, LLC
+KCS INTERNATIONAL INC.
+MARINEMAX CHARTER SERVICES, LLC
+MARINEMAX EAST, INC.
+MARINEMAX KW, LLC
+MARINEMAX NORTHEAST, LLC
+MARINEMAX PRODUCTS, INC.
+MY WEB SERVICES, LLC
+N & J GROUP, LLC
+N & J MEDIA, LLC
+NEWCOAST INSURANCE SERVICES, LLC
+NISSWA MARINE, LLC
+NORTHROP & JOHNSON HOLDING LLC
+NORTHROP & JOHNSON YACHTS-SHIPS LLC
+NVGH, LLC
+PERFECT YACHT CHARTER, LLC
+SILVER SEAS CALIFORNIA, INC.
+SILVER SEAS YACHTS, LLC
+SKIPPER BUD’S OF ILLINOIS, LLC
+SKIPPER MARINE, LLC
+SKIPPER MARINE OF CHICAGO-LAND, LLC
+SKIPPER MARINE OF FOX VALLEY, LLC
+SKIPPER MARINE OF MADISON, LLC
+SKIPPER MARINE OF MICHIGAN, LLC
+SKIPPER MARINE OF OHIO, LLC
+US LIQUIDATORS, LLC
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+President, Secretary, and Treasurer
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+MARINEMAX SERVICES, INC.
+NEWCOAST FINANCIAL SERVICES, LLC
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+Vice President, Secretary, and Treasurer
+NORTHROP & JOHNSON CALIFORNIA INC.
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+President, Secretary, and Chief Financial Officer
+INTREPID POWERBOATS, INC.
+INTREPID SOUTHEAST, INC.
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+Secretary, and Treasurer
+FRASER YACHTS CALIFORNIA
+FRASER YACHTS FLORIDA, INC.
+By:_
+_/s/ Alessandra Nenci______
+Alessandra Nenci
+Chief Financial Officer
+KCS RE ACQUISITION COMPANY, LLC
+By: KCS INTERNATIONAL INC.
+Sole Manager
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+President, Secretary, and Treasurer
+WAVE AVIATION, LLC
+By: MARINEMAX EAST, INC.
+Sole Manager
+By:_
+/s/ Michael H. McLamb
+_____________
+Michael H. McLamb
+President, Secretary, and Treasurer
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+CABO MARINA, S. DE R.L. DE C.V.
+By:_/s
+/ Jordan A.E. Franklin
+________
+Name: Jordan A.E. Franklin
+Title: Power of Attorney
+FAIRPORT YACHT SUPPORT LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: President, Secretary and Treasurer
+IGY TRIDENT SERVICES LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Executive Vice President and Secretary
+IGY-AYH ST. THOMAS HOLDINGS, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Secretary
+ISLAND GARDENS DEEP HARBOUR, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Executive Vice President and Secretary
+ISLAND GLOBAL YACHTING LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title:Executive Vice President and Secretary
+RODNEY BAY MARINA LIMITED
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Secretary
+YACHT HAVEN USVI LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Secretary
+YHUSVI MARINA, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Secretary
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+IGY SETE MARINA SAS
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Director
+IGY-RED FROG LLC
+By:_
+/s/ Steven A. English
+_______________
+Name: Steven A. English
+Title: President
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+GULFWIND DEVELOPMENT, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: President, Secretary and Treasurer
+MIDCOAST CONSTRUCTION ENTERPRISES LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: President, Secretary and Treasurer
+MIDCOAST MARINE GROUP, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: President, Secretary and Treasurer
+NEW WAVE INNOVATIONS, LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: President and Secretary
+BOATZON HOLDINGS LLC
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Secretary
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+HOP-INN ENTERPRISES N.V
+.
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Director
+SIMPSONBAY YACHT CLUB MARINA N.V.
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Director
+YACHTCLUB AT ISLE DE SOL B.V.
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Director
+WILLIAMS TENDERS USA, INC.
+By:__
+/s/ Michael H. McLamb
+_____________
+Name: Michael H. McLamb
+Title: Director
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+REQUIRED LENDERS:
+MANUFACTURERS AND TRADERS TRUST COMPANY
+,
+in its capacities as Administrative Agent, Swingline Lender, 						Issuing Bank and as a Lender
+By:
+_/s/ Matthew Fahey
+__________
+Name: Matthew Fahey
+Title: SVP
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+WELLS FARGO COMMERCIAL DISTRIBUTION 							FINANCE, LLC
+,
+in its capacities as Floor Plan Agent and as a Lender
+By:
+_/s/ Thomas M. Adamski
+______________
+Name: Thomas M. Adamski
+Title: Managing Director
+[FIFTH AMENDMENT TO CREDIT AGREEMENT]
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+BANK OF AMERICA, N.A.
+, as a Lender
+By:
+_/s/ Sam Scott
+__________
+Name: Sam Scott
+Title: Senior Vice President
+14
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+PNC BANK, N.A.
+, as a Lender
+By:
+_/s/ Carmen Campise Jr.
+_________
+Name: Carmen Campise Jr.
+Title: Senior Vice President
+15
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+FLAGSTAR BANK, N.A.
+, Assignee of Flagstar Specialty Finance Company, LLC, as successor-in-interest to NYCB Specialty Finance Company, LLC, as a Lender
+By:
+_/s/ Mark C. Mazmanian
+__________
+Name: Mark C. Mazmanian
+Title: First Senior Vice President
+16
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+BMO BANK N.A.
+, as a Lender
+By:
+_/s/ Jonathan Terrell
+______________
+Name: Jonathan Terrell
+Title: Director
+17
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+THE HUNTINGTON NATIONAL BANK
+, as a Lender
+By:
+_/s/ Scott Lyman
+__________________
+Name: Scott Lyman
+Title: Vice President
+18
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+FIRST HORIZON BANK, A TENNESSEE BANKING CORPORATION
+, as a Lender
+By:
+_/s/ John R. Carthaectel
+____________
+Name: John R. Carthaectel
+Title: Executive Vice President
+19
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+NORTHPOINT COMMERCIAL FINANCE LLC
+, as a Lender
+By:
+__/s/ Scott Raymond
+___________________
+Name: Scott Raymond
+Title: COO
+20
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+HANCOCK WHITNEY BANK
+, as a Lender
+By:
+__/s/ Kenneth C. Misemer_________________
+Name: Kenneth C. Misemer
+Title: Senior Vice President
+21
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+RAYMOND JAMES BANK
+, as a Lender
+By:
+__/s/ Dennis Szczessuil
+____________________
+Name: Dennis Szczessuil
+Title: SVP
+22
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+CADENCE BANK
+, as a Lender
+By:
+_/s/ Eric Vanden Noort
+____________________
+Name: Eric Vanden Noort
+Title: Vice President
+23
+NOTE: PORTIONS OF THIS EXHIBIT INDICATED BY “[****]” HAVE BEEN OMITTED FROM THIS EXHIBIT AS THESE PORTIONS ARE NOT MATERIAL AND WOULD LIKELY CAUSE COMPETITIVE HARM IF PUBLICLY DISCLOSED.
+COASTAL STATES BANK
+, as a Lender
+By:
+_/s/ Brian P. Smith
+_________________
+Name: Brian P. Smith
+Title: Coastal Regional President
+24

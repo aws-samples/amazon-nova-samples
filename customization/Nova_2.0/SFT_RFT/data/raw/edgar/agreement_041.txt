@@ -1,0 +1,116 @@
+EX-10.4
+2
+alur-ex10_4.htm
+EX-10.4
+EX-10.4
+Exhibit 10.4
+Assignment of Lease and Consent to Assignment, dated as of July 10, 2025, by and among Allurion Technologies, Inc., Aila Technologies Inc., and 3 Huron Investments, LLC.
+This
+ASSIGNMENT OF LEASE AND CONSENT TO ASSIGNMENT
+(this“
+Agreement
+”) is dated for reference purposes only as July 10th, 2025, and is by and among Allurion Technologies, Inc., a Delaware corporation (“
+Assignor
+”), Aila Technologies, Inc., a Delaware corporation (“
+Assignee
+”) and 3 Huron Investments, LLC, a Massachusetts limited liability company (“
+Landlord
+”).
+Assignor is the tenant under that certain Lease dated January 10, 2020 (the “
+Original Lease
+”), as amended by that certain First Amendment to Lease dated as of March 2, 2023 (the“
+First Amendment
+”; and, collectively with the Original Lease and as amended by this Agreement, the “
+Lease
+”) with Landlord for that certain premises (the “
+Premises
+”) described in the Lease. The Lease is attached hereto as
+Exhibit A
+. Any terms not defined in this Agreement are defined by reference to the Lease. Assignor wishes to assign the Lease to Assignee and Assignee wishes to assume the Lease and Landlord has indicated it will consent to such assignment.
+NOW, THEREFORE
+, the parties agree as follows:
+1. Assignment and Assumption.
+(a) Effective from and after September 1, 2025 (the “
+Effective Date
+”), Assignor hereby (i) assigns and transfers to Assignee all of Assignor’s right, title and interest in the Lease,including the parking rights stated therein, and (ii) delegates to Assignee all of Assignor’s duties and obligations set forth in the Lease.
+(b) As of the Effective Date, for the benefit of Landlord and Assignor, Assignee hereby (i) accepts the assignment and transfer of the Lease, and (ii) assumes all of the duties and obligations of Assignor under the Lease and agrees to perform, fulfill and observe all of the covenants, agreements, warranties, obligations and liabilities of the tenant under the Lease.
+(c) Assignee agrees that (i) it will be fully responsible and liable to Landlord and Assignor for all covenants, agreements, warranties, obligations and liabilities of the tenant under the Lease, (ii) Landlord is a third-party beneficiary of this Agreement, and such obligations and liability to Landlord are irrevocable and cannot be amended without the prior written consent of Landlord, and (iii) this Section 1, and the obligations of Assignee set forth in this Agreement,will survive the expiration or termination of the Lease and this Agreement.
+2. No Release
+. Assignor acknowledges that this Agreement does not release Assignor from any of its past, present or future obligations to Landlord under the Lease. Any default of any provisions of the Lease by Assignee shall be deemed to be and shall constitute a default by Assignor in fulfilling such provisions. Further, except as expressly stated in this Agreement to the contrary, nothing contained in this Agreement shall be construed to modify, waive or affect:(a) any of the provisions, covenants or conditions in the Lease, (b) any of the tenant’s or Landlord’s obligations under the Lease, (c) any present or future breach or default on the part of the tenant or Landlord under the Lease, (d) any rights or remedies of Landlord or tenant under the Lease or otherwise, whether exercised by Landlord or the tenant as of the date hereof or not,or (e) Landlord’s rights or obligations or the tenant’s rights or obligations under the Lease.
+3. Consent to Assignment.
+Subject to the terms and conditions of this Agreement, Landlord hereby consents to the assignment of Assignor’s interest in the Lease to Assignee. This consent shall apply only to this Agreement and shall not be deemed to be a consent to any other assignment or a waiver of Landlord’s right to consent to any subsequent assignment. The consent shall be effective when a fully executed original of this Agreement has been delivered to Landlord.
+4. Additional Agreements.
+(a) Current Status. Landlord and Assignor represent and warrant to Assignee that, to the best of their respective knowledge, as of the date of this Agreement, there are no uncured defaults under the Lease and no events have occurred which, with the passage of time or notice or both, would constitute a default thereunder. Assignor further acknowledges and covenants that Assignor is liable to cure all tenant defaults occurring prior to the Effective Date. Assignee acknowledges and agrees that Assignor shall have the right to cure any default or anticipated default of the Assignee and Assignee shall immediately reimburse Assignor for all costs and expenses incurred by Assignor in connection with such cure.
+(b) Security Deposits.
+(i) Assignor, Assignee and Landlord agree that the existing Letter of Credit provided by Assignor and held by Landlord as the Security Deposit under the Lease shall, after the date of this Agreement, continue to be held, used and applied by Landlord as the Security Deposit under the Lease. The Security Deposit and/or Letter of Credit or the remaining proceeds therefrom, as applicable, shall be returned to Assignor within sixty (60) days after the end of the Term instead of it being returned to the tenant under the Lease within said 60 days as required by the last sentence of Article 8 of the Original Lease.
+(ii) Prior to the Early Access Date (as defined below), Assignee shall establish a cash security deposit for the benefit of Assignor in the sum of Thirty Thousand and 00/100 Dollars ($30,000.00) (the "
+Assignee Security Deposit
+") to secure performance of Assignee's obligations hereunder and under the Lease. As set forth herein, Assignor agrees to pay to Assignee at the expiration or termination of this Lease said Assignee Security Deposit provided (a) no default of Assignee then exists, and (b) said Assignee Security Deposit has not been used to correct any default of Assignee, in which event only the balance remaining, if any, after Assignor has made itself whole shall be reimbursable to Assignee. Assignee agrees (x) said Assignee Security Deposit may be used by Assignor, in addition to any other remedy available under the terms of the Lease, this Agreement, or by law available to Assignor, to remedy any default of Assignee,provided, however, Assignor shall be under no obligation to correct any such default, and may at Assignor's sole and exclusive election avail itself of any other remedy available under the Lease,this Agreement, or at law or in equity, and (y) in the event said Assignee Security Deposit or any part thereof is used by Assignor to remedy any default of Assignee, Assignor shall be released and discharged from all liability for said Assignee Security Deposit or such portion thereof as Assignor may have used to correct Assignee's default. If Assignor elects to use or apply the Security Deposit as provided in this Agreement, Assignee shall, within 5 days after Assignor’s demand, restore the cash security deposit to the original amount. Assignor shall have no obligation to place the Assignee Security Deposit in an interest-bearing account.
+(iii) Assignor shall have the right to draw upon the Assignee Security Deposit, in whole or in part, only in the event of a default. Assignor shall hold any and all balance of proceeds remaining after a draw on the Assignee Security Deposit as security for Assignee's performance of all its obligations under the Lease and this Agreement. The Assignee Security Deposit or the remaining proceeds therefrom, as applicable, shall be returned to Assignee within thirty (30) days after the Landlord returns the Letter of Credit to Assignor.
+(c) Condition of Premises. Assignee is accepting the Premises in its “
+AS-IS
+”condition, which means the condition the Premises are in as of the execution date of this Agreement (together with all fixtures, equipment, furniture and other personal property located therein on the Effective Date, which fixtures, equipment, furniture and other personal property shall become the sole and excusive property of Assignee as of such date), subject to ordinary wear and tear. Landlord shall have no obligation to make or fund any improvements as a condition of, or in connection with, its consent to the assignment of the Lease. Assignee hereby acknowledges that, except as expressly provided in the Lease, Landlord has made no representations or warranties to Assignee with respect to the Lease or the Premises.
+(d) No Amendments Binding on Assignor; No Further Transfer; Modifications.Except to the extent set forth in this Agreement, Landlord and Assignee agree that Assignor will not be bound by or liable for any
+amendments or modifications to the Lease, or by any other agreements between Landlord and Assignee, unless Assignor provides its prior written approval therefor, which approval may be granted or withheld in Assignor’s sole and absolute discretion.Notwithstanding anything to the contrary contained in the Lease, Assignee shall not, without the prior written approval of Landlord and Assignor, which approval may be granted or withheld in Landlord’s and Assignor’s sole and absolute discretion (a) either assign any of its rights, title or interest in the Lease, or sublease any or all portions of the Premises, or (b) make any alterations,installations additions or improvements to the Premises.
+(e) Amendments to Lease. Landlord, Assignor and Assignee hereby agree that the following Sections of the Lease are hereby deleted in their entirety: Section 34 of the Original Lease (Option to Extend); Section 41 of the Original Lease (Expansion); Exhibit C of the Original Lease (Fair Market Rental Value); Section 6 of the First Amendment (Option to Extend); and Section 7 of the First Amendment (Expansion).
+(f) Option to Terminate. Assignee acknowledges and agrees that if Assignee exercises the termination right set forth in Section 8 of the First Amendment, Assignee shall be solely responsible for the timely payment of all amounts due and payable to Landlord in connection therewith.
+(g) Insurance. Wherever the word “Lessor” appears in the first paragraph of Article 25 of the Original Lease, it shall hereafter refer to both the Assignor and the Landlord.
+(h) Early Access; Indemnity. Provided that (i) Assignor and Landlord have first received from Assignee evidence of the insurance coverage that the Assignee is required to carry pursuant to the Lease and this Agreement, and (ii) Assignor has received the Assignee Security Deposit required to be provided to Assignor pursuant to Section 4(b) of this Agreement, then,commencing on July 15, 2025 (the “
+Early Access Date
+”), Assignee shall be provided with access to the Premises for the sole purpose of installing Assignee’s furniture systems, equipment and telephone/data equipment and to perform any other work approved by Assignor and Landlord pursuant to the Lease and this Agreement (collectively, “
+Assignee’s Work
+”) in preparation for Assignee’s occupancy of the Premises. Assignee shall not conduct any business in the Premises during such early access. Such access by Assignee shall be subject to scheduling by Assignor and Landlord. In connection with such access, Assignee agrees (1) to cease promptly upon notice from Assignor or Landlord any Assignee’s Work which has not been approved by Assignor or Landlord or is not in compliance with the provisions of this Agreement or the Lease, and (2) to comply promptly with all reasonable procedures and regulations prescribed by Assignor and Landlord from time to time for coordinating the Assignee’s Work each with the other and with any other activity or work in the Building (as defined in the Original Lease), and (2) all such access will be deemed to be subject to all of the applicable provisions of the Lease and this Agreement, including without limitation the requirements of Article 25 of the Lease and Sections 4(g) and 5(b) of this Agreement, except that there shall be no obligation on the part of Assignee solely because of such access to pay Base Rent or Operating Expenses with respect to the Premises until the Effective Date. Without limiting the foregoing, prior to accessing the Premises, Assignee shall provide to Assignor, in form and substance reasonably acceptable to Assignor: (A) a detailed description of and schedule for Assignee’s Work; (B) the names and addresses of all contractors, subcontractors and material suppliers and all other representatives of Assignee who or which will be entering the Premises on behalf of Assignee to perform Assignee’s Work or will be supplying materials for such work, and the approximate number of individuals, itemized by trade, who will be present in the Premises; (C) copies of all contracts, subcontracts and material purchase orders pertaining to Assignee’s Work; (D) copies of all plans and specifications pertaining to Assignee’s Work; (E) copies of all licenses and permits required in connection with the performance of Assignee’s Work; (F) certificates of insurance (in amounts satisfactory to Assignor and with the parties identified in, or required by, the Lease and this Agreement named as additional insureds) and instruments of indemnification against all claims, costs, expenses, damages and liabilities which may arise in connection with Assignee’s Work; and (G) assurances of the ability of Assignee to pay for all of Assignee’s Work and/or a letter of credit or other security deemed appropriate by Assignor securing Assignee’s lien-free completion of Assignee’s Work.
+If Assignee fails or refuses to comply or cause its contractors to comply with any of the obligations described or referred to above, then immediately upon notice to Assignee, Landlord and Assignor will each have the right to revoke Assignee’s right to access the Premises. Neither Assignor nor Landlord shall assume any responsibility for the quality or completion of the Assignee’s Work under this Section 4(g), and shall not be responsible for equipment or supplies left or stored in the Premises by Assignee or Assignee’s contractors. Assignee’s access to the Premises pursuant to this Section 4(g) shall be at the sole risk of Assignee.
+As a material part of the consideration for Assignor’s execution of this Agreement, from and after the Early Access Date, Assignee shall neither hold nor attempt to hold Assignor or its employees, or Assignor’s agents or contractors or their employees, liable for, and Assignee covenants and agrees that it shall indemnify and defend Assignor for and against, any and all penalties, damages, fines, causes of action, liabilities, judgments, costs, expenses (including,without limitation, attorneys’ fees) or charges incurred in connection with or arising from: (i) the use or occupancy of the Premises by Assignee or any person claiming under Assignee; (ii) any acts, omissions or negligence of Assignee or any person claiming under Assignee, or contractors,agents, employees, invitees or visitors of Assignee; (iii) any breach, violation or nonperformance by Assignee or any person claiming under Assignee or the employees, agents, contractors,invitees or visitors of Assignee or any such person of any term, covenant or provision of the Lease or this Agreement or any law, ordinance or governmental requirement of any kind; (iv)any injury or damage to the person, property or business of Assignee, its employees, agents,contractors, invitees, visitors or any other person entering upon the Property under the express or implied invitation of Assignee; or (v) any matter occurring in the Premises.
+5. Enforcement; Indemnity.
+(a) Assignee and Assignor acknowledge that, as to obligations accruing after the Effective Date, they are both jointly and severally liable to Landlord for performance of the obligations of tenant under the Lease and that Landlord may pursue its remedies against either or both of Assignor or Assignee.
+(b) Assignee agrees to indemnify, defend and hold harmless Landlord and Assignor from and against any and all claims, losses, liabilities, damages, costs, expenses, and obligations(including without limitation court costs and reasonable attorney’s fees and disbursements)resulting by reason of the failure of Assignee to pay, perform or discharge any of the debts, duties or obligations assumed or agreed to be assumed by Assignee pursuant to this Agreement from and after the date of this Agreement.
+(c) If any party engages legal counsel to enforce this Agreement, the substantially prevailing party shall be entitled to recover their attorneys’ fees. Interest on all amounts due under this Agreement shall accrue at the lesser of the default rate stated in the Lease or the maximum amount permitted by law.
+6. Default Notices
+. Landlord shall provide Assignor with concurrent copies of any default notices delivered to Assignee under the Lease. Assignee shall provide Assignor with concurrent copies of any default notices delivered to Landlord under the Lease.
+7. Reimbursement
+. Pursuant to Article 15 of the Lease, Assignor shall reimburse Landlord for reasonable legal expenses incurred by Landlord in connection with the assignment request up to a maximum amount of $2,500, which amount shall be due and payable whether or not the assignment becomes effective.
+8. Notice Addresses of Assignor and Assignee.
+From the date of this Agreement:
+a. Assignor’s notice address shall be 11 Huron Drive, 2
+nd
+Floor, Natick, MA 01760,with a copy to Caggiano Real Estate Law, LLC, 75 State Street, Suite 100,Boston, MA 02109, Attn: Allan Caggiano, Esq.; and
+b. Assignee’s notice address shall be at the Premises.
+9. Assignee Extension Right
+. Assignee shall have the right to extend its occupancy of the Premises after the expiration of the Term for three (3) additional years, at the then fair market rent, by providing at least
+10 months prior written notice to Landlord and Assignor of Assignee’s intention to extend the Term. If Assignee sends such written notice to exercise its right to extend its occupancy pursuant to this paragraph, then both Landlord and Assignee will work together on a new lease that has the same terms and conditions of the Lease except that Assignee may negotiate with Landlord to include new terms or changes to existing terms that do not exist in the Lease (which terms may be accepted at the Landlord’s sole discretion). Assignee will be the“Lessee” under such new Lease and Landlord will be the “Lessor” under such new lease, (B)Assignor will not be a party to such new lease and Assignor will have no obligations or liabilities to Landlord or Assignee with respect to or arising out of such new lease or any other lease or occupancy agreement between Landlord and Assignee, and (C) notwithstanding anything to the contrary contained in the Lease and this Agreement, (i) Assignor will have no obligations or liabilities with respect to Assignee’s option to extend its occupancy of the Premises pursuant to this paragraph, and (ii) effective as of 11:59 pm on March 31, 2028, Assignor shall be fully and completely released from any and all obligations and liabilities under the Lease and this Agreement, including without limitation the obligation to surrender the Premises to the Landlord in the condition required by the Lease upon the expiration of the Term of the Lease. The release of Assignor pursuant to this paragraph shall be automatic without the need for any additional documentation or further action by the parties; provided, however, that, upon the written request of any one or more of the parties to this Agreement, the parties shall promptly execute and deliver a separate, commercially reasonable agreement memorializing such release in a form reasonable satisfactory to the parties (failure of one or more of the parties to so execute and deliver such agreement will not affect validity of such release).
+10. Entire Agreement.
+The Lease in the form attached hereto as
+Exhibit A
+and this Agreement reflect the entire agreement between Landlord, Assignor and Assignee concerning the Premises and may only be modified by a subsequent writing executed by all of Landlord,Assignor and Assignee.
+11. Counterparts; Non-Original Signatures.
+This Agreement may be executed in any number of counterparts, and by different parties hereto on separate counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument. The parties and signatories to this Agreement each expressly agrees that if the signature of any signatory to this Agreement is not an original, but is an electronic signature (such as, but not limited to, a DocuSign or Adobe electronic signature) or is a digital, mechanical or electronic reproduction or representation of an original signature or such an electronic signature (such as, but not limited to, a photocopy, fax, e-mail, PDF, Adobe image, JPEG,telegram, telex or telecopy), whether transferred by fax or email or otherwise, then such electronic signature or digital, mechanical or electronic reproduction shall be as enforceable,valid and binding as, and the legal equivalent to, an authentic and traditional ink-on-paper original wet signature penned manually by its signatory, and the parties agree to be bound by such signatures and waive any defenses to the enforcement of the terms of this Agreement based on the form of signature.
+12. Governing Law
+. The laws of the Commonwealth of Massachusetts shall govern the validity, construction, enforcement and interpretation of this Agreement.
+13. Capitalized Terms
+. Capitalized terms used but not defined in this Amendment have the same meanings ascribed to such terms in the Lease.
+14. Brokers
+. Each of Assignor, Assignee and Landlord represent and warrant to each other that it knows of no broker which was involved in this transaction in any way or is entitled to any brokerage commission or similar fee or charge in connection with this Lease. Each of Assignor,Assignee and Landlord agree to indemnify the others against any costs incurred (including reasonable attorneys’ fees) if the foregoing representation is untrue.
+[REMAINDER OF PAGE BLANK; SIGNATURE(S) ON FOLLOWING PAGES]
+IN WITNESS WHEREOF
+, the parties execute this Agreement on the above stated date.
+LANDLORD
+:
+3 Huron Investments, LLC
+By: /s/ Garry Holmes
+Its duly authorized managing agent,R.W.H. Management Co., Inc.
+Garry R. Holmes, President
+ASSIGNOR
+:
+Allurion Technologies, Inc.
+By: /s/ Ojas Buch
+Name:Ojas A. Buch
+Its: Chief Operating Officer
+ASSIGNEE:
+Aila Technologies, Inc.
+By: /s/ Jason Gulbinas
+Name: Jason Gulbinas
+Its: President
+By: /s/ Matthew Kowalczyk
+Name: Matthew Kowalczyk
+Its: Treasurer

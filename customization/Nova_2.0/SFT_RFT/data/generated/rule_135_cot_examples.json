@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.135 allows issuers or selling security holders to publish notices of proposed registered offerings without being deemed to offer securities for sale, provided the notice includes a disclaimer and limited content. The notice can include basic details about the issuer, securities, timing, and purpose, with additional specifics allowed for rights offerings, employee offerings, exchange offers, and Rule 145(a) offerings. Corrections of inaccuracies are permitted.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need official Rule 506 text for safe harbor conditions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"Memorandum exemption claims\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Post-retrieval validation against actual document language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted Section 5 registration requirements for international token sales?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation_research\", \"Information needed\": \"Statutory text + judicial precedents\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5\"}, \"Reasoning\": \"Need base text of registration requirements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"International token sales Section 5 interpretations\"}, \"Reasoning\": \"Requires case analysis for international application of registration rules\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.502(d) citation exists in current regulations"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Citation format/existence check\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.502(d)\"}, \"Reasoning\": \"Citation verification requires dedicated validation tool to check current CFR structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

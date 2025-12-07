@@ -1,0 +1,66 @@
+{
+  "summary": "17 CFR \u00a7 230.405 provides definitions for various terms used in securities regulations, including \"affiliate,\" \"amount,\" \"associate,\" and \"emerging growth company.\" These definitions clarify the relationships between entities, the nature of securities, and the criteria for classifying companies based on revenue and other factors. The section ensures consistent interpretation and application of the regulations.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve exact SEC text for private placement rules\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Private placement compliance\", \"edgar_check\": \"EDGAR PPM subscription agreement\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Validate EDGAR clauses against retrieved regulations\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable steps' under Rule 506(c) anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Court rulings on Rule 506(c) verification procedures\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reasonable steps verification under Rule 506(c)\"}, \"Reasoning\": \"Judicial interpretation requires case precedent analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this 8-K filing properly cites SEC v. Ralston Purina precedent for public offering determination"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"Accuracy of legal citation in 8-K\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"SEC v. Ralston Purina 346 U.S. 119 (1953)\"}, \"Reasoning\": \"Citation verification requires format and precedent existence check\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

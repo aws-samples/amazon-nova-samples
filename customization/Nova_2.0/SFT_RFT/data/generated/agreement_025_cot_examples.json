@@ -1,0 +1,66 @@
+{
+  "summary": "This document is a Pre-Funded Common Stock Purchase Warrant issued by NextCure, Inc., allowing the holder to purchase a specific number of shares at a nominal price of $0.001 per share, with the main exercise price already pre-funded. The warrant can be exercised starting from an initial date until fully exercised or terminated, and includes provisions for cashless exercise. The securities have not been registered under the Securities Act of 1933 and can only be transferred under specific conditions.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does the 2023 private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR compliance check\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need authoritative text of Regulation D exemptions first\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance verification\", \"edgar_check\": \"Private placement memorandum terms\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"After retrieving regulations, validate EDGAR clauses against statutory requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial precedent for 'reasonable efforts' under Rule 506(c) verification?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law about Rule 506(c) verification standards\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Reasonable efforts under Rule 506(c)\"}, \"Reasoning\": \"Interpretation questions require case precedent analysis. Statute retrieval provides rule text but not judicial application.\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if the S-1 registration statement meets Section 5 requirements considering SEC v. Ralston Purina precedent"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"cross_document_analysis\", \"Information needed\": \"Section 5 requirements + judicial precedent + EDGAR compliance\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Section 5\"}, \"Reasoning\": \"Start with statutory registration requirements\"}, {\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"SEC v. Ralston Purina registration analysis\"}, \"Reasoning\": \"Need judicial interpretation of public offering standards\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Section 5 compliance validation\", \"edgar_check\": \"S-1 registration statement\", \"regulation\": \"Section 5\", \"case_interpretation_check\": \"Ralston Purina precedent\"}, \"Reasoning\": \"Combine statutory, judicial, and EDGAR analysis for comprehensive validation\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}

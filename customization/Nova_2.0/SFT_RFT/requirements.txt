@@ -1,0 +1,7 @@
+sagemaker==2.254.1
+flask==3.0.0
+boto3==1.40.73
+synthetic-data-kit==0.0.5
+matplotlib==3.10.7
+seaborn==0.13.2
+pandas==2.3.3

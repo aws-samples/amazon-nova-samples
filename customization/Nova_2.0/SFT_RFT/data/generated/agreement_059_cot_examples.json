@@ -1,0 +1,126 @@
+{
+  "summary": "This document is an English translation of a lease agreement dated March 21, 2024, between Jiangxi Hualiu (lessor) and Xiamen Pop Network Technology Co., LTD (lessee). The lease is for Unit 304, an office space of 500.91 square meters, located at 168 Fengqi Road, Software Park, Xiamen, for a term of one year from March 21, 2024, to March 20, 2025, at a monthly rent of RMB 12,522.75. The lessee is responsible for additional fees including property management, public maintenance, and utilities, and must provide a performance security deposit of RMB 38,000.",
+  "cot_examples": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement memorandum comply with Regulation D safe harbor requirements?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg D requirements + EDGAR clause validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"First retrieve authoritative text of Regulation D's safe harbor provisions\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Reg D compliance verification\", \"edgar_check\": \"Memorandum's general solicitation clause\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"N/A\"}, \"Reasoning\": \"Validate EDGAR clause against Regulation D text after retrieval\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "What's the judicial interpretation of 'reasonable care' under Section 11 anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case precedent on Section 11 'reasonable care'\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Section 11 anti-fraud 'reasonable care' standard\"}, \"Reasoning\": \"Requires court interpretations of statutory language through case law analysis\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if 17 CFR 230.506(d) exists and is cited correctly in this prospectus"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"citation_verification\", \"Information needed\": \"CFR citation format accuracy\", \"Tools\": [{\"Tool\": \"citation_validator\", \"Parameters\": {\"query\": \"17 CFR 230.506(d)\"}, \"Reasoning\": \"Citation verification requires exact title/section matching against official CFR structure\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Does this private placement qualify for Regulation D exemption under SEC rules?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Regulation D requirements + EDGAR agreement validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation D\"}, \"Reasoning\": \"Need full text of Regulation D to understand exemption criteria\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"Regulation D exemption qualification\", \"edgar_check\": \"Private placement subscription agreement\", \"regulation\": \"Regulation D\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Must validate EDGAR clauses against Regulation D requirements after retrieving statutory text\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "How have courts interpreted 'reasonable steps' in Rule 506(c) anti-fraud provisions?"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"judicial_interpretation\", \"Information needed\": \"Case law on Rule 506(c) verification procedures\", \"Tools\": [{\"Tool\": \"case_law_search\", \"Parameters\": {\"query\": \"Rule 506(c) reasonable steps judicial interpretation\"}, \"Reasoning\": \"Interpretation questions require analysis of court precedents applying statutory language\"}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "text": "Verify if this S-1 filing meets international transaction disclosure requirements under Reg S-K"
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "{\"Query analysis\": {\"Type\": \"regulatory_compliance_analysis\", \"Information needed\": \"Reg S-K Item 303 requirements + S-1 disclosure validation\", \"Tools\": [{\"Tool\": \"statute_retrieval\", \"Parameters\": {\"regulation\": \"Regulation S-K Item 303\"}, \"Reasoning\": \"Must first retrieve regulatory disclosure requirements\"}, {\"Tool\": \"compliance_checker\", \"Parameters\": {\"query\": \"International transaction disclosure\", \"edgar_check\": \"S-1 risk factors section\", \"regulation\": \"Reg S-K Item 303\", \"case_interpretation_check\": \"\"}, \"Reasoning\": \"Requires validation of EDGAR disclosures against statutory requirements\"}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conversations": []
+}
