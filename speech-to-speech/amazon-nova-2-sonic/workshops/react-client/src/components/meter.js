@@ -24,12 +24,14 @@ class Meter extends React.Component {
             elapsed: 0,
             elapsedDisplay: "0s",
         };
+        // Sonic 2
         this.sonicPrice = {
-            inputSpeech: 0.0034,
-            inputText: 0.00006,
-            outputSpeech: 0.0136,
-            outputText: 0.00024
+            inputSpeech: 0.003,
+            inputText: 0.00033,
+            outputSpeech: 0.012,
+            outputText: 0.00275
         };
+
         this.intervalId = null;
     }
 
