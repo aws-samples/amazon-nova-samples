@@ -1,0 +1,8 @@
+{
+   "process_type":"postprocess",
+   "data":{
+      "prompt":"## user: hi, i need to know the current stock price of aapl.\n## assistant: {\"name\": \"get_stock_price\", \"parameters\": {\"symbol\": \"aapl\"}}\n## function: {\"stock_price\": 150.75}",
+      "inference_output":"<|begin_of_solution|>The current stock price for AAPL is $150.75.<|end_of_solution|>",
+      "gold":"the current stock price of aapl is $150.75. "
+   }
+}

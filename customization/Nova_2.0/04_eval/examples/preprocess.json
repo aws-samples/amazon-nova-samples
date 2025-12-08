@@ -1,0 +1,8 @@
+{
+   "process_type":"preprocess",
+   "data":{
+      "system":"you are a helpful assistant.\nyou may call one or more functions to assist with the user query.\n\nyou are provided with function signatures within <tools></tools> xml tags:\n<tools>\n{\"tools\": [{\"toolspec\": {\"name\": \"get_stock_price\", \"description\": \"get the current stock price\", \"inputschema\": {\"json\": {\"type\": \"object\", \"properties\": {\"symbol\": {\"type\": \"string\", \"description\": \"the symbol of the stock, e.g. aapl\"}}, \"required\": [\"symbol\"]}}}}]}\n</tools>\n\nfor each function call, return a json object with function name and parameters:\n{\"name\": function name, \"parameters\": dictionary of argument name and its value}",
+      "prompt":"## user: hi, i need to know the current stock price of aapl.\n## assistant: {\"name\": \"get_stock_price\", \"parameters\": {\"symbol\": \"aapl\"}}\n## function: {\"stock_price\": 150.75}",
+      "gold":"the current stock price of aapl is $150.75. "
+   }
+}

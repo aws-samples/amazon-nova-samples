@@ -2,7 +2,34 @@
 
 Welcome to the Amazon Nova Model Getting Started!
 
-### Text generation models overview
+###  Nova 2.0 models overview
+
+| Model Characteristics      | Amazon Nova 2 Lite                           | 
+| -------------------------- | -------------------------------------------- | 
+| Model ID                   | amazon.nova-2-lite-v1:0                  | 
+| Input modalities           | Text, Image, Video                           | 
+| Output Modalities          | Text, Image, Video                                         | 
+| Context Window             | 1M                                          | 
+| Max Output Tokens          | 64K                                          | 
+| Supported Languages        | Supports 200+ languages. Optimized for English, German, Spanish, French, Italian, Japanese, Korean, Arabic, Simplified Chinese, Russian, Hindi, Portuguese, Dutch, Turkish, and Hebrew                                    | 
+| Regions                    | us-east-1, us-west-2, eu-north-1, ap-northeast-1              | 
+| Cross Region Inference     | US, EU and APAC regions            | us-east-1, us-west-2, us-west-1                                       | 
+| Document Support           | pdf, csv, doc, docx, xls, xlsx, html, txt, md | 
+| Converse API               | Yes                                          | 
+| InvokeAPI                  | Yes                                          | 
+| Streaming                  | Yes                                          | 
+| Batch Inference            | Yes                                          | 
+| Fine Tuning                | Yes                                          | 
+| Provisioned Throughput     | Yes                                          | 
+| Bedrock Knowledge Bases    | Yes                                          | 
+| Bedrock Agents             | Yes                                          | 
+| Bedrock Guardrails         | Yes(text only)                               | 
+| Bedrock Evaluations        | Yes(text only)                               | 
+| Bedrock Prompt flows       | Yes                                          | 
+| Bedrock Studio             | Yes                                          | 
+
+
+###  Nova 1.0 models overview
 
 Here is the markdown table based on the information provided in the image:
 
