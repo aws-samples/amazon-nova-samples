@@ -1,0 +1,7 @@
+sagemaker==2.254.1
+boto3
+datasets==3.5.1
+sagemaker-mlflow==0.1.0
+scikit-learn==1.6.1
+psutil
+py7zr
