@@ -1,5 +1,9 @@
 # Securities Law Synthetic Data for Amazon Nova Fine-Tuning
 
+## Non-determinsitc raw data and samples generation
+Please note that each download of raw data sources is non-deterministic. So is the fine-tuning samples generation by virtue of using LLM.
+
+
 ## License
 The license for the datasets crawled and distributed in this example is CC-BY-4. Find attached file at data/CC-BY-4.0.txt
 
