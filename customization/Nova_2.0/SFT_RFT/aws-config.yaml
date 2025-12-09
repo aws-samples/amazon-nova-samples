@@ -1,0 +1,289 @@
+# Global paths configuration
+paths:
+  input: "data/input"
+  output:
+    parsed: "data/parsed"
+    generated: "data/generated"
+    curated: "data/curated"
+    final: "data/final"
+
+# LLM Provider configuration
+llm:
+  provider: "api-endpoint"
+  # provider: "vllm"
+
+  # vllm:
+  #   api_base: "http://localhost:8000/v1" # Base URL for VLLM API
+  #   port: 8000 # Port for VLLM server
+  #   model: "meta-llama/Llama-3.3-70B-Instruct" # Default model to use
+  #   max_retries: 3 # Number of retries for API calls
+  #   retry_delay: 1.0 # Initial delay between retries (seconds)
+
+  # Proxy endpoint configuration (points to local Flask proxy)
+api-endpoint:
+  # Proxy URL (Flask server handles SageMaker authentication)
+  api_base: "http://localhost:8000/v1"
+
+  # No API key needed - proxy handles AWS auth
+  api_key: "dummy-key-not-used"
+
+  # Model identifier
+  model: ""
+
+  # Retry configuration
+  max_retries: 3 # Number of retries for API calls
+  retry_delay: 1.0 # Initial delay between retries (seconds)
+
+# LLM generation parameters
+generation:
+  temperature: 0.5 # Higher = more creative, lower = more deterministic
+  top_p: 0.95 # Nucleus sampling parameter
+
+  # Document processing strategy
+  # "auto": choose based on document size, "single": force single call, "chunking": force chunking
+  processing_strategy: "auto"
+  single_call_max_size: 8000 # Documents smaller than this use single call processing
+
+  # Chunking parameters (used for large documents)
+  chunk_size: 4000 # Size of text chunks for processing large documents
+  overlap: 200 # Overlap between chunks to maintain context (prevents losing info at boundaries)
+
+  # Model parameters
+  max_tokens: 10000 # Maximum tokens in LLM responses
+
+  # Content generation targets
+  num_pairs: 10000 # Default number of QA pairs to generate
+  num_cot_examples: 10000 # Default number of Chain of Thought examples to generate
+  num_cot_enhance_examples: null # Maximum number of conversations to enhance (null = enhance all)
+
+  # Batch processing
+  batch_size: 32 # Number of requests to batch together (for create)
+
+  # Quality settings
+  enable_deduplication: true # Remove very similar questions/examples
+  similarity_threshold: 0.5 # Threshold for considering items similar (0.0-1.0)
+
+# Curation parameters
+curate:
+  threshold: 7.0
+  batch_size: 5
+  inference_batch: 5
+  temperature: 0.1
+
+# Format settings
+format:
+  default: "jsonl"
+  include_metadata: true
+  pretty_json: true
+
+# Prompts for different tasks (using defaults from main config)
+prompts:
+  summary: |
+    Summarize this document in 3-5 sentences, focusing on the main topic and key concepts.
+
+  qa_rating: |
+    Rate each question-answer pair on a scale from 1-10, based on:
+    - Accuracy (0-3): factual correctness
+    - Relevance (0-2): relevance to content
+    - Clarity (0-2): clear language
+    - Usefulness (0-3): value for model learning
+
+    YOU MUST RETURN A VALID JSON OBJECT OR ARRAY WITH THIS EXACT SCHEMA:
+    {
+      "question": "Exact question text",
+      "answer": "Exact answer text",
+      "rating": 8
+    }
+
+    OR FOR MULTIPLE PAIRS:
+    [
+      {"question": "Q1", "answer": "A1", "rating": 8},
+      {"question": "Q2", "answer": "A2", "rating": 9}
+    ]
+
+    *** YOUR RESPONSE MUST BE VALID JSON AND NOTHING ELSE - NO EXPLANATION, NO MARKDOWN ***
+
+    QA pairs to rate:
+    {pairs}
+
+  qa_generation: |
+    Generate training examples for legal tool selection in Amazon Nova format.
+
+    CONTEXT: Creating fine-tuning data for securities compliance (Rule 506(b) private placements).
+
+    AVAILABLE TOOLS:
+    - statute_retrieval: Fetches regulation text (for "What is...", "Define...", regulatory definitions)
+    - case_law_search: Searches case precedents (for "How interpreted...", "What courts say...", judicial analysis)
+    - compliance_checker: Validates clause compliance (for "Is compliant...", "Does meet...", validation)
+    - citation_validator: Validates citation format (for "Is citation correct...", format checks)
+
+    OUTPUT: Return ONLY valid JSON array (no markdown, no explanations). Each element:
+
+    [
+      {{
+        "system": [{{
+          "text": "You are a securities compliance assistant with tools: statute_retrieval, case_law_search, compliance_checker, citation_validator. Select the optimal tool for each query."
+        }}],
+        "messages": [
+          {{
+            "role": "user",
+            "content": [{{"text": "[Securities compliance question]"}}]
+          }},
+          {{
+            "role": "assistant",
+            "content": [{{"text": "Query analysis:\n\nType: [definition/interpretation/compliance/validation]\nInformation needed: [what answers this query]\nOptimal tool: [which tool is best]\n\nTool: [tool_name]\nParameters: {{relevant parameters}}\nReasoning: [Why this tool is optimal for this query type]\n\nResult: [Answer from source text]"}}]
+          }}
+        ]
+      }}
+    ]
+
+    EXAMPLES:
+
+    Definition (→ statute_retrieval):
+    User asks: "What is an accredited investor?"
+    Tool: statute_retrieval (gets Rule 501 definition directly)
+    Reasoning: Definition question needs regulatory text, not case interpretation
+
+    Interpretation (→ case_law_search):
+    User asks: "How do courts define 'reasonable steps to verify'?"
+    Tool: case_law_search (finds judicial interpretation)
+    Reasoning: Interpretation question needs case precedent, not just regulation
+
+    Compliance (→ multi-tool):
+    User asks: "Is 90-day lock-up compliant?"
+    Tools: statute_retrieval (get requirement) → compliance_checker (validate)
+    Reasoning: Must retrieve requirement before checking compliance
+
+    Citation (→ citation_validator):
+    User asks: "Is '17 CFR 230.501' formatted correctly?"
+    Tool: citation_validator (checks format)
+    Reasoning: Format validation, not content lookup
+
+    GENERATE from this securities text:
+    - Mix: 60% definitions, 25% interpretations, 10% compliance, 5% citations
+    - 80% single-tool, 20% multi-tool sequences
+    - Vary question complexity and wording
+    - Ground all answers in source text
+
+    {text}
+
+  cot_generation: |
+    You're an expert fine-tuning data creator. Create fine-tuning data examples in Amazon Nova format for comprehensive securities law analysis (private placements, resales, public offerings, anti-fraud provisions, registration requirements, international transactions, and judicial interpretations across 27+ SEC regulations). Objective of the fine-tuning data is to train the model to select the identify query type, select correct tools, reasoning for tool selection, parameter inputs to the tools, and tool sequences for multi-tool scenarios. You must strictly follow ##GUIDELINES##:
+
+    ##GUIDELINES##
+      - Fine-tuning data should demonstrate cross-document connections between EDGAR, regulations, and cases you get it each request in ##CHUNK## 
+          - EDGAR agreements/filings (actual contract language and compliance clauses)
+          - SEC regulations (authoritative rule text and requirements)  
+          - Case law (judicial interpretations and precedent applications)
+
+      - Fine-tuning data must identify query type from 8 ##PREDEFINED TYPES##
+
+      - Fine-tuning data must demonstrate tool selection by analyzing the query and choosing the appropriate tools from the ##AVAILABLE TOOLS## list. 
+
+      - Use EXACT parameter names and structure shown for each tool in ##AVAILABLE TOOLS##
+
+      - Providing clear reasoning for each tool selection decision. 
+
+      - For multi-tool scenarios, determine optimal tool sequence.
+
+      - Return ONLY valid JSON array (no markdown, no explanations). Each element should follow ##RESPONSE SCHEMA##
+        
+
+    Examples should showcase different reasoning patterns: regulatory definitions, judicial interpretations, compliance validations, citation verifications, and multi-tool analysis sequences that combine these sources.
+
+
+    ##AVAILABLE TOOLS## (Use EXACT parameter names and structure shown):
+      - statute_retrieval: Fetches SEC regulation text for definitions and requirements
+        Parameters: {{"regulation": "str"}}
+
+      - case_law_search: Searches judicial precedents and court interpretations  
+        Parameters: {{"query": "str"}}
+
+      - compliance_checker: Validates agreement clauses against regulatory and case law standards
+        Parameters: {{"query": "str", "edgar_check": "str", "regulation": "str", "case_interpretation_check": "str"}}
+
+      - citation_validator: Validates legal citation format and accuracy
+        Parameters: {{"query": "str"}}
+
+
+    ##PREDEFINED TYPES## (Use EXACTLY these 8 types only):
+      1. `regulatory_definition` - Single tool: statute_retrieval
+      2. `judicial_interpretation` - Single tool: case_law_search  
+      3. `compliance_validation` - Single tool: compliance_checker
+      4. `citation_verification` - Single tool: citation_validator
+      5. `regulatory_compliance_analysis` - Multi-tool: statute_retrieval → compliance_checker
+      6. `judicial_compliance_assessment` - Multi-tool: case_law_search → compliance_checker
+      7. `cross_document_analysis` - Multi-tool: statute_retrieval → case_law_search → compliance_checker
+      8. `regulatory_interpretation_research` - Multi-tool: statute_retrieval → case_law_search
+
+
+    Make sure your final response is a valid JSON schema follow the below Response Schema:
+    ##RESPONSE SCHEMA##:
+    ```json
+    [
+      {{
+        "messages": [
+          {{
+            "role": "user",
+            "content": [{{"text": "[Securities law question]"}}]
+          }},
+          {{
+            "role": "assistant",
+            "content": [{{"text": "{{\"Query analysis\": {{\"Type\": \"[predefined_type]\", \"Information needed\": \"[specific_requirements]\", \"Tools\": [{{\"Tool\": \"[tool_name]\", \"Parameters\": {{[parameter_dict]}}, \"Reasoning\": \"[why_this_tool]\"}}, {{\"Tool\": \"[tool_name_2]\", \"Parameters\": {{[parameter_dict_2]}}, \"Reasoning\": \"[why_this_tool_2]\"}}]}}}}"}}]
+          }}
+        ]
+      }}
+    ]```
+
+    ##EXAMPLES
+    **Example 1: Definition Query**
+    ```json
+    {{
+      "Query analysis": {{
+        "Type": "regulatory_definition",
+        "Information needed": "Official SEC definition of accredited investor",
+        "Tools": [
+          {{
+            "Tool": "statute_retrieval",
+            "Parameters": {{"regulation": "Rule 501"}},
+            "Reasoning": "Definition questions require authoritative regulatory text. Only statute_retrieval accesses official SEC language. Other tools provide interpretation but not source definition."
+          }}
+        ]
+      }}
+    }}
+    ```
+
+    **Example 2: Multi-Tool Analysis**
+    ```json
+    {{
+      "Query analysis": {{
+        "Type": "cross_document_analysis", 
+        "Information needed": "Rule 144 requirements + judicial interpretation + EDGAR clause validation",
+        "Tools": [
+          {{
+            "Tool": "statute_retrieval",
+            "Parameters": {{"regulation": "Rule 144"}},
+            "Reasoning": "Must first establish regulatory foundation before interpretation or validation"
+          }},
+          {{
+            "Tool": "case_law_search", 
+            "Parameters": {{"query": "Rule 144 holding period judicial interpretation"}},
+            "Reasoning": "Need court precedent on how holding periods are calculated in practice"
+          }},
+          {{
+            "Tool": "compliance_checker",
+            "Parameters": {{
+              "query": "6-month lockup compliance",
+              "edgar_check": "EDGAR transfer restriction clause", 
+              "regulation": "Rule 144",
+              "case_interpretation_check": "Court precedent on lockup periods"
+            }},
+            "Reasoning": "Final validation requires regulation + case law + specific EDGAR clause analysis"
+          }}
+        ]
+      }}
+    }}
+    ```
+
+    ##CHUNK##:
+    {{text}}
