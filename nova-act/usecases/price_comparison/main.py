@@ -14,14 +14,14 @@
 
 """Compare product prices across multiple retailers.
 
-Searches for a product across Target, Best Buy, and Costco concurrently
+Searches for a product across Amazon, Best Buy, Costco, and Target concurrently
 and displays pricing and promotion details in a comparison table.
 
 Usage:
-    python -m nova_act.samples.price_comparison.py [--product_name <product name>] [--product_sku <sku>] [--sources <sources>] [--headless]
-    python -m nova_act.samples.price_comparison.py --product_name "iPad Pro 13-inch, 256GB Wi-Fi" --product_sku "MVX23LL/A"
-    python -m nova_act.samples.price_comparison.py --sources '[("Walmart", "https://www.walmart.com"), ("Amazon", "https://www.amazon.com")]'
-    python -m nova_act.samples.price_comparison.py --headless
+    python main.py [--product_name <product name>] [--product_sku <sku>] [--sources <sources>] [--headless]
+    python main.py --product_name "iPad Pro 13-inch, 256GB Wi-Fi" --product_sku "MVX23LL/A"
+    python main.py --sources '[("Walmart", "https://www.walmart.com"), ("Amazon", "https://www.amazon.com")]'
+    python main.py --headless=False
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
