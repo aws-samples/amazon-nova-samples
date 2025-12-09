@@ -1,6 +1,6 @@
 # 🎨 Amazon Nova Customization Hub
 
-**Welcome,to Nova Customization Zone!** 👋
+**Welcome,to Nova Customization Hub!** 👋
 
 Ready to make Amazon Nova models truly _yours_? You've come to the right place! This is your one-stop shop for fine-tuning, distilling, and customizing Nova models to match your unique use cases. Whether you're teaching Nova to speak SQL, creating artistic masterpieces, or building domain-specific AI assistants, we've got you covered.
 
