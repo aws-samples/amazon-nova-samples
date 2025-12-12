@@ -9,7 +9,7 @@ This folder demonstrates production tool integration patterns for Nova Act workf
 
 2. **2_agentcore_gateway.py**: Defines `gateway-integration-demo` workflow that integrates with AgentCore Gateway for centralized enterprise tool management. Demonstrates tool discovery from the gateway registry, authentication with AWS credentials, and automatic tool availability in Nova Act workflows. Shows how gateway provides security, compliance, and governance for tool usage.
 
-3. **3_security_guardrails.py**: Defines `security-guardrails-demo` workflow that implements defense-in-depth security controls for tool usage. Demonstrates URL allow/block lists, file access restrictions, and tool usage policies. Shows how to configure SecurityOptions and create custom guardrail logic for production deployments.
+3. **3_security_guardrails.py**: Defines `security-guardrails-demo` workflow that implements URL-based security controls using State Guardrails. Demonstrates blocking real domains (google.com, facebook.com, twitter.com) while allowing Amazon/AWS domains. Shows three practical tests: (1) successful navigation to allowed domains, (2) blocked navigation to google.com, and (3) navigation within approved Amazon/AWS sites. Implements allow/block lists with wildcard pattern matching and default-deny security policy.
 
 ## Prerequisites
 
@@ -52,11 +52,17 @@ pip install strands-agents mcp
 - Authentication and authorization enforced by gateway
 
 ### Security Guardrails
-- URL restrictions prevent data exfiltration and malicious site access
-- File access controls limit filesystem exposure
-- Tool usage policies enforce least-privilege access
-- Guardrails evaluated before tool execution
-- Failed guardrail checks logged for security monitoring
+- **State Guardrails**: Documented Nova Act feature for URL access control
+- **Block Lists**: Prevent navigation to social media (facebook.com, twitter.com) and search engines (google.com)
+- **Allow Lists**: Define approved domains (nova.amazon.com, *.aws.amazon.com, amazon.com)
+- **Pattern Matching**: Wildcard support (*.google.com blocks all Google subdomains)
+- **Default Deny**: Unknown domains blocked automatically for maximum security
+- **Real-time Validation**: Guardrails checked after each browser observation
+- **Exception Handling**: ActStateGuardrailError raised when navigation blocked
+- **Audit Logging**: All allow/block decisions logged for security monitoring
+- **Three-Test Demo**: (1) Allow nova.amazon.com, (2) Block google.com, (3) Allow docs.aws.amazon.com
+
+**Note**: File access restrictions and tool approval workflows should be implemented at the infrastructure/application level, not via Nova Act SDK.
 
 ## Next Steps
-After completing this folder, proceed to `04-observability/` to learn how to monitor and debug tool usage in production workflows.
+After completing this folder, proceed to `03-observability/` to learn how to monitor and debug tool usage in production workflows.
