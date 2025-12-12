@@ -1,0 +1,6 @@
+pyaudio>=0.2.13
+rx>=3.2.0
+smithy-aws-core>=0.0.1
+pytz
+aws_sdk_bedrock_runtime>=0.1.0,<0.2.0
+pygame
