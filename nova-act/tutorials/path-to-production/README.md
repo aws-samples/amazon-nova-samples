@@ -78,10 +78,11 @@ Before starting this tutorial series, ensure you have:
 
 ### Learning Path
 
-Each section builds on the previous one:
+Each section builds new skills:
 
 1. **00-setup**: Foundation - AWS authentication and permissions
 2. **01-workflow-basics**: Core concepts - workflow definitions and deployment
+2. **02-tool-use**: Core concepts - MCP Servers, AgentCore Gateway, and Block Lists
 
 ## Authentication Methods
 
