@@ -35,7 +35,7 @@ from pydantic import BaseModel
 DEFAULT_PRODUCT_NAME = "iPad Pro 13-inch (M4 chip), 256GB Wi-Fi"
 DEFAULT_PRODUCT_SKU = "MVX23LL/A"
 DEFAULT_PRODUCT_SOURCES = [
-    ("Amazon", "https://www.amazon.com"),
+    # ("Amazon", "https://www.amazon.com"),
     ("Best Buy", "https://www.bestbuy.com"),
     ("Costco", "https://www.costco.com"),
     ("Target", "https://www.target.com"),
@@ -61,17 +61,17 @@ def check_source_price(
     try:
         with NovaAct(starting_page=starting_url, headless=headless) as nova:
             # Check for captcha
-            captcha_check = nova.act(
+            captcha_check = nova.act_get(
                 "Is there a captcha on the screen?", schema=BOOL_SCHEMA
             )
             if captcha_check.matches_schema and captcha_check.parsed_response:
                 input(f"Please solve the captcha for {source} and hit return when done")
 
             # Search using product SKU
-            nova.act(f"Search for '{product_sku}'.")
+            nova.act_get(f"Search for '{product_sku}'.")
 
             # Extract pricing and details from the most relevant result based on product name
-            result = nova.act(
+            result = nova.act_get(
                 f"""
                 Close any popups if they appear.
                 Review all search results and determine which one is the most relevant to the product name '{product_name}'.

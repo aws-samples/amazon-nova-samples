@@ -16,4 +16,4 @@ Deprecated
 boto3
 boto3-stubs
 mypy-boto3-s3
-nova-act==3.0.5.0
+nova-act==3.0.67.0
