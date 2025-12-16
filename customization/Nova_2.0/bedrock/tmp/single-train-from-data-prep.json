@@ -1,0 +1,25 @@
+{
+    "system": [
+        {
+            "text": "you are a helpful assistant.\nyou may call one or more functions to assist with the user query.\n\nyou are provided with function signatures within <tools><\/tools> xml tags:\n<tools>\n{\"tools\": [{\"toolspec\": {\"name\": \"calculate_bmi\", \"description\": \"calculate the body mass index (bmi)\", \"inputschema\": {\"json\": {\"type\": \"object\", \"properties\": {\"weight\": {\"type\": \"number\", \"description\": \"the weight in kilograms\"}, \"height\": {\"type\": \"number\", \"description\": \"the height in meters\"}}, \"required\": [\"weight\", \"height\"]}}}}]}\n<\/tools>\n\nfor each function call, return a json object with function name and parameters:\n{\"name\": function name, \"parameters\": dictionary of argument name and its value}"
+        }
+    ],
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "text": "can you please order a pizza for me?"
+                }
+            ]
+        },
+        {
+            "role": "assistant",
+            "content": [
+                {
+                    "text": "i'm sorry, but i'm unable to perform external tasks like ordering a pizza. my current capabilities are limited to the functions provided to me, such as calculating the body mass index (bmi)."
+                }
+            ]
+        }
+    ]
+}
