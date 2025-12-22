@@ -298,6 +298,7 @@ class BedrockStreamManager:
         
         if (self.role == "ASSISTANT" and self.display_assistant_text) or self.role == "USER":
             self.conversation_history.append({"role": role, "content": content})
+        if (self.role == "ASSISTANT" and not self.display_assistant_text) or self.role == "USER":
             print(f"{role.title()}: {content}")
     
     async def _handle_audio_output(self, audio_output: Dict[str, Any]):
