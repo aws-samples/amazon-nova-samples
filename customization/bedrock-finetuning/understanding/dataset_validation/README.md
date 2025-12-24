@@ -16,16 +16,33 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
 
   - sft: Supervised Fine-Tuning
   - dpo: Direct Preference Optimization
+  - rft: Reinforcement Fine-Tuning (with reference answers)
 
 - Model name options
 
-  - micro: Nova Micro Model
-  - lite: Nova Lite Model
-  - pro: Nova Pro Model
+  - **Nova 1.0 (backward compatible):**
+
+    - micro / micro-1.0: Nova Micro Model
+    - lite / lite-1.0: Nova Lite Model
+    - pro / pro-1.0: Nova Pro Model
+
+  - **Nova 2.0:**
+    - lite-2.0: Nova Lite 2.0 Model (supports reasoning, tool use, and documents)
 
 - Platform options (optional, defaults to bedrock)
   - bedrock: Amazon Bedrock platform
   - sagemaker: Amazon SageMaker platform
+
+### Nova 2.0 Features
+
+**Nova 2.0 Lite (lite-2.0) supports:**
+
+- ✅ Reasoning content - Optional reasoning blocks in assistant messages
+- ✅ Tool use - Complete tool calling with input/output validation
+- ✅ Documents - PDF document processing
+- ✅ Restricted media formats:
+  - Images: PNG, JPEG, GIF (webp not supported)
+  - Videos: MOV, MKV, MP4 (webm not supported)
 
 ### Features
 
@@ -40,10 +57,131 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
    - `role` alternates between `user` and `assistant`
    - there are no more than 10 images per line
    - number of samples supported by model type (only for Bedrock platform)
-   - image/video is from the supported formats
+   - image/video/document is from the supported formats
+   - **Nova 2.0 specific validations:**
+     - reasoning content only in assistant messages and only for lite-2.0
+     - tool use placement (toolUse in assistant, toolResult in user messages)
+     - tool use/result ID matching and uniqueness
+     - tool names match toolConfig definitions
+     - format restrictions for lite-2.0 (PNG, JPEG, GIF for images; MOV, MKV, MP4 for videos; PDF for documents)
 4. Platform-specific validations
    - For Bedrock: Validates that the number of samples is within the allowed bounds for the model
    - For SageMaker: Skips the data record bounds validation
+
+### RFT (Reinforcement Fine-Tuning)
+
+**RFT is a new training paradigm that uses reference answers for better model alignment.**
+
+**Note: RFT is ONLY supported on Nova 2.0 Lite (lite-2.0) model.**
+
+RFT format requires:
+
+- `id`: Unique identifier for each sample
+- `messages`: List of conversation messages (system, user, assistant)
+- `reference_answer`: Dictionary containing the expected/desired output (can be any structure)
+- `tools`: (Optional) List of function definitions for tool-based tasks
+
+**RFT Examples:**
+
+Basic RFT:
+
+```json
+{
+  "id": "chem-01",
+  "messages": [
+    { "role": "system", "content": "You are a helpful chemistry assistant" },
+    {
+      "role": "user",
+      "content": "Calculate the molecular weight of caffeine (C8H10N4O2)"
+    }
+  ],
+  "reference_answer": {
+    "molecular_weight": 194.19,
+    "unit": "g/mol",
+    "calculation": "8(12.01) + 10(1.008) + 4(14.01) + 2(16.00) = 194.19"
+  }
+}
+```
+
+RFT with Tools:
+
+```json
+{
+  "id": "tool-001",
+  "messages": [
+    { "role": "system", "content": "You are a helpful game master assistant" },
+    {
+      "role": "user",
+      "content": "Generate a strength stat for a warrior character. Apply a +2 racial bonus modifier."
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "StatRollAPI",
+        "description": "Generates character stats",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "modifier": {
+              "description": "Modifier to apply",
+              "type": "integer"
+            }
+          },
+          "required": ["modifier"]
+        }
+      }
+    }
+  ],
+  "reference_answer": {
+    "tool_called": "StatRollAPI",
+    "tool_parameters": { "modifier": 2 },
+    "expected_behavior": "Call StatRollAPI with modifier=2"
+  }
+}
+```
+
+### Test Examples
+
+The following test files are provided to demonstrate various features:
+
+**SFT/DPO (Nova 2.0):**
+
+- `test_reasoning.jsonl` - Text conversations with reasoning content (8 examples)
+- `test_image_video_reasoning.jsonl` - Multimodal examples with images/videos and reasoning (8 examples)
+- `test_tool_use.jsonl` - Tool calling examples with reasoning (8 examples)
+- `test_documents.jsonl` - PDF document processing with reasoning (6 examples)
+
+**RFT:**
+
+- `test_rft.jsonl` - Basic RFT examples with reference answers (6 examples)
+- `test_rft_tools.jsonl` - RFT examples with tool definitions (6 examples)
+
+**Test commands:**
+
+```bash
+# Test reasoning content (SFT)
+python3 nova_ft_dataset_validator.py -i test_reasoning.jsonl -m lite-2.0 -t sft
+
+# Test images/videos with reasoning (SFT)
+python3 nova_ft_dataset_validator.py -i test_image_video_reasoning.jsonl -m lite-2.0 -t sft
+
+# Test tool use (SFT)
+python3 nova_ft_dataset_validator.py -i test_tool_use.jsonl -m lite-2.0 -t sft
+
+# Test documents (SFT)
+python3 nova_ft_dataset_validator.py -i test_documents.jsonl -m lite-2.0 -t sft
+
+# Test RFT basic (RFT only supported on lite-2.0)
+python3 nova_ft_dataset_validator.py -i test_rft.jsonl -m lite-2.0 -t rft
+
+# Test RFT with tools (RFT only supported on lite-2.0)
+python3 nova_ft_dataset_validator.py -i test_rft_tools.jsonl -m lite-2.0 -t rft
+
+# Backward compatible test (Nova 1.0)
+python3 nova_ft_dataset_validator.py -i test_reasoning.jsonl -m lite -t sft
+```
 
 ### Limitations
 
