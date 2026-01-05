@@ -7,8 +7,8 @@ run:
   output_s3_path: ""  # Leave empty for SageMaker Training job
 
 evaluation:
-  task: rft_eval # Must specify gen_qa for RFT evaluation
-  strategy: rft_eval # Must specify gen_qa for RFT evaluation
+  task: rft_eval # Must specify rft_eval for RFT evaluation
+  strategy: rft_eval # Must specify rft_eval for RFT evaluation
   metric: all
 
 inference:
