@@ -18,40 +18,15 @@ Chain of thought is not always necessary, and can induce some additional overhea
 - Simpler tasks don't need COT: Not all tasks require deep chain of thought, it is generally recommended to use chain of thought in tasks such as multi-step analysis, math problems, complex reasoning tasks.
 </limitations>
 
-<prompt_templates>
-Template 1:
-{{User query}} Think step-by-step.
-
-Template 2:
+<prompt_template>
 {{User query}} Please follow these steps:
 1. {{Step 1}}
 2. {{Step 2}}
 ...
-
-Template 3:
-{{User query}}
-Think step by step first and then answer. Follow below format when responding
-Response Schema:
-<thinking>
-( your thinking goes here )
-</thinking>
-<answer>
-( your answer goes here )
-</answer>
-</prompt_templates>
+</prompt_template>
 
 <examples>
-<example1>
-Adding "think step by step" at the end of prompts helps prime the model to begin with additional thinking before jumping to the answer.
-
-Original prompt:
-"I'm considering two investment opportunities and would appreciate your guidance to make the best decision. Option A is a low-risk bond fund with an expected annual return of 3%, while Option B is a moderately-risky stock portfolio with an expected annual return of 7%. Given my financial goals and risk tolerance, which option would you recommend?"
-
-Optimized prompt:
-"I'm considering two investment opportunities and would appreciate your guidance to make the best decision. Option A is a low-risk bond fund with an expected annual return of 3%, while Option B is a moderately-risky stock portfolio with an expected annual return of 7%. Given my financial goals and risk tolerance, which option would you recommend? Think step-by-step."
-</example1>
-
-<example2>
+<example>
 Adding step-by-step guiding cues helps the model be more structured in its thinking before arriving at the final solution.
 
 Original prompt:
@@ -63,7 +38,7 @@ Optimized prompt:
 2. Breakdown into Tasks
 3. Set Deadlines
 4. Monitor Progress and Optimize"
-</example2>
+</example>
 </examples>
 
 </chain_of_thought_prompting>

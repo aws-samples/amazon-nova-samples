@@ -1,10 +1,9 @@
 <image_understanding>
 <overview>
-When prompting for image understanding tasks, the user prompt text should always be the last item in the message, after all image content. Include task definition, instructions, and formatting details in the user prompt for strongest effect.
+Include task definition, instructions, and formatting details in the user prompt for strongest effect.
 </overview>
 
 <general_guidelines>
-- Place image content before the text prompt
 - When referring to multiple images, use text labels before each image
 - Include task definition, instructions, and formatting requirements in the user prompt
 </general_guidelines>

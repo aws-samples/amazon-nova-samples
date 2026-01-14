@@ -127,12 +127,25 @@ INTENT_GUIDANCE_MAP = {
 
 GUIDANCE_DIR = os.path.join("data", "docs", "nova", "general")
 
+# Mapping from boolean flag names to guidance files
+API_CAPABILITY_GUIDANCE = {
+    "reasoning_mode": ["reasoning_mode"],
+    "tool_use": ["tool_use"],
+    "image": ["image_understanding"],
+    "video": ["video_understanding"],
+}
 
-def load_guidance_for_intents(intents=None):
-    """Load guidance files based on identified intents.
+
+def load_guidance_for_intents(intents=None, reasoning_mode=False, tool_use=False,
+                               image=False, video=False):
+    """Load guidance files based on identified intents and API capabilities.
 
     Args:
         intents (list, optional): List of intent strings. If None, loads all guidance.
+        reasoning_mode (bool): Enable reasoning mode guidance.
+        tool_use (bool): Enable tool use guidance.
+        image (bool): Enable image understanding guidance.
+        video (bool): Enable video understanding guidance.
 
     Returns:
         str: Combined guidance text from relevant files.
@@ -151,6 +164,17 @@ def load_guidance_for_intents(intents=None):
         if intent in INTENT_GUIDANCE_MAP:
             files_to_load.update(INTENT_GUIDANCE_MAP[intent])
 
+    # Add API capability-specific guidance
+    api_flags = {
+        "reasoning_mode": reasoning_mode,
+        "tool_use": tool_use,
+        "image": image,
+        "video": video,
+    }
+    for capability, enabled in api_flags.items():
+        if enabled and capability in API_CAPABILITY_GUIDANCE:
+            files_to_load.update(API_CAPABILITY_GUIDANCE[capability])
+
     # Load the files
     guidance_parts = []
     for filename in files_to_load:
@@ -166,7 +190,8 @@ def load_guidance_for_intents(intents=None):
 # Main transform function
 # ============================================================================
 
-def transform_prompt(prompt, model_id=None, intents=None):
+def transform_prompt(prompt, model_id=None, intents=None,
+                     reasoning_mode=False, tool_use=False, image=False, video=False):
     """Transform any prompt to align with Amazon Nova guidelines.
 
     Args:
@@ -177,6 +202,10 @@ def transform_prompt(prompt, model_id=None, intents=None):
             - 'global.anthropic.claude-sonnet-4-5-20250929-v1:0'
         intents (list, optional): List of intents to load specific guidance for.
             If None, loads all guidance. Use classify_intent() to get intents.
+        reasoning_mode (bool): Enable reasoning mode guidance for API-level reasoning.
+        tool_use (bool): Enable tool use guidance for API-level tool definitions.
+        image (bool): Enable image understanding guidance for image inputs.
+        video (bool): Enable video understanding guidance for video inputs.
 
     Returns:
         dict: Dictionary containing:
@@ -196,6 +225,9 @@ def transform_prompt(prompt, model_id=None, intents=None):
         >>> # With intent-based guidance loading
         >>> intents = classify_intent(prompt)['intents']
         >>> result = transform_prompt(prompt, intents=intents)
+
+        >>> # With API capability flags
+        >>> result = transform_prompt(prompt, reasoning_mode=True, image=True)
     """
 
     # Default to Nova Premier if no model specified
@@ -207,8 +239,14 @@ def transform_prompt(prompt, model_id=None, intents=None):
     prompt_template = load_text_file(os.path.join("data", "prompts"), "prompt_nova_migration.txt")
     migration_guidelines = load_text_file(os.path.join("data", "docs", "nova"), "migration_guidelines.txt")
 
-    # Load guidance based on intents (or all if no intents specified)
-    nova_docs = load_guidance_for_intents(intents)
+    # Load guidance based on intents and API capabilities
+    nova_docs = load_guidance_for_intents(
+        intents,
+        reasoning_mode=reasoning_mode,
+        tool_use=tool_use,
+        image=image,
+        video=video
+    )
 
     # Format the prompt
     formatted_prompt = prompt_template.format(
@@ -380,12 +418,14 @@ def classify_intent(prompt, model_id=None):
 # Combined pipeline
 # ============================================================================
 
-def transform_with_intent_classification(prompt, classifier_model_id=None, transform_model_id=None):
+def transform_with_intent_classification(prompt, classifier_model_id=None, transform_model_id=None,
+                                          reasoning_mode=False, tool_use=False,
+                                          image=False, video=False):
     """Transform a prompt using intent-based guidance selection.
 
     This is the main entry point that chains:
     1. Intent classification (fast, using Nova Micro)
-    2. Guidance loading (based on detected intents)
+    2. Guidance loading (based on detected intents + API capabilities)
     3. Prompt transformation (using Nova Premier or specified model)
 
     Args:
@@ -394,11 +434,16 @@ def transform_with_intent_classification(prompt, classifier_model_id=None, trans
             Defaults to 'us.amazon.nova-micro-v1:0'
         transform_model_id (str, optional): Model for transformation.
             Defaults to 'us.amazon.nova-premier-v1:0'
+        reasoning_mode (bool): Enable reasoning mode guidance for API-level reasoning.
+        tool_use (bool): Enable tool use guidance for API-level tool definitions.
+        image (bool): Enable image understanding guidance for image inputs.
+        video (bool): Enable video understanding guidance for video inputs.
 
     Returns:
         dict: Dictionary containing:
             - intents: List of detected intents
             - intent_reasoning: Explanation of intent classification
+            - api_capabilities: Dict of explicitly enabled API capabilities
             - thinking: Analysis of the transformation process
             - nova_draft: Initial transformed prompt
             - reflection: Reflection on the draft
@@ -411,6 +456,13 @@ def transform_with_intent_classification(prompt, classifier_model_id=None, trans
         ... )
         >>> print(f"Detected intents: {result['intents']}")
         >>> print(f"Optimized prompt: {result['nova_final']}")
+
+        >>> # With API capability flags
+        >>> result = transform_with_intent_classification(
+        ...     "Analyze the chart and recommend next steps",
+        ...     reasoning_mode=True,
+        ...     image=True
+        ... )
     """
 
     # Step 1: Classify intent
@@ -423,17 +475,33 @@ def transform_with_intent_classification(prompt, classifier_model_id=None, trans
         if intent in INTENT_GUIDANCE_MAP:
             files_to_load.update(INTENT_GUIDANCE_MAP[intent])
 
-    # Step 3: Transform with intent-specific guidance
+    # Add API capability-specific guidance files
+    api_capabilities = {
+        "reasoning_mode": reasoning_mode,
+        "tool_use": tool_use,
+        "image": image,
+        "video": video,
+    }
+    for capability, enabled in api_capabilities.items():
+        if enabled and capability in API_CAPABILITY_GUIDANCE:
+            files_to_load.update(API_CAPABILITY_GUIDANCE[capability])
+
+    # Step 3: Transform with intent-specific guidance and API capabilities
     transform_result = transform_prompt(
         prompt,
         model_id=transform_model_id,
-        intents=intents
+        intents=intents,
+        reasoning_mode=reasoning_mode,
+        tool_use=tool_use,
+        image=image,
+        video=video
     )
 
     # Combine results
     return {
         'intents': intents,
         'intent_reasoning': intent_result.get('reasoning', ''),
+        'api_capabilities': api_capabilities,
         'guidance_files': sorted(list(files_to_load)),
         **transform_result
     }
@@ -444,8 +512,8 @@ def transform_with_intent_classification(prompt, classifier_model_id=None, trans
 # ============================================================================
 
 if __name__ == "__main__":
-    # Example: Full pipeline with intent classification
-    current_prompt = "Analyze this image and return a JSON object with detected objects: {image}"
+    # Example: Full pipeline with intent classification and API capability flags
+    current_prompt = "Analyze the chart and recommend investment strategies"
 
     print("=" * 80)
     print("INPUT PROMPT:")
@@ -453,13 +521,20 @@ if __name__ == "__main__":
     print(current_prompt)
 
     print("\n" + "=" * 80)
-    print("RUNNING FULL PIPELINE:")
+    print("RUNNING FULL PIPELINE WITH API CAPABILITIES:")
+    print("  - reasoning_mode=True (for complex analysis)")
+    print("  - image=True (chart will be passed via API)")
     print("=" * 80)
 
-    result = transform_with_intent_classification(current_prompt)
+    result = transform_with_intent_classification(
+        current_prompt,
+        reasoning_mode=True,
+        image=True
+    )
 
     print(f"\nDetected Intents: {result['intents']}")
     print(f"Intent Reasoning: {result['intent_reasoning']}")
+    print(f"API Capabilities: {result['api_capabilities']}")
     print(f"Guidance Files Loaded: {result['guidance_files']}")
 
     print("\n" + "=" * 80)

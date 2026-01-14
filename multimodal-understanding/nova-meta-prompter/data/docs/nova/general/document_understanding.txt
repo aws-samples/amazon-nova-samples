@@ -1,10 +1,9 @@
 <document_understanding>
 <overview>
-When prompting for document understanding tasks, the user prompt text should always be the last item in the message, after all document content. Document understanding includes PDF processing, form extraction, table reading, and structured data extraction from documents.
+Document understanding includes PDF processing, form extraction, table reading, and structured data extraction from documents.
 </overview>
 
 <general_guidelines>
-- Place document content before the text prompt
 - When referring to multiple documents, use text labels before each document
 - Include task definition, instructions, and formatting requirements in the user prompt
 - For multi-page documents, ensure instructions apply across all pages

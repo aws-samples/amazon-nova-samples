@@ -3,16 +3,6 @@
 Amazon Nova models support a reasoning mode for complex tasks requiring multiple reasoning steps. When writing prompts for reasoning-intensive tasks, use a top-down approach: start with the big picture and break the problem into smaller subproblems.
 </overview>
 
-<when_to_use>
-Reasoning mode is recommended for:
-- Complex tasks with multiple reasoning steps
-- Cross-referencing information across sources
-- Error-prone calculations
-- Planning with constraints
-- Complex classifications
-- Tool calling scenarios requiring decision-making
-</when_to_use>
-
 <prompt_guidelines>
 <top_down_approach>
 Structure prompts to guide reasoning from general to specific:
@@ -33,16 +23,6 @@ Steps:
 </example>
 </prompt_guidelines>
 
-<reasoning_vs_chain_of_thought>
-Choose Chain of Thought (CoT) prompting over reasoning mode when:
-- You need transparency and auditability of the reasoning process
-- You require custom reasoning structures
-- You are developing and debugging prompts
-- You want to use hybrid approaches (CoT for development, reasoning mode for production)
-
-Chain of thought makes the reasoning process visible in the output, while reasoning mode optimizes for the final answer.
-</reasoning_vs_chain_of_thought>
-
 <prompt_templates>
 <explicit_reasoning>
 {query}
@@ -53,19 +33,5 @@ Before answering, work through this systematically:
 3. Consider how they interact
 4. Formulate your conclusion based on this analysis
 </explicit_reasoning>
-
-<structured_reasoning_output>
-{query}
-
-Think through this step by step, then provide your answer.
-
-Response format:
-<reasoning>
-(your step-by-step analysis)
-</reasoning>
-<answer>
-(your final answer)
-</answer>
-</structured_reasoning_output>
 </prompt_templates>
 </reasoning_mode>

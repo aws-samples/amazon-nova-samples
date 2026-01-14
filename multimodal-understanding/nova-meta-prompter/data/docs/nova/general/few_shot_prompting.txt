@@ -77,8 +77,4 @@ You are an AI assistant helping to draft professional reports for enterprise sta
 
 </implementation_examples>
 
-<tip>
-If the above suggestions do not work, we recommended you build a RAG-based system that augments the prompt with a dynamic selection of shots based on the similarities between the user-input query and an available pool of shots.
-</tip>
-
 </few_shot_prompting>

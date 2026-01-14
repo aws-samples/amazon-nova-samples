@@ -1,13 +1,7 @@
 <tool_use>
 <overview>
-When writing prompts that involve tool calling, clarity and specificity in tool definitions are essential. The model needs to understand when to use each tool and what inputs to provide. Focus on making tool purposes and boundaries clear within your prompt instructions.
+Nova models are proficient at tool calling. For successful tool calls, the model needs to understand when to use each tool and what inputs to provide. Focus on making tool purposes and boundaries clear within your prompt instructions.
 </overview>
-
-<key_principles>
-1. Tool definitions should be clear and concise - the intent must be extremely apparent
-2. Use key differentiators and boundary conditions to define when one tool should be used over another
-3. Be critical of input argument types - ensure they make sense and would be expected to be used in that fashion normally
-</key_principles>
 
 <prompt_guidelines>
 When instructing the model to use tools in your prompt:
