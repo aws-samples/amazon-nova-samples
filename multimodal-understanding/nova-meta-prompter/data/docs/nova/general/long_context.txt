@@ -1,0 +1,71 @@
+<long_context>
+<overview>
+Amazon Nova models support up to 1 million token context length. When working with long documents or multiple sources, proper prompt structure ensures the model can effectively process and reference the content.
+</overview>
+
+<key_principles>
+1. Put long-form data at the beginning of the prompt
+2. Put instructions at the end of the prompt
+3. Use clear document markers to delineate content boundaries
+</key_principles>
+
+<document_markers>
+Use explicit markers to help the model identify document boundaries:
+
+DOCUMENT 1 START
+{content of first document}
+DOCUMENT 1 END
+
+DOCUMENT 2 START
+{content of second document}
+DOCUMENT 2 END
+
+Instructions: Based on the documents above, {your task}
+</document_markers>
+
+<prompt_structure>
+<recommended_order>
+1. Context/Documents (long content first)
+2. Reference materials
+3. Examples (if using few-shot)
+4. Task definition
+5. Specific instructions
+6. Output format requirements
+</recommended_order>
+
+<example name="multi_document_analysis">
+DOCUMENT A START: Annual Report 2023
+{annual_report_content}
+DOCUMENT A END
+
+DOCUMENT B START: Market Analysis
+{market_analysis_content}
+DOCUMENT B END
+
+DOCUMENT C START: Competitor Overview
+{competitor_content}
+DOCUMENT C END
+
+## Task
+Analyze the documents above and provide a strategic assessment.
+
+## Instructions
+1. Identify key themes across all three documents
+2. Note any contradictions or gaps in information
+3. Synthesize findings into actionable recommendations
+
+## Output Format
+Provide your analysis in the following sections:
+- Key Themes
+- Information Gaps
+- Recommendations
+</example>
+</prompt_structure>
+
+<best_practices>
+- Use consistent naming conventions for documents (Document 1, Document A, or descriptive names)
+- Reference documents explicitly in instructions ("According to Document A...")
+- For very long contexts, summarize or highlight key sections you want the model to focus on
+- Place the most important content closer to the instructions (end of context) when possible
+</best_practices>
+</long_context>

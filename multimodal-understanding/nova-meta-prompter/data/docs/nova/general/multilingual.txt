@@ -1,0 +1,84 @@
+<multilingual>
+<overview>
+Amazon Nova models support 200+ languages, with optimization for 15 primary languages. When writing prompts for multilingual tasks, be explicit about language requirements and consider character-based language conventions.
+</overview>
+
+<language_specification>
+Always explicitly specify the target language in your prompt:
+
+<example name="explicit_language">
+Translate the following text to Spanish. Ensure the translation maintains the formal tone of the original.
+
+Text: {input_text}
+</example>
+
+<example name="response_language">
+Answer the following question in French, regardless of the language the question is asked in.
+
+Question: {question}
+</example>
+</language_specification>
+
+<translation_tasks>
+<basic_translation>
+Translate the following text from {source_language} to {target_language}:
+
+{text_to_translate}
+</basic_translation>
+
+<translation_with_style>
+Translate the following text to {target_language}.
+
+Requirements:
+- Maintain the {formal/informal} tone
+- Preserve technical terminology where appropriate
+- Adapt idioms to culturally equivalent expressions
+
+Text: {input_text}
+</translation_with_style>
+
+<translation_with_context>
+Translate the following {document_type} from {source_language} to {target_language}.
+
+Context: This is a {context_description} intended for {target_audience}.
+
+Text: {input_text}
+</translation_with_context>
+</translation_tasks>
+
+<character_based_languages>
+For character-based languages (Chinese, Japanese, Korean, etc.), you can enforce specific writing conventions:
+
+<example name="chinese_conventions">
+Respond in Simplified Chinese. Use formal written style appropriate for business correspondence.
+</example>
+
+<example name="japanese_conventions">
+Respond in Japanese using polite form (です/ます). Include appropriate honorifics.
+</example>
+</character_based_languages>
+
+<mixed_language_handling>
+When input may contain multiple languages:
+
+<example name="detect_and_respond">
+Detect the language of the user's message and respond in the same language.
+
+User message: {message}
+</example>
+
+<example name="multilingual_content">
+The following document contains sections in multiple languages. Summarize the entire document in English, noting which sections were originally in which language.
+
+Document: {multilingual_document}
+</example>
+</mixed_language_handling>
+
+<best_practices>
+- Be explicit about source and target languages
+- Specify tone and formality level for translations
+- For technical content, indicate whether to translate or preserve terminology
+- Consider cultural context and audience when requesting adaptations
+- Use language codes (en, es, fr, zh, ja) for clarity when needed
+</best_practices>
+</multilingual>

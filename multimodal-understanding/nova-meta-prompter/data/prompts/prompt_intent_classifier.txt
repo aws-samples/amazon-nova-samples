@@ -1,0 +1,30 @@
+<input>
+<prompt_to_classify>{input_prompt}</prompt_to_classify>
+</input>
+
+<intent_taxonomy>
+- image_understanding: Prompts involving image analysis, description, extraction, or visual reasoning. Look for image placeholders, references to visual content, or instructions to analyze what is shown.
+- video_understanding: Prompts involving video analysis, temporal reasoning, or frame-by-frame understanding. Look for video placeholders, timestamps, or scene analysis instructions.
+- document_understanding: Prompts involving PDF processing, document parsing, OCR, form extraction, or structured document analysis. Look for document placeholders or references to pages, tables, forms.
+- tool_use: Prompts that instruct the model to call external tools, functions, or APIs. Look for tool definitions, function schemas, or instructions to use specific capabilities.
+- structured_output: Prompts requiring specific output formats like JSON, XML, tables, or schemas. Look for format specifications, field definitions, or parsing requirements.
+- rag: Prompts involving retrieval-augmented generation, context injection, or grounded responses. Look for context placeholders, retrieved passages, or instructions to answer based on provided information.
+- multilingual: Prompts involving translation, multilingual content, or non-English languages. Look for language specifications, translation instructions, or mixed-language content.
+- agentic: Prompts involving multi-step reasoning, planning, iterative execution, or autonomous task completion. Look for complex task breakdowns, goal-oriented instructions, or iterative workflows.
+</intent_taxonomy>
+
+<instructions>
+1. Read the input prompt carefully
+2. For each intent in the taxonomy, determine if the prompt requires that capability
+3. A prompt can match multiple intents - identify ALL that apply
+4. If the prompt is generic and matches none specifically, return an empty list
+5. Base your classification on explicit signals in the prompt, not assumptions about how it might be used
+</instructions>
+
+<guidelines>
+* Be inclusive - if there's a reasonable signal for an intent, include it
+* Look for keywords and phrases that indicate specific capabilities
+* Consider both the explicit task and the implied requirements
+* A prompt asking for JSON output indicates structured_output
+* A prompt with step-by-step task completion suggests agentic
+</guidelines>

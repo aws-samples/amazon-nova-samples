@@ -1,0 +1,109 @@
+<agentic>
+<overview>
+Agentic prompts enable multi-step reasoning, planning, iterative execution, and autonomous task completion. When writing prompts for agentic workflows, focus on clear goal definition, step breakdown, and decision-making guidance.
+</overview>
+
+<prompt_structure>
+Agentic prompts should include:
+1. Clear goal or objective
+2. Available actions or capabilities
+3. Decision-making criteria
+4. Completion conditions
+5. Output expectations at each step
+</prompt_structure>
+
+<goal_definition>
+<example name="clear_objective">
+## Goal
+Research and compile a competitive analysis report for {company_name}.
+
+## Success Criteria
+The task is complete when you have:
+- Identified at least 3 main competitors
+- Analyzed each competitor's strengths and weaknesses
+- Compared pricing and feature sets
+- Provided strategic recommendations
+</example>
+</goal_definition>
+
+<step_breakdown>
+<example name="iterative_task">
+Complete the following task step by step:
+
+## Task
+Analyze customer feedback and generate improvement recommendations.
+
+## Steps
+1. First, categorize all feedback into themes (product, service, pricing, other)
+2. For each theme, identify the top 3 issues by frequency
+3. For each top issue, propose a specific improvement
+4. Prioritize improvements by potential impact
+5. Summarize your findings and recommendations
+
+After each step, briefly state what you found before proceeding to the next step.
+</example>
+</step_breakdown>
+
+<decision_making>
+<example name="conditional_actions">
+You are helping a user troubleshoot a technical issue.
+
+## Decision Framework
+- If the issue is related to login: First verify account status, then check credentials
+- If the issue is related to performance: First check system requirements, then review logs
+- If the issue is unclear: Ask clarifying questions before proceeding
+
+## Process
+1. Understand the issue from the user's description
+2. Apply the appropriate decision path
+3. Work through the troubleshooting steps
+4. Provide a solution or escalate if unresolved
+</example>
+</decision_making>
+
+<planning_with_constraints>
+<example name="constrained_planning">
+## Task
+Create a project plan for {project_description}.
+
+## Constraints
+- Budget: {budget}
+- Timeline: {timeline}
+- Team size: {team_size}
+
+## Planning Requirements
+1. Break the project into phases
+2. Identify dependencies between tasks
+3. Allocate resources within constraints
+4. Identify risks and mitigation strategies
+5. Define milestones and deliverables
+
+Ensure your plan respects all constraints. If constraints make the project infeasible, explain why and suggest adjustments.
+</example>
+</planning_with_constraints>
+
+<iteration_and_refinement>
+<example name="iterative_improvement">
+## Task
+Draft and refine a {document_type}.
+
+## Process
+1. Create an initial draft based on the requirements
+2. Review the draft for completeness and clarity
+3. Identify areas for improvement
+4. Revise the draft addressing identified issues
+5. Perform a final review
+
+Present your work at each stage, explaining your reasoning for changes.
+</example>
+</iteration_and_refinement>
+
+<best_practices>
+- Define clear success criteria so the model knows when the task is complete
+- Break complex tasks into explicit steps
+- Provide decision frameworks for handling different scenarios
+- Include checkpoints for the model to verify progress
+- Specify what information to retain or report at each step
+- Use phrases like "work through this systematically" or "complete each step before proceeding"
+</best_practices>
+</agentic>

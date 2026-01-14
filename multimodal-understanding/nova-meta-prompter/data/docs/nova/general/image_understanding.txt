@@ -1,0 +1,91 @@
+<image_understanding>
+<overview>
+When prompting for image understanding tasks, the user prompt text should always be the last item in the message, after all image content. Include task definition, instructions, and formatting details in the user prompt for strongest effect.
+</overview>
+
+<general_guidelines>
+- Place image content before the text prompt
+- When referring to multiple images, use text labels before each image
+- Include task definition, instructions, and formatting requirements in the user prompt
+</general_guidelines>
+
+<labeling_multiple_images>
+When working with multiple images, label each one before reference:
+
+Image 1: [first image]
+Image 2: [second image]
+
+Compare Image 1 and Image 2, noting the key differences in composition and lighting.
+</labeling_multiple_images>
+
+<text_extraction_ocr>
+<prompt_template>
+## Instructions
+Extract all information from this image using only {text_formatting} formatting.
+Retain the original layout and structure including lists, tables, charts and math formulae.
+
+## Rules
+1. For math formulae, always use LaTeX syntax.
+2. Describe images using only text.
+3. NEVER use HTML image tags in the output.
+4. NEVER use Markdown image tags in the output.
+5. Always wrap the entire output in ``` tags.
+</prompt_template>
+</text_extraction_ocr>
+
+<key_information_extraction>
+<prompt_template>
+Given the image representation of a document, extract information in JSON format according to the given schema.
+
+Follow these guidelines:
+- Ensure that every field is populated, provided the document includes the corresponding value. Only use null when the value is absent from the document.
+- When instructed to read tables or lists, read each row from every page. Ensure every field in each row is populated if the document contains the field.
+
+JSON Schema: {json_schema}
+</prompt_template>
+</key_information_extraction>
+
+<object_detection>
+<coordinate_system>
+Amazon Nova uses a 1000x1000 normalized coordinate space where x:0 y:0 is the upper left corner. Bounding boxes use the format [x1, y1, x2, y2] representing left, top, right, bottom coordinates.
+</coordinate_system>
+
+<single_object_detection>
+Please generate the bounding box coordinates corresponding to the region described in this sentence: {target_description}. Represent the bounding box as the [x1, y1, x2, y2] format, where the coordinates are scaled between 0 and 1000 to the image width and height, respectively.
+</single_object_detection>
+
+<multiple_object_detection>
+Please identify {target_description} in the image and provide the bounding box coordinates for each one you detect. Represent the bounding box as the [x1, y1, x2, y2] format, where the coordinates are scaled between 0 and 1000 to the image width and height, respectively.
+</multiple_object_detection>
+
+<center_point_detection>
+Please identify {target_description} in the image and provide the center point coordinates for each one you detect. Represent the point as the [x, y] format, where the coordinates are scaled between 0 and 1000 to the image width and height, respectively.
+</center_point_detection>
+
+<multi_class_detection>
+Detect all objects with their bounding boxes in the image from the provided class list. Normalize the bounding box coordinates to be scaled between 0 and 1000 to the image width and height, respectively.
+
+Classes: {candidate_class_list}
+
+Include separate entries for each detected object as an element of a list.
+
+Formulate your output as JSON format:
+[
+  {
+    "class": class 1,
+    "bbox": [x1, y1, x2, y2]
+  }
+]
+</multi_class_detection>
+</object_detection>
+
+<ui_element_detection>
+<goal_based>
+In this UI screenshot, what is the location of the element if I want to {goal}? Express the location coordinates using the [x1, y1, x2, y2] format, scaled between 0 and 1000.
+</goal_based>
+
+<text_based>
+In this UI screenshot, what is the location of the element if I want to click on "{text}"? Express the location coordinates using the [x1, y1, x2, y2] format, scaled between 0 and 1000.
+</text_based>
+</ui_element_detection>
+</image_understanding>

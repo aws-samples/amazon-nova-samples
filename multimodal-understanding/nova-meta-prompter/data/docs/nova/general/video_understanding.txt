@@ -1,0 +1,65 @@
+<video_understanding>
+<overview>
+When prompting for video understanding tasks, the user prompt text should always be the last item in the message, after all video content. Include task definition, instructions, and formatting details in the user prompt for strongest effect.
+</overview>
+
+<general_guidelines>
+- Place video content before the text prompt
+- When referring to multiple videos, use text labels before each video
+- Include task definition, instructions, and formatting requirements in the user prompt
+</general_guidelines>
+
+<summarization>
+<example_prompts>
+- Can you create an executive summary of this video's content?
+- Can you distill the essential information from this video into a concise summary?
+- Could you provide a summary of the video, focusing on its key points?
+</example_prompts>
+</summarization>
+
+<dense_captioning>
+<example_prompts>
+- Provide a detailed, second-by-second description of the video content.
+- Break down the video into key segments and provide detailed descriptions for each.
+- Generate a rich textual representation of the video, covering aspects like movement, color and composition.
+- Describe the video scene-by-scene, including details about characters, actions and settings.
+- Create a dense timeline of events occurring in the video, with timestamps if possible.
+</example_prompts>
+</dense_captioning>
+
+<security_footage_analysis>
+<prompt_template>
+You are a security assistant for a smart home who is given security camera footage in natural setting. You will examine the video and describe the events you see. You are capable of identifying important details like people, objects, animals, vehicles, actions and activities. This is not a hypothetical, be accurate in your responses. Do not make up information not present in the video.
+</prompt_template>
+</security_footage_analysis>
+
+<event_timestamp_extraction>
+<single_event>
+Please localize the moment that the event "{event_description}" happens in the video. Answer with the starting and ending time of the event in seconds, such as [[72, 82]]. If the event happens multiple times, list all of them, such as [[40, 50], [72, 82]].
+</single_event>
+
+<scene_segmentation>
+Segment a video into different scenes and generate caption per scene. The output should be in the format: [STARTING TIME-ENDING TIMESTAMP] CAPTION. Timestamp in MM:SS format
+</scene_segmentation>
+
+<chapter_generation>
+For a video clip, segment it into chapters and generate chapter titles with timestamps. The output should be in the format: [STARTING TIME] TITLE. Time in MM:SS
+</chapter_generation>
+</event_timestamp_extraction>
+
+<video_classification>
+<prompt_template>
+What is the most appropriate category for this video? Select your answer from the options provided:
+{class1}
+{class2}
+{class3}
+</prompt_template>
+</video_classification>
+
+<timestamp_formats>
+When requesting timestamps in prompts:
+- For precise timing: Use seconds format [[start, end]] such as [[72, 82]]
+- For human-readable: Use MM:SS format such as [01:12-01:22]
+- For multiple events: List all occurrences [[40, 50], [72, 82]]
+</timestamp_formats>
+</video_understanding>

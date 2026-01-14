@@ -1,0 +1,92 @@
+<document_understanding>
+<overview>
+When prompting for document understanding tasks, the user prompt text should always be the last item in the message, after all document content. Document understanding includes PDF processing, form extraction, table reading, and structured data extraction from documents.
+</overview>
+
+<general_guidelines>
+- Place document content before the text prompt
+- When referring to multiple documents, use text labels before each document
+- Include task definition, instructions, and formatting requirements in the user prompt
+- For multi-page documents, ensure instructions apply across all pages
+</general_guidelines>
+
+<labeling_multiple_documents>
+When working with multiple documents, label each one before reference:
+
+Document 1: [first document]
+Document 2: [second document]
+
+Compare Document 1 and Document 2, identifying any discrepancies in the reported figures.
+</labeling_multiple_documents>
+
+<text_extraction_ocr>
+<prompt_template>
+## Instructions
+Extract all information from this document using only {text_formatting} formatting.
+Retain the original layout and structure including lists, tables, charts and math formulae.
+
+## Rules
+1. For math formulae, always use LaTeX syntax.
+2. Describe images using only text.
+3. NEVER use HTML image tags in the output.
+4. NEVER use Markdown image tags in the output.
+5. Always wrap the entire output in ``` tags.
+</prompt_template>
+</text_extraction_ocr>
+
+<key_information_extraction>
+<image_input>
+Given the image representation of a document, extract information in JSON format according to the given schema.
+
+Follow these guidelines:
+- Ensure that every field is populated, provided the document includes the corresponding value. Only use null when the value is absent from the document.
+- When instructed to read tables or lists, read each row from every page. Ensure every field in each row is populated if the document contains the field.
+
+JSON Schema: {json_schema}
+</image_input>
+
+<text_input>
+Given the OCR representation of a document, extract information in JSON format according to the given schema.
+
+Follow these guidelines:
+- Ensure that every field is populated, provided the document includes the corresponding value. Only use null when the value is absent from the document.
+- When instructed to read tables or lists, read each row from every page. Ensure every field in each row is populated if the document contains the field.
+
+JSON Schema: {json_schema}
+
+OCR: {document_text}
+</text_input>
+</key_information_extraction>
+
+<table_extraction>
+<prompt_template>
+Extract all tables from this document. For each table:
+1. Identify the table title or context
+2. Extract all column headers
+3. Extract all row data, preserving the relationship between columns
+4. Output in the specified format: {output_format}
+
+Ensure every row from every page is captured.
+</prompt_template>
+</table_extraction>
+
+<form_extraction>
+<prompt_template>
+Extract all form fields and their values from this document.
+
+For each field:
+- Field label/name
+- Field value (use null if empty)
+- Field type (text, checkbox, signature, date, etc.)
+
+Output as JSON following this schema: {json_schema}
+</prompt_template>
+</form_extraction>
+
+<multi_page_processing>
+When processing multi-page documents:
+- Explicitly instruct the model to process all pages
+- Use phrases like "read each row from every page" or "across all pages"
+- For large documents, consider breaking into sections with clear references
+</multi_page_processing>
+</document_understanding>

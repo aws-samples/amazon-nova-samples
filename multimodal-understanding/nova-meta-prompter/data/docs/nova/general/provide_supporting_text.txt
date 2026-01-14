@@ -12,6 +12,32 @@ User: {{Query}}
 Reference texts: {{Reference texts}}
 </prompt_template>
 
+<citation_markers>
+To enable inline citations in the model's response, number your reference passages and instruct the model to cite them:
+
+<numbered_passages_template>
+Reference Passages:
+%[1]% {first_passage}
+%[2]% {second_passage}
+%[3]% {third_passage}
+
+Instructions: Answer the following question using only the information in the reference passages. Include inline citations using the passage numbers (e.g., %[1]%) to indicate which passage supports each claim.
+
+Question: {query}
+</numbered_passages_template>
+
+<example name="citation_format">
+Reference Passages:
+%[1]% The company was founded in 2015 by Jane Smith in Seattle.
+%[2]% Annual revenue reached $50 million in 2023, a 25% increase from 2022.
+%[3]% The company employs 200 people across three offices.
+
+Question: When was the company founded and by whom?
+
+Expected response with citations: The company was founded in 2015 by Jane Smith %[1]%.
+</example>
+</citation_markers>
+
 <example name="provide_grounding_content">
 <context>Providing grounding context helps to prevent the model from hallucinating or refusing to answer.</context>
 

@@ -1,0 +1,71 @@
+<reasoning_mode>
+<overview>
+Amazon Nova models support a reasoning mode for complex tasks requiring multiple reasoning steps. When writing prompts for reasoning-intensive tasks, use a top-down approach: start with the big picture and break the problem into smaller subproblems.
+</overview>
+
+<when_to_use>
+Reasoning mode is recommended for:
+- Complex tasks with multiple reasoning steps
+- Cross-referencing information across sources
+- Error-prone calculations
+- Planning with constraints
+- Complex classifications
+- Tool calling scenarios requiring decision-making
+</when_to_use>
+
+<prompt_guidelines>
+<top_down_approach>
+Structure prompts to guide reasoning from general to specific:
+1. State the overall goal or question
+2. Break down into component parts
+3. Specify how parts should be analyzed
+4. Define how to synthesize the final answer
+</top_down_approach>
+
+<example name="multi_step_analysis">
+Analyze this financial report to determine investment viability.
+
+Steps:
+1. First, identify the key financial metrics (revenue, profit margin, debt ratio)
+2. Then, compare each metric against industry benchmarks
+3. Assess trends over the past 3 years
+4. Finally, synthesize your findings into a recommendation with supporting evidence
+</example>
+</prompt_guidelines>
+
+<reasoning_vs_chain_of_thought>
+Choose Chain of Thought (CoT) prompting over reasoning mode when:
+- You need transparency and auditability of the reasoning process
+- You require custom reasoning structures
+- You are developing and debugging prompts
+- You want to use hybrid approaches (CoT for development, reasoning mode for production)
+
+Chain of thought makes the reasoning process visible in the output, while reasoning mode optimizes for the final answer.
+</reasoning_vs_chain_of_thought>
+
+<prompt_templates>
+<explicit_reasoning>
+{query}
+
+Before answering, work through this systematically:
+1. Identify the key components of the problem
+2. Analyze each component
+3. Consider how they interact
+4. Formulate your conclusion based on this analysis
+</explicit_reasoning>
+
+<structured_reasoning_output>
+{query}
+
+Think through this step by step, then provide your answer.
+
+Response format:
+<reasoning>
+(your step-by-step analysis)
+</reasoning>
+<answer>
+(your final answer)
+</answer>
+</structured_reasoning_output>
+</prompt_templates>
+</reasoning_mode>
