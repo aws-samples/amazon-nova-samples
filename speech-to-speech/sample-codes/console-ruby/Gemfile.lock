@@ -1,0 +1,32 @@
+GEM
+  specs:
+    aws-eventstream (1.4.0)
+    aws-partitions (1.1114.0)
+    aws-sdk-bedrockruntime (1.49.0)
+      aws-sdk-core (~> 3, >= 3.225.0)
+      aws-sigv4 (~> 1.5)
+    aws-sdk-core (3.225.1)
+      aws-eventstream (~> 1, >= 1.3.0)
+      aws-partitions (~> 1, >= 1.992.0)
+      aws-sigv4 (~> 1.9)
+      base64
+      jmespath (~> 1, >= 1.6.1)
+      logger
+    aws-sigv4 (1.12.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+    base64 (0.3.0)
+    ffi (1.17.2-arm64-darwin)
+    ffi-portaudio (0.1.3)
+      ffi
+    jmespath (1.6.2)
+    logger (1.7.0)
+
+PLATFORMS
+  arm64-darwin-24
+
+DEPENDENCIES
+  aws-sdk-bedrockruntime
+  ffi-portaudio
+
+BUNDLED WITH
+   2.6.9
