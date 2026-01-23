@@ -148,8 +148,6 @@ def start_nova_act(
         logs_directory=logs_dir,
         user_data_dir=user_data_dir,
         clone_user_data_dir=False,
-        screen_width=1920,
-        screen_height=1080,
     )
 
     nova.start()
