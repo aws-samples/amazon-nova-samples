@@ -15,9 +15,9 @@ Amazon Nova 2 Omni is a multimodal foundation model that can understand and gene
 | Model ID | us.amazon.nova-2-omni-v1:0 |
 | Input Modalities | Text, Audio, Image |
 | Output Modalities | Text, Image |
-| Context Window | 300k tokens |
+| Context Window | 1M tokens |
 | Max Output Tokens | 10k |
-| Supported Audio Formats | mp3, opus, wav, aac, flac, mp4, ogg, mkv |
+| Supported Audio Formats | mp3, opus, wav, aac, flac, m4a, ogg, mka |
 | Regions | us-east-1 |
 | Converse API | Yes |
 | InvokeAPI | Yes |
