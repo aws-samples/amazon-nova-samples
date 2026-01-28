@@ -24,6 +24,12 @@ Think of this as your treasure map to Nova customization. Each path leads to pow
 | **🛠️ Function Calling Distillation**   | Distill tool-use and function-calling capabilities into smaller models                               | [`bedrock-distillation/distillation_recipes/02_function_calling/`](bedrock-distillation/distillation_recipes/02_function_calling/)                                   |
 | **🎨 Canvas Fine-tuning**              | Teach Nova Canvas to generate images in your unique style (like your pet, brand, or artistic vision) | [`bedrock-finetuning/canvas/`](bedrock-finetuning/canvas/)                                                                                                           |
 
+#### ⚙️ HyperPod Setup (Nova 1.0 & 2.0) - Optional
+
+| 🎯 Use Case                    | 💡 What It Does                                        | 🔗 Where To Go                                                                                                                                             |
+| ------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **⚙️ HyperPod Cluster Setup**  | One-time setup for HyperPod RIG cluster (only needed for HyperPod-based training like RFT or distributed workloads) | [`hyperpod-rig-cluster-setup/`](hyperpod-rig-cluster-setup/) <br> 📓 [`Hyperpod Nova Cluster and Dependencies setup.ipynb`](hyperpod-rig-cluster-setup/Hyperpod%20Nova%20Cluster%20and%20Dependencies%20setup.ipynb) |
+
 #### 🔶 SageMaker Nova 1.0 Customization
 
 | 🎯 Use Case                    | 💡 What It Does                                        | 🛠️ Platform         | 🔗 Where To Go                                                                                                                                             |
@@ -40,6 +46,7 @@ Think of this as your treasure map to Nova customization. Each path leads to pow
 | ----------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **📊 Data Prep for Training**       | Prepare and format datasets for Nova 2.0 fine-tuning      | [`Nova_2.0/01_data_prep/`](Nova_2.0/01_data_prep/) <br> 📓 [`data_prep_sft_peft_fr.ipynb`](Nova_2.0/01_data_prep/data_prep_sft_peft_fr.ipynb)        |
 | **🎓 Supervised Fine-Tuning (SFT)** | Train Nova 2.0 with your labeled examples using LoRA/PEFT | [`Nova_2.0/02_sft/`](Nova_2.0/02_sft/) <br> 📓 [`sft_peft_fr.ipynb`](Nova_2.0/02_sft/sft_peft_fr.ipynb)                                              |
+| **🎯 Reinforcement Fine-Tuning (RFT)**  | Single-turn RFT training on HyperPod for improved model quality (requires HyperPod setup) | [`Nova_2.0/03_rft/`](Nova_2.0/03_rft/) <br> 📓 [`Hyperpod Nova RFT One-Stop Notebook (Single turn).ipynb`](Nova_2.0/03_rft/Hyperpod%20Nova%20RFT%20One-Stop%20Notebook%20(Single%20turn).ipynb) |
 | **✅ Model Evaluation**             | Evaluate your fine-tuned Nova models with custom metrics  | [`Nova_2.0/04_eval/`](Nova_2.0/04_eval/) <br> 📓 [`eval.ipynb`](Nova_2.0/04_eval/eval.ipynb)                                                         |
 | **🚀 Model Deployment**             | Deploy your custom Nova models to production              | [`Nova_2.0/05_deployment/`](Nova_2.0/05_deployment/) <br> 📓 [`deployment_custom_model.ipynb`](Nova_2.0/05_deployment/deployment_custom_model.ipynb) |
 | **🎪 End-to-End Workshop**          | Complete SFT workflow from data prep to deployment        | [`Nova_2.0/workshop/EndToEnd_SFT_Workshop/`](Nova_2.0/workshop/EndToEnd_SFT_Workshop/)                                                               |
@@ -85,9 +92,10 @@ Perfect for:
 **Nova 2.0 Path** (Recommended for most users):
 
 1. [`Nova_2.0/01_data_prep/`](Nova_2.0/01_data_prep/) → Prepare data
-2. [`Nova_2.0/02_sft/`](Nova_2.0/02_sft/) → Train with SFT/PEFT
-3. [`Nova_2.0/04_eval/`](Nova_2.0/04_eval/) → Evaluate results
-4. [`Nova_2.0/05_deployment/`](Nova_2.0/05_deployment/) → Deploy to production
+2. [`Nova_2.0/02_sft/`](Nova_2.0/02_sft/) → Train with SFT/PEFT (SageMaker Training Jobs or Bedrock)
+3. [`Nova_2.0/03_rft/`](Nova_2.0/03_rft/) → Advanced RFT training on HyperPod (optional, requires [HyperPod setup](hyperpod-rig-cluster-setup/))
+4. [`Nova_2.0/04_eval/`](Nova_2.0/04_eval/) → Evaluate results
+5. [`Nova_2.0/05_deployment/`](Nova_2.0/05_deployment/) → Deploy to production
 
 **Nova 1.0 Path** (For specific patterns):
 
@@ -169,6 +177,54 @@ Perfect for:
 - ⏱️ Longer training time
 - 🎯 Requires more data
 
+### 🎯 Reinforcement Fine-Tuning (RFT)
+
+**TL;DR**: Improve model performance through feedback signals (rewards) rather than exact correct answers
+
+Reinforcement Fine-Tuning uses reward functions to evaluate model responses and iteratively optimizes the model to maximize these rewards. Unlike traditional supervised fine-tuning that learns from input-output pairs, RFT uses measurable scores indicating response quality to guide learning.
+
+**Perfect for:**
+
+- Tasks where defining exact correct outputs is challenging, but you can measure response quality
+- Creative writing, code optimization, or complex reasoning tasks
+- Applications requiring nuanced decision-making or adherence to specific quality criteria
+- Balancing multiple competing objectives (accuracy, efficiency, style)
+
+**Key Benefits:**
+
+- 📈 Learns complex behaviors through trial and feedback
+- 🎯 Optimizes for measurable success criteria without needing exact outputs
+- 🔄 Handles subjective or multifaceted quality requirements
+- ⚡ Supports reasoning mode for complex problem-solving tasks
+
+**When to use:**
+
+- You can define clear, measurable success criteria but struggle to provide exact correct outputs
+- Quality is subjective or multifaceted with multiple valid solutions
+- Need iterative improvement, personalization, or adherence to complex business rules
+- Working with single-turn interactions where output quality can be objectively measured
+
+**What RFT excels at:**
+
+- Creative content generation with style constraints
+- Code generation with performance optimization
+- Complex reasoning tasks requiring step-by-step problem solving
+- Dialogue systems balancing helpfulness, safety, and engagement
+
+**Supported Models:**
+
+- Amazon Nova Lite 2.0 (amazon.nova-2-lite-v1:0:256k)
+
+**Requirements:**
+
+- HyperPod RIG cluster (see [cluster setup guide](hyperpod-rig-cluster-setup/) for one-time setup)
+- Training data with reward signals or evaluator to score responses
+- SageMaker Studio JupyterLab environment
+
+**Note**: RFT currently requires HyperPod. For other training methods (SFT, DPO), you can use Bedrock or SageMaker Training Jobs without HyperPod setup.
+
+**Learn more**: [AWS Documentation on RFT](https://docs.aws.amazon.com/sagemaker/latest/dg/nova-hp-rft.html)
+
 ---
 
 ## 🎓 Learning Paths
@@ -187,8 +243,9 @@ You've done some ML before and want to dive deeper:
 
 1. **Data Prep**: [Nova 2.0 Data Preparation](Nova_2.0/01_data_prep/)
 2. **Training**: [Supervised Fine-Tuning with PEFT](Nova_2.0/02_sft/)
-3. **Evaluation**: [Model Evaluation Techniques](Nova_2.0/04_eval/)
-4. **Deploy**: [Production Deployment](Nova_2.0/05_deployment/)
+3. **Advanced Training**: [Reinforcement Fine-Tuning (RFT)](Nova_2.0/03_rft/)
+4. **Evaluation**: [Model Evaluation Techniques](Nova_2.0/04_eval/)
+5. **Deploy**: [Production Deployment](Nova_2.0/05_deployment/)
 
 ### 🚀 **Advanced Path** (2-3 days)
 
@@ -232,6 +289,14 @@ Don't miss these helpful tools that make customization easier:
 - **Use provisioned throughput**: For production workloads
 - **Cache frequently**: Leverage caching for repeated patterns
 
+### 🔧 HyperPod Setup
+
+- **When needed**: Only required if you're using HyperPod for distributed training or RFT (not needed for Bedrock or SageMaker Training Jobs)
+- **One-time setup**: Complete the [cluster setup](hyperpod-rig-cluster-setup/) once per environment (works for both Nova 1.0 and 2.0)
+- **Reusable**: Once configured, use the same cluster for multiple training jobs
+- **Prerequisites**: Ensure you have SageMaker Studio JupyterLab with sufficient storage (50GB+)
+- **Use cases**: RFT training and large-scale distributed training workloads
+
 ### 🔍 Debugging Tips
 
 - **Monitor metrics**: Check loss curves during training
@@ -253,10 +318,12 @@ Perfect for: Quick iteration, managed infrastructure
 ### End-to-End SageMaker Workflow
 
 ```
-📊 Prep Data → 🎓 Train (SFT/DPO) → ✅ Evaluate → 🚀 Deploy → 📈 Monitor → 🔄 Iterate
+📊 Prep Data → 🎓 Train (SFT/DPO on Training Jobs or RFT on HyperPod) → ✅ Evaluate → 🚀 Deploy → 📈 Monitor → 🔄 Iterate
 ```
 
-Perfect for: Custom requirements, maximum control
+Perfect for: Custom requirements, maximum control, advanced training techniques
+
+**Note**: HyperPod setup only needed when developing on Hyperpod Cluster
 
 ---
 
