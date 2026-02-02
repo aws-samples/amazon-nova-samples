@@ -469,7 +469,7 @@ class NovaEvaluator:
             instance_type = self.get_recommended_instance_type(model_type)
         
         # Create the correct image URI using the SageMaker session's region
-        image_uri = f"708977205387.dkr.ecr.{self.sagemaker_session.boto_region_name}.amazonaws.com/nova-evaluation-repo:SM-TJ-Eval-latest"
+        image_uri = f"708977205387.dkr.ecr.{self.sagemaker_session.boto_region_name}.amazonaws.com/nova-evaluation-repo:SM-TJ-Eval-V2-latest"
         
         # Define recipe overrides
         recipe_overrides = {
