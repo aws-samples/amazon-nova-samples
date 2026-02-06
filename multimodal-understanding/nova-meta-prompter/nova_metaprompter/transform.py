@@ -11,6 +11,8 @@ import boto3
 from botocore.config import Config
 from contextlib import contextmanager
 
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
 
 # ============================================================================
 # File utilities
@@ -66,19 +68,25 @@ def bedrock_client_context():
         client.close()
 
 
-def bedrock_converse(bedrock_client, system_input, message, tool_list, model_id, inference_config=None):
+def bedrock_converse(bedrock_client, system_input, message, tool_list, model_id, inference_config=None, addtional_model_request_fields=None):
     """Make a conversation request to Bedrock."""
 
-    # Update tool choice if tools are provided
-    if tool_list and 'tools' in tool_list and len(tool_list['tools']) > 0:
-        tool_list.update({"toolChoice": {"tool": {"name": tool_list['tools'][0]['toolSpec']['name']}}})
+    # # Update tool choice if tools are provided
+    # if tool_list and 'tools' in tool_list and len(tool_list['tools']) > 0:
+    #     tool_list.update({"toolChoice": {"tool": {"name": tool_list['tools'][0]['toolSpec']['name']}}})
 
     # Set default inference configuration if none provided
-    if not inference_config:
-        inference_config = {
-            "maxTokens": 16000,
-            # "temperature": 0.6,
-            "topP": 0.4
+    # if not inference_config:
+    inference_config = {
+        "maxTokens": 10000,
+        # "temperature": 0.6,
+        "topP": 0.9,
+        "temperature": 1
+    }
+
+    if not addtional_model_request_fields:
+        addtional_model_request_fields = {
+
         }
 
     try:
@@ -87,7 +95,8 @@ def bedrock_converse(bedrock_client, system_input, message, tool_list, model_id,
             system=[system_input],
             messages=[message],
             inferenceConfig=inference_config,
-            toolConfig=tool_list
+            toolConfig=tool_list,
+            additionalModelRequestFields=addtional_model_request_fields
         )
         return response
     except bedrock_client.exceptions.ThrottlingException as e:
@@ -110,22 +119,22 @@ BASE_GUIDANCE_FILES = [
     "system_role",
     "few_shot_prompting",
     "chain_of_thought_prompting",
-    "requiring_structured_output",
 ]
 
 # Mapping from intents to additional guidance files
 INTENT_GUIDANCE_MAP = {
+    "text_understanding": [],
     "image_understanding": ["image_understanding"],
     "video_understanding": ["video_understanding"],
     "document_understanding": ["document_understanding"],
     "tool_use": ["tool_use"],
-    "structured_output": ["requiring_structured_output"],  # Already in base, but explicit
+    "structured_output": ["requiring_structured_output"],
     "rag": ["provide_supporting_text", "long_context"],
     "multilingual": ["multilingual"],
     "agentic": ["agentic", "tool_use", "reasoning_mode"],
 }
 
-GUIDANCE_DIR = os.path.join("data", "docs", "nova", "general")
+GUIDANCE_DIR = os.path.join(DATA_DIR, "docs", "nova", "general")
 
 # Mapping from boolean flag names to guidance files
 API_CAPABILITY_GUIDANCE = {
@@ -232,12 +241,12 @@ def transform_prompt(prompt, model_id=None, intents=None,
 
     # Default to Nova Premier if no model specified
     if model_id is None:
-        model_id = 'us.amazon.nova-premier-v1:0'
+        model_id = 'us.amazon.nova-2-pro-preview-20251202-v1:0'
 
     # Load required prompt files
-    system_prompt = load_text_file(os.path.join("data", "prompts"), "prompt_nova_migration_system.txt")
-    prompt_template = load_text_file(os.path.join("data", "prompts"), "prompt_nova_migration.txt")
-    migration_guidelines = load_text_file(os.path.join("data", "docs", "nova"), "migration_guidelines.txt")
+    system_prompt = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_nova_migration_system.txt")
+    prompt_template = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_nova_migration.txt")
+    migration_guidelines = load_text_file(os.path.join(DATA_DIR, "docs", "nova"), "migration_guidelines.txt")
 
     # Load guidance based on intents and API capabilities
     nova_docs = load_guidance_for_intents(
@@ -266,7 +275,7 @@ def transform_prompt(prompt, model_id=None, intents=None,
                         "json": {
                             "type": "object",
                             "properties": {
-                                "thinking": {
+                                "steps": {
                                     "type": "string",
                                     "description": "Detailed analysis of the transformation process including model-specific elements, relevant documentation, required optimizations, Nova compatibility considerations, and format adjustments",
                                 },
@@ -284,7 +293,7 @@ def transform_prompt(prompt, model_id=None, intents=None,
                                 },
                             },
                             "required": [
-                                "thinking",
+                                "steps",
                                 "nova_draft",
                                 "reflection",
                                 "nova_final",
@@ -304,9 +313,12 @@ def transform_prompt(prompt, model_id=None, intents=None,
 
     # Execute the transformation
     with bedrock_client_context() as client:
-        response = bedrock_converse(client, system_message, message, tool_list, model_id)
+        response = bedrock_converse(client, system_message, message, tool_list, model_id, addtional_model_request_fields={"inferenceConfig": {"reasoningConfig": {"type": "enabled", "maxReasoningEffort": "medium"}}})
 
-    return response["output"]["message"]["content"][0]["toolUse"]["input"]
+    content_list = response["output"]["message"]["content"]
+    tool_call = next((item for item in content_list if "toolUse" in item), None)
+
+    return tool_call["toolUse"]["input"]
 
 
 # ============================================================================
@@ -315,6 +327,7 @@ def transform_prompt(prompt, model_id=None, intents=None,
 
 # Valid intents for classification
 VALID_INTENTS = [
+    "text_understanding",
     "image_understanding",
     "video_understanding",
     "document_understanding",
@@ -354,11 +367,11 @@ def classify_intent(prompt, model_id=None):
 
     # Default to Nova Micro for fast, cheap classification
     if model_id is None:
-        model_id = 'us.amazon.nova-micro-v1:0'
+        model_id = 'us.amazon.nova-2-lite-v1:0'
 
     # Load required prompt files
-    system_prompt = load_text_file(os.path.join("data", "prompts"), "prompt_intent_classifier_system.txt")
-    prompt_template = load_text_file(os.path.join("data", "prompts"), "prompt_intent_classifier.txt")
+    system_prompt = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_intent_classifier_system.txt")
+    prompt_template = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_intent_classifier.txt")
 
     # Format the prompt
     formatted_prompt = prompt_template.format(input_prompt=prompt)

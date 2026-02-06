@@ -13,7 +13,15 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["transform.py"]
+packages = ["nova_metaprompter"]
+
+[tool.hatch.build.targets.wheel.sources]
+"nova_metaprompter" = "nova_metaprompter"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "nova_metaprompter/**/*",
+]
 
 [build-system]
 requires = ["hatchling"]

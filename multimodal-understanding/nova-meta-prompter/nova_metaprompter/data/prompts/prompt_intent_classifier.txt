@@ -1,0 +1,49 @@
+<input>
+<prompt_to_classify>{input_prompt}</prompt_to_classify>
+</input>
+
+<intent_taxonomy>
+- text_understanding: FALLBACK INTENT for basic text tasks (summarization, classification, sentiment analysis, Q&A) that do NOT involve other modalities, languages or capabilities. Use ONLY when no other intent applies. Do NOT combine with rag, document_understanding, or other intents.
+- image_understanding: Prompts involving image analysis, description, extraction, or visual reasoning. Look for: image placeholders ({{image}}), "picture", "photograph", "chart", "diagram", or instructions to analyze visual content.
+- video_understanding: Prompts involving video analysis, temporal reasoning, or frame-by-frame understanding. Look for: video placeholders ({{video}}), "footage", "clip", "recording", timestamps, or scene analysis.
+- document_understanding: Prompts involving PDF processing, document parsing, OCR, form extraction, or structured document analysis. Look for: "PDF", "document", "form", "scanned", page references, or table extraction from documents.
+- tool_use: Prompts that EXPLICITLY define or reference external tools, functions, or APIs to call. Requires explicit tool definitions, function schemas, or direct instructions like "use the X tool" or "call the Y function". Built-in capabilities (like PDF parsing or text analysis) are NOT tool_use.
+- structured_output: Prompts requiring specific output formats or extraction. Look for: "JSON", "XML", "CSV", "markdown table", explicit schema definitions, or field specifications.
+- rag: Prompts involving retrieval-augmented generation or grounded responses. Look for: "context", "provided documents", "retrieved", "knowledge base", "based on the following", "using only the information", "reference the passages", or <context> tags.
+- multilingual: Prompts requiring non-english languages such as translation or multilingual tasks. Look for: translation instructions, language specifications, OR the prompt itself being written in a non-English language.
+- agentic: Prompts requiring AUTONOMOUS iteration, adaptation, or ongoing decision-making. Look for: "continuously", "autonomously", "monitor and act", "iterate until", "adapt based on". Note: Numbered steps or multi-part instructions alone do NOT indicate agentic.
+</intent_taxonomy>
+
+<instructions>
+1. Read the input prompt carefully
+2. Check for explicit signals matching each intent
+3. A prompt can match multiple intents - but be conservative
+4. Use text_understanding ONLY as a fallback when no other intent applies
+5. Base classification on explicit signals, not assumptions
+</instructions>
+
+<guidelines>
+* text_understanding is mutually exclusive with rag and document_understanding - if those apply, do NOT add text_understanding
+* tool_use requires explicit tool/function definitions - document processing and text analysis are built-in, not tools
+* agentic requires autonomous behavior - multi-step instructions with clear steps are NOT agentic
+* rag applies whenever the prompt references provided context or documents to answer from
+* multilingual applies when the prompt itself contains non-English text (e.g., Spanish, French, German words/sentences)
+* structured_output: if you see "JSON", "XML", "CSV", or "table" in the prompt, add structured_output
+</guidelines>
+
+<examples>
+Example 1 - structured_output (keyword trigger):
+Prompt: "Analyze the data and return as JSON."
+Intents: ["structured_output"]
+Why: "JSON" keyword → structured_output. Not text_understanding.
+
+Example 2 - rag (context signal):
+Prompt: "Using the provided context, answer: <context>...</context>"
+Intents: ["rag"]
+Why: "provided context" + <context> tags → rag. Not text_understanding.
+
+Example 3 - multilingual (non-English):
+Prompt: "Escribe un resumen de este texto."
+Intents: ["multilingual"]
+Why: Prompt is in Spanish → multilingual.
+</examples>

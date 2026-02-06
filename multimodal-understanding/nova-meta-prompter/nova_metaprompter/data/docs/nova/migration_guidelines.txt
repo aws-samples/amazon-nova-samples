@@ -70,29 +70,6 @@ Output: Response
 - Include explicit "DO NOT mention examples in response" instruction
 </example_formatting>
 
-<chain_of_thought>
-In Nova, use one of the following templates depending on the structure that the Claude prompt used previously:
-Template 1:
-{{User query}} Think step-by-step.
-
-Template 2:
-{{User query}} Please follow these steps:
-1. {{Step 1}}
-2. {{Step 2}}
-...
-
-Template 3:
-{{User query}}
-Think step by step first and then answer. Follow below format when responding
-Response Schema:
-<thinking>
-( your thinking goes here )
-</thinking>
-<answer>
-( your answer goes here )
-</answer>
-</chain_of_thought>
-
 <output_control>
 1. Add Explicit Schema Definitions
 - Before (Claude):
@@ -114,13 +91,7 @@ Output Schema:
 }
 ```
 
-2. Implement Prefilling
-- Add response prefills for structured outputs:
-    ```
-Assistant: ```json
-```
-
-3. Add Format Enforcement
+2. Add Format Enforcement
 - Add explicit format instructions:
 "You MUST answer in JSON format only. DO NOT use any other format."
 </output_control>
@@ -138,3 +109,18 @@ Instructions: Use ONLY information from ##Reference## section. DO NOT include in
 - Add "DO NOT USE INFORMATION THAT IS NOT IN REFERENCE TEXTS!"
 - Specify allowed and disallowed information sources
 </hallucination_prevention>
+
+<content_preservation>
+IMPORTANT: Structural changes above are FORMAT ADAPTATIONS, not content reductions.
+
+Distinguish between:
+- MODEL MECHANICS (should adapt): XML syntax, model-specific behaviors, formatting conventions
+- TASK REQUIREMENTS (must preserve): Business logic, output specs, constraints, edge cases, examples
+
+When migrating prompts:
+- Adapt the format of instructions, but preserve their meaning and specificity
+- Restructure examples for Nova's format, but keep all example content
+- Preserve all constraints, DO/DO NOT rules, and edge case handling
+- If the original has 10 task requirements, the migrated version should have 10 task requirements
+- The migrated prompt should be similar in length to the original
+</content_preservation>

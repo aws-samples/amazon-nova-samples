@@ -1,0 +1,70 @@
+<documentation>
+<nova_docs>{nova_docs}</nova_docs>
+<migration_guidelines>{migration_guidelines}</migration_guidelines>
+</documentation>
+
+<input>
+<input_prompt>{current_prompt}</input_prompt>
+</input>
+
+<instructions>
+CRITICAL PRINCIPLE: This is a FORMAT ADAPTATION task, NOT a summarization task.
+The optimized prompt must preserve all task-specific requirements from the original.
+When uncertain whether something is model-specific or task-specific, preserve it.
+
+1. Review the provided prompt structure and components
+
+2. Categorize elements in the input prompt:
+   a) MODEL MECHANICS to adapt or remove:
+      - XML tag syntax (e.g., <thinking>, <answer> → Nova section headers)
+      - Model-specific behaviors (e.g., "use your constitutional AI training")
+      - Claude-specific formatting conventions
+   b) TASK REQUIREMENTS to preserve (must appear in final output):
+      - Business logic and domain rules
+      - Output format specifications (JSON fields, response structure)
+      - Constraints (word limits, inclusion/exclusion rules, DO/DO NOT instructions)
+      - Edge case handling (what to do when X happens)
+      - Examples that illustrate desired behavior
+      - Variable placeholders (e.g., {{document}}, {{user_input}})
+
+3. Quote relevant parts of the <nova_docs> and <migration_guidelines> that apply to this transformation
+
+4. Apply the <migration_guidelines> and findings from previous steps to transform the prompt and create a Nova Premier optimized draft. Ensure every TASK REQUIREMENT from step 2b is present.
+
+5. Reflect on the draft prompt:
+   - Content completeness: For each TASK REQUIREMENT from step 2b, verify it appears in the draft
+   - Functional equivalence: Would both prompts produce the same output for identical inputs? If not, what's missing?
+   - Nova Premier compatibility: Are all MODEL MECHANICS properly adapted?
+   - Formatting and structure: Is it well-organized with clear sections?
+
+6. Address issues found in reflection and produce the final optimized prompt.
+</instructions>
+
+<guidelines>
+* Format according to Nova Premier's preferred structure:
+   - Clear section headers (##)
+   - Task description
+   - Context information
+   - Input specification
+   - Output requirements
+   - Step-by-step instructions if needed
+
+* CONTENT PRESERVATION (distinguish MODEL MECHANICS from TASK REQUIREMENTS):
+   - MODEL MECHANICS (adapt or remove): XML tag syntax, model-specific behaviors,
+     Claude-specific conventions
+   - TASK REQUIREMENTS (must preserve): Business logic, output specs, constraints,
+     edge case handling, examples, placeholders
+   - The transformed prompt should be similar in length to the original -
+     structural improvements add clarity, they should not remove content
+   - When uncertain, preserve - the user included it for a reason
+
+* Optimize for Nova Premier's capabilities (extended context, structured output, etc.)
+
+* Use clear, direct language that Nova Premier responds well to
+
+* AVOID THESE MISTAKES:
+   - Summarizing detailed instructions into vague statements
+   - Removing constraints that seem "obvious" (they may handle edge cases)
+   - Converting specific examples into generic guidance
+   - Dropping DO/DO NOT rules
+</guidelines>
