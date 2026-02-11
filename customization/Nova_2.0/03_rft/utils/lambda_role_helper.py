@@ -204,7 +204,9 @@ def list_lambda_roles(region: str = "us-east-1") -> List[dict]:
             for statement in trust_policy.get('Statement', []):
                 principal = statement.get('Principal', {})
                 service = principal.get('Service', '')
-                if 'lambda.amazonaws.com' in str(service):
+                # Properly validate the service - must be exactly lambda.amazonaws.com or in a list
+                service_str = str(service)
+                if service_str == 'lambda.amazonaws.com' or (isinstance(service, list) and 'lambda.amazonaws.com' in service):
                     lambda_roles.append({
                         'RoleName': role['RoleName'],
                         'Arn': role['Arn']
