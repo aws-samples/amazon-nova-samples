@@ -1,0 +1,42 @@
+You are evaluating {n} candidate Nova-optimized prompts that were generated from the same original prompt. Your job is to score each candidate on a binary (0 or 1) rubric across 10 metrics, then select the best one.
+
+## Original Prompt
+
+{original_prompt}
+
+## Migration Guidelines
+
+{migration_guidelines}
+
+## Candidates
+
+{candidates_xml}
+
+## Evaluation Rubric
+
+Score each candidate 0 or 1 on each metric:
+
+**Faithfulness (5 metrics):**
+1. `preserves_all_variables` — All placeholders/variables from the original prompt appear in the candidate
+2. `preserves_constraints` — All DO/DO NOT rules, word limits, and explicit constraints are present
+3. `preserves_examples` — Any examples or few-shot demonstrations from the original are retained
+4. `preserves_output_format` — Output format specifications (JSON fields, response structure, etc.) match the original
+5. `preserves_business_logic` — Domain rules, edge case handling, and business logic are intact
+
+**Nova Best Practices (3 metrics):**
+6. `uses_section_headers` — Uses ##Section## delimiters to organize the prompt
+7. `follows_migration_guidelines` — Structural changes align with the migration guidelines
+8. `removes_source_model_artifacts` — Claude/source-model-specific syntax (XML tags, model behaviors) are adapted or removed
+
+**Clarity & Organization (2 metrics):**
+9. `clear_instruction_flow` — Instructions follow a logical order and are unambiguous
+10. `no_redundancy` — No repeated or contradictory instructions
+
+## Instructions
+
+1. Evaluate each candidate against all 10 metrics
+2. Sum the scores for each candidate (max 10)
+3. Select the candidate with the highest total score
+4. If there is a tie, use your judgment to pick the best one and explain why in your reasoning
+
+Use the `select_best_candidate` tool to report your evaluation.

@@ -18,10 +18,7 @@ import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from nova_metaprompter.transform import (
-    transform_prompt,
-    transform_with_intent_classification,
-)
+from nova_metaprompter.transform import transform_with_intent_classification
 
 
 def load_prompts(input_path: Path, delimiter: str | None = None) -> list[dict]:
@@ -90,30 +87,21 @@ def save_results(results: list[dict], output_path: Path):
             json.dump(results, f, indent=2, ensure_ascii=False)
 
 
-def transform_single(item: dict, use_intent_classification: bool, model_id: str,
+def transform_single(item: dict, n: int, model_id: str,
                      reasoning_mode: bool, tool_use: bool, image: bool, video: bool) -> dict:
     """Transform a single prompt and return result dict."""
     prompt = item['prompt']
 
     try:
-        if use_intent_classification:
-            result = transform_with_intent_classification(
-                prompt,
-                transform_model_id=model_id,
-                reasoning_mode=reasoning_mode,
-                tool_use=tool_use,
-                image=image,
-                video=video,
-            )
-        else:
-            result = transform_prompt(
-                prompt,
-                model_id=model_id,
-                reasoning_mode=reasoning_mode,
-                tool_use=tool_use,
-                image=image,
-                video=video,
-            )
+        result = transform_with_intent_classification(
+            prompt,
+            n=n,
+            transform_model_id=model_id,
+            reasoning_mode=reasoning_mode,
+            tool_use=tool_use,
+            image=image,
+            video=video,
+        )
 
         return {
             **item,
@@ -134,16 +122,16 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Transform prompts from JSON array
+  # Transform prompts from JSON array (default: 4 candidates + judge per prompt)
   python -m nova_metaprompter.batch_transform prompts.json -o results.json
 
-  # Transform from JSONL with intent classification
-  python -m nova_metaprompter.batch_transform prompts.jsonl -o results.jsonl --classify-intent
+  # Transform with fewer candidates for faster processing
+  python -m nova_metaprompter.batch_transform prompts.json -o results.json --candidates 1
 
   # Transform from text file with custom delimiter
   python -m nova_metaprompter.batch_transform prompts.txt -o results.json --delimiter "---"
 
-  # Run with parallel processing
+  # Run with parallel processing (multiple prompts at once)
   python -m nova_metaprompter.batch_transform prompts.json -o results.json --workers 4
 
 Input formats:
@@ -159,9 +147,10 @@ Input formats:
     parser.add_argument('--delimiter', type=str, default=None,
                         help='Delimiter for splitting text files (default: newline)')
     parser.add_argument('--model-id', type=str, default=None,
-                        help='Model ID for transformation (default: us.amazon.nova-2-lite-v1:0)')
-    parser.add_argument('--classify-intent', action='store_true',
-                        help='Use intent classification to optimize guidance loading')
+                        help='Model ID for transformation (default: us.amazon.nova-2-pro-preview-20251202-v1:0)')
+    parser.add_argument('--candidates', type=int, default=4,
+                        help='Number of candidate transformations per prompt (default: 4). '
+                             'Set to 1 to skip candidate generation and judging.')
     parser.add_argument('--reasoning-mode', action='store_true',
                         help='Enable reasoning mode guidance')
     parser.add_argument('--tool-use', action='store_true',
@@ -193,6 +182,8 @@ Input formats:
     # Transform prompts
     results = []
 
+    print(f"Candidates per prompt: {args.candidates}")
+
     if args.workers > 1:
         print(f"Processing with {args.workers} parallel workers...")
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -200,7 +191,7 @@ Input formats:
                 executor.submit(
                     transform_single,
                     item,
-                    args.classify_intent,
+                    args.candidates,
                     args.model_id,
                     args.reasoning_mode,
                     args.tool_use,
@@ -221,7 +212,7 @@ Input formats:
             print(f"[{i}/{len(prompts)}] Processing ID={item['id']}...")
             result = transform_single(
                 item,
-                args.classify_intent,
+                args.candidates,
                 args.model_id,
                 args.reasoning_mode,
                 args.tool_use,
