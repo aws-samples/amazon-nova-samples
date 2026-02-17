@@ -14,9 +14,9 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
 
 - Task type options:
 
-  - sft: Supervised Fine-Tuning
-  - dpo: Direct Preference Optimization
-  - rft: Reinforcement Fine-Tuning (with reference answers)
+  - sft: Supervised Fine-Tuning (supported on all models)
+  - dpo: Direct Preference Optimization (Nova 1.0 only - not supported on lite-2.0)
+  - rft: Reinforcement Fine-Tuning with reference answers (Nova 2.0 Lite only - lite-2.0)
 
 - Model name options
 
@@ -32,6 +32,14 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
 - Platform options (optional, defaults to bedrock)
   - bedrock: Amazon Bedrock platform
   - sagemaker: Amazon SageMaker platform
+
+### Task Type Support Matrix
+
+| Task Type | Nova 1.0 Models | Nova 2.0 Lite (lite-2.0) |
+|-----------|----------------|--------------------------|
+| SFT       | ✅ Supported    | ✅ Supported             |
+| DPO       | ✅ Supported    | ❌ Not Supported         |
+| RFT       | ❌ Not Supported| ✅ Supported             |
 
 ### Nova 2.0 Features
 
@@ -49,7 +57,11 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
 1. Validates the `JSONL` format
 2. Collects all the client errors so
    - This ensures that all the errors are reported once rather than in an iterative manner
-3. For each line
+3. **Task type validation:**
+   - Ensures RFT is only used with lite-2.0 model
+   - Ensures DPO is only used with Nova 1.0 models (not lite-2.0)
+   - SFT works with all models
+4. For each line
    - required keys exists
    - `messages` field is not null
    - given `role` for each message is supported
@@ -58,14 +70,21 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
    - there are no more than 10 images per line
    - number of samples supported by model type (only for Bedrock platform)
    - image/video/document is from the supported formats
+   - invalid tokens are detected (case-insensitive: System:, USER:, Assistant:, etc.)
    - **Nova 2.0 specific validations:**
      - reasoning content only in assistant messages and only for lite-2.0
      - tool use placement (toolUse in assistant, toolResult in user messages)
      - tool use/result ID matching and uniqueness
      - tool names match toolConfig definitions
      - format restrictions for lite-2.0 (PNG, JPEG, GIF for images; MOV, MKV, MP4 for videos; PDF for documents)
-4. Platform-specific validations
-   - For Bedrock: Validates that the number of samples is within the allowed bounds for the model
+   - **RFT specific validations:**
+     - id field validation (optional but if present must not be empty)
+     - messages must contain at least one user message
+     - tools field is required and cannot be empty
+     - reference_answer validation (optional but if present must not be empty)
+     - duplicate tool names detection
+5. Platform-specific validations
+   - For Bedrock: Validates that the number of samples is within the allowed bounds for the model and task type
    - For SageMaker: Skips the data record bounds validation
 
 ### RFT (Reinforcement Fine-Tuning)
@@ -146,41 +165,52 @@ RFT with Tools:
 
 The following test files are provided to demonstrate various features:
 
-**SFT/DPO (Nova 2.0):**
+**SFT/DPO (Nova 1.0 & 2.0):**
 
-- `test_reasoning.jsonl` - Text conversations with reasoning content (8 examples)
-- `test_image_video_reasoning.jsonl` - Multimodal examples with images/videos and reasoning (8 examples)
-- `test_tool_use.jsonl` - Tool calling examples with reasoning (8 examples)
-- `test_documents.jsonl` - PDF document processing with reasoning (6 examples)
+- `test_simple.jsonl` - Basic text conversations (8 examples, works on all models)
+- `test_reasoning.jsonl` - Text conversations with reasoning content (8 examples, Nova 2.0 only)
+- `test_image_video_reasoning.jsonl` - Multimodal examples with images/videos and reasoning (8 examples, Nova 2.0 only)
+- `test_tool_use.jsonl` - Tool calling examples with reasoning (8 examples, Nova 2.0 only)
+- `test_documents.jsonl` - PDF document processing with reasoning (6 examples, Nova 2.0 only)
 
-**RFT:**
+**RFT (Nova 2.0 Lite only):**
 
-- `test_rft.jsonl` - Basic RFT examples with reference answers (6 examples)
+- `test_rft_valid.jsonl` - Valid RFT examples with reference answers (6 examples)
 - `test_rft_tools.jsonl` - RFT examples with tool definitions (6 examples)
+- `test_rft_invalid.jsonl` - Invalid RFT examples to test error detection (8 examples)
 
 **Test commands:**
 
 ```bash
-# Test reasoning content (SFT)
+# Test basic SFT (works on all models)
+python3 nova_ft_dataset_validator.py -i test_simple.jsonl -m lite-2.0 -t sft
+
+# Test reasoning content (SFT, Nova 2.0 only)
 python3 nova_ft_dataset_validator.py -i test_reasoning.jsonl -m lite-2.0 -t sft
 
-# Test images/videos with reasoning (SFT)
+# Test images/videos with reasoning (SFT, Nova 2.0 only)
 python3 nova_ft_dataset_validator.py -i test_image_video_reasoning.jsonl -m lite-2.0 -t sft
 
-# Test tool use (SFT)
+# Test tool use (SFT, Nova 2.0 only)
 python3 nova_ft_dataset_validator.py -i test_tool_use.jsonl -m lite-2.0 -t sft
 
-# Test documents (SFT)
+# Test documents (SFT, Nova 2.0 only)
 python3 nova_ft_dataset_validator.py -i test_documents.jsonl -m lite-2.0 -t sft
 
-# Test RFT basic (RFT only supported on lite-2.0)
-python3 nova_ft_dataset_validator.py -i test_rft.jsonl -m lite-2.0 -t rft
+# Test RFT valid samples (RFT only supported on lite-2.0)
+python3 nova_ft_dataset_validator.py -i test_rft_valid.jsonl -m lite-2.0 -t rft
 
 # Test RFT with tools (RFT only supported on lite-2.0)
 python3 nova_ft_dataset_validator.py -i test_rft_tools.jsonl -m lite-2.0 -t rft
 
+# Test RFT invalid samples (should show validation errors)
+python3 nova_ft_dataset_validator.py -i test_rft_invalid.jsonl -m lite-2.0 -t rft
+
+# Test DPO (Nova 1.0 only - will fail on lite-2.0)
+python3 nova_ft_dataset_validator.py -i test_dpo.jsonl -m lite -t dpo
+
 # Backward compatible test (Nova 1.0)
-python3 nova_ft_dataset_validator.py -i test_reasoning.jsonl -m lite -t sft
+python3 nova_ft_dataset_validator.py -i test_simple.jsonl -m lite -t sft
 ```
 
 ### Limitations
