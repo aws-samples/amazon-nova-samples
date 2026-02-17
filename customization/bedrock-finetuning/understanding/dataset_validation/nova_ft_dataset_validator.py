@@ -35,7 +35,6 @@ MODEL_TO_NUM_SAMPLES_MAP = {
 # Nova 2.0 Lite specific sample bounds by task type
 NOVA_2_0_LITE_SAMPLE_BOUNDS = {
     "SFT": (200, 20000),
-    "DPO": (8, 20000),
     "RFT": (100, 20000),
 }
 
@@ -46,12 +45,17 @@ INVALID_TOKENS_TEXT = [
     "System:",
     "SYSTEM:",
     "User:",
+    "user:"
     "USER:",
     "Bot:",
     "BOT:",
+    "bot:"
     "Assistant:",
     "ASSISTANT:",
+    "assistant:"
     "Thought:",
+    "thought:"
+    "THOUGHT:"
     "[EOS]",
     "<image>",
     "<video>",
@@ -786,6 +790,14 @@ def validate_converse_dataset(args):
             f"Current model: {args.model_name}. Please use -m lite-2.0 for RFT tasks."
         )
     
+    # DPO is not supported on Nova 2.0 (lite-2.0)
+    if task_type is TaskType.DPO and args.model_name == "lite-2.0":
+        raise NovaClientError(
+            f"DPO task type is not supported on Nova 2.0 (lite-2.0) model. "
+            f"DPO is only available for Nova 1.0 models (micro, lite, pro, micro-1.0, lite-1.0, pro-1.0). "
+            f"For Nova 2.0, please use SFT or RFT task types."
+        )
+    
     for i, sample in enumerate(samples):
         try:
             if task_type is TaskType.RFT:
@@ -831,12 +843,16 @@ def validate_converse_dataset(args):
 
 
 def validate_invalid_tokens(text: str):
-    """Validates that the input text does not contain any disallowed tokens"""
+    """Validates that the input text does not contain any disallowed tokens (case-insensitive)"""
 
     stripped_text = text.strip()
+    lower_text = stripped_text.lower()
     client_invalid_tokens = []
+    
     for invalid_token in INVALID_TOKENS_TEXT:
-        if invalid_token in stripped_text:
+        # Check case-insensitively by converting both to lowercase
+        if invalid_token.lower() in lower_text:
+            # Find the actual occurrence in the original text to report it accurately
             client_invalid_tokens.append(f"`{invalid_token}`")
 
     if client_invalid_tokens:
@@ -857,3 +873,137 @@ def check_roles_order(messages):
     for i, message in enumerate(messages):
         if i % 2 == 0 and message.role != ConverseRoles.USER:
             raise ValueError(
+                f"Invalid messages, expected {ConverseRoles.USER} role but found {message.role}"
+            )
+        elif i % 2 == 1 and message.role != ConverseRoles.ASSISTANT:
+            raise ValueError(
+                f"Invalid messages, expected {ConverseRoles.ASSISTANT} role but found {message.role}"
+            )
+
+    # When turns are odd
+    if messages[-1].role != ConverseRoles.ASSISTANT:
+        raise ValueError(f"Invalid messages, last turn should have {ConverseRoles.ASSISTANT} role")
+
+
+def validate_role_name(role: str):
+    """Validates that the role is either user or assistant."""
+    if role.lower() not in CONVERSE_ROLES_WITHOUT_SYSTEM:
+        raise ValueError(
+            f"Invalid role, role must be one of {CONVERSE_ROLES_WITHOUT_SYSTEM}"
+        )
+
+
+def is_valid_path(file_path):
+    """Validates that file path contains only alphanumeric characters, underscores, hyphens, slashes, and dots."""
+    pattern = r"^[\w\-/\.]+$"
+    if not re.match(pattern, file_path):
+        raise ValueError(
+            f"Invalid characters in 'uri'. Only alphanumeric, underscores, hyphens, slashes, and dots are allowed"
+        )
+
+
+def get_data_record_bounds(model_name: str, task_type: str):
+    """Returns the minimum and maximum number of samples allowed for a given model and task type."""
+    # For Nova 2.0 Lite, use task-specific bounds
+    if model_name == "lite-2.0" and task_type.upper() in NOVA_2_0_LITE_SAMPLE_BOUNDS:
+        return NOVA_2_0_LITE_SAMPLE_BOUNDS[task_type.upper()]
+    # For other models, use the general bounds
+    return MODEL_TO_NUM_SAMPLES_MAP.get(model_name, (8, 20000))
+
+
+def validate_data_record_bounds(num_samples: int, model_name: str, task_type: str):
+    """Validates that the number of samples is within allowed bounds for the model and task type."""
+    data_record_bounds = get_data_record_bounds(model_name, task_type)
+    if num_samples < data_record_bounds[0] or num_samples > data_record_bounds[1]:
+        raise NovaClientError(
+            (
+                f"Number of samples {num_samples} out of bounds between {data_record_bounds[0]} and {data_record_bounds[1]} "
+                f"for {model_name} with task type {task_type}"
+            )
+        )
+
+
+def validate_tool_use_in_conversation(messages: List[Message], tool_config: ToolConfig):
+    """Validates that tool use in the conversation follows proper rules."""
+    # Get all available tool names from toolConfig
+    available_tools = {tool.toolSpec.name for tool in tool_config.tools}
+    
+    # Track tool use IDs and their corresponding tool names
+    tool_use_ids = {}
+    tool_result_ids = set()
+    
+    for message in messages:
+        for content_item in message.content:
+            # Check toolUse
+            if content_item.toolUse is not None:
+                tool_use = content_item.toolUse
+                # Validate that the tool name exists in toolConfig
+                if tool_use.name not in available_tools:
+                    raise ValueError(
+                        f"Invalid toolUse, tool '{tool_use.name}' not found in toolConfig"
+                    )
+                # Track tool use ID
+                if tool_use.toolUseId in tool_use_ids:
+                    raise ValueError(
+                        f"Invalid toolUse, duplicate toolUseId '{tool_use.toolUseId}'"
+                    )
+                tool_use_ids[tool_use.toolUseId] = tool_use.name
+            
+            # Check toolResult
+            if content_item.toolResult is not None:
+                tool_result = content_item.toolResult
+                # Validate that the toolUseId was previously used
+                if tool_result.toolUseId not in tool_use_ids:
+                    raise ValueError(
+                        f"Invalid toolResult, toolUseId '{tool_result.toolUseId}' not found in previous toolUse"
+                    )
+                # Track tool result ID
+                if tool_result.toolUseId in tool_result_ids:
+                    raise ValueError(
+                        f"Invalid toolResult, duplicate toolUseId '{tool_result.toolUseId}'"
+                    )
+                tool_result_ids.add(tool_result.toolUseId)
+
+
+if __name__ == "__main__":
+    description = """
+    This script is for validating Nova converse format.
+    Takes input a jsonl file with samples in the Nova converse format:
+    https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune-prepare.html
+    """
+    parser = argparse.ArgumentParser(
+        description=description, formatter_class=argparse.RawTextHelpFormatter
+    )
+    parser.add_argument(
+        "-i",
+        "--input_file",
+        type=str,
+        required=True,
+        help="The input jsonl file in Nova converse format",
+    )
+    parser.add_argument(
+        "-m",
+        "--model_name",
+        type=str,
+        choices=["micro", "micro-1.0", "lite", "lite-1.0", "lite-2.0", "pro", "pro-1.0"],
+        required=True,
+        help="Choose a model from: micro, micro-1.0, lite, lite-1.0, lite-2.0, pro, pro-1.0",
+    )
+    parser.add_argument(
+        "-t",
+        "--task_type",
+        type=str,
+        choices=["sft", "dpo", "rft"],
+        default="sft",
+        help="Choose a task type from: SFT (Supervised Fine-Tuning), DPO (Direct Preference Optimization), RFT (Reinforcement Fine-Tuning). Default: SFT",
+    )
+    parser.add_argument(
+        "-p",
+        "--platform",
+        type=str,
+        choices=["bedrock", "sagemaker"],
+        default="bedrock",
+        help="Choose the platform: bedrock or sagemaker. Default: bedrock",
+    )
+    args = parser.parse_args()
+    validate_converse_dataset(args)
