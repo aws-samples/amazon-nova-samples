@@ -5,14 +5,25 @@ Simple API to align prompts with Amazon Nova guidelines.
 """
 
 import os
+import re
 import time
+import random
 import glob
 import boto3
 from botocore.config import Config
+from botocore.exceptions import ClientError
 from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+# ============================================================================
+# Default model IDs
+# ============================================================================
+
+DEFAULT_CLASSIFIER_MODEL_ID = "us.amazon.nova-2-lite-v1:0"
+DEFAULT_TRANSFORM_MODEL_ID = "us.anthropic.claude-sonnet-4-6"
+DEFAULT_JUDGE_MODEL_ID = "openai.gpt-oss-20b-1:0"
 
 
 # ============================================================================
@@ -35,6 +46,43 @@ def load_text_files(directory):
         with open(filepath, 'r', encoding='utf-8') as file:
             files_dict[filename_without_ext] = file.read()
     return files_dict
+
+
+def parse_xml_tag(text, tag, strict=False):
+    """Extract content between <tag>...</tag>.
+
+    Args:
+        text: Source text to parse.
+        tag: XML tag name to look for.
+        strict: If True, raise ValueError when multiple matches are found.
+
+    Returns:
+        Last match (stripped) or None if no match found.
+
+    Raises:
+        ValueError: If strict=True and multiple matches are found.
+    """
+    matches = re.findall(rf"<{tag}>(.*?)</{tag}>", text, re.DOTALL)
+    if strict and len(matches) > 1:
+        raise ValueError(
+            f"Expected exactly one <{tag}> tag but found {len(matches)}"
+        )
+    return matches[-1].strip() if matches else None
+
+
+def parse_xml_tags(text, tag):
+    """Extract all occurrences of <tag>...</tag>. Returns list of strings."""
+    return [m.strip() for m in re.findall(rf"<{tag}>(.*?)</{tag}>", text, re.DOTALL)]
+
+
+def _extract_text(response):
+    """Extract text content from Bedrock converse response."""
+    content_list = response["output"]["message"]["content"]
+    text_item = next((item for item in content_list if "text" in item), None)
+    if text_item is None:
+        raise ValueError(f"No text content in response. Content keys: "
+                         f"{[list(item.keys()) for item in content_list]}")
+    return text_item["text"]
 
 
 # ============================================================================
@@ -69,43 +117,129 @@ def bedrock_client_context():
         client.close()
 
 
-def bedrock_converse(bedrock_client, system_input, message, tool_list, model_id, inference_config=None, addtional_model_request_fields=None):
-    """Make a conversation request to Bedrock."""
+def bedrock_converse(bedrock_client, system_input, message, model_id,
+                     inference_config=None, additional_model_request_fields=None,
+                     max_retries=5, base_delay=2):
+    """Make a conversation request to Bedrock with bounded exponential backoff.
 
-    # # Update tool choice if tools are provided
-    # if tool_list and 'tools' in tool_list and len(tool_list['tools']) > 0:
-    #     tool_list.update({"toolChoice": {"tool": {"name": tool_list['tools'][0]['toolSpec']['name']}}})
+    Retries on ThrottlingException and ServiceUnavailableException up to
+    max_retries times with exponential backoff and jitter.
 
-    # Set default inference configuration if none provided
-    if not inference_config:
-        inference_config = {
-            "maxTokens": 10000,
-            "topP": 0.9,
-            "temperature": 1
-        }
+    Args:
+        bedrock_client: Boto3 Bedrock runtime client.
+        system_input: System message dict.
+        message: User message dict.
+        model_id: Bedrock model identifier.
+        inference_config: Optional inference configuration dict.
+        additional_model_request_fields: Optional additional model request fields.
+        max_retries: Maximum number of retry attempts (default 5).
+        base_delay: Base delay in seconds for exponential backoff (default 2).
+    """
 
-    if not addtional_model_request_fields:
-        addtional_model_request_fields = {
+    if not additional_model_request_fields:
+        additional_model_request_fields = {}
 
-        }
+    # Nova 2 with high reasoning effort does not support inferenceConfig
+    # parameters (maxTokens, topP, temperature).
+    reasoning_cfg = (additional_model_request_fields
+                     .get("inferenceConfig", {})
+                     .get("reasoningConfig", {}))
+    is_nova2_high_reasoning = (
+        "amazon.nova-2" in model_id
+        and reasoning_cfg.get("maxReasoningEffort") == "high"
+    )
 
-    try:
-        response = bedrock_client.converse(
-            modelId=model_id,
-            system=[system_input],
-            messages=[message],
-            inferenceConfig=inference_config,
-            toolConfig=tool_list,
-            additionalModelRequestFields=addtional_model_request_fields
-        )
-        return response
-    except bedrock_client.exceptions.ThrottlingException as e:
-        wait_sec = 60
-        print(f'LLM got throttled, waiting {str(wait_sec)} seconds.')
-        # nosemgrep: arbitrary-sleep
-        time.sleep(wait_sec)
-        # Recursive retry
-        return bedrock_converse(bedrock_client, system_input, message, tool_list, model_id, inference_config)
+    # Claude with extended thinking requires temperature=1.
+    is_claude_thinking = (
+        "anthropic.claude" in model_id
+        and additional_model_request_fields.get("thinking", {}).get("type") == "enabled"
+    )
+
+    # Set default inference configuration if none provided,
+    # unless Nova 2 high reasoning or Claude thinking prohibit certain params.
+    if not inference_config and not is_nova2_high_reasoning:
+        if is_claude_thinking:
+            # Claude thinking requires temperature=1, topP >= 0.95 or unset,
+            # and maxTokens > budget_tokens.
+            inference_config = {"maxTokens": 16000, "temperature": 1}
+        else:
+            inference_config = {"maxTokens": 10000, "topP": 0.9, "temperature": 1}
+
+    retryable_error_codes = {"ThrottlingException", "ServiceUnavailableException"}
+
+    for attempt in range(max_retries + 1):
+        try:
+            converse_kwargs = dict(
+                modelId=model_id,
+                system=[system_input],
+                messages=[message],
+                additionalModelRequestFields=additional_model_request_fields,
+            )
+            if inference_config:
+                converse_kwargs["inferenceConfig"] = inference_config
+
+            response = bedrock_client.converse(**converse_kwargs)
+            return response
+        except ClientError as e:
+            error_code = e.response["Error"]["Code"]
+            if error_code not in retryable_error_codes:
+                raise
+            if attempt == max_retries:
+                raise
+            # Exponential backoff with full jitter
+            delay = min(base_delay * (2 ** attempt), 120)
+            jittered_delay = random.uniform(0, delay)  # nosemgrep: arbitrary-sleep
+            print(f"Bedrock {error_code} (attempt {attempt + 1}/{max_retries}), "
+                  f"retrying in {jittered_delay:.1f}s...")
+            time.sleep(jittered_delay)
+
+
+# ============================================================================
+# XML output format instructions
+# ============================================================================
+
+OUTPUT_FORMAT_TRANSFORM = """
+
+Respond using the following XML format. Do not include any text outside of the <response> tags.
+
+<response>
+<steps>Detailed analysis of the transformation process including model-specific elements, relevant documentation, required optimizations, Nova compatibility considerations, and format adjustments</steps>
+<nova_draft>The transformed Nova-aligned prompt following best practices</nova_draft>
+<reflection>Reflection on the draft prompt</reflection>
+<nova_final>Final Nova-aligned prompt based on reflections</nova_final>
+</response>
+"""
+
+OUTPUT_FORMAT_CLASSIFY = """
+
+Respond using the following XML format. Do not include any text outside of the <response> tags.
+
+Valid intent values: {valid_intents}
+
+<response>
+<reasoning>Explanation of the classification reasoning, noting signals found for each identified intent</reasoning>
+<intents>
+<intent>intent_name</intent>
+</intents>
+</response>
+"""
+
+OUTPUT_FORMAT_JUDGE = """
+
+Respond using the following XML format. Do not include any text outside of the <response> tags.
+
+<response>
+<evaluations>
+<evaluation>
+<candidate_id>1-indexed candidate ID</candidate_id>
+{metric_tags}
+<total_score>Sum of all binary metrics (0-10)</total_score>
+</evaluation>
+</evaluations>
+<reasoning>Explanation of why the winner is best and key differences between top candidates</reasoning>
+<selected_candidate_id>1-indexed ID of the best candidate</selected_candidate_id>
+</response>
+"""
 
 
 # ============================================================================
@@ -163,7 +297,7 @@ def load_guidance_for_intents(intents=None, reasoning_mode=False, tool_use=False
     if intents is None:
         # Load all guidance files
         all_guidance = load_text_files(GUIDANCE_DIR)
-        return "\n\n".join(all_guidance.values())
+        return "\n\n".join(v for _, v in sorted(all_guidance.items()))
 
     # Start with base guidance files
     files_to_load = set(BASE_GUIDANCE_FILES)
@@ -186,7 +320,7 @@ def load_guidance_for_intents(intents=None, reasoning_mode=False, tool_use=False
 
     # Load the files
     guidance_parts = []
-    for filename in files_to_load:
+    for filename in sorted(files_to_load):
         filepath = os.path.join(GUIDANCE_DIR, f"{filename}.txt")
         if os.path.exists(filepath):
             with open(filepath, 'r', encoding='utf-8') as f:
@@ -205,10 +339,10 @@ def transform_prompt(prompt, model_id=None, intents=None,
 
     Args:
         prompt (str): The prompt to transform
-        model_id (str, optional): Model to use for transformation. Defaults to Nova Premier.
-            Options:
-            - 'us.amazon.nova-premier-v1:0' (default)
-            - 'global.anthropic.claude-sonnet-4-5-20250929-v1:0'
+        model_id (str, optional): Model to use for transformation.
+            Defaults to DEFAULT_TRANSFORM_MODEL_ID ('us.anthropic.claude-sonnet-4-6').
+            Adaptive reasoning (extended thinking) is enabled automatically
+            for Claude models.
         intents (list, optional): List of intents to load specific guidance for.
             If None, loads all guidance. Use classify_intent() to get intents.
         reasoning_mode (bool): Enable reasoning mode guidance for API-level reasoning.
@@ -239,9 +373,8 @@ def transform_prompt(prompt, model_id=None, intents=None,
         >>> result = transform_prompt(prompt, reasoning_mode=True, image=True)
     """
 
-    # Default to Nova Premier if no model specified
     if model_id is None:
-        model_id = 'us.amazon.nova-2-pro-preview-20251202-v1:0'
+        model_id = DEFAULT_TRANSFORM_MODEL_ID
 
     # Load required prompt files
     system_prompt = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_nova_migration_system.txt")
@@ -257,53 +390,13 @@ def transform_prompt(prompt, model_id=None, intents=None,
         video=video
     )
 
-    # Format the prompt
+    # Format the prompt with XML output instructions
     formatted_prompt = prompt_template.format(
         nova_docs=nova_docs,
         migration_guidelines=migration_guidelines,
         current_prompt=prompt,
     )
-
-    # Define the tool for structured output
-    tool_list = {
-        "tools": [
-            {
-                "toolSpec": {
-                    "name": "convert_prompt",
-                    "description": "Transforms any prompt to Nova-aligned format",
-                    "inputSchema": {
-                        "json": {
-                            "type": "object",
-                            "properties": {
-                                "steps": {
-                                    "type": "string",
-                                    "description": "Detailed analysis of the transformation process including model-specific elements, relevant documentation, required optimizations, Nova compatibility considerations, and format adjustments",
-                                },
-                                "nova_draft": {
-                                    "type": "string",
-                                    "description": "The transformed Nova-aligned prompt following best practices",
-                                },
-                                "reflection": {
-                                    "type": "string",
-                                    "description": "Reflection on the draft prompt",
-                                },
-                                "nova_final": {
-                                    "type": "string",
-                                    "description": "Final Nova-aligned prompt based on reflections",
-                                },
-                            },
-                            "required": [
-                                "steps",
-                                "nova_draft",
-                                "reflection",
-                                "nova_final",
-                            ],
-                        }
-                    },
-                }
-            }
-        ]
-    }
+    formatted_prompt += OUTPUT_FORMAT_TRANSFORM
 
     system_message = {"text": system_prompt}
     message = {
@@ -311,14 +404,28 @@ def transform_prompt(prompt, model_id=None, intents=None,
         "content": [{"text": formatted_prompt}],
     }
 
+    # Model-specific reasoning configuration passed via
+    # additionalModelRequestFields, not the top-level inferenceConfig.
+    additional_fields = {}
+    if "amazon.nova-2" in model_id:
+        additional_fields = {"inferenceConfig": {"reasoningConfig": {"type": "enabled", "maxReasoningEffort": "high"}}}
+    elif "anthropic.claude" in model_id:
+        additional_fields = {"thinking": {"type": "enabled", "budget_tokens": 10000}}
+
     # Execute the transformation
     with bedrock_client_context() as client:
-        response = bedrock_converse(client, system_message, message, tool_list, model_id, addtional_model_request_fields={"inferenceConfig": {"reasoningConfig": {"type": "enabled", "maxReasoningEffort": "medium"}}})
+        response = bedrock_converse(client, system_message, message, model_id, additional_model_request_fields=additional_fields)
 
-    content_list = response["output"]["message"]["content"]
-    tool_call = next((item for item in content_list if "toolUse" in item), None)
+    text = _extract_text(response)
 
-    return tool_call["toolUse"]["input"]
+    result = {}
+    for field in ("steps", "nova_draft", "reflection", "nova_final"):
+        value = parse_xml_tag(text, field, strict=True)
+        if value is None:
+            raise ValueError(f"Missing required field <{field}> in model response")
+        result[field] = value
+
+    return result
 
 
 # ============================================================================
@@ -344,11 +451,8 @@ def classify_intent(prompt, model_id=None):
 
     Args:
         prompt (str): The prompt to classify
-        model_id (str, optional): Model to use for classification. Defaults to Nova Micro.
-            Options:
-            - 'us.amazon.nova-micro-v1:0' (default)
-            - 'us.amazon.nova-lite-v1:0'
-            - 'us.amazon.nova-premier-v1:0'
+        model_id (str, optional): Model to use for classification.
+            Defaults to DEFAULT_CLASSIFIER_MODEL_ID ('us.amazon.nova-2-lite-v1:0').
 
     Returns:
         dict: Dictionary containing:
@@ -365,48 +469,18 @@ def classify_intent(prompt, model_id=None):
         ['image_understanding', 'structured_output']
     """
 
-    # Default to Nova Micro for fast, cheap classification
     if model_id is None:
-        model_id = 'us.amazon.nova-2-lite-v1:0'
+        model_id = DEFAULT_CLASSIFIER_MODEL_ID
 
     # Load required prompt files
     system_prompt = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_intent_classifier_system.txt")
     prompt_template = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_intent_classifier.txt")
 
-    # Format the prompt
+    # Format the prompt with XML output instructions
     formatted_prompt = prompt_template.format(input_prompt=prompt)
-
-    # Define the tool for structured output
-    tool_list = {
-        "tools": [
-            {
-                "toolSpec": {
-                    "name": "classify_intents",
-                    "description": "Classifies a prompt into applicable intents from the taxonomy",
-                    "inputSchema": {
-                        "json": {
-                            "type": "object",
-                            "properties": {
-                                "reasoning": {
-                                    "type": "string",
-                                    "description": "Explanation of the classification reasoning, noting signals found for each identified intent",
-                                },
-                                "intents": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "string",
-                                        "enum": VALID_INTENTS,
-                                    },
-                                    "description": "List of identified intents from the taxonomy",
-                                },
-                            },
-                            "required": ["reasoning", "intents"],
-                        }
-                    },
-                }
-            }
-        ]
-    }
+    formatted_prompt += OUTPUT_FORMAT_CLASSIFY.format(
+        valid_intents=", ".join(VALID_INTENTS)
+    )
 
     system_message = {"text": system_prompt}
     message = {
@@ -422,16 +496,21 @@ def classify_intent(prompt, model_id=None):
 
     # Execute the classification
     with bedrock_client_context() as client:
-        response = bedrock_converse(client, system_message, message, tool_list, model_id, inference_config)
+        response = bedrock_converse(client, system_message, message, model_id, inference_config)
 
-    return response["output"]["message"]["content"][0]["toolUse"]["input"]
+    text = _extract_text(response)
+    reasoning = parse_xml_tag(text, "reasoning", strict=True) or ""
+    raw_intents = parse_xml_tags(text, "intent")
+    intents = [i for i in raw_intents if i in VALID_INTENTS]
+
+    return {"reasoning": reasoning, "intents": intents}
 
 
 # ============================================================================
 # Combined pipeline
 # ============================================================================
 
-def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
+def transform_with_intent_classification(prompt, num_candidates=4, classifier_model_id=None,
                                           transform_model_id=None, judge_model_id=None,
                                           reasoning_mode=False, tool_use=False,
                                           image=False, video=False, max_workers=None):
@@ -445,14 +524,14 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
 
     Args:
         prompt (str): The prompt to transform
-        n (int): Number of candidate transformations to generate. Defaults to 4.
+        num_candidates (int): Number of candidate transformations to generate. Defaults to 4.
             Set to 1 to skip candidate generation and judging.
         classifier_model_id (str, optional): Model for intent classification.
-            Defaults to 'us.amazon.nova-2-lite-v1:0'
+            Defaults to DEFAULT_CLASSIFIER_MODEL_ID.
         transform_model_id (str, optional): Model for transformation.
-            Defaults to 'us.amazon.nova-2-pro-preview-20251202-v1:0'
+            Defaults to DEFAULT_TRANSFORM_MODEL_ID.
         judge_model_id (str, optional): Model for judging candidates.
-            Defaults to 'us.amazon.nova-2-pro-preview-20251202-v1:0'
+            Defaults to DEFAULT_JUDGE_MODEL_ID.
         reasoning_mode (bool): Enable reasoning mode guidance for API-level reasoning.
         tool_use (bool): Enable tool use guidance for API-level tool definitions.
         image (bool): Enable image understanding guidance for image inputs.
@@ -489,7 +568,7 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
 
         >>> # Single candidate (no judge)
         >>> result = transform_with_intent_classification(
-        ...     "Summarize this document", n=1
+        ...     "Summarize this document", num_candidates=1
         ... )
 
         >>> # With API capability flags
@@ -500,7 +579,7 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
         ... )
     """
     if max_workers is None:
-        max_workers = n
+        max_workers = num_candidates
 
     # Step 1: Classify intent
     intent_result = classify_intent(prompt, model_id=classifier_model_id)
@@ -540,7 +619,7 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
     )
 
     # Step 3: Single candidate path (no judge)
-    if n <= 1:
+    if num_candidates <= 1:
         transform_result = transform_prompt(prompt, **transform_kwargs)
         return {**metadata, **transform_result}
 
@@ -548,20 +627,23 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
     def _run_transform(_i):
         return transform_prompt(prompt, **transform_kwargs)
 
-    candidates = []
+    candidates = [None] * num_candidates
     errors = []
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(_run_transform, i): i for i in range(n)}
+        futures = {executor.submit(_run_transform, i): i for i in range(num_candidates)}
         for future in as_completed(futures):
+            idx = futures[future]
             try:
-                result = future.result()
-                candidates.append(result)
+                candidates[idx] = future.result()
             except Exception as e:
                 errors.append(e)
 
+    # Remove None entries (failed candidates)
+    candidates = [c for c in candidates if c is not None]
+
     if len(candidates) == 0:
         raise RuntimeError(
-            f"All {n} transformation attempts failed. Errors: {errors}"
+            f"All {num_candidates} transformation attempts failed. Errors: {errors}"
         )
 
     if len(candidates) == 1:
@@ -596,13 +678,19 @@ def transform_with_intent_classification(prompt, n=4, classifier_model_id=None,
 # Best-of-N with judge
 # ============================================================================
 
+def _escape_for_xml_wrapper(content, tag="candidate"):
+    """Escape closing tags that would break the wrapper structure."""
+    return content.replace(f"</{tag}>", f"&lt;/{tag}&gt;")
+
+
 def _judge_candidates(original_prompt, candidates, model_id=None):
     """Judge multiple transformation candidates and select the best one.
 
     Args:
         original_prompt (str): The original prompt that was transformed.
         candidates (list): List of candidate result dicts, each containing 'nova_final'.
-        model_id (str, optional): Model to use for judging. Defaults to Nova Premier.
+        model_id (str, optional): Model to use for judging.
+            Defaults to DEFAULT_JUDGE_MODEL_ID ('us.anthropic.claude-sonnet-4-6').
 
     Returns:
         dict: Dictionary containing:
@@ -611,7 +699,7 @@ def _judge_candidates(original_prompt, candidates, model_id=None):
             - selected_candidate_id: 1-indexed ID of the winning candidate
     """
     if model_id is None:
-        model_id = 'us.amazon.nova-2-pro-preview-20251202-v1:0'
+        model_id = DEFAULT_JUDGE_MODEL_ID
 
     # Load judge prompt templates
     system_prompt = load_text_file(os.path.join(DATA_DIR, "prompts"), "prompt_judge_system.txt")
@@ -621,7 +709,8 @@ def _judge_candidates(original_prompt, candidates, model_id=None):
     # Format candidates as XML blocks
     candidate_blocks = []
     for i, candidate in enumerate(candidates, 1):
-        candidate_blocks.append(f'<candidate id="{i}">\n{candidate["nova_final"]}\n</candidate>')
+        escaped = _escape_for_xml_wrapper(candidate["nova_final"])
+        candidate_blocks.append(f'<candidate id="{i}">\n{escaped}\n</candidate>')
     candidates_xml = "\n\n".join(candidate_blocks)
 
     # Format the judge prompt
@@ -632,7 +721,7 @@ def _judge_candidates(original_prompt, candidates, model_id=None):
         n=len(candidates),
     )
 
-    # Define binary metric properties for the tool schema
+    # Binary metrics used for evaluation parsing
     binary_metrics = [
         "preserves_all_variables",
         "preserves_constraints",
@@ -646,58 +735,9 @@ def _judge_candidates(original_prompt, candidates, model_id=None):
         "no_redundancy",
     ]
 
-    metric_properties = {}
-    for metric in binary_metrics:
-        metric_properties[metric] = {
-            "type": "integer",
-            "description": f"Binary score (0 or 1) for {metric}",
-        }
-    metric_properties["total_score"] = {
-        "type": "integer",
-        "description": "Sum of all binary metrics (0-10)",
-    }
-
-    tool_list = {
-        "tools": [
-            {
-                "toolSpec": {
-                    "name": "select_best_candidate",
-                    "description": "Evaluate candidates and select the best one",
-                    "inputSchema": {
-                        "json": {
-                            "type": "object",
-                            "properties": {
-                                "evaluations": {
-                                    "type": "array",
-                                    "description": "One evaluation per candidate",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "candidate_id": {
-                                                "type": "integer",
-                                                "description": "1-indexed candidate ID",
-                                            },
-                                            **metric_properties,
-                                        },
-                                        "required": ["candidate_id", *binary_metrics, "total_score"],
-                                    },
-                                },
-                                "reasoning": {
-                                    "type": "string",
-                                    "description": "Explanation of why the winner is best and key differences between top candidates",
-                                },
-                                "selected_candidate_id": {
-                                    "type": "integer",
-                                    "description": "1-indexed ID of the best candidate",
-                                },
-                            },
-                            "required": ["evaluations", "reasoning", "selected_candidate_id"],
-                        }
-                    },
-                }
-            }
-        ]
-    }
+    # Build XML output format with metric tags
+    metric_tags = "\n".join(f"<{m}>0 or 1</{m}>" for m in binary_metrics)
+    formatted_prompt += OUTPUT_FORMAT_JUDGE.format(metric_tags=metric_tags)
 
     system_message = {"text": system_prompt}
     message = {
@@ -705,20 +745,58 @@ def _judge_candidates(original_prompt, candidates, model_id=None):
         "content": [{"text": formatted_prompt}],
     }
 
-    # Lower temperature for consistent judging
-    inference_config = {
-        "maxTokens": 4096,
-        "topP": 0.9,
-        "temperature": 0.3,
-    }
+    additional_fields = {}
+    if "amazon.nova-2" in model_id:
+        additional_fields = {"inferenceConfig": {"reasoningConfig": {"type": "enabled", "maxReasoningEffort": "medium"}}}
+        inference_config = {"maxTokens": 20000, "topP": 0.9, "temperature": 0.3}
+    elif "anthropic.claude" in model_id:
+        additional_fields = {"thinking": {"type": "enabled", "budget_tokens": 5000}}
+        # Claude thinking requires temperature=1 and topP >= 0.95 or unset.
+        inference_config = {"maxTokens": 20000, "temperature": 1}
+    else:
+        inference_config = {"maxTokens": 20000, "topP": 0.9, "temperature": 0.3}
 
     with bedrock_client_context() as client:
-        response = bedrock_converse(client, system_message, message, tool_list, model_id, inference_config)
+        response = bedrock_converse(client, system_message, message, model_id, inference_config, additional_model_request_fields=additional_fields)
 
-    content_list = response["output"]["message"]["content"]
-    tool_call = next((item for item in content_list if "toolUse" in item), None)
+    text = _extract_text(response)
 
-    return tool_call["toolUse"]["input"]
+    # Parse per-candidate evaluations
+    evaluations = []
+    for eval_block in parse_xml_tags(text, "evaluation"):
+        eval_dict = {}
+        cid = parse_xml_tag(eval_block, "candidate_id")
+        eval_dict["candidate_id"] = int(cid) if cid else 0
+        score_sum = 0
+        for metric in binary_metrics:
+            raw = parse_xml_tag(eval_block, metric)
+            try:
+                val = int(raw)
+            except (TypeError, ValueError):
+                val = 0
+            eval_dict[metric] = val
+            score_sum += val
+        # Use model's total_score if present, otherwise recompute
+        raw_total = parse_xml_tag(eval_block, "total_score")
+        try:
+            eval_dict["total_score"] = int(raw_total)
+        except (TypeError, ValueError):
+            eval_dict["total_score"] = score_sum
+        evaluations.append(eval_dict)
+
+    reasoning = parse_xml_tag(text, "reasoning", strict=True) or ""
+    raw_selected = parse_xml_tag(text, "selected_candidate_id", strict=True)
+    try:
+        selected_candidate_id = int(raw_selected)
+    except (TypeError, ValueError):
+        # Fallback: pick candidate with highest total_score
+        selected_candidate_id = max(evaluations, key=lambda e: e["total_score"])["candidate_id"] if evaluations else 1
+
+    return {
+        "evaluations": evaluations,
+        "reasoning": reasoning,
+        "selected_candidate_id": selected_candidate_id,
+    }
 
 
 def transform_prompt_best_of_n(prompt, n=4, classifier_model_id=None,
@@ -749,7 +827,7 @@ def transform_prompt_best_of_n(prompt, n=4, classifier_model_id=None,
     """
     return transform_with_intent_classification(
         prompt,
-        n=n,
+        num_candidates=n,
         classifier_model_id=classifier_model_id,
         transform_model_id=transform_model_id,
         judge_model_id=judge_model_id,

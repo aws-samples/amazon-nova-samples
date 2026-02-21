@@ -29,19 +29,19 @@ When uncertain whether something is model-specific or task-specific, preserve it
 
 3. Quote relevant parts of the <nova_docs> and <migration_guidelines> that apply to this transformation
 
-4. Apply the <migration_guidelines> and findings from previous steps to transform the prompt and create a Nova Premier optimized draft. Ensure every TASK REQUIREMENT from step 2b is present.
+4. Apply the <migration_guidelines> and findings from previous steps to transform the prompt and create a Nova optimized draft. Ensure every TASK REQUIREMENT from step 2b is present.
 
 5. Reflect on the draft prompt:
    - Content completeness: For each TASK REQUIREMENT from step 2b, verify it appears in the draft
    - Functional equivalence: Would both prompts produce the same output for identical inputs? If not, what's missing?
-   - Nova Premier compatibility: Are all MODEL MECHANICS properly adapted?
+   - Nova compatibility: Are all MODEL MECHANICS properly adapted?
    - Formatting and structure: Is it well-organized with clear sections?
 
 6. Address issues found in reflection and produce the final optimized prompt.
 </instructions>
 
 <guidelines>
-* Format according to Nova Premier's preferred structure:
+* Format according to Nova's preferred structure:
    - Clear section headers (##)
    - Task description
    - Context information
@@ -58,9 +58,9 @@ When uncertain whether something is model-specific or task-specific, preserve it
      structural improvements add clarity, they should not remove content
    - When uncertain, preserve - the user included it for a reason
 
-* Optimize for Nova Premier's capabilities (extended context, structured output, etc.)
+* Optimize for Nova's capabilities (extended context, structured output, etc.)
 
-* Use clear, direct language that Nova Premier responds well to
+* Use clear, direct language that Nova responds well to
 
 * AVOID THESE MISTAKES:
    - Summarizing detailed instructions into vague statements

@@ -39,4 +39,4 @@ Score each candidate 0 or 1 on each metric:
 3. Select the candidate with the highest total score
 4. If there is a tie, use your judgment to pick the best one and explain why in your reasoning
 
-Use the `select_best_candidate` tool to report your evaluation.
+Report your evaluation using the XML format specified below.

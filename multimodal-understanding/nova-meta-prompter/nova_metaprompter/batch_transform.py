@@ -15,10 +15,16 @@ Usage:
 import argparse
 import json
 import sys
+import traceback
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from nova_metaprompter.transform import transform_with_intent_classification
+from nova_metaprompter.transform import (
+    transform_with_intent_classification,
+    DEFAULT_CLASSIFIER_MODEL_ID,
+    DEFAULT_TRANSFORM_MODEL_ID,
+    DEFAULT_JUDGE_MODEL_ID,
+)
 
 
 def load_prompts(input_path: Path, delimiter: str | None = None) -> list[dict]:
@@ -87,16 +93,21 @@ def save_results(results: list[dict], output_path: Path):
             json.dump(results, f, indent=2, ensure_ascii=False)
 
 
-def transform_single(item: dict, n: int, model_id: str,
-                     reasoning_mode: bool, tool_use: bool, image: bool, video: bool) -> dict:
+def transform_single(item: dict, n: int = 4, model_id: str | None = None,
+                     classifier_model_id: str | None = None,
+                     judge_model_id: str | None = None,
+                     reasoning_mode: bool = False, tool_use: bool = False,
+                     image: bool = False, video: bool = False) -> dict:
     """Transform a single prompt and return result dict."""
     prompt = item['prompt']
 
     try:
         result = transform_with_intent_classification(
             prompt,
-            n=n,
+            num_candidates=n,
+            classifier_model_id=classifier_model_id,
             transform_model_id=model_id,
+            judge_model_id=judge_model_id,
             reasoning_mode=reasoning_mode,
             tool_use=tool_use,
             image=image,
@@ -113,6 +124,7 @@ def transform_single(item: dict, n: int, model_id: str,
             **item,
             'status': 'error',
             'error': str(e),
+            'traceback': traceback.format_exc(),
         }
 
 
@@ -147,7 +159,11 @@ Input formats:
     parser.add_argument('--delimiter', type=str, default=None,
                         help='Delimiter for splitting text files (default: newline)')
     parser.add_argument('--model-id', type=str, default=None,
-                        help='Model ID for transformation (default: us.amazon.nova-2-pro-preview-20251202-v1:0)')
+                        help=f'Model ID for transformation (default: {DEFAULT_TRANSFORM_MODEL_ID})')
+    parser.add_argument('--classifier-model-id', type=str, default=None,
+                        help=f'Model ID for intent classification (default: {DEFAULT_CLASSIFIER_MODEL_ID})')
+    parser.add_argument('--judge-model-id', type=str, default=None,
+                        help=f'Model ID for candidate judging (default: {DEFAULT_JUDGE_MODEL_ID})')
     parser.add_argument('--candidates', type=int, default=4,
                         help='Number of candidate transformations per prompt (default: 4). '
                              'Set to 1 to skip candidate generation and judging.')
@@ -193,6 +209,8 @@ Input formats:
                     item,
                     args.candidates,
                     args.model_id,
+                    args.classifier_model_id,
+                    args.judge_model_id,
                     args.reasoning_mode,
                     args.tool_use,
                     args.image,
@@ -214,6 +232,8 @@ Input formats:
                 item,
                 args.candidates,
                 args.model_id,
+                args.classifier_model_id,
+                args.judge_model_id,
                 args.reasoning_mode,
                 args.tool_use,
                 args.image,

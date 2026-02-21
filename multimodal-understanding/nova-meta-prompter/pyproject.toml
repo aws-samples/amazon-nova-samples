@@ -9,8 +9,13 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "boto3>=1.40.47",
-    "jupyter>=1.1.1",
 ]
+
+[project.optional-dependencies]
+notebook = ["jupyter>=1.1.1"]
+
+[project.scripts]
+nova-metaprompter-batch = "nova_metaprompter.batch_transform:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["nova_metaprompter"]
