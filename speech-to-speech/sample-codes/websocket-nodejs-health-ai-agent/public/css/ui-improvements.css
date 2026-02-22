@@ -1,0 +1,580 @@
+/* Main layout improvements */
+body {
+  background-color: #1e1e1e;
+  color: #e4e4e4;
+}
+
+#app {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Status bar improvements */
+#status-bar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  border-radius: 0;
+}
+
+#status {
+  background-color: transparent;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin: 0;
+  font-size: 0.85em;
+  color: #ddd;
+}
+
+.ready {
+  background-color: rgba(76, 175, 80, 0.2) !important;
+  color: #a5d6a7 !important;
+  border-color: #4CAF50 !important;
+}
+
+.processing, .recording {
+  background-color: rgba(255, 152, 0, 0.2) !important;
+  color: #FFD180 !important;
+  border-color: #FF9800 !important;
+}
+
+.connected {
+  background-color: rgba(33, 150, 243, 0.2) !important;
+  color: #90CAF9 !important;
+  border-color: #2196F3 !important;
+}
+
+.disconnected {
+  background-color: rgba(244, 67, 54, 0.2) !important;
+  color: #EF9A9A !important;
+  border-color: #F44336 !important;
+}
+
+.error {
+  background-color: rgba(244, 67, 54, 0.2) !important;
+  color: #EF9A9A !important;
+  border-color: #F44336 !important;
+}
+
+/* Content container improvements */
+#content-container {
+  height: calc(100vh - 150px); /* Adjusted height calculation */
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* Chat area improvements */
+#chat-area {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+}
+
+#chat-container {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #121212;
+  margin-bottom: 60px;
+}
+
+/* Message styling improvements */
+.message {
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 12px;
+  max-width: 75%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+  background-color: #2c3e50;
+  color: #e4e4e4;
+  border-bottom-right-radius: 3px;
+}
+
+.assistant {
+  background-color: #4a235a;
+  color: #e4e4e4;
+  border-bottom-left-radius: 3px;
+}
+
+.system {
+  background-color: #2d3436;
+  color: #b2bec3;
+}
+
+/* Controls improvements */
+#controls {
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button, .button {
+  background-color: #4a235a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+button:hover, .button:hover {
+  background-color: #5d3473;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled, .button:disabled {
+  background-color: #333;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Agent panel improvements */
+#agent-panel {
+  width: 320px;
+  background-color: #2a2a2a;
+  border-left: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allow scrolling if needed */
+  max-height: 100%; /* Take full height */
+}
+
+#agent-panel h3 {
+  margin: 0;
+  padding: 12px;
+  font-size: 1em;
+  background-color: #333;
+  color: #ddd;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Keep heading visible when scrolling */
+}
+
+/* Compact Agent Actions */
+.action-item {
+  padding: 8px 10px;
+  margin: 8px;
+  border-radius: 6px;
+  border-left: 3px solid #ccc;
+  background-color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  font-size: 0.9em;
+}
+
+.action-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #3a3a3a;
+}
+
+.action-item .action-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.action-item .action-icon {
+  margin-right: 6px;
+  font-size: 1em;
+}
+
+.action-item .action-title {
+  font-weight: 600;
+  color: #ddd;
+  font-size: 0.9em;
+}
+
+.action-item .action-content {
+  font-size: 0.85em;
+  color: #bbb;
+  margin-bottom: 3px;
+}
+
+.action-item .action-time {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 3px;
+  text-align: right;
+}
+
+/* Action item types with improved colors */
+.action-item.system-action { border-left-color: #9E9E9E; }
+.action-item.user-action { border-left-color: #4CAF50; }
+.action-item.search-action { border-left-color: #2196F3; }
+.action-item.result-action { border-left-color: #FF9800; }
+.action-item.error-action { border-left-color: #F44336; }
+
+/* Filter buttons */
+.action-filters {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: sticky;
+  top: 38px; /* Position right below the heading */
+  background-color: #2a2a2a;
+  z-index: 9; /* Lower than heading but above content */
+}
+
+.filter-btn {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ccc;
+  border-radius: 15px;
+  padding: 4px 10px;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #444;
+}
+
+.filter-btn.active {
+  background-color: #4a235a;
+  color: white;
+  border-color: #5d3473;
+  box-shadow: 0 0 5px rgba(93, 52, 115, 0.5); /* Add subtle glow */
+}
+
+/* Agent status indicator */
+.agent-status {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #444;
+}
+
+.agent-status .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Make agent actions panel scrollable */
+.agent-actions {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 6px;
+  max-height: calc(60% - 100px); /* Set maximum height */
+}
+
+/* Insights panel - FIX FOR BEING CUT OFF */
+.insights-panel {
+  border-top: 1px solid #444;
+  overflow-y: auto; /* Add scrolling when needed */
+  max-height: 40%; /* Limit maximum height */
+  display: flex;
+  flex-direction: column;
+}
+
+.insights-content {
+  padding: 10px 15px;
+  padding-bottom: 20px; /* Add extra padding at bottom */
+  flex: 1;
+  overflow-y: auto;
+}
+
+.insight-item {
+  margin-bottom: 10px; /* Slightly reduce margin */
+}
+
+.insight-label {
+  font-size: 0.75em; /* Smaller font */
+  color: #aaa;
+  margin-bottom: 2px; /* Reduced spacing */
+}
+
+.insight-value {
+  font-weight: 600;
+  color: #ddd;
+  font-size: 0.95em; /* Slightly smaller */
+  margin-bottom: 5px; /* Add bottom margin */
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #444;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4a235a;
+  border-radius: 3px;
+}
+
+/* Add a placeholder for when there are no actions */
+.action-placeholder {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* Thinking animation */
+.thinking-dots .dot {
+  width: 6px;
+  height: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #agent-panel {
+    width: 100%;
+    max-height: 50vh; /* Allow more space on mobile */
+  }
+  
+  .message {
+    max-width: 85%;
+  }
+  
+  .insights-panel {
+    max-height: none; /* Don't restrict height on mobile */
+    display: block; /* Ensure it's visible */
+    overflow-y: visible;
+  }
+  
+  .insights-content {
+    padding-bottom: 70px; /* More space at bottom for mobile */
+  }
+  
+  #controls {
+    padding: 10px;
+  }
+  
+  #status-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  #status, .agent-status {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    max-width: 90%;
+  }
+  
+  .filter-btn {
+    padding: 3px 8px;
+    font-size: 0.7em;
+  }
+  
+  #chat-container {
+    margin: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Balanced layout adjustment - not too high, not too low */
+
+/* More balanced height for agent actions section */
+.agent-actions {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 8px 6px;
+  max-height: 300px; /* Slightly decreased to make room */
+  min-height: 150px;
+}
+
+/* Keep insights panel visible but not too high */
+.insights-panel {
+  border-top: 1px solid #444;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 40%; /* Limit height to maintain balance */
+}
+
+/* Subtle distinction for insights header */
+.insights-panel h3 {
+  background-color: #333; /* Back to a more subtle shade */
+  color: #ddd;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  font-size: 1em;
+}
+
+/* Slightly less compact action items */
+.action-item {
+  padding: 7px 9px; /* A bit more padding than before */
+  margin: 7px;
+}
+
+/* Normal padding for filters */
+.action-filters {
+  padding: 8px 10px;
+}
+
+/* Keep insights content contained */
+.insights-content {
+  padding: 10px 15px;
+  max-height: calc(100% - 40px); /* Subtract the header height */
+  overflow-y: auto;
+}
+
+
+/* Better filter button styling with compact layout */
+.action-filters {
+  padding: 6px 8px; /* Reduced padding */
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  overflow-y: hidden; /* Hide vertical scrolling */
+  gap: 4px; /* Smaller gap between buttons */
+  border-bottom: 1px solid #444;
+  margin-bottom: 8px;
+}
+
+.filter-btn {
+  border-radius: 20px;
+  padding: 4px 8px; /* Reduced padding */
+  font-size: 0.7em; /* Slightly smaller font */
+  border: none;
+  background-color: rgba(51, 51, 51, 0.7);
+  color: #ccc;
+  transition: all 0.2s ease-out;
+  flex: 1; /* Allow buttons to grow equally */
+  white-space: nowrap; /* Keep text on one line */
+  min-width: auto; /* Let buttons be as small as needed */
+}
+
+.filter-btn:hover {
+  background-color: rgba(74, 35, 90, 0.7);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background-color: #4a235a;
+  color: white;
+  box-shadow: 0 2px 8px rgba(74, 35, 90, 0.5);
+}
+
+.filter-btn i {
+  margin-right: 3px; /* Reduced margin */
+  font-size: 0.9em; /* Slightly smaller icons */
+}
+
+/* Modern styled action items */
+.action-item {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #2f2f2f, #333333);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: none;
+  position: relative;
+  padding: 8px 10px;
+  margin: 8px 6px;
+  transition: all 0.2s ease;
+}
+
+.action-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Colored left border for different action types */
+.action-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.action-item.system-action:before { background-color: #9E9E9E; }
+.action-item.user-action:before { background-color: #4CAF50; }
+.action-item.search-action:before { background-color: #2196F3; }
+.action-item.result-action:before { background-color: #FF9800; }
+.action-item.error-action:before { background-color: #F44336; }
+
+/* Action header styling */
+.action-item .action-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.action-item .action-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 0.9em;
+}
+
+.action-item.system-action .action-icon { color: #9E9E9E; }
+.action-item.user-action .action-icon { color: #4CAF50; }
+.action-item.search-action .action-icon { color: #2196F3; }
+.action-item.result-action .action-icon { color: #FF9800; }
+.action-item.error-action .action-icon { color: #F44336; }
+
+.action-item .action-title {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* Action content and time */
+.action-item .action-content {
+  font-size: 0.85em;
+  color: #bbb;
+  margin-bottom: 4px;
+}
+
+.action-item .action-time {
+  font-size: 0.7em;
+  color: #777;
+  text-align: right;
+}

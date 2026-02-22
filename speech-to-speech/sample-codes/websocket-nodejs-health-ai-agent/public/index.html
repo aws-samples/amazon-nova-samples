@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Health Guide Assistant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ui-improvements.css">
+    <!-- Added Subresource Integrity (SRI) and crossorigin for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Status bar -->
+        <div id="status-bar">
+            <div id="status" class="disconnected">Disconnected</div>
+            <div id="agent-status" class="agent-status idle">
+                <span class="status-dot"></span>
+                <span class="status-text">Idle</span>
+            </div>
+        </div>
+        
+        <!-- Content container with chat and agent panel -->
+        <div id="content-container">
+            <!-- Main chat area -->
+            <div id="chat-area">
+                <div id="chat-container"></div>
+            </div>
+            
+            <!-- Agent actions panel -->
+            <div id="agent-panel">
+                <h3><i class="fas fa-robot"></i> Agent Actions</h3>
+                
+                <!-- Action filters -->
+                <div class="action-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-list"></i> All
+                    </button>
+                    <button class="filter-btn" data-filter="search">
+                        <i class="fas fa-search"></i> Searches
+                    </button>
+                    <button class="filter-btn" data-filter="result">
+                        <i class="fas fa-file-alt"></i> Results
+                    </button>
+                    <button class="filter-btn" data-filter="system">
+                        <i class="fas fa-cog"></i> System
+                    </button>
+                    <button class="filter-btn" data-filter="error">
+                        <i class="fas fa-exclamation-triangle"></i> Errors
+                    </button>
+                </div>
+                
+                <!-- Actions container -->
+                <div id="agent-actions" class="agent-actions">
+                    <div class="action-placeholder">Agent actions will appear here during conversation.</div>
+                </div>
+                
+                <!-- Insights panel -->
+                <div id="insights-panel" class="insights-panel">
+                    <h3><i class="fas fa-chart-line"></i> Session Insights</h3>
+                    <div class="insights-content">
+                        <div class="insight-item">
+                            <div class="insight-label">
+                                <i class="fas fa-comments"></i>
+                                Conversation Turns
+                            </div>
+                            <div id="turn-counter" class="insight-value">0</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">
+                                <i class="fas fa-database"></i>
+                                Knowledge Base Searches
+                            </div>
+                            <div id="search-counter" class="insight-value">0</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">
+                                <i class="fas fa-ambulance"></i>
+                                Emergency Redirects
+                            </div>
+                            <div id="emergency-counter" class="insight-value">0</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">
+                                <i class="fas fa-ban"></i>
+                                Off-Topic Attempts
+                            </div>
+                            <div id="off-topic-counter" class="insight-value">0</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">
+                                <i class="fas fa-user-md"></i>
+                                Medical Advice Redirects
+                            </div>
+                            <div id="medical-advice-counter" class="insight-value">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <div id="controls">
+            <button id="start" class="button">
+                <i class="fas fa-microphone"></i>
+                Start Streaming
+            </button>
+            <button id="stop" class="button" disabled>
+                <i class="fas fa-stop"></i>
+                Stop Streaming
+            </button>
+        </div>
+        
+        <!-- Mobile toggle button -->
+        <button id="toggle-panel-btn" class="toggle-panel-btn">
+            <span><i class="fas fa-eye"></i></span>
+        </button>
+    </div>
+
+    <!-- JavaScript Bundle -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
