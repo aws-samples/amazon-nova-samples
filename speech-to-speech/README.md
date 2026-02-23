@@ -55,3 +55,7 @@ The following projects were developed by AWS teams and showcase examples of how 
 - [WebRTC-based Nova Sonic Solution](https://github.com/aws-samples/sample-nova-sonic-speech2speech-webrtc)
 
     This solution delivers real-time Speech-to-Speech capabilities through WebRTC integration, leveraging AWS Bedrock Nova Sonic and Amazon Kinesis Video Streams with WebRTC. The system features a modular architecture with separate Python backend and React frontend components, enabling cross-platform functionality across Windows, macOS, and Linux. Key technical components include RTC audio processing, AWS service integration (Bedrock, Kinesis Video Streams), and tool support for MCP servers and Strands agents.
+
+- [Nova Sonic Live Podcasting POC](https://github.com/aws-samples/genai-quickstart-pocs/tree/main/genai-quickstart-pocs-python/amazon-bedrock-nova-s2s-live-podcasting-poc)
+
+    This Python application generates a live AI-powered podcast conversation using Amazon Nova Sonic bidirectional streaming. Two AI hosts—Matthew and Tiffany—engage in multi-turn spoken dialogue about AWS topics, with real-time audio and transcript streaming through a Flask web interface using Server-Sent Events (SSE). The application includes topic validation, PII output filtering, system prompt guardrails, and supports standalone CLI modes for text, audio, and mixed interaction.
