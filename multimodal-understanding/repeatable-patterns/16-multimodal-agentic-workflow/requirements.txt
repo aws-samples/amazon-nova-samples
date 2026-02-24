@@ -28,7 +28,9 @@ sphinx==8.1.3
 docutils>=0.20,<0.22
 Events
 fitz
-PyMuPDF
 frontend
 mkl
 pydub
+pdfplumber
+pillow
+tools
