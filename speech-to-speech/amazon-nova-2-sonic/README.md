@@ -58,5 +58,5 @@ The following projects were developed by AWS teams and showcase examples of how 
   
 - [Nova Sonic Live Podcasting POC](https://github.com/aws-samples/genai-quickstart-pocs/tree/main/genai-quickstart-pocs-python/amazon-bedrock-nova-s2s-live-podcasting-poc)
   
-This Python application generates a live AI-powered podcast conversation using Amazon Nova Sonic bidirectional streaming. Two AI hosts—Matthew and Tiffany—engage in multi-turn spoken dialogue about AWS topics, with real-time audio and transcript streaming through a Flask web interface using Server-Sent Events (SSE). The application includes topic validation, PII output filtering, system prompt guardrails, and supports standalone CLI modes for text, audio, and mixed interaction.
+    This Python application generates a live AI-powered podcast conversation using Amazon Nova Sonic bidirectional streaming. Two AI hosts—Matthew and Tiffany—engage in multi-turn spoken dialogue about AWS topics, with real-time audio and transcript streaming through a Flask web interface using Server-Sent Events (SSE). The application includes topic validation, PII output filtering, system prompt guardrails, and supports standalone CLI modes for text, audio, and mixed interaction.
 
