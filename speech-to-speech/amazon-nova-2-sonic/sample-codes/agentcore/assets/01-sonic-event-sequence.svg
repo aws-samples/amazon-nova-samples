@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="aR" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#2563eb"/></marker>
+    <marker id="aL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#c2410c"/></marker>
+    <marker id="aG" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#16a34a"/></marker>
+    <marker id="aGL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#16a34a"/></marker>
+  </defs>
+
+  <rect width="1920" height="1080" fill="transparent"/>
+
+  <!-- Title -->
+  <text x="960" y="50" text-anchor="middle" fill="#1e293b" font-size="32" font-weight="bold">Nova Sonic — Bidirectional Streaming Event Sequence</text>
+  <text x="960" y="80" text-anchor="middle" fill="#64748b" font-size="16">
+    <tspan fill="#2563eb">━━</tspan> Client → Bedrock    <tspan fill="#c2410c">━━</tspan> Bedrock → Client    <tspan fill="#16a34a">━━</tspan> Tool flow    <tspan fill="#94a3b8">╌╌</tspan> Server relay
+  </text>
+
+  <!-- Lifeline headers -->
+  <rect x="240" y="108" width="200" height="46" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#sh)"/>
+  <text x="340" y="137" text-anchor="middle" fill="#1e40af" font-size="17" font-weight="bold">Client</text>
+
+  <rect x="860" y="108" width="200" height="46" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#sh)"/>
+  <text x="960" y="137" text-anchor="middle" fill="#1e40af" font-size="17" font-weight="bold">Agent (Server)</text>
+
+  <rect x="1480" y="108" width="200" height="46" rx="8" fill="#fff7ed" stroke="#c2410c" stroke-width="2" filter="url(#sh)"/>
+  <text x="1580" y="137" text-anchor="middle" fill="#9a3412" font-size="17" font-weight="bold">Bedrock</text>
+
+  <!-- Lifelines -->
+  <line x1="340" y1="154" x2="340" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <line x1="960" y1="154" x2="960" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <line x1="1580" y1="154" x2="1580" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+
+  <!-- ── Phase 1: Session Setup ── -->
+  <rect x="140" y="175" width="1640" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="191" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">SESSION SETUP</text>
+
+  <line x1="345" y1="220" x2="955" y2="220" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="530" y="205" width="200" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="223" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">sessionStart</text>
+  <line x1="965" y1="220" x2="1575" y2="220" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="258" x2="955" y2="258" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="530" y="243" width="200" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="261" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">promptStart</text>
+  <line x1="965" y1="258" x2="1575" y2="258" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="1595" y="254" fill="#64748b" font-size="12">voice, tools, audio config</text>
+
+  <!-- ── Phase 2: System Prompt ── -->
+  <rect x="140" y="286" width="1640" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="302" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">SYSTEM PROMPT</text>
+
+  <line x1="345" y1="328" x2="955" y2="328" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="470" y="313" width="320" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="331" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">contentStart (TEXT, SYSTEM)</text>
+  <line x1="965" y1="328" x2="1575" y2="328" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="364" x2="955" y2="364" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="560" y="349" width="140" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="367" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">textInput</text>
+  <line x1="965" y1="364" x2="1575" y2="364" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="400" x2="955" y2="400" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="550" y="385" width="160" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="403" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">contentEnd</text>
+  <line x1="965" y1="400" x2="1575" y2="400" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- ── Phase 3: Audio Streaming ── -->
+  <rect x="140" y="428" width="1640" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="444" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">BIDIRECTIONAL AUDIO STREAMING</text>
+
+  <line x1="345" y1="470" x2="955" y2="470" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="460" y="455" width="340" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="473" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">contentStart (AUDIO, USER)</text>
+  <line x1="965" y1="470" x2="1575" y2="470" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="506" x2="955" y2="506" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="500" y="491" width="260" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="509" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">audioInput (chunk 1…N)</text>
+  <line x1="965" y1="506" x2="1575" y2="506" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="195" y="503" fill="#64748b" font-size="12">🎤 mic PCM 16kHz</text>
+
+  <!-- Response -->
+  <line x1="1575" y1="556" x2="965" y2="556" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="1060" y="541" width="340" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="1230" y="559" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">contentStart (AUDIO, ASSISTANT)</text>
+  <line x1="955" y1="556" x2="345" y2="556" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="1575" y1="592" x2="965" y2="592" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="1100" y="577" width="260" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="1230" y="595" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">audioOutput (chunk 1…N)</text>
+  <line x1="955" y1="592" x2="345" y2="592" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="1720" y="589" fill="#64748b" font-size="12">🔊 24kHz neural</text>
+
+  <line x1="1575" y1="628" x2="965" y2="628" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="1110" y="613" width="240" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="1230" y="631" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">textOutput (transcript)</text>
+  <line x1="955" y1="628" x2="345" y2="628" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="1575" y1="664" x2="965" y2="664" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="1160" y="649" width="140" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="1230" y="667" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">contentEnd</text>
+  <line x1="955" y1="664" x2="345" y2="664" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- ── Phase 4: Tool Use ── -->
+  <rect x="140" y="692" width="1640" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="708" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">TOOL USE (OPTIONAL)</text>
+
+  <line x1="1575" y1="738" x2="965" y2="738" stroke="#16a34a" stroke-width="2.5" marker-end="url(#aGL)"/>
+  <rect x="1080" y="723" width="270" height="26" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1215" y="741" text-anchor="middle" fill="#166534" font-size="15" font-weight="600">toolUse (getDateTool)</text>
+
+  <rect x="905" y="756" width="110" height="20" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="960" y="770" text-anchor="middle" fill="#166534" font-size="11" font-weight="600">process tool</text>
+
+  <line x1="965" y1="792" x2="1575" y2="792" stroke="#16a34a" stroke-width="2.5" marker-end="url(#aG)"/>
+  <rect x="1020" y="777" width="390" height="26" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1215" y="795" text-anchor="middle" fill="#166534" font-size="15" font-weight="600">contentStart → toolResult → contentEnd</text>
+
+  <text x="1215" y="822" text-anchor="middle" fill="#94a3b8" font-size="12" font-style="italic">Bedrock resumes audioOutput with tool result</text>
+
+  <!-- ── Phase 5: Session End ── -->
+  <rect x="140" y="845" width="1640" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="861" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">SESSION END</text>
+
+  <line x1="345" y1="892" x2="955" y2="892" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="480" y="877" width="300" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="895" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">contentEnd (AUDIO)</text>
+  <line x1="965" y1="892" x2="1575" y2="892" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="928" x2="955" y2="928" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="530" y="913" width="200" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="931" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">promptEnd</text>
+  <line x1="965" y1="928" x2="1575" y2="928" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="345" y1="964" x2="955" y2="964" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="530" y="949" width="200" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="630" y="967" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">sessionEnd</text>
+  <line x1="965" y1="964" x2="1575" y2="964" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#aR)" stroke-dasharray="5,4" opacity="0.5"/>
+
+</svg>
