@@ -40,6 +40,53 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
 | SFT       | ✅ Supported    | ✅ Supported             |
 | DPO       | ✅ Supported    | ❌ Not Supported         |
 | RFT       | ❌ Not Supported| ✅ Supported             |
+| CPT       | ✅ Supported    | ✅ Supported             |
+
+## CLI Arguments
+
+```
+python3 nova_dataset_validator.py \
+    -i / --input_file       PATH    (required) Training JSONL file
+    --validation            PATH    (optional) Validation JSONL file
+    -m / --model_name       NAME    (required) Model short name (see table above)
+    -t / --task_type        TYPE    (optional) sft | cpt | dpo | rft (default: sft)
+    -p / --platform         PLAT    (optional) bedrock | sagemaker (default: bedrock)
+    --skip-bad-samples              (optional) Continue past errors to report all issues
+```
+
+## Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| `0`  | PASS — dataset is valid for Nova fine-tuning |
+| `1`  | FAIL — one or more validation errors found   |
+
+## Sample Output
+
+```
+Validating training file: train.jsonl
+
+============================================================
+  Dataset Validation Report: train.jsonl
+============================================================
+  Total samples:   1000
+  Valid samples:   985
+  Failed samples:  15
+  Pass rate:       98.5%
+
+  Error breakdown:
+    role_ordering_error: 7
+    empty_content_error: 5
+    invalid_token_error: 3
+
+  First errors (up to 20):
+    Line 12: [role_ordering_error] Location ('messages', 0, ...): Invalid messages, expected user role but found assistant (type=value_error)
+    Line 45: [empty_content_error] Location ('messages', 1, 'content'): Invalid content, empty text content (type=value_error)
+    ...
+============================================================
+
+Result: FAIL — please fix the issues above and re-validate.
+```
 
 ### Nova 2.0 Features
 
@@ -52,40 +99,47 @@ python3 nova_ft_dataset_validator.py -i <file path> -m <model name> -t <task typ
   - Images: PNG, JPEG, GIF (webp not supported)
   - Videos: MOV, MKV, MP4 (webm not supported)
 
-### Features
+## Validation Rules Summary
 
-1. Validates the `JSONL` format
-2. Collects all the client errors so
-   - This ensures that all the errors are reported once rather than in an iterative manner
-3. **Task type validation:**
-   - Ensures RFT is only used with lite-2.0 model
-   - Ensures DPO is only used with Nova 1.0 models (not lite-2.0)
-   - SFT works with all models
-4. For each line
-   - required keys exists
-   - `messages` field is not null
-   - given `role` for each message is supported
-   - messages with the `assistant` role do not contain an image/video
-   - `role` alternates between `user` and `assistant`
-   - there are no more than 10 images per line
-   - number of samples supported by model type (only for Bedrock platform)
-   - image/video/document is from the supported formats
-   - invalid tokens are detected (case-insensitive: System:, USER:, Assistant:, etc.)
-   - **Nova 2.0 specific validations:**
-     - reasoning content only in assistant messages and only for lite-2.0
-     - tool use placement (toolUse in assistant, toolResult in user messages)
-     - tool use/result ID matching and uniqueness
-     - tool names match toolConfig definitions
-     - format restrictions for lite-2.0 (PNG, JPEG, GIF for images; MOV, MKV, MP4 for videos; PDF for documents)
-   - **RFT specific validations:**
-     - id field validation (optional but if present must not be empty)
-     - messages must contain at least one user message
-     - tools field is required and cannot be empty
-     - reference_answer validation (optional but if present must not be empty)
-     - duplicate tool names detection
-5. Platform-specific validations
-   - For Bedrock: Validates that the number of samples is within the allowed bounds for the model and task type
-   - For SageMaker: Skips the data record bounds validation
+### All recipes
+- File must have `.jsonl` extension
+- Each line must be valid JSON
+- Sample count must be within model bounds (Bedrock platform only)
+
+### SFT / DPO
+- Messages must alternate: user → assistant → user → assistant → ...
+- Last message must be from assistant (SFT) or have candidates (DPO)
+- At least 2 messages (one user, one assistant)
+- Text content must not contain invalid tokens (`System:`, `User:`, `Bot:`, `[EOS]`, `<image>`, etc.)
+- Images/video/documents only in user messages
+- Max 10 images per message, max 1 video per sample, max 1 document per user turn
+- Video and image/document cannot coexist in the same content list
+- S3 URIs must start with `s3://`
+- Micro models: no image/video/document content
+- Nova 2.0 Lite: restricted image formats (png, jpeg, gif), video formats (mov, mkv, mp4)
+- `reasoningContent` only in assistant messages, only on `lite-2.0`
+- Tool use: `toolUse` only in assistant messages, `toolResult` only in user messages, IDs must match
+
+### DPO-specific
+- Last message must have `candidates` with at least 2 items
+- Candidates must have different `preferenceLabel` values (`preferred` / `non-preferred`)
+- Candidate content cannot include image/video/document
+- No video in non-candidate messages
+- Not supported on `lite-2.0`
+
+### CPT
+- Each sample must have a non-empty `text` string field
+
+### RFT
+- Only supported on `lite-2.0`
+- Must have `messages` (non-empty, at least one user message) and `tools` (non-empty)
+- Tool type must be `"function"` with valid name, description, and parameters
+- Optional `id` and `reference_answer` fields
+- System message (if present) must be first
+
+### Dataset-level (Bedrock only)
+- Nova 2.0 Lite does not support a validation dataset
+- Sample count bounds per model (default 8–20,000; lite-2.0 SFT: 200–20,000; lite-2.0 RFT: 100–20,000)
 
 ### RFT (Reinforcement Fine-Tuning)
 
