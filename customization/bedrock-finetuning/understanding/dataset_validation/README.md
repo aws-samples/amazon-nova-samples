@@ -133,6 +133,7 @@ Result: FAIL — please fix the issues above and re-validate.
 ### RFT
 - Only supported on `lite-2.0`
 - Must have `messages` (non-empty, at least one user message) and `tools` (non-empty)
+- `tools` is optional; if provided, must be a non-empty list with no duplicate tool names
 - Tool type must be `"function"` with valid name, description, and parameters
 - Optional `id` and `reference_answer` fields
 - System message (if present) must be first

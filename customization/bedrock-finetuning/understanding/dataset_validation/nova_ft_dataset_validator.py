@@ -865,10 +865,10 @@ class RFTMessage(BaseModel):
 
 
 class RFTDatasetSample(BaseModel):
-    """RFT sample with messages and tools."""
+    """RFT sample with messages and optional tools."""
     id: Optional[str] = None
     messages: List[RFTMessage]
-    tools: List[RFTTool]
+    tools: Optional[List[RFTTool]] = None
     reference_answer: Optional[Union[str, dict]] = None
 
     @field_validator("id")
@@ -905,11 +905,12 @@ class RFTDatasetSample(BaseModel):
 
     @field_validator("tools")
     def validate_tools(cls, tools):
-        if not tools:
-            raise ValueError("Invalid tools, tools field is required and cannot be empty list")
-        tool_names = [tool.function.name for tool in tools]
-        if len(tool_names) != len(set(tool_names)):
-            raise ValueError("Invalid tools, duplicate tool names found")
+        if tools is not None:
+            if len(tools) == 0:
+                raise ValueError("Invalid tools, if provided cannot be an empty list")
+            tool_names = [tool.function.name for tool in tools]
+            if len(tool_names) != len(set(tool_names)):
+                raise ValueError("Invalid tools, duplicate tool names found")
         return tools
 
 
