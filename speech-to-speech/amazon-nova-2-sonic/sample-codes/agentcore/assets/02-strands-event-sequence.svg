@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="aR" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#2563eb"/></marker>
+    <marker id="aL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#c2410c"/></marker>
+    <marker id="aG" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#16a34a"/></marker>
+    <marker id="aGL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#16a34a"/></marker>
+    <marker id="aP" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#7c3aed"/></marker>
+    <marker id="aPL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7" fill="#7c3aed"/></marker>
+  </defs>
+
+  <rect width="1920" height="1080" fill="transparent"/>
+
+  <!-- Title -->
+  <text x="960" y="48" text-anchor="middle" fill="#1e293b" font-size="32" font-weight="bold">Strands BidiAgent — Event Sequence</text>
+  <text x="960" y="78" text-anchor="middle" fill="#64748b" font-size="16">
+    <tspan fill="#2563eb">━━</tspan> Client → Server    <tspan fill="#c2410c">━━</tspan> Server → Client    <tspan fill="#7c3aed">━━</tspan> BidiAgent ↔ Bedrock    <tspan fill="#16a34a">━━</tspan> MCP Gateway
+  </text>
+
+  <!-- Lifeline headers -->
+  <rect x="120" y="100" width="180" height="44" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#sh)"/>
+  <text x="210" y="128" text-anchor="middle" fill="#1e40af" font-size="16" font-weight="bold">Client</text>
+
+  <rect x="560" y="100" width="220" height="44" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#sh)"/>
+  <text x="670" y="128" text-anchor="middle" fill="#1e40af" font-size="16" font-weight="bold">Server (FastAPI)</text>
+
+  <rect x="1040" y="100" width="220" height="44" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" filter="url(#sh)"/>
+  <text x="1150" y="128" text-anchor="middle" fill="#5b21b6" font-size="16" font-weight="bold">BidiAgent (Strands)</text>
+
+  <rect x="1520" y="100" width="260" height="44" rx="8" fill="#fff7ed" stroke="#c2410c" stroke-width="2" filter="url(#sh)"/>
+  <text x="1650" y="122" text-anchor="middle" fill="#9a3412" font-size="14" font-weight="bold">Bedrock / MCP Gateway</text>
+
+  <!-- Lifelines -->
+  <line x1="210" y1="144" x2="210" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <line x1="670" y1="144" x2="670" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <line x1="1150" y1="144" x2="1150" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <line x1="1650" y1="144" x2="1650" y2="1020" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6,5"/>
+
+  <!-- ── Phase 1: Connection & Config ── -->
+  <rect x="60" y="168" width="1760" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="184" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">CONNECTION &amp; CONFIGURATION</text>
+
+  <line x1="215" y1="214" x2="665" y2="214" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="340" y="200" width="220" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="218" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">WebSocket connect</text>
+
+  <line x1="215" y1="254" x2="665" y2="254" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="330" y="240" width="240" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="258" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">config (model, voice, …)</text>
+  <text x="200" y="250" fill="#64748b" font-size="11" text-anchor="end">JSON</text>
+
+  <!-- Server creates BidiAgent -->
+  <rect x="620" y="272" width="100" height="18" rx="3" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="670" y="285" text-anchor="middle" fill="#5b21b6" font-size="10" font-weight="600">create agent</text>
+
+  <line x1="675" y1="304" x2="1145" y2="304" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#aP)"/>
+  <rect x="800" y="290" width="240" height="26" rx="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="920" y="308" text-anchor="middle" fill="#5b21b6" font-size="15" font-weight="600">BidiAgent.run(in, out)</text>
+
+  <line x1="1155" y1="340" x2="1645" y2="340" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#aP)"/>
+  <rect x="1260" y="326" width="280" height="26" rx="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="1400" y="344" text-anchor="middle" fill="#5b21b6" font-size="15" font-weight="600">open bidirectional stream</text>
+  <text x="1660" y="336" fill="#64748b" font-size="11">Nova Sonic</text>
+
+  <line x1="665" y1="376" x2="215" y2="376" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="330" y="362" width="240" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="450" y="380" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">system (config applied)</text>
+
+  <!-- ── Phase 2: Audio Conversation ── -->
+  <rect x="60" y="406" width="1760" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="422" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">AUDIO CONVERSATION (BIDIRECTIONAL)</text>
+
+  <line x1="215" y1="454" x2="665" y2="454" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="300" y="440" width="300" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="458" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">bidi_audio_input (chunk 1…N)</text>
+  <text x="200" y="450" fill="#64748b" font-size="11" text-anchor="end">🎤 PCM</text>
+
+  <line x1="675" y1="454" x2="1145" y2="454" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#aP)" stroke-dasharray="5,4" opacity="0.6"/>
+  <text x="910" y="448" text-anchor="middle" fill="#7c3aed" font-size="10">handle_websocket_input()</text>
+
+  <line x1="1155" y1="454" x2="1645" y2="454" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#aP)" stroke-dasharray="5,4" opacity="0.6"/>
+  <text x="1400" y="448" text-anchor="middle" fill="#7c3aed" font-size="10">raw S2S protocol (abstracted)</text>
+
+  <line x1="1645" y1="500" x2="1155" y2="500" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#aPL)" stroke-dasharray="5,4" opacity="0.6"/>
+
+  <line x1="1145" y1="536" x2="675" y2="536" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="780" y="522" width="260" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="910" y="540" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">bidi_audio_stream (chunks)</text>
+  <line x1="665" y1="536" x2="215" y2="536" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <text x="200" y="532" fill="#64748b" font-size="11" text-anchor="end">🔊 audio</text>
+
+  <line x1="1145" y1="572" x2="675" y2="572" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="770" y="558" width="280" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="910" y="576" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">bidi_transcript_stream (text)</text>
+  <line x1="665" y1="572" x2="215" y2="572" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <line x1="1145" y1="608" x2="675" y2="608" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="790" y="594" width="240" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="910" y="612" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">bidi_response_complete</text>
+  <line x1="665" y1="608" x2="215" y2="608" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- ── Phase 3: Tool Use via MCP Gateway ── -->
+  <rect x="60" y="640" width="1760" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="656" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">TOOL USE VIA MCP GATEWAY (AUTOMATIC)</text>
+
+  <line x1="1645" y1="688" x2="1155" y2="688" stroke="#16a34a" stroke-width="2.5" marker-end="url(#aGL)"/>
+  <rect x="1260" y="674" width="280" height="26" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1400" y="692" text-anchor="middle" fill="#166534" font-size="15" font-weight="600">toolUse (from Nova Sonic)</text>
+
+  <line x1="1155" y1="724" x2="1645" y2="724" stroke="#16a34a" stroke-width="2.5" marker-end="url(#aG)"/>
+  <rect x="1240" y="710" width="310" height="26" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1395" y="728" text-anchor="middle" fill="#166534" font-size="15" font-weight="600">MCP Gateway → tool execution</text>
+  <text x="1660" y="720" fill="#64748b" font-size="11">Gateway ARN</text>
+
+  <line x1="1645" y1="760" x2="1155" y2="760" stroke="#16a34a" stroke-width="2.5" marker-end="url(#aGL)"/>
+  <rect x="1290" y="746" width="220" height="26" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1400" y="764" text-anchor="middle" fill="#166534" font-size="15" font-weight="600">tool result → model</text>
+
+  <line x1="1145" y1="796" x2="675" y2="796" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="790" y="782" width="240" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="910" y="800" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">tool_use_stream / result</text>
+  <line x1="665" y1="796" x2="215" y2="796" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <text x="1400" y="828" text-anchor="middle" fill="#94a3b8" font-size="12" font-style="italic">BidiAgent resumes audio response with tool result</text>
+
+  <!-- ── Phase 4: Text Input (optional) ── -->
+  <rect x="60" y="850" width="1760" height="22" rx="4" fill="#f1f5f9"/>
+  <text x="960" y="866" text-anchor="middle" fill="#64748b" font-size="13" font-weight="bold" letter-spacing="2">TEXT INPUT (OPTIONAL)</text>
+
+  <line x1="215" y1="898" x2="665" y2="898" stroke="#2563eb" stroke-width="2.5" marker-end="url(#aR)"/>
+  <rect x="340" y="884" width="220" height="26" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="902" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">text_input (message)</text>
+
+  <line x1="675" y1="898" x2="1145" y2="898" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#aP)"/>
+  <rect x="810" y="884" width="230" height="26" rx="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="925" y="902" text-anchor="middle" fill="#5b21b6" font-size="15" font-weight="600">agent.send(text)</text>
+  <line x1="1155" y1="898" x2="1645" y2="898" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#aP)" stroke-dasharray="5,4" opacity="0.6"/>
+  <text x="1400" y="892" text-anchor="middle" fill="#7c3aed" font-size="10">processed as text turn</text>
+
+  <line x1="1145" y1="940" x2="675" y2="940" stroke="#c2410c" stroke-width="2.5" marker-end="url(#aL)"/>
+  <rect x="790" y="926" width="240" height="26" rx="5" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="910" y="944" text-anchor="middle" fill="#9a3412" font-size="15" font-weight="600">bidi_interruption</text>
+  <line x1="665" y1="940" x2="215" y2="940" stroke="#fdba74" stroke-width="1.5" marker-end="url(#aL)" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="200" y="936" fill="#64748b" font-size="11" text-anchor="end">barge-in</text>
+
+</svg>

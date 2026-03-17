@@ -53,10 +53,23 @@ npm install
 ```
 
 3. Configure AWS credentials:
+
+The application uses your AWS credentials from:
+- Environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN)
+- IAM roles (recommended for EC2, ECS, Lambda - provides temporary credentials)
+- AWS CLI configuration (~/.aws/credentials)
+
+**Optional:** To use a specific AWS profile:
 ```bash
-# Configure AWS CLI with your credentials
-aws configure --profile bedrock-test
+export AWS_PROFILE=your-profile-name
 ```
+
+**First time setup:** If you haven't configured AWS CLI yet:
+```bash
+aws configure
+```
+
+> **Note:** For security best practices, use temporary credentials via IAM roles when running on AWS services.
 
 4. Build the TypeScript code:
 ```bash
@@ -176,7 +189,7 @@ For proper conversation resumption:
 
 ### Quick Start
 1. Install dependencies: `npm install`
-2. Configure AWS credentials: `aws configure --profile bedrock-test`
+2. Configure AWS credentials (see step 3 in Setup section above)
 3. Build the TypeScript code: `npm run build`
 4. Start the server: `npm start`
 5. Open your browser: `http://localhost:3000`

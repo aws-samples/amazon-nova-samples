@@ -1,10 +1,10 @@
 import { fromIni } from "@aws-sdk/credential-providers";
+import { defaultProvider } from "@aws-sdk/credential-provider-node";
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { NovaSonicBidirectionalStreamClient } from "./client";
 import { randomUUID } from "crypto";
 
-const AWS_PROFILE_NAME = 'bedrock-test';
 const AUDIO_FILE_PATH = './input-audio-example/japan16k.raw';
 const OUTPUT_DIR = './output';
 const CHUNK_SIZE = 1024; // Size of audio chunks in bytes
@@ -37,7 +37,7 @@ async function main() {
             },
             clientConfig: {
                 region: "us-east-1",
-                credentials: fromIni({ profile: AWS_PROFILE_NAME })
+                credentials: process.env.AWS_PROFILE ? fromIni({ profile: process.env.AWS_PROFILE }) : defaultProvider()
             }
         });
 

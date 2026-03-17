@@ -22,6 +22,10 @@ To learn more about Amazon Nova Sonic, refer to the [User Guide](https://docs.aw
 ## Reference Solutions
 The following projects were developed by AWS teams and showcase examples of how to build solutions using Amazon Nova Sonic and AWS services, serve as helpful inspiration or starting points for your own implementations.
 
+- [Amazon Nova Sonic over WebSocket with Amazon Bedrock AgentCore](https://github.com/aws-samples/sample-nova-sonic-websocket-agentcore)
+
+    A complete, ready-to-deploy voice conversational AI sample built with React and powered by Amazon Nova Sonic on AWS Bedrock AgentCore using Strands BidiAgent. The solution features client-side authentication via Amazon Cognito with SigV4 presigned WebSocket URLs — temporary credentials are vended by Cognito Identity Pool and never exposed to the browser. Includes one-command CDK deployment, real-time bidirectional voice streaming, live transcription, barge-in support, tool use, and a local development mode for rapid iteration without AWS infrastructure.
+
 - [Intelligent conversational IVR for hotel reservation system using Amazon Nova Sonic](https://github.com/aws-samples/genai-quickstart-pocs/tree/main/genai-quickstart-pocs-python/amazon-bedrock-nova-sonic-poc)
 
     This Python app showcases real-time audio streaming with Amazon Nova Sonic model in a hotel reservation scenario. It enables natural conversations and uses function calling to create, modify, or cancel reservations via API.
@@ -55,3 +59,7 @@ The following projects were developed by AWS teams and showcase examples of how 
 - [WebRTC-based Nova Sonic Solution](https://github.com/aws-samples/sample-nova-sonic-speech2speech-webrtc)
 
     This solution delivers real-time Speech-to-Speech capabilities through WebRTC integration, leveraging AWS Bedrock Nova Sonic and Amazon Kinesis Video Streams with WebRTC. The system features a modular architecture with separate Python backend and React frontend components, enabling cross-platform functionality across Windows, macOS, and Linux. Key technical components include RTC audio processing, AWS service integration (Bedrock, Kinesis Video Streams), and tool support for MCP servers and Strands agents.
+
+- [Nova Sonic Live Podcasting POC](https://github.com/aws-samples/genai-quickstart-pocs/tree/main/genai-quickstart-pocs-python/amazon-bedrock-nova-s2s-live-podcasting-poc)
+
+    This Python application generates a live AI-powered podcast conversation using Amazon Nova Sonic bidirectional streaming. Two AI hosts—Matthew and Tiffany—engage in multi-turn spoken dialogue about AWS topics, with real-time audio and transcript streaming through a Flask web interface using Server-Sent Events (SSE). The application includes topic validation, PII output filtering, system prompt guardrails, and supports standalone CLI modes for text, audio, and mixed interaction.

@@ -5,6 +5,7 @@ import {
     RetrieveCommandOutput,
 } from "@aws-sdk/client-bedrock-agent-runtime";
 import { fromIni } from "@aws-sdk/credential-providers";
+import { defaultProvider } from "@aws-sdk/credential-provider-node";
 
 
 // Define interfaces for type safety
@@ -25,15 +26,13 @@ interface RetrievalResult {
     };
     score: number;
 }
-const AWS_PROFILE_NAME = process.env.AWS_PROFILE || 'bedrock-test';
-
 
 class BedrockKnowledgeBaseClient {
     private client: BedrockAgentRuntimeClient;
     constructor(region: string = 'us-east-1') {
         this.client = new BedrockAgentRuntimeClient({
             region,
-            credentials: fromIni({ profile: AWS_PROFILE_NAME })
+            credentials: process.env.AWS_PROFILE ? fromIni({ profile: process.env.AWS_PROFILE }) : defaultProvider()
         });
     }
 

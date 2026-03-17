@@ -1,0 +1,38 @@
+[
+    {
+        "name": "multiply_numbers",
+        "description": "Multiplies multiplicand and multiplier together to get product (multiplicand * multiplier). Use for calculating total GPU memory, parameter storage requirements, or scaling computations.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "multiplicand": {
+                    "type": "number",
+                    "description": "the number to multiply"
+                },
+                "multiplier": {
+                    "type": "number",
+                    "description": "the number to multiply against the multiplicand"
+                }
+            },
+            "required": ["multiplicand", "multiplier"]
+        }
+    },
+    {
+        "name": "divide_numbers",
+        "description": "Divides the dividend by the divisor to find the quotient (dividend ÷ divisor). Use for calculating instances needed, memory per parameter, or capacity ratios.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "dividend": {
+                    "type": "number",
+                    "description": "the number to divide into"
+                },
+                "divisor": {
+                    "type": "number",
+                    "description": "the number that dividend will be divided by"
+                }
+            },
+            "required": ["dividend", "divisor"]
+        }
+    }
+]

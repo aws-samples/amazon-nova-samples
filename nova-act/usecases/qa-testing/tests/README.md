@@ -255,6 +255,13 @@ The project uses several pytest plugins to enhance testing capabilities:
 
 These plugins are automatically installed with the project dependencies. No additional configuration is required.
 
+## Expected Test Failures
+
+The following tests are expected to fail:
+
+1. **QA-03-Product Display and Images Test**
+2. **QA-05-Product Filter Functionality Test**
+
 ## Additional Resources
 
 - [Amazon Nova Act](https://novs.amazon.com/act)

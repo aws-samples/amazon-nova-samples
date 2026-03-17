@@ -42,7 +42,13 @@ public class WebSocketServer
                 RegionEndpoint = RegionEndpoint.EUNorth1,
                 Timeout = TimeSpan.FromSeconds(180)
             };
-            AWSConfigs.AWSProfileName = "bedrock-test";
+            
+            var awsProfile = Environment.GetEnvironmentVariable("AWS_PROFILE");
+            if (!string.IsNullOrEmpty(awsProfile))
+            {
+                AWSConfigs.AWSProfileName = awsProfile;
+            }
+            
             var client = new AmazonBedrockRuntimeClient(config);
             var interactClient = new NovaSonicBedrockInteractClient(client, _loggerFactory);
 

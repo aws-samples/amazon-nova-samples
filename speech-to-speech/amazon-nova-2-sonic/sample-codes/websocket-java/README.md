@@ -41,10 +41,24 @@ cd NovaSonicWebSocketExample
 ```
 
 2. Configure AWS credentials:
+
+The application uses your AWS credentials from:
+- Environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN)
+- IAM roles (recommended for EC2, ECS, Lambda - provides temporary credentials)
+- AWS CLI configuration (~/.aws/credentials)
+
+**Optional:** To use a specific AWS profile:
+```bash
+export AWS_PROFILE=your-profile-name
+```
+
+**First time setup:** If you haven't configured AWS CLI yet:
 ```bash
 # Configure AWS CLI with your credentials
-aws configure --profile bedrock-test
+aws configure
 ```
+
+> **Note:** For security best practices, use temporary credentials via IAM roles when running on AWS services.
 
 3. Build and run the Java application:
 ```bash

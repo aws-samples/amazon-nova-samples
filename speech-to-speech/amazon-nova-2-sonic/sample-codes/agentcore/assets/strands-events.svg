@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#555" />
+    </marker>
+    <marker id="ar-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1565c0" />
+    </marker>
+    <marker id="ar-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2e7d32" />
+    </marker>
+    <marker id="ar-purple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7b1fa2" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="390" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#000">Strands BidiAgent — WebSocket Event Flow</text>
+  <text x="390" y="46" text-anchor="middle" font-size="11" fill="#666">Client ↔ Server ↔ Nova Sonic (via BidiAgent) ↔ MCP Gateways</text>
+
+  <!-- Column headers -->
+  <rect x="40" y="60" width="120" height="30" rx="6" fill="#e3f2fd" stroke="#90caf9" />
+  <text x="100" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#1565c0">Client</text>
+
+  <rect x="310" y="60" width="160" height="30" rx="6" fill="#e8f5e9" stroke="#a5d6a7" />
+  <text x="390" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#2e7d32">Server (BidiAgent)</text>
+
+  <rect x="620" y="60" width="120" height="30" rx="6" fill="#f3e5f5" stroke="#ce93d8" />
+  <text x="680" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#7b1fa2">MCP Gateways</text>
+
+  <!-- Lifelines -->
+  <line x1="100" y1="90" x2="100" y2="500" stroke="#90caf9" stroke-width="1.5" stroke-dasharray="4,3" />
+  <line x1="390" y1="90" x2="390" y2="500" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="4,3" />
+  <line x1="680" y1="90" x2="680" y2="500" stroke="#ce93d8" stroke-width="1.5" stroke-dasharray="4,3" />
+
+  <!-- 1. config -->
+  <line x1="105" y1="110" x2="385" y2="110" stroke="#1565c0" stroke-width="1.5" marker-end="url(#ar-blue)" />
+  <rect x="155" y="98" width="120" height="18" rx="3" fill="#e3f2fd" stroke="none" />
+  <text x="215" y="111" text-anchor="middle" font-size="10" font-weight="600" fill="#1565c0">config</text>
+  <text x="215" y="125" text-anchor="middle" font-size="8" fill="#666">voice, model_id, region, sample_rates, system_prompt</text>
+
+  <!-- 2. system ack -->
+  <line x1="385" y1="145" x2="105" y2="145" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="170" y="133" width="120" height="18" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="230" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d32">system</text>
+  <text x="230" y="160" text-anchor="middle" font-size="8" fill="#666">"Configuration applied"</text>
+
+  <!-- 3. bidi_audio_input (streaming) -->
+  <line x1="105" y1="180" x2="385" y2="180" stroke="#1565c0" stroke-width="1.5" marker-end="url(#ar-blue)" />
+  <rect x="140" y="168" width="140" height="18" rx="3" fill="#e3f2fd" stroke="none" />
+  <text x="210" y="181" text-anchor="middle" font-size="10" font-weight="600" fill="#1565c0">bidi_audio_input</text>
+  <text x="210" y="195" text-anchor="middle" font-size="8" fill="#666">base64 PCM audio, 16kHz, mono</text>
+
+  <!-- streaming indicator -->
+  <line x1="105" y1="205" x2="385" y2="205" stroke="#1565c0" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#ar-blue)" />
+  <text x="245" y="218" text-anchor="middle" font-size="8" font-style="italic" fill="#999">continuous audio stream...</text>
+
+  <!-- 4. text_input (optional) -->
+  <line x1="105" y1="240" x2="385" y2="240" stroke="#1565c0" stroke-width="1.5" marker-end="url(#ar-blue)" />
+  <rect x="160" y="228" width="120" height="18" rx="3" fill="#e3f2fd" stroke="none" />
+  <text x="220" y="241" text-anchor="middle" font-size="10" font-weight="600" fill="#1565c0">text_input</text>
+  <text x="220" y="255" text-anchor="middle" font-size="8" fill="#666">text message (optional)</text>
+
+  <!-- 5. bidi_transcript_stream (user) -->
+  <line x1="385" y1="275" x2="105" y2="275" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="130" y="263" width="170" height="18" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="215" y="276" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d32">bidi_transcript_stream</text>
+  <text x="215" y="290" text-anchor="middle" font-size="8" fill="#666">role: "user", text (speech-to-text)</text>
+
+  <!-- 6. tool_use_stream -->
+  <line x1="395" y1="310" x2="675" y2="310" stroke="#7b1fa2" stroke-width="1.5" marker-end="url(#ar-purple)" />
+  <rect x="450" y="298" width="120" height="18" rx="3" fill="#f3e5f5" stroke="none" />
+  <text x="510" y="311" text-anchor="middle" font-size="10" font-weight="600" fill="#7b1fa2">tool call</text>
+
+  <line x1="385" y1="320" x2="105" y2="320" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="150" y="318" width="130" height="14" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="215" y="329" text-anchor="middle" font-size="9" fill="#2e7d32">tool_use_stream (to client)</text>
+
+  <!-- 7. tool_result -->
+  <line x1="675" y1="345" x2="395" y2="345" stroke="#7b1fa2" stroke-width="1.5" marker-end="url(#ar-purple)" />
+  <rect x="455" y="333" width="110" height="18" rx="3" fill="#f3e5f5" stroke="none" />
+  <text x="510" y="346" text-anchor="middle" font-size="10" font-weight="600" fill="#7b1fa2">tool result</text>
+
+  <line x1="385" y1="355" x2="105" y2="355" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="160" y="353" width="120" height="14" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="220" y="364" text-anchor="middle" font-size="9" fill="#2e7d32">tool_result (to client)</text>
+
+  <!-- 8. bidi_audio_stream -->
+  <line x1="385" y1="385" x2="105" y2="385" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="145" y="373" width="150" height="18" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="220" y="386" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d32">bidi_audio_stream</text>
+  <text x="220" y="400" text-anchor="middle" font-size="8" fill="#666">base64 PCM audio response</text>
+
+  <!-- 9. bidi_transcript_stream (assistant) -->
+  <line x1="385" y1="415" x2="105" y2="415" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <rect x="130" y="403" width="170" height="18" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="215" y="416" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d32">bidi_transcript_stream</text>
+  <text x="215" y="430" text-anchor="middle" font-size="8" fill="#666">role: "assistant", text (agent speech)</text>
+
+  <!-- 10. bidi_interruption -->
+  <line x1="105" y1="450" x2="385" y2="450" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="245" y="448" text-anchor="middle" font-size="9" font-weight="600" fill="#e53935">user speaks (barge-in)</text>
+  <line x1="385" y1="462" x2="105" y2="462" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,3" />
+  <rect x="155" y="455" width="130" height="14" rx="3" fill="#ffebee" stroke="none" />
+  <text x="220" y="466" text-anchor="middle" font-size="9" font-weight="600" fill="#e53935">bidi_interruption</text>
+
+  <!-- 11. bidi_response_complete + bidi_usage -->
+  <line x1="385" y1="485" x2="105" y2="485" stroke="#2e7d32" stroke-width="1" marker-end="url(#ar-green)" />
+  <rect x="120" y="478" width="200" height="14" rx="3" fill="#e8f5e9" stroke="none" />
+  <text x="220" y="489" text-anchor="middle" font-size="9" fill="#2e7d32">bidi_response_complete + bidi_usage</text>
+
+  <!-- Legend -->
+  <rect x="40" y="505" width="700" height="14" rx="3" fill="none" stroke="none" />
+  <line x1="50" y1="513" x2="75" y2="513" stroke="#1565c0" stroke-width="1.5" marker-end="url(#ar-blue)" />
+  <text x="80" y="516" font-size="8" fill="#555">Client → Server</text>
+  <line x1="190" y1="513" x2="215" y2="513" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#ar-green)" />
+  <text x="220" y="516" font-size="8" fill="#555">Server → Client</text>
+  <line x1="330" y1="513" x2="355" y2="513" stroke="#7b1fa2" stroke-width="1.5" marker-end="url(#ar-purple)" />
+  <text x="360" y="516" font-size="8" fill="#555">MCP Gateway</text>
+  <line x1="450" y1="513" x2="475" y2="513" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="480" y="516" font-size="8" fill="#555">Interruption (barge-in)</text>
+</svg>

@@ -7,6 +7,7 @@ import org.eclipse.jetty.websocket.server.config.JettyWebSocketServletContainerI
 import org.example.utility.NovaSonicBedrockInteractClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.http.Protocol;
 import software.amazon.awssdk.http.ProtocolNegotiation;
@@ -48,9 +49,13 @@ public class WebSocketServer {
                     .protocol(Protocol.HTTP2)
                     .protocolNegotiation(ProtocolNegotiation.ALPN);
 
+            String awsProfile = System.getenv("AWS_PROFILE");
+            
             BedrockRuntimeAsyncClient client = BedrockRuntimeAsyncClient.builder()
                     .region(Region.US_EAST_1)
-                    .credentialsProvider(ProfileCredentialsProvider.create("bedrock-test"))
+                    .credentialsProvider(awsProfile != null 
+                        ? ProfileCredentialsProvider.create(awsProfile)
+                        : DefaultCredentialsProvider.create())
                     .httpClientBuilder(nettyBuilder)
                     .build();
 
