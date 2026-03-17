@@ -1,7 +1,7 @@
 """Event templates for Bedrock streaming."""
 import json
 from typing import Dict, Any, List
-from src.core.config import MAX_TOKENS, TOP_P, TEMPERATURE, INPUT_SAMPLE_RATE, OUTPUT_SAMPLE_RATE
+from src.config import MAX_TOKENS, TOP_P, TEMPERATURE, INPUT_SAMPLE_RATE, OUTPUT_SAMPLE_RATE
 
 
 class EventTemplates:
@@ -158,74 +158,15 @@ class EventTemplates:
         })
     
     @staticmethod
-    def prompt_start(prompt_name: str, voice_id: str, active_agent: str, tools: List[Dict[str, Any]]) -> str:
-        """Create prompt start event with tool configuration."""
-        agent_tools = {
-            "support": {
-                "name": "open_ticket_tool",
-                "description": "Create a support ticket for customer issues",
-                "inputSchema": {
-                    "json": json.dumps({
-                        "type": "object",
-                        "properties": {
-                            "issue_description": {"type": "string", "description": "Description of the customer's issue"},
-                            "customer_name": {"type": "string", "description": "Name of the customer"}
-                        },
-                        "required": ["issue_description", "customer_name"]
-                    })
-                }
-            },
-            "sales": {
-                "name": "order_computers_tool",
-                "description": "Place an order for computers",
-                "inputSchema": {
-                    "json": json.dumps({
-                        "type": "object",
-                        "properties": {
-                            "computer_type": {"type": "string", "description": "Type of computer", "enum": ["laptop", "desktop"]},
-                            "customer_name": {"type": "string", "description": "Name of the customer"}
-                        },
-                        "required": ["computer_type", "customer_name"]
-                    })
-                }
-            },
-            "tracking": {
-                "name": "check_order_location_tool",
-                "description": "Check order location and status",
-                "inputSchema": {
-                    "json": json.dumps({
-                        "type": "object",
-                        "properties": {
-                            "order_id": {"type": "string", "description": "Order ID to check"},
-                            "customer_name": {"type": "string", "description": "Name of the customer"}
-                        },
-                        "required": ["order_id", "customer_name"]
-                    })
-                }
-            }
-        }
+    def prompt_start(prompt_name: str, voice_id: str, tool_schemas: List[Dict[str, Any]]) -> str:
+        """Create prompt start event with tool configuration.
         
-        tool_list = [
-            {
-                "toolSpec": {
-                    "name": "switch_agent",
-                    "description": "CRITICAL: Invoke this function IMMEDIATELY when user requests to switch personas, speak with another department, or needs a different type of assistance. This transfers the conversation to a specialized agent with appropriate tools and expertise. Available agents: 'support' (technical issues, complaints, problems - creates support tickets), 'sales' (purchasing, pricing, product info - processes orders), 'tracking' (order status, delivery updates - checks shipment location). Example inputs - Sales requests: 'Can I buy a computer?', 'How much does a laptop cost?', 'I want to purchase a desktop', 'What products do you sell?', 'I'd like to place an order'. Support requests: 'I have issues with my wifi', 'My computer won't turn on', 'I need help with a problem', 'Something is broken', 'I want to file a complaint'. Tracking requests: 'What's my order status?', 'Where is my delivery?', 'When will my order arrive?', 'Can you track my package?', 'Has my order shipped yet?'. Direct transfer requests: 'Let me speak with sales', 'Transfer me to support', 'I need to talk to tracking'.",
-                    "inputSchema": {
-                        "json": json.dumps({
-                            "type": "object",
-                            "properties": {
-                                "role": {"type": "string", "enum": ["support", "sales", "tracking"], "default": "support"}
-                            },
-                            "required": ["role"]
-                        })
-                    }
-                }
-            }
-        ]
-        
-        if active_agent in agent_tools:
-            tool_list.append({"toolSpec": agent_tools[active_agent]})
-        
+        Args:
+            prompt_name: Name for the prompt.
+            voice_id: Bedrock voice identifier.
+            tool_schemas: Complete list of Bedrock-compatible tool schema dicts
+                          (e.g. [{"toolSpec": {...}}, ...]). Passed through as-is.
+        """
         return json.dumps({
             "event": {
                 "promptStart": {
@@ -241,7 +182,7 @@ class EventTemplates:
                         "audioType": "SPEECH"
                     },
                     "toolUseOutputConfiguration": {"mediaType": "application/json"},
-                    "toolConfiguration": {"tools": tool_list}
+                    "toolConfiguration": {"tools": tool_schemas}
                 }
             }
         })

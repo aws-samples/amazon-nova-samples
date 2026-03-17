@@ -11,9 +11,9 @@ DEFAULT_MODEL_ID = 'amazon.nova-2-sonic-v1:0'
 DEFAULT_REGION = 'us-east-1'
 
 # Model Configuration
-MAX_TOKENS = 1024
+MAX_TOKENS = 10000
 TOP_P = 0.0
-TEMPERATURE = 0.0
+TEMPERATURE = 0.2
 
 # Debug
 DEBUG = False
