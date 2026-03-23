@@ -12,6 +12,7 @@ Nova Act enables developers to build intelligent agents that can interact with w
 - **Integrate seamlessly** with Python code for testing, assertions, and debugging
 
 The SDK works in conjunction with **Amazon Bedrock AgentCore Browser**, a secure, cloud-based browser environment that provides:
+
 - Session isolation and security
 - Built-in observability (live viewing, CloudTrail logging, session replay)
 - Containerized ephemeral environments
@@ -38,12 +39,14 @@ Automate quality assurance testing for web applications using Nova Act and Agent
 - **Integration with pytest** for comprehensive test reporting and CI/CD pipelines
 
 **Key Benefits:**
+
 - Reduce test maintenance overhead by 40-60%
 - Execute comprehensive test suites in minutes instead of hours
 - Eliminate false negatives from UI changes
 - Scale testing across browsers, devices, and environments effortlessly
 
 **What's Included:**
+
 - Sample retail web application for testing
 - 15 ready-to-use JSON test cases
 - Pytest framework with parallel execution support
@@ -52,15 +55,44 @@ Automate quality assurance testing for web applications using Nova Act and Agent
 
 [→ Explore the QA Testing Use Case](./usecases/qa-testing/)
 
+### 💰 [Price Comparison](./usecases/price_comparison/)
+
+Automate product price comparison across multiple retailers using Nova Act. This use case showcases:
+
+- **Intelligent product search** that navigates retail websites and finds matching products
+- **Concurrent execution** across multiple retailers for faster price discovery
+- **Structured data extraction** using Pydantic schemas for reliable pricing information
+- **Captcha handling** with user prompts for manual intervention when needed
+- **CSV export** for easy analysis and comparison of results
+
+**Key Benefits:**
+
+- Compare prices across Amazon, Best Buy, Costco, Target, and more in minutes
+- Reduce manual price checking effort by automating browser navigation
+- Get structured output with product names, prices, and promotion details
+- Easily customize product searches and retailer sources via CLI arguments
+
+**What's Included:**
+
+- Ready-to-run price comparison script
+- Support for custom product SKUs and retailer sources
+- Pydantic-based data validation for extracted pricing
+- ThreadPoolExecutor for parallel retailer searches
+- Complete setup and usage instructions
+
+[→ Explore the Price Comparison Use Case](./usecases/price_comparison/)
+
 ## Why Agentic Workflows?
 
 Traditional automation approaches face significant challenges:
+
 - **High maintenance overhead**: Scripts break with UI changes, requiring constant updates
 - **Limited scalability**: Manual testing is time-intensive and incomplete
 - **Technical barriers**: Creating automation requires specialized programming knowledge
 - **Brittleness**: Automation relies on specific selectors that fail when components change
 
 Agentic AI with Nova Act addresses these challenges by:
+
 - **Adapting dynamically** to interface changes without manual updates
 - **Mimicking human interaction** patterns for realistic testing
 - **Enabling non-technical users** to create tests through simple JSON definitions
@@ -81,6 +113,7 @@ This project is licensed under the MIT-0 License. See the [LICENSE](../LICENSE) 
 ## Support
 
 For questions, issues, or feature requests:
+
 - Open an issue in this repository
 - Refer to the [official Nova Act documentation](https://github.com/aws/nova-act)
 - Contact AWS Support for enterprise assistance
