@@ -20,6 +20,37 @@ The demo consists of two main components:
 1. **Nova Act Browser Agents**: Automated browser sessions that navigate retail websites, handle captchas, and extract product information
 2. **Concurrent Execution Engine**: ThreadPoolExecutor manages parallel searches across multiple retailers
 
+## About Amazon Nova Act
+
+Amazon Nova Act is an AI-powered browser automation service that enables you to build agents capable of performing actions in a web browser using natural language instructions. It consists of the Nova Act AWS service for production deployment and monitoring, plus developer tools (SDK, CLI, and IDE extension) that support your development journey from exploration to production.
+
+You can explore Nova Act capabilities in the browser-based [Playground](https://nova.amazon.com/act) without any setup, then move to local development using the Python SDK and IDE extensions for VS Code, Cursor, and Kiro.
+
+For more information, see the [Nova Act Documentation](https://docs.aws.amazon.com/nova-act/latest/userguide/what-is-nova.html) and the [nova-act GitHub repository](https://github.com/aws/nova-act).
+
+### Authentication Methods
+
+Nova Act supports two authentication methods:
+
+|              | API Key                                                                                                         | AWS IAM (Recommended for production)                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Setup**    | Get a key from [nova.amazon.com/act](https://nova.amazon.com/act)                                               | Configure AWS credentials with appropriate IAM roles                 |
+| **Billing**  | Free with daily limits                                                                                          | Usage charges apply ([pricing](https://aws.amazon.com/nova/pricing)) |
+| **Best for** | Quick experimentation and prototyping                                                                           | Production development and deployment                                |
+
+**API key authentication:**
+
+```bash
+export NOVA_ACT_API_KEY="your-api-key-here"
+```
+
+**AWS IAM authentication:**
+
+Configure your AWS credentials using the AWS CLI or environment variables. Ensure your IAM role has the required Nova Act permissions (see [AWS Managed Policies](https://docs.aws.amazon.com/nova-act/latest/userguide/security-iam-awsmanpol.html)). When using IAM authentication, the SDK detects your AWS credentials automatically — no API key is needed.
+
+> [!NOTE]
+> This sample is designed with quick experimentation and prototyping in mind. It uses API key authentication so you can get up and running without an AWS account or IAM configuration. Grab an API key from [nova.amazon.com/act](https://nova.amazon.com/act), set an environment variable, and start comparing prices immediately. For production use cases requiring higher throughput, monitoring, or integration with other AWS services, switch to AWS IAM authentication as described in the [Authentication Methods](#authentication-methods) section above.
+
 ## Prerequisites
 
 Before running this demo, ensure you have:
@@ -137,17 +168,14 @@ price_comparison/
 ### Common Issues
 
 1. **Captcha Detected**
-
    - The tool will pause and prompt you to solve the captcha manually
    - Press Enter after solving to continue
 
 2. **Product Not Found**
-
    - Verify the SKU is valid for the target retailers
    - Some products may not be available at all retailers
 
 3. **Browser Session Errors**
-
    - Ensure you have a stable internet connection
    - Try running in non-headless mode to debug: `--headless=False`
 
