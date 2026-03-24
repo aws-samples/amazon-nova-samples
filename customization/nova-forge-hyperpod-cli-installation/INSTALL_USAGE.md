@@ -44,7 +44,7 @@ echo $CONDA_DEFAULT_ENV  # Should be empty or "base"
 
 ### 3. Python version
 
-You need Python **3.8, 3.9, 3.10, or 3.11** installed. Python 3.12+ is not supported.
+You need Python **3.8, 3.9, 3.10, 3.11, or 3.12** installed. Python 3.13+ is not supported.
 
 ```bash
 python3 --version
@@ -53,7 +53,7 @@ python3 --version
 If you need to install a compatible version on macOS:
 
 ```bash
-brew install python@3.11
+brew install python@3.12
 ```
 
 ### 4. Build tools
@@ -155,7 +155,7 @@ If you chose a custom installation directory, substitute `~/hyperpod-cli-env` wi
 |---|---|
 | `AWS credentials are not configured or invalid` | Run `aws configure` or refresh your session, then retry |
 | `Active environment detected` | Run `deactivate` or `conda deactivate` and retry |
-| `Python X.Y is not supported` | Install Python 3.8–3.11 and ensure `python3` points to it |
+| `Python X.Y is not supported` | Install Python 3.8–3.12 and ensure `python3` points to it |
 | `Failed to clone from S3` | Verify your AWS credentials have access to the S3 bucket and that `git-remote-s3` is working |
 | Installation directory already exists | The installer will ask to remove it — say yes to start fresh, or choose a different path |
 | `helm: command not found` when submitting a job | Install Helm: `curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 \| bash` |
