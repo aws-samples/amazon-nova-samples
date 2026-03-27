@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System v1.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phase-info-panel" id="phase-info-panel">
+        <!-- Phase information will be injected by JavaScript -->
+    </div>
+    <div class="container">
+        <header>
+            <h1>Student Information System</h1>
+            <div class="user-info">Welcome, Admin User</div>
+        </header>
+
+        <nav class="main-nav">
+            <button id="nav-home" class="nav-btn active">Home</button>
+            <button id="nav-student" class="nav-btn">Student Data</button>
+            <button id="nav-search" class="nav-btn">Search</button>
+        </nav>
+
+        <main id="content">
+            <div id="home-view" class="view active">
+                <h2>Dashboard</h2>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Total Students</h3>
+                        <p class="stat">1,247</p>
+                    </div>
+                    <div class="card">
+                        <h3>Active Enrollments</h3>
+                        <p class="stat">1,198</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="student-view" class="view">
+                <h2>Student Registration</h2>
+                <form id="student-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="studentId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="major">Major:</label>
+                        <select id="major" name="major" required>
+                            <option value="">Select Major</option>
+                            <option value="CS">Computer Science</option>
+                            <option value="ENG">Engineering</option>
+                            <option value="BUS">Business</option>
+                            <option value="BIO">Biology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="enrollment-date">Enrollment Date:</label>
+                        <input type="text" id="enrollment-date" name="enrollmentDate" placeholder="YYYY-MM-DD" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" id="save-btn" class="btn-primary">Save Student</button>
+                        <button type="button" id="clear-btn" class="btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+                <div id="success-message" class="message success" style="display: none;">
+                    Student registration completed successfully!
+                </div>
+            </div>
+
+            <div id="search-view" class="view">
+                <h2>Student Search</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search by name or ID...">
+                    <button id="search-btn" class="btn-primary">Search</button>
+                </div>
+                <div id="search-results" class="results-table"></div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

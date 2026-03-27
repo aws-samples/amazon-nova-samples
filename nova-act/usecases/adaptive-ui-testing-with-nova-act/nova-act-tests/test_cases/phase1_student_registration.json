@@ -1,0 +1,31 @@
+{
+  "testId": "NA-01",
+  "testName": "Student Registration - Phase 1 (v1.0)",
+  "description": "Test student registration with original UI (5 fields)",
+  "url": "http://localhost:8000/#student",
+  "testSteps": [
+    {
+      "expectedResult": "Student Registration form is displayed"
+    },
+    {
+      "action": "Enter first name Jane and last name Doe",
+      "expectedResult": "Name fields are populated"
+    },
+    {
+      "action": "Enter student ID S999",
+      "expectedResult": "Student ID field contains S999"
+    },
+    {
+      "action": "Select Computer Science from the major dropdown",
+      "expectedResult": "Major is set to Computer Science"
+    },
+    {
+      "action": "Enter enrollment date 2026-01-15",
+      "expectedResult": "Enrollment date is set"
+    },
+    {
+      "action": "Click the save button",
+      "expectedResult": "Success message appears"
+    }
+  ]
+}
