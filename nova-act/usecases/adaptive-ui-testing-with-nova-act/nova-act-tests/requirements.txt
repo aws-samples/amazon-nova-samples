@@ -1,0 +1,4 @@
+nova-act[cli]>=1.0.0
+pytest>=7.0.0
+pytest-html>=3.0.0
+python-dotenv>=1.0.0

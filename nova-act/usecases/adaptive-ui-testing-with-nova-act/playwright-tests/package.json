@@ -1,0 +1,11 @@
+{
+  "name": "student-playwright-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
