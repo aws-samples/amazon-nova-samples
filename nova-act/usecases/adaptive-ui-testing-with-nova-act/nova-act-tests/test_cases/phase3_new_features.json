@@ -1,0 +1,39 @@
+{
+  "testId": "NA-03",
+  "testName": "Student Registration - Phase 3 (v2.0 New Features)",
+  "description": "Test with structural changes + new fields (email, GPA)",
+  "url": "http://localhost:8000/#student",
+  "testSteps": [
+    {
+      "expectedResult": "Student Registration form is displayed with new email and GPA fields"
+    },
+    {
+      "action": "Enter student ID S999",
+      "expectedResult": "Student ID field contains S999"
+    },
+    {
+      "action": "Enter first name Jane and last name Doe",
+      "expectedResult": "Name fields are populated"
+    },
+    {
+      "action": "Enter email jane.doe@university.edu",
+      "expectedResult": "Email field is populated"
+    },
+    {
+      "action": "Select Computer Science from the major dropdown",
+      "expectedResult": "Major is set to Computer Science"
+    },
+    {
+      "action": "Enter GPA 3.8",
+      "expectedResult": "GPA field contains 3.8"
+    },
+    {
+      "action": "Enter enrollment date 2026-01-15",
+      "expectedResult": "Enrollment date is set"
+    },
+    {
+      "action": "Click the submit button",
+      "expectedResult": "Success message appears"
+    }
+  ]
+}

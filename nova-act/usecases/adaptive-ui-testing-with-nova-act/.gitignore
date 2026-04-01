@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+*.pyc
+.coverage
+htmlcov/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+.playwright/
+
+# Screenshots and logs
+screenshots/
+nova-act-tests/screenshots/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.log
+
+# Test outputs
+reports/
+screenshots/
+*.png
+*.jpg
+*.jpeg
+!sample-app/*.png
+!docs/images/*.png
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# macOS
+.AppleDouble
+.LSOverride
+.project-context.md
