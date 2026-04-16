@@ -1,0 +1,7 @@
+boto3>=1.35.0
+numpy>=1.26.0
+pandas>=2.0.0
+pdf2image>=1.17.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
