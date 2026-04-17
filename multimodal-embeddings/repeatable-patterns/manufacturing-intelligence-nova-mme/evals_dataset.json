@@ -1,0 +1,190 @@
+[
+  {
+    "query": "What is the torque specification for the chamber flange bolts?",
+    "relevant_doc_ids": [
+      "img-torque_specifications",
+      "img-flange_bolt_pattern"
+    ],
+    "ground_truth_answer": "The chamber flange bolts (Part No. ABC-F-0012, 3/4\"-10 A286) require a torque of 185 \u00b15 ft-lbs with Molycoat lubrication."
+  },
+  {
+    "query": "What material is used for the nozzle wall?",
+    "relevant_doc_ids": [
+      "img-nozzle_assembly_diagram"
+    ],
+    "ground_truth_answer": "The nozzle wall is made of Inconel 718, with the chamber liner made of GRCop-84."
+  },
+  {
+    "query": "What is the throat diameter of the RX-84 nozzle?",
+    "relevant_doc_ids": [
+      "img-nozzle_assembly_diagram"
+    ],
+    "ground_truth_answer": "The throat diameter of the RX-84 nozzle is 1.62 meters."
+  },
+  {
+    "query": "What weld process is used for the chamber-to-nozzle joint?",
+    "relevant_doc_ids": [
+      "img-weld_inspection_report",
+      "img-manufacturing_process_flow"
+    ],
+    "ground_truth_answer": "Electron Beam Welding (EBW) per AWS D17.1 Class A, using Inconel 625 (ERNiCrMo-3) filler material."
+  },
+  {
+    "query": "What were the results of the dye penetrant inspection?",
+    "relevant_doc_ids": [
+      "img-weld_inspection_report"
+    ],
+    "ground_truth_answer": "PASS \u2014 No linear indications. Two rounded indications less than 1mm were found, which are acceptable per specification."
+  },
+  {
+    "query": "What is the maximum surface temperature for the PICA-X thermal protection?",
+    "relevant_doc_ids": [
+      "img-tps_material_spec"
+    ],
+    "ground_truth_answer": "The maximum surface temperature for PICA-X is 3,200\u00b0F."
+  },
+  {
+    "query": "What is the ablation rate requirement for the thermal protection system?",
+    "relevant_doc_ids": [
+      "img-tps_material_spec"
+    ],
+    "ground_truth_answer": "The PICA-X ablation rate must be \u22640.025 in/s at 100 BTU/ft\u00b2\u00b7s heat flux."
+  },
+  {
+    "query": "What is the LOX turbopump operating speed?",
+    "relevant_doc_ids": [
+      "img-turbopump_cross_section"
+    ],
+    "ground_truth_answer": "The LOX turbopump operates at 36,200 RPM."
+  },
+  {
+    "query": "What type of bearings are used in the turbopump?",
+    "relevant_doc_ids": [
+      "img-turbopump_cross_section"
+    ],
+    "ground_truth_answer": "The turbopump uses hydrostatic bearings."
+  },
+  {
+    "query": "What is the combustion chamber pressure of the RX-84 engine?",
+    "relevant_doc_ids": [
+      "img-propellant_feed_system_pid"
+    ],
+    "ground_truth_answer": "The RX-84 combustion chamber pressure (Pc) is 1,334 psi."
+  },
+  {
+    "query": "What was the proof pressure used in the LOX tank hydrostatic test?",
+    "relevant_doc_ids": [
+      "img-hydrostatic_test_report"
+    ],
+    "ground_truth_answer": "The proof pressure was 65.6 psig (1.25\u00d7 the MEOP of 52.5 psig)."
+  },
+  {
+    "query": "Was any permanent deformation found during the hydrostatic test?",
+    "relevant_doc_ids": [
+      "img-hydrostatic_test_report"
+    ],
+    "ground_truth_answer": "Permanent deformation was 0.0012 inches, which is within the limit of <0.005 inches."
+  },
+  {
+    "query": "How many bolt holes are on the chamber-nozzle flange?",
+    "relevant_doc_ids": [
+      "img-flange_bolt_pattern"
+    ],
+    "ground_truth_answer": "There are 24 bolt holes (\u00d8 0.812 in) on a 34.2-inch bolt circle diameter."
+  },
+  {
+    "query": "What is the thrust chamber wall thickness tolerance?",
+    "relevant_doc_ids": [
+      "img-dimensional_inspection_report"
+    ],
+    "ground_truth_answer": "The minimum wall thickness is 0.180 inches with a tolerance of +0.020/-0.000 inches. The measured value was 0.185 inches."
+  },
+  {
+    "query": "What is the manufacturing cycle time for the RX-84 thrust chamber?",
+    "relevant_doc_ids": [
+      "img-manufacturing_process_flow"
+    ],
+    "ground_truth_answer": "The total manufacturing cycle time for the RX-84 thrust chamber is approximately 18 weeks."
+  },
+  {
+    "query": "What quality hold points exist in the manufacturing process?",
+    "relevant_doc_ids": [
+      "img-manufacturing_process_flow"
+    ],
+    "ground_truth_answer": "Quality hold points are after steps 1 (Raw Material Receiving), 4 (EB Welding), 6 (NDE Inspection), and 7 (Hydrostatic Proof Test)."
+  },
+  {
+    "query": "What is the helium leak rate specification for the weld joint?",
+    "relevant_doc_ids": [
+      "img-weld_inspection_report"
+    ],
+    "ground_truth_answer": "The helium leak rate must be less than 1\u00d710\u207b\u2077 std cc/s. The measured leak rate was less than 1\u00d710\u207b\u2078 std cc/s \u2014 PASS."
+  },
+  {
+    "query": "What lubricant is specified for the LOX dome bolts?",
+    "relevant_doc_ids": [
+      "img-torque_specifications"
+    ],
+    "ground_truth_answer": "Krytox (PFPE per ABC-SPEC-LUB-003) is specified for the LOX dome bolts (Part No. ABC-F-0050)."
+  },
+  {
+    "query": "What type of seal is used in the turbopump?",
+    "relevant_doc_ids": [
+      "img-turbopump_cross_section"
+    ],
+    "ground_truth_answer": "The turbopump uses a helium-purged labyrinth seal."
+  },
+  {
+    "query": "What is the density of the PICA-X thermal protection material?",
+    "relevant_doc_ids": [
+      "img-tps_material_spec"
+    ],
+    "ground_truth_answer": "The density of PICA-X is 0.27 g/cm\u00b3 (\u00b10.02)."
+  },
+  {
+    "query": "How many coaxial injector elements are in the RX-84 main injector?",
+    "relevant_doc_ids": [
+      "img-injector_plate_detail",
+      "img-engine_exploded_view"
+    ],
+    "ground_truth_answer": "The RX-84 main injector has 462 coaxial elements. The face is made of Inconel 625 with braze per AMS 4777 (BNi-2)."
+  },
+  {
+    "query": "What is the RX-84 engine expansion ratio?",
+    "relevant_doc_ids": [
+      "img-engine_exploded_view",
+      "img-nozzle_assembly_diagram"
+    ],
+    "ground_truth_answer": "The RX-84 nozzle has an expansion ratio of 40:1, with a throat diameter of 1.62 m and exit diameter of 2.74 m."
+  },
+  {
+    "query": "What is the endurance limit of Inconel 718 at room temperature?",
+    "relevant_doc_ids": [
+      "img-inconel718_fatigue_sn_curve"
+    ],
+    "ground_truth_answer": "The endurance limit of Inconel 718 at room temperature (fully reversed, R=-1) is 68 ksi per ASTM E466 testing."
+  },
+  {
+    "query": "What is the maximum wall temperature at the nozzle throat?",
+    "relevant_doc_ids": [
+      "img-nozzle_thermal_analysis"
+    ],
+    "ground_truth_answer": "The steady-state wall temperature at the nozzle throat (coolant side) is 1,420\u00b0F, with hot gas temperature at 5,880\u00b0F."
+  },
+  {
+    "query": "What is the specific impulse of the RX-84 at sea level?",
+    "relevant_doc_ids": [
+      "doc-hotfire_test_report",
+      "img-engine_exploded_view"
+    ],
+    "ground_truth_answer": "The RX-84 sea-level specific impulse (Isp) is nominally 325 seconds. Hot-fire test HF-2024-0088 measured 324.6 seconds (within \u00b12% tolerance)."
+  },
+  {
+    "query": "What is the stress rupture life of Inconel 718 at 1200\u00b0F?",
+    "relevant_doc_ids": [
+      "doc-material_cert_inconel718",
+      "img-inconel718_fatigue_sn_curve"
+    ],
+    "ground_truth_answer": "At 1200\u00b0F and 100 ksi, the actual stress rupture life was 42 hours (spec minimum: 23 hours)."
+  }
+]
