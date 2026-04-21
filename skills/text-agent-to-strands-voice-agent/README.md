@@ -1,6 +1,6 @@
 # Text Agent to Nova Sonic Voice Agent with Strands BidiAgent — Skill
 
-An [Agent Skill](https://agentskills.io/specification) that guides the migration of any text-based agent into a real-time voice agent using [Strands BidiAgent](https://github.com/strands-agents/sdk-python) with [Amazon Nova Sonic](https://aws.amazon.com/ai/generative-ai/nova/sonic/). Strands BidiAgent provides bidirectional audio streaming — it takes your existing system prompt and `@tool` functions and runs them as a live speech-to-speech agent over WebSocket.
+An [Agent Skill](https://agentskills.io/specification) that guides the migration of any text-based agent into a real-time voice agent using [Strands BidiAgent](https://github.com/strands-agents/sdk-python) with [Amazon Nova 2 Sonic](https://aws.amazon.com/ai/generative-ai/nova/sonic/). Strands BidiAgent provides bidirectional audio streaming — it takes your existing system prompt and `@tool` functions and runs them as a live speech-to-speech agent over WebSocket.
 
 ## What It Covers
 
@@ -84,9 +84,9 @@ Use these as reference implementations when migrating from specific frameworks:
 
 The working production implementation is in the same repo:
 
-- Server: `#[[file:strands/websocket/agent.py]]` and `#[[file:strands/websocket/server.py]]`
-- Client: `#[[file:strands/client/client.py]]` and `#[[file:strands/client/strands-client.html]]`
-- MCP tools: `#[[file:strands/mcp/banking_mcp.py]]`
+- Server: `#[[file:speech-to-speech/amazon-nova-2-sonic/sample-codes/agentcore/strands/websocket/agent.py]]` and `#[[file:speech-to-speech/amazon-nova-2-sonic/sample-codes/agentcore/strands/websocket/server.py]]`
+- Client: `#[[file:speech-to-speech/amazon-nova-2-sonic/sample-codes/agentcore/strands/client/client.py]]` and `#[[file:speech-to-speech/amazon-nova-2-sonic/sample-codes/agentcore/strands/client/strands-client.html]]`
+- MCP tools: `#[[file:speech-to-speech/amazon-nova-2-sonic/sample-codes/agentcore/strands/mcp/banking_mcp.py]]`
 EOF
 ```
 
