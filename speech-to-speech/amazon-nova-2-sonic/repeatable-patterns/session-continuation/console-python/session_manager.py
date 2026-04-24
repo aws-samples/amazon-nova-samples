@@ -144,7 +144,7 @@ class AudioRecorder:
 
 class ConversationHistory:
     """Manages conversation history for session transitions"""
-    def __init__(self, max_single_message_bytes: int = 1024, max_chat_history_bytes: int = 40960):
+    def __init__(self, max_single_message_bytes: int = 51200, max_chat_history_bytes: int = 204800):
         self.messages = []
         self.max_single_message_bytes = max_single_message_bytes
         self.max_chat_history_bytes = max_chat_history_bytes
@@ -341,8 +341,8 @@ class SessionTransitionManager:
 
         # Conversation history with byte limits
         self.conversation_history = ConversationHistory(
-            max_single_message_bytes=self.transition_config.get("max_single_message_bytes", 1024),
-            max_chat_history_bytes=self.transition_config.get("max_chat_history_bytes", 40960)
+            max_single_message_bytes=self.transition_config.get("max_single_message_bytes", 51200),
+            max_chat_history_bytes=self.transition_config.get("max_chat_history_bytes", 204800)
         )
 
         # Transition state
