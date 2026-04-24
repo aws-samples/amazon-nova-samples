@@ -18,7 +18,7 @@ Amazon Nova 2 Sonic sessions have an AWS-imposed time limit of approximately 8 m
 ```mermaid
 graph LR
     A["🟢 Session 1<br/>0-6 min<br/>Normal Operation"] --> B["🔍 Monitor<br/>6:00-8:00<br/>Create next session"]
-    B --> C["💾 Buffer Audio<br/>Last 10s<br/>of transition"]
+    B --> C["💾 Buffer Audio<br/>Last 3s<br/>of transition"]
     C --> D["⚡ Handoff<br/>When ready<br/>(6:00-8:00)"]
     D --> E["🟢 Session 2<br/>Continue<br/>indefinitely"]
 
@@ -39,9 +39,9 @@ graph LR
 - System waits for assistant to start speaking
 - Next session creation begins in background
 
-**Phase 3: Buffering (last 10 seconds of user audio during the transition)**
+**Phase 3: Buffering (last 3 seconds of user audio during the transition)**
 - Assistant starts speaking (AUDIO contentStart) - triggers buffering
-- Audio buffering activates for 10-second window
+- Audio buffering activates for 3-second window
 - Captures user input/interruptions/barge-ins during transition window
 - Next session completes initialization
 
@@ -76,7 +76,7 @@ The audio buffer captures the **user's audio input** during the transition windo
 
 - **Seamless Transitions**: Immediate handoff with no user-perceptible delay
 - **Zero Conversation Loss**: Audio buffering prevents losing user input during transitions
-- **Memory Efficient**: Only 320 KB buffer (10s audio at 16 kHz), active only during transitions
+- **Memory Efficient**: Only 96 KB buffer (3s audio at 16 kHz), active only during transitions
 - **Automatic Recovery**: Dead session detection with 30s timeout
 - **Full Observability**: Optional session recording and detailed logging
 
@@ -151,7 +151,7 @@ python nova_sonic_with_session_manager.py
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | `transition_threshold_seconds` | 360 | When to start monitoring for transition (6 min) |
-| `audio_buffer_duration_seconds` | 10 | Size of audio buffer (10s = 320 KB at 16 kHz) |
+| `audio_buffer_duration_seconds` | 3 | Size of audio buffer (3s = 96 KB at 16 kHz) |
 | `audio_start_timeout_seconds` | 100 | Max wait for assistant to start speaking |
 | `next_session_ready_timeout_seconds` | 30 | Timeout before recreating dead session |
 | `enable_session_recording` | true | Record all sessions to files |
@@ -163,7 +163,7 @@ python nova_sonic_with_session_manager.py
 ```json
 {
   "transition_threshold_seconds": 10,
-  "audio_buffer_duration_seconds": 10
+  "audio_buffer_duration_seconds": 3
 }
 ```
 
@@ -171,7 +171,7 @@ python nova_sonic_with_session_manager.py
 ```json
 {
   "transition_threshold_seconds": 360,
-  "audio_buffer_duration_seconds": 10
+  "audio_buffer_duration_seconds": 3
 }
 ```
 
@@ -185,7 +185,7 @@ graph TB
 
     subgraph "Session Manager"
         SM[Session Transition Manager]
-        Buffer[Audio Buffer<br/>10s / 320 KB<br/>16 kHz PCM]
+        Buffer[Audio Buffer<br/>3s / 96 KB<br/>16 kHz PCM]
         Monitor[Duration Monitor]
     end
 
@@ -236,7 +236,7 @@ Manages audio I/O:
 - **Transition Time**: Immediate handoff with no user-perceptible delay
 - **Total Overhead**: Minimal per session
 - **Efficiency**: 98.2% productive time
-- **Memory**: 320 KB buffer at 16 kHz (67% reduction vs continuous buffering)
+- **Memory**: 96 KB buffer at 16 kHz
 - **User Impact**: Zero (completely transparent)
 
 ## Logging and Debugging
@@ -283,7 +283,7 @@ Each recording contains:
 - Review logs for session creation delays
 
 **Audio loss during transition:**
-- Increase `audio_buffer_duration_seconds` (default 10s should be sufficient)
+- Increase `audio_buffer_duration_seconds` (default 3s should be sufficient)
 - Check logs for buffer overflow warnings
 - Verify audio processing isn't blocking
 
@@ -342,7 +342,7 @@ sequenceDiagram
     Note over SessionManager,CurrentSession: Continue conversation while preparing
     User->>AudioStreamer: May interrupt or continue
     AudioStreamer->>SessionManager: Audio chunk
-    SessionManager->>SessionManager: Buffer audio (10s window)
+    SessionManager->>SessionManager: Buffer audio (3s window)
     SessionManager->>CurrentSession: Also route to current session
 
     Bedrock->>CurrentSession: SPECULATIVE text events
@@ -353,7 +353,7 @@ sequenceDiagram
     SessionManager->>SessionManager: Text pairs match OR interrupted
     SessionManager->>NextSession: Send conversation history
     SessionManager->>NextSession: Send audio contentStart
-    SessionManager->>NextSession: Send buffered audio (10s)
+    SessionManager->>NextSession: Send buffered audio (3s)
 
     Note over SessionManager: IMMEDIATE PROMOTION!
     SessionManager->>SessionManager: current_session = next_session

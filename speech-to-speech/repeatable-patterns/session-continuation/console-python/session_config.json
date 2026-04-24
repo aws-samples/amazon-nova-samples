@@ -1,7 +1,7 @@
 {
 	"session_transition": {
 		"transition_threshold_seconds": 10,
-		"audio_buffer_duration_seconds": 10,
+		"audio_buffer_duration_seconds": 3,
 		"audio_start_timeout_seconds": 20,
 		"next_session_ready_timeout_seconds": 30,
 		"enable_session_recording": true,
