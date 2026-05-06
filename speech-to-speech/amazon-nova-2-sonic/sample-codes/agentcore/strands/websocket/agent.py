@@ -4,7 +4,7 @@ import traceback
 from fastapi import WebSocket, WebSocketDisconnect
 
 from strands.experimental.bidi.agent import BidiAgent
-from strands.experimental.bidi.models.nova_sonic import BidiNovaSonicModel
+from strands.experimental.bidi.models import BidiNovaSonicModel
 
 logger = logging.getLogger(__name__)
 
@@ -147,12 +147,12 @@ def _create_agent(config: dict, default_gateway_arns: list) -> BidiAgent:
     logger.info(f"📝 System prompt: {effective_system_prompt[:100]}...")
 
     model = BidiNovaSonicModel(
-        region=config.get("region", "us-east-1"),
+        client_config={"region": config.get("region", "us-east-1")},
         model_id=config["model_id"],
         provider_config={
             "audio": {
-                "input_sample_rate": config["input_sample_rate"],
-                "output_sample_rate": config["output_sample_rate"],
+                "input_rate": config["input_sample_rate"],
+                "output_rate": config["output_sample_rate"],
                 "voice": config["voice"],
             }
         },
