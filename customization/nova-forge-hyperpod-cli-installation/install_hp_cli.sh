@@ -293,7 +293,7 @@ check_python_version() {
         update_progress "Checking Python version" "failed"
         printf "\n"
         print_error "python3 is not installed"
-        print_info "Please install Python 3.8, 3.9, 3.10, or 3.11"
+        print_info "Please install Python 3.8, 3.9, 3.10, 3.11, or 3.12"
         exit 1
     fi
     
@@ -309,12 +309,12 @@ check_python_version() {
         print_info "Found Python version: ${python_version}"
     fi
     
-    # Strict version check: only allow Python 3.8-3.11
+    # Strict version check: only allow Python 3.8-3.12
     if [[ "$major" -ne 3 ]]; then
         update_progress "Checking Python version" "failed"
         printf "\n"
         print_error "Python ${python_version} is not supported"
-        print_info "Required: Python 3.8, 3.9, 3.10, or 3.11"
+        print_info "Required: Python 3.8, 3.9, 3.10, 3.11, or 3.12"
         printf "\n"
         exit 1
     fi
@@ -324,31 +324,31 @@ check_python_version() {
         printf "\n"
         print_error "Python ${python_version} is too old"
         print_info "Minimum required: Python 3.8"
-        print_info "Supported versions: 3.8, 3.9, 3.10, 3.11"
+        print_info "Supported versions: 3.8, 3.9, 3.10, 3.11, 3.12"
         printf "\n"
         exit 1
     fi
     
-    if [[ "$minor" -gt 11 ]]; then
+    if [[ "$minor" -gt 12 ]]; then
         update_progress "Checking Python version" "failed"
         printf "\n"
         print_error "Python ${python_version} is not supported"
-        print_info "Maximum supported: Python 3.11"
-        print_info "Supported versions: 3.8, 3.9, 3.10, 3.11"
+        print_info "Maximum supported: Python 3.12"
+        print_info "Supported versions: 3.8, 3.9, 3.10, 3.11, 3.12"
         printf "\n"
         print_info "To install a compatible Python version:"
         if [[ "$OSTYPE" == "darwin"* ]]; then
-            print_info "  brew install python@3.11"
-            print_info "  Then use: python3.11 instead of python3"
+            print_info "  brew install python@3.12"
+            print_info "  Then use: python3.12 instead of python3"
         else
             print_info "  Use pyenv or your system package manager"
-            print_info "  Example: sudo apt-get install python3.11"
+            print_info "  Example: sudo apt-get install python3.12"
         fi
         printf "\n"
         exit 1
     fi
     
-    # Version is in the supported range (3.8-3.11)
+    # Version is in the supported range (3.8-3.12)
     if [[ $DEBUG_MODE -eq 1 ]]; then
         print_success "Python version ${python_version} is compatible"
     fi
