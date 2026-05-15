@@ -7,3 +7,4 @@ Reusable [Agent Skills](https://agentskills.io/specification) for building with 
 | Skill | Description |
 |-------|-------------|
 | [text-agent-to-strands-voice-agent](./text-agent-to-strands-voice-agent/) | Migrate a text-based agent to a real-time voice agent using Strands BidiAgent with Amazon Nova Sonic |
+| [nova-prompter](./nova-prompter/) | Write and optimize prompts for Amazon Nova 1 and Nova 2 Lite — Claude Code plugins (`/nova1-prompt`, `/nova2-prompt`) and matching Kiro powers, with multimodal coverage for Nova 2 |

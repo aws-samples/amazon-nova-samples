@@ -1,0 +1,9 @@
+{
+  "name": "nova-migration",
+  "version": "0.1.0",
+  "description": "End-to-end migration assistant for porting an application from another LLM to Amazon Nova. Orchestrates prompt optimization, baseline capture from the source model, rubric-based evaluation, and a refine loop that re-optimizes when Nova regresses. Depends on the nova-prompting plugin for the underlying /nova1-prompt and /nova2-prompt skills.",
+  "author": {
+    "name": "Amazon Nova"
+  },
+  "keywords": ["nova", "migration", "evaluation", "prompt-engineering", "bedrock"]
+}

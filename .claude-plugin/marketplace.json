@@ -1,0 +1,17 @@
+{
+  "name": "amazon-nova-samples",
+  "owner": {
+    "name": "Amazon Nova"
+  },
+  "metadata": {
+    "description": "Claude Code plugins published from the aws-samples/amazon-nova-samples repository.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "nova-prompting",
+      "source": "./skills/nova-prompter/plugins/nova-prompting",
+      "description": "Prompt optimization skills for Amazon Nova 1 and Nova 2 Lite (/nova1-prompt, /nova2-prompt)."
+    }
+  ]
+}

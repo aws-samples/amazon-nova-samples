@@ -1,0 +1,9 @@
+{
+  "name": "nova-prompting",
+  "version": "0.1.0",
+  "description": "Prompt optimization skills for Amazon Nova 1 and Nova 2. Provides /nova1-prompt and /nova2-prompt — rewrite or migrate a prompt for a specific Nova generation with the correct inference config, formatting rules, and (for Nova 2) multimodal caveats.",
+  "author": {
+    "name": "Amazon Nova"
+  },
+  "keywords": ["nova", "amazon", "bedrock", "prompt-engineering"]
+}
