@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Amazon Web Services"
+  },
+  "description": "Migrate LLM application code and prompts to Amazon Nova 2 Lite (boto3 Bedrock Runtime). One plugin with a shared Nova target and per-source guides for Google Gemini (google-genai / google-generativeai) and Anthropic Claude (Anthropic Messages API or Claude-on-Bedrock). Handles SDK conversion, prompt reformatting, tool calling, structured output, multimodal, and reasoning migration.",
+  "homepage": "https://github.com/aws-samples/amazon-nova-samples",
+  "keywords": [
+    "bedrock",
+    "nova",
+    "migration",
+    "gemini",
+    "claude",
+    "anthropic",
+    "python",
+    "boto3",
+    "prompt-engineering",
+    "aws"
+  ],
+  "license": "Apache-2.0",
+  "name": "nova-migration",
+  "repository": "https://github.com/aws-samples/amazon-nova-samples",
+  "version": "1.0.0"
+}
