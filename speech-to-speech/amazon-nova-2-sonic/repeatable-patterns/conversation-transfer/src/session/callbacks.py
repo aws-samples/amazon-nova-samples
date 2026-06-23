@@ -1,0 +1,9 @@
+"""StreamCallback protocol for decoupling SessionController from AudioStreamer."""
+from typing import Protocol, runtime_checkable
+
+
+@runtime_checkable
+class StreamCallback(Protocol):
+    def on_audio_output(self, audio_bytes: bytes) -> None: ...
+    def on_barge_in(self) -> None: ...
+    def on_switch_requested(self) -> None: ...
