@@ -1,6 +1,6 @@
 # Hybrid vision + spatial reasoning on Amazon Bedrock
 
-This pattern matches printed names to the photographs they belong to on a scanned page using two Amazon Bedrock models: **Amazon Nova 2 Lite** for native multimodal extraction and **Anthropic Claude Sonnet 4.6** for spatial reasoning. The example data is a yearbook layout — portrait grids, mixed group/candid spreads, and roster-style group photos — but the same pattern applies to any document where the link between a photo and the people in it lives only in the page layout.
+This pattern matches printed names to the photographs they belong to on a scanned page using two Amazon Bedrock models: **Amazon Nova 2 Lite** for native multimodal extraction and **Anthropic Claude Sonnet 4.6** for spatial reasoning. The example data is a yearbook layout — portrait grids, mixed group/candid spreads, and roster-style group photos — and the same pattern applies to many documents where the link between a photo and the people in it lives only in the page layout (for example, real estate listings, personnel directories, magazine spreads, and product catalogs).
 
 ```
                         ┌────────────────────────────┐
@@ -90,8 +90,9 @@ Open `01_yearbook_name_face_matching.ipynb` and run the cells top to bottom. The
 1. Creates a Bedrock Runtime client.
 2. Calls Stage 1 (Nova) on a single page so you can see the raw extraction output.
 3. Calls Stage 2 (Claude) on the same page so you can see the matched associations and adaptive-thinking trace length.
-4. Runs the full `run_pipeline` helper on all three sample pages and writes JSON + JPEG outputs into `results/`.
-5. Shows the page-level metadata (title, category, summary) that Nova returned in the same call as the photos and names — that metadata is the second use case (search indexing, content tagging) without any extra API call.
+4. Runs the full `run_pipeline` helper on all three sample pages.
+5. Writes JSON output and visualization JPEG files into the local `results/` directory.
+6. Shows the page-level metadata (title, category, summary) that Nova returned in the same call as the photos and names. That metadata is the second use case (search indexing, content tagging) without any extra API call.
 
 ## Results
 
@@ -146,11 +147,15 @@ Each association comes with a short `reasoning` string from Claude, which is use
 - `CLAUDE_SPATIAL_PROMPT_TEMPLATE` — change the reasoning rules if your captions live somewhere other than directly above/below the photo.
 - `match_names_to_faces(..., effort="high")` — drop to `medium` to skip thinking on simple pages, or up to `max` (Opus models only) for the deepest reasoning budget.
 
-Both stages can be batched via [Bedrock Batch Inference](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference.html) for a 50% discount on workloads that can run asynchronously, and the Stage 1 prompt is identical across pages — a good fit for [prompt caching](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html) at scale.
+Both stages can be batched via [Amazon Bedrock Batch Inference](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference.html) for a 50% discount on workloads that can run asynchronously, and the Stage 1 prompt is identical across pages — a good fit for [prompt caching](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html) at scale.
 
 ## Clean up
 
-This pattern is fully serverless. There are no provisioned Bedrock endpoints, SageMaker instances, or persistent storage to delete. If you uploaded sample pages to S3 to run this at volume, remove the bucket or objects when you finish.
+This pattern is fully serverless. There are no provisioned Amazon Bedrock endpoints, Amazon SageMaker AI instances, or persistent storage to delete. The pipeline writes outputs to the local `results/` directory; delete this directory if you no longer need the visualization JPEGs and JSON files. If you uploaded sample pages to Amazon Simple Storage Service (Amazon S3) to run this at volume, remove the bucket or objects when you finish. Warning: deleting Amazon S3 objects is permanent and cannot be undone — back up any data you need to keep before deletion.
+
+## Conclusion
+
+This pattern shows that two Amazon Bedrock calls are enough to map printed names to faces on a scanned page. Amazon Nova 2 Lite carries the native multimodal extraction in a single call, and Claude Sonnet 4.6 with adaptive thinking handles the spatial reasoning step that benefits from extra reasoning. Keeping the two stages on the same 0–1000 coordinate space removes glue code between calls, and each stage stays independently tunable. As next steps, swap the synthetic samples in `samples/` for your own documents, adapt the prompts in `utils.py` to match your layout, and run the notebook end to end to verify per-page accuracy on your own data.
 
 ## Further reading
 
