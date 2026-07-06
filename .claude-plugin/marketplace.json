@@ -22,6 +22,11 @@
       "name": "gemini-to-nova-migration",
       "source": "./skills/gemini-to-nova-migration",
       "description": "Migrate Google Gemini 2.0/2.5/3.x Python code and prompts to Amazon Nova 2 Lite (boto3 Bedrock Runtime)."
+    },
+    {
+      "name": "openai-to-nova-migration",
+      "source": "./skills/openai-to-nova-migration",
+      "description": "Migrate OpenAI GPT-4o/4.1/5.x code and prompts (via the OpenAI API or hosted on Amazon Bedrock, incl. GPT-5.5/5.4 and gpt-oss) to Amazon Nova 2 Lite."
     }
   ]
 }
