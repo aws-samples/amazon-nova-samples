@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "tsx": "^4.19.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
   }
 }
