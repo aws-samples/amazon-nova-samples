@@ -1,0 +1,47 @@
+{
+  "name": "nova-api-migration",
+  "version": "1.0.0",
+  "description": "Migrate LLM API code from Google Gemini, OpenAI, or Anthropic Claude to Amazon Nova 2 Lite (boto3 Bedrock Runtime Converse API). Handles SDK swap, authentication, request/response reshaping, tool calling, structured output, multimodal, streaming, and reasoning config.",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://github.com/aws-samples/amazon-nova-samples"
+  },
+  "homepage": "https://github.com/aws-samples/amazon-nova-samples",
+  "repository": "https://github.com/aws-samples/amazon-nova-samples",
+  "license": "Apache-2.0",
+  "keywords": [
+    "bedrock",
+    "nova",
+    "migration",
+    "openai",
+    "gemini",
+    "claude",
+    "anthropic",
+    "api",
+    "python",
+    "boto3",
+    "aws"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "Nova API Migration",
+    "shortDescription": "Migrate API code from Gemini, OpenAI, or Claude to Nova 2 Lite.",
+    "longDescription": "Unified API migration skill that detects your source provider (Google Gemini, OpenAI, or Anthropic Claude) and transforms SDK calls, authentication, tool use, structured output, multimodal content, streaming, and reasoning configuration to the Amazon Bedrock Converse API targeting Nova 2 Lite.",
+    "defaultPrompt": [
+      "Migrate my OpenAI code to Nova 2 Lite.",
+      "Convert this Gemini application to use Amazon Bedrock Nova.",
+      "Switch my Claude-on-Bedrock app to Nova 2 Lite.",
+      "Migrate this code from GPT-4o to Nova."
+    ],
+    "developerName": "Amazon Web Services",
+    "category": "AI",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/aws-samples/amazon-nova-samples",
+    "privacyPolicyURL": "https://aws.amazon.com/privacy/",
+    "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
+    "brandColor": "#FF9900"
+  }
+}
