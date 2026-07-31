@@ -22,7 +22,7 @@
     "boto3",
     "aws"
   ],
-  "skills": "./",
+  "skills": "./skills/",
   "interface": {
     "displayName": "Nova API Migration",
     "shortDescription": "Migrate API code from Gemini, OpenAI, or Claude to Nova 2 Lite.",
