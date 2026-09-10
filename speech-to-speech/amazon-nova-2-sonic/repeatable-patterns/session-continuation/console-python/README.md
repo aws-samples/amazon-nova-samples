@@ -74,12 +74,12 @@ The audio buffer captures the **user's audio input** during the transition windo
 
 ## How History Is Shaped Before Transfer
 
-Nova Sonic expects the replayed conversation to read as alternating turns starting with the user. The raw history doesn't always satisfy that: byte-budget trimming removes the oldest messages without regard to role, and transcription arrives as several events per turn. Before the history is sent to Session 2, `ConversationHistory.get_sanitized_messages()` shapes it:
+A replayed chat history has to [alternate between USER and ASSISTANT roles](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-chat-history.html), and [its first message must be from the user](https://docs.aws.amazon.com/nova/latest/userguide/speech-errors.html). The raw history doesn't always satisfy either: byte-budget trimming removes the oldest messages without regard to role, and a single spoken turn can arrive as several transcription events. Before the history is sent to Session 2, `ConversationHistory.get_sanitized_messages()` shapes it:
 
 | Rule | Why |
 |------|-----|
-| Merge consecutive same-role messages into one turn | Multiple transcription events per turn would otherwise be replayed as separate turns |
-| Drop leading `ASSISTANT` turns so the first turn is `USER` | Byte-budget trimming can leave the history starting mid-exchange |
+| Merge consecutive same-role messages into one turn | Several transcription events for one spoken turn would otherwise be replayed as separate turns, breaking alternation |
+| Drop leading `ASSISTANT` turns so the first turn is `USER` | Byte-budget trimming can leave the history starting mid-exchange, violating the first-message rule |
 | Drop the trailing `USER` turn when buffered audio will be replayed | That speech is already being sent as audio; keeping the text too makes the model answer the same turn twice |
 
 The shaping is non-destructive - the full record is still written to `<session>_conversation_history.json`, and only the events sent over the wire are shaped.

@@ -209,10 +209,17 @@ class ConversationHistory:
     def get_sanitized_messages(self, drop_trailing_user: bool = False) -> list:
         """Return history shaped to Nova Sonic's expectations for replayed turns
 
-        Nova Sonic expects the replayed conversation to read as alternating turns
-        starting with the user. Byte-budget trimming in _trim_history() pops from
-        the front without regard to role, so the raw history can easily begin with
-        an ASSISTANT message or contain runs of same-role messages.
+        Two documented requirements apply to a replayed chat history:
+        - messages alternate between USER and ASSISTANT roles
+          https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-chat-history.html
+        - the first message in the chat history is from the user
+          https://docs.aws.amazon.com/nova/latest/userguide/speech-errors.html
+          ("Format resumed conversations properly")
+
+        The raw history does not always satisfy either one: byte-budget trimming
+        in _trim_history() pops from the front without regard to role, so the
+        history can begin with an ASSISTANT message, and a single spoken turn can
+        arrive as several textOutput events, producing runs of same-role messages.
 
         This is non-destructive: self.messages keeps the full record for the
         conversation history recording, and only the wire representation is shaped.
