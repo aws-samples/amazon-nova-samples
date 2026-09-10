@@ -72,10 +72,23 @@ The audio buffer captures the **user's audio input** during the transition windo
 
 **With buffering:** All user audio is preserved and replayed to Session 2, ensuring zero loss of user input.
 
+## How History Is Shaped Before Transfer
+
+Nova Sonic expects the replayed conversation to read as alternating turns starting with the user. The raw history doesn't always satisfy that: byte-budget trimming removes the oldest messages without regard to role, and transcription arrives as several events per turn. Before the history is sent to Session 2, `ConversationHistory.get_sanitized_messages()` shapes it:
+
+| Rule | Why |
+|------|-----|
+| Merge consecutive same-role messages into one turn | Multiple transcription events per turn would otherwise be replayed as separate turns |
+| Drop leading `ASSISTANT` turns so the first turn is `USER` | Byte-budget trimming can leave the history starting mid-exchange |
+| Drop the trailing `USER` turn when buffered audio will be replayed | That speech is already being sent as audio; keeping the text too makes the model answer the same turn twice |
+
+The shaping is non-destructive - the full record is still written to `<session>_conversation_history.json`, and only the events sent over the wire are shaped.
+
 ## Key Features
 
 - **Seamless Transitions**: Immediate handoff with no user-perceptible delay
 - **Zero Conversation Loss**: Audio buffering prevents losing user input during transitions
+- **Consistent History**: Replayed turns are normalized so Session 2 never starts mid-exchange or re-answers the last user turn
 - **Memory Efficient**: Only 96 KB buffer (3s audio at 16 kHz), active only during transitions
 - **Automatic Recovery**: Dead session detection with 30s timeout
 - **Full Observability**: Optional session recording and detailed logging

@@ -206,11 +206,51 @@ class ConversationHistory:
         while self.messages and self._get_total_size_bytes() > self.max_chat_history_bytes:
             self.messages.pop(0)  # Remove oldest message
 
-    def get_history_events(self, prompt_name: str) -> list:
+    def get_sanitized_messages(self, drop_trailing_user: bool = False) -> list:
+        """Return history shaped to Nova Sonic's expectations for replayed turns
+
+        Nova Sonic expects the replayed conversation to read as alternating turns
+        starting with the user. Byte-budget trimming in _trim_history() pops from
+        the front without regard to role, so the raw history can easily begin with
+        an ASSISTANT message or contain runs of same-role messages.
+
+        This is non-destructive: self.messages keeps the full record for the
+        conversation history recording, and only the wire representation is shaped.
+
+        Args:
+            drop_trailing_user: Drop USER messages at the end of the history. Use
+                this when the buffered audio replayed into the next session already
+                contains that speech, so the model would otherwise receive the same
+                user turn twice (once as text, once as audio) and answer it twice.
+
+        Returns:
+            A new list of message dicts. self.messages is left untouched.
+        """
+        # Merge runs of same-role messages into a single turn
+        merged = []
+        for message in self.messages:
+            if merged and merged[-1]["role"].upper() == message["role"].upper():
+                # Keep the first message's metadata, append the content
+                merged[-1]["content"] += ' ' + message["content"]
+            else:
+                merged.append(dict(message))
+
+        # The first turn must be USER, so drop any leading ASSISTANT turn
+        while merged and merged[0]["role"].upper() == 'ASSISTANT':
+            merged.pop(0)
+
+        # Optionally drop the trailing USER turn (see drop_trailing_user above)
+        if drop_trailing_user:
+            while merged and merged[-1]["role"].upper() == 'USER':
+                merged.pop()
+
+        return merged
+
+    def get_history_events(self, prompt_name: str, drop_trailing_user: bool = False) -> list:
         """Get conversation history as Bedrock events, splitting large messages if needed"""
         events = []
 
-        for message in self.messages:
+        for message in self.get_sanitized_messages(drop_trailing_user):
             role = message["role"].upper()
             content = message["content"]
             content_bytes = content.encode('utf-8')
@@ -853,13 +893,25 @@ class SessionTransitionManager:
 
         try:
             if self.conversation_history.messages:
-                history_size = sum(len(msg.get('content', '')) for msg in self.conversation_history.messages)
-                self._log(f"[HISTORY] Sending {len(self.conversation_history.messages)} messages (~{history_size} chars)")
+                # The buffered audio is replayed into the next session right after
+                # the history, so a trailing user turn would arrive twice
+                drop_trailing_user = not self.audio_buffer.is_empty()
+
+                sanitized = self.conversation_history.get_sanitized_messages(drop_trailing_user)
+                history_size = sum(len(msg.get('content', '')) for msg in sanitized)
+                self._log(f"[HISTORY] Sending {len(sanitized)} messages (~{history_size} chars)")
+
+                if len(sanitized) != len(self.conversation_history.messages):
+                    self._log(
+                        f"[HISTORY] Role hygiene: {len(self.conversation_history.messages)} raw messages "
+                        f"-> {len(sanitized)} turns (drop_trailing_user={drop_trailing_user})"
+                    )
 
                 await self._save_conversation_history(self.next_session)
 
                 history_events = self.conversation_history.get_history_events(
-                    self.next_session.stream_manager.prompt_name
+                    self.next_session.stream_manager.prompt_name,
+                    drop_trailing_user
                 )
                 for event in history_events:
                     await self.next_session.stream_manager.send_raw_event(event)
