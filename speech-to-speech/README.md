@@ -3,6 +3,7 @@
 >**Note:** We have announced Amazon Nova 2 Sonic on Dec 2nd, 2025.
 ➡️ Existing examples continue to work with model ID `amazon.nova-2-sonic-v1:0`
 ➡️ Updated examples using Amazon Nova 2 Sonic are available in the [`amazon-nova-2-sonic`](amazon-nova-2-sonic/) directory.
+➡️ A prompt-engineering best-practices guide for Amazon Nova Sonic 2.5 voice agents is available in the [`amazon-nova-2.5-sonic`](amazon-nova-2.5-sonic/) directory.
 
 The Amazon Nova Sonic model provides real-time, conversational interactions through bidirectional audio streaming. Amazon Nova Sonic processes and responds to real-time speech as it occurs, enabling natural, human-like conversational experiences.
 
