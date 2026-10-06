@@ -1,0 +1,9 @@
+{
+  "name": "nova-sonic25-prompting",
+  "version": "0.1.0",
+  "description": "Prompt-engineering best practices for Amazon Nova Sonic 2.5 voice agents. Provides /nova-sonic25-prompt — write or review a Nova Sonic 2.5 system prompt and tool descriptions against the mental models and rules that drive its behavior (positive framing, tool-calling patterns, voice-specific formatting, personalization, safety guardrails).",
+  "author": {
+    "name": "Amazon Nova"
+  },
+  "keywords": ["nova", "nova-sonic", "amazon", "bedrock", "prompt-engineering", "voice-agent"]
+}
