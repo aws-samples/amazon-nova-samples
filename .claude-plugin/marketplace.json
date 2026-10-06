@@ -14,6 +14,11 @@
       "description": "Prompt optimization skills for Amazon Nova 1 and Nova 2 Lite (/nova1-prompt, /nova2-prompt)."
     },
     {
+      "name": "nova-sonic25-prompting",
+      "source": "./skills/nova-prompter/plugins/nova-sonic25-prompting",
+      "description": "Prompt-engineering best practices for Amazon Nova Sonic 2.5 voice agents (/nova-sonic25-prompt)."
+    },
+    {
       "name": "titan-nova-mme-migration",
       "source": "./skills/titan-nova-mme-migration",
       "description": "Migrate Amazon Bedrock embedding code from Titan Text V2 / Titan Multimodal G1 to Amazon Nova Multimodal Embeddings."

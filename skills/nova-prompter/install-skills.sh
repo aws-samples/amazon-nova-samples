@@ -58,6 +58,7 @@ usage() {
     -t, --tool <tool>       Target: claude | kiro | both
     -b, --bundle <bundle>   Which plugin(s) to install:
                               prompting   — /nova1-prompt, /nova2-prompt
+                              sonic       — /nova-sonic25-prompt
                               migration   — /nova-migrate (Claude only; pair with prompting)
                               all         — everything
     -h, --help              Show this help
@@ -79,16 +80,18 @@ EOF
 ask_bundle() {
   section "Which bundle?"
   printf '    %b1)%b  Prompting only %b(/nova1-prompt, /nova2-prompt)%b\n' "$WHITE$BOLD" "$RESET" "$GRAY" "$RESET" >/dev/tty
-  printf '    %b2)%b  Migration only %b(/nova-migrate — pair with prompting)%b\n' "$WHITE$BOLD" "$RESET" "$GRAY" "$RESET" >/dev/tty
-  printf '    %b3)%b  All\n' "$WHITE$BOLD" "$RESET" >/dev/tty
+  printf '    %b2)%b  Sonic prompting only %b(/nova-sonic25-prompt)%b\n' "$WHITE$BOLD" "$RESET" "$GRAY" "$RESET" >/dev/tty
+  printf '    %b3)%b  Migration only %b(/nova-migrate — pair with prompting)%b\n' "$WHITE$BOLD" "$RESET" "$GRAY" "$RESET" >/dev/tty
+  printf '    %b4)%b  All\n' "$WHITE$BOLD" "$RESET" >/dev/tty
   printf '\n' >/dev/tty
-  prompt "Choice [1/2/3]:"
+  prompt "Choice [1/2/3/4]:"
   local choice
   read -r choice </dev/tty
   case "$choice" in
     1) BUNDLE="prompting" ;;
-    2) BUNDLE="migration" ;;
-    3) BUNDLE="all"       ;;
+    2) BUNDLE="sonic"     ;;
+    3) BUNDLE="migration" ;;
+    4) BUNDLE="all"       ;;
     *) die "Invalid choice '$choice'" ;;
   esac
 }
@@ -99,15 +102,19 @@ resolve_bundle() {
       BUNDLE_PLUGINS=("nova-prompting")
       BUNDLE_POWERS=("nova1-prompt" "nova2-prompt")
       ;;
+    sonic)
+      BUNDLE_PLUGINS=("nova-sonic25-prompting")
+      BUNDLE_POWERS=("nova-sonic25-prompt")
+      ;;
     migration)
       BUNDLE_PLUGINS=("nova-migration")
       BUNDLE_POWERS=()  # no Kiro version of /nova-migrate yet
       ;;
     all)
-      BUNDLE_PLUGINS=("nova-prompting" "nova-migration")
-      BUNDLE_POWERS=("nova1-prompt" "nova2-prompt")
+      BUNDLE_PLUGINS=("nova-prompting" "nova-sonic25-prompting" "nova-migration")
+      BUNDLE_POWERS=("nova1-prompt" "nova2-prompt" "nova-sonic25-prompt")
       ;;
-    *) die "Invalid --bundle '$BUNDLE'. Must be: prompting | migration | all" ;;
+    *) die "Invalid --bundle '$BUNDLE'. Must be: prompting | sonic | migration | all" ;;
   esac
 }
 
