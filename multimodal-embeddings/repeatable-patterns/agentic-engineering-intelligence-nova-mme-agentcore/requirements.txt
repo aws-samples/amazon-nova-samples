@@ -1,0 +1,27 @@
+# Dependencies for the SkyLab Manufacturing Intelligence notebooks.
+#
+# This folder is self-contained: the agent + tools it uses are a vendored copy
+# in mei_core/, so this file lists everything needed to run the notebooks on
+# their own (no parent-repo install required).
+#
+#   cd notebooks
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+# --- Agent runtime (what mei_core imports) ---
+boto3>=1.43.39
+botocore>=1.43.39
+strands-agents>=1.0.0
+strands-agents-tools>=0.2.0
+requests>=2.28.0
+
+# --- AgentCore Runtime Evaluations (notebook 05: Evaluation client) ---
+bedrock-agentcore-starter-toolkit>=0.1.0
+
+# --- Notebook tooling ---
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# --- Charts (notebooks 02/05) ---
+matplotlib>=3.7.0
+numpy>=1.24.0
