@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Local env
+.env
+
+# Generated evaluation run artifacts (notebook 05 writes here)
+evals/results/

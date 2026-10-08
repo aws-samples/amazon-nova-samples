@@ -1,0 +1,74 @@
+{
+  "_description": "Critical-spec requirements per part category. Drives (1) the follow-up questioning (which specs the engineer must supply before a substitution can be assessed) and (2) the deterministic spec-fit scoring (how each candidate spec is compared against the reference/requirement). The assistant never approves a substitution; it flags out-of-tolerance specs for engineering review.",
+  "_rules": {
+    "match": "Candidate value must equal the reference or the engineer's stated requirement (categorical fields like interface or substrate).",
+    "candidate_gte_required": "Candidate value must be greater than or equal to the engineer's stated minimum requirement.",
+    "candidate_gte_reference": "Candidate value must be greater than or equal to the reference part's value.",
+    "candidate_lte_reference_within_pct": "Candidate value must not exceed the reference part's value by more than tolerance_pct.",
+    "range_envelops_required": "Candidate operating range must fully cover (envelop) the required range.",
+    "qual_review": "Qualification standard is not auto-compared; it is flagged for explicit engineering review when it differs from the reference."
+  },
+  "categories": {
+    "reaction_wheel": {
+      "critical_specs": [
+        {"field": "momentum_storage_nms", "label": "Momentum storage (Nm·s)", "rule": "candidate_gte_required", "required_from_user": true},
+        {"field": "voltage_v", "label": "Bus voltage (V)", "rule": "match", "required_from_user": true},
+        {"field": "interface", "label": "Control interface", "rule": "match", "required_from_user": true},
+        {"field": "operating_temp_c", "label": "Operating temperature range (°C)", "rule": "range_envelops_required", "required_from_user": true},
+        {"field": "max_torque_mnm", "label": "Max torque (mN·m)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "mass_g", "label": "Mass (g)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 20, "required_from_user": false},
+        {"field": "radiation_tolerance_krad", "label": "Radiation tolerance (krad)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "qual_standard", "label": "Qualification standard", "rule": "qual_review", "required_from_user": false}
+      ]
+    },
+    "connector": {
+      "critical_specs": [
+        {"field": "pin_count", "label": "Pin count", "rule": "match", "required_from_user": true},
+        {"field": "voltage_rating_v", "label": "Voltage rating (V)", "rule": "candidate_gte_required", "required_from_user": true},
+        {"field": "current_rating_a", "label": "Current rating (A)", "rule": "candidate_gte_required", "required_from_user": true},
+        {"field": "operating_temp_c", "label": "Operating temperature range (°C)", "rule": "range_envelops_required", "required_from_user": true},
+        {"field": "mass_g", "label": "Mass (g)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 25, "required_from_user": false},
+        {"field": "contact_material", "label": "Contact material", "rule": "match", "required_from_user": false},
+        {"field": "outgassing_cvcm_pct", "label": "Outgassing CVCM (%)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 0, "required_from_user": false},
+        {"field": "mating_cycles", "label": "Rated mating cycles", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "qual_standard", "label": "Qualification standard", "rule": "qual_review", "required_from_user": false}
+      ]
+    },
+    "solar_panel": {
+      "critical_specs": [
+        {"field": "power_w", "label": "Power output (W)", "rule": "candidate_gte_required", "required_from_user": true},
+        {"field": "voltage_vmp", "label": "Voltage at max power (V)", "rule": "match", "required_from_user": true},
+        {"field": "operating_temp_c", "label": "Operating temperature range (°C)", "rule": "range_envelops_required", "required_from_user": true},
+        {"field": "radiation_tolerance_krad", "label": "Radiation tolerance (krad)", "rule": "candidate_gte_required", "required_from_user": true},
+        {"field": "efficiency_pct", "label": "Cell efficiency (%)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "mass_g", "label": "Mass (g)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 20, "required_from_user": false},
+        {"field": "substrate", "label": "Substrate", "rule": "match", "required_from_user": false},
+        {"field": "qual_standard", "label": "Qualification standard", "rule": "qual_review", "required_from_user": false}
+      ]
+    },
+    "earth_horizon_sensor": {
+      "critical_specs": [
+        {"field": "accuracy_deg", "label": "Accuracy (°)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 0, "required_from_user": true},
+        {"field": "voltage_v", "label": "Supply voltage (V)", "rule": "match", "required_from_user": true},
+        {"field": "power_w", "label": "Power draw (W)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 15, "required_from_user": true},
+        {"field": "operating_temp_c", "label": "Operating temperature range (°C)", "rule": "range_envelops_required", "required_from_user": true},
+        {"field": "mass_kg", "label": "Mass (kg)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 20, "required_from_user": false},
+        {"field": "output_rate_hz", "label": "Output rate (Hz)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "detector_type", "label": "Detector type", "rule": "match", "required_from_user": false}
+      ]
+    },
+    "star_tracker": {
+      "critical_specs": [
+        {"field": "accuracy_arcsec", "label": "Accuracy (arcsec, 3σ)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 0, "required_from_user": true},
+        {"field": "interface", "label": "Data interface", "rule": "match", "required_from_user": true},
+        {"field": "voltage_v", "label": "Supply voltage (V)", "rule": "match", "required_from_user": true},
+        {"field": "operating_temp_c", "label": "Operating temperature range (°C)", "rule": "range_envelops_required", "required_from_user": true},
+        {"field": "update_rate_hz", "label": "Update rate (Hz)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "radiation_tolerance_krad", "label": "Radiation tolerance (krad)", "rule": "candidate_gte_reference", "required_from_user": false},
+        {"field": "mass_g", "label": "Mass (g)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 25, "required_from_user": false},
+        {"field": "power_w", "label": "Power draw (W)", "rule": "candidate_lte_reference_within_pct", "tolerance_pct": 25, "required_from_user": false},
+        {"field": "qual_standard", "label": "Qualification standard", "rule": "qual_review", "required_from_user": false}
+      ]
+    }
+  }
+}
