@@ -1,0 +1,2 @@
+gem 'aws-sdk-bedrockruntime'
+gem 'ffi-portaudio'
