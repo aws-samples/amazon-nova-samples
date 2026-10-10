@@ -27,7 +27,7 @@ funcy==2.0
 gradio==5.11.0
 gradio_client==1.4.0
 granian==1.4.0
-h11==0.14.0
+h11==0.16.0
 httpcore==1.0.5
 httpx==0.27.2
 httpx-sse==0.4.0
