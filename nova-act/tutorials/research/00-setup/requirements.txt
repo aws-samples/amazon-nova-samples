@@ -1,0 +1,21 @@
+# Amazon Nova Act Tutorials - Complete Dependencies
+# This file includes all dependencies needed for tutorials 01-04
+
+# Core dependencies
+nova-act>=1.0.0
+playwright>=1.30.0
+
+# Data processing (Tutorial 03)
+pandas>=2.0.0
+
+# API integration (Tutorial 03)
+requests>=2.31.0
+
+# Data validation (all tutorials)
+pydantic>=2.0.0
+
+# Optional: Excel export support (Tutorial 03)
+openpyxl>=3.1.0
+
+# Optional: AWS S3 integration (Tutorial 04)
+boto3>=1.28.0
