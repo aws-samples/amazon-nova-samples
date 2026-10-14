@@ -181,7 +181,36 @@ You can also customize the system prompt by modifying the `default_system_prompt
    - Ensure you have access to the AWS Bedrock service
    - Check your internet connection
 
-4. **Debug Mode**
+4. **No response when sending audio from a file or a buffer**
+
+   The stream opens, audio is accepted, and nothing comes back — no transcript,
+   no audio, no error. Two causes, and neither raises an exception.
+
+   - **Send audio at roughly real time.** The microphone loop in these samples
+     is paced by the device: `stream.read()` returns only as fast as the
+     microphone fills its buffer, and there is an `await asyncio.sleep(0.01)`
+     between reads. Code adapted to stream a file or an in-memory buffer
+     inherits the API but not the pacing, sends the whole clip in
+     milliseconds, and gets silence back. Sleep for roughly the duration of
+     each chunk as you send it:
+
+     ```python
+     step = CHUNK_SIZE * 2                      # bytes, 16-bit mono
+     for i in range(0, len(audio_bytes), step):
+         await client.send_audio_chunk(audio_bytes[i:i + step])
+         await asyncio.sleep(CHUNK_SIZE / INPUT_SAMPLE_RATE)
+     ```
+
+   - **End the turn with silence.** A speaker stops talking and the microphone
+     keeps sending quiet frames; a file simply ends. Without that trailing
+     silence the model may keep waiting for the rest of the utterance. Append
+     about a second of zeroed samples before `end_audio_input()`:
+
+     ```python
+     audio_bytes += b"\x00" * (INPUT_SAMPLE_RATE * 2)   # ~1s, 16-bit mono
+     ```
+
+5. **Debug Mode**
    - Run with the `--debug` flag to see detailed logs
    - This can help identify issues with the connection or audio processing
 
