@@ -1,0 +1,30 @@
+AnyCompany RW 5.0 by AnyCompany. Category: reaction wheel. Model: RW-5.0
+Momentum Storage Nms: 5.0
+Max Torque Mnm: 150
+Mass G: 3000
+Voltage V: 28
+Voltage Range V: 22 to 34
+Operating Temp C: -30 to +70
+Interface: RS-422 or Redundant RS-485
+Control Mode: Speed, Torque
+Power W: 20
+Dimensions Mm: 194 x 192 x 57.25
+Vibration Grms: 14.1
+Radiation Tolerance Krad: 50
+Shock G: 1200
+Qual Standard: AnyCompany internal (flight heritage qualified)
+Heritage: First flights 2026; bearings common with all RW models, 420+ cumulative years across 263 units
+Reliability and supply chain profile (estimated):
+  Lifecycle Status: Active
+  Production Status: Full production
+  Estimated Years To Eol: 10+
+  Last Time Buy: Not announced
+  Typical Lead Time Weeks: 16
+  Lead Time Risk: Medium
+  Forecast Demand Trend: Increasing
+  Mtbf Hours: None
+  Fit Rate: None
+  Reliability Prediction Basis: Flight heritage (420+ cumulative years, 263 units); bearings design common across all models
+  Weibull Shape Beta: None
+  Bathtub Region: Early useful life (first flights 2026)
+  Recommended Screening: Standard flight acceptance

@@ -1,0 +1,29 @@
+AnyCompany RW 0.01 by AnyCompany. Category: reaction wheel. Model: RW-0.01
+Momentum Storage Nms: 0.01
+Max Torque Mnm: 1.0
+Mass G: 125
+Voltage V: 5
+Voltage Range V: 3.5 to 6.0
+Operating Temp C: -30 to +70
+Interface: ASYNC
+Control Mode: Speed, Torque
+Power W: 0.2
+Dimensions Mm: 50 x 50 x 29.5
+Vibration Grms: 12.87
+Radiation Tolerance Krad: 24
+Qual Standard: AnyCompany internal (flight heritage qualified)
+Heritage: 12 units; 105+ cumulative years since 2014; common design with RW-0.03
+Reliability and supply chain profile (estimated):
+  Lifecycle Status: Active
+  Production Status: Full production
+  Estimated Years To Eol: 10+
+  Last Time Buy: Not announced
+  Typical Lead Time Weeks: 12
+  Lead Time Risk: Low
+  Forecast Demand Trend: Stable
+  Mtbf Hours: None
+  Fit Rate: None
+  Reliability Prediction Basis: Flight heritage (105+ cumulative years, 12 units since 2014); common design with RW-0.03
+  Weibull Shape Beta: None
+  Bathtub Region: Useful life
+  Recommended Screening: Standard flight acceptance

@@ -1,0 +1,29 @@
+AnyCompany RW4 1.0 by AnyCompany. Category: reaction wheel. Model: RW4-1.0
+Momentum Storage Nms: 1.0
+Max Torque Mnm: 100
+Mass G: 1400
+Voltage V: 28
+Voltage Range V: 22 to 34
+Operating Temp C: -30 to +70
+Interface: RS-422 or Redundant RS-485
+Control Mode: Speed, Torque
+Power W: 5
+Dimensions Mm: 148 x 146 x 45
+Vibration Grms: 20.0
+Radiation Tolerance Krad: 50
+Qual Standard: AnyCompany internal (flight heritage qualified)
+Heritage: 144 units across 2 generations; 670+ cumulative years since 2016
+Reliability and supply chain profile (estimated):
+  Lifecycle Status: Active
+  Production Status: Full production
+  Estimated Years To Eol: 10+
+  Last Time Buy: Not announced
+  Typical Lead Time Weeks: 12
+  Lead Time Risk: Low
+  Forecast Demand Trend: Stable
+  Mtbf Hours: None
+  Fit Rate: None
+  Reliability Prediction Basis: Flight heritage (670+ cumulative years, 144 units, 2 generations since 2016)
+  Weibull Shape Beta: None
+  Bathtub Region: Useful life (mature, well-established)
+  Recommended Screening: Standard flight acceptance

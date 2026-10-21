@@ -1,0 +1,29 @@
+AnyCompany RW3 0.06 by AnyCompany. Category: reaction wheel. Model: RW3-0.06
+Momentum Storage Nms: 0.06
+Max Torque Mnm: 20
+Mass G: 235
+Voltage V: 28
+Voltage Range V: 7.5 to 36
+Operating Temp C: -30 to +70
+Interface: RS-422 or Redundant RS-485
+Control Mode: Speed, Torque
+Power W: 1.3
+Dimensions Mm: 77 x 65 x 37.5
+Vibration Grms: 14.1
+Radiation Tolerance Krad: 20
+Qual Standard: AnyCompany internal (flight heritage qualified)
+Heritage: 317 units; 930+ cumulative years since 2014
+Reliability and supply chain profile (estimated):
+  Lifecycle Status: Active
+  Production Status: Full production
+  Estimated Years To Eol: 10+
+  Last Time Buy: Not announced
+  Typical Lead Time Weeks: 10
+  Lead Time Risk: Low
+  Forecast Demand Trend: Stable
+  Mtbf Hours: None
+  Fit Rate: None
+  Reliability Prediction Basis: Flight heritage (930+ cumulative years, 317 units since 2014); most-flown model
+  Weibull Shape Beta: None
+  Bathtub Region: Useful life (highly mature)
+  Recommended Screening: Standard flight acceptance
