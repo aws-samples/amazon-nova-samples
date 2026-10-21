@@ -14,11 +14,12 @@ the same two entry points the vendored tools call — ``active_dataset()`` and
 ``resolve()`` — but hardcodes the synthetic dataset: no dataset switching, no
 alternate catalogs.
 
-``resolve()`` only ever calls ``os.environ.setdefault(...)``, so an explicitly
-exported env var (PARTS_DATA_DIR, PARTS_KB_ID, S3_VECTOR_INDEX,
-S3_VECTOR_BUCKET) always wins. The notebook setup cells export PARTS_DATA_DIR
-to the bundled catalog before importing, so this mainly provides the KB /
-S3 Vectors defaults used by the AWS-backed cells.
+``resolve()`` only seeds PARTS_DATA_DIR (the bundled synthetic catalog, which
+ships with these notebooks). The AWS-backed resources — the parts knowledge
+base and the S3 Vectors bucket/index — have NO default: you must export
+PARTS_KB_ID, S3_VECTOR_BUCKET, and S3_VECTOR_INDEX to point at resources in
+your own account. ``resolve()`` raises a clear error listing any that are
+missing so the sample never silently targets someone else's resources.
 """
 
 import os
@@ -41,13 +42,19 @@ _DATA_ROOT = next(
     _PKG_DIR.parent,
 )
 
-# Defaults for the AWS-backed resources the synthetic notebooks use.
+# The one default we CAN ship: the bundled synthetic catalog that lives
+# alongside these notebooks. Seeded with setdefault so an explicit export wins.
 _DEFAULTS = {
     "PARTS_DATA_DIR": str(_DATA_ROOT / "data" / "synthetic-parts-data"),
-    "PARTS_KB_ID": "KBJSEK4HDV",
-    "S3_VECTOR_INDEX": "reaction-wheels-synthetic",
-    "S3_VECTOR_BUCKET": "skylab-mfg-vectors",
 }
+
+# AWS-backed resources with NO default — the reader must point these at
+# resources in their own account. resolve() raises if any are unset.
+_REQUIRED_AWS_VARS = (
+    "PARTS_KB_ID",       # Bedrock knowledge base id, e.g. "<your-kb-id>"
+    "S3_VECTOR_BUCKET",  # S3 vector bucket, e.g. "amzn-s3-demo-vectors"
+    "S3_VECTOR_INDEX",   # S3 vector index name, e.g. "<your-vector-index>"
+)
 
 
 def active_dataset() -> str:
@@ -56,10 +63,27 @@ def active_dataset() -> str:
 
 
 def resolve() -> dict:
-    """Seed the synthetic defaults into os.environ (setdefault — never clobbers
-    an explicitly-exported value). Returns the effective values for logging."""
+    """Seed the bundled-catalog default into os.environ (setdefault — never
+    clobbers an explicit export) and require the AWS-backed vars to be set.
+
+    Raises RuntimeError listing any of PARTS_KB_ID / S3_VECTOR_BUCKET /
+    S3_VECTOR_INDEX that are missing, so the sample never silently targets
+    resources it does not own. Returns the effective values for logging."""
     for key, value in _DEFAULTS.items():
         os.environ.setdefault(key, value)
+
+    missing = [v for v in _REQUIRED_AWS_VARS if not os.environ.get(v)]
+    if missing:
+        raise RuntimeError(
+            "Missing required environment variable(s): "
+            + ", ".join(missing)
+            + ". These point at AWS resources in YOUR account and have no "
+            "default. Set them before running the notebooks, e.g.:\n"
+            '    os.environ["PARTS_KB_ID"] = "<your-kb-id>"\n'
+            '    os.environ["S3_VECTOR_BUCKET"] = "amzn-s3-demo-vectors"\n'
+            '    os.environ["S3_VECTOR_INDEX"] = "<your-vector-index>"'
+        )
+
     return {
         "DATASET": DATASET_NAME,
         "PARTS_DATA_DIR": os.environ.get("PARTS_DATA_DIR", ""),

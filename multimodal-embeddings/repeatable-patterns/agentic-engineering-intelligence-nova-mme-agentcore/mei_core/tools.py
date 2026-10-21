@@ -1939,8 +1939,12 @@ def _retrieve_visual_via_gateway(gateway_id: str, query_text: str, part_id: str,
 # index (native/index_parts.py) of Nova MME embeddings — including cropped
 # chart regions so an uploaded chart matches chart-vs-chart. This helper embeds
 # the uploaded image and queries that index directly.
-S3_VECTOR_BUCKET = os.environ.get("S3_VECTOR_BUCKET", "skylab-mfg-vectors")
-S3_VECTOR_INDEX = os.environ.get("S3_VECTOR_INDEX", "reaction-wheels")
+# No default — set these to the S3 Vectors bucket/index in YOUR account
+# (e.g. S3_VECTOR_BUCKET="amzn-s3-demo-vectors"). The image-as-query helper
+# below errors clearly if they are unset rather than targeting a predictable,
+# squattable bucket name.
+S3_VECTOR_BUCKET = os.environ.get("S3_VECTOR_BUCKET", "")
+S3_VECTOR_INDEX = os.environ.get("S3_VECTOR_INDEX", "")
 _NOVA_MME_MODEL_ID = "amazon.nova-2-multimodal-embeddings-v1:0"
 _NOVA_MME_DIM = 1024
 

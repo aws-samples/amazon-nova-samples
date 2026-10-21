@@ -1,4 +1,4 @@
-# SkyLab Manufacturing Intelligence — Notebooks
+# Agentic Engineering Intelligence with Amazon Nova MME and Bedrock AgentCore
 
 A collection of runnable notebooks that walk through the **chat multi-agent graph** at
 the center of this project: a Supervisor + 3 Specialist pattern built on
