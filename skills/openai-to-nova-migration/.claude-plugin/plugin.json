@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Amazon Web Services"
+  },
+  "description": "Migrate OpenAI (GPT-4o, GPT-4.1, GPT-5.x) Python code and prompts to Amazon Nova 2 Lite (boto3 Bedrock Runtime). Handles SDK conversion, request/response restructuring, prompt reformatting, tool calling, structured output, multimodal, and extended thinking migration.",
+  "homepage": "https://github.com/aws-samples/amazon-nova-samples",
+  "keywords": [
+    "bedrock",
+    "nova",
+    "openai",
+    "gpt",
+    "migration",
+    "python",
+    "boto3",
+    "prompt-engineering",
+    "aws"
+  ],
+  "license": "Apache-2.0",
+  "name": "openai-to-nova-migration",
+  "repository": "https://github.com/aws-samples/amazon-nova-samples",
+  "version": "1.0.0"
+}
