@@ -268,19 +268,44 @@ function showToolUse(toolUse) {
   const card = document.createElement('div');
   card.className = 'tool-card';
   card.id = `tool-${toolUse.toolUseId || Date.now()}`;
-  card.innerHTML = `
-    <div class="tool-title"><span class="dot"></span>${meta.icon} ${meta.title}</div>
-    <div class="tool-body">Calling with: <code>${JSON.stringify(maskPII(toolUse.input))}</code></div>
-  `;
+
+  const title = document.createElement('div');
+  title.className = 'tool-title';
+  const dot = document.createElement('span');
+  dot.className = 'dot';
+  title.appendChild(dot);
+  title.appendChild(document.createTextNode(` ${meta.icon} ${meta.title}`));
+
+  const body = document.createElement('div');
+  body.className = 'tool-body';
+  body.appendChild(document.createTextNode('Calling with: '));
+  const code = document.createElement('code');
+  code.textContent = JSON.stringify(maskPII(toolUse.input));
+  body.appendChild(code);
+
+  card.appendChild(title);
+  card.appendChild(body);
   panel.prepend(card);
   pendingTools[toolUse.toolUseId] = card;
+}
+
+function addResultRow(body, label, value) {
+  const row = document.createElement('div');
+  row.className = 'result-row';
+  const labelSpan = document.createElement('span');
+  labelSpan.textContent = label;
+  const valueSpan = document.createElement('span');
+  valueSpan.textContent = value;
+  row.appendChild(labelSpan);
+  row.appendChild(valueSpan);
+  body.appendChild(row);
 }
 
 function showToolResult(result) {
   const card = pendingTools[result.toolUseId];
   if (!card) return;
   card.classList.add('done');
-  let bodyHtml = '';
+  const body = card.querySelector('.tool-body');
   try {
     const content = result.content && result.content[0] && result.content[0].text;
     const parsed = JSON.parse(content);
@@ -288,17 +313,16 @@ function showToolResult(result) {
       if (Array.isArray(v)) {
         v.forEach((item, i) => {
           const label = Object.values(item).join(' — ');
-          bodyHtml += `<div class="result-row"><span>slot ${i + 1}</span><span>${label}</span></div>`;
+          addResultRow(body, `slot ${i + 1}`, label);
         });
       } else {
-        bodyHtml += `<div class="result-row"><span>${k}</span><span>${v}</span></div>`;
+        addResultRow(body, k, v);
       }
     }
   } catch (e) {
     const content = (result.content && result.content[0] && result.content[0].text) || JSON.stringify(result);
-    bodyHtml = `<div class="result-row"><span>result</span><span>${content}</span></div>`;
+    addResultRow(body, 'result', content);
   }
-  card.querySelector('.tool-body').innerHTML += bodyHtml;
 }
 
 function showSystemMessage(text) { addMessage(text, 'system'); }
