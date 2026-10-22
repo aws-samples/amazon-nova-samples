@@ -62,10 +62,7 @@ INSURANCE_PLAN_NAME = "Nova Health Plan PPO"
     },
 )
 def lab_test(first_name: str, last_name: str, mobile_phone: str) -> dict:
-    logger.info(
-        f"DEMO LAB_TEST: first_name={_mask_name(first_name)!r} last_name={_mask_name(last_name)!r} "
-        f"mobile_phone={_mask_phone(mobile_phone)!r}"
-    )
+    logger.info("DEMO LAB_TEST: request received")
     # Elevated on purpose, to drive the specialist-follow-up branch of the demo.
     return {"hba1c": 8.2, "haemoglobin": 14, "hba1c_status": "elevated", "hba1c_normal_range": "below 5.7"}
 
