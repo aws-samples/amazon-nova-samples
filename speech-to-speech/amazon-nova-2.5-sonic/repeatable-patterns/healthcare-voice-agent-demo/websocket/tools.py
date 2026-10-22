@@ -17,18 +17,6 @@ from strands import tool
 
 logger = logging.getLogger(__name__)
 
-
-def _mask_name(name: str) -> str:
-    """Keep only the first character so logs/UI don't carry the caller's name in clear text."""
-    return f"{name[0]}***" if name else name
-
-
-def _mask_phone(phone: str) -> str:
-    """Keep only the last 4 digits so logs/UI don't carry the caller's phone number in clear text."""
-    digits = "".join(c for c in phone if c.isdigit())
-    return f"***{digits[-4:]}" if len(digits) >= 4 else "***"
-
-
 PATIENT_FIRST_NAME = "Jamie"
 PATIENT_LAST_NAME = "Rivera"
 PATIENT_PHONE = "+15555550123"
