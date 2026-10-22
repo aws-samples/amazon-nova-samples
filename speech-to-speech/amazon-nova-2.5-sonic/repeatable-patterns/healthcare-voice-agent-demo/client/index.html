@@ -245,6 +245,22 @@ function clearEmptyPanel() {
   if (empty) empty.remove();
 }
 
+const PII_FIELDS = { first_name: true, last_name: true, mobile_phone: true };
+
+function maskPII(input) {
+  const masked = {};
+  for (const [k, v] of Object.entries(input || {})) {
+    if (!PII_FIELDS[k] || typeof v !== 'string' || !v) {
+      masked[k] = v;
+      continue;
+    }
+    masked[k] = k === 'mobile_phone'
+      ? `***${v.replace(/\D/g, '').slice(-4)}`
+      : `${v[0]}***`;
+  }
+  return masked;
+}
+
 function showToolUse(toolUse) {
   clearEmptyPanel();
   const panel = document.getElementById('toolPanel');
@@ -254,7 +270,7 @@ function showToolUse(toolUse) {
   card.id = `tool-${toolUse.toolUseId || Date.now()}`;
   card.innerHTML = `
     <div class="tool-title"><span class="dot"></span>${meta.icon} ${meta.title}</div>
-    <div class="tool-body">Calling with: <code>${JSON.stringify(toolUse.input || {})}</code></div>
+    <div class="tool-body">Calling with: <code>${JSON.stringify(maskPII(toolUse.input))}</code></div>
   `;
   panel.prepend(card);
   pendingTools[toolUse.toolUseId] = card;

@@ -17,6 +17,18 @@ from strands import tool
 
 logger = logging.getLogger(__name__)
 
+
+def _mask_name(name: str) -> str:
+    """Keep only the first character so logs/UI don't carry the caller's name in clear text."""
+    return f"{name[0]}***" if name else name
+
+
+def _mask_phone(phone: str) -> str:
+    """Keep only the last 4 digits so logs/UI don't carry the caller's phone number in clear text."""
+    digits = "".join(c for c in phone if c.isdigit())
+    return f"***{digits[-4:]}" if len(digits) >= 4 else "***"
+
+
 PATIENT_FIRST_NAME = "Jamie"
 PATIENT_LAST_NAME = "Rivera"
 PATIENT_PHONE = "+15555550123"
@@ -50,7 +62,10 @@ INSURANCE_PLAN_NAME = "Nova Health Plan PPO"
     },
 )
 def lab_test(first_name: str, last_name: str, mobile_phone: str) -> dict:
-    logger.info(f"DEMO LAB_TEST: first_name={first_name!r} last_name={last_name!r} mobile_phone={mobile_phone!r}")
+    logger.info(
+        f"DEMO LAB_TEST: first_name={_mask_name(first_name)!r} last_name={_mask_name(last_name)!r} "
+        f"mobile_phone={_mask_phone(mobile_phone)!r}"
+    )
     # Elevated on purpose, to drive the specialist-follow-up branch of the demo.
     return {"hba1c": 8.2, "haemoglobin": 14, "hba1c_status": "elevated", "hba1c_normal_range": "below 5.7"}
 
@@ -130,8 +145,8 @@ def book_appointment(date: str, time: str) -> dict:
 )
 def request_prescription_refill(first_name: str, last_name: str, mobile_phone: str, medication_name: str) -> dict:
     logger.info(
-        f"DEMO REQUEST_PRESCRIPTION_REFILL: first_name={first_name!r} last_name={last_name!r} "
-        f"mobile_phone={mobile_phone!r} medication_name={medication_name!r}"
+        f"DEMO REQUEST_PRESCRIPTION_REFILL: first_name={_mask_name(first_name)!r} last_name={_mask_name(last_name)!r} "
+        f"mobile_phone={_mask_phone(mobile_phone)!r} medication_name={medication_name!r}"
     )
     on_file = medication_name.strip().lower() in PATIENT_MEDICATION.lower()
     if not on_file:
