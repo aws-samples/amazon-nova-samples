@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nova 2.5 Sonic — Live Voice Agent Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 20% 20%, #1e2a78 0%, #0b0f2e 45%, #060814 100%);
+    color: #eef0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 60px;
+  }
+
+  .header { text-align: center; margin-bottom: 28px; }
+  .header h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #8ab4ff, #c58aff, #ff8ad1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .header .sub { color: #9aa3cc; font-size: 14px; margin-top: 6px; }
+  .badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: ui-monospace, Menlo, monospace;
+    color: #c9d0ff;
+    background: rgba(138, 180, 255, 0.12);
+    border: 1px solid rgba(138, 180, 255, 0.3);
+  }
+
+  .main {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 980px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+  }
+
+  /* ---- center stage: mic + transcript ---- */
+  .stage { flex: 1 1 420px; min-width: 340px; padding: 28px; display: flex; flex-direction: column; align-items: center; }
+
+  .mic-wrap { position: relative; width: 150px; height: 150px; margin-bottom: 14px; }
+  .mic-ring {
+    position: absolute; inset: 0; border-radius: 50%;
+    background: linear-gradient(135deg, #6a7bff, #c58aff);
+    opacity: 0.35;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .mic-btn {
+    position: absolute; inset: 14px; border-radius: 50%;
+    border: none; cursor: pointer;
+    background: linear-gradient(135deg, #5468ff, #9b5bff);
+    color: white; font-size: 15px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 30px rgba(90, 90, 255, 0.35);
+    transition: transform 0.15s ease;
+  }
+  .mic-btn:active { transform: scale(0.96); }
+  .mic-btn .icon { font-size: 34px; }
+
+  .mic-wrap.listening .mic-ring { animation: pulse-blue 1.4s ease-out infinite; }
+  .mic-wrap.speaking .mic-ring { animation: pulse-pink 1.1s ease-out infinite; background: linear-gradient(135deg, #ff7ab8, #ffb37a); }
+  @keyframes pulse-blue {
+    0%   { transform: scale(1);    opacity: 0.4; }
+    70%  { transform: scale(1.45); opacity: 0; }
+    100% { transform: scale(1.45); opacity: 0; }
+  }
+  @keyframes pulse-pink {
+    0%   { transform: scale(1);    opacity: 0.5; }
+    70%  { transform: scale(1.35); opacity: 0; }
+    100% { transform: scale(1.35); opacity: 0; }
+  }
+
+  #statusText { font-size: 14px; color: #a9b0da; margin-bottom: 22px; min-height: 18px; }
+  #statusText.connected { color: #7CFFB2; }
+  #statusText.error { color: #ff8a8a; }
+
+  .hint { font-size: 13px; color: #80869e; text-align: center; margin-top: 10px; line-height: 1.6; }
+  .hint b { color: #c3c9ee; }
+
+  #transcript {
+    width: 100%;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .msg { padding: 9px 14px; border-radius: 14px; font-size: 14px; line-height: 1.4; max-width: 85%; }
+  .msg.user { align-self: flex-end; background: linear-gradient(135deg, #4e5ddb, #6c3fd1); color: #fff; border-bottom-right-radius: 4px; }
+  .msg.assistant { align-self: flex-start; background: rgba(255,255,255,0.08); color: #e8eaff; border-bottom-left-radius: 4px; }
+  .msg.system { align-self: center; color: #777fa6; font-size: 12px; font-style: italic; }
+
+  /* ---- side panel: tool activity ---- */
+  .panel { flex: 0 0 300px; padding: 22px; min-height: 420px; }
+  .panel h2 { margin: 0 0 14px; font-size: 15px; color: #c3c9ee; letter-spacing: 0.3px; }
+  .tool-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 12px;
+    animation: fadein 0.35s ease;
+  }
+  @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .tool-card .tool-title { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .tool-card .tool-title .dot { width: 8px; height: 8px; border-radius: 50%; background: #ffcf5c; }
+  .tool-card.done .tool-title .dot { background: #7CFFB2; }
+  .tool-card .tool-body { font-size: 12.5px; color: #b7bde0; line-height: 1.5; }
+  .tool-card .result-row { display: flex; justify-content: space-between; margin-top: 6px; padding: 6px 10px; background: rgba(0,0,0,0.2); border-radius: 8px; }
+  .tool-card .result-row span:first-child { color: #8d94c0; }
+  .tool-card .result-row span:last-child { color: #e8eaff; font-weight: 600; }
+  .empty-panel { color: #666c91; font-size: 13px; text-align: center; padding: 30px 10px; }
+
+  #connectBtnLabel { font-size: 13px; color: #8d94c0; }
+  #textInputRow { display: flex; gap: 8px; margin-top: 16px; width: 100%; }
+  #textInput { flex: 1; padding: 9px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15); background: rgba(0,0,0,0.25); color: #eef0ff; font-size: 13px; }
+  #textInput:focus { outline: none; border-color: #8ab4ff; }
+  #sendBtn { padding: 9px 14px; border-radius: 10px; border: none; background: rgba(255,255,255,0.1); color: #eef0ff; cursor: pointer; font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Nova 2.5 Sonic</h1>
+    <div class="sub">Live Voice Agent Demo — Nova Health Clinic</div>
+    <div class="badge">amazon.nova-2-5-sonic</div>
+  </div>
+
+  <div class="main">
+    <div class="card stage">
+      <div class="mic-wrap" id="micWrap">
+        <div class="mic-ring"></div>
+        <button class="mic-btn" id="connectBtn" onclick="toggleConnection()">
+          <span class="icon" id="micIcon">🎙️</span>
+        </button>
+      </div>
+      <div id="statusText">Click to connect</div>
+
+      <div class="hint">
+        Try: <b>"I need an update on my lab results"</b> → yes → pick a Friday slot<br>
+        Or: <b>"I'm having some money troubles, but I also wanted to book a specialist appointment"</b><br>
+        Or: <b>"Can you refill my metformin?"</b> &nbsp;·&nbsp; <b>"Is Dr. Patel covered by my insurance?"</b><br>
+        Or: <b>"What did my latest blood work show?"</b> &nbsp;·&nbsp; <b>"Can you just tell me what medication to take?"</b> &nbsp;·&nbsp; <b>"That's all, thanks"</b>
+      </div>
+
+      <div id="transcript"></div>
+
+      <div id="textInputRow">
+        <input id="textInput" type="text" placeholder="Or type a message..." onkeydown="if(event.key==='Enter') sendTyped()">
+        <button id="sendBtn" onclick="sendTyped()">Send</button>
+      </div>
+    </div>
+
+    <div class="card panel">
+      <h2>🔧 Tool Activity</h2>
+      <div id="toolPanel"><div class="empty-panel">No tool calls yet.<br>Ask about lab results or a specialist.</div></div>
+    </div>
+  </div>
+
+<script>
+let ws = null;
+let audioContext = null;
+let audioPlaybackContext = null;
+let isRecording = false;
+let isBotSpeaking = false;
+let nextPlayTime = 0;
+let activeSources = 0;
+const SAMPLE_RATE = 16000;
+let pendingTools = {};
+
+function setStatus(text, cls) {
+  const el = document.getElementById('statusText');
+  el.textContent = text;
+  el.className = cls || '';
+}
+
+function setMicState(state) {
+  const wrap = document.getElementById('micWrap');
+  wrap.classList.remove('listening', 'speaking');
+  if (state) wrap.classList.add(state);
+  document.getElementById('micIcon').textContent = state === 'speaking' ? '🔊' : '🎙️';
+}
+
+function addMessage(text, role) {
+  const log = document.getElementById('transcript');
+  const div = document.createElement('div');
+  div.className = `msg ${role}`;
+  div.textContent = text;
+  log.appendChild(div);
+  log.scrollTop = log.scrollHeight;
+  return div;
+}
+
+function updateSpeculativeTranscript(role, text) {
+  let el = document.getElementById('speculative-msg');
+  if (el) {
+    el.textContent = text;
+  } else {
+    el = addMessage(text, role);
+    el.id = 'speculative-msg';
+    el.style.opacity = '0.55';
+  }
+}
+
+function finalizeTranscript(role, text) {
+  const speculative = document.getElementById('speculative-msg');
+  if (speculative) speculative.remove();
+  addMessage(text, role);
+}
+
+const TOOL_META = {
+  lab_test: { icon: '🧪', title: 'Lab Test Lookup' },
+  check_specialist_availability: { icon: '📅', title: 'Checking Availability' },
+  book_appointment: { icon: '✅', title: 'Booking Appointment' },
+  request_prescription_refill: { icon: '💊', title: 'Prescription Refill' },
+  check_insurance_coverage: { icon: '💳', title: 'Insurance Coverage' },
+};
+
+function clearEmptyPanel() {
+  const panel = document.getElementById('toolPanel');
+  const empty = panel.querySelector('.empty-panel');
+  if (empty) empty.remove();
+}
+
+function showToolUse(toolUse) {
+  clearEmptyPanel();
+  const panel = document.getElementById('toolPanel');
+  const meta = TOOL_META[toolUse.name] || { icon: '🔧', title: toolUse.name };
+  const card = document.createElement('div');
+  card.className = 'tool-card';
+  card.id = `tool-${toolUse.toolUseId || Date.now()}`;
+  card.innerHTML = `
+    <div class="tool-title"><span class="dot"></span>${meta.icon} ${meta.title}</div>
+    <div class="tool-body">Calling with: <code>${JSON.stringify(toolUse.input || {})}</code></div>
+  `;
+  panel.prepend(card);
+  pendingTools[toolUse.toolUseId] = card;
+}
+
+function showToolResult(result) {
+  const card = pendingTools[result.toolUseId];
+  if (!card) return;
+  card.classList.add('done');
+  let bodyHtml = '';
+  try {
+    const content = result.content && result.content[0] && result.content[0].text;
+    const parsed = JSON.parse(content);
+    for (const [k, v] of Object.entries(parsed)) {
+      if (Array.isArray(v)) {
+        v.forEach((item, i) => {
+          const label = Object.values(item).join(' — ');
+          bodyHtml += `<div class="result-row"><span>slot ${i + 1}</span><span>${label}</span></div>`;
+        });
+      } else {
+        bodyHtml += `<div class="result-row"><span>${k}</span><span>${v}</span></div>`;
+      }
+    }
+  } catch (e) {
+    const content = (result.content && result.content[0] && result.content[0].text) || JSON.stringify(result);
+    bodyHtml = `<div class="result-row"><span>result</span><span>${content}</span></div>`;
+  }
+  card.querySelector('.tool-body').innerHTML += bodyHtml;
+}
+
+function showSystemMessage(text) { addMessage(text, 'system'); }
+function showError(text) { addMessage(`Error: ${text}`, 'system'); }
+
+async function startRecording() {
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true }
+  });
+
+  audioContext = new AudioContext();
+  const source = audioContext.createMediaStreamSource(stream);
+  const processor = audioContext.createScriptProcessor(4096, 1, 1);
+
+  processor.onaudioprocess = (e) => {
+    if (!ws || ws.readyState !== WebSocket.OPEN) return;
+
+    const inputData = e.inputBuffer.getChannelData(0);
+    const suppressionFactor = isBotSpeaking ? 0.15 : 1.0;
+    const downsampleRatio = audioContext.sampleRate / SAMPLE_RATE;
+    const outputLength = Math.floor(inputData.length / downsampleRatio);
+    const int16Data = new Int16Array(outputLength);
+
+    for (let i = 0; i < outputLength; i++) {
+      const sourceIndex = Math.floor(i * downsampleRatio);
+      int16Data[i] = Math.max(-32768, Math.min(32767,
+        inputData[sourceIndex] * 32768 * suppressionFactor));
+    }
+
+    const bytes = new Uint8Array(int16Data.buffer);
+    let binary = '';
+    for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+
+    ws.send(JSON.stringify({
+      type: "bidi_audio_input",
+      audio: btoa(binary),
+      format: "pcm",
+      sample_rate: SAMPLE_RATE,
+      channels: 1
+    }));
+  };
+
+  source.connect(processor);
+  processor.connect(audioContext.destination);
+  isRecording = true;
+  if (!isBotSpeaking) setMicState('listening');
+}
+
+function stopRecording() {
+  if (audioContext) { audioContext.close(); audioContext = null; }
+  isRecording = false;
+}
+
+async function playAudioOutput(base64Audio) {
+  if (!audioPlaybackContext) {
+    audioPlaybackContext = new AudioContext({ sampleRate: SAMPLE_RATE });
+    nextPlayTime = 0;
+    activeSources = 0;
+  }
+  if (audioPlaybackContext.state === 'suspended') await audioPlaybackContext.resume();
+
+  isBotSpeaking = true;
+  setMicState('speaking');
+
+  const binaryString = atob(base64Audio);
+  const bytes = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) bytes[i] = binaryString.charCodeAt(i);
+  const int16Data = new Int16Array(bytes.buffer);
+  const float32Data = new Float32Array(int16Data.length);
+  for (let i = 0; i < int16Data.length; i++) float32Data[i] = int16Data[i] / 32768.0;
+
+  const buffer = audioPlaybackContext.createBuffer(1, float32Data.length, SAMPLE_RATE);
+  buffer.getChannelData(0).set(float32Data);
+
+  const currentTime = audioPlaybackContext.currentTime;
+  if (nextPlayTime < currentTime) nextPlayTime = currentTime + 0.05;
+
+  const source = audioPlaybackContext.createBufferSource();
+  source.buffer = buffer;
+  source.connect(audioPlaybackContext.destination);
+  source.start(nextPlayTime);
+  nextPlayTime += buffer.duration;
+
+  activeSources++;
+  source.onended = () => {
+    activeSources--;
+    if (activeSources <= 0) {
+      activeSources = 0;
+      isBotSpeaking = false;
+      if (isRecording) setMicState('listening');
+    }
+  };
+}
+
+function stopBotAudio() {
+  isBotSpeaking = false;
+  nextPlayTime = 0;
+  activeSources = 0;
+  if (audioPlaybackContext) { audioPlaybackContext.close(); audioPlaybackContext = null; }
+  if (isRecording) setMicState('listening');
+}
+
+async function connect() {
+  const wsUrl = "{{WEBSOCKET_URL}}";
+  ws = new WebSocket(wsUrl);
+
+  ws.onopen = async () => {
+    setStatus('Connected — say hello', 'connected');
+    // Not a visible UI control on purpose -- open with ?antiPattern=1 in the
+    // URL to get the explicit "since you prefer Friday..." contrast variant.
+    const attributePrefOutLoud = new URLSearchParams(window.location.search).get('antiPattern') === '1';
+    ws.send(JSON.stringify({ type: "config", attribute_preference_out_loud: attributePrefOutLoud }));
+    await startRecording();
+    document.getElementById('micIcon').textContent = '⏹️';
+  };
+
+  ws.onmessage = async (event) => {
+    const data = JSON.parse(event.data);
+    switch (data.type) {
+      case 'bidi_audio_stream': await playAudioOutput(data.audio); break;
+      case 'bidi_transcript_stream':
+        if ((data.text || '').trim() === 'The caller has just connected. Greet them now.') break; // hide the greeting kickoff
+        if (data.is_final === false) updateSpeculativeTranscript(data.role, data.text);
+        else finalizeTranscript(data.role, data.text);
+        break;
+      case 'bidi_interruption': stopBotAudio(); break;
+      case 'tool_use_stream': showToolUse(data.current_tool_use); break;
+      case 'tool_result': showToolResult(data.tool_result); break;
+      case 'system': showSystemMessage(data.message); break;
+      case 'error': showError(data.message); break;
+    }
+  };
+
+  ws.onclose = () => {
+    setStatus('Disconnected', '');
+    stopRecording();
+    stopBotAudio();
+    setMicState(null);
+    document.getElementById('micIcon').textContent = '🎙️';
+  };
+
+  ws.onerror = () => { setStatus('Connection error', 'error'); };
+}
+
+function disconnect() {
+  if (ws) { ws.close(); ws = null; }
+}
+
+function toggleConnection() {
+  if (ws && ws.readyState === WebSocket.OPEN) disconnect();
+  else connect();
+}
+
+function sendTyped() {
+  const input = document.getElementById('textInput');
+  const text = input.value.trim();
+  if (!text || !ws || ws.readyState !== WebSocket.OPEN) return;
+  ws.send(JSON.stringify({ type: "text_input", text: text }));
+  addMessage(text, 'user');
+  input.value = '';
+}
+</script>
+</body>
+</html>

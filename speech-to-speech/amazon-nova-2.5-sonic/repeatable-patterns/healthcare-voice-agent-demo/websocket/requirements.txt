@@ -1,0 +1,5 @@
+strands-agents[bidi,bidi-io]>=1.59.0
+boto3
+fastapi
+uvicorn[standard]
+websockets
