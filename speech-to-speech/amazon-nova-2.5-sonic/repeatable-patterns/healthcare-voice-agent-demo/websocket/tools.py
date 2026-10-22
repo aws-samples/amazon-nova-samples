@@ -144,10 +144,7 @@ def book_appointment(date: str, time: str) -> dict:
     },
 )
 def request_prescription_refill(first_name: str, last_name: str, mobile_phone: str, medication_name: str) -> dict:
-    logger.info(
-        f"DEMO REQUEST_PRESCRIPTION_REFILL: first_name={_mask_name(first_name)!r} last_name={_mask_name(last_name)!r} "
-        f"mobile_phone={_mask_phone(mobile_phone)!r} medication_name={medication_name!r}"
-    )
+    logger.info("DEMO REQUEST_PRESCRIPTION_REFILL: request received")
     on_file = medication_name.strip().lower() in PATIENT_MEDICATION.lower()
     if not on_file:
         return {"status": "not_on_file", "medication_requested": medication_name}
